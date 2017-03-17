@@ -41,3 +41,8 @@
 ### References
 
 Gamasutra, GDC, talks, PDFs, bar-b-q
+
+## Tools
+* Tones.js
+* howlers.ls
+* 
