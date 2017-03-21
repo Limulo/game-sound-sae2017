@@ -104,4 +104,35 @@ However FMOD includes a number of _built-in parameters_ that are automatically u
 
 ## Modulators
 
-## Tutorial: Making Interactive Music
+---
+
+# Tutorial: Making Interactive Music
+We have interesting elements here:
+* Tempo Marker
+* Destination Marker
+* Loop Region
+* Sustain Point
+* Transition marker
+* Transition Region
+
+(_Snap to ruler_ option)
+
+1. background music + event triggered in quantization
+
+2. Sending the cursor back in the time line: Loop regions
+
+3. Sending the cursor forward in the time Line: Transition Markers. Conditions can be added to markers (create parameters and click on + on the corresponding module)
+
+4. a Transition region is needed when the transition has to occur within a region of the timeline and not necessarily at a specific predictable point (quantization and parametrization possible).
+
+5. Sustain point if it is necessary for to timeline cursor to stop! A sustain point for the timeline parameter doesn't mean other trigger regions on other parameters will pause too!
+
+
+4: Transition timeline: can be defined as short timelines that the timeline cursor travels along between disappearing at a transition marker and reappearing at the associated destination marker.
+
+transition region!= Transition marker != transition timeline
+
+---
+
+# Tutorial: Mixing and Muting
+

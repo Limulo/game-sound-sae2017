@@ -16,3 +16,7 @@
 ## CC music
 * [incompetech](http://incompetech.com/music/royalty-free/music.html)
 * [ccMixter]()
+
+## References and other stuff
+* [GDC Doom Music](http://www.gdcvault.com/play/1024068/-DOOM-Behind-the)
+* [GDC Final Fantasy XV - interactive music and tools](http://www.gdcvault.com/play/1023971/Epic-AND-Interactive-Music-in)
