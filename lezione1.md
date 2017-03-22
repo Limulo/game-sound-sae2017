@@ -45,4 +45,18 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 ## Tools
 * Tones.js
 * howlers.ls
-* 
+
+
+## Topics
+### 3D Audio
+5.1, 7.1, doppler, psychoacustics
+
+* panner 3D
+* HRTF (Virtual Reality)
+* 3d reverb
+
+### Memory Menagement
+
+### Threads
+
+

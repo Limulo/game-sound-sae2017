@@ -1,4 +1,4 @@
-# FMOD
+# FMOD SFX
 
 **FMOD** is a software tool by _Firelight Technologies_ (Melbourne, Australia). It helps sound designers to better organize audio assets in order to be used inside games (or interactive applications generically).
 
@@ -9,26 +9,11 @@ If you take a tour of the [FMOD website](http://www.fmod.org/), you will see tha
 
 FMOD can be integrated with the principal game engines [Unity](http://www.fmod.org/documentation/#content/generated/engine_new_unity/overview.html) and [Unreal Engine](http://www.fmod.org/documentation/#content/generated/engine_ue4/overview.html).
 
-## Video tutorials
-* http://www.fmod.org/training
-
-
-## Topics
-
-### 3D Audio
-5.1, 7.1, doppler, psychoacustics
-
-* panner 3D
-* HRTF (Virtual Reality)
-* 3d reverb
-
-### Memory Menagement
-
-### Threads
+Video tutorials: [link1](http://www.fmod.org/training), [link2](https://www.youtube.com/channel/UCekk9jO-MTyWEbD2l0m6PTA)
 
 ---
 
-# Getting Started
+## Getting Started
 
 A single game corresponds to a single FMOD Studio project (it will contain all the events, music and mixer data for the game)
 
@@ -95,6 +80,12 @@ Note that, when automating the properties of a sound module, it is entirely poss
 
 ## Custom Parameters and Built-in Parameters
 When you create an event with one or more parameter, the game code needs to include function calls to update these parameters.
+
+What values a parameter might have depends on the game engine and game mechanics. Lets pretend they says they are going to give us a boolean parameter: in this case we will create an event parameter which goes from 0.0 to 1.0. 
+If we want our event sound module to react to this parameter only when it is equal to 1, we are going to set the corresponding range slider (minimum = 1.0; maximum= 10.0).
+In addition to this, if we don't want the output of our event sound module to change abruptly, as the boolean parameter will do, we need to sset the event parameter **Seek Speed** to something greater than 0.0 secs.
+
+
 However FMOD includes a number of _built-in parameters_ that are automatically updated based on information routinely fed to FMOD Studio's geometry system
 * distance
 * direction
@@ -103,8 +94,7 @@ However FMOD includes a number of _built-in parameters_ that are automatically u
 * event orientation
 
 ## Modulators
-
----
+TODO
 
 # Tutorial: Making Interactive Music
 We have interesting elements here:
@@ -174,8 +164,9 @@ Content created in Studio has to be built in a convenient format in order the ga
 
 ## Assigning events to Banks
 
-**Banks**
-* prior to trigger an event, at least one _bank_ that contains that event must be loaded;
+A **bank** is a package which contains all the necessary files an data to make our game have audio. A game scene can have one or more bakns, it will be useful for memory menagement purpose.
+
+* prior to trigger an event, at least one _bank_ that contains that event must be loaded in the game;
 * if we want our event to appear in the game, we need to assign it to _one_ or _more_ banks;
 * for each bank we can select one or more target platform!
 
@@ -186,8 +177,13 @@ File > Build...
 Wan mixing and editing a project, it often helps to be able to hear the result in the game. **Live Update** allows you to connect FMOD Studio to your game as it runs, make changes to your project and hear the result in real time.
 
 To use it, the game needs to set the **FMOD_STUDIO_INIT_LIVEUPDATE** flag.
-1. Open the project
-2. Open the game
+
+[link](https://youtu.be/91GT1eb6xeQ?t=4m12s)
+In Unity:
+1. Edit > Project Settings > Player
+2. In _Resolution and Presentation_ make sure you have the _Run in background_ selected. 
+3. play the game
+4. Open the FMOD Studio project
 3. in Studio: File > Connect to Game...
 4. insert the IP address of the machine where the game is running on (use _localhost_ if the game is running locally).
 5. click Connect
@@ -207,6 +203,32 @@ Profiler wold record:
 * Lifespan 
 * Instances (self / Total)
 
+# Footsteps
+[link](https://youtu.be/DI72MHPfh0k?t=9m50s)
+How to implement footstep in your FMOD Studio project depends on the way the game is going to detect them:
+* single footstep for multiple surfaces;
+* a raycaster which detects the kind of surface the Player is walking on
+
+For example, if we have 4 different surfaces we need
+1. 4 different track with a multisample trigger region for each
+2. 4 different parameter, one per material
+
+We have to remove the 3D panner if we are modeling footstep for the main player character
+We have to set the output _mono_
+
+
+# FMOD MUSIC
+Delete the 3D panner: doing this we are changing our event to 2D event
+
+2D music track needs to be asigned to the main character in the game, the main audio listern
+
+# FMOD / UNITY integration
+
+Studio Listener X Unity Audio Emitter
+Unity Audio Listener X Studio Emitter
+Studio Listener <-> Studio Emitter
+
+
 ---
 
 # TODO
@@ -218,3 +240,19 @@ Profiler wold record:
 * Voices (what they are?)
 * Profiler: What is API Capture Mode?
 * sidechain
+
+---
+when you have FMOD integrated with your Unity project, each time you build a bank, the unity integration plugin will copy this bank inside the _Streaming Assets_ folder, inside the Unity project folder.
+
+In Unity
+1. find the object you want your event to bind to
+2. Add _Component_
+3. _Studio Event Emitter_
+4. select a _start_ condition (Object start: when the object is loaded in the scene);
+5. select a _stop_ condition
+6. select an event
+
+To hear the sound we need a _Studio Event Listener_ (it is the equivalent of the _Unity Audio Listener_)
+
+
+
