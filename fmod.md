@@ -134,5 +134,87 @@ transition region!= Transition marker != transition timeline
 
 ---
 
-# Tutorial: Mixing and Muting
+# Tutorial: Routing & Mixing
+The mixer window
 
+Most mixing in FMOD Studio requires that all events in the project are routed into group buses (for example, sound effects, music, voices).
+
+When you assign an event A to a group in the Mixer window, it means that whenever the game will instantiate a new A event, its audio output will be routed to the group.
+
+Mixing is normally done while the project's events are playing through the sandbox or in-game.
+
+## Effect chain
+on how to add effect on the channel (bypass, flip to faders, rearranging effect when you have more than one)
+
+## Effect send 
+
+## Snapshot
+* overriding snapshot: only buses and properties that are scoped in the snapshot can be affected by that snapshot (right click -> _scope-in_). When a snapshot is active, it acts lika a mask, replacing the normal values of its scoped-in properties with the values specified in the snapshot.
+
+Snapshots can be audited (snapshot have the _play_/_stop_ button in the transport bar!)
+
+### How to make smoother snapshot transitions?
+with the snapshot mixer in focus, push the _track button_ in the transport to view track in an horizontal fashion. Now we can act on transitions over time.
+
+**snapshot intensity** property - AHDSR modulator
+
+Snapshot can be triggered by:
+* game code (see the FMOD API for more);
+* an event via a **snapshot trigger region**
+
+It is also possible for multiple snapshot or for multiple instances of the same snapshot. When more than one snapshot acts on the same parameter, what happens when more of them are active at the same time? Well, their name is _overriding snapshot_ so the answer is that on "overrides" the other.
+
+The order in witch snapshots appear in the snapshot browser is important: the snapshots at the top are applied last, overriding all the snapshots from lower down.
+
+There are also _blending snapshots_: the work a little bit differently concerning the _volume_.
+
+
+# Tutorial: Building the project
+Content created in Studio has to be built in a convenient format in order the game engine to use it.
+
+## Assigning events to Banks
+
+**Banks**
+* prior to trigger an event, at least one _bank_ that contains that event must be loaded;
+* if we want our event to appear in the game, we need to assign it to _one_ or _more_ banks;
+* for each bank we can select one or more target platform!
+
+File > Build...
+
+# Tutorial: Live Update
+
+Wan mixing and editing a project, it often helps to be able to hear the result in the game. **Live Update** allows you to connect FMOD Studio to your game as it runs, make changes to your project and hear the result in real time.
+
+To use it, the game needs to set the **FMOD_STUDIO_INIT_LIVEUPDATE** flag.
+1. Open the project
+2. Open the game
+3. in Studio: File > Connect to Game...
+4. insert the IP address of the machine where the game is running on (use _localhost_ if the game is running locally).
+5. click Connect
+
+# Understanding the Profiler
+
+The profiler allows you to record _sessions_ live update. Profiler sessions are useful when investigating all sorts of issue that can arise in the audio of a game!
+
+You can for example record action from a connected game and play them in a loop to find out where is the problem!
+
+Profiler wold record:
+* CPU usage
+* memory used (in KB)
+* File I/O
+* Levels
+* Voices (self/total) indicates the number of voices playing through a track.
+* Lifespan 
+* Instances (self / Total)
+
+---
+
+# TODO
+* sub event
+* File > Export GUIDs
+* File > validate project
+* File > Connect to Games
+* How a Bank file is made
+* Voices (what they are?)
+* Profiler: What is API Capture Mode?
+* sidechain
