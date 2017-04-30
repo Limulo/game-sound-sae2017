@@ -61,6 +61,8 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 * [Karen Collins 2013](http://www.gdcvault.com/play/1017959/Biff-Boom-Pow-Introducing-Students)
 * [Karen Collins 2014](http://www.gdcvault.com/play/1020359/Selling-Games-and-the-Code)
 
+--------------------------------------------------------------------------------------------------------------------------------
+
 ## Music
 
 # Personnel
@@ -90,6 +92,9 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 * Winifred Phillips [book](https://www.amazon.com/dp/0262026643/ref=cm_sw_su_dp)
 * KarenKollins [book](https://www.amazon.com/Game-Sound-Introduction-History-Practice/dp/026203378X/ref=pd_bxgy_14_img_3?_encoding=UTF8&pd_rd_i=026203378X&pd_rd_r=NCK8TJTEW5CPY2J21BA0&pd_rd_w=Cp62q&pd_rd_wg=rCgp3&psc=1&refRID=NCK8TJTEW5CPY2J21BA0)
 
+
+--------------------------------------------------------------------------------------------------------------------------------
+
 ## Effects
 
 ### Personnel
@@ -101,6 +106,35 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 * Nicolas Fournel [blog](http://www.nicolasfournel.com/)
 * Dylan Menzies: [papers](http://dmu.academia.edu/DylanMenzies)
 * Dr Stefan Bilbao: [website](http://www.eca.ed.ac.uk/reid-school-of-music/stefan-bilbao)
+* Mark Grimshaw: [thesis](https://www.amazon.com/Acoustic-Ecology-First-Person-Shooter-Experience/dp/3639024087/ref=sr_1_2?ie=UTF8&s=books&qid=1215249610&sr=8-2) and another [book](http://www.igi-global.com/book/game-sound-technology-player-interaction/41766)
+* Dylan Menzies: [pubblications](https://www.researchgate.net/profile/Dylan_Menzies/publications)
+
+### Application of Procedural Audio in Games
+* [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine
+* [GTA V audio](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and the RAGE audio Engine
+* [Pugs Luv Beats](http://www.luckyframe.co.uk/pugsluvbeats/ ) which uses PureData with Libpd as sound engine
+
+### Application of Procedural Audio on other fields
+* [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out. 
+
+![Clavia Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead#/media/File:Clavia_Nord_Lead_2x.jpg)
+
+A possible example of this kind os synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arturia arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/).
+
+* [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [PianoTeq](https://www.pianoteq.com/home) piano sound simulators, [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also in software products like Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start).
+Guitar Amps
+
+The same concepts we can find in many others software and hardware product like virtual instruments by [Togu Audio Line (Tal)](https://tal-software.com/Products), effects by [The Audio Thing](https://www.audiothing.net/), [Native Instruments B4](http://www.soundonsound.com/reviews/native-instruments-b4-ii).
+* Hardware instruments and Expanders: (ex)GEM DRAKE technology
+* RjDj
+* Smule
+
+### Group of interest
+* [The Sounding Object project](http://soundobject.org/)
+* [Procedural Audio Now](http://proceduralaudionow.com/)
+
+### other interviews
+* [1](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
 
 ### Papers
 * [liqui](http://gamma.cs.unc.edu/SoundingLiquids/soundingliquids.pdf)
