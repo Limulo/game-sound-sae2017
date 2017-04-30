@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Game Audio
 
 ## Teoria generale
@@ -117,7 +121,8 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 ### Application of Procedural Audio on other fields
 * [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out. 
 
-![Clavia Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead#/media/File:Clavia_Nord_Lead_2x.jpg)
+<img src="/https://en.wikipedia.org/wiki/Nord_Lead#/media/File:Clavia_Nord_Lead_2x.jpg" alt="Clavia Nord Lead" width="50%">
+
 
 A possible example of this kind os synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arturia arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/).
 
