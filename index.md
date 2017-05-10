@@ -94,18 +94,18 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 * [Karen Collins 2013](http://www.gdcvault.com/play/1017959/Biff-Boom-Pow-Introducing-Students)
 * [Karen Collins 2014](http://www.gdcvault.com/play/1020359/Selling-Games-and-the-Code)
 
-# Books
-* Winifred Phillips [book](https://www.amazon.com/dp/0262026643/ref=cm_sw_su_dp)
-* KarenKollins [book](https://www.amazon.com/Game-Sound-Introduction-History-Practice/dp/026203378X/ref=pd_bxgy_14_img_3?_encoding=UTF8&pd_rd_i=026203378X&pd_rd_r=NCK8TJTEW5CPY2J21BA0&pd_rd_w=Cp62q&pd_rd_wg=rCgp3&psc=1&refRID=NCK8TJTEW5CPY2J21BA0)
-
 --------------------------------------------------------------------------------------------------------------------------------
 
 ## Effects
 
-Sound effects in video games:
+Sound effects in video games.
+
+Procedural (computational) audio definition:
+
+> “Procedural audio is non-linear, often synthetic sound, created in real time according to a set of programmatic rules and live input.” – "[An introduction to procedural audio and its application in computer games](http://cs.au.dk/~dsound/DigitalAudio.dir/Papers/proceduralAudio.pdf).” by Andy Farnell
 
 ### Personnel
-* Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/) - [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](https://web-beta.archive.org/web/20160106071946/http://aspress.co.uk:80/ds/)
+* Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/) - [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/)
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176)
 * Dinesh Pai and Kees van den Doel **Modal Synthesis for Vibrating Objects** [paper](http://www.cs.ubc.ca/~kvdoel/publications/modalpaper.pdf) and [code example](http://www.cs.ubc.ca/~kvdoel/publications/srcmodalpaper.zip) and much more [papers](http://www.cs.ubc.ca/~kvdoel/pubs.html);
@@ -116,6 +116,9 @@ Sound effects in video games:
 * Mark Grimshaw: [thesis](https://www.amazon.com/Acoustic-Ecology-First-Person-Shooter-Experience/dp/3639024087/ref=sr_1_2?ie=UTF8&s=books&qid=1215249610&sr=8-2)
 * Dylan Menzies: [pubblications](https://www.researchgate.net/profile/Dylan_Menzies/publications)
 * [Anton Woldhek](http://www.woldhek.eu/anton/)
+* [Rod Selfridge](https://rodselfridge.wordpress.com/)
+* [Christian Heinrichs]()
+* [Stefania Serafin](https://ccrma.stanford.edu/~serafin/publ.html) and her work on contact models;
 
 ### Application of Procedural Audio in Games
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
@@ -178,6 +181,7 @@ We can find the same concepts in many others software and hardware products like
 * Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from the "_Designing Sound_" book;
 * [Supercollider code repository](http://sccode.org/);
 * [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
+* [AES Lecturers](http://www.aes-uk.org/meetings/) - [YouTube channel](https://www.youtube.com/user/aesuksection)
 
 ### Conferences
 * Audio Mostly
@@ -186,13 +190,23 @@ We can find the same concepts in many others software and hardware products like
 * Mooc: [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
 
 ### Books
+Books about music in video games: 
+
+* Winifred Phillips [book](https://www.amazon.com/dp/0262026643/ref=cm_sw_su_dp)
+* KarenKollins [book](https://www.amazon.com/Game-Sound-Introduction-History-Practice/dp/026203378X/ref=pd_bxgy_14_img_3?_encoding=UTF8&pd_rd_i=026203378X&pd_rd_r=NCK8TJTEW5CPY2J21BA0&pd_rd_w=Cp62q&pd_rd_wg=rCgp3&psc=1&refRID=NCK8TJTEW5CPY2J21BA0)
+
+Books about sound effects and related topics:
+
 * Andy Farnell's "[Designing Sound](https://mitpress.mit.edu/books/designing-sound)"
-* Perry Cook "[Real Sound Synthesis for Interactive Applications](https://www.amazon.com/Real-Sound-Synthesis-Interactive-Applications/dp/1568811683)"
-* Micheal Chion
-* Shaeffer
+* Perry Cook "[Real Sound Synthesis for Interactive Applications](http://www.cs.princeton.edu/~prc/AKPetersBook.htm)"
 * Mark Grimshaw's "[Game Sound Technology and Player Interaction: Concepts and Developments](http://www.igi-global.com/book/game-sound-technology-player-interaction/41766)"
 
-## Spunti Vari
+Other books of interest:
+
+* Micheal Chion "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)"
+* [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001)
+
+## Other stuff
 * A system to create synthetic engine sound for electric/hybrid car: [Harman Halosonic](http://www.halosonic.co.uk/)
 
 ---

@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>mixer-master</TITLE>
+<META NAME="description" CONTENT="mixer-master">
+<META NAME="keywords" CONTENT="Composition-002">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-002.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="Composition-002.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html271"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html269"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html263"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html272"
+  HREF="node4.html">score</A>
+<B> Up:</B> <A NAME="tex2html270"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html264"
+  HREF="node2.html">transport-controls</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html273"
+  HREF="node3.html#SECTION00031000000000000000">mixer master</A>
+<UL>
+<LI><A NAME="tex2html274"
+  HREF="node3.html#SECTION00031010000000000000">only one master</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html275"
+  HREF="node3.html#SECTION00032000000000000000">mixer output</A>
+<UL>
+<LI><A NAME="tex2html276"
+  HREF="node3.html#SECTION00032010000000000000">catch main bus</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html277"
+  HREF="node3.html#SECTION00033000000000000000">mixer channel</A>
+<UL>
+<LI><A NAME="tex2html278"
+  HREF="node3.html#SECTION00033010000000000000">many channels</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html279"
+  HREF="node3.html#SECTION00034000000000000000">simple panner</A>
+<UL>
+<LI><A NAME="tex2html280"
+  HREF="node3.html#SECTION00034010000000000000">opposite volume for left and right</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00030000000000000000">
+mixer-master</A>
+</H1>
+
+<H2><A NAME="SECTION00031000000000000000">
+mixer master</A>
+</H2>
+Figure <A HREF="#fig::B1-mixer-master">3</A> summary
+
+<UL>
+<LI>all channels
+</LI>
+</UL>
+<H4><A NAME="SECTION00031010000000000000">
+only one master</A>
+</H4>
+This is a simple part shown only for completeness. It is a wrapper for 
+the mixer main output <code>[mixer-output]</code> that implements a mute. Normal volume
+control floats are received on <code>[r mast]</code> and passed through a multiplier.
+The second inlet <code>[r mastmute]</code> places a one or zero on the lefthand side
+of the multiplier and refreshes the value. When this value is zero the volume
+is zero, when it is 1 the volume is restored to its last level set on the
+right side of the multiply. For each fader a toggle on the main GUI 
+acts as an on/off or channel mute. 
+
+<DIV ALIGN="CENTER"><A NAME="fig::B1-mixer-master"></A><A NAME="599"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+B1-mixer-master</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="223" HEIGHT="167" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/B1-mixer-master}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html6"
+  HREF="resources/puredata/B1-mixer-master.pd">B1-mixer-master.pd</A>
+<P>
+
+<H2><A NAME="SECTION00032000000000000000">
+mixer output</A>
+</H2>
+Figure <A HREF="#fig::B2-mixer-output">4</A> summary
+
+<UL>
+<LI>main left and right outs
+</LI>
+</UL>
+<H4><A NAME="SECTION00032010000000000000">
+catch main bus</A>
+</H4>
+<code>[catch~ left]</code> and <code>[catch~ right]</code> pick up from 
+two globally visible main signals "left" and "right" which
+are driven by <code>[throw~]</code> objects. Here both are
+multiplied by a simple line with 20ms slew for a fast but slightly
+less clicky fade action. Outputs for the <code>[dac~]</code> are specified
+explicitly, but you don't have to do this unless working with multi channel audio.
+
+<DIV ALIGN="CENTER"><A NAME="fig::B2-mixer-output"></A><A NAME="606"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 4:</STRONG>
+B2-mixer-output</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="308" HEIGHT="285" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/B2-mixer-output}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html8"
+  HREF="resources/puredata/B2-mixer-output.pd">B2-mixer-output.pd</A>
+<P>
+
+<H2><A NAME="SECTION00033000000000000000">
+mixer channel</A>
+</H2>
+Figure <A HREF="#fig::B3-mixer-channel">5</A> summary
+
+<UL>
+<LI>volume and pan
+</LI>
+<LI>throw to left and right bus
+</LI>
+</UL>
+<H4><A NAME="SECTION00033010000000000000">
+many channels</A>
+</H4>
+This abstraction is repeated many times in the composition, it's a mixer channel
+that sends to the main bus using <code>[throw~]</code>. It has it's own <code>[line~]</code>
+unit which is controlled via <code>[inlet volume]</code> and <code>[inlet pan]</code> which
+carries a value in degrees from -90 to +90. In this case we have made an unusual
+compromise between mono and stereo sources by having a stereo signal panned midfield
+at a width of 60 degrees, which leaves it 120 degrees of movement. 
+
+<DIV ALIGN="CENTER"><A NAME="fig::B3-mixer-channel"></A><A NAME="613"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5:</STRONG>
+B3-mixer-channel</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="441" HEIGHT="315" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/B3-mixer-channel}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html10"
+  HREF="resources/puredata/B3-mixer-channel.pd">B3-mixer-channel.pd</A>
+<P>
+
+<H2><A NAME="SECTION00034000000000000000">
+simple panner</A>
+</H2>
+Figure <A HREF="#fig::B4-pan">6</A> summary
+
+<UL>
+<LI>pan in degrees -90 &gt;&lt; +90
+</LI>
+<LI>right = 1 - left
+</LI>
+</UL>
+<H4><A NAME="SECTION00034010000000000000">
+opposite volume for left and right</A>
+</H4>
+The value on <code>[inlet pan]</code>
+is first rescaled from degrees to a normalised range.
+A proper pan uses cosine fades for equal power panning, but this 
+panner is easier to understand and fine for most things. The left and
+right volume control values are opposites of each other so when
+the left pan signal is 1 the right is 0. 
+
+<DIV ALIGN="CENTER"><A NAME="fig::B4-pan"></A><A NAME="620"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 6:</STRONG>
+B4-pan</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="466" HEIGHT="277" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/B4-pan}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html12"
+  HREF="resources/puredata/B4-pan.pd">B4-pan.pd</A>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html271"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html269"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html263"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html272"
+  HREF="node4.html">score</A>
+<B> Up:</B> <A NAME="tex2html270"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html264"
+  HREF="node2.html">transport-controls</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

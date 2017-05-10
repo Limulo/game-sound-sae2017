@@ -1,0 +1,15 @@
+#N canvas 0 0 440 262 10;
+#X obj 85 64 inlet time;
+#X obj 85 86 mod 32;
+#X obj 85 109 sel 0 14;
+#X obj 85 189 outlet chords;
+#X text 267 148 chords stored as lists;
+#X text 101 31 chord sequencer;
+#X msg 172 146 54 60 62 66;
+#X msg 85 146 54 56 60 64;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 7 0;
+#X connect 2 1 6 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;

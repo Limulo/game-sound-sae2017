@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>subpatched sine wave gens</TITLE>
+<META NAME="description" CONTENT="subpatched sine wave gens">
+<META NAME="keywords" CONTENT="Composition-000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-000.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="Composition-000.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html135"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html133"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html127"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html136"
+  HREF="node8.html">links</A>
+<B> Up:</B> <A NAME="tex2html134"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html128"
+  HREF="node6.html">Subpatched oscillator</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html137"
+  HREF="node7.html#SECTION00070010000000000000">Using subpatches</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00070000000000000000">
+subpatched sine wave gens</A>
+</H1>
+Figure <A HREF="#fig::two-oscillators">6</A> summary
+
+<UL>
+<LI>Subpatched oscillator
+</LI>
+<LI>inlet boxes connect to outside
+</LI>
+<LI>every 200 ms
+</LI>
+<LI>reusable code inside
+</LI>
+<LI>second oscillator plays harmony
+</LI>
+<LI>audio rate output
+</LI>
+<LI>subpatched oscillator
+</LI>
+<LI>a second copy
+</LI>
+</UL>
+<H4><A NAME="SECTION00070010000000000000">
+Using subpatches</A>
+</H4>
+In this final example we have copied the oscillator subpatch and changed
+the parameters of the composition a bit to get a more pleasing interval
+and scale. Multiplying the midi note by a small integer sets the scale
+interval, and adding to it provides a fixed offset. This way we have a scale
+of six notes, five semitones apart starting at C3 with the second part playing
+five semitones higher than the first. The variables that Puredata sees inside
+a subpatch are the same as those in the main patch, in programming words a subpatch
+does not provide scope. This means that some patches, especially those that use
+tables, cannot be subpatched to make them easily copied. For this we use
+abstractions instead, which will be introduced in the next tutorial.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::two-oscillators"></A><A NAME="179"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 6:</STRONG>
+two-oscillators</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="522" HEIGHT="423" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-000/images/F-two-oscillators-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html16"
+  HREF="resources/puredata/F-two-oscillators-play.pd">F-two-oscillators-play.pd</A>
+<A NAME="tex2html17"
+  HREF="resources/sound/F-two-oscillators-play.ogg">F-two-oscillators-play.ogg</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html135"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html133"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html127"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html136"
+  HREF="node8.html">links</A>
+<B> Up:</B> <A NAME="tex2html134"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html128"
+  HREF="node6.html">Subpatched oscillator</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

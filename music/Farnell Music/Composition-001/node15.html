@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>composition 1</TITLE>
+<META NAME="description" CONTENT="composition 1">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html265"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html263"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html257"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html266"
+  HREF="node16.html">links</A>
+<B> Up:</B> <A NAME="tex2html264"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html258"
+  HREF="node14.html">playing chords</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html267"
+  HREF="node15.html#SECTION000150010000000000000">Mixing several parts</A>
+<LI><A NAME="tex2html268"
+  HREF="node15.html#SECTION000150020000000000000">Conclusion</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION000150000000000000000">
+composition 1</A>
+</H1>
+Figure <A HREF="#fig::composition1">14</A> summary
+
+<UL>
+<LI>mixer
+</LI>
+<LI>counter timebase
+</LI>
+<LI>4 sequencers
+</LI>
+<LI>4 synths with volume controls
+</LI>
+</UL>
+<H4><A NAME="SECTION000150010000000000000">
+Mixing several parts</A>
+</H4>
+To mix two or more parts we send them to a bus with
+another <code>[throw~ mix]</code>. Unlike <code>[send~]</code> many different <code>[throw~]</code>
+units can talk to a single <code>[catch~]</code>. Before going to the
+bus, each channel in our mixer passes through another multiply 
+set by a corresponding GUI fader object. The mix of audio is collected by 
+<code>[catch~ mix]</code> and scaled to make it a little quieter.
+
+<P>
+
+<H4><A NAME="SECTION000150020000000000000">
+Conclusion</A>
+</H4>
+Here is our final composition with 4 separate synthesisers and 4 sequencers, one for each part.
+It plays a pattern 32 beats long with a bass line, noise drums, arpeggio and chords.
+The timebase is controlled by a toggle switch so it can be started from the main patch.
+
+<DIV ALIGN="CENTER"><A NAME="fig::composition1"></A><A NAME="332"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 14:</STRONG>
+composition1</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="579" HEIGHT="542" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/Z-composition1-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html32"
+  HREF="resources/puredata/Z-composition1-play.pd">Z-composition1-play.pd</A>
+<A NAME="tex2html33"
+  HREF="resources/sound/Z-composition1-play.ogg">Z-composition1-play.ogg</A>
+<BR><HR>
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

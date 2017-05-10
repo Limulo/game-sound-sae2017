@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>bassline sequencer</TITLE>
+<META NAME="description" CONTENT="bassline sequencer">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node5.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html130"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html128"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html122"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html131"
+  HREF="node5.html">Playing the bass line</A>
+<B> Up:</B> <A NAME="tex2html129"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html123"
+  HREF="node3.html">synth 1</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html132"
+  HREF="node4.html#SECTION00040010000000000000">Sequencing the synthesiser</A>
+<LI><A NAME="tex2html133"
+  HREF="node4.html#SECTION00040020000000000000">Picking specific notes</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00040000000000000000">
+bassline sequencer</A>
+</H1>
+Figure <A HREF="#fig::bassline-seq">3</A> summary
+
+<UL>
+<LI>sequencer using select
+</LI>
+<LI>note value in message boxes
+</LI>
+<LI>notes outlet
+</LI>
+</UL>
+<H4><A NAME="SECTION00040010000000000000">
+Sequencing the synthesiser</A>
+</H4>
+The output of the counter in the timebase abstraction will advance forever. It is
+received in this patch via <code>[inlet time]</code>, which wil be connected to the timebase
+in the outer patch. Let's divide
+time into bars and measures and beats using a modulo
+operator. The output of <code>[mod n]</code> is bounded within 0 to n-1, n modulo n
+is zero, so we can get a bar counter by pushing the output from our
+counter through <code>[mod 16]</code>. This message stream will now count 
+<!-- MATH
+ ${0, 1, 2 ... 15}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="71" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ {0, 1, 2 ... 15}$"></SPAN> in total sixteen steps.
+
+<P>
+
+<H4><A NAME="SECTION00040020000000000000">
+Picking specific notes</A>
+</H4>
+<code>[select a b c]</code>  will output a bang on one of three
+outputs corresponding to a, b and c if that value that matches the
+input message. Any ordering of values is allowed, but you
+will have to remember more carefully if you make a non-obvious
+sequence of values to match. Because the counter is cycling up over 16 steps
+we can use something like <code>[select 4 12]</code> to place a couple of
+beats in the 4 and 12 positions of a 16 beat bar.
+If we say <code>[select 0 2 4 6 8 10 12 14]</code> we will get eight
+beats on the offbeat, each activating a different bang output. That's
+pretty useful, so all we have to do to create a short melody is
+combine select with some messages. The value in the select
+box represents the timing pattern, the message boxes contain notes.
+The notes get out of the patch through <code>[outlet notes]</code> from
+where they will be connected to the synth. 
+
+<DIV ALIGN="CENTER"><A NAME="fig::bassline-seq"></A><A NAME="255"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+bassline-seq</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="485" HEIGHT="233" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/C-bassline-seq}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html6"
+  HREF="resources/puredata/C-bassline-seq.pd">C-bassline-seq.pd</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html130"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html128"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html122"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html131"
+  HREF="node5.html">Playing the bass line</A>
+<B> Up:</B> <A NAME="tex2html129"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html123"
+  HREF="node3.html">synth 1</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

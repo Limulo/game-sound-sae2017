@@ -1,0 +1,7 @@
+\paragraph{many channels}
+This abstraction is repeated many times in the composition, it's a mixer channel
+that sends to the main bus using \verb+[throw~]+. It has it's own \verb+[line~]+
+unit which is controlled via \verb+[inlet volume]+ and \verb+[inlet pan]+ which
+carries a value in degrees from -90 to +90. In this case we have made an unusual
+compromise between mono and stereo sources by having a stereo signal panned midfield
+at a width of 60 degrees, which leaves it 120 degrees of movement. 

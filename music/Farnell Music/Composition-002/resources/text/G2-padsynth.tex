@@ -1,0 +1,13 @@
+\paragraph{synth gubbins}
+All the notes from the chord are unpacked and sent to separate oscillators.
+A \verb+[phasorblock]+ each contains 4 phasors so we have one half of
+the chord going to the left side, and the other to the right side
+of a stereo chorus/delay. The amplitude decay time of the synth, which
+is processed by \verb+[stereoamp]+, is set to
+4 times the current period, so it will move automatically if there
+is any tempo change. Locking synth parameters to global variables
+like tempo is very useful, you may have many lfos all running
+in synchrony if you use a fast timebase by running the metro
+at 16 times the drum speed to broadcast a \verb+time+ value from
+which message rate lfos can be derived.
+  

@@ -1,0 +1,16 @@
+\paragraph{Play the bassline}
+The bass synth, bass line sequencer and timebase abstractions 
+\verb+[A-timebase]+, \verb+[B-synth1]+, and \verb+[C-bassline-seq]+
+work together in this patch to make a sound.
+Audio signals are sent using \verb+[throw~]+
+and \verb+[catch~]+ objects, so that we can combine many synths as we go.
+There is link below to a soundfile of this sequence. Notice the very
+basic envelope produces clicks with such low frequencies.
+
+\paragraph{Broadcasting variables}
+The patch is split up to make adding more synths easier. Floats from
+the timebase are sent between \verb+[s time]+ and \verb+[r time]+
+objects, send and receive. Think of these as bluetooth adaptors or
+invisible cables for puredata signals, they exist in unique pairs,
+several \verb+[send]+ transmitters cannot share a \verb+[receive]+
+

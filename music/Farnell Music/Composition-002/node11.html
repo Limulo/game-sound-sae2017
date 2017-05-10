@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>strings</TITLE>
+<META NAME="description" CONTENT="strings">
+<META NAME="keywords" CONTENT="Composition-002">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-002.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="Composition-002.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html440"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html438"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html432"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html441"
+  HREF="node12.html">Composition002-play</A>
+<B> Up:</B> <A NAME="tex2html439"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html433"
+  HREF="node10.html">sawswoop</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html442"
+  HREF="node11.html#SECTION000111000000000000000">stringy resonances</A>
+<UL>
+<LI><A NAME="tex2html443"
+  HREF="node11.html#SECTION000111010000000000000">strings patch</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html444"
+  HREF="node11.html#SECTION000112000000000000000">stringy resonances</A>
+<UL>
+<LI><A NAME="tex2html445"
+  HREF="node11.html#SECTION000112010000000000000">experimental string sound</A>
+<LI><A NAME="tex2html446"
+  HREF="node11.html#SECTION000112020000000000000">random parameters</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html447"
+  HREF="node11.html#SECTION000113000000000000000">play the strings</A>
+<UL>
+<LI><A NAME="tex2html448"
+  HREF="node11.html#SECTION000113010000000000000">strange harmonics</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION000110000000000000000">
+strings</A>
+</H1>
+
+<H2><A NAME="SECTION000111000000000000000">
+stringy resonances</A>
+</H2>
+Figure <A HREF="#fig::M1-strings">42</A> summary
+
+<UL>
+<LI>hollow brassy/stringy
+</LI>
+<LI>randomised synth parameters
+</LI>
+<LI>note selector
+</LI>
+<LI>fixed synth parameters
+</LI>
+<LI>usual synth abstraction
+</LI>
+</UL>
+<H4><A NAME="SECTION000111010000000000000">
+strings patch</A>
+</H4>
+An extremely simple wrapper, all the interesting stuff is in the <code>[hollowstrings]</code>
+subpatch.
+
+<DIV ALIGN="CENTER"><A NAME="fig::M1-strings"></A><A NAME="872"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 42:</STRONG>
+M1-strings</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="186" HEIGHT="205" ALIGN="BOTTOM" BORDER="0"
+ SRC="img46.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/M1-strings}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html90"
+  HREF="resources/puredata/M1-strings.pd">M1-strings.pd</A>
+<P>
+
+<H2><A NAME="SECTION000112000000000000000">
+stringy resonances</A>
+</H2>
+Figure <A HREF="#fig::M2-hollowstrings">43</A> summary
+
+<UL>
+<LI>random parameters for synth
+</LI>
+<LI>fixed synth parameters
+</LI>
+</UL>
+<H4><A NAME="SECTION000112010000000000000">
+experimental string sound</A>
+</H4>
+Just to show that you don't always have to break up your code into
+neat boxes for synths, sequencer and effects here is a strange
+instrument that is all in the same abstraction. It uses the familiar
+<code>[z-3cosynth]</code> and operates on notes 7 and 8 of the chord an
+octave down. 
+
+<P>
+
+<H4><A NAME="SECTION000112020000000000000">
+random parameters</A>
+</H4>
+Sometimes when exploring a new synth you might like to hook up
+a set of objects as on the top right of this patch, which generate
+random parameters within a fixed range. This setup produces
+a constantly changing variation on a string-like sound, somewhat
+hollow and scrapey. See how the dynamic parameters are freely interleaved with fixed
+ones in the substitution.
+
+<DIV ALIGN="CENTER"><A NAME="fig::M2-hollowstrings"></A><A NAME="879"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 43:</STRONG>
+M2-hollowstrings</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="695" HEIGHT="648" ALIGN="BOTTOM" BORDER="0"
+ SRC="img47.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/M2-hollowstrings}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html92"
+  HREF="resources/puredata/M2-hollowstrings.pd">M2-hollowstrings.pd</A>
+<P>
+
+<H2><A NAME="SECTION000113000000000000000">
+play the strings</A>
+</H2>
+Figure <A HREF="#fig::M3-strings">44</A> summary
+
+<H4><A NAME="SECTION000113010000000000000">
+strange harmonics</A>
+</H4>
+This part sounds quite weird alone. It was designed with the rest
+of the mix playing and fits in by offering some tones that are
+inharmonic and much more organic than the rest.
+It has an ambiguous timbre, sometimes stringy and sometimes more brass-like,
+but it does the job of pulling together some of the more disparate
+higher bits by providing ground between them.
+
+<DIV ALIGN="CENTER"><A NAME="fig::M3-strings"></A><A NAME="886"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 44:</STRONG>
+M3-strings</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="685" HEIGHT="277" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/M3-strings-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html94"
+  HREF="resources/puredata/M3-strings-play.pd">M3-strings-play.pd</A>
+<A NAME="tex2html95"
+  HREF="resources/sound/M3-strings-play.ogg">M3-strings-play.ogg</A>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html440"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html438"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html432"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html441"
+  HREF="node12.html">Composition002-play</A>
+<B> Up:</B> <A NAME="tex2html439"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html433"
+  HREF="node10.html">sawswoop</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

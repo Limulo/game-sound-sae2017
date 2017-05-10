@@ -1,0 +1,394 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>stereo-pads</TITLE>
+<META NAME="description" CONTENT="stereo-pads">
+<META NAME="keywords" CONTENT="Composition-002">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-002.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="Composition-002.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html301"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html299"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html293"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html302"
+  HREF="node6.html">drums</A>
+<B> Up:</B> <A NAME="tex2html300"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html294"
+  HREF="node4.html">score</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html303"
+  HREF="node5.html#SECTION00051000000000000000">stereo pads</A>
+<UL>
+<LI><A NAME="tex2html304"
+  HREF="node5.html#SECTION00051010000000000000">First synthesiser wrapper</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html305"
+  HREF="node5.html#SECTION00052000000000000000">pad synth</A>
+<UL>
+<LI><A NAME="tex2html306"
+  HREF="node5.html#SECTION00052010000000000000">synth gubbins</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html307"
+  HREF="node5.html#SECTION00053000000000000000">oscillator bank</A>
+<UL>
+<LI><A NAME="tex2html308"
+  HREF="node5.html#SECTION00053010000000000000">phasor bank</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html309"
+  HREF="node5.html#SECTION00054000000000000000">stereo pan delay</A>
+<UL>
+<LI><A NAME="tex2html310"
+  HREF="node5.html#SECTION00054010000000000000">tones for composing with</A>
+<LI><A NAME="tex2html311"
+  HREF="node5.html#SECTION00054020000000000000">deep swirly effect</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html312"
+  HREF="node5.html#SECTION00055000000000000000">stereo amp</A>
+<UL>
+<LI><A NAME="tex2html313"
+  HREF="node5.html#SECTION00055010000000000000">long amplitude envelope</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html314"
+  HREF="node5.html#SECTION00056000000000000000">play the pad line</A>
+<UL>
+<LI><A NAME="tex2html315"
+  HREF="node5.html#SECTION00056010000000000000">sound of the pad synth</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00050000000000000000">
+stereo-pads</A>
+</H1>
+
+<H2><A NAME="SECTION00051000000000000000">
+stereo pads</A>
+</H2>
+Figure <A HREF="#fig::G1-stereo-pads">8</A> summary
+
+<UL>
+<LI>wrapper for synth and channel
+</LI>
+<LI>receive global chord list
+</LI>
+<LI>play it all as pad
+</LI>
+</UL>
+<H4><A NAME="SECTION00051010000000000000">
+First synthesiser wrapper</A>
+</H4>
+This patch is typical of a wrapper. It is mainly a way to tuck two or three
+related things in a box together. We have a synth part which is going to play some
+audio and all the global messages needed to make that work, in this case only
+<code>[r chords]</code>, and we have a mixer channel with a few extras to implement a 
+channel mute.
+
+<DIV ALIGN="CENTER"><A NAME="fig::G1-stereo-pads"></A><A NAME="634"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8:</STRONG>
+G1-stereo-pads</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="290" HEIGHT="231" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/G1-stereo-pads}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html16"
+  HREF="resources/puredata/G1-stereo-pads.pd">G1-stereo-pads.pd</A>
+<P>
+
+<H2><A NAME="SECTION00052000000000000000">
+pad synth</A>
+</H2>
+Figure <A HREF="#fig::G2-padsynth">9</A> summary
+
+<UL>
+<LI>unpack 8 notes
+</LI>
+<LI>2 x oscillator bank
+</LI>
+<LI>panning and effects
+</LI>
+</UL>
+<H4><A NAME="SECTION00052010000000000000">
+synth gubbins</A>
+</H4>
+All the notes from the chord are unpacked and sent to separate oscillators.
+A <code>[phasorblock]</code> each contains 4 phasors so we have one half of
+the chord going to the left side, and the other to the right side
+of a stereo chorus/delay. The amplitude decay time of the synth, which
+is processed by <code>[stereoamp]</code>, is set to
+4 times the current period, so it will move automatically if there
+is any tempo change. Locking synth parameters to global variables
+like tempo is very useful, you may have many lfos all running
+in synchrony if you use a fast timebase by running the metro
+at 16 times the drum speed to broadcast a <code>time</code> value from
+which message rate lfos can be derived.
+
+<DIV ALIGN="CENTER"><A NAME="fig::G2-padsynth"></A><A NAME="641"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 9:</STRONG>
+G2-padsynth</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="470" HEIGHT="388" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/G2-padsynth}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html18"
+  HREF="resources/puredata/G2-padsynth.pd">G2-padsynth.pd</A>
+<P>
+
+<H2><A NAME="SECTION00053000000000000000">
+oscillator bank</A>
+</H2>
+Figure <A HREF="#fig::G3-phasorblock">10</A> summary
+
+<UL>
+<LI>4 x phasor
+</LI>
+<LI>separate [mtof]
+</LI>
+<LI>remove dc offset
+</LI>
+<LI>scale quite low
+</LI>
+</UL>
+<H4><A NAME="SECTION00053010000000000000">
+phasor bank</A>
+</H4>
+Bunching up a load of osc sources in one signal abstraction is quite typical
+but with phasors we need to remember to remove the DC offset
+because a phasor is not symmetrical about zero. There are clever
+ways to reuse a <code>[mtof]</code> if we have lists of notes, but it
+is a very inexpensive unit so we opt to have separate inlets
+and separate <code>[mtof]</code> for each voice. 
+
+<DIV ALIGN="CENTER"><A NAME="fig::G3-phasorblock"></A><A NAME="648"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 10:</STRONG>
+G3-phasorblock</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="512" HEIGHT="250" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/G3-phasorblock}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html20"
+  HREF="resources/puredata/G3-phasorblock.pd">G3-phasorblock.pd</A>
+<P>
+
+<H2><A NAME="SECTION00054000000000000000">
+stereo pan delay</A>
+</H2>
+Figure <A HREF="#fig::G4-stereopandelay">11</A> summary
+
+<UL>
+<LI>slowly moving random line
+</LI>
+<LI>variable delay for pitch shifting
+</LI>
+</UL>
+<H4><A NAME="SECTION00054010000000000000">
+tones for composing with</A>
+</H4>
+When setting the mood for a piece by choosing some
+chords it often helps to use "big" sounds.
+Rich sounds in certain timbres suggest things
+harmonically. Pure sine waves don't give the potential
+for suggesting harmonically related chords because they
+have no overtones of their own. A way to get a richer sound
+from fairly weak sawtooth waves is to employ a chorus or
+vari-delay effect. 
+
+<P>
+
+<H4><A NAME="SECTION00054020000000000000">
+deep swirly effect</A>
+</H4>
+Instead of a regular lfo that sweeps back and forth over
+a fixed period we have a wandering control signal. This 
+is used to sweep two bandpass filters with a slightly less
+bright version going to the delay. Delay unit <code>[vd~ $0-ffff]</code>
+is a vari-rate delay with its time in the range 10 ms to 50 ms and
+swept by the same wandering signal. This results is a rather
+old fashioned, warped kind of effect with occasional fast
+excursion that make the sound go out of tune.
+
+<DIV ALIGN="CENTER"><A NAME="fig::G4-stereopandelay"></A><A NAME="655"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 11:</STRONG>
+G4-stereopandelay</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="484" HEIGHT="580" ALIGN="BOTTOM" BORDER="0"
+ SRC="img15.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/G4-stereopandelay}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html22"
+  HREF="resources/puredata/G4-stereopandelay.pd">G4-stereopandelay.pd</A>
+<P>
+
+<H2><A NAME="SECTION00055000000000000000">
+stereo amp</A>
+</H2>
+Figure <A HREF="#fig::G5-stereoamp">12</A> summary
+
+<UL>
+<LI>long envelope
+</LI>
+<LI>channels linked
+</LI>
+</UL>
+<H4><A NAME="SECTION00055010000000000000">
+long amplitude envelope</A>
+</H4>
+To control both left and right outputs of
+the chorus together we need a stereo 
+envelope. The control signal holds
+for about twice the decay time, which
+in this case is 16 times the period. Look
+back to the <code>[padsynth]</code> to see we
+used 4 times the period. This gives a soft
+fall to the pads so they don't play
+in a constant dirge, slightly more string-like
+than organ.
+
+<DIV ALIGN="CENTER"><A NAME="fig::G5-stereoamp"></A><A NAME="662"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 12:</STRONG>
+G5-stereoamp</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="418" HEIGHT="325" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/G5-stereoamp}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html24"
+  HREF="resources/puredata/G5-stereoamp.pd">G5-stereoamp.pd</A>
+<P>
+
+<H2><A NAME="SECTION00056000000000000000">
+play the pad line</A>
+</H2>
+Figure <A HREF="#fig::G6-pad-line">13</A> summary
+
+<H4><A NAME="SECTION00056010000000000000">
+sound of the pad synth</A>
+</H4>
+Only one fader is up on the GUI, panned to the middle.
+There are no other parts in the piece at present.
+Experiment with panning and fading the part. Test out the
+on/off (unmute buttons) and resetting the timebase. Try
+putting different notes in the score chord lists.
+
+<DIV ALIGN="CENTER"><A NAME="fig::G6-pad-line"></A><A NAME="669"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 13:</STRONG>
+G6-pad-line</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="685" HEIGHT="275" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/G6-pad-line-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html26"
+  HREF="resources/puredata/G6-pad-line-play.pd">G6-pad-line-play.pd</A>
+<A NAME="tex2html27"
+  HREF="resources/sound/G6-pad-line-play.ogg">G6-pad-line-play.ogg</A>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html301"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html299"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html293"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html302"
+  HREF="node6.html">drums</A>
+<B> Up:</B> <A NAME="tex2html300"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html294"
+  HREF="node4.html">score</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

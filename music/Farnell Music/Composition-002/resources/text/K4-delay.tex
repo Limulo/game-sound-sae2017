@@ -1,0 +1,19 @@
+\paragraph{center left delay}
+Here is the delay at the heart of most our effects so far. In the feedback
+circuit is a filter to limit recirculating signals to the midrange.
+\verb+[clip]+ is added defensively to make sure that a feedback greater than
+0.9 is never sent by accident.
+Delays work using pairs of objects in Puredata, one is to send to
+the buffer and the other to read from it. The second parameter of the 
+\verb+[delwrite]+ object allocates memory, in milliseconds (times the
+current sample rate). The names of reads and writes must match and should
+be uniqe to that pair of objects in most uses, although many reads from
+the same write is okay for multi-tap reverbs. Time may be varied on
+\verb+[delread]+ via the first inlet with a float message, but this
+causes unpredictable clicks as you might expect.
+Signals arriving at the inlet go first to left and right outlets, and
+then the delayed signal appears on the left channel only. You can create
+many variations on the basic stereo delay effect each with their own
+unique uses and applications. A ping pong is a delay that exchanges left
+and right in the feedback, a lcr distributes delays left, center, right, and
+so on. 

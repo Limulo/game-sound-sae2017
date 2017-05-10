@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>random sine wave with controls</TITLE>
+<META NAME="description" CONTENT="random sine wave with controls">
+<META NAME="keywords" CONTENT="Composition-000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-000.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="Composition-000.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html110"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html108"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html102"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html111"
+  HREF="node6.html">Subpatched oscillator</A>
+<B> Up:</B> <A NAME="tex2html109"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html103"
+  HREF="node4.html">random midi note sine</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html112"
+  HREF="node5.html#SECTION00050010000000000000">Slider Controls</A>
+<LI><A NAME="tex2html113"
+  HREF="node5.html#SECTION00050020000000000000">Scaling amplitude</A>
+<LI><A NAME="tex2html114"
+  HREF="node5.html#SECTION00050030000000000000">Signal ordering with triggers</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00050000000000000000">
+random sine wave with controls</A>
+</H1>
+Figure <A HREF="#fig::random-sine-controls">4</A> summary
+
+<UL>
+<LI>slider controls rate
+</LI>
+<LI>every 200 ms
+</LI>
+<LI>order bang messages
+</LI>
+<LI>random between 0 and 100
+</LI>
+<LI>divide by 100 to get between 0 and 1
+</LI>
+<LI>amplitude control
+</LI>
+<LI>be quieter
+</LI>
+</UL>
+<H4><A NAME="SECTION00050010000000000000">
+Slider Controls</A>
+</H4>
+A slider can be placed anywhere you want to vary something by connecting
+directly to it. In this case we have slider outlet going to metronome
+period inlet. You should set slider properties such as colour, range
+and size by right clicking and using the <code>[properties]</code> dialog. Range
+is most often important. Here the slider goes between 10 and a few hundred,
+so that we never tell the metronome to have a period of zero (which makes
+a very strange noise sometimes). Another useful property to set is  
+<code>[init]</code>, which makes the slider remember the last value set when
+you save and reload a patch.
+
+<P>
+
+<H4><A NAME="SECTION00050020000000000000">
+Scaling amplitude</A>
+</H4>
+Now we vary the amplitude of the oscillator so some notes
+to play more more quietly and some more loudly. 
+Thinking about appropriate ranges, to scale a signal we want to multiply
+it by a number between 0 and 1. At zero we will have complete silence, because
+anything multiplied by 0 is 0, and at 1 the signal will be at its normal
+strength. But <code>[random]</code> only gives us integers. To get a normalised 
+signal, 0 to 1, we divide the output of <code>[random]</code>
+by the same value as its range minus one. Using the value of 100 we get one hundred possible
+steps now mapped between 0 and 1, <!-- MATH
+ ${0.01, 0.02, 0.03...0.99}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="145" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$ {0.01, 0.02, 0.03...0.99}$"></SPAN> which can be used
+to scale the audio. Notice that it doesn't matter which side of the (symmetrical)
+<code>[*~]</code> object we connect control signal or audio signal to.
+
+<P>
+
+<H4><A NAME="SECTION00050030000000000000">
+Signal ordering with triggers</A>
+</H4>
+Sometimes it matters which way you connect objects because of the order you want
+things to happen. A trigger is like a splitter that can be used to keep program diagrams
+neat and logical. It's evaluation order goes right to left so in this case the random
+number affecting frequency is computed before the random number for amplitude. You will
+hear no difference if you swap the ordering on this simple patch, but in more complex
+Pd programs the ordering becomes important.
+
+<DIV ALIGN="CENTER"><A NAME="fig::random-sine-controls"></A><A NAME="165"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 4:</STRONG>
+random-sine-controls</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="414" HEIGHT="420" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-000/images/D-random-sine-controls-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html11"
+  HREF="resources/puredata/D-random-sine-controls-play.pd">D-random-sine-controls-play.pd</A>
+<A NAME="tex2html12"
+  HREF="resources/sound/D-random-sine-controls-play.ogg">D-random-sine-controls-play.ogg</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html110"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html108"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html102"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html111"
+  HREF="node6.html">Subpatched oscillator</A>
+<B> Up:</B> <A NAME="tex2html109"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html103"
+  HREF="node4.html">random midi note sine</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

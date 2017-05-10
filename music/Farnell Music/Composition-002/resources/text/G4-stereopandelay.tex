@@ -1,0 +1,19 @@
+\paragraph{tones for composing with}
+When setting the mood for a piece by choosing some
+chords it often helps to use "big" sounds.
+Rich sounds in certain timbres suggest things
+harmonically. Pure sine waves don't give the potential
+for suggesting harmonically related chords because they
+have no overtones of their own. A way to get a richer sound
+from fairly weak sawtooth waves is to employ a chorus or
+vari-delay effect. 
+
+\paragraph{deep swirly effect}
+Instead of a regular lfo that sweeps back and forth over
+a fixed period we have a wandering control signal. This 
+is used to sweep two bandpass filters with a slightly less
+bright version going to the delay. Delay unit \verb+[vd~ $0-ffff]+
+is a vari-rate delay with its time in the range 10 ms to 50 ms and
+swept by the same wandering signal. This results is a rather
+old fashioned, warped kind of effect with occasional fast
+excursion that make the sound go out of tune.

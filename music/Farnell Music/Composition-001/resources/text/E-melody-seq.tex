@@ -1,0 +1,25 @@
+\paragraph{Sequencing the melody}
+Wiring up \verb+[select]+ objects is fine for making fixed patterns
+like rhythms to store away, but not much use when you want to
+change a sequence rapidly without breaking connections. 
+This time the sequence is still fixed in a particular order, just 4 steps
+that cycle round, but the values at each position are variable. This
+is sometimes called an arpeggiator, an 8 or 16 step sequencer found on
+many old analogue modular synths.
+
+\paragraph{Unpacking lists}
+Instead of sending each of the four notes separately into this 
+sequencer abstraction we have just one inlet \verb+[inlet note sequence]+, that carries a list like \verb+[12 34 56 78(+.
+The \verb+[select]+ is fed by \verb+[mod 4]+ and sends a bang to each
+of 4 outputs in turn. These cause successive \verb+[f]+ boxes to output
+the float stored in them. To get the note numbers from the list we 
+use \verb+[unpack]+ to split up the list and distribute the numbers,
+to the left inlet of each float box. The sequence message is always unpacked
+in the same left to right ordering, but remember the values appear at the
+outlets of \verb+[unpack]+ in right to left evaluation order just as with
+any Puredata object.
+
+\paragraph{Transposition}
+With a wire carrying note numbers as individual floats its easy to transpose, here we add
+an octave with \verb@[+ 12]@ . The third inlet, \verb+[inlet transpose]+ provides a way to control the
+transposition from the outside.

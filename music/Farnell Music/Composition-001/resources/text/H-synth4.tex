@@ -1,0 +1,27 @@
+\paragraph{Poly synth}
+To make chords we need more than one note. Although we could treat
+each synth as a monophonic instrument and build up harmonies by
+careful sequencing, sometimes we like to be able to specify block
+chords that will be played in a polyphonic way. To do this we first
+design a single voice of the instrument. This synth is a variation
+on our first sinewave instrument. It has a vibrato
+and MIDI note input. Control of the final signal amplitude is
+just one multiply, so the instrument is not capable of playing 
+separate notes as such, only chords that start and end together.
+
+
+\paragraph{3 voice synth}
+You can see three of the voices arranged with the frequency of each controlled
+by the corresponding outlet of the \verb+[unpack]+ unit. \verb+[unpack]+ splits up the list of notes sent
+as a chord by the sequencer. We separated the envelope trigger
+from the note list using [t l b] and use the bang to
+activate the envelope message box. 
+
+
+\paragraph{ASR envelope}
+Notice also that the message to \verb+[vline~]+ has a softer attack
+and a significant delay before the decay stage, which
+causes the chord to rise in 35ms and hold for a further 165ms, the remainder 
+of the delay time, then fall to zero in 100ms each time it
+plays. Because 3 voices will be playing at normalised level we need to
+divide the output signal by 3 to get it back into a normalised range.

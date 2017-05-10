@@ -1,0 +1,8 @@
+\paragraph{half a chance}
+We keep using the technique of choosing an event based on
+a half probability. Let's make that an abstraction and choose
+a smarter way to do it. Instead of passing a values with
+a spigot after they are chosen (with certainty), remove events
+from a stream before they trigger anything. It's very
+simple, for each bang on the inlet choose \verb+[random 2]+, value of 
+0 or 1, and \verb+[select 1]+ to get only half of them.

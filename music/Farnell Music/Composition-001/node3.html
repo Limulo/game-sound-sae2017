@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>synth 1</TITLE>
+<META NAME="description" CONTENT="synth 1">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html118"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html116"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html110"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html119"
+  HREF="node4.html">bassline sequencer</A>
+<B> Up:</B> <A NAME="tex2html117"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html111"
+  HREF="node2.html">counting timebase</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html120"
+  HREF="node3.html#SECTION00030010000000000000">A simple 1 oscillator synth</A>
+<LI><A NAME="tex2html121"
+  HREF="node3.html#SECTION00030020000000000000">MIDI control of frequency</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00030000000000000000">
+synth 1</A>
+</H1>
+Figure <A HREF="#fig::synth1">2</A> summary
+
+<UL>
+<LI>trigger envelope
+</LI>
+<LI>set attack and decay
+</LI>
+<LI>MIDI to Hz
+</LI>
+<LI>line object
+</LI>
+<LI>amplitude envelope
+</LI>
+</UL>
+<H4><A NAME="SECTION00030010000000000000">
+A simple 1 oscillator synth</A>
+</H4>
+We need some sounds. If we take a <code>[osc~]</code> oscillator and multiply it
+by a falling line that will give us a basic decaying tone. The <code>[osc~]</code> oscillator has
+frequency as its first control inlet and one audio signal output. We want an
+amplitude envelope control signal that starts off at maximum and decays away to zero. The
+<code>[line~]</code> generator takes message arguments of the form (level to go
+to, time to get there), so a message <code>[1 0(</code> will send the line 
+to a value of 1 in 0 milliseconds. Sending a further message like
+<code>[0 700(</code> will set it moving back to zero
+over 700 ms.   <code>[1 0, 0 700(</code> is a pair of messages
+in a single message box. The comma causes both messages to be sent in left to
+right order instantly, so this will send the
+line to one in 0 milliseconds, and then back to zero in 700ms.  A line envelope is a powerful component of more
+complex controls, we will also meet its more versatile brother
+<code>[vline~]</code> shortly. The result of multiplying the sinewave signal by the line is a pure
+tone that decays away. 
+
+<P>
+
+<H4><A NAME="SECTION00030020000000000000">
+MIDI control of frequency</A>
+</H4>
+In order to control this synth with MIDI notes instead of Hz frequency let's
+add a <code>[mtof]</code> object. Notes appearing at the <code>[inlet]</code> will now be converted to Hz
+before being sent to the oscillators frequency inlet.
+
+<DIV ALIGN="CENTER"><A NAME="fig::synth1"></A><A NAME="248"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2:</STRONG>
+synth1</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="422" HEIGHT="218" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/B-synth1}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html4"
+  HREF="resources/puredata/B-synth1.pd">B-synth1.pd</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html118"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html116"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html110"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html119"
+  HREF="node4.html">bassline sequencer</A>
+<B> Up:</B> <A NAME="tex2html117"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html111"
+  HREF="node2.html">counting timebase</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

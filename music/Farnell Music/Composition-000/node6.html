@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Subpatched oscillator</TITLE>
+<META NAME="description" CONTENT="Subpatched oscillator">
+<META NAME="keywords" CONTENT="Composition-000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-000.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="Composition-000.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html123"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html121"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html115"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html124"
+  HREF="node7.html">subpatched sine wave gens</A>
+<B> Up:</B> <A NAME="tex2html122"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html116"
+  HREF="node5.html">random sine wave with</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html125"
+  HREF="node6.html#SECTION00060010000000000000">Subpatching</A>
+<LI><A NAME="tex2html126"
+  HREF="node6.html#SECTION00060020000000000000">Sub-patching the oscillator</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00060000000000000000">
+Subpatched oscillator</A>
+</H1>
+Figure <A HREF="#fig::subpatched-oscillator">5</A> summary
+
+<UL>
+<LI>inlet boxes connect to outside
+</LI>
+<LI>reusable code inside
+</LI>
+<LI>audio rate output
+</LI>
+</UL>
+<H4><A NAME="SECTION00060010000000000000">
+Subpatching</A>
+</H4>
+If we want to tidy away a whole bunch of code into its own box we can
+use subpatches. Begin by creating a new object whose name begins with the
+letters pd and then a space. You can make the remainder of the name anything
+you like, including spaces and further symbols to help you remember parameter
+inputs if you want, but these have no formal effect.
+Once created the subpatch will automatically open and
+you can copy and paste code into it, or write new code inside. A subpatch
+is a child of the main window and does not need saving separately.
+
+<P>
+
+<H4><A NAME="SECTION00060020000000000000">
+Sub-patching the oscillator</A>
+</H4>
+For every inlet box placed inside a subpatch a corresponding cable inlet  
+appears on the subpatch box. Here we have split the previous patch at
+the point where MIDI notes and amplitude messages can be separated from
+the oscillator, and placed the oscillator inside its own box along with
+a <code>[mtof]</code> convertor. It's nice to tidy patches this way, but the real
+reason for subpatches is to allow easy reuse of code. You should generally
+make a subpatch of anything you may wish to use more than once. The outlet
+of the subpatch is an audio rate connection, so observe the tilde in the
+<code>[outlet~]</code> box.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::subpatched-oscillator"></A><A NAME="172"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5:</STRONG>
+subpatched-oscillator</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="344" HEIGHT="297" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-000/images/E-subpatched-oscillator}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html14"
+  HREF="resources/puredata/E-subpatched-oscillator.pd">E-subpatched-oscillator.pd</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html123"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html121"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html115"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html124"
+  HREF="node7.html">subpatched sine wave gens</A>
+<B> Up:</B> <A NAME="tex2html122"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html116"
+  HREF="node5.html">random sine wave with</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

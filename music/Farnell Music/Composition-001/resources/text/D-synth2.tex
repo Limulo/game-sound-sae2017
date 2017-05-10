@@ -1,0 +1,49 @@
+\paragraph{A better envelope}
+Instead of \verb+[line~]+ we have used \verb+[vline~]+ 
+which takes slightly different arguments. The \verb+[vline~]+  generator
+takes message arguments of the form (level to go to, time to get
+there, delay to wait), so a message like \verb+[1 12 0, 0 400 12(+ will send
+the line to one in twelve milliseconds, and then begin moving back to
+zero over four hundred milliseconds after a 12 millisecond delay.
+This allows for envelopes with a long attack phase to be specified in
+a single message. If we sent something like \verb+[1 100, 0 20(+ to 
+\verb+[line~]+ it would not work. Why? Because the first message of
+the pair says go to 1 in 100ms but \verb+[line~]+ immediately
+starts moving towards 0 in 20s the instant it receives the second message,
+just after receiving the first. \verb+[line~]+ is an unscheduled
+segment generator, while \verb+[vline~]+ is scheduled and can have
+multiple stages all specified in the same message.
+ 
+\paragraph{Amplitude curve}
+To make the amplitude value decay away more quickly near the beginning we take
+the square of the signal. This works because the output of \verb+[vline~]+
+is normalised 0 to 1. If we use \verb+[*~]+ to multiply a signal by
+itself  we get its square as ${x \times x = x^2}$. One squared is
+one and zero squared is zero, but how does the value change over this range?
+It becomes curved, its rate of change becomes proportional to its value, so
+it dies away more quickly at the start. 
+
+\paragraph{Vibrato}
+Midi note numbers are converted to Hz as before, and this time we add
+a constantly changing signal of amplitude 3 from another much slower
+oscillator running at 8Hz. Note that we used \verb@[+~]@, the signal
+version of add here even though the frequency value is a message.
+Because the lfo sine wave is symmetrical about zero the average pitch
+will still be that given by \verb+[mtof]+.
+
+\paragraph{Timbre change}
+We shape the output of our oscillator to give a different
+tone from the first synth. A "square wave"\dag \ref{squaremeaning} is obtained by
+clipping the range of the cosine wave . This effectively
+chops the top and bottom of the waveform off. \verb+[clip~ -1 1]+
+would have no effect on a normalised signal, \verb+[clip~ -0.5 0.5]+
+will chop off half the top and bottom. \verb+[clip~ -0.1 0.1]+
+removes all but the 10 percent closest to 0 creating flattened
+top. Multiplying it by a compensation factor brings the clipped wave back up to an audible level. As before
+we scale the signal path by the amplitude envelope using \verb+[*~]+
+
+\paragraph{Notes}
+\dag \label{squaremeaning}The word \verb+"square"+ is used in two ways on this page. When we create a square-wave
+we are distorting a wave so that its shape appears square. When we take the square of a signal
+we multiply it by itself. These are two different things.
+ 

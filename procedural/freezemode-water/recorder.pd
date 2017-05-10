@@ -1,0 +1,24 @@
+#N canvas 233 488 275 355 10;
+#X obj 14 278 dac~;
+#X obj 52 278 writesf~ 2;
+#X msg 62 224 start;
+#X msg 110 224 stop;
+#X obj 110 110 bng 15 250 50 0 empty empty record 17 7 0 10 -262144
+-1 -1;
+#X obj 110 135 bng 15 250 50 0 empty empty stop 17 7 0 10 -262144 -1
+-1;
+#X obj 14 251 inlet~;
+#X obj 109 251 inlet~;
+#X obj 52 170 savepanel;
+#X msg 52 197 open -bytes 4 \$1 \, start;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 8 0;
+#X connect 5 0 3 0;
+#X connect 6 0 0 0;
+#X connect 6 0 1 0;
+#X connect 7 0 0 1;
+#X connect 7 0 1 1;
+#X connect 8 0 9 0;
+#X connect 9 0 1 0;
+#X coords 0 -1 1 1 71 60 2 100 100;

@@ -1,0 +1,16 @@
+\paragraph{start and stop}
+Inlet \verb+[inlet start-stop]+ receives a Boolean value, 1 to start
+the metro in the masterclock and 0 to stop it. Each time this
+toggles the default period is broadcast and the clock period refreshed.
+A toggle input box on the transport GUI sends this value. Also 
+on the transport GUI is a bang button which is received by \verb+[r zero]+
+to set the time counter back to 0.
+
+\paragraph{output values}
+Four different messages are continuously sent by the masterclock, 
+\verb+[s trig]+ emits bangs on every single beat of the metro, 
+\verb+[s scoretime]+ sends a float representing the time for the conductor of the score, 
+\verb+[s drumtime]+ is always a beat ahead of the scoretime 
+\verb+[s synthtime]+ moves at half the regular rate. We don't use all these time values 
+in this composition but this is a useful way to output time values, so that score changes 
+can be processed one step ahead of the main timeline.

@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>plucks</TITLE>
+<META NAME="description" CONTENT="plucks">
+<META NAME="keywords" CONTENT="Composition-002">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-002.css">
+
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="Composition-002.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html381"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html379"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html373"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html382"
+  HREF="node9.html">arp</A>
+<B> Up:</B> <A NAME="tex2html380"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html374"
+  HREF="node7.html">bassline</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html383"
+  HREF="node8.html#SECTION00081000000000000000">pluck strings</A>
+<UL>
+<LI><A NAME="tex2html384"
+  HREF="node8.html#SECTION00081010000000000000">another 3cos synth</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html385"
+  HREF="node8.html#SECTION00082000000000000000">random one of two</A>
+<UL>
+<LI><A NAME="tex2html386"
+  HREF="node8.html#SECTION00082010000000000000">half a chance</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html387"
+  HREF="node8.html#SECTION00083000000000000000">pluck sequence</A>
+<UL>
+<LI><A NAME="tex2html388"
+  HREF="node8.html#SECTION00083010000000000000">pizzy string motif</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html389"
+  HREF="node8.html#SECTION00084000000000000000">pluckstring wrapper</A>
+<UL>
+<LI><A NAME="tex2html390"
+  HREF="node8.html#SECTION00084010000000000000">identical synth with different parameters</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html391"
+  HREF="node8.html#SECTION00085000000000000000">play the plucks</A>
+<UL>
+<LI><A NAME="tex2html392"
+  HREF="node8.html#SECTION00085010000000000000">slapback delay</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00080000000000000000">
+plucks</A>
+</H1>
+
+<H2><A NAME="SECTION00081000000000000000">
+pluck strings</A>
+</H2>
+Figure <A HREF="#fig::J1-plucks">28</A> summary
+
+<UL>
+<LI>same synth as before with different program
+</LI>
+<LI>effects
+</LI>
+</UL>
+<H4><A NAME="SECTION00081010000000000000">
+another 3cos synth</A>
+</H4>
+Hardly any difference to the previous wrapper. Different
+delay and feedback times for the effects is all that is
+apparent at this level.
+
+<DIV ALIGN="CENTER"><A NAME="fig::J1-plucks"></A><A NAME="774"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 28:</STRONG>
+J1-plucks</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="490" HEIGHT="335" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/J1-plucks}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html59"
+  HREF="resources/puredata/J1-plucks.pd">J1-plucks.pd</A>
+<P>
+
+<H2><A NAME="SECTION00082000000000000000">
+random one of two</A>
+</H2>
+Figure <A HREF="#fig::J2-half-a-chance">29</A> summary
+
+<H4><A NAME="SECTION00082010000000000000">
+half a chance</A>
+</H4>
+We keep using the technique of choosing an event based on
+a half probability. Let's make that an abstraction and choose
+a smarter way to do it. Instead of passing a values with
+a spigot after they are chosen (with certainty), remove events
+from a stream before they trigger anything. It's very
+simple, for each bang on the inlet choose <code>[random 2]</code>, value of 
+0 or 1, and <code>[select 1]</code> to get only half of them.
+
+<DIV ALIGN="CENTER"><A NAME="fig::J2-half-a-chance"></A><A NAME="781"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 29:</STRONG>
+J2-half-a-chance</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="139" HEIGHT="145" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/J2-half-a-chance}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html61"
+  HREF="resources/puredata/J2-half-a-chance.pd">J2-half-a-chance.pd</A>
+<P>
+
+<H2><A NAME="SECTION00083000000000000000">
+pluck sequence</A>
+</H2>
+Figure <A HREF="#fig::J2-pluckseq">30</A> summary
+
+<UL>
+<LI>sparse cycling melody
+</LI>
+</UL>
+<H4><A NAME="SECTION00083010000000000000">
+pizzy string motif</A>
+</H4>
+Notes 5, 6, 7 and 8 are taken from the chord and repeatedly play
+a little motif 8 beats long. Beats 1, 2, 4 and 7 always play, but
+beat 3 is occasionally missing. 
+
+<DIV ALIGN="CENTER"><A NAME="fig::J2-pluckseq"></A><A NAME="788"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 30:</STRONG>
+J2-pluckseq</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="397" HEIGHT="310" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/J2-pluckseq}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html63"
+  HREF="resources/puredata/J2-pluckseq.pd">J2-pluckseq.pd</A>
+<P>
+
+<H2><A NAME="SECTION00084000000000000000">
+pluckstring wrapper</A>
+</H2>
+Figure <A HREF="#fig::J3-pluck-synth">31</A> summary
+
+<UL>
+<LI>different parameters
+</LI>
+<LI>same synth as before
+</LI>
+</UL>
+<H4><A NAME="SECTION00084010000000000000">
+identical synth with different parameters</A>
+</H4>
+Now see the powerful reuse possible with abstractions.
+Synth <code>[z-3cosynth]</code> is the same one used for the bass
+line but a different set of parameters in the list makes it 
+a plucked string sound instead.
+
+<DIV ALIGN="CENTER"><A NAME="fig::J3-pluck-synth"></A><A NAME="795"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 31:</STRONG>
+J3-pluck-synth</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="379" HEIGHT="150" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/J3-pluck-synth}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html65"
+  HREF="resources/puredata/J3-pluck-synth.pd">J3-pluck-synth.pd</A>
+<P>
+
+<H2><A NAME="SECTION00085000000000000000">
+play the plucks</A>
+</H2>
+Figure <A HREF="#fig::J4-pluck">32</A> summary
+
+<H4><A NAME="SECTION00085010000000000000">
+slapback delay</A>
+</H4>
+An important part of bringing this sound alive is the rather short
+delay time and feedback, half a beat, a common effect on
+twangy guitar and short percussives and often called a "slapback"
+delay. Delays shorter than a beat mimic early reverb reflections
+instead of distinct echos and can add a closeness to the sound.
+
+<DIV ALIGN="CENTER"><A NAME="fig::J4-pluck"></A><A NAME="802"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 32:</STRONG>
+J4-pluck</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="685" HEIGHT="277" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/J4-pluck-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html67"
+  HREF="resources/puredata/J4-pluck-play.pd">J4-pluck-play.pd</A>
+<A NAME="tex2html68"
+  HREF="resources/sound/J4-pluck-play.ogg">J4-pluck-play.ogg</A>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html381"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html379"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html373"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html382"
+  HREF="node9.html">arp</A>
+<B> Up:</B> <A NAME="tex2html380"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html374"
+  HREF="node7.html">bassline</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,9 @@
+\paragraph{detuned saws and filter}
+There's quite a lot to see in this synth and it's layout is 
+not easy to read. Basically, two phasors are at the
+core of the sound, detuned from each other so that one lags
+behind the other when they move but they eventually reach the
+same value. The summed phasors are filtered with 
+bandpass \verb+[bp~ 100 1]+ and clipped \verb+[clip~ -0.9 0.9]+. The 
+filter resonance is set quite high by an incoming parameter.
+

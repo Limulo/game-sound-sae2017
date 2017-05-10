@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Synopsis</TITLE>
+<META NAME="description" CONTENT="Synopsis">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="Composition-001.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html95"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html93"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html87"
+  HREF="Composition-001.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html96"
+  HREF="node2.html">counting timebase</A>
+<B> Up:</B> <A NAME="tex2html94"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html88"
+  HREF="Composition-001.html">Composition 001</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html97"
+  HREF="node1.html#SECTION00010010000000000000">New units used</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00010000000000000000">
+Synopsis</A>
+</H1>
+We are going to compose a very simple piece of music in Puredata. We
+will be introduced to a sine wave oscillator, a line segment and
+simple filters. Starting with a counter we will establish a timebase
+and use [select] operations to create part melodies. A separate note
+sequencer for each of four tracks will run from the same timebase.
+Creating abstractions, unpacking lists and modulo arithmetic are
+introduced.
+
+<P>
+
+<H4><A NAME="SECTION00010010000000000000">
+New units used</A>
+</H4>
+
+<UL>
+<LI><code>[f]</code>: Store a float value.
+</LI>
+<LI><code>[line~]</code> Audio rate line generator.
+</LI>
+<LI><code>[mod]</code> Modulo operator.
+</LI>
+<LI><code>[select]</code> Bang one or more outlets matching message.
+</LI>
+<LI><code>[vline~]</code> More versatile audio line.
+</LI>
+<LI><code>[unpack]</code> Distribute a list of values.
+</LI>
+<LI><code>[swap]</code> Exchange two values.
+</LI>
+<LI><code>[moses]</code> Split a stream of values at threshold.
+</LI>
+<LI><code>[noise~]</code> Random audio signal, white noise.
+</LI>
+<LI><code>[bp~]</code> Band pass filter with resonance.
+</LI>
+<LI><code>[lop~]</code> Low pass filter.
+</LI>
+<LI><code>[throw~]</code> Send audio to a multi connection bus.
+</LI>
+<LI><code>[catch~]</code> Audio bus destination.
+</LI>
+</UL>
+<BR><HR>
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>bassline</TITLE>
+<META NAME="description" CONTENT="bassline">
+<META NAME="keywords" CONTENT="Composition-002">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-002.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="Composition-002.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html359"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html357"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html351"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html360"
+  HREF="node8.html">plucks</A>
+<B> Up:</B> <A NAME="tex2html358"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html352"
+  HREF="node6.html">drums</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html361"
+  HREF="node7.html#SECTION00071000000000000000">bassline part</A>
+<UL>
+<LI><A NAME="tex2html362"
+  HREF="node7.html#SECTION00071010000000000000">sequencer, synth and delay</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html363"
+  HREF="node7.html#SECTION00072000000000000000">bass sequence</A>
+<UL>
+<LI><A NAME="tex2html364"
+  HREF="node7.html#SECTION00072010000000000000">musical interpretation</A>
+<LI><A NAME="tex2html365"
+  HREF="node7.html#SECTION00072020000000000000">notes and pattern</A>
+<LI><A NAME="tex2html366"
+  HREF="node7.html#SECTION00072030000000000000">select and float box</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html367"
+  HREF="node7.html#SECTION00073000000000000000">wrapper for cosynth  bass sound</A>
+<UL>
+<LI><A NAME="tex2html368"
+  HREF="node7.html#SECTION00073010000000000000">parameter substitution</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html369"
+  HREF="node7.html#SECTION00074000000000000000">filterdelay</A>
+<UL>
+<LI><A NAME="tex2html370"
+  HREF="node7.html#SECTION00074010000000000000">another effect</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html371"
+  HREF="node7.html#SECTION00075000000000000000">play the bass line</A>
+<UL>
+<LI><A NAME="tex2html372"
+  HREF="node7.html#SECTION00075010000000000000">bass line sound</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00070000000000000000">
+bassline</A>
+</H1>
+
+<H2><A NAME="SECTION00071000000000000000">
+bassline part</A>
+</H2>
+Figure <A HREF="#fig::I1-bassline">23</A> summary
+
+<UL>
+<LI>time and feedback for delay fx
+</LI>
+</UL>
+<H4><A NAME="SECTION00071010000000000000">
+sequencer, synth and delay</A>
+</H4>
+Again a top level wrapper for a bassline part. This arrangement
+should be familiar by now, you can encapsulate the sequencer, synth,
+effects and mixer channel all in the same place. Delay effects
+are set to twice the global period with a 60 percent feedback amount.
+This instrument will be controlled by fader 3.
+
+<DIV ALIGN="CENTER"><A NAME="fig::I1-bassline"></A><A NAME="739"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 23:</STRONG>
+I1-bassline</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="408" HEIGHT="321" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/I1-bassline}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html48"
+  HREF="resources/puredata/I1-bassline.pd">I1-bassline.pd</A>
+<P>
+
+<H2><A NAME="SECTION00072000000000000000">
+bass sequence</A>
+</H2>
+Figure <A HREF="#fig::I2-bass-seq">24</A> summary
+
+<UL>
+<LI>16 beats to a bar
+</LI>
+<LI>2 part sequence
+</LI>
+<LI>add in occasional suboctave
+</LI>
+<LI>get the current chord
+</LI>
+<LI>pick the first two notes
+</LI>
+</UL>
+<H4><A NAME="SECTION00072010000000000000">
+musical interpretation</A>
+</H4>
+In some senses bass is the most important part
+of a composition since it roots everything else, but
+it doesn't have to be added first. Exactly how you choose
+to flesh out a compositional idea is entirely personal
+so my reasons for choosing part patterns and order would
+not be your choice. Follow along and then rip the patch apart
+and do it your way with what you learn.
+
+<P>
+
+<H4><A NAME="SECTION00072020000000000000">
+notes and pattern</A>
+</H4>
+Each chord in the score consists of 8 notes, the first two are
+important because they set the root and primary interval of
+the whole harmony. A bassline that alternates between these
+two notes is interesting with big chords because it gives
+two different interpretations. The three chords chosen are 
+in tension, we can move between any two of them and the effect
+is moving towards concordance, but like steps in an Escher
+drawing it never gets there, there is
+no cadence so the progression remains forever unresolved.
+The bass line, and crucially the first and 13th beat
+marks a flip between either of the first two notes. This change
+of feel is enough to keep the piece ticking along and producing
+interesting new variations. Having occasional suboctave
+bass notes gives it a dark and dramatic feel, but the timbre
+of the high bass notes is bright and light enough to leave 
+the total effect ambiguous.
+
+<P>
+
+<H4><A NAME="SECTION00072030000000000000">
+select and float box</A>
+</H4>
+The familiar technique of unpacking some values to float boxes
+and using the bang messages from selects is used. Note values 1
+and 2 of the chord are unpacked, the second being copied to
+another float box for the suboctave. Beats 2 and 10 of the time
+sequence are given a probability of 50 percent.
+
+<DIV ALIGN="CENTER"><A NAME="fig::I2-bass-seq"></A><A NAME="746"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 24:</STRONG>
+I2-bass-seq</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="481" HEIGHT="461" ALIGN="BOTTOM" BORDER="0"
+ SRC="img28.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/I2-bass-seq}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html50"
+  HREF="resources/puredata/I2-bass-seq.pd">I2-bass-seq.pd</A>
+<P>
+
+<H2><A NAME="SECTION00073000000000000000">
+wrapper for cosynth  bass sound</A>
+</H2>
+Figure <A HREF="#fig::I3-bass-synth">25</A> summary
+
+<H4><A NAME="SECTION00073010000000000000">
+parameter substitution</A>
+</H4>
+In this wrapper you can see we have used an abstraction for a synth called
+<code>[z-3cosynth]</code>, and a message that holds all the parameters
+for a certain sound except the note number, which is substituted in.
+For synths that receive all their parameters on each note, note time
+initialised, we can use a message as a patch template and 
+substitute new parameters on the fly by substitution. An alternative is to
+have each control with its own independent inlet. There are pros and cons 
+to both methods in terms of flexibility and the amount of data sent
+on each note (and hence stored somewhere when sequencing). Don't worry
+about the contents of <code>[z-3cosynth]</code> at this point, it is a
+synth with 3 cosines, and all we need to know is that the parameters
+in the message give us a nice fat analogue bass sound.
+
+<DIV ALIGN="CENTER"><A NAME="fig::I3-bass-synth"></A><A NAME="753"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 25:</STRONG>
+I3-bass-synth</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="381" HEIGHT="140" ALIGN="BOTTOM" BORDER="0"
+ SRC="img29.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/I3-bass-synth}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html52"
+  HREF="resources/puredata/I3-bass-synth.pd">I3-bass-synth.pd</A>
+<P>
+
+<H2><A NAME="SECTION00074000000000000000">
+filterdelay</A>
+</H2>
+Figure <A HREF="#fig::I4-filterdelay">26</A> summary
+
+<UL>
+<LI>slow moving saw lfo
+</LI>
+<LI>sweeps frequency up
+</LI>
+<LI>L-R delay
+</LI>
+</UL>
+<H4><A NAME="SECTION00074010000000000000">
+another effect</A>
+</H4>
+Can you spot the important difference between this and the last effect?
+The filter comes after the delay now. Reordering of
+effects units makes a big difference to the overall result. This time
+I've added a <code>[lop~]</code> to the <code>[phasor~]</code> so that when it
+flies back to zero there isn't a very sudden change in cutoff. For this effect
+an extra inlet is included to vary filter resonance.
+
+<DIV ALIGN="CENTER"><A NAME="fig::I4-filterdelay"></A><A NAME="760"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 26:</STRONG>
+I4-filterdelay</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="405" HEIGHT="335" ALIGN="BOTTOM" BORDER="0"
+ SRC="img30.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/I4-filterdelay}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html54"
+  HREF="resources/puredata/I4-filterdelay.pd">I4-filterdelay.pd</A>
+<P>
+
+<H2><A NAME="SECTION00075000000000000000">
+play the bass line</A>
+</H2>
+Figure <A HREF="#fig::I5-bassline">27</A> summary
+
+<H4><A NAME="SECTION00075010000000000000">
+bass line sound</A>
+</H4>
+Maybe there is a hint of Korg CS or Yamaha MS about this sound, or 
+the Korg Monopoly with 4 oscillators. Richness comes from
+clipping 3 closely detuned cosine generators to highlight
+their intermodulation. With filter-delay echoing each note
+the result is a more blended and continuous bass backing.
+
+<DIV ALIGN="CENTER"><A NAME="fig::I5-bassline"></A><A NAME="767"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 27:</STRONG>
+I5-bassline</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="685" HEIGHT="275" ALIGN="BOTTOM" BORDER="0"
+ SRC="img31.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/I5-bassline-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html56"
+  HREF="resources/puredata/I5-bassline-play.pd">I5-bassline-play.pd</A>
+<A NAME="tex2html57"
+  HREF="resources/sound/I5-bassline-play.ogg">I5-bassline-play.ogg</A>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html359"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html357"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html351"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html360"
+  HREF="node8.html">plucks</A>
+<B> Up:</B> <A NAME="tex2html358"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html352"
+  HREF="node6.html">drums</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

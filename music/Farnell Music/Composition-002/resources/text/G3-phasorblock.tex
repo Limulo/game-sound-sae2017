@@ -1,0 +1,7 @@
+\paragraph{phasor bank}
+Bunching up a load of osc sources in one signal abstraction is quite typical
+but with phasors we need to remember to remove the DC offset
+because a phasor is not symmetrical about zero. There are clever
+ways to reuse a \verb+[mtof]+ if we have lists of notes, but it
+is a very inexpensive unit so we opt to have separate inlets
+and separate \verb+[mtof]+ for each voice. 

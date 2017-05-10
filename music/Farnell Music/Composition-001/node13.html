@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>chord sequencer</TITLE>
+<META NAME="description" CONTENT="chord sequencer">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html243"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html241"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html235"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html244"
+  HREF="node14.html">playing chords</A>
+<B> Up:</B> <A NAME="tex2html242"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html236"
+  HREF="node12.html">synth 4</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html245"
+  HREF="node13.html#SECTION000130010000000000000">Sequencing chords</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION000130000000000000000">
+chord sequencer</A>
+</H1>
+Figure <A HREF="#fig::chord-seq">12</A> summary
+
+<UL>
+<LI>chords stored as lists
+</LI>
+</UL>
+<H4><A NAME="SECTION000130010000000000000">
+Sequencing chords</A>
+</H4>
+The only difference between this and the first note sequencer is that instead of a single note we send
+a list of three values for each chord. The pattern is 32 beats with chords
+being sent on the first and 15th beat. If a chord list is too long
+extra notes will simply have no effect. If chord lists have less than 4
+members then the last note sent in the remaining positions will remain playing
+since no new value is unpacked.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::chord-seq"></A><A NAME="318"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 12:</STRONG>
+chord-seq</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="403" HEIGHT="209" ALIGN="BOTTOM" BORDER="0"
+ SRC="img15.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/I-chord-seq}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html27"
+  HREF="resources/puredata/I-chord-seq.pd">I-chord-seq.pd</A>
+<BR><HR>
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>random note</TITLE>
+<META NAME="description" CONTENT="random note">
+<META NAME="keywords" CONTENT="Composition-000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-000.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="Composition-000.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html70"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html68"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html62"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html71"
+  HREF="node3.html">sine wave synth</A>
+<B> Up:</B> <A NAME="tex2html69"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html63"
+  HREF="node1.html">Synopsis</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html72"
+  HREF="node2.html#SECTION00020010000000000000">Timebase</A>
+<LI><A NAME="tex2html73"
+  HREF="node2.html#SECTION00020020000000000000">Random number</A>
+<LI><A NAME="tex2html74"
+  HREF="node2.html#SECTION00020030000000000000">Oscillator</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00020000000000000000">
+random note</A>
+</H1>
+Figure <A HREF="#fig::random-note">1</A> summary
+
+<UL>
+<LI>a timebase generates bang messages
+</LI>
+<LI>random number zero to 23
+</LI>
+<LI>add 48 as lower limit
+</LI>
+<LI>random range is 48 to 71
+</LI>
+</UL>
+<H4><A NAME="SECTION00020010000000000000">
+Timebase</A>
+</H4>
+To start with we want to create a regular stream of pulses to trigger events. These are bang messages, which really just means "compute something". To get a source of bang messages we need a metronome object, <code>[metro]</code>. When a value of 1 appears on the left inlet of a metronome it switches on and begins to emit bangs. It will turn off again uopn recieving a 0 value. The right inlet of <code>[metro]</code> sets the speed, or rather the period which is in milliseconds. A toggle switch outputs a 1 or 0, so we can start and stop the <code>[metro 300]</code> unit. When started it outputs bang messages at a rate somewhat above 3 per second. This is the most simple timebase, just a regular stream of bang messages. 
+
+<P>
+
+<H4><A NAME="SECTION00020020000000000000">
+Random number</A>
+</H4>
+To turn the bang messages into frequencies we need to make numbers, float values that can be understood by an oscillator or other units. Each bang message recieved by <code>[random 24]</code> causes it to choose a new random integer number of 24 possible random values, in the range 0 to 23. We add this to a fixed value in <code>[+ 48]</code> so that the minimum value is 48, and the maximum value will be <!-- MATH
+ $48 + 23 = 71$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="92" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ 48 + 23 = 71$"></SPAN>. If you attach a number box you will see the number changing to show a different float message is on the wire. On a musical keyboard there are about 88 notes, two octaves of which covers 24 keys, so this seems like a good pitch range for melodies, starting on <code>C3</code> and ending on <code>B4</code>.  
+
+<P>
+
+<H4><A NAME="SECTION00020030000000000000">
+Oscillator</A>
+</H4>
+Connecting this to the frequency inlet of <code>[osc~]</code> produces an audio signal. The left inlet
+of <code>[osc~]</code> sets its frequency in Hz or cycles per second. Both sides of
+the <code>[dac~]</code> are fed from the same <code>[osc~]</code> outlet so we get to hear both speakers on 
+a stereo sound system. The patch plays loudly and low,
+so watch your bass bins. It doesn't produce the correct range of frequency.  A range of 48Hz to 71Hz is right 
+down in the bottom, so we must scale it for MIDI note values to produce the right frequencies. 
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::random-note"></A><A NAME="144"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+random-note</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="377" HEIGHT="241" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-000/images/A-random-note-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html2"
+  HREF="resources/puredata/A-random-note-play.pd">A-random-note-play.pd</A>
+<A NAME="tex2html3"
+  HREF="resources/sound/A-random-note-play.ogg">A-random-note-play.ogg</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html70"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html68"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html62"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html71"
+  HREF="node3.html">sine wave synth</A>
+<B> Up:</B> <A NAME="tex2html69"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html63"
+  HREF="node1.html">Synopsis</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

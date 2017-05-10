@@ -1,0 +1,11 @@
+#N canvas 0 0 444 177 10;
+#X obj 39 125 outlet~;
+#X msg 40 79 \$1 0.298 0.353 0.172 0.122 0.502 10 100 0.4;
+#X obj 40 54 inlet;
+#X obj 40 103 z-3cosynth;
+#X text 215 59 different parameters;
+#X text 133 106 same synth as before;
+#X text 125 15 pluckstring wrapper;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;

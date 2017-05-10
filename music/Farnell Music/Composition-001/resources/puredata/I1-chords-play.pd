@@ -1,0 +1,33 @@
+#N canvas 276 119 340 281 10;
+#X obj 32 164 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 154 142 *~;
+#X obj 173 118 hsl 128 15 0 1 0 1 empty empty synth4-volume 20 7 1
+8 -262144 -1 -1 11200 1;
+#X obj 32 183 A-timebase;
+#X obj 97 205 s time;
+#X obj 154 163 throw~ mix;
+#X obj 153 72 r synth4;
+#X obj 17 64 r time;
+#X obj 17 106 s synth4;
+#X text 17 45 chord sequencer;
+#X text 153 53 chord synth;
+#X obj 153 234 dac~;
+#X obj 154 205 *~ 0.35;
+#X obj 154 184 catch~ mix;
+#X text 83 8 playing chords;
+#X obj 32 143 loadbang;
+#X obj 153 93 H-synth4;
+#X obj 17 85 I-chord-seq;
+#X connect 0 0 3 0;
+#X connect 1 0 5 0;
+#X connect 2 0 1 1;
+#X connect 3 1 4 0;
+#X connect 6 0 16 0;
+#X connect 7 0 17 0;
+#X connect 12 0 11 0;
+#X connect 12 0 11 1;
+#X connect 13 0 12 0;
+#X connect 15 0 0 0;
+#X connect 16 0 1 0;
+#X connect 17 0 8 0;

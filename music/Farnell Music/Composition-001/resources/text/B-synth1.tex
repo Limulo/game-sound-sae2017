@@ -1,0 +1,21 @@
+\paragraph{A simple 1 oscillator synth}
+We need some sounds. If we take a \verb+[osc~]+ oscillator and multiply it
+by a falling line that will give us a basic decaying tone. The \verb+[osc~]+ oscillator has
+frequency as its first control inlet and one audio signal output. We want an
+amplitude envelope control signal that starts off at maximum and decays away to zero. The
+\verb+[line~]+ generator takes message arguments of the form (level to go
+to, time to get there), so a message \verb+[1 0(+ will send the line 
+to a value of 1 in 0 milliseconds. Sending a further message like
+\verb+[0 700(+ will set it moving back to zero
+over 700 ms.   \verb+[1 0, 0 700(+ is a pair of messages
+in a single message box. The comma causes both messages to be sent in left to
+right order instantly, so this will send the
+line to one in 0 milliseconds, and then back to zero in 700ms.  A line envelope is a powerful component of more
+complex controls, we will also meet its more versatile brother
+\verb+[vline~]+ shortly. The result of multiplying the sinewave signal by the line is a pure
+tone that decays away. 
+
+\paragraph{MIDI control of frequency}
+In order to control this synth with MIDI notes instead of Hz frequency let's
+add a \verb+[mtof]+ object. Notes appearing at the \verb+[inlet]+ will now be converted to Hz
+before being sent to the oscillators frequency inlet.

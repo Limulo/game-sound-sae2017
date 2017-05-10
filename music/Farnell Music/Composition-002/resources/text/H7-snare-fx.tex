@@ -1,0 +1,15 @@
+\paragraph{delay and sweep filter}
+These effects are a slowly moving filter on top of a delay 
+unit (which we will examine in the next section). A \verb+[loadbang]+
+sets up an initial delay time, fixed to 375ms here, and
+feedback (60 percent), as well as setting the initial resonance
+of \verb+[vcf~]+ which prefers to be set up this way.
+
+\paragraph{low frequency oscillator}
+An lfo can simply be a normal oscillator running very slow when
+you want audio rate control signals. The cutoff frequency of 
+\verb+[vcf~]+ is set by an audio signal which gives a much
+smoother change of settings. If a control rate filter
+adjustment is used here at such a low frequency we would certainly hear 
+occasional clicks with a \verb+[bp~ ]+ unit. The lfo sweeps up
+in one direction between 300Hz and 5300Hz about every 2 seconds.

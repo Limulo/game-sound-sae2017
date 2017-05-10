@@ -1,0 +1,38 @@
+\paragraph{Filtered noise drums}
+Our third synth creates splashes of noise in different frequency bands
+so it can be used for snare or hihat like effects. We filter some
+white noise using a bandbass filter, \verb+[bp~ 100 0.5]+ which has its
+center frequency controlled by the MIDI note frequency.
+
+\paragraph{Inverting and scaling a control}
+You can see how we adapt the MIDI
+note number so that we get a quieter and shorter sound when the
+frequency is higher. Dividing the full note range 0 to 127 with \verb+[/127]+
+gives us a normalised value from zero to one. The combination of
+\verb+[swap 1]+ and \verb+[-]+ is an idiom that inverts a normalised signal, so that
+it ranges from one down to zero as the input increases. A \verb+[swap]+
+object exchanges its inputs, so when used with \verb+[-]+ we get 1 minus x for
+an input x. 
+
+
+\paragraph{Substitution in lists}
+For an envelope we have used an ordinary \verb+[line~]+, activated
+by a message producing a variable decay envelope. The decay range is
+substituted in \verb+$1+, a value ranging between zero and 400
+milliseconds. Notice the second part of a message to \verb+[line~]+ can
+be omitted when it's a zero in the first position.
+Where we use \$1, \$2 etc\dag\ref{nodollarzero} in a message box, each is
+replaced by the value of any corresponding list element that appears
+at the message box inlet. In this case a float in the range 0 to 400
+will replace \$1 in the list so it becomes something like
+\verb+[1, 0 390(+, the MIDI note now controls the decay time.
+
+\paragraph{Output EQ}
+Finally we sculpt the frequency range of the filtered noise with a little EQ in the
+form of a \verb+[lop~]+ final stage, and then boost it back to reasonable
+level. \verb+[lop~]+ is a simple low pass element with one parameter
+for its cutoff frequency.
+
+
+\paragraph{Notes}
+\dag \label{nodollarzero}Do not use \$0 in message box lists as this has a special meaning.

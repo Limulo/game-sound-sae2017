@@ -1,0 +1,66 @@
+#N canvas 500 110 585 259 10;
+#X obj 6 93 cnv 15 400 140 empty empty mixer 6 12 1 14 -233017 -66577
+0;
+#X obj 65 136 vsl 12 64 0 1 0 1 ch1 empty 1 3 -8 1 8 -195568 -1 -1
+0 1;
+#X obj 67 208 hsl 32 12 -45 45 0 1 pan1 empty pan 9 5 1 8 -166441 -1
+-262144 1600 1;
+#X obj 15 135 vsl 12 64 0.1 1.5 1 1 mast masterfade Master 0 -8 1 8
+-262144 -1 -1 4900 1;
+#X obj 14 206 tgl 15 1 mastmute empty on 18 7 1 8 -262144 -1 -1 1 1
+;
+#X obj 6 28 cnv 15 400 50 empty empty transport 6 12 1 14 -233017 -66577
+0;
+#X obj 124 49 tgl 15 1 start-stop empty start-stop 0 -6 1 8 -262144
+-1 -1 1 1;
+#X obj 229 48 bng 15 250 50 0 zero empty zero 0 -6 1 8 -262144 -1 -1
+;
+#X obj 106 136 vsl 12 64 0 1 0 1 ch2 empty 2 3 -8 1 8 -195568 -1 -1
+0 1;
+#X obj 146 136 vsl 12 64 0 1 0 1 ch3 empty 3 3 -8 1 8 -195568 -1 -1
+0 1;
+#X obj 186 136 vsl 12 64 0 1 0 1 ch4 empty 4 3 -8 1 8 -195568 -1 -1
+0 1;
+#X obj 226 136 vsl 12 64 0 1 0 1 ch5 empty 5 3 -8 1 8 -195568 -1 -1
+0 1;
+#X obj 266 136 vsl 12 64 0 1 0 1 ch6 empty 6 3 -8 1 8 -195568 -1 -1
+0 1;
+#X obj 305 136 vsl 12 64 0 1 0 1 ch7 empty 7 3 -8 1 8 -195568 -1 -1
+3700 1;
+#X obj 345 136 vsl 12 64 0 1 0 1 ch8 empty 8 3 -8 1 8 -195568 -1 -1
+3400 1;
+#X obj 107 208 hsl 32 12 -45 45 0 1 pan2 empty pan 9 5 1 8 -166441
+-1 -262144 1100 1;
+#X obj 147 208 hsl 32 12 -45 45 0 1 pan3 empty pan 9 5 1 8 -166441
+-1 -262144 1700 1;
+#X obj 187 208 hsl 32 12 -45 45 0 1 pan4 empty pan 9 5 1 8 -166441
+-1 -262144 1700 1;
+#X obj 227 208 hsl 32 12 -45 45 0 1 pan5 empty pan 9 5 1 8 -166441
+-1 -262144 1700 1;
+#X obj 267 208 hsl 32 12 -45 45 0 1 pan6 empty pan 9 5 1 8 -166441
+-1 -262144 1700 1;
+#X obj 307 208 hsl 32 12 -45 45 0 1 pan7 empty pan 9 5 1 8 -166441
+-1 -262144 1000 1;
+#X obj 347 208 hsl 32 12 -45 45 0 1 pan8 empty pan 9 5 1 8 -166441
+-1 -262144 900 1;
+#X obj 82 187 tgl 15 1 m1 empty empty 4 7 1 8 -1 -262144 -128992 0
+1;
+#X obj 122 187 tgl 15 1 m2 empty empty 4 7 1 8 -1 -262144 -128992 0
+1;
+#X obj 162 187 tgl 15 1 m3 empty empty 4 7 1 8 -1 -262144 -128992 0
+1;
+#X obj 202 187 tgl 15 1 m4 empty empty 4 7 1 8 -1 -262144 -128992 0
+1;
+#X obj 242 187 tgl 15 1 m5 empty empty 4 7 1 8 -1 -262144 -128992 0
+1;
+#X obj 282 187 tgl 15 1 m6 empty empty 4 7 1 8 -1 -262144 -128992 0
+1;
+#X obj 322 187 tgl 15 1 m7 empty empty 4 7 1 8 -1 -262144 -128992 1
+1;
+#X obj 362 187 tgl 15 1 m8 empty empty 4 7 1 8 -1 -262144 -128992 0
+1;
+#X obj 422 49 B1-mixer-master;
+#X obj 422 70 C1-score;
+#X obj 422 28 A1-transport-controls;
+#X obj 422 217 M1-strings;
+#X text 149 2 play the strings;

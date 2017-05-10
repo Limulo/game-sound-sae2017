@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>synth 3</TITLE>
+<META NAME="description" CONTENT="synth 3">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html193"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html191"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html185"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html194"
+  HREF="node10.html">two bar sequencer</A>
+<B> Up:</B> <A NAME="tex2html192"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html186"
+  HREF="node8.html">playing melody line</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html195"
+  HREF="node9.html#SECTION00090010000000000000">Filtered noise drums</A>
+<LI><A NAME="tex2html196"
+  HREF="node9.html#SECTION00090020000000000000">Inverting and scaling a control</A>
+<LI><A NAME="tex2html197"
+  HREF="node9.html#SECTION00090030000000000000">Substitution in lists</A>
+<LI><A NAME="tex2html198"
+  HREF="node9.html#SECTION00090040000000000000">Output EQ</A>
+<LI><A NAME="tex2html199"
+  HREF="node9.html#SECTION00090050000000000000">Notes</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00090000000000000000">
+synth 3</A>
+</H1>
+Figure <A HREF="#fig::synth3">8</A> summary
+
+<UL>
+<LI>scale to 0 - 1
+</LI>
+<LI>invert amplitude range
+</LI>
+<LI>use note as decay time
+</LI>
+<LI>attack and decay
+</LI>
+<LI>filtered noise
+</LI>
+<LI>amplitude envelope
+</LI>
+</UL>
+<H4><A NAME="SECTION00090010000000000000">
+Filtered noise drums</A>
+</H4>
+Our third synth creates splashes of noise in different frequency bands
+so it can be used for snare or hihat like effects. We filter some
+white noise using a bandbass filter, <code>[bp~ 100 0.5]</code> which has its
+center frequency controlled by the MIDI note frequency.
+
+<P>
+
+<H4><A NAME="SECTION00090020000000000000">
+Inverting and scaling a control</A>
+</H4>
+You can see how we adapt the MIDI
+note number so that we get a quieter and shorter sound when the
+frequency is higher. Dividing the full note range 0 to 127 with <code>[/127]</code>
+gives us a normalised value from zero to one. The combination of
+<code>[swap 1]</code> and <code>[-]</code> is an idiom that inverts a normalised signal, so that
+it ranges from one down to zero as the input increases. A <code>[swap]</code>
+object exchanges its inputs, so when used with <code>[-]</code> we get 1 minus x for
+an input x. 
+
+<P>
+
+<H4><A NAME="SECTION00090030000000000000">
+Substitution in lists</A>
+</H4>
+For an envelope we have used an ordinary <code>[line~]</code>, activated
+by a message producing a variable decay envelope. The decay range is
+substituted in <code>$1</code>, a value ranging between zero and 400
+milliseconds. Notice the second part of a message to <code>[line~]</code> can
+be omitted when it's a zero in the first position.
+Where we use $1, $2 etc<IMG
+ WIDTH="8" HEIGHT="27" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="\dag"><A HREF="#nodollarzero">9</A> in a message box, each is
+replaced by the value of any corresponding list element that appears
+at the message box inlet. In this case a float in the range 0 to 400
+will replace $1 in the list so it becomes something like
+<code>[1, 0 390(</code>, the MIDI note now controls the decay time.
+
+<P>
+
+<H4><A NAME="SECTION00090040000000000000">
+Output EQ</A>
+</H4>
+Finally we sculpt the frequency range of the filtered noise with a little EQ in the
+form of a <code>[lop~]</code> final stage, and then boost it back to reasonable
+level. <code>[lop~]</code> is a simple low pass element with one parameter
+for its cutoff frequency.
+
+<P>
+
+<H4><A NAME="SECTION00090050000000000000">
+Notes</A>
+</H4>
+<IMG
+ WIDTH="8" HEIGHT="27" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="\dag"><A NAME="nodollarzero"></A>Do not use $0 in message box lists as this has a special meaning.
+
+<DIV ALIGN="CENTER"><A NAME="fig::synth3"></A><A NAME="290"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8:</STRONG>
+synth3</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="384" HEIGHT="465" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/F-synth3}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html18"
+  HREF="resources/puredata/F-synth3.pd">F-synth3.pd</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html193"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html191"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html185"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html194"
+  HREF="node10.html">two bar sequencer</A>
+<B> Up:</B> <A NAME="tex2html192"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html186"
+  HREF="node8.html">playing melody line</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+\paragraph{parameters}
+Two parameters are passed for each kick sound, a decay time
+and a pitch range. This list is unpacked first from the 
+list output of \verb+[t b b l]+ with the first decay value going
+to the inlet of a \verb+[pack]+ object and the second going
+to the set the frequency sweep scale.
+
+\paragraph{envelope}
+A more complicated arrangement of messages for this
+envelope shows the simplicity, and limitation, of \verb+[line~]+. In order
+to have a non-zero attack we need to hold off the decay message
+for at least as long as the attack rise. This is done with a message
+delay \verb+[del 2]+ giving a 2ms delay to the bang message.
+
+\paragraph{signals}
+The signal is an sine wave with amplitude and frequency as
+functions of the fourth power of the falling line segment. Frequency
+is down to a minimum of 20Hz, and as high as the second parameter passed.
+Amplitude is always from full to zero, decaying in the time set by the first
+parameter.

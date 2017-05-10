@@ -1,0 +1,25 @@
+\paragraph{MIDI note convertion}
+Here we have an \verb+[osc~]+ object with its frequency inlet connected to a number 
+that comes via a \verb+[mtof]+ unit. This converts "midi" to "frequency", where
+a midi note is an integer in the range 0 to 127, and frequency is a value
+in Hertz between zero and about twelve thousand. 
+
+\paragraph{Number box type 2}
+The number boxes in pd-gui can be used either as display devices or as
+input devices. Here is shown the type 2 box which can be coloured and
+has other useful properties. Moving the number by clicking and pushing your mouse
+up and down sends new values to \verb+[mtof]+. If you want finer grain
+control than just integers try holding down the shift key before you click.
+
+\paragraph{Message melody}
+Some message boxes can be immediately used to compose a melody. This isn't
+the perfect way to write music, but you can simply add message boxes and 
+click them.
+
+
+\paragraph{Range}
+Listen to the output frequency change as you move the number over the whole
+MIDI scale from 0 to 127. Connect another number box to the output of \verb+[mtof]+
+and notice the relationship between key number and pitch is not a simple
+linear one. Each 12 notes doubles the frequency.
+

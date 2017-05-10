@@ -1,0 +1,21 @@
+#N canvas 0 0 401 227 10;
+#X obj 17 69 metro 300;
+#X obj 17 93 random 24;
+#X obj 17 116 + 48;
+#X floatatom 35 141 5 0 0 0 - - -;
+#X obj 17 44 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 17 165 osc~;
+#X obj 17 198 dac~;
+#X text 45 13 random note;
+#X text 96 118 add 48 as lower limit;
+#X text 96 70 a timebase generates bang messages;
+#X text 96 142 random range is 48 to 71;
+#X text 96 94 random number zero to 23;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 5 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 5 0 6 1;

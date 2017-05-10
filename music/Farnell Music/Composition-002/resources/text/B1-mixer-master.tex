@@ -1,0 +1,9 @@
+\paragraph{only one master}
+This is a simple part shown only for completeness. It is a wrapper for 
+the mixer main output \verb+[mixer-output]+ that implements a mute. Normal volume
+control floats are received on \verb+[r mast]+ and passed through a multiplier.
+The second inlet \verb+[r mastmute]+ places a one or zero on the lefthand side
+of the multiplier and refreshes the value. When this value is zero the volume
+is zero, when it is 1 the volume is restored to its last level set on the
+right side of the multiply. For each fader a toggle on the main GUI 
+acts as an on/off or channel mute. 

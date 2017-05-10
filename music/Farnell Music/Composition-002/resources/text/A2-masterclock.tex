@@ -1,0 +1,39 @@
+\paragraph{metronome}
+The metro is always started by default here, you can remove the loadbang 
+if you don't want the piece to start automatically. The metro period
+is set from the middle inlet and if anything is received on the right
+inlet the counter is set to zero.
+
+\paragraph{late and early beats}
+You can see how time is made a beat earlier by taking its value
+from after the \verb@[+ 1]@ instead of from the float box. You could 
+chain these or add arbitrary increments or decrements to the timeline.
+If you want a part to play 4 beats ahead add \verb@[+ 4]@ before its time inlet.
+Beare of negative times that won't exist when the timebase is zero.
+
+ 
+\paragraph{dividing time} 
+ Dividing time is as simple as using \verb+[/]+. But this raises
+ interesting points to do with number lines and quantisation.
+ A timeline that is multiplied by an amount is stretched or shrunk
+ like a rubber band. If you are using select statements that work
+ on integer beat marks then you need to re-quantise with \verb+[int]+
+ and \verb+[change]+. If a timeline is doubled then it loses half
+ its resolution, but if it is squashed to half then its resolution
+ would double, if it were say audio tape, however it halves.
+ If we had an integer timeline ${1, 2, 3 ...}$ and divide by 2
+ we get ${0.50, 1, 1.50, 2 ...}$, some of the values have become 
+ non-integer. Although we can make any floating point number that
+ is a function of a periodically updated timebase it
+ is sampled at the rate of the timbase itself, which is when 
+ message events occur. These two things, the value and the time it
+ is sent, are separate things. Using a rounding process two notes must now
+ fall into each event slot (pigeonhole principle). Going the other
+ way let's take a timeline ${1, 2, 3, 4}$ and multiply it by
+ 3. We get ${3, 6, 9, 12}$ You can build up
+ sophisticated rythmns using \verb+[mod]+, \verb+[int]+,
+ \verb+[change]+ and \verb+[div]+, but it's recommended that if
+ you study this be aware it depends on the implementation
+ of \verb+[int]+, there are other ways of rounding numbers
+ that will break your compositions if you translate them or 
+ the definition of \verb+[int]+ changes.

@@ -1,0 +1,9 @@
+\paragraph{Two bars or more}
+To extend a number of sequencers by chaining them together \verb+[moses]+ is a very useful
+object. The idiom shown, \verb+[moses n]+\verb+[- n]+, is repeatable to create chains of
+events distributed along the same counter timeline. In this case two subpatches are chained together to produce two bars,
+32 beats in total. While the input to \verb+[moses 16]+ is less than 16 floats will
+be sent to its left outlet. Note values of 16 and above will appear on the right outlet.
+If we subtract 16 from the second stream both now count over the 16 step range 0 to 15,
+but at different times thus we have created a system to chain bars together. 
+Two drum patterns using \verb+[select]+ are stored in separate subpatches, one for each bar. 

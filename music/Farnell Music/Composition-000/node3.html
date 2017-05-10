@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>sine wave synth</TITLE>
+<META NAME="description" CONTENT="sine wave synth">
+<META NAME="keywords" CONTENT="Composition-000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-000.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="Composition-000.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html83"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html81"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html75"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html84"
+  HREF="node4.html">random midi note sine</A>
+<B> Up:</B> <A NAME="tex2html82"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html76"
+  HREF="node2.html">random note</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html85"
+  HREF="node3.html#SECTION00030010000000000000">MIDI note convertion</A>
+<LI><A NAME="tex2html86"
+  HREF="node3.html#SECTION00030020000000000000">Number box type 2</A>
+<LI><A NAME="tex2html87"
+  HREF="node3.html#SECTION00030030000000000000">Message melody</A>
+<LI><A NAME="tex2html88"
+  HREF="node3.html#SECTION00030040000000000000">Range</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00030000000000000000">
+sine wave synth</A>
+</H1>
+Figure <A HREF="#fig::sine-wave-synth">2</A> summary
+
+<UL>
+<LI>number box
+</LI>
+<LI>message melody
+</LI>
+<LI>note number to Hz
+</LI>
+<LI>oscillator
+</LI>
+</UL>
+<H4><A NAME="SECTION00030010000000000000">
+MIDI note convertion</A>
+</H4>
+Here we have an <code>[osc~]</code> object with its frequency inlet connected to a number 
+that comes via a <code>[mtof]</code> unit. This converts "midi" to "frequency", where
+a midi note is an integer in the range 0 to 127, and frequency is a value
+in Hertz between zero and about twelve thousand. 
+
+<P>
+
+<H4><A NAME="SECTION00030020000000000000">
+Number box type 2</A>
+</H4>
+The number boxes in pd-gui can be used either as display devices or as
+input devices. Here is shown the type 2 box which can be coloured and
+has other useful properties. Moving the number by clicking and pushing your mouse
+up and down sends new values to <code>[mtof]</code>. If you want finer grain
+control than just integers try holding down the shift key before you click.
+
+<P>
+
+<H4><A NAME="SECTION00030030000000000000">
+Message melody</A>
+</H4>
+Some message boxes can be immediately used to compose a melody. This isn't
+the perfect way to write music, but you can simply add message boxes and 
+click them.
+
+<P>
+
+<H4><A NAME="SECTION00030040000000000000">
+Range</A>
+</H4>
+Listen to the output frequency change as you move the number over the whole
+MIDI scale from 0 to 127. Connect another number box to the output of <code>[mtof]</code>
+and notice the relationship between key number and pitch is not a simple
+linear one. Each 12 notes doubles the frequency.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::sine-wave-synth"></A><A NAME="151"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2:</STRONG>
+sine-wave-synth</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="284" HEIGHT="216" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-000/images/B-sine-wave-synth-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html5"
+  HREF="resources/puredata/B-sine-wave-synth-play.pd">B-sine-wave-synth-play.pd</A>
+<A NAME="tex2html6"
+  HREF="resources/sound/B-sine-wave-synth-play.ogg">B-sine-wave-synth-play.ogg</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html83"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html81"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html75"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html84"
+  HREF="node4.html">random midi note sine</A>
+<B> Up:</B> <A NAME="tex2html82"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html76"
+  HREF="node2.html">random note</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

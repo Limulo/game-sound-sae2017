@@ -1,0 +1,8 @@
+\paragraph{Sequencing chords}
+The only difference between this and the first note sequencer is that instead of a single note we send
+a list of three values for each chord. The pattern is 32 beats with chords
+being sent on the first and 15th beat. If a chord list is too long
+extra notes will simply have no effect. If chord lists have less than 4
+members then the last note sent in the remaining positions will remain playing
+since no new value is unpacked.
+

@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>arp</TITLE>
+<META NAME="description" CONTENT="arp">
+<META NAME="keywords" CONTENT="Composition-002">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-002.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="Composition-002.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html401"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html399"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html393"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html402"
+  HREF="node10.html">sawswoop</A>
+<B> Up:</B> <A NAME="tex2html400"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html394"
+  HREF="node8.html">plucks</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html403"
+  HREF="node9.html#SECTION00091000000000000000">arp part</A>
+<UL>
+<LI><A NAME="tex2html404"
+  HREF="node9.html#SECTION00091010000000000000">same wrapper new synth</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html405"
+  HREF="node9.html#SECTION00092000000000000000">arp sequence</A>
+<UL>
+<LI><A NAME="tex2html406"
+  HREF="node9.html#SECTION00092010000000000000">random all notes selector</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html407"
+  HREF="node9.html#SECTION00093000000000000000">slide arp</A>
+<UL>
+<LI><A NAME="tex2html408"
+  HREF="node9.html#SECTION00093010000000000000">sliding sounds</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html409"
+  HREF="node9.html#SECTION00094000000000000000">cl delay</A>
+<UL>
+<LI><A NAME="tex2html410"
+  HREF="node9.html#SECTION00094010000000000000">center left delay</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html411"
+  HREF="node9.html#SECTION00095000000000000000">play the arpeggio</A>
+<UL>
+<LI><A NAME="tex2html412"
+  HREF="node9.html#SECTION00095010000000000000">bubbling background</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00090000000000000000">
+arp</A>
+</H1>
+
+<H2><A NAME="SECTION00091000000000000000">
+arp part</A>
+</H2>
+Figure <A HREF="#fig::K1-arp">33</A> summary
+
+<UL>
+<LI>sequencer and synth
+</LI>
+<LI>delay fx at 3 x period
+</LI>
+</UL>
+<H4><A NAME="SECTION00091010000000000000">
+same wrapper new synth</A>
+</H4>
+This diagram should be looking familiar now. Again, effects delay
+time is a function of period, 3 times the period, and there is
+the usual arrangement of sequencer and synth with the mixer channel
+set up for fader 5.
+
+<DIV ALIGN="CENTER"><A NAME="fig::K1-arp"></A><A NAME="809"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 33:</STRONG>
+K1-arp</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="289" HEIGHT="331" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/K1-arp}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html70"
+  HREF="resources/puredata/K1-arp.pd">K1-arp.pd</A>
+<P>
+
+<H2><A NAME="SECTION00092000000000000000">
+arp sequence</A>
+</H2>
+Figure <A HREF="#fig::K2-arp-seq">34</A> summary
+
+<UL>
+<LI>float box selector
+</LI>
+<LI>copy some notes octave up
+</LI>
+</UL>
+<H4><A NAME="SECTION00092010000000000000">
+random all notes selector</A>
+</H4>
+All the 8 chord notes are unpacked and available with equal
+probability on each step, including extra copies
+of the upper 3 notes transposed by an octave, thus with 11
+in total there is also the possibility of a rest from
+a random selector of 12.
+
+<DIV ALIGN="CENTER"><A NAME="fig::K2-arp-seq"></A><A NAME="816"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 34:</STRONG>
+K2-arp-seq</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="481" HEIGHT="339" ALIGN="BOTTOM" BORDER="0"
+ SRC="img38.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/K2-arp-seq}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html72"
+  HREF="resources/puredata/K2-arp-seq.pd">K2-arp-seq.pd</A>
+<P>
+
+<H2><A NAME="SECTION00093000000000000000">
+slide arp</A>
+</H2>
+Figure <A HREF="#fig::K3-arp-synth">35</A> summary
+
+<UL>
+<LI>track at random rate
+</LI>
+<LI>envelope only sweeps
+</LI>
+</UL>
+<H4><A NAME="SECTION00093010000000000000">
+sliding sounds</A>
+</H4>
+This is portamento, where a note always travels
+between its last value and the new one, as opposed to
+glissando where the note rises or falls consistently
+from some value to the target note.
+Slide time and decay are related so that
+quick slides have a short envelope and long slides have a matching
+long envelope. This sound has an interesting effect when combined
+with the sustained notes of the pad.
+
+<DIV ALIGN="CENTER"><A NAME="fig::K3-arp-synth"></A><A NAME="823"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 35:</STRONG>
+K3-arp-synth</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="325" HEIGHT="423" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/K3-arp-synth}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html74"
+  HREF="resources/puredata/K3-arp-synth.pd">K3-arp-synth.pd</A>
+<P>
+
+<H2><A NAME="SECTION00094000000000000000">
+cl delay</A>
+</H2>
+Figure <A HREF="#fig::K4-delay">36</A> summary
+
+<UL>
+<LI>filter in feedback loop
+</LI>
+<LI>center then left only
+</LI>
+</UL>
+<H4><A NAME="SECTION00094010000000000000">
+center left delay</A>
+</H4>
+Here is the delay at the heart of most our effects so far. In the feedback
+circuit is a filter to limit recirculating signals to the midrange.
+<code>[clip]</code> is added defensively to make sure that a feedback greater than
+0.9 is never sent by accident.
+Delays work using pairs of objects in Puredata, one is to send to
+the buffer and the other to read from it. The second parameter of the 
+<code>[delwrite]</code> object allocates memory, in milliseconds (times the
+current sample rate). The names of reads and writes must match and should
+be uniqe to that pair of objects in most uses, although many reads from
+the same write is okay for multi-tap reverbs. Time may be varied on
+<code>[delread]</code> via the first inlet with a float message, but this
+causes unpredictable clicks as you might expect.
+Signals arriving at the inlet go first to left and right outlets, and
+then the delayed signal appears on the left channel only. You can create
+many variations on the basic stereo delay effect each with their own
+unique uses and applications. A ping pong is a delay that exchanges left
+and right in the feedback, a lcr distributes delays left, center, right, and
+so on.
+
+<DIV ALIGN="CENTER"><A NAME="fig::K4-delay"></A><A NAME="830"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 36:</STRONG>
+K4-delay</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="363" HEIGHT="278" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/K4-delay}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html76"
+  HREF="resources/puredata/K4-delay.pd">K4-delay.pd</A>
+<P>
+
+<H2><A NAME="SECTION00095000000000000000">
+play the arpeggio</A>
+</H2>
+Figure <A HREF="#fig::K5-arp">37</A> summary
+
+<H4><A NAME="SECTION00095010000000000000">
+bubbling background</A>
+</H4>
+A term you might use to describe a random note from the set on almost every beat
+is "bubbling". This part creates a continuously changing part in
+a high register that should be mixed in quite quietly to add sparkle
+to the arrangement.
+
+<DIV ALIGN="CENTER"><A NAME="fig::K5-arp"></A><A NAME="837"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 37:</STRONG>
+K5-arp</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="685" HEIGHT="276" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/K5-arp-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html78"
+  HREF="resources/puredata/K5-arp-play.pd">K5-arp-play.pd</A>
+<A NAME="tex2html79"
+  HREF="resources/sound/K5-arp-play.ogg">K5-arp-play.ogg</A>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html401"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html399"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html393"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html402"
+  HREF="node10.html">sawswoop</A>
+<B> Up:</B> <A NAME="tex2html400"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html394"
+  HREF="node8.html">plucks</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

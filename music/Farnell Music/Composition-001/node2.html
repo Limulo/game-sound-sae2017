@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>counting timebase</TITLE>
+<META NAME="description" CONTENT="counting timebase">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html106"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html104"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html98"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html107"
+  HREF="node3.html">synth 1</A>
+<B> Up:</B> <A NAME="tex2html105"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html99"
+  HREF="node1.html">Synopsis</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html108"
+  HREF="node2.html#SECTION00020010000000000000">Making a counter</A>
+<LI><A NAME="tex2html109"
+  HREF="node2.html#SECTION00020020000000000000">Abstraction</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00020000000000000000">
+counting timebase</A>
+</H1>
+Figure <A HREF="#fig::timebase">1</A> summary
+
+<UL>
+<LI>inlets start/stop and period
+</LI>
+<LI>each step is previous step plus one
+</LI>
+<LI>outlet bangs
+</LI>
+<LI>outlet time
+</LI>
+</UL>
+<H4><A NAME="SECTION00020010000000000000">
+Making a counter</A>
+</H4>
+Let us begin with way to divide time. Place a metronome object set to 125ms (8 beat at 120bpm), add a float
+object, <code>[f]</code> and an addition object, <code>[+]</code>, and link them as shown so
+that the next value held in the float will be its last value plus
+one. You can verify that the counter works by attaching a number box
+to the float output and a toggle to the left inlet as previously.
+Make sure audio processing is turned on. Click the toggle to start the metronome running. Each time the float
+gets hit with another bang it advances one step. A trigger unit is
+used after the metro to split the bang messages into order, right
+to left - so the counter is incremented before the bang is sent. 
+
+<P>
+
+<H4><A NAME="SECTION00020020000000000000">
+Abstraction</A>
+</H4>
+Delete the toggle and number box you are using to test the counter. Add two inlet boxes, one for
+the start/stop value and one for the period, and add two outlet boxes at the bottom, one for
+regular bang messages and one for float messages from the counter.
+We make the timebase an abstraction simply by saving it as a new file in the same
+directory as the main patch. We gave this the name <code>A-timebase</code> so when
+we use it in another patch we do so by creating a new object <code>[A-timebase]</code>.
+Abstractions are not the same as sub-patches which we created before by prefixing
+a new object with pd like <code>[pd mysubpatch]</code>, you must remember to save each abstraction
+you edit because it isn't a part of the main patch, the main patch just refers to it.
+Unlike sub-patches an abstraction also has its own memory space when loaded, so you can
+duplicate abstractions without worry. 
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::timebase"></A><A NAME="241"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+timebase</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="699" HEIGHT="329" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/A-timebase}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html2"
+  HREF="resources/puredata/A-timebase.pd">A-timebase.pd</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html106"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html104"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html98"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html107"
+  HREF="node3.html">synth 1</A>
+<B> Up:</B> <A NAME="tex2html105"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html99"
+  HREF="node1.html">Synopsis</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

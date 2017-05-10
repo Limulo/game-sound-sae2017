@@ -1,0 +1,13 @@
+\paragraph{parameter substitution}
+In this wrapper you can see we have used an abstraction for a synth called
+\verb+[z-3cosynth]+, and a message that holds all the parameters
+for a certain sound except the note number, which is substituted in.
+For synths that receive all their parameters on each note, note time
+initialised, we can use a message as a patch template and 
+substitute new parameters on the fly by substitution. An alternative is to
+have each control with its own independent inlet. There are pros and cons 
+to both methods in terms of flexibility and the amount of data sent
+on each note (and hence stored somewhere when sequencing). Don't worry
+about the contents of \verb+[z-3cosynth]+ at this point, it is a
+synth with 3 cosines, and all we need to know is that the parameters
+in the message give us a nice fat analogue bass sound.

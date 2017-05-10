@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>sawswoop</TITLE>
+<META NAME="description" CONTENT="sawswoop">
+<META NAME="keywords" CONTENT="Composition-002">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-002.css">
+
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="Composition-002.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html421"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html419"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html413"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html422"
+  HREF="node11.html">strings</A>
+<B> Up:</B> <A NAME="tex2html420"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html414"
+  HREF="node9.html">arp</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html423"
+  HREF="node10.html#SECTION000101000000000000000">saw-swoop part</A>
+<UL>
+<LI><A NAME="tex2html424"
+  HREF="node10.html#SECTION000101010000000000000">long saw sweeps</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html425"
+  HREF="node10.html#SECTION000102000000000000000">saw sequence</A>
+<UL>
+<LI><A NAME="tex2html426"
+  HREF="node10.html#SECTION000102010000000000000">non root notes</A>
+<LI><A NAME="tex2html427"
+  HREF="node10.html#SECTION000102020000000000000">selection</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html428"
+  HREF="node10.html#SECTION000103000000000000000">sawslider</A>
+<UL>
+<LI><A NAME="tex2html429"
+  HREF="node10.html#SECTION000103010000000000000">detuned saws and filter</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html430"
+  HREF="node10.html#SECTION000104000000000000000">play the saw swoops</A>
+<UL>
+<LI><A NAME="tex2html431"
+  HREF="node10.html#SECTION000104010000000000000">occasional swoops</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION000100000000000000000">
+sawswoop</A>
+</H1>
+
+<H2><A NAME="SECTION000101000000000000000">
+saw-swoop part</A>
+</H2>
+Figure <A HREF="#fig::L1-sawswoop">38</A> summary
+
+<H4><A NAME="SECTION000101010000000000000">
+long saw sweeps</A>
+</H4>
+This type of sound features in some Pink Floyd songs and became 
+popular again in 90s chillout/ambient music of artists like
+Namlook and Morris. It is a resonant saw pitch sweep going
+right beyond the normal range and used at the start or end
+of several bars to add new energy or a lead in to a new section.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::L1-sawswoop"></A><A NAME="844"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 38:</STRONG>
+L1-sawswoop</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="269" HEIGHT="350" ALIGN="BOTTOM" BORDER="0"
+ SRC="img42.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/L1-sawswoop}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html81"
+  HREF="resources/puredata/L1-sawswoop.pd">L1-sawswoop.pd</A>
+<P>
+
+<H2><A NAME="SECTION000102000000000000000">
+saw sequence</A>
+</H2>
+Figure <A HREF="#fig::L2-saw-seq">39</A> summary
+
+<UL>
+<LI>non root notes
+</LI>
+<LI>random slice
+</LI>
+<LI>two possible patches
+</LI>
+</UL>
+<H4><A NAME="SECTION000102010000000000000">
+non root notes</A>
+</H4>
+All the notes above 1 and 2 are unpacked from the chord. This composition
+originally had 10 and 12 note chords and there are two redundant
+values unpacked. Sometimes as a piece evolves, not every
+part of stays consistent and interesting "features" may be
+happened upon by accident. The result here should to get an extra two
+rests, but in fact we occasionally get a zero value note since the redundant floats
+are set to 0. I decided to keep this "bug" as part of the composition because
+when the note dives to zero it makes a very nice effect.
+
+<P>
+
+<H4><A NAME="SECTION000102020000000000000">
+selection</A>
+</H4>
+Two cycles of time are used here, a 16 beat bar and a 64 beat one. This is 
+to add an extra few beats on 57, 61 and the last beat of each 4 regular
+bars. There are two synth patches selected in the sequencer. Notice parameter substitution 
+occurs here in the sequencer this time, not in the synth, so we can choose different sounds
+on different beats.
+
+<DIV ALIGN="CENTER"><A NAME="fig::L2-saw-seq"></A><A NAME="851"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 39:</STRONG>
+L2-saw-seq</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="646" HEIGHT="415" ALIGN="BOTTOM" BORDER="0"
+ SRC="img43.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/L2-saw-seq}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html83"
+  HREF="resources/puredata/L2-saw-seq.pd">L2-saw-seq.pd</A>
+<P>
+
+<H2><A NAME="SECTION000103000000000000000">
+sawslider</A>
+</H2>
+Figure <A HREF="#fig::L3-saw-synth">40</A> summary
+
+<UL>
+<LI>detutned phasors
+</LI>
+<LI>filtered
+</LI>
+<LI>clipped
+</LI>
+</UL>
+<H4><A NAME="SECTION000103010000000000000">
+detuned saws and filter</A>
+</H4>
+There's quite a lot to see in this synth and it's layout is 
+not easy to read. Basically, two phasors are at the
+core of the sound, detuned from each other so that one lags
+behind the other when they move but they eventually reach the
+same value. The summed phasors are filtered with 
+bandpass <code>[bp~ 100 1]</code> and clipped <code>[clip~ -0.9 0.9]</code>. The 
+filter resonance is set quite high by an incoming parameter.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::L3-saw-synth"></A><A NAME="858"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 40:</STRONG>
+L3-saw-synth</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="430" HEIGHT="522" ALIGN="BOTTOM" BORDER="0"
+ SRC="img44.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/L3-saw-synth}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html85"
+  HREF="resources/puredata/L3-saw-synth.pd">L3-saw-synth.pd</A>
+<P>
+
+<H2><A NAME="SECTION000104000000000000000">
+play the saw swoops</A>
+</H2>
+Figure <A HREF="#fig::L4-saw">41</A> summary
+
+<H4><A NAME="SECTION000104010000000000000">
+occasional swoops</A>
+</H4>
+Few occurances of this sparse part occur in the composition.
+It also varies quite a lot as the last state of
+of the oscillators makes a difference to how the next note will
+play out. Sometimes you hear it sweep right up to the limits of
+the keyboard and then back to zero where it makes a clicking noise
+as the phasor frequency gets very low. 
+
+<DIV ALIGN="CENTER"><A NAME="fig::L4-saw"></A><A NAME="865"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 41:</STRONG>
+L4-saw</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="685" HEIGHT="276" ALIGN="BOTTOM" BORDER="0"
+ SRC="img45.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-002/images/L4-saw-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html87"
+  HREF="resources/puredata/L4-saw-play.pd">L4-saw-play.pd</A>
+<A NAME="tex2html88"
+  HREF="resources/sound/L4-saw-play.ogg">L4-saw-play.ogg</A>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html421"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html419"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html413"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html422"
+  HREF="node11.html">strings</A>
+<B> Up:</B> <A NAME="tex2html420"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html414"
+  HREF="node9.html">arp</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

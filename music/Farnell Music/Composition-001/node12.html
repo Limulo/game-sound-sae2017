@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>synth 4</TITLE>
+<META NAME="description" CONTENT="synth 4">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html230"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html228"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html222"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html231"
+  HREF="node13.html">chord sequencer</A>
+<B> Up:</B> <A NAME="tex2html229"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html223"
+  HREF="node11.html">playing the drums</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html232"
+  HREF="node12.html#SECTION000120010000000000000">Poly synth</A>
+<LI><A NAME="tex2html233"
+  HREF="node12.html#SECTION000120020000000000000">3 voice synth</A>
+<LI><A NAME="tex2html234"
+  HREF="node12.html#SECTION000120030000000000000">ASR envelope</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION000120000000000000000">
+synth 4</A>
+</H1>
+Figure <A HREF="#fig::synth4">11</A> summary
+
+<UL>
+<LI>poly voice
+</LI>
+<LI>3 note poly chord
+</LI>
+<LI>separate trigger from list
+</LI>
+<LI>sustained envelope
+</LI>
+<LI>unpack the notes from list
+</LI>
+<LI>send to 3 voices
+</LI>
+<LI>mix and scale
+</LI>
+</UL>
+<H4><A NAME="SECTION000120010000000000000">
+Poly synth</A>
+</H4>
+To make chords we need more than one note. Although we could treat
+each synth as a monophonic instrument and build up harmonies by
+careful sequencing, sometimes we like to be able to specify block
+chords that will be played in a polyphonic way. To do this we first
+design a single voice of the instrument. This synth is a variation
+on our first sinewave instrument. It has a vibrato
+and MIDI note input. Control of the final signal amplitude is
+just one multiply, so the instrument is not capable of playing 
+separate notes as such, only chords that start and end together.
+
+<P>
+
+<H4><A NAME="SECTION000120020000000000000">
+3 voice synth</A>
+</H4>
+You can see three of the voices arranged with the frequency of each controlled
+by the corresponding outlet of the <code>[unpack]</code> unit. <code>[unpack]</code> splits up the list of notes sent
+as a chord by the sequencer. We separated the envelope trigger
+from the note list using [t l b] and use the bang to
+activate the envelope message box. 
+
+<P>
+
+<H4><A NAME="SECTION000120030000000000000">
+ASR envelope</A>
+</H4>
+Notice also that the message to <code>[vline~]</code> has a softer attack
+and a significant delay before the decay stage, which
+causes the chord to rise in 35ms and hold for a further 165ms, the remainder 
+of the delay time, then fall to zero in 100ms each time it
+plays. Because 3 voices will be playing at normalised level we need to
+divide the output signal by 3 to get it back into a normalised range.
+
+<DIV ALIGN="CENTER"><A NAME="fig::synth4"></A><A NAME="311"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 11:</STRONG>
+synth4</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="382" HEIGHT="385" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/H-synth4}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html25"
+  HREF="resources/puredata/H-synth4.pd">H-synth4.pd</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html230"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html228"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html222"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html231"
+  HREF="node13.html">chord sequencer</A>
+<B> Up:</B> <A NAME="tex2html229"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html223"
+  HREF="node11.html">playing the drums</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

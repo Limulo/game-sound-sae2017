@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Playing the bass line</TITLE>
+<META NAME="description" CONTENT="Playing the bass line">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html142"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html140"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html134"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html143"
+  HREF="node6.html">synth 2</A>
+<B> Up:</B> <A NAME="tex2html141"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html135"
+  HREF="node4.html">bassline sequencer</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html144"
+  HREF="node5.html#SECTION00050010000000000000">Play the bassline</A>
+<LI><A NAME="tex2html145"
+  HREF="node5.html#SECTION00050020000000000000">Broadcasting variables</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00050000000000000000">
+Playing the bass line</A>
+</H1>
+Figure <A HREF="#fig::bassline">4</A> summary
+
+<UL>
+<LI>Bassline sequencer
+</LI>
+<LI>Bassline synth
+</LI>
+</UL>
+<H4><A NAME="SECTION00050010000000000000">
+Play the bassline</A>
+</H4>
+The bass synth, bass line sequencer and timebase abstractions 
+<code>[A-timebase]</code>, <code>[B-synth1]</code>, and <code>[C-bassline-seq]</code>
+work together in this patch to make a sound.
+Audio signals are sent using <code>[throw~]</code>
+and <code>[catch~]</code> objects, so that we can combine many synths as we go.
+There is link below to a soundfile of this sequence. Notice the very
+basic envelope produces clicks with such low frequencies.
+
+<P>
+
+<H4><A NAME="SECTION00050020000000000000">
+Broadcasting variables</A>
+</H4>
+The patch is split up to make adding more synths easier. Floats from
+the timebase are sent between <code>[s time]</code> and <code>[r time]</code>
+objects, send and receive. Think of these as bluetooth adaptors or
+invisible cables for puredata signals, they exist in unique pairs,
+several <code>[send]</code> transmitters cannot share a <code>[receive]</code>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig::bassline"></A><A NAME="262"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 4:</STRONG>
+bassline</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="366" HEIGHT="294" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/C1-bassline-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html8"
+  HREF="resources/puredata/C1-bassline-play.pd">C1-bassline-play.pd</A>
+<A NAME="tex2html9"
+  HREF="resources/sound/C1-bassline-play.ogg">C1-bassline-play.ogg</A>
+<BR><HR>
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

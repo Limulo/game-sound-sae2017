@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Synopsis</TITLE>
+<META NAME="description" CONTENT="Synopsis">
+<META NAME="keywords" CONTENT="Composition-002">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-002.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="Composition-002.html">
+<LINK REL="up" HREF="Composition-002.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html240"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html238"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html232"
+  HREF="Composition-002.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html241"
+  HREF="node2.html">transport-controls</A>
+<B> Up:</B> <A NAME="tex2html239"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html233"
+  HREF="Composition-002.html">Composition 002</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html242"
+  HREF="node1.html#SECTION00010010000000000000">Introduction</A>
+<LI><A NAME="tex2html243"
+  HREF="node1.html#SECTION00010020000000000000">Aims</A>
+<LI><A NAME="tex2html244"
+  HREF="node1.html#SECTION00010030000000000000">Methods</A>
+<LI><A NAME="tex2html245"
+  HREF="node1.html#SECTION00010040000000000000">New units used</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00010000000000000000">
+Synopsis</A>
+</H1>
+
+<P>
+
+<H4><A NAME="SECTION00010010000000000000">
+Introduction</A>
+</H4>
+This is the third tutorial in a series on composing electronic music with Puredata. 
+Composition000 and Composition001 introduced simple DSP and message sequencing. Here
+we consolidate that knowledge with a study no more difficult than the last
+part, showing the development of a 'real' piece of music. This might serve as
+a good enough template, or inspiration for documenting you own Pd projects, breaking
+down each abstraction and explaining your code comments with more detailed text
+alongside the diagrams and sound captures. Skip this part if you are focusing on
+MIDI composition and go to the next appropriate tutorial. 
+
+<P>
+
+<H4><A NAME="SECTION00010020000000000000">
+Aims</A>
+</H4>
+To complete a piece of music with at least six parts of diverse timbre. Use GUI objects to
+make a mixer and reuse abstractions. Explore random choices, selection and sequence in
+regard to making a music score. Substitute parameters into lists to make adaptations
+to a synthesiser. Create some delay and filter effects.
+
+<P>
+
+<H4><A NAME="SECTION00010030000000000000">
+Methods</A>
+</H4>
+We will add parts in compositional order, as I did when making the original piece.
+Starting with some chords and a pad sound we establish the harmonic structure and pace.
+A bass part and drums fix the beat and root, then we add some melody and arpeggio
+instruments. Each part is built in its own abstraction and some parts are included
+many times. The sequencer, synth, and any effects will be built each time before
+listening to the result.
+
+<P>
+
+<H4><A NAME="SECTION00010040000000000000">
+New units used</A>
+</H4>
+
+<UL>
+<LI><code>[vd~]</code>: Variable delay.
+</LI>
+<LI><code>[spigot]</code> A tap or valve for messages.
+</LI>
+<LI><code>[del]</code> Delay a bang message.
+</LI>
+<LI><code>[sig~]</code> Turn a message into a signal.
+</LI>
+<LI><code>[vcf~]</code> Better variable bandpass filter.
+</LI>
+<LI><code>[delread~]</code> Read from a named delay buffer.
+</LI>
+<LI><code>[delwrite~]</code> Write to a named delay buffer.
+</LI>
+<LI><code>[clip~]</code> Audio clip, set max and min signal range.
+</LI>
+</UL> 
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html240"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html238"
+  HREF="Composition-002.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html232"
+  HREF="Composition-002.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html241"
+  HREF="node2.html">transport-controls</A>
+<B> Up:</B> <A NAME="tex2html239"
+  HREF="Composition-002.html">Composition 002</A>
+<B> Previous:</B> <A NAME="tex2html233"
+  HREF="Composition-002.html">Composition 002</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

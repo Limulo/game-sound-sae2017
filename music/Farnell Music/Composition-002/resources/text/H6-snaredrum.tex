@@ -1,0 +1,16 @@
+\paragraph{4 parameters}
+Each of four parameters is unpacked and connected to
+its destination in the DSP. The first parameter
+sets the top of the sweep range and the second
+sets the minimum with  \verb+[* ]+ and \verb@[+ ]@
+units respectively. Parameter 3 goes directly
+to the resonance inlet of filter \verb+[bp~ 400 2 ]+.
+
+
+\paragraph{signals}
+The signal source is
+\verb+[noise~ ]+, which is modified by the filter. Notice that
+the control signals for the filter cutoff are not at audio rate.
+Message domain control is used because \verb+[bp~ ]+ cutoff is a message rate inlet.
+However, we convert the amplitude control to a smoothed signal at the last moment,
+\verb+[lop~]+ is used to remove any sudden jumps. 

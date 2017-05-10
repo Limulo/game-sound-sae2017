@@ -1,0 +1,24 @@
+\paragraph{Making a counter}
+Let us begin with way to divide time. Place a metronome object set to 125ms (8 beat at 120bpm), add a float
+object, \verb+[f]+ and an addition object, \verb@[+]@, and link them as shown so
+that the next value held in the float will be its last value plus
+one. You can verify that the counter works by attaching a number box
+to the float output and a toggle to the left inlet as previously.
+Make sure audio processing is turned on. Click the toggle to start the metronome running. Each time the float
+gets hit with another bang it advances one step. A trigger unit is
+used after the metro to split the bang messages into order, right
+to left - so the counter is incremented before the bang is sent. 
+
+\paragraph{Abstraction}
+Delete the toggle and number box you are using to test the counter. Add two inlet boxes, one for
+the start/stop value and one for the period, and add two outlet boxes at the bottom, one for
+regular bang messages and one for float messages from the counter.
+We make the timebase an abstraction simply by saving it as a new file in the same
+directory as the main patch. We gave this the name \verb+A-timebase+ so when
+we use it in another patch we do so by creating a new object \verb+[A-timebase]+.
+Abstractions are not the same as sub-patches which we created before by prefixing
+a new object with pd like \verb+[pd mysubpatch]+, you must remember to save each abstraction
+you edit because it isn't a part of the main patch, the main patch just refers to it.
+Unlike sub-patches an abstraction also has its own memory space when loaded, so you can
+duplicate abstractions without worry. 
+ 

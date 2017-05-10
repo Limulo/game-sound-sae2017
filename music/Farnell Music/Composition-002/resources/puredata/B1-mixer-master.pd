@@ -1,0 +1,13 @@
+#N canvas 0 0 296 185 10;
+#X obj 79 104 *;
+#X obj 79 69 t b f;
+#X obj 29 43 r mast;
+#X obj 79 43 r mastmute;
+#X obj 79 132 B2-mixer-output;
+#X text 73 8 mixer master;
+#X text 130 93 all channels;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 1 1 0 1;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;

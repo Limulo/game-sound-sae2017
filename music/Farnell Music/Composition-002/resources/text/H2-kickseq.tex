@@ -1,0 +1,15 @@
+\paragraph{two select units}
+When placing beats you don't have to use one \verb+[select]+ object
+and insert each beat in the right order, that would be most
+frustrating, instead its okay to just add more \verb+[select]+ 
+operations for new beats as needed. Here the first and
+second bar are handled by different \verb+[select]+ units.
+
+\paragraph{skip some beats}
+Beats 2, 7 and 10 do not play every time.
+A \verb+[spigot]+ is like a valve, it lets its input through to the output
+whenever a 1 message appears at its right inlet, and continues to do so
+until it is sent a 0 message. The messages on the left inlet are then
+blocked and do not appear at the output. Here a \verb+[random 2]+ unit
+in combination with a spigot permits one in every two beats to pass through.
+

@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>random midi note sine wave</TITLE>
+<META NAME="description" CONTENT="random midi note sine wave">
+<META NAME="keywords" CONTENT="Composition-000">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-000.css">
+
+<LINK REL="next" HREF="node5.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="Composition-000.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html97"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html95"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html89"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html98"
+  HREF="node5.html">random sine wave with</A>
+<B> Up:</B> <A NAME="tex2html96"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html90"
+  HREF="node3.html">sine wave synth</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html99"
+  HREF="node4.html#SECTION00040010000000000000">Randomness</A>
+<LI><A NAME="tex2html100"
+  HREF="node4.html#SECTION00040020000000000000">Loadbang</A>
+<LI><A NAME="tex2html101"
+  HREF="node4.html#SECTION00040030000000000000">Volume control</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00040000000000000000">
+random midi note sine wave</A>
+</H1>
+Figure <A HREF="#fig::random-sine">3</A> summary
+
+<UL>
+<LI>send bang to start  once at load
+</LI>
+<LI>every 300 ms
+</LI>
+<LI>pick a random note from 2 octaves
+</LI>
+<LI>start on note 48
+</LI>
+<LI>convert midi number to Hz
+</LI>
+<LI>cosine/sine generator
+</LI>
+<LI>make it quieter
+</LI>
+</UL>
+<H4><A NAME="SECTION00040010000000000000">
+Randomness</A>
+</H4>
+So now we can connect the random number generator and get an octave of
+notes in a western chromatic scale, a wandering melody. Each number is as likely to occur
+next as all the others, including itself so some notes may appear to hold
+for more than one period. <code>[random]</code> is actually a pseudo random number
+generator that follows a very long but theoretically repeatable pattern,
+although distribution of the numbers is essentialy random. Because the
+object starts in the same initial state when a patch is loaded you
+hear the same random sequence unless you "seed" <code>[random]</code>. This
+can be extremely useful in composition to have control over, whether 
+a sequence is predictable but complex, or completely unpredictable. 
+
+<P>
+
+<H4><A NAME="SECTION00040020000000000000">
+Loadbang</A>
+</H4>
+There is a new <code>[loadbang]</code> object right at the top of the signal path. This emits
+one bang when the patch is loaded, so it automatically starts the metronome. Having
+control over this is useful, you may not want to have to switch on every process
+in your programs, some must start automatically.
+
+<P>
+
+<H4><A NAME="SECTION00040030000000000000">
+Volume control</A>
+</H4>
+This patch is made slightly quieter by multiplying the audio signal by 0.3, which 
+is a useful scaling amount when mixing musical signals. In computer composition it's
+best to work with plenty of headroom until you need to mix something down, about
+one third of FSD is a fine place to work from.
+
+<DIV ALIGN="CENTER"><A NAME="fig::random-sine"></A><A NAME="158"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+random-sine</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="371" HEIGHT="305" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-000/images/C-random-sine-play}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html8"
+  HREF="resources/puredata/C-random-sine-play.pd">C-random-sine-play.pd</A>
+<A NAME="tex2html9"
+  HREF="resources/sound/C-random-sine-play.ogg">C-random-sine-play.ogg</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html97"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html95"
+  HREF="Composition-000.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html89"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html98"
+  HREF="node5.html">random sine wave with</A>
+<B> Up:</B> <A NAME="tex2html96"
+  HREF="Composition-000.html">Composition 000</A>
+<B> Previous:</B> <A NAME="tex2html90"
+  HREF="node3.html">sine wave synth</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

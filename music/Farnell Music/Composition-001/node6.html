@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>synth 2</TITLE>
+<META NAME="description" CONTENT="synth 2">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html154"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html152"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html146"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html155"
+  HREF="node7.html">float box arpeggiator</A>
+<B> Up:</B> <A NAME="tex2html153"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html147"
+  HREF="node5.html">Playing the bass line</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html156"
+  HREF="node6.html#SECTION00060010000000000000">A better envelope</A>
+<LI><A NAME="tex2html157"
+  HREF="node6.html#SECTION00060020000000000000">Amplitude curve</A>
+<LI><A NAME="tex2html158"
+  HREF="node6.html#SECTION00060030000000000000">Vibrato</A>
+<LI><A NAME="tex2html159"
+  HREF="node6.html#SECTION00060040000000000000">Timbre change</A>
+<LI><A NAME="tex2html160"
+  HREF="node6.html#SECTION00060050000000000000">Notes</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00060000000000000000">
+synth 2</A>
+</H1>
+Figure <A HREF="#fig::synth2">5</A> summary
+
+<UL>
+<LI>vibrato lfo
+</LI>
+<LI>set decay
+</LI>
+<LI>better line
+</LI>
+<LI>obtain square wave
+</LI>
+<LI>square decay amp
+</LI>
+<LI>rescale
+</LI>
+<LI>amplitude envelope
+</LI>
+</UL>
+<H4><A NAME="SECTION00060010000000000000">
+A better envelope</A>
+</H4>
+Instead of <code>[line~]</code> we have used <code>[vline~]</code> 
+which takes slightly different arguments. The <code>[vline~]</code>  generator
+takes message arguments of the form (level to go to, time to get
+there, delay to wait), so a message like <code>[1 12 0, 0 400 12(</code> will send
+the line to one in twelve milliseconds, and then begin moving back to
+zero over four hundred milliseconds after a 12 millisecond delay.
+This allows for envelopes with a long attack phase to be specified in
+a single message. If we sent something like <code>[1 100, 0 20(</code> to 
+<code>[line~]</code> it would not work. Why? Because the first message of
+the pair says go to 1 in 100ms but <code>[line~]</code> immediately
+starts moving towards 0 in 20s the instant it receives the second message,
+just after receiving the first. <code>[line~]</code> is an unscheduled
+segment generator, while <code>[vline~]</code> is scheduled and can have
+multiple stages all specified in the same message.
+
+<P>
+
+<H4><A NAME="SECTION00060020000000000000">
+Amplitude curve</A>
+</H4>
+To make the amplitude value decay away more quickly near the beginning we take
+the square of the signal. This works because the output of <code>[vline~]</code>
+is normalised 0 to 1. If we use <code>[*~]</code> to multiply a signal by
+itself  we get its square as <!-- MATH
+ ${x \times x = x^2}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="79" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$ {x \times x = x^2}$"></SPAN>. One squared is
+one and zero squared is zero, but how does the value change over this range?
+It becomes curved, its rate of change becomes proportional to its value, so
+it dies away more quickly at the start. 
+
+<P>
+
+<H4><A NAME="SECTION00060030000000000000">
+Vibrato</A>
+</H4>
+Midi note numbers are converted to Hz as before, and this time we add
+a constantly changing signal of amplitude 3 from another much slower
+oscillator running at 8Hz. Note that we used <code>[+~]</code>, the signal
+version of add here even though the frequency value is a message.
+Because the lfo sine wave is symmetrical about zero the average pitch
+will still be that given by <code>[mtof]</code>.
+
+<P>
+
+<H4><A NAME="SECTION00060040000000000000">
+Timbre change</A>
+</H4>
+We shape the output of our oscillator to give a different
+tone from the first synth. A "square wave"<IMG
+ WIDTH="8" HEIGHT="27" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="\dag"><A HREF="#squaremeaning">6</A> is obtained by
+clipping the range of the cosine wave . This effectively
+chops the top and bottom of the waveform off. <code>[clip~ -1 1]</code>
+would have no effect on a normalised signal, <code>[clip~ -0.5 0.5]</code>
+will chop off half the top and bottom. <code>[clip~ -0.1 0.1]</code>
+removes all but the 10 percent closest to 0 creating flattened
+top. Multiplying it by a compensation factor brings the clipped wave back up to an audible level. As before
+we scale the signal path by the amplitude envelope using <code>[*~]</code>
+
+<P>
+
+<H4><A NAME="SECTION00060050000000000000">
+Notes</A>
+</H4>
+<IMG
+ WIDTH="8" HEIGHT="27" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="\dag"><A NAME="squaremeaning"></A>The word <code>"square"</code> is used in two ways on this page. When we create a square-wave
+we are distorting a wave so that its shape appears square. When we take the square of a signal
+we multiply it by itself. These are two different things.
+
+<DIV ALIGN="CENTER"><A NAME="fig::synth2"></A><A NAME="269"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5:</STRONG>
+synth2</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="374" HEIGHT="381" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/D-synth2}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html11"
+  HREF="resources/puredata/D-synth2.pd">D-synth2.pd</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html154"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html152"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html146"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html155"
+  HREF="node7.html">float box arpeggiator</A>
+<B> Up:</B> <A NAME="tex2html153"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html147"
+  HREF="node5.html">Playing the bass line</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

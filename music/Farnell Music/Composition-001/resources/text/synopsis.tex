@@ -1,0 +1,25 @@
+\section{Synopsis}
+We are going to compose a very simple piece of music in Puredata. We
+will be introduced to a sine wave oscillator, a line segment and
+simple filters. Starting with a counter we will establish a timebase
+and use [select] operations to create part melodies. A separate note
+sequencer for each of four tracks will run from the same timebase.
+Creating abstractions, unpacking lists and modulo arithmetic are
+introduced.
+
+\paragraph{New units used}
+\begin{itemize}
+\item \verb+[f]+: Store a float value.
+\item \verb+[line~]+ Audio rate line generator.
+\item \verb@[mod]@ Modulo operator.
+\item \verb+[select]+ Bang one or more outlets matching message.
+\item \verb+[vline~]+ More versatile audio line.
+\item \verb+[unpack]+ Distribute a list of values.
+\item \verb+[swap]+ Exchange two values.
+\item \verb+[moses]+ Split a stream of values at threshold.
+\item \verb+[noise~]+ Random audio signal, white noise.
+\item \verb+[bp~]+ Band pass filter with resonance.
+\item \verb+[lop~]+ Low pass filter.
+\item \verb+[throw~]+ Send audio to a multi connection bus.
+\item \verb+[catch~]+ Audio bus destination.
+\end{itemize} 

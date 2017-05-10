@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>float box arpeggiator</TITLE>
+<META NAME="description" CONTENT="float box arpeggiator">
+<META NAME="keywords" CONTENT="Composition-001">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Composition-001.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="Composition-001.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY text="#000000" bgcolor="#FFFFFF">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html169"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html167"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html161"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html170"
+  HREF="node8.html">playing melody line</A>
+<B> Up:</B> <A NAME="tex2html168"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html162"
+  HREF="node6.html">synth 2</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><UL>
+<LI><A NAME="tex2html171"
+  HREF="node7.html#SECTION00070010000000000000">Sequencing the melody</A>
+<LI><A NAME="tex2html172"
+  HREF="node7.html#SECTION00070020000000000000">Unpacking lists</A>
+<LI><A NAME="tex2html173"
+  HREF="node7.html#SECTION00070030000000000000">Transposition</A>
+</UL></UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00070000000000000000">
+float box arpeggiator</A>
+</H1>
+Figure <A HREF="#fig::melody-seq">6</A> summary
+
+<UL>
+<LI>cycle over 4 notes
+</LI>
+<LI>distribute list over 4 float boxes
+</LI>
+<LI>each value stored until selected
+</LI>
+<LI>transpose
+</LI>
+<LI>notes out
+</LI>
+</UL>
+<H4><A NAME="SECTION00070010000000000000">
+Sequencing the melody</A>
+</H4>
+Wiring up <code>[select]</code> objects is fine for making fixed patterns
+like rhythms to store away, but not much use when you want to
+change a sequence rapidly without breaking connections. 
+This time the sequence is still fixed in a particular order, just 4 steps
+that cycle round, but the values at each position are variable. This
+is sometimes called an arpeggiator, an 8 or 16 step sequencer found on
+many old analogue modular synths.
+
+<P>
+
+<H4><A NAME="SECTION00070020000000000000">
+Unpacking lists</A>
+</H4>
+Instead of sending each of the four notes separately into this 
+sequencer abstraction we have just one inlet <code>[inlet note sequence]</code>, that carries a list like <code>[12 34 56 78(</code>.
+The <code>[select]</code> is fed by <code>[mod 4]</code> and sends a bang to each
+of 4 outputs in turn. These cause successive <code>[f]</code> boxes to output
+the float stored in them. To get the note numbers from the list we 
+use <code>[unpack]</code> to split up the list and distribute the numbers,
+to the left inlet of each float box. The sequence message is always unpacked
+in the same left to right ordering, but remember the values appear at the
+outlets of <code>[unpack]</code> in right to left evaluation order just as with
+any Puredata object.
+
+<P>
+
+<H4><A NAME="SECTION00070030000000000000">
+Transposition</A>
+</H4>
+With a wire carrying note numbers as individual floats its easy to transpose, here we add
+an octave with <code>[+ 12]</code> . The third inlet, <code>[inlet transpose]</code> provides a way to control the
+transposition from the outside.
+
+<DIV ALIGN="CENTER"><A NAME="fig::melody-seq"></A><A NAME="276"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 6:</STRONG>
+melody-seq</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="571" HEIGHT="316" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="\includegraphics[angle=0, scale=1]{/home/zero/PRODUCTION/TEACHING/PD/Composition-001/images/E-melody-seq}">
+    
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<A NAME="tex2html13"
+  HREF="resources/puredata/E-melody-seq.pd">E-melody-seq.pd</A>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html169"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html167"
+  HREF="Composition-001.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html161"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html170"
+  HREF="node8.html">playing melody line</A>
+<B> Up:</B> <A NAME="tex2html168"
+  HREF="Composition-001.html">Composition 001</A>
+<B> Previous:</B> <A NAME="tex2html162"
+  HREF="node6.html">synth 2</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andy Farnell<br><a href=http://obiwannabe.co.uk/>http://obiwannabe.co.uk/</a>
+</ADDRESS>
+</BODY>
+</HTML>

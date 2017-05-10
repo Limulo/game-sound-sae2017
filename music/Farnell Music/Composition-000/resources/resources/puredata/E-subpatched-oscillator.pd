@@ -1,0 +1,18 @@
+#N canvas 0 0 450 300 10;
+#X obj 40 137 mtof;
+#X obj 40 159 osc~;
+#X obj 24 201 *~ 0.3;
+#X obj 24 180 *~;
+#X obj 24 91 inlet amp;
+#X obj 40 63 inlet midinote;
+#X text 44 15 Subpatched oscillator;
+#X obj 25 246 outlet~;
+#X text 103 92 inlet boxes connect to outside;
+#X text 97 246 audio rate output;
+#X text 103 163 reusable code inside;
+#X connect 0 0 1 0;
+#X connect 1 0 3 1;
+#X connect 2 0 7 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;

@@ -1,0 +1,39 @@
+\section{Synopsis}
+
+\paragraph{Introduction}
+This is the third tutorial in a series on composing electronic music with Puredata. 
+Composition000 and Composition001 introduced simple DSP and message sequencing. Here
+we consolidate that knowledge with a study no more difficult than the last
+part, showing the development of a 'real' piece of music. This might serve as
+a good enough template, or inspiration for documenting you own Pd projects, breaking
+down each abstraction and explaining your code comments with more detailed text
+alongside the diagrams and sound captures. Skip this part if you are focusing on
+MIDI composition and go to the next appropriate tutorial. 
+
+
+
+\paragraph{Aims}
+To complete a piece of music with at least six parts of diverse timbre. Use GUI objects to
+make a mixer and reuse abstractions. Explore random choices, selection and sequence in
+regard to making a music score. Substitute parameters into lists to make adaptations
+to a synthesiser. Create some delay and filter effects.
+
+\paragraph{Methods}
+We will add parts in compositional order, as I did when making the original piece.
+Starting with some chords and a pad sound we establish the harmonic structure and pace.
+A bass part and drums fix the beat and root, then we add some melody and arpeggio
+instruments. Each part is built in its own abstraction and some parts are included
+many times. The sequencer, synth, and any effects will be built each time before
+listening to the result.
+
+\paragraph{New units used}
+\begin{itemize}
+\item \verb+[vd~]+: Variable delay.
+\item \verb+[spigot]+ A tap or valve for messages.
+\item \verb@[del]@ Delay a bang message.
+\item \verb+[sig~]+ Turn a message into a signal.
+\item \verb+[vcf~]+ Better variable bandpass filter.
+\item \verb+[delread~]+ Read from a named delay buffer.
+\item \verb+[delwrite~]+ Write to a named delay buffer.
+\item \verb+[clip~]+ Audio clip, set max and min signal range.
+\end{itemize} 

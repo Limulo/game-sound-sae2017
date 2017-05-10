@@ -1,0 +1,12 @@
+\paragraph{Mixing several parts}
+To mix two or more parts we send them to a bus with
+another \verb+[throw~ mix]+. Unlike \verb+[send~]+ many different \verb+[throw~]+
+units can talk to a single \verb+[catch~]+. Before going to the
+bus, each channel in our mixer passes through another multiply 
+set by a corresponding GUI fader object. The mix of audio is collected by 
+\verb+[catch~ mix]+ and scaled to make it a little quieter.
+
+\paragraph{Conclusion}
+Here is our final composition with 4 separate synthesisers and 4 sequencers, one for each part.
+It plays a pattern 32 beats long with a bass line, noise drums, arpeggio and chords.
+The timebase is controlled by a toggle switch so it can be started from the main patch.

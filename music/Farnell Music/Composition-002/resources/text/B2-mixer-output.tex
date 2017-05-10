@@ -1,0 +1,7 @@
+\paragraph{catch main bus}
+\verb+[catch~ left]+ and \verb+[catch~ right]+ pick up from 
+two globally visible main signals "left" and "right" which
+are driven by \verb+[throw~]+ objects. Here both are
+multiplied by a simple line with 20ms slew for a fast but slightly
+less clicky fade action. Outputs for the \verb+[dac~]+ are specified
+explicitly, but you don't have to do this unless working with multi channel audio.
