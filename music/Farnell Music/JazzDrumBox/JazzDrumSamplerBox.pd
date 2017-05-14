@@ -1,6 +1,6 @@
-#N canvas 0 0 304 201 10;
+#N canvas 1 78 463 323 10;
 #X obj 3 219 dac~;
-#N canvas 0 0 302 202 jazzman 0;
+#N canvas 0 50 302 202 jazzman 0;
 #X obj 1 0 cnv 15 300 200 empty empty JAZZMAN 20 12 0 14 -257472 -66577
 0;
 #X obj 1 31 cnv 15 300 48 empty empty empty 20 12 0 14 -228992 -66577
@@ -14,18 +14,18 @@
 #X obj 22 154 vsl 12 32 0 1 0 0 empty empty HH 0 -8 0 8 -258699 -1
 -1 1550 1;
 #X obj 108 154 vsl 12 32 0 1 0 0 empty empty Snare 0 -8 0 8 -260818
--1 -1 2250 1;
+-1 -1 1550 1;
 #X obj 108 42 vsl 12 32 2 0.5 0 0 empty empty busy 0 -8 0 8 -241291
--1 -1 953 1;
+-1 -1 1653 1;
 #X obj 156 41 vsl 12 32 0.3 1.2 0 0 empty empty swing 0 -8 0 8 -260818
--1 -1 1536 1;
+-1 -1 2136 1;
 #X obj 64 41 vsl 12 32 50 300 0 0 empty empty speed 0 -8 0 8 -44926
 -1 -1 2232 1;
 #X obj 615 39 loadbang;
 #X obj 21 98 vsl 12 32 1 8 0 0 empty empty hihat_steps 0 -8 0 8 -261689
--1 -1 871 1;
+-1 -1 1771 1;
 #X obj 196 99 vsl 12 32 1 12 0 0 empty empty snare_runs 0 -8 0 8 -261681
--1 -1 3100 1;
+-1 -1 564 1;
 #X obj 108 100 vsl 12 32 1 12 0 0 empty empty kick_runs 0 -8 0 8 -225271
 -1 -1 564 1;
 #X obj 240 154 vsl 12 32 1 4 1 0 empty empty distort 0 -8 0 8 -250685
@@ -51,9 +51,9 @@
 #X msg 484 72 1600;
 #X msg 525 72 1.4;
 #X msg 449 72 0.5;
-#N canvas 0 0 725 844 gubbins 0;
+#N canvas 0 50 725 844 gubbins 0;
 #X floatatom 314 271 0 0 144 0 - - -;
-#N canvas 0 0 326 253 loadsamples 0;
+#N canvas 0 50 326 253 loadsamples 0;
 #X obj 22 200 soundfiler;
 #X obj 72 134 makefilename #0-drum%d;
 #X obj 22 156 pack s s;
@@ -82,7 +82,7 @@
 #X connect 10 0 5 0;
 #X connect 11 0 2 0;
 #X restore 408 41 pd loadsamples;
-#N canvas 0 0 700 225 tables 0;
+#N canvas 0 50 700 225 tables 0;
 #X obj 8 13 table #0-drum0 2048;
 #X obj 8 33 table #0-drum1 2048;
 #X obj 8 53 table #0-drum2 2048;
@@ -117,7 +117,7 @@
 #X obj 515 148 table #0-drum31 2048;
 #X restore 406 64 pd tables;
 #X obj 325 436 random 16;
-#N canvas 0 0 425 381 playeri1 0;
+#N canvas 0 50 425 381 playeri1 0;
 #X obj 247 198 hip~ 5;
 #X obj 247 145 vline~;
 #X obj 247 173 tabread4~;
@@ -153,14 +153,14 @@
 #X obj 497 475 random 7;
 #X obj 162 401 + 16;
 #X obj 497 432 random 2;
-#X floatatom 337 459 5 0 0 0 - - -;
-#X floatatom 504 527 5 0 0 0 - - -;
+#X floatatom 337 459 5 0 0 0 - - -, f 5;
+#X floatatom 504 527 5 0 0 0 - - -, f 5;
 #X obj 497 497 + 25;
 #X obj 266 270 mod 16;
 #X obj 265 200 / 2;
 #X obj 265 222 int;
 #X obj 266 243 change;
-#N canvas 0 0 425 381 playeri3 0;
+#N canvas 0 50 425 381 playeri3 0;
 #X obj 247 198 hip~ 5;
 #X obj 247 145 vline~;
 #X obj 247 173 tabread4~;
@@ -189,7 +189,7 @@
 #X connect 14 0 1 0;
 #X connect 15 0 2 0;
 #X restore 325 597 pd playeri3;
-#N canvas 0 0 425 381 playeri2 0;
+#N canvas 0 50 425 381 playeri2 0;
 #X obj 247 198 hip~ 5;
 #X obj 247 145 vline~;
 #X obj 247 173 tabread4~;
@@ -220,14 +220,14 @@
 #X restore 167 601 pd playeri2;
 #X obj 292 140 del 100;
 #X obj 350 91 / 2;
-#N canvas 0 0 729 266 rupto 0;
+#N canvas 0 50 729 266 rupto 0;
 #X obj 106 124 f;
 #X obj 135 124 + 1;
 #X obj 146 176 sel 1;
 #X msg 148 199 0;
 #X obj 164 25 inlet;
-#X floatatom 204 155 5 0 0 0 - - -;
-#X floatatom 89 162 5 0 0 0 - - -;
+#X floatatom 204 155 5 0 0 0 - - -, f 5;
+#X floatatom 89 162 5 0 0 0 - - -, f 5;
 #X msg 191 50 bang;
 #X obj 145 153 >=;
 #X obj 96 96 spigot;
@@ -262,14 +262,14 @@
 #X connect 18 0 17 1;
 #X restore 496 409 pd rupto;
 #X obj 292 375 sel 0 8;
-#N canvas 0 0 729 266 rupto 0;
+#N canvas 0 50 729 266 rupto 0;
 #X obj 106 124 f;
 #X obj 135 124 + 1;
 #X obj 146 176 sel 1;
 #X msg 148 199 0;
 #X obj 164 25 inlet;
-#X floatatom 204 155 5 0 0 0 - - -;
-#X floatatom 89 162 5 0 0 0 - - -;
+#X floatatom 204 155 5 0 0 0 - - -, f 5;
+#X floatatom 89 162 5 0 0 0 - - -, f 5;
 #X msg 191 50 bang;
 #X obj 145 153 >=;
 #X obj 96 96 spigot;
@@ -305,25 +305,25 @@
 #X restore 325 414 pd rupto;
 #X obj 162 378 mod 7;
 #X obj 161 340 int;
-#X floatatom 161 361 5 0 0 0 - - -;
+#X floatatom 161 361 5 0 0 0 - - -, f 5;
 #X obj 138 53 t;
 #X obj 300 77 f;
-#X floatatom 89 44 5 0 0 0 - - -;
-#X floatatom 372 174 5 0 0 0 - - -;
+#X floatatom 89 44 5 0 0 0 - - -, f 5;
+#X floatatom 372 174 5 0 0 0 - - -, f 5;
 #X obj 239 107 metro 300;
 #X obj 352 120 * 0.6;
 #X msg 311 51 300;
 #X obj 311 30 loadbang;
 #X obj 545 324 int;
-#X floatatom 572 353 5 0 0 0 - - -;
+#X floatatom 572 353 5 0 0 0 - - -, f 5;
 #X obj 422 297 int;
-#X floatatom 453 298 5 0 0 0 - - -;
+#X floatatom 453 298 5 0 0 0 - - -, f 5;
 #X obj 356 725 dist~;
 #X obj 362 812 outlet~;
 #X obj 326 675 vcf~;
 #X obj 363 785 *~;
 #X obj 172 19 r \$0-busy;
-#X floatatom 172 46 5 0 0 0 - - -;
+#X floatatom 172 46 5 0 0 0 - - -, f 5;
 #X obj 87 9 r \$0-swing;
 #X obj 284 9 r \$0-speed;
 #X obj 567 582 r \$0-snarel;

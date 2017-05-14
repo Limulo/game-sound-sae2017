@@ -1,0 +1,114 @@
+#N canvas 240 282 1090 485 10;
+#X obj 160 88 hid;
+#X msg 160 63 close;
+#X msg 160 40 poll 20;
+#X text 223 64 close the device;
+#X msg 160 17 open 0x2563 0x0515;
+#X obj 160 119 route key abs;
+#X obj 160 273 tgl 15 0 empty empty A 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 210 273 tgl 15 0 empty empty B 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 260 273 tgl 15 0 empty empty X 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 310 273 tgl 15 0 empty empty Y 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 160 248 route btn_0 btn_1 btn_3 btn_4;
+#X obj 375 277 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 425 277 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 475 277 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 525 277 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 375 248 route btn_6 btn_8 btn_7 btn_9;
+#X obj 590 277 tgl 15 0 empty empty select 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 647 277 tgl 15 0 empty empty start 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 704 277 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 761 277 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 590 248 route btn_10 btn_11 btn_13 btn_14;
+#X floatatom 425 176 7 0 0 0 - - -, f 7;
+#X obj 405 176 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+-1;
+#X floatatom 503 176 7 0 0 0 - - -, f 7;
+#X obj 483 176 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 425 154 route abs_hat0x abs_hat0y;
+#X floatatom 611 175 7 0 0 0 - - -, f 7;
+#X floatatom 669 175 7 0 0 0 - - -, f 7;
+#X obj 611 153 route abs_x abs_y;
+#X floatatom 741 175 7 0 0 0 - - -, f 7;
+#X floatatom 799 175 7 0 0 0 - - -, f 7;
+#X obj 741 153 route abs_z abs_rz;
+#X floatatom 879 175 7 0 0 0 - - -, f 7;
+#X floatatom 958 175 7 0 0 0 - - -, f 7;
+#X obj 879 153 route abs_gas abs_brake;
+#X obj 958 195 vsl 15 50 0 255 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 0 1;
+#X obj 879 195 vsl 15 50 0 255 0 0 empty empty empty 0 -9 0 10 -204786
+-1 -1 0 1;
+#X text 422 131 D-pad (directional pad);
+#X text 692 111 analog sticks;
+#X text 652 131 left;
+#X text 782 131 right;
+#X text 398 229 shoulders and triggers;
+#X obj 106 17 t b b;
+#X obj 17 86 sel 1;
+#X obj 17 17 tgl 15 0 empty empty gamepad 17 7 0 10 -204786 -1 -1 1
+1;
+#X obj 160 323 outlet A;
+#X obj 210 303 outlet B;
+#X obj 260 323 outlet C;
+#X obj 310 303 outlet D;
+#X obj 425 323 outlet trigL;
+#X obj 525 323 outlet trigR;
+#X obj 17 191 inlet;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 10 0;
+#X connect 5 1 25 0;
+#X connect 6 0 45 0;
+#X connect 7 0 46 0;
+#X connect 8 0 47 0;
+#X connect 9 0 48 0;
+#X connect 10 0 6 0;
+#X connect 10 1 7 0;
+#X connect 10 2 8 0;
+#X connect 10 3 9 0;
+#X connect 10 4 15 0;
+#X connect 12 0 49 0;
+#X connect 14 0 50 0;
+#X connect 15 0 11 0;
+#X connect 15 1 12 0;
+#X connect 15 2 13 0;
+#X connect 15 3 14 0;
+#X connect 15 4 20 0;
+#X connect 20 0 16 0;
+#X connect 20 1 17 0;
+#X connect 20 2 18 0;
+#X connect 20 3 19 0;
+#X connect 21 0 22 0;
+#X connect 23 0 24 0;
+#X connect 25 0 21 0;
+#X connect 25 1 23 0;
+#X connect 25 2 28 0;
+#X connect 28 0 26 0;
+#X connect 28 1 27 0;
+#X connect 28 2 31 0;
+#X connect 31 0 29 0;
+#X connect 31 1 30 0;
+#X connect 31 2 34 0;
+#X connect 32 0 36 0;
+#X connect 33 0 35 0;
+#X connect 34 0 32 0;
+#X connect 34 1 33 0;
+#X connect 42 0 2 0;
+#X connect 42 1 4 0;
+#X connect 43 0 42 0;
+#X connect 43 1 1 0;
+#X connect 44 0 43 0;
+#X connect 51 0 44 0;
+#X coords 0 -1 1 1 70 30 2 10 10;
