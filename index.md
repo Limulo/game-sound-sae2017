@@ -4,19 +4,20 @@ layout: default
 
 ## Introduction
 
+Go to the [FMOD page](fmod).
+
 ## Historical approach
 
-<img src="/images/ken-roberta.png" alt="ken and Roberta Williams" width="100%">
+<img src="./images/ken-roberta.png" alt="ken and Roberta Williams" width="100%" />
 
-<img src="/images/infocom-brain-1.jpeg" alt="infocom ads 1" width="100%">
+<img src="./images/infocom-brain-1.jpg" alt="infocom ads 1" width="100%" />
 
-<img src="/images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%">
+<img src="./images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%" />
 
 * late '70 - Atari 2600: 2 voice of synthetized sound: space invaders sound
 * [AY-3-8910](https://en.wikipedia.org/wiki/General_Instrument_AY-3-8910) arcade games of that era
 
 ---
-
 
 ### Video game sound and music
 (ref. Karen Collins)
@@ -159,22 +160,22 @@ We can find the same concepts in many others software and hardware products like
 * [talk](http://www.gdcvault.com/play/1024067/The-Sound-of-No-Man) by Paul Weir - sound designer for the Hello Game's **No Man Sky** - [in game sounds](https://www.youtube.com/watch?v=BgAslKUaNx4)
 
 ### Middleware & Tools
+
+A few of them:
+
 * Audiokinetic **Wwsise**'s plugins: [SoundSeed](https://www.audiokinetic.com/products/wwise-add-ons/soundseed/)
-* [Tapestrea](http://taps.cs.princeton.edu/)
-* [Heavy Audio Tools Framework](https://enzienaudio.com/)
 * [adx2](http://www.criware.com/en/products/adx2.html) by Cri middleware
-* **Tsugi** [audio products](http://tsugi-studio.com/web/en/products.html) like, for example, [Game Sinth](http://tsugi-studio.com/web/en/products-gamesynth.html) or [DSP retro](http://tsugi-studio.com/web/en/products-dspretro.html) among others;
+* **Tsugi** [audio products](http://tsugi-studio.com/web/en/products.html) like, for example, [Game Synth](http://tsugi-studio.com/web/en/products-gamesynth.html) or [DSP retro](http://tsugi-studio.com/web/en/products-dspretro.html) among others;
 * [bfxr](http://www.bfxr.net/) an online and offline sound effect generator. It was born after the [Tomas Pettersson](http://www.drpetter.se/about.html) [sfxr](http://drpetter.se/project_sfxr.html) previous project. This is [as3sfxr](http://www.superflashbros.net/as3sfxr/), a Flash porting.
 * [Le sound AudioGaming](https://lesound.io/)
-* Praat
-* Sonic Visualizer
-* PureData
-* SuperCollider
-* CSound
-* Chuck
-* Kyma
-* Faust
-* Max/MSP
+* [Praat](http://www.fon.hum.uva.nl/praat/), [Sonic Visualizer](http://www.sonicvisualiser.org/);
+* [PureData](https://puredata.info/), [Max/MSP](https://cycling74.com/) and Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
+* [SuperCollider](https://supercollider.github.io/), [CSound](http://csound.github.io/)
+* [Chuck](http://chuck.cs.princeton.edu/)
+* [Faust](http://faust.grame.fr/) a DSP programming language;
+* [Heavy Audio Tools Framework](https://enzienaudio.com/);
+* [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
+and Rendering of Environmental Audio;
 
 ### Other resources
 * [The Sounding Object project](http://soundobject.org/)
