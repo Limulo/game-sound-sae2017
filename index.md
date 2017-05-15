@@ -158,22 +158,22 @@ We can find the same concepts in many others software and hardware products like
 * [talk](http://www.gdcvault.com/play/1024067/The-Sound-of-No-Man) by Paul Weir - sound designer for the Hello Game's **No Man Sky** - [in game sounds](https://www.youtube.com/watch?v=BgAslKUaNx4)
 
 ### Middleware & Tools
+
+A few of them:
+
 * Audiokinetic **Wwsise**'s plugins: [SoundSeed](https://www.audiokinetic.com/products/wwise-add-ons/soundseed/)
-* [Tapestrea](http://taps.cs.princeton.edu/)
-* [Heavy Audio Tools Framework](https://enzienaudio.com/)
 * [adx2](http://www.criware.com/en/products/adx2.html) by Cri middleware
-* **Tsugi** [audio products](http://tsugi-studio.com/web/en/products.html) like, for example, [Game Sinth](http://tsugi-studio.com/web/en/products-gamesynth.html) or [DSP retro](http://tsugi-studio.com/web/en/products-dspretro.html) among others;
+* **Tsugi** [audio products](http://tsugi-studio.com/web/en/products.html) like, for example, [Game Synth](http://tsugi-studio.com/web/en/products-gamesynth.html) or [DSP retro](http://tsugi-studio.com/web/en/products-dspretro.html) among others;
 * [bfxr](http://www.bfxr.net/) an online and offline sound effect generator. It was born after the [Tomas Pettersson](http://www.drpetter.se/about.html) [sfxr](http://drpetter.se/project_sfxr.html) previous project. This is [as3sfxr](http://www.superflashbros.net/as3sfxr/), a Flash porting.
 * [Le sound AudioGaming](https://lesound.io/)
-* Praat
-* Sonic Visualizer
-* PureData
-* SuperCollider
-* CSound
-* Chuck
-* Kyma
-* Faust
-* Max/MSP
+* [Praat](http://www.fon.hum.uva.nl/praat/), [Sonic Visualizer](http://www.sonicvisualiser.org/);
+* [PureData](https://puredata.info/), [Max/MSP](https://cycling74.com/) and Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
+* [SuperCollider](https://supercollider.github.io/), [CSound](http://csound.github.io/)
+* [Chuck](http://chuck.cs.princeton.edu/)
+* [Faust](http://faust.grame.fr/) a DSP programming language;
+* [Heavy Audio Tools Framework](https://enzienaudio.com/);
+* [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
+and Rendering of Environmental Audio;
 
 ### Other resources
 * [The Sounding Object project](http://soundobject.org/)
@@ -216,7 +216,6 @@ Other books of interest:
 
 * [Lost Chocolate Blog](http://blog.lostchocolatelab.com/)
 * [game audio podcast ep.4 - about procedural audio](http://www.gameaudiopodcast.com/?p=161)
-* http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/
 * [part 1](http://designingsound.org/2010/01/audio-implementation-greats-1-audio-toolsets-part-1/) and [part 2](http://designingsound.org/2010/01/audio-implementation-greats-2-audio-toolsets-part-2/)
 * [Gaf](http://cedric.cnam.fr/PUBLIS/RC1568.pdf), [IEZA](https://users-cs.au.dk/dsound/DigitalAudio.dir/Unity/IEZA.pdf) and [this](http://captivatingsound.com/ieza-framework-for-game-audio/). [GAL](https://www.researchgate.net/publication/238660174_GAME_AUDIO_LAB_-_AN_ARCHITECTURAL_FRAMEWORK_FOR_NONLINEAR_AUDIO_IN_GAMES) and [this](http://www.aes.org/e-lib/browse.cfm?elib=15169)
 
