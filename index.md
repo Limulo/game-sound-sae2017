@@ -4,19 +4,20 @@ layout: default
 
 ## Introduction
 
+Go to the [FMOD page](fmod).
+
 ## Historical approach
 
-<img src="/images/ken-roberta.png" alt="ken and Roberta Williams" width="100%">
+<img src="./images/ken-roberta.png" alt="ken and Roberta Williams" width="100%">
 
-<img src="/images/infocom-brain-1.jpeg" alt="infocom ads 1" width="100%">
+<img src="./images/infocom-brain-1.jpeg" alt="infocom ads 1" width="100%">
 
-<img src="/images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%">
+<img src="{{ site.baseurl }}/images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%">
 
 * late '70 - Atari 2600: 2 voice of synthetized sound: space invaders sound
 * [AY-3-8910](https://en.wikipedia.org/wiki/General_Instrument_AY-3-8910) arcade games of that era
 
 ---
-
 
 ### Video game sound and music
 (ref. Karen Collins)
