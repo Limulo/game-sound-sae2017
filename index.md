@@ -6,7 +6,8 @@ layout: default
 
 Go to the [FMOD page](fmod).
 
-<--
+{% comment %}
+
 ### Video game sound and music
 (ref. Karen Collins)
 
@@ -46,7 +47,8 @@ Gamasutra, GDC, talks, PDFs
 ## Tools
 * Tones.js
 * howlers.ls
--->
+
+{% endcomment %}
 
 ## Music in Video Games
 
