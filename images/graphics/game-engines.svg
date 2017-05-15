@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1183.1875"
+   height="803.34705"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="game-engines.svg"
+   inkscape:export-filename="/home/nicola/Downloads/lezioni/graphics/game-engine-02.png"
+   inkscape:export-xdpi="77.891289"
+   inkscape:export-ydpi="77.891289">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7320-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3374"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3376"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3378"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3380"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask4001">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect4003"
+         width="144.45181"
+         height="129.29953"
+         x="303.04578"
+         y="29.077654" />
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="560.7374"
+     inkscape:cy="376.26654"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="834"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5">
+    <sodipodi:guide
+       orientation="0,1"
+       position="831.42857,742.85714"
+       id="guide3163" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="588.57143,-142.85714"
+       id="guide3165" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-109.77576,151.47202)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="database"
+     style="display:inline"
+     transform="translate(-109.77576,151.47202)">
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5380"
+       d="m 535.33095,171.79372 c 0.75452,61.64338 -45.72222,98.73506 -69.69177,111.60017"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083" />
+    <path
+       sodipodi:nodetypes="ccc"
+       inkscape:connector-curvature="0"
+       id="path5388"
+       d="m 40.110044,-483.08157 0,142.78194 159.999996,0"
+       style="opacity:0.3;fill:none;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5392"
+       d="m -169.2359,340.59726 0,-845.56429"
+       style="opacity:0.25;fill:none;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline" />
+    <g
+       style="display:inline"
+       transform="translate(-995.47577,-732.94528)"
+       id="g3160"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+         d="m 866.37213,220.41222 99.60258,0 43.60259,42.83743 0,138.83743 -143.20517,0 z"
+         id="path3162"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 966.07937,221.01547 0,41.05857 43.41163,0.35306 z"
+         id="path3164"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5533"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="translate(228.91481,-1179.3365)"><flowRegion
+         id="flowRegion5535"><rect
+           id="rect5537"
+           width="586.18353"
+           height="335.72067"
+           x="-121.27673"
+           y="704.13757" /></flowRegion><flowPara
+         style="font-size:96px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:79.00000215%;writing-mode:lr-tb;text-anchor:start;font-family:Hockey is Lif;-inkscape-font-specification:Hockey is Lif Medium"
+         id="flowPara5539">limulo.net</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5547"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="matrix(0,-1,1,0,-963.3333,136.41559)"><flowRegion
+         id="flowRegion5549"><rect
+           id="rect5551"
+           width="681.20099"
+           height="66.13623"
+           x="-121.27673"
+           y="704.13757" /></flowRegion><flowPara
+         id="flowPara5553"
+         style="font-size:80px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:79.00000215%;writing-mode:lr-tb;text-anchor:middle;font-family:Hockey is Lif;-inkscape-font-specification:Hockey is Lif Medium">astrazione crescente</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5583"
+       style="font-size:22px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman'"
+       transform="translate(194.72632,198.85671)"><flowRegion
+         id="flowRegion5585"><rect
+           id="rect5587"
+           width="223.25943"
+           height="163.99921"
+           x="391.39307"
+           y="302.32602" /></flowRegion><flowPara
+         id="flowPara5589"
+         style="font-size:48px;text-align:center;line-height:108.00000429%;letter-spacing:-1.09000003px;text-anchor:middle">game</flowPara><flowPara
+         style="font-size:48px;text-align:center;line-height:108.00000429%;letter-spacing:-1.09000003px;text-anchor:middle"
+         id="flowPara3828">engine</flowPara></flowRoot>    <flowRoot
+       transform="translate(-507.42725,-803.7666)"
+       style="font-size:22px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman'"
+       id="flowRoot5599"
+       xml:space="preserve"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083"><flowRegion
+         id="flowRegion5601"><rect
+           style="text-align:start;text-anchor:start"
+           y="302.32602"
+           x="391.39307"
+           height="145.25314"
+           width="89.496765"
+           id="rect5603" /></flowRegion><flowPara
+         style="font-size:86px;text-align:center;line-height:100%;letter-spacing:-1.09000003px;text-anchor:middle"
+         id="flowPara5605">.c</flowPara><flowPara
+         style="font-size:48px;text-align:center;line-height:100%;letter-spacing:-1.09000003px;text-anchor:middle"
+         id="flowPara5607">file</flowPara></flowRoot>    <rect
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       id="rect4376"
+       width="237.04088"
+       height="165.37737"
+       x="580.81293"
+       y="479.48578"
+       ry="49.613209" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3069"
+       d="m 376.38173,357.79372 c 0,188.57143 324.25757,-98.5744 321.40047,107.13989"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083" />
+    <g
+       id="g3854"
+       transform="translate(-6,40)">
+      <path
+         sodipodi:nodetypes="ccscc"
+         style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 452.57143,239.21933 0.14286,79.35714 c 0.14286,13.08304 -35.67436,22.35714 -79.85714,22.35714 -44.18278,0 -80,-9.2741 -80.14286,-22.35714 l -0.14286,-79.35714"
+         id="path3761"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 452.85715,240.21933 c 0,11.44018 -35.81722,20.71428 -80,20.71428 -44.18278,0 -80,-9.2741 -80,-20.71428 0,-11.44018 35.81722,-20.71429 80,-20.71429 44.18278,0 80,9.27411 80,20.71429 z"
+         sodipodi:ry="20.714285"
+         sodipodi:rx="80"
+         sodipodi:cy="240.21933"
+         sodipodi:cx="372.85715"
+         id="path3754"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot3830"
+         style="font-size:22px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman'"
+         transform="translate(-131.27368,-31.14329)"><flowRegion
+           id="flowRegion3832"><rect
+             id="rect3834"
+             width="223.25943"
+             height="163.99921"
+             x="391.39307"
+             y="302.32602" /></flowRegion><flowPara
+           style="font-size:48px;text-align:center;line-height:108.00000429%;letter-spacing:-1.09000003px;text-anchor:middle"
+           id="flowPara3838">data</flowPara></flowRoot>    </g>
+    <g
+       style="display:inline"
+       transform="translate(-749.59924,-241.24398)"
+       id="g3848"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+         d="m 866.37213,220.41222 99.60258,0 43.60259,42.83743 0,138.83743 -143.20517,0 z"
+         id="path3850"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 966.07937,221.01547 0,41.05857 43.41163,0.35306 z"
+         id="path3852"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       inkscape:export-ydpi="75.001083"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       id="g3881"
+       transform="translate(-379.59924,-241.24398)"
+       style="display:inline">
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path3883"
+         d="m 866.37213,220.41222 99.60258,0 43.60259,42.83743 0,138.83743 -143.20517,0 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3885"
+         d="m 966.07937,221.01547 0,41.05857 43.41163,0.35306 z"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g3966"
+       transform="matrix(0.70724294,0,0,1,99.10692,0)">
+      <rect
+         style="opacity:0.27165354;fill:#000000;stroke:none"
+         id="rect3768"
+         width="199.98244"
+         height="3.7056284"
+         x="550.30927"
+         y="35.417263" />
+      <rect
+         y="59.30043"
+         x="550.30927"
+         height="3.7056284"
+         width="199.98244"
+         id="rect3774"
+         style="opacity:0.27165354;fill:#000000;stroke:none" />
+      <rect
+         style="opacity:0.27165354;fill:#000000;stroke:none"
+         id="rect3776"
+         width="199.98244"
+         height="3.7056284"
+         x="550.3952"
+         y="83.355415" />
+      <rect
+         y="107.4104"
+         x="550.30927"
+         height="3.7056284"
+         width="199.98244"
+         id="rect3778"
+         style="opacity:0.27165354;fill:#000000;stroke:none" />
+      <rect
+         style="opacity:0.27165354;fill:#000000;stroke:none"
+         id="rect3780"
+         width="199.98244"
+         height="3.7056284"
+         x="550.30927"
+         y="131.37946" />
+    </g>
+    <path
+       sodipodi:nodetypes="ccssscccccc"
+       inkscape:connector-curvature="0"
+       id="rect2987"
+       d="m 535.24679,48.90759 0,74.53125 c -2.19436,-3.1329 -11.11823,-3.60474 -17.375,-0.15625 -7.41543,4.0871 -10.79756,11.75107 -7.5625,17.125 3.23507,5.37393 11.86582,6.43085 19.28125,2.34375 4.45154,-2.45352 7.41871,-6.2048 8.40625,-9.96875 0.45244,-2.06878 0.18854,-3.14209 0.15625,-4.59375 l 0,-52.65625 c 32.53399,8.241492 17.51919,36.81108 14.59268,46.90275 26.72779,-36.505742 -14.22819,-51.395936 -14.59268,-73.52775 z"
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:none"
+       d="m 593.24679,20.90759 0,74.53125 c -2.19436,-3.1329 -11.11823,-3.60474 -17.375,-0.15625 -7.41543,4.0871 -10.79756,11.75107 -7.5625,17.125 3.23507,5.37393 11.86582,6.43085 19.28125,2.34375 4.45154,-2.45352 7.41871,-6.2048 8.40625,-9.96875 0.45244,-2.06878 0.18854,-3.14209 0.15625,-4.59375 l 0,-52.65625 c 32.53399,8.241492 17.51919,36.81108 14.59268,46.90275 26.72779,-36.505742 -14.22819,-51.395936 -14.59268,-73.52775 z"
+       id="path3964"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccssscccccc" />
+    <g
+       inkscape:export-ydpi="75.001083"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       id="g3842"
+       transform="translate(-563.27436,-243.58917)"
+       style="display:inline"
+       mask="none">
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path3844"
+         d="m 866.37213,220.41222 99.60258,0 43.60259,42.83743 0,138.83743 -143.20517,0 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3846"
+         d="m 966.07937,221.01547 0,41.05857 43.41163,0.35306 z"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g3977"
+       mask="url(#mask4001)"
+       transform="translate(0,2)">
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:1.24307144px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 282.96425,165.32672 400.1304,51.422546 521.11718,159.13627 z"
+         id="path3975"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3973"
+         d="m 239.40615,167.46856 92.93404,-92.934044 95.96449,87.883274 z"
+         style="fill:#000000;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4005"
+       sodipodi:cx="341.43155"
+       sodipodi:cy="30.087807"
+       sodipodi:rx="17.172594"
+       sodipodi:ry="17.172594"
+       d="m 358.60414,30.087807 c 0,9.484162 -7.68843,17.172594 -17.17259,17.172594 -9.48416,0 -17.17259,-7.688432 -17.17259,-17.172594 0,-9.484162 7.68843,-17.172594 17.17259,-17.172594 9.48416,0 17.17259,7.688432 17.17259,17.172594 z" />
+    <g
+       id="g4036"
+       transform="translate(36,16)"
+       style="fill:#000000;fill-opacity:1;stroke:none">
+      <g
+         id="g4007"
+         transform="matrix(0.59616413,0,0,1,-237.26296,-26.263966)"
+         style="fill:#000000;fill-opacity:1;stroke:none">
+        <rect
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none"
+           id="rect4009"
+           width="199.98244"
+           height="3.7056284"
+           x="550.30927"
+           y="35.417263" />
+        <rect
+           y="59.30043"
+           x="550.30927"
+           height="3.7056284"
+           width="199.98244"
+           id="rect4011"
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none" />
+        <rect
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none"
+           id="rect4013"
+           width="199.98244"
+           height="3.7056284"
+           x="550.3952"
+           y="83.355415" />
+        <rect
+           y="107.4104"
+           x="550.30927"
+           height="3.7056284"
+           width="199.98244"
+           id="rect4015"
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none" />
+        <rect
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none"
+           id="rect4017"
+           width="199.98244"
+           height="3.7056284"
+           x="550.30927"
+           y="131.37946" />
+      </g>
+      <rect
+         y="128.61658"
+         x="90.811684"
+         height="3.7056284"
+         width="119.22236"
+         id="rect4023"
+         style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <path
+       inkscape:export-ydpi="75.001083"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline"
+       d="m 199.11475,171.79372 c 2.27594,59.62307 45.72222,98.73506 69.69177,111.60017"
+       id="path4045"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4047"
+       d="m 371.11475,171.79372 -0.54332,69.13989"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083" />
+    <path
+       inkscape:export-ydpi="75.001083"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline"
+       d="m 1191.331,171.79372 c 0.7545,61.64338 -45.7223,98.73506 -69.6918,111.60017"
+       id="path3055"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       transform="translate(652,40)"
+       id="g3071">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3073"
+         d="m 452.57143,239.21933 0.14286,79.35714 c 0.14286,13.08304 -35.67436,22.35714 -79.85714,22.35714 -44.18278,0 -80,-9.2741 -80.14286,-22.35714 l -0.14286,-79.35714"
+         style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:nodetypes="ccscc" />
+      <path
+         sodipodi:type="arc"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="path3075"
+         sodipodi:cx="372.85715"
+         sodipodi:cy="240.21933"
+         sodipodi:rx="80"
+         sodipodi:ry="20.714285"
+         d="m 452.85715,240.21933 c 0,11.44018 -35.81722,20.71428 -80,20.71428 -44.18278,0 -80,-9.2741 -80,-20.71428 0,-11.44018 35.81722,-20.71429 80,-20.71429 44.18278,0 80,9.27411 80,20.71429 z" />
+      <flowRoot
+         transform="translate(-131.27368,-31.14329)"
+         style="font-size:22px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman'"
+         id="flowRoot3077"
+         xml:space="preserve"><flowRegion
+           id="flowRegion3079"><rect
+             y="302.32602"
+             x="391.39307"
+             height="163.99921"
+             width="223.25943"
+             id="rect3081" /></flowRegion><flowPara
+           id="flowPara3083"
+           style="font-size:48px;text-align:center;line-height:108.00000429%;letter-spacing:-1.09000003px;text-anchor:middle">data</flowPara></flowRoot>    </g>
+    <g
+       inkscape:export-ydpi="75.001083"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       id="g3085"
+       transform="translate(-89.59924,-241.24398)"
+       style="display:inline">
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path3087"
+         d="m 866.37213,220.41222 99.60258,0 43.60259,42.83743 0,138.83743 -143.20517,0 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3089"
+         d="m 966.07937,221.01547 0,41.05857 43.41163,0.35306 z"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(276.40076,-241.24398)"
+       id="g3091"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+         d="m 866.37213,220.41222 99.60258,0 43.60259,42.83743 0,138.83743 -143.20517,0 z"
+         id="path3093"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 966.07937,221.01547 0,41.05857 43.41163,0.35306 z"
+         id="path3095"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       transform="matrix(0.70724294,0,0,1,755.10692,0)"
+       id="g3097">
+      <rect
+         y="35.417263"
+         x="550.30927"
+         height="3.7056284"
+         width="199.98244"
+         id="rect3099"
+         style="opacity:0.27165354;fill:#000000;stroke:none" />
+      <rect
+         style="opacity:0.27165354;fill:#000000;stroke:none"
+         id="rect3101"
+         width="199.98244"
+         height="3.7056284"
+         x="550.30927"
+         y="59.30043" />
+      <rect
+         y="83.355415"
+         x="550.3952"
+         height="3.7056284"
+         width="199.98244"
+         id="rect3103"
+         style="opacity:0.27165354;fill:#000000;stroke:none" />
+      <rect
+         style="opacity:0.27165354;fill:#000000;stroke:none"
+         id="rect3105"
+         width="199.98244"
+         height="3.7056284"
+         x="550.30927"
+         y="107.4104" />
+      <rect
+         y="131.37946"
+         x="550.30927"
+         height="3.7056284"
+         width="199.98244"
+         id="rect3107"
+         style="opacity:0.27165354;fill:#000000;stroke:none" />
+    </g>
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:none"
+       d="m 1191.2468,48.90759 0,74.53125 c -2.1944,-3.1329 -11.1182,-3.60474 -17.375,-0.15625 -7.4154,4.0871 -10.7976,11.75107 -7.5625,17.125 3.2351,5.37393 11.8658,6.43085 19.2812,2.34375 4.4516,-2.45352 7.4188,-6.2048 8.4063,-9.96875 0.4524,-2.06878 0.1885,-3.14209 0.1562,-4.59375 l 0,-52.65625 c 32.534,8.241492 17.5192,36.81108 14.5927,46.90275 26.7278,-36.505742 -14.2282,-51.395936 -14.5927,-73.52775 z"
+       id="path3109"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccssscccccc" />
+    <path
+       sodipodi:nodetypes="ccssscccccc"
+       inkscape:connector-curvature="0"
+       id="path3111"
+       d="m 1249.2468,20.90759 0,74.53125 c -2.1944,-3.1329 -11.1182,-3.60474 -17.375,-0.15625 -7.4154,4.0871 -10.7976,11.75107 -7.5625,17.125 3.2351,5.37393 11.8658,6.43085 19.2812,2.34375 4.4516,-2.45352 7.4188,-6.2048 8.4063,-9.96875 0.4524,-2.06878 0.1885,-3.14209 0.1562,-4.59375 l 0,-52.65625 c 32.534,8.241492 17.5192,36.81108 14.5927,46.90275 26.7278,-36.505742 -14.2282,-51.395936 -14.5927,-73.52775 z"
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <g
+       mask="none"
+       style="display:inline"
+       transform="translate(96.72564,-243.58917)"
+       id="g3113"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+         d="m 866.37213,220.41222 99.60258,0 43.60259,42.83743 0,138.83743 -143.20517,0 z"
+         id="path3115"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 966.07937,221.01547 0,41.05857 43.41163,0.35306 z"
+         id="path3117"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       transform="translate(660,2)"
+       mask="url(#mask4001)"
+       id="g3119">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3121"
+         d="M 282.96425,165.32672 400.1304,51.422546 521.11718,159.13627 z"
+         style="fill:#000000;stroke:#000000;stroke-width:1.24307144px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#000000;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 239.40615,167.46856 92.93404,-92.934044 95.96449,87.883274 z"
+         id="path3123"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <path
+       d="m 358.60414,30.087807 c 0,9.484162 -7.68843,17.172594 -17.17259,17.172594 -9.48416,0 -17.17259,-7.688432 -17.17259,-17.172594 0,-9.484162 7.68843,-17.172594 17.17259,-17.172594 9.48416,0 17.17259,7.688432 17.17259,17.172594 z"
+       sodipodi:ry="17.172594"
+       sodipodi:rx="17.172594"
+       sodipodi:cy="30.087807"
+       sodipodi:cx="341.43155"
+       id="path3125"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       transform="translate(660,0)" />
+    <g
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(696,16)"
+       id="g3127">
+      <g
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         transform="matrix(0.59616413,0,0,1,-237.26296,-26.263966)"
+         id="g3129">
+        <rect
+           y="35.417263"
+           x="550.30927"
+           height="3.7056284"
+           width="199.98244"
+           id="rect3131"
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none" />
+        <rect
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none"
+           id="rect3133"
+           width="199.98244"
+           height="3.7056284"
+           x="550.30927"
+           y="59.30043" />
+        <rect
+           y="83.355415"
+           x="550.3952"
+           height="3.7056284"
+           width="199.98244"
+           id="rect3135"
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none" />
+        <rect
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none"
+           id="rect3137"
+           width="199.98244"
+           height="3.7056284"
+           x="550.30927"
+           y="107.4104" />
+        <rect
+           y="131.37946"
+           x="550.30927"
+           height="3.7056284"
+           width="199.98244"
+           id="rect3139"
+           style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none" />
+      </g>
+      <rect
+         style="opacity:0.27165354;fill:#000000;fill-opacity:1;stroke:none"
+         id="rect3141"
+         width="119.22236"
+         height="3.7056284"
+         x="90.811684"
+         y="128.61658" />
+    </g>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3143"
+       d="m 859.11475,171.79372 c 2.27594,59.62307 45.72222,98.73506 69.69177,111.60017"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083" />
+    <path
+       inkscape:export-ydpi="75.001083"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-9);display:inline"
+       d="m 1031.1147,171.79372 -0.5433,69.13989"
+       id="path3145"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       transform="translate(158.90175,-838.26555)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       id="flowRoot3147"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3149"><rect
+           y="704.13757"
+           x="-121.27673"
+           height="66.13623"
+           width="681.20099"
+           id="rect3151" /></flowRegion><flowPara
+         style="font-size:80px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:79.00000215%;writing-mode:lr-tb;text-anchor:middle;font-family:Hockey is Lif;-inkscape-font-specification:Hockey is Lif Medium"
+         id="flowPara3153">game v1</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3155"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       transform="translate(813.18746,-842.55126)"><flowRegion
+         id="flowRegion3157"><rect
+           id="rect3159"
+           width="681.20099"
+           height="66.13623"
+           x="-121.27673"
+           y="704.13757" /></flowRegion><flowPara
+         id="flowPara3161"
+         style="font-size:80px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:79.00000215%;writing-mode:lr-tb;text-anchor:middle;font-family:Hockey is Lif;-inkscape-font-specification:Hockey is Lif Medium">game v2</flowPara></flowRoot>  </g>
+</svg>

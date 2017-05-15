@@ -6,19 +6,7 @@ layout: default
 
 Go to the [FMOD page](fmod).
 
-## Historical approach
-
-<img src="./images/ken-roberta.png" alt="ken and Roberta Williams" width="100%" />
-
-<img src="./images/infocom-brain-1.jpg" alt="infocom ads 1" width="100%" />
-
-<img src="./images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%" />
-
-* late '70 - Atari 2600: 2 voice of synthetized sound: space invaders sound
-* [AY-3-8910](https://en.wikipedia.org/wiki/General_Instrument_AY-3-8910) arcade games of that era
-
----
-
+<--
 ### Video game sound and music
 (ref. Karen Collins)
 
@@ -52,23 +40,22 @@ Go to the [FMOD page](fmod).
 * Gameplay e musica: stati, transizioni, loop, hook point, Xfade. Teoria e pratica in FMOD.
 
 ### References
-Gamasutra, GDC, talks, PDFs, bar-b-q
+Gamasutra, GDC, talks, PDFs
+
 
 ## Tools
 * Tones.js
 * howlers.ls
-
-
---------------------------------------------------------------------------------------------------------------------------------
+-->
 
 ## Music in Video Games
 
 ### Personnel
-* Karen Collins
-* Brian Eno
+* Karen Collins;
+* Brian Eno;
 * Leonard J Paul: [website](http://school.videogameaudio.com/apply/), [Youtube channel](https://www.youtube.com/channel/UCRkeuj7LOpX__NGQN1I0ANg), [talk](https://www.youtube.com/watch?v=2y86R4cDA9U), [lesson](https://www.youtube.com/watch?v=tvx_QgS7D8Q)
-* Yann Seznec: [website](http://www.yannseznec.com/)
-* Winifred Phillips: [website](http://www.winifredphillips.com/)
+* Yann Seznec: [website](http://www.yannseznec.com/);
+* Winifred Phillips: [website](http://www.winifredphillips.com/);
 
 ### CC music
 * [incompetech](http://incompetech.com/music/royalty-free/music.html)
@@ -84,6 +71,8 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 * [Audio talk GDC 2017](http://www.gdcvault.com/play/1023224/Outside-the-Studio-Walls-MicroTalk)
 * [Karen Collins 2013](http://www.gdcvault.com/play/1017959/Biff-Boom-Pow-Introducing-Students)
 * [Karen Collins 2014](http://www.gdcvault.com/play/1020359/Selling-Games-and-the-Code)
+* project [Bar-B-Q](https://www.projectbarbq.com/)
+* [IAsig](https://www.iasig.org/)
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -96,18 +85,16 @@ Procedural (computational) audio **definition**:
 > “Procedural audio is non-linear, often synthetic sound, created in real time according to a set of programmatic rules and live input.” – "[An introduction to procedural audio and its application in computer games](http://cs.au.dk/~dsound/DigitalAudio.dir/Papers/proceduralAudio.pdf).” by Andy Farnell
 
 ## Game Audio Engine capabilities 
-* spatialization, panner 3D, 3D audio, 5.1, 7.1, doppler, psychoacustics
-* HRTF binaural sound (Virtual Reality)
-* 3d reverb
+* spatialization, panner 3D, 3D audio, 5.1, 7.1, doppler, psychoacustics, HRTF binaural sound (Virtual Reality), 3d reverb;
 * memory managements, dynamic mixing, dynamic [voices allocations](http://electronicmusic.wikia.com/wiki/Voice_allocation) and [voice stealing](http://electronicmusic.wikia.com/wiki/Voice_stealing)
 * Synchronization, web, threads
-* Artificial intelligence: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see Gene Kogan and other project.
 
 ### Personnel
-* Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/) - [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
-* Perry Cook: [website](http://www.cs.princeton.edu/~prc/)
-* Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176)
-* Dinesh Pai and Kees van den Doel **Modal Synthesis for Vibrating Objects** [paper](http://www.cs.ubc.ca/~kvdoel/publications/modalpaper.pdf) and [code example](http://www.cs.ubc.ca/~kvdoel/publications/srcmodalpaper.zip) and much more [papers](http://www.cs.ubc.ca/~kvdoel/pubs.html);
+
+* Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
+* Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
+* Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
+* Dinesh Pai and Kees van den Doel **Modal Synthesis for Vibrating Objects** [paper](http://www.cs.ubc.ca/~kvdoel/publications/modalpaper.pdf) and [code example](http://www.cs.ubc.ca/~kvdoel/publications/srcmodalpaper.zip) and many more [papers](http://www.cs.ubc.ca/~kvdoel/pubs.html);
 * [Kees van den Doel](http://www.cs.ubc.ca/~kvdoel/): water simulation model's [paper](http://www.cs.ubc.ca/~kvdoel/publications/tap05.pdf);
 * Nicolas Fournel [blog](http://www.nicolasfournel.com/)
 * Dylan Menzies: [papers](http://dmu.academia.edu/DylanMenzies)
@@ -120,6 +107,7 @@ Procedural (computational) audio **definition**:
 * [Stefania Serafin](https://ccrma.stanford.edu/~serafin/publ.html) and her work on contact models;
 
 ### Application of Procedural Audio in Games
+
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
 * [GTA V audio](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and the RAGE audio Engine. [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s)
 * [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peterr Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
@@ -131,9 +119,12 @@ Procedural (computational) audio **definition**:
 -->
 
 ### Application of Procedural Audio on other fields
+
 * [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out. 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Clavia_Nord_Lead_2x.jpg" alt="Clavia Nord Lead" width="50%" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Clavia_Nord_Lead_2x.jpg/799px-Clavia_Nord_Lead_2x.jpg" alt="Clavia Nord Lead" width="50%" />
+
+<img src="https://en.wikipedia.org/wiki/File:Clavia_Nord_Lead_2x.jpg#/media/File:Clavia_Nord_Lead_2x.jpg" alt="2" width="100%"/>
 
 A possible example of this kind os synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/).
 
@@ -147,9 +138,8 @@ We can find the same concepts in many others software and hardware products like
 * Smule
 
 ### other interviews
-* [1](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
-* [gamasutra article 1](http://www.gamasutra.com/resource_guide/20030528/whitmore_pfv.htm)
-* [gamasutra article 2](http://www.gamasutra.com/resource_guide/20010515/ross_pfv.htm)
+* [Interview with David Thall, Mads Lykke and Andy Farnell](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
+* Gamasutra [article 1](http://www.gamasutra.com/resource_guide/20030528/whitmore_pfv.htm) and [article 2](http://www.gamasutra.com/resource_guide/20010515/ross_pfv.htm)
 
 ### Papers
 * [liqui](http://gamma.cs.unc.edu/SoundingLiquids/soundingliquids.pdf)
@@ -177,18 +167,6 @@ A few of them:
 * [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
 and Rendering of Environmental Audio;
 
-### Other resources
-* [The Sounding Object project](http://soundobject.org/)
-* [Procedural Audio Now](http://proceduralaudionow.com/)
-* The [Association of Sound Designers](http://www.associationofsounddesigners.com/)
-* Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from the "_Designing Sound_" book;
-* [Supercollider code repository](http://sccode.org/);
-* [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
-* [AES Lecturers](http://www.aes-uk.org/meetings/) - [YouTube channel](https://www.youtube.com/user/aesuksection)
-
-### Conferences
-* Audio Mostly
-
 ### Courses
 * Mooc: [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
 
@@ -209,10 +187,15 @@ Other books of interest:
 * Micheal Chion "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)"
 * [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001)
 
-## Other stuff
-* A system to create synthetic engine sound for electric/hybrid car: [Harman Halosonic](http://www.halosonic.co.uk/)
+### Other resources
+* [The Sounding Object project](http://soundobject.org/)
+* [Procedural Audio Now](http://proceduralaudionow.com/)
+* The [Association of Sound Designers](http://www.associationofsounddesigners.com/)
+* Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from the "_Designing Sound_" book;
+* [Supercollider code repository](http://sccode.org/);
+* [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
+* [AES Lecturers](http://www.aes-uk.org/meetings/) - [YouTube channel](https://www.youtube.com/user/aesuksection)
 
----
 
 # 2017-04-29 LINKS
 
@@ -225,6 +208,38 @@ Other books of interest:
 
 ## Historical background
 
+* late '70 - Atari 2600: 2 voice of synthetized sound: space invaders sound
+* [AY-3-8910](https://en.wikipedia.org/wiki/General_Instrument_AY-3-8910) arcade games of that era
+
 * from text based adventure games to graphical adventures [Computer Chronicles](https://www.youtube.com/watch?v=8qxBcOuMYCU)
 
+<img src="./images/ken-roberta.png" alt="ken and Roberta Williams" width="100%" />
 
+<img src="./images/infocom-brain-1.jpg" alt="infocom ads 1" width="100%" />
+
+<img src="./images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%" />
+
+
+<--
+
+* Artificial intelligence: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see Gene Kogan and other project.
+
+### Conferences
+* Audio Mostly
+
+## Other stuff
+* A system to create synthetic engine sound for electric/hybrid car: [Harman Halosonic](http://www.halosonic.co.uk/)
+
+[VRDC 2016 - Virtual Reality and Real Audio](http://www.gdcvault.com/play/1023646/Virtual-Reality-and-Real)
+[GDC Eu 2015 - Oh My! That Sound Made the Game Feel Better!](http://www.gdcvault.com/play/1022808/Oh-My-That-Sound-Made)
+[GDC 2015 - Audio Bootcamp : Advanced Composition Techniques for Adaptive Systems by Winifred Phillips](http://www.gdcvault.com/play/1021811/Audio-Bootcamp-Advanced-Composition-Techniques)
+http://www.gdcvault.com/play/1021813/Audio-Bootcamp-Audio-Gigs-How
+http://www.gdcvault.com/play/1021815/Audio-Bootcamp-Dialogue
+[Audio Bootcamp : Introduction (10-10:10am)/Sound Design the Bungie Way: The Weapons of Destiny](http://www.gdcvault.com/play/1021818/Audio-Bootcamp-Introduction-%2810-10)
+[Audio Bootcamp : Technical Sound Design](http://www.gdcvault.com/play/1021819/Audio-Bootcamp-Technical-Sound)
+http://www.gdcvault.com/play/1022315/The-Neuroscience-of-Game
+
+
+[video](https://www.youtube.com/watch?v=CfwDLONo7nI)
+
+-->
