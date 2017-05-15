@@ -57,16 +57,6 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 * Tones.js
 * howlers.ls
 
-## Topics and techniques
-* spatialization, 3D audio, 5.1, 7.1, doppler, psychoacustics
-* panner 3D
-* HRTF binaural sound (Virtual Reality)
-* 3d reverb
-* memory managements
-* dynamic mixing
-* dynamic [voices allocations](http://electronicmusic.wikia.com/wiki/Voice_allocation) and [voice stealing](http://electronicmusic.wikia.com/wiki/Voice_stealing)
-* threads
-* Artificial intelligence: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see Gene Kogan and other project.
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -100,9 +90,17 @@ Gamasutra, GDC, talks, PDFs, bar-b-q
 
 Sound effects in video games.
 
-Procedural (computational) audio definition:
+Procedural (computational) audio **definition**:
 
 > “Procedural audio is non-linear, often synthetic sound, created in real time according to a set of programmatic rules and live input.” – "[An introduction to procedural audio and its application in computer games](http://cs.au.dk/~dsound/DigitalAudio.dir/Papers/proceduralAudio.pdf).” by Andy Farnell
+
+## Game Audio Engine capabilities 
+* spatialization, panner 3D, 3D audio, 5.1, 7.1, doppler, psychoacustics
+* HRTF binaural sound (Virtual Reality)
+* 3d reverb
+* memory managements, dynamic mixing, dynamic [voices allocations](http://electronicmusic.wikia.com/wiki/Voice_allocation) and [voice stealing](http://electronicmusic.wikia.com/wiki/Voice_stealing)
+* Synchronization, web, threads
+* Artificial intelligence: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see Gene Kogan and other project.
 
 ### Personnel
 * Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/) - [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
@@ -117,7 +115,7 @@ Procedural (computational) audio definition:
 * Dylan Menzies: [pubblications](https://www.researchgate.net/profile/Dylan_Menzies/publications)
 * [Anton Woldhek](http://www.woldhek.eu/anton/)
 * [Rod Selfridge](https://rodselfridge.wordpress.com/)
-* [Christian Heinrichs]()
+* Christian Heinrichs
 * [Stefania Serafin](https://ccrma.stanford.edu/~serafin/publ.html) and her work on contact models;
 
 ### Application of Procedural Audio in Games
@@ -125,14 +123,16 @@ Procedural (computational) audio definition:
 * [GTA V audio](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and the RAGE audio Engine. [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s)
 * [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peterr Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
+* iMuse [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689), [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ);
+<!--
 * [Abzu](https://www.youtube.com/watch?v=CWU1pZVw0xM&feature=youtu.be&t=15m24s);
 * [Journey]();
-* iMuse [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689), [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ);
+-->
 
 ### Application of Procedural Audio on other fields
 * [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out. 
 
-<img src="https://en.wikipedia.org/wiki/Nord_Lead#/media/File:Clavia_Nord_Lead_2x.jpg" alt="Clavia Nord Lead" width="50%">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Clavia_Nord_Lead_2x.jpg" alt="Clavia Nord Lead" width="50%" />
 
 A possible example of this kind os synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/).
 
@@ -147,6 +147,8 @@ We can find the same concepts in many others software and hardware products like
 
 ### other interviews
 * [1](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
+* [gamasutra article 1](http://www.gamasutra.com/resource_guide/20030528/whitmore_pfv.htm)
+* [gamasutra article 2](http://www.gamasutra.com/resource_guide/20010515/ross_pfv.htm)
 
 ### Papers
 * [liqui](http://gamma.cs.unc.edu/SoundingLiquids/soundingliquids.pdf)
@@ -215,7 +217,6 @@ Other books of interest:
 
 * [Lost Chocolate Blog](http://blog.lostchocolatelab.com/)
 * [game audio podcast ep.4 - about procedural audio](http://www.gameaudiopodcast.com/?p=161)
-* http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/
 * [part 1](http://designingsound.org/2010/01/audio-implementation-greats-1-audio-toolsets-part-1/) and [part 2](http://designingsound.org/2010/01/audio-implementation-greats-2-audio-toolsets-part-2/)
 * [Gaf](http://cedric.cnam.fr/PUBLIS/RC1568.pdf), [IEZA](https://users-cs.au.dk/dsound/DigitalAudio.dir/Unity/IEZA.pdf) and [this](http://captivatingsound.com/ieza-framework-for-game-audio/). [GAL](https://www.researchgate.net/publication/238660174_GAME_AUDIO_LAB_-_AN_ARCHITECTURAL_FRAMEWORK_FOR_NONLINEAR_AUDIO_IN_GAMES) and [this](http://www.aes.org/e-lib/browse.cfm?elib=15169)
 
@@ -224,6 +225,5 @@ Other books of interest:
 ## Historical background
 
 * from text based adventure games to graphical adventures [Computer Chronicles](https://www.youtube.com/watch?v=8qxBcOuMYCU)
-
 
 
