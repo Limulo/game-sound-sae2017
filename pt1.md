@@ -91,12 +91,10 @@ Esempio: In "Shadow of the Beast II" (1992, Psygnnosis) l'organo a onda quadra √
 
 Alla tadizionale tecnica del loop si associano soluzioni creative per offrire una sensazione di variazione maggiore: la trasposizione di frasi sonore e la tecnica del double tracking.
 
-<div style="width:100%;">
-<audio controls>
+<audio controls style="width:100%">
   <source src="./music/Sonic_Labyrinth.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
-</div>
 
 
 Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibilit√† che si manifesta
@@ -169,7 +167,7 @@ Roland nel 1987 rilascia una scheda MIDI, l'MT32. Sebbene sia possibile usare l'
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4&feature=youtu.be&t=4m57s" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4?start=287" frameborder="0" allowfullscreen></iframe>
 
 Tuttavia non esistendo uno standard ogni produttore implementava a modo suo il protocollo rendendo difficile per i programmatori adattare il proprio lavoro alle varie situazioni. Nel 1991 si arriva alla definizione dello standard: GMIDI poi ampliato in GSMIDI.
 
