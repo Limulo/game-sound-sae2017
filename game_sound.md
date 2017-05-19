@@ -1,5 +1,7 @@
+
 * Game Engine
 * vedendo l'esempio del FPS
+
 ```
 notarget
 fov
@@ -14,6 +16,7 @@ s_show 1
 s_show 0
 sv_gravity 100 (default 800)
 ```
+
 ## Suono come modello data driven/event based
 
 Nell'ultima parte della sua storia, il suono nel videogioco si presenta come un modello guidato dai dati (**data driven model**). 
@@ -23,7 +26,7 @@ In altri termini, l'audio di un videogioco è costituito da una moltitudine di f
 Ai sample che vengono riprodotti si possono certo applicare delle **modificazioni in tempo reale** come ad esempio, e lo vedremo a breve:
 * attenuazione dovuta alla distanza;
 * combinazioni e layering;
-* randome e granularità;
+* random e granularità;
 
 ## Game audio engine tradizionale
 
@@ -39,11 +42,15 @@ Un esempio di voice stealing nel videogioco lo si ha in [Super Mario Bros](https
 
 ### Random
 
-Quando siamo fruitori di opere di intrattenimento - libri, cinema, teatro, etc... - tra noi e gli autori dell'opera si instaura una sorta di complicità. Da una parte nasce (inconsciamente) in noi volontà di sospendere l'incredulità ([_suspension of disbelief_](https://it.wikipedia.org/wiki/Sospensione_dell'incredulit%C3%A0)) per mettere da parte per un momento le nostre facoltà critiche, ignorare le incongruenze secondarie e godere dell'opera di fantasia. 
+Quando siamo fruitori di opere di intrattenimento - libri, cinema, teatro, etc... - tra noi e gli autori dell'opera si instaura una sorta di tacito accordo. Da una parte nasce (inconsciamente) in noi volontà di sospendere l'incredulità ([_suspension of disbelief_](https://it.wikipedia.org/wiki/Sospensione_dell'incredulit%C3%A0)) per mettere da parte per un momento le nostre facoltà critiche, ignorare le incongruenze secondarie e godere dell'opera di fantasia. 
+
+lasciarsi guidare e abbandonarsi alla narrazione.
 
 Dall'altra parte l'autore si impegna nell'introdurci e nel guidarci attraverso un percorso comune allo scopo di raccontarci una storia.
 
 La sospensione dell'incredulità nasce da un equilibrio molto sottile, tanto più difficile da creare quanto da mantenere da parte dell'autore dell'opera, soprattutto in epoca moderna dove si è bombardati da flussi continui di informazione e da moltissime forme diverse di intrattenimento.
+
+declinando il concetto al mondo videoludico, un suono ripetitivo viene riconosciuto dal nostro cervello come un **pattern**.
 
 Il nostro cervello è abilissimo ad identificare pattern, strutture ricorrenti di ogni tipo (footsteps), 
 Immaginate ad esempio cosa succederebbe se in un videogioco FPS, dove uno dei compiti primari è quello di muoversi all'interno di un mondo virtuale, il movimento dell'attore fosse evidenziato da suoni ripetitivie e sempre uguali a loro stessi.
@@ -65,7 +72,7 @@ Un esempio potrebbe essere il passaggio da una sitauzioni in-game ad un menù di
 
 Il game sound engine deve fornire un'interfaccia per ricevere parametri real time dal game engine ed usarli, spesso mappandoli sulle frequenze cutoff di filtri o sul controllo di volumi piuttosto che pitch.
 
-### Localization
+### Positioning
 
 Come funziona l'audio in un gioco: _emitters_ sono oggetti nello spazio tridimensionale che emettono suono e uno o più _listeners_ (mono, stereo o multicanale; va pensato come un array di microfoni), in genere solidale col player.
 E' un sistema che si occupa di calcolare in run-time le funzioni di trasferimento e i filtri da applicare al suono riprodotto per dare all'ascoltatore la percezione che gli emettitori si trovino immersi nello spazio virtuale circostante.
@@ -132,9 +139,9 @@ Per contro, un approccio come questo ha i suoi svantaggi vediamo un paio di esem
 Il suono insomma risulta essere malamente accoppiato con il motore di gioco sottostante, incoesivo con l'esperienza complessiva. Eppure non è sempre stato così. All'inizio della storia dei videogame, delle console e dei computer, era l'audio la motivazione principale che ha guidato lo sviluppo tecnologico.
 
 L'audio veniva generato in tempo reale e rispecchiava linearmente le azioni del giocatore e le reazioni dell'engine. L'audio veniva sintetizzato in tempo reale. 
-Questa tendenza si è interrotta indicativamente attorno ai primi anni '90, momento storico dove si può collocare la comparsa sul mercato dei prini CD e che vede il diffondersi dell'audio campionato ad alta qualità (44100@16bit).
+Questa tendenza si è interrotta indicativamente attorno alla seconda metà degli anni '90, momento storico dove si può collocare la comparsa sul mercato dei prini CD e che vede il diffondersi dell'audio campionato ad alta qualità (44100@16bit).
 
-Attenzione, questo non significa che prima i sample non venissereo utilizzati; Nintendo, SEGA e ancora prima nelle coin-op, dove possibile, si inserivano sistemi DAC in grado di riprodurre, seppure non con la stessa qualità CD, campioni e sample pre-registrati. La ricercaa del "_realismo_" tuttavia ha infine soppiantato i sistemi di sintesi tradizionale.
+Attenzione, questo non significa che prima i sample non venissereo utilizzati; Nintendo, SEGA e ancora prima nelle coin-op, dove possibile, si inserivano sistemi DAC in grado di riprodurre, seppure non con la stessa qualità CD, campioni e sample pre-registrati, soprattutto per la voce. La ricerca del "_realismo_" tuttavia ha infine soppiantato i sistemi di sintesi tradizionale.
 
 Tali sistemi però sono sopravissuti in una parte del mercato legato all'audio: la **musica** e gli **strumenti musicali**. In questi campi ci si accorge subito dell limitazion intrinseche dell'audio per campioni (il sample è un _tradimento_ della realtà), per questo la ricerca e lo sviluppo di nuovi sistemi di sintesi continua a progredire.
 
@@ -204,9 +211,12 @@ Permane la falsa concezione che la sintesi audio sia in qualche modo sinonimo di
 In realtà non è così e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
 Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude. Quello di cui c'è bisogno è il **verosimile** (come dice molto bene [Chion]()) oaddirittura dell'**hyperrealism** ("_more than reality_").
 
+
+### The Future
+
 In un futuro presumibilmente non troppo lontano, il paradigma procedurale avrà preso piede e il modno del lavoro nel settore dell'audio per videogiochi dsi arricchira di tutta una serie di nuove figure professionali.
 
-Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _visual fxs_, etc...), così anche nel mondo dell'audio procedurale ci saranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua, fuoco, impatti, sfregamenti, acustica delle stanze, etc...).
+Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, etc...), così anche nel mondo dell'audio procedurale ci saranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua, fuoco, impatti, sfregamenti, acustica delle stanze, etc...).
 
 ## Esempi di audio procedurale (Pure Data)
 Esempi di procedurale
@@ -234,6 +244,7 @@ _vedi Roads_
 Concetti di [musica generativa](https://en.wikipedia.org/wiki/Generative_music), esempio sono _Music for Airports_, _Discreet Music_ etc...
 architetto e compositore vs gardener (intervento di [Brian Eno](https://vimeo.com/55969912))
 
+{% comment %}
 Individuazione dei metodi formali, delle regole nella composizione della musica: Guido D'Arezzo (1026), Mozart, etc...
 Composizione automatica
 contollo delle sequenze --> musica algoritmica (Xenakis, Koenig, Truax)
@@ -269,6 +280,7 @@ set di regole
 ## Artificial Intelligence
 
 memoria ritenuta diventa conoscenza
+
 conoscenza + processo.
 
 ### AI adattiva
@@ -294,7 +306,13 @@ Condisioni ambientali possono far prosperare o uccidere le nuove generazioni le 
 ---
 
 Frattali (auto similarità) - 1/f rumore frazionale
+
 Chaos generator
+
 Grammatiche
+
 Pattern matching / search tecniques
+
     Constraints
+
+{% endcomment %}
