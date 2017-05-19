@@ -1,0 +1,96 @@
+Ad Lib, January 1989 - Instrument File Conversion Program
+---------------------------------------------------------
+
+     The Ad Lib version 1.5 series product line features a new sound file
+format which is called an instrument bank file.  In order to provide 
+portability between the new V1.5 series and pre-V1.5 file formats, you will
+find on this diskette a utility program (BANKMNG.EXE) that converts from
+the new .BNK to the old .INS file formats and vice-versa.  How to use the 
+conversion program is explained below in the BANK MANAGER section.
+
+     In the UPDATES section at the end of this file, you will find 
+instructions on upgrading to the V1.5 series software.  You will find it
+advantagious to upgrade because, although the conversion utility allows
+file portability, pre-V1.5 versions of our software do not support the
+additional waveforms.  With the additional waveforms, you have access to
+a greater variety sounds.
+
+
+
+BANK MANAGER
+------------
+
+- To copy instruments from a bank file to separate .INS files, type:
+
+  > bankmng /g <bank_file>.bnk
+
+     where <bank_file> is the name of the bank file.
+     (If you are copying to a diskette, note that DOS has a limit of 110
+     files in the main directory of a diskette.  However, there is no limit
+     in a sub-directory on a diskette.)
+
+- To create a bank file which includes of all the .INS file in the
+  current directory, type:
+
+  > bankmng /p /i*.ins <newbank>.bnk
+
+     where <newbank> is the name of the bank file to be created.
+
+
+- To add one or more instrument files (.INS) to an existing bank, type:
+
+  > bankmng /p /a /i<ins_file>.ins <bank>.bnk
+
+     where <ins_file> is the file name of the instrument
+        (example: *, ab*, piano1, etc),
+     <bank> is the name of the existing bank to be updated.
+
+
+- To get a summary of the available parameters, type:
+
+  > bankmng
+
+Summary:
+  bankmng { /g  /p } [ /a] [/i<ins_files.ins>] <bank_file.bnk>
+  options:
+     /p: create a new bank file and add .INS files
+     /g: copy from bank to .INS files
+     /i<files>: .INS source file path name
+     /a: with /p, append .INS if bank file exists
+
+
+
+UPDATES
+-------
+
+   To receive updated versions of the latest Ad Lib version 1.5 series 
+releases, send your original diskettes with $5 per product plus $5 for
+shipping and handling to the following address:
+
+     Ad Lib Inc.
+     220 Grande-Allee East, suite 960
+     Quebec, QC, Canada
+     G1R 2J1
+
+     If you are ordering an update of a product within 90 days of purchase,
+you are not required to pay the update fee.  Please enclose a copy of your
+dated proof of purchase.  Shipping and handling charges still apply.
+
+-Payment can be made in one of the following ways:
+     - Visa or MasterCard: enclose your credit card number and the
+       expiration date.
+     - Money Order for Canada or the U.S.A.
+     - International Money Order for other countries.
+
+- Please indicate if you wish to receive your update on 3 1/2 or 5 1/4
+  inch diskettes.
+
+- Products will be shipped by UPS Ground in the U.S. and by regular mail
+  elsewhere on a first come first serve basis.
+
+- Please allow 4-5 weeks for delivery.
+
+- No customer pickups.
+
+
+
