@@ -96,7 +96,6 @@ Alla tadizionale tecnica del loop si associano soluzioni creative per offrire un
 Your browser does not support the audio element.
 </audio>
 
-
 Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibilità che si manifesta
 
 * nella scelta degli strumenti e della loro interazione all'interno della composizione musicale (fiati, violini, tastiere al posto di chitarre);
@@ -107,13 +106,17 @@ Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibil
 
 Successore del NES è il SuperNES (SNES) che monta molti elementi per la creazione e la gestione audio, tra cui un DSP Sony. Questo DSP permette di utilizzare la sintesi a wavetable, quindi superando anche il Genesis dal punto di vista di qualità dei suoni prodotti. Nintendo tuttavia preferisce rimanere su suoni che richiamano i chiptune del NES e stilisticamente richiamare genri musicali in voga al momento, come dance, hard rock, hip hop.
 
+{% comment %}
 [esempio endorsement -
 
 [Cliff Hanger](https://youtu.be/dnXvGAtdhL8?t=20s)
+{% endcomment %}
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/dnXvGAtdhL8" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/dnXvGAtdhL8?start=20" frameborder="0" allowfullscreen></iframe>
 
+{% comment %}
 [Moonwalker](https://youtu.be/r37TJdTI5M0)
+{% endcomment %}
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/r37TJdTI5M0" frameborder="0" allowfullscreen></iframe>
 
@@ -163,11 +166,11 @@ Il MIDI è un protocollo di trasmissione dati audio che prevede lo scambio di me
 Questo fa sì che il MIDI sia massicciamente usato, tra gli altri, anche dai produttori di videogiochi.
 Roland nel 1987 rilascia una scheda MIDI, l'MT32. Sebbene sia possibile usare l'MT32 per qualsiasi applicazione, Roland ha evidentemente in mente i videogiochi come campo priilegiato di utlizzo, infatti firma un accordo con Sierra On-Line che si impegna a rendere l'MT32 il sistema audio standard per i suoi giochi.
 
+{% comment %}
 [video 8 bit guy](https://www.youtube.com/watch?v=BMmFcs-_4x4&feature=youtu.be&t=4m57s)
+{% endcomment %}
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4" frameborder="0" allowfullscreen></iframe>
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4?start=287" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4?start=297" frameborder="0" allowfullscreen></iframe>
 
 Tuttavia non esistendo uno standard ogni produttore implementava a modo suo il protocollo rendendo difficile per i programmatori adattare il proprio lavoro alle varie situazioni. Nel 1991 si arriva alla definizione dello standard: GMIDI poi ampliato in GSMIDI.
 
@@ -201,15 +204,19 @@ I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di vide
 
 ## Confronto di audio in videogame
 
+{% comment %}
 [DOOM](https://www.youtube.com/watch?v=m9HvAXZgGeQ&feature=youtu.be&t=20s)
+{% endcomment %}
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/m9HvAXZgGeQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/m9HvAXZgGeQ?start=20" frameborder="0" allowfullscreen></iframe>
 
+{% comment %}
 [Myst](https://youtu.be/D30r0iRH73Q)
+{% endcomment %}
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/D30r0iRH73Q" frameborder="0" allowfullscreen></iframe>
 
-# i giochi moderni
+# I giochi moderni
 
 Attualmente la grafica e la modalità di gioco spingono verso un iper-realismo. Il suono si adegua con l'uso di surround, che però fronisce una simulazione della realtà SOLO dal punto di vista del posizionamento.
 Da citare la modalità di fruizione audio offerta da NIntendo Wii in cui i suoni sono emessi anche dai controller, aumentando l'immersività.
@@ -220,7 +227,7 @@ Con Xbox si inizia a dleineare la tendenza delle console e dei computer a conver
 
 Oculus Rift e i vari sistemi di realtà virtuale stanno cambiando la modalità di gioco. Vedremo come l'audio si adeguerà a queste nuove modalità.
 
-### handheld games
+### Handheld games
 
 I giochi per dispositivi portatili sono pensati per essere giocati in pubblico, quindi la musica e i suoni non solo non sono importanti, ma devono poteressere elimimnati per non disturbare.
 
@@ -345,7 +352,9 @@ I dialoghi vengono registrati in studi per l'ADR. I file sono poi sottoposti al 
 ### La localizzazione
 
 ----------
+{% comment %}
 
 [get lamp](https://youtu.be/Zctp972y_Eg)
+{% endcomment %}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Zctp972y_Eg" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Zctp972y_Eg" frameborder="0" allowfullscreen></iframe>
