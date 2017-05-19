@@ -5,6 +5,8 @@ layout: default
 ## Introduction
 
 Go to the [FMOD page](fmod).
+Go to [pt1](pt1)
+Go to [pt2](pt2)
 
 {% comment %}
 
@@ -71,7 +73,7 @@ Procedural (computational) audio **definition**:
 
 > “Procedural audio is non-linear, often synthetic sound, created in real time according to a set of programmatic rules and live input.” – "[An introduction to procedural audio and its application in computer games](http://cs.au.dk/~dsound/DigitalAudio.dir/Papers/proceduralAudio.pdf).” by Andy Farnell
 
-## Game Audio Engine capabilities 
+## Game Audio Engine capabilities
 * spatialization, panner 3D, 3D audio, 5.1, 7.1, doppler, psychoacustics, HRTF binaural sound (Virtual Reality), 3d reverb;
 * memory managements, dynamic mixing, dynamic [voices allocations](http://electronicmusic.wikia.com/wiki/Voice_allocation) and [voice stealing](http://electronicmusic.wikia.com/wiki/Voice_stealing)
 * Synchronization, web, threads
@@ -101,14 +103,16 @@ Procedural (computational) audio **definition**:
 * [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
 * iMuse [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689), [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ);
-<!--
+
+{% comment %}
 * [Abzu](https://www.youtube.com/watch?v=CWU1pZVw0xM&feature=youtu.be&t=15m24s);
 * [Journey]();
--->
+{% endcomment %}
+
 
 ### Application of Procedural Audio on other fields
 
-* [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out. 
+* [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Clavia_Nord_Lead_2x.jpg/799px-Clavia_Nord_Lead_2x.jpg" alt="Clavia Nord Lead" width="100%" />
 
@@ -157,7 +161,7 @@ and Rendering of Environmental Audio;
 * Mooc: [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
 
 ### Books
-Books about music in video games: 
+Books about music in video games:
 
 * Winifred Phillips [book](https://www.amazon.com/dp/0262026643/ref=cm_sw_su_dp)
 * KarenKollins [book](https://www.amazon.com/Game-Sound-Introduction-History-Practice/dp/026203378X/ref=pd_bxgy_14_img_3?_encoding=UTF8&pd_rd_i=026203378X&pd_rd_r=NCK8TJTEW5CPY2J21BA0&pd_rd_w=Cp62q&pd_rd_wg=rCgp3&psc=1&refRID=NCK8TJTEW5CPY2J21BA0)

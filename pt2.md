@@ -1,3 +1,4 @@
+{% comment %}
 
 * Game Engine
 * vedendo l'esempio del FPS
@@ -17,13 +18,15 @@ s_show 0
 sv_gravity 100 (default 800)
 ```
 
+{% endcomment %}
+
 ## Suono come modello data driven/event based
 
-Nell'ultima parte della sua storia, il suono nel videogioco si presenta come un modello guidato dai dati (**data driven model**). 
+Nell'ultima parte della sua storia, il suono nel videogioco si presenta come un modello guidato dai dati (**data driven model**).
 
 In altri termini, l'audio di un videogioco è costituito da una moltitudine di file audio, compressi per ragioni di spazio e utilizzo delle risorse, raccolti in un database e che vengono messi in riproduzione all'occorrenza, in seguito al verificarsi di particolari eventi (**event based**).
 
-Ai sample che vengono riprodotti si possono certo applicare delle **modificazioni in tempo reale** come ad esempio, e lo vedremo a breve:
+Ai sample che vengono riprodotti si possono certo applicare delle **modificazioni in tempo reale** come ad esempio, e lo approfondiremo tra breve:
 * attenuazione dovuta alla distanza;
 * combinazioni e layering;
 * random e granularità;
@@ -36,35 +39,36 @@ Quali sono i compiti e le caratteristiche principali di un game audio engine tra
 
 ### Switching
 
-Logiche e meccanismi per dare priorità ai suoni da riprodurre e assegnare le voci disponibili, dal momento che si tratta di risorse limitate. 
-Un esempio potrebbero essere i sintetizzatori dove si parla di [voice stealing](http://electronicmusic.wikia.com/wiki/Voice_stealing). 
+Logiche e meccanismi per dare priorità ai suoni da riprodurre e assegnare le voci disponibili, dal momento che si tratta di risorse limitate.
+Un esempio potrebbero essere i sintetizzatori dove si parla di [voice stealing](http://electronicmusic.wikia.com/wiki/Voice_stealing).
+
 Un esempio di voice stealing nel videogioco lo si ha in [Super Mario Bros](https://youtu.be/Dp7fVUfj8oI?t=2m3s), dove il sound engine agisce sulla voce assegnata alla melodia principale (il suono più acuto), deallocandola e riassegnandola per la sintesi degli effetti sonori delle monete.
+
+Lo switching è guidato anche dal ruolo che il particolare suono riveste all'interno della **narrazione**: in una sitauzione in cui sono presenti molti suoni, sono quelli meno importanti ai fini di quanto si deve raccontare ad essere sacrificati per primi.
 
 ### Random
 
-Quando siamo fruitori di opere di intrattenimento - libri, cinema, teatro, etc... - tra noi e gli autori dell'opera si instaura una sorta di tacito accordo. Da una parte nasce (inconsciamente) in noi volontà di sospendere l'incredulità ([_suspension of disbelief_](https://it.wikipedia.org/wiki/Sospensione_dell'incredulit%C3%A0)) per mettere da parte per un momento le nostre facoltà critiche, ignorare le incongruenze secondarie e godere dell'opera di fantasia. 
-
-lasciarsi guidare e abbandonarsi alla narrazione.
+Quando siamo fruitori di opere di intrattenimento - libri, cinema, teatro, etc... - tra noi e gli autori dell'opera si instaura una sorta di tacito accordo. Da una parte nasce (inconsciamente) in noi volontà di sospendere l'incredulità ([_suspension of disbelief_](https://it.wikipedia.org/wiki/Sospensione_dell'incredulit%C3%A0)) per mettere da parte per un momento le nostre facoltà critiche, ignorare le incongruenze secondarie e godere dell'opera di fantasia. Come spettatori ci lasciamo guidare e ci abbandoniamo alla narrazione.
 
 Dall'altra parte l'autore si impegna nell'introdurci e nel guidarci attraverso un percorso comune allo scopo di raccontarci una storia.
 
 La sospensione dell'incredulità nasce da un equilibrio molto sottile, tanto più difficile da creare quanto da mantenere da parte dell'autore dell'opera, soprattutto in epoca moderna dove si è bombardati da flussi continui di informazione e da moltissime forme diverse di intrattenimento.
 
-declinando il concetto al mondo videoludico, un suono ripetitivo viene riconosciuto dal nostro cervello come un **pattern**.
+Declinando il concetto al mondo videoludico, un suono ripetitivo viene riconosciuto dal nostro cervello come un **pattern**.
 
-Il nostro cervello è abilissimo ad identificare pattern, strutture ricorrenti di ogni tipo (footsteps), 
+Il nostro cervello è abilissimo ad identificare pattern, strutture ricorrenti di ogni tipo (footsteps),
 Immaginate ad esempio cosa succederebbe se in un videogioco FPS, dove uno dei compiti primari è quello di muoversi all'interno di un mondo virtuale, il movimento dell'attore fosse evidenziato da suoni ripetitivie e sempre uguali a loro stessi.
 Senza la casualità sarebbe impossibile ottenere la sospensione dell'incredulità.
 
 ### Blending
 
-Crossfade parametrico tra campioni diversi, quello che nella sintesi prende il nome di **multisampling**.
-Immaginiamo una caduta da diverse altezza --> intensità diversa ma non solo, anche variazione timbrica.
-Questa tecnica è implementata in gran misura nei campionatori i quali infatti rispondono a diverse velocity di tocco con un mix tra campioni corrispondenti.
+Crossfade parametrico tra campioni diversi, quello che nella sintesi prende il nome di **multisampling**. Questa tecnica è implementata in gran misura nei campionatori i quali infatti rispondono a diverse velocity di tocco con un mix tra campioni corrispondenti.
+
+Immaginiamo una caduta di un oggetto da diverse altezze; questo comporta intensità diversa ma non solo, anche variazione timbrica.
 
 ### Mixer, Grouping and Buses
 
-Molti game audio system incorporano un mixer del tutto analogo a quallo in uso nelle grandi produzioni: un banco large frame con gruppi, mandate e ritorni, master buses, etc...
+Molti game audio system incorporano un mixer del tutto analogo a quallo in uso nelle grandi produzioni: un banco large frame con gruppi, mandate e ritorni, etc...
 La differenza è che, mentre per una produzione tradizionale la configurazione del banco rimane statica, praticamente invariata lungo tutta la durato di Un medesimo brano o album, nel caso di un videogioco  il mixer deve spesso riconfigurarsi del tutto in pochi istanti.
 Un esempio potrebbe essere il passaggio da una sitauzioni in-game ad un menù di interfaccia (pausa o salvataggio).
 
@@ -74,7 +78,7 @@ Il game sound engine deve fornire un'interfaccia per ricevere parametri real tim
 
 ### Positioning
 
-Come funziona l'audio in un gioco: _emitters_ sono oggetti nello spazio tridimensionale che emettono suono e uno o più _listeners_ (mono, stereo o multicanale; va pensato come un array di microfoni), in genere solidale col player.
+Come funziona l'audio in un gioco: **emitters** sono oggetti nello spazio tridimensionale che emettono suono e uno o più **listeners** (mono, stereo o multicanale; va pensato come un array di microfoni), in genere solidale col player.
 E' un sistema che si occupa di calcolare in run-time le funzioni di trasferimento e i filtri da applicare al suono riprodotto per dare all'ascoltatore la percezione che gli emettitori si trovino immersi nello spazio virtuale circostante.
 Il panning "_reale_" è più complcato rispetto ad una semplice variazione di volume tra i canali.
 panning, multicanale (stereo, 5.1, 7.1, ambisonic (non usato), binaurale);
@@ -93,7 +97,7 @@ Materiali diversi
 
 ### Alignement
 
-Uno scenario in cui più giocatori prendono parte ad un partita multiplayer. 
+Uno scenario in cui più giocatori prendono parte ad un partita multiplayer.
 Un server preposto al controllo e al master clock per la ricezione e ridistribuzione dei pacchetti.
 A seconda della contingeza ci possono essere latenze che si sommano e si accumulano, e possono essere diverse da caso a caso, e da giocatore a giocatore e cambiare nel tempo.
 Il game engine, e più nello specifico l'audio engine per quanto concerne il suono, deve essere in grado di gestire situazioni come questa e di riordinare opportunamente i pacchettin in arrivo per dare un audio sempre corerente
@@ -101,18 +105,15 @@ esempio PS3 (chiedi a Vale di intervenire)
 
 ### Dialogues
 
-Il game audio engine deve essere in grado di interfacciarsi e gestire complessi database di informazioni. Uno di questi è rappresentato dall'insieme degli audio file associati a tutte le varie linee di dialogo (in una o più lingue) presenti nel gioco. 
+Il game audio engine deve essere in grado di interfacciarsi e gestire complessi database di informazioni. Uno di questi è rappresentato dall'insieme degli audio file associati a tutte le varie linee di dialogo (in una o più lingue) presenti nel gioco.
 
 ### Music
-Il game audio engine deve essere in grado di gestire l'eventuale colonna sonora musiclae interattiva (vedi ad esempio il sistema _iMuse_). 
+Il game audio engine deve essere in grado di gestire l'eventuale colonna sonora musiclae interattiva (vedi ad esempio il sistema _iMuse_).
 
 ---
 A ben vedere però questo sistema basato sui sample audio sembra in contraddizione netta con il dominio visivo, caratterizzato invece da un comportamento **continuo** e guidato da uno stream di parametri piuttosto che da eventi **discreti**.
 
-
----
-
-## come funziona un FPS
+## Come funziona un FPS
 
 mesh + texture + world geometry + collisions + dynamic lightining + particle systems + etc...
 rendering engine + physics engin + artificial intelligence
@@ -130,15 +131,19 @@ Ci potremmo chiedere quindi che significato ha la parola **realismo**? premesso 
 Basti pensare che si è passati al massiccio uso della grafica tridimensionale non appena le tecnologie lo hanno permesso (questo vale anche per il mondo dell'animazione). Si ricerca sempre una maggiore definizione (**high poly**) dei modelli. Ci si avvale del supporto di potenti motori di fisica per simulare fedelmente i comportamenti quali collisioni, esplosioni, attrazione gravitazionale, spinta del vento, forze etc...
 L'intelligenza artificiale contribuisce a rendere sempre più credibili i movimenti e le azioni di attori e creature npc e la lista potrebbe continuare a lungo.
 
-In abito audio invece quello che si fa, in pratica, è "_premere il tasto play_" quando serve, il che sembra un po' riduttivo. 
-Per contro, un approccio come questo ha i suoi svantaggi vediamo un paio di esempi
+In abito audio invece quello che si fa, in pratica, è "_premere il tasto play_" quando serve, il che sembra un po' **riduttivo**, soprattutto per il fatto che:
+
+* il suono riveste un ruolo importante di guida emotiva all'interno del gioco;
+* l'audio è una parte importante per mantenere viva la senzazione di realismo;
+
+Inoltre, un approccio _data driven_ come questo ha i suoi svantaggi vediamo un paio di esempi
 
 * la porta
 * una lastra percossa
 
 Il suono insomma risulta essere malamente accoppiato con il motore di gioco sottostante, incoesivo con l'esperienza complessiva. Eppure non è sempre stato così. All'inizio della storia dei videogame, delle console e dei computer, era l'audio la motivazione principale che ha guidato lo sviluppo tecnologico.
 
-L'audio veniva generato in tempo reale e rispecchiava linearmente le azioni del giocatore e le reazioni dell'engine. L'audio veniva sintetizzato in tempo reale. 
+L'audio veniva generato in tempo reale e rispecchiava linearmente le azioni del giocatore e le reazioni dell'engine. L'audio veniva sintetizzato in tempo reale.
 Questa tendenza si è interrotta indicativamente attorno alla seconda metà degli anni '90, momento storico dove si può collocare la comparsa sul mercato dei prini CD e che vede il diffondersi dell'audio campionato ad alta qualità (44100@16bit).
 
 Attenzione, questo non significa che prima i sample non venissereo utilizzati; Nintendo, SEGA e ancora prima nelle coin-op, dove possibile, si inserivano sistemi DAC in grado di riprodurre, seppure non con la stessa qualità CD, campioni e sample pre-registrati, soprattutto per la voce. La ricerca del "_realismo_" tuttavia ha infine soppiantato i sistemi di sintesi tradizionale.
@@ -147,9 +152,9 @@ Tali sistemi però sono sopravissuti in una parte del mercato legato all'audio: 
 
 Nascono i primi sistemi di sintesi basati su modelli: i fenomeni della fisica del suono vengono studiati e sintetizzati in modelli matematici e poi innestati all'interno dei circuiti integrati o dei software per computer.
 
-Quando si vuole simulare i suoni dei vecchi sintetizzatori analogici, si sviluppano tecnologie volte a riprodurre in digitale tutte le idiosincrasie dei componenti elettrici discreti che li costituivano e nascono i modelli [virtual analog]().
+Quando si vuole simulare i suoni dei vecchi sintetizzatori analogici, si sviluppano tecnologie volte a riprodurre in digitale tutte le idiosincrasie dei componenti elettrici discreti che li costituivano e nascono i modelli [virtual analog](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer).
 
-QUando invece si vuole simulare strumenti musicali acustici o elettroacustici nascono modelli volti a riprodurre i fenomeni fisici delle sollecitazioni, vibrazioni, attenuazione dei materiale: nasce il [physical modelling]().
+Quando invece si vuole simulare strumenti musicali acustici o elettroacustici nascono modelli volti a riprodurre i fenomeni fisici delle sollecitazioni, vibrazioni, attenuazione dei materiale: nasce il [physical modelling](https://en.wikipedia.org/wiki/Physical_modelling_synthesis).
 
 Esistono da diversi anni scuole di pensiero volte a traslare questi metodi di sintesi, da tempo diffusisi sul mercato e molto apprezzati per le loro qualità, nel mondo videoludico.
 
@@ -176,7 +181,7 @@ tra i vantaggi possiamo contare:
 
 ### Differimento
 
-metre l'atto di registrare un suono è un azione che fissa nel tempo senza lasciare alcune possibilità di intervento successivo, l'audio procedurale è dinamico e lascia che molte dele decisioni, anche strutturali, vengano rimandate al real-time; 
+metre l'atto di registrare un suono è un azione che fissa nel tempo senza lasciare alcune possibilità di intervento successivo, l'audio procedurale è dinamico e lascia che molte dele decisioni, anche strutturali, vengano rimandate al real-time;
 
 ### Default forms
 
@@ -184,12 +189,13 @@ dal momento che la **crescita** dei sounds assets è **combinatoria** (es. incud
 
 ### variabilità
 
+Caratteristica fondamentale del suono procedurale che garantisce la possibilità pressochè completa di modificazione del suono in tempo reale e di produrre in questo modo risultati sonori anche molto diversi tra loro pur facendo capo ad uno stesso modello.
 
 ### costo variabile e dinamico
 
-il paradigma procedurale permette il LOAD - Level Of Audio Details - (che sfrutta le conoscenze in ambito di acustica e psico-acustica) caricamento dinamico sulla CPU esattamente come già fa la parte grafica cone il **mipmapping**. 
+Il paradigma procedurale permette il LOAD - Level Of Audio Details - (che sfrutta le conoscenze in ambito di acustica e psico-acustica) caricamento dinamico sulla CPU esattamente come già fa la parte grafica cone il **mipmapping**.
 
-Consideriamo una esempio quale potrebbe essere un suono in grande lontananza: 
+Consideriamo una esempio quale potrebbe essere un suono in grande lontananza:
 nel caso di un motore audio tradizionale, al suono verrebbe applicato notevole processing DSP in tempo reale da far sì che il sample - attenuato e filtrato - dia l'impressione di provenire da lontano. Tuttavia, nonostante il suono ne risulti pesantemente modificato rispetto all'originale, comunque il costo in termini di risorse sarebbe invariato rispetto alla normale riproduzione di un audio file.
 
 Nel caso il problema venga affrontato con il paradigma procedurale invece, soprattutto facendosi forti del fatto che il modello è stratificato e costituito da più parti indipendenti tra loro, il carico di lavoro potrebbe essere ridotto: certe componenti del suono, proprio per via del fatto che la sorgente sonora è ascoltata da grande distanza, potrebbero essere del tutto tralasciate rispetto ad altre. Il lavoro del processore sarebbe avvantaggato.
@@ -219,15 +225,12 @@ In un futuro presumibilmente non troppo lontano, il paradigma procedurale avrà 
 Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, etc...), così anche nel mondo dell'audio procedurale ci saranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua, fuoco, impatti, sfregamenti, acustica delle stanze, etc...).
 
 ## Esempi di audio procedurale (Pure Data)
-Esempi di procedurale
-* comportamento emergente
-* jet: 3 sample vs. 1 model
-* verosimile non è realismo ma comportamento.
 
-**un approccio layer in quanto ognuno di essi può essere rimpiazzato + la complessità non deve esplodere**
+Esempi di procedurale bells, clocks, water, insects, engine, guns, helicopter (thanks to Andy Farnell and Alexey Reshetnikov).
 
 ## Music
 
+{% comment %}
 non linearità
 
 * variazione del tempo (space invaders + mario alla fine di ogni livello)
@@ -244,7 +247,6 @@ _vedi Roads_
 Concetti di [musica generativa](https://en.wikipedia.org/wiki/Generative_music), esempio sono _Music for Airports_, _Discreet Music_ etc...
 architetto e compositore vs gardener (intervento di [Brian Eno](https://vimeo.com/55969912))
 
-{% comment %}
 Individuazione dei metodi formali, delle regole nella composizione della musica: Guido D'Arezzo (1026), Mozart, etc...
 Composizione automatica
 contollo delle sequenze --> musica algoritmica (Xenakis, Koenig, Truax)

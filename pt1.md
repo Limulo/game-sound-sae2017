@@ -4,7 +4,7 @@ Un videogioco è la declinazione moderna più diffusa e pervasiva del gioco.
 Il gioco è un'attività che accompagna da sempre la storia dell'uomo. Se ne ritrovano esemplari molto antichi, che non si discostano molto dai giochi ai quali siamo abituati noi.
 Per gioco intendiamo una **narrazione** guidata dalle **scelte** che uno o più giocatori compiono in conformità ad un insieme di **regole** che limtano il campo d'azione.
 Un gioco è quindi uno strumento di intrattenimento, come un film, un libro. Si distingue da queste forme espressive, però, in virtù della propria **interattività**, privilegiando ad una narrazione lineare una narrazione a salti, non determinata a priori, ma emergente dall'interazione tra giocatore e gioco.
-Il videogioco si distingue intoltre da altre forme di gioco in quanto punto di convergenza di diversi elementi eterogenei ta loro. In questo senso il videogioco è un **prodotto** di intrattenimento ( ma non solo ) **multimediale**, che si avvale cioè di almeno un paio di mezzi espressivi differenti (grafica, audio, animazione, testo, interfaccia utente, controlli hardware). 
+Il videogioco si distingue intoltre da altre forme di gioco in quanto punto di convergenza di diversi elementi eterogenei ta loro. In questo senso il videogioco è un **prodotto** di intrattenimento ( ma non solo ) **multimediale**, che si avvale cioè di almeno un paio di mezzi espressivi differenti (grafica, audio, animazione, testo, interfaccia utente, controlli hardware).
 
 Il videogioco è un software; un software molto complesso, capace di raccogliere input provenienti da differenti domini e di farli coesistere in maniera coerente all'interno
 di un unico ambiente.
@@ -91,13 +91,15 @@ Esempio: In "Shadow of the Beast II" (1992, Psygnnosis) l'organo a onda quadra �
 
 Alla tadizionale tecnica del loop si associano soluzioni creative per offrire una sensazione di variazione maggiore: la trasposizione di frasi sonore e la tecnica del double tracking.
 
+<div style="width:100%;">
 <audio controls>
-  <source src="./music/Sonic_Labirynth.ogg" type="audio/ogg">
+  <source src="./music/Sonic_Labyrinth.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
+</div>
 
 
-Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibilità che si manifesta 
+Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibilità che si manifesta
 
 * nella scelta degli strumenti e della loro interazione all'interno della composizione musicale (fiati, violini, tastiere al posto di chitarre);
 * nella struttura della stessa, con piccoli riff e frasi ripetuti, sorretti da un suono di basso continuo;
@@ -107,17 +109,15 @@ Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibil
 
 Successore del NES è il SuperNES (SNES) che monta molti elementi per la creazione e la gestione audio, tra cui un DSP Sony. Questo DSP permette di utilizzare la sintesi a wavetable, quindi superando anche il Genesis dal punto di vista di qualità dei suoni prodotti. Nintendo tuttavia preferisce rimanere su suoni che richiamano i chiptune del NES e stilisticamente richiamare genri musicali in voga al momento, come dance, hard rock, hip hop.
 
-[esempio endorsement - 
+[esempio endorsement -
 
 [Cliff Hanger](https://youtu.be/dnXvGAtdhL8?t=20s)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dnXvGAtdhL8" frameborder="0" allowfullscreen></iframe>
-
- 
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/dnXvGAtdhL8" frameborder="0" allowfullscreen></iframe>
 
 [Moonwalker](https://youtu.be/r37TJdTI5M0)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r37TJdTI5M0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/r37TJdTI5M0" frameborder="0" allowfullscreen></iframe>
 
 ---
 Sega mostra un'attenzione particolare per l'audio. Ne è un esempio il Sega Dreamcast del 1998, a 128 bit. Il Dreamcast monta un processore audio dedicato con una memoria dedicata che permette un accesso non concorrenziale alla memoria del sistema.
@@ -158,7 +158,6 @@ La scheda audio permette di sfruttare enormemente il potere creative del compute
 
 [emu su dosbox]
 
-
 ## MIDI
 
 In questo periodo intanto prende piede un protocollo di trasmissione dati audio: il MIDI ideato da Roland.
@@ -168,7 +167,9 @@ Roland nel 1987 rilascia una scheda MIDI, l'MT32. Sebbene sia possibile usare l'
 
 [video 8 bit guy](https://www.youtube.com/watch?v=BMmFcs-_4x4&feature=youtu.be&t=4m57s)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4&feature=youtu.be&t=4m57s" frameborder="0" allowfullscreen></iframe>
 
 Tuttavia non esistendo uno standard ogni produttore implementava a modo suo il protocollo rendendo difficile per i programmatori adattare il proprio lavoro alle varie situazioni. Nel 1991 si arriva alla definizione dello standard: GMIDI poi ampliato in GSMIDI.
 
@@ -198,21 +199,21 @@ Il file .MOD contiene campioni (strumenti) e pattern che indicano come e quando 
 Inizialmente si poteva disporre solo di 4 canali e 64 note. I campioni erano codificati come PCM a 8 bit ed erano riprodotti direttamente dal DAC di Amiga.
 I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di videogiochi, diffusione facilitata anche dal fatto che, al contrario di iMuse, il MOD non è proprietario (contro: diversità di implementazione).
 
-[immagine MOD format]
+![immagine MOD format]()
 
 ## Confronto di audio in videogame
 
 [DOOM](https://www.youtube.com/watch?v=m9HvAXZgGeQ&feature=youtu.be&t=20s)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m9HvAXZgGeQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/m9HvAXZgGeQ" frameborder="0" allowfullscreen></iframe>
 
 [Myst](https://youtu.be/D30r0iRH73Q)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D30r0iRH73Q" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/D30r0iRH73Q" frameborder="0" allowfullscreen></iframe>
 
 # i giochi moderni
 
-Attualmente la grafica e la modalità di gioco spingono verso un iper-realismo. Il suono si adegua con l'uso di surround, che però fronisce una simulazione della realtà SOLO dal punto di vista del posizionamento. 
+Attualmente la grafica e la modalità di gioco spingono verso un iper-realismo. Il suono si adegua con l'uso di surround, che però fronisce una simulazione della realtà SOLO dal punto di vista del posizionamento.
 Da citare la modalità di fruizione audio offerta da NIntendo Wii in cui i suoni sono emessi anche dai controller, aumentando l'immersività.
 
 Con Xbox si inizia a dleineare la tendenza delle console e dei computer a convergere in un unico sistema. Questa tendenza permane ai girni nostri e si arricchisce di nuove potenzialità con i nuovi apparecchi per l'home entaitainment (smartTV).
@@ -235,7 +236,7 @@ Analizziamo ora come si configura l'industria del videogame contemporanea, attra
 
 Visto che lo sviluppo di videogiochi è un ambiente variegato (ci sono piccoli sviluppatori indipendenti, grandi studios, realtà intermedie, studi che si occupano solo di una fase di produzione, ecc), consideriamo una realtà medio grande.
 
-L'organizzazione del lavoro è gerarchica. A capo del processo c'è il **publisher**, ovvero la compagnia che investe denaro nello sviluppo del gioco. Al di sotto del publisher ci sono gli sviluppatori, o **developers** ovvero gli studi che si occupano di realizzare effettivamente il gioco. 
+L'organizzazione del lavoro è gerarchica. A capo del processo c'è il **publisher**, ovvero la compagnia che investe denaro nello sviluppo del gioco. Al di sotto del publisher ci sono gli sviluppatori, o **developers** ovvero gli studi che si occupano di realizzare effettivamente il gioco.
 
 Gli sviluppatori possono essere terze parti rispetto al publisher, quindi collaborare con questo sulla base di singoli progetti. Possono essere sussidiari del publisher, quindi studi di proprietà di quest'ultimo. Infine i developers possono essere indie (indipendenti) e affidarsi al self-publishing (auto-edizione).
 
@@ -254,7 +255,7 @@ Vediamo nello specifico quali sono le fasi di sviluppo del gioco.
 
 ## Pre produzione
 
-Nella fase di preproduzione si delinea l'idea, il concept e la visione d'insieme del gioco. 
+Nella fase di preproduzione si delinea l'idea, il concept e la visione d'insieme del gioco.
 Viene prodotto un documento, il **design document** che contiene:
 
 * la storyline
@@ -298,7 +299,7 @@ Il documento si compone di varie sezioni, relative a musica, sound design e dial
 Si è nelle fasi iniziali di sviluppo, quindi si ha a che fare con pochi elementi non precisi (storyboards e/o documenti da altri dipartimenti, abbozzi più che specifiche).
 
 Questa fase serve a determinare il tipo di videogioco in generale (stabilendone il tema e il genere) e i conseguenti stili di suoni e musiche che lo possono rappresentare.
- 
+
 Inoltre si inizia a tenere traccia delle funzionalità che si prevedono per il gioco e qualsiasi comportamento specifico che l'audio deve tenere nel gioco, caratterizzandolo maggiormente rispetto alle indicazioni di massima di tipo, tema e genere.
 E' in questa fase che si prende in considerazione l'interazione giocatore - gameplay. Questo è il momento in cui entra in scena l'interattività.
 
@@ -306,16 +307,16 @@ Un altro tipo di informazione utile definita in questa fase iniziale è lo "_spo
 
 Si traccia una mappa emozionale del gioco per definire i cue points. Il suono infatti si carica di questo compito, come nel film: è repsonsabile del coinvolgimento emotivo inconscio del giocatore. Secondo Charles Deenen ci sono 6 emozioni base che il suono può veicolare:
 felicità, disgusto, tristezza, rabbia, sorpresa, paura.
-Le emozioni sono una componente fondamentale non solo della musica, ma anche del sound design, e aiutano a determinare il ritmo e il movimento del gioco, infatti gli effetti e suoni vengono mappati basandosi su una mappa di punti di tesione e rilassamento. 
+Le emozioni sono una componente fondamentale non solo della musica, ma anche del sound design, e aiutano a determinare il ritmo e il movimento del gioco, infatti gli effetti e suoni vengono mappati basandosi su una mappa di punti di tesione e rilassamento.
 
-I sound designers elaborano quelli che potrebbero essere gli effetti da usare, i foley e il suono ambientale sia leggendo il design document, sia leggendo lo script (qualora sia disponibile). 
+I sound designers elaborano quelli che potrebbero essere gli effetti da usare, i foley e il suono ambientale sia leggendo il design document, sia leggendo lo script (qualora sia disponibile).
 
 I musicisti e sound designers stilano quindi un elenco di assets (armi, personaggi, UI, modelli, livelli, ...) che saranno utili in fase di sviluppo.
 Si occupano anche di stabilire quali siano le limitazioni tecniche del sistema su cui si deve sviluppare (il numero di canali, surround o stereo, importanza del suono nel videogioco,...) e stilano un elenco di tools per lo sviluppo. Alcuni di questi possono già essere disponibili (banchi di effetti, editors,...), altri sarà necessario programmarli da zero. Per fare questo si deve tenere conto della piattaforma di destinazione, del sound engine che si andrà ad utilizzare e del playback engine offerto dal sistema di gioco.
 
 ## produzione
 
-In fase di produzione si ultima o si realizza se non lo si è fatto in preproduzione il **cue spotting**. 
+In fase di produzione si ultima o si realizza se non lo si è fatto in preproduzione il **cue spotting**.
 Si creano delle scratch tracks per il compositore, ovvero idee di massima della musica che si vorrebbe inserire nei vari passaggi, come punto di riferimento per la composizione vera e propria.
 In case di produzioni grandi non è esclusa la ripresa di orchestre che eseguono dal vivo lo score composto per il videogioco.
 Nella fase di produzione ci si occupa anche di creare i foley con props.
@@ -345,16 +346,8 @@ I dialoghi vengono registrati in studi per l'ADR. I file sono poi sottoposti al 
 
 ### La localizzazione
 
-
 ----------
 
 [get lamp](https://youtu.be/Zctp972y_Eg)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Zctp972y_Eg" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-
-
-
