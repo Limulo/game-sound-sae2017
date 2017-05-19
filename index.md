@@ -29,21 +29,6 @@ Go to the [FMOD page](fmod).
  * non-linearità nei VG
  * approcci a variabilità in VG
 
-### Dynamic music (interactive or adaptive music)
-
-* [ref](https://en.wikipedia.org/wiki/Dynamic_music)
-
-* Musica generativa e procedurale
- * computer music tutorial
- * Mozart, Stockhausen, Cage, Xenakis
- * eno ecc...
-
-* Gameplay e musica: stati, transizioni, loop, hook point, Xfade. Teoria e pratica in FMOD.
-
-### References
-Gamasutra, GDC, talks, PDFs
-
-
 ## Tools
 * Tones.js
 * howlers.ls
@@ -61,7 +46,7 @@ Gamasutra, GDC, talks, PDFs
 
 ### CC music
 * [incompetech](http://incompetech.com/music/royalty-free/music.html)
-* [ccMixter]()
+* [ccMixter](http://ccmixter.org/)
 * [soundimage](http://soundimage.org/)
 
 ## Talks, references and other materials
@@ -113,6 +98,7 @@ Procedural (computational) audio **definition**:
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
 * [GTA V audio](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and the RAGE audio Engine. [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s)
 * [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peterr Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
+* [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
 * iMuse [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689), [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ);
 <!--
@@ -124,9 +110,7 @@ Procedural (computational) audio **definition**:
 
 * [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out. 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Clavia_Nord_Lead_2x.jpg/799px-Clavia_Nord_Lead_2x.jpg" alt="Clavia Nord Lead" width="50%" />
-
-<img src="https://en.wikipedia.org/wiki/File:Clavia_Nord_Lead_2x.jpg#/media/File:Clavia_Nord_Lead_2x.jpg" alt="2" width="100%"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Clavia_Nord_Lead_2x.jpg/799px-Clavia_Nord_Lead_2x.jpg" alt="Clavia Nord Lead" width="100%" />
 
 A possible example of this kind os synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/).
 
@@ -222,7 +206,7 @@ Other books of interest:
 <img src="./images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%" />
 
 
-<--
+{% comment %}
 
 * Artificial intelligence: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see Gene Kogan and other project.
 
@@ -244,4 +228,4 @@ http://www.gdcvault.com/play/1022315/The-Neuroscience-of-Game
 
 [video](https://www.youtube.com/watch?v=CfwDLONo7nI)
 
--->
+{% endcomment %}
