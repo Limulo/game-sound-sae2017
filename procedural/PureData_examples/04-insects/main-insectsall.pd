@@ -1,4 +1,4 @@
-#N canvas 401 132 772 465 10;
+#N canvas 449 95 834 573 10;
 #N canvas 0 50 538 497 chirper 0;
 #X obj 220 458 dac~;
 #X obj 222 357 *~;
@@ -35,7 +35,7 @@
 #X connect 15 0 0 1;
 #X connect 15 0 0 0;
 #X connect 16 0 15 1;
-#X restore 264 134 pd chirper;
+#X restore 374 148 pd chirper;
 #N canvas 1 78 772 689 mosquito 0;
 #X obj 157 329 phasor~ 600;
 #X obj 247 329 phasor~ 600;
@@ -107,7 +107,7 @@
 #X connect 30 0 23 1;
 #X connect 31 0 30 1;
 #X connect 31 0 29 1;
-#X restore 82 360 pd mosquito;
+#X restore 192 304 pd mosquito;
 #N canvas 0 50 632 558 rattler 0;
 #X obj 121 158 sig~ 1;
 #X obj 121 190 /~;
@@ -151,7 +151,7 @@
 #X connect 18 0 6 1;
 #X connect 18 0 6 0;
 #X connect 19 0 18 1;
-#X restore 201 208 pd rattler;
+#X restore 311 202 pd rattler;
 #N canvas 0 50 519 413 critters2 0;
 #X obj 93 226 *~;
 #X obj 94 188 *~;
@@ -199,7 +199,7 @@
 #X connect 20 0 4 0;
 #X connect 20 0 4 1;
 #X connect 21 0 20 1;
-#X restore 24 66 pd critters2;
+#X restore 134 100 pd critters2;
 #N canvas 1 95 537 758 frog 0;
 #X obj 95 461 *~ 1;
 #X obj 105 564 *~ 0.45;
@@ -287,7 +287,7 @@
 #X connect 35 0 24 0;
 #X connect 36 0 35 1;
 #X connect 37 0 35 0;
-#X restore 94 291 pd frog;
+#X restore 204 255 pd frog;
 #N canvas 1 95 543 733 frog2 0;
 #X obj 95 461 *~ 1;
 #X obj 105 564 *~ 0.45;
@@ -389,7 +389,7 @@
 #X connect 41 0 25 0;
 #X connect 42 0 41 1;
 #X connect 43 0 41 0;
-#X restore 29 291 pd frog2;
+#X restore 139 255 pd frog2;
 #N canvas 1 95 532 508 frog 0;
 #X obj 111 124 noise~;
 #X obj 112 159 *~;
@@ -457,7 +457,7 @@
 #X connect 26 0 18 0;
 #X connect 27 0 25 0;
 #X connect 28 0 26 0;
-#X restore 153 291 pd frog reson;
+#X restore 263 255 pd frog reson;
 #N canvas 0 50 537 503 cricket 0;
 #X obj 141 220 cos~;
 #X obj 156 140 cos~;
@@ -526,7 +526,7 @@
 #X connect 29 0 4 1;
 #X connect 29 0 4 0;
 #X connect 30 0 29 1;
-#X restore 26 134 pd cricket;
+#X restore 136 148 pd cricket;
 #N canvas 1 95 531 585 cricket 0;
 #X obj 141 220 cos~;
 #X obj 156 140 cos~;
@@ -595,7 +595,7 @@
 #X connect 29 0 4 0;
 #X connect 29 0 4 1;
 #X connect 30 0 29 1;
-#X restore 106 134 pd cricket;
+#X restore 216 148 pd cricket;
 #N canvas 1 95 559 558 cricket 0;
 #X obj 141 220 cos~;
 #X obj 156 140 cos~;
@@ -664,7 +664,7 @@
 #X connect 29 0 4 1;
 #X connect 29 0 4 0;
 #X connect 30 0 29 1;
-#X restore 185 134 pd cricket;
+#X restore 295 148 pd cricket;
 #N canvas 1 95 586 454 cricket 0;
 #X obj 216 113 osc~ 3000;
 #X obj 152 346 dac~;
@@ -711,7 +711,7 @@
 #X connect 18 0 1 1;
 #X connect 19 0 18 1;
 #X connect 20 0 18 0;
-#X restore 452 134 pd cricket japanese;
+#X restore 562 148 pd cricket japanese;
 #N canvas 1 95 724 521 bullcricket 0;
 #X obj 118 47 *~ 4;
 #X obj 73 86 clip~ 0 1;
@@ -775,7 +775,7 @@
 #X connect 26 0 27 0;
 #X connect 27 0 28 0;
 #X connect 28 0 24 0;
-#X restore 344 134 pd bullcricket;
+#X restore 454 148 pd bullcricket;
 #N canvas 1 95 543 556 critters 0;
 #X obj 93 226 *~;
 #X obj 94 188 *~;
@@ -823,7 +823,7 @@
 #X connect 20 0 4 0;
 #X connect 20 0 4 1;
 #X connect 21 0 20 1;
-#X restore 117 66 pd critters;
+#X restore 227 100 pd critters;
 #N canvas 0 50 772 704 bee 0;
 #X obj 157 329 phasor~ 600;
 #X obj 247 329 phasor~ 600;
@@ -895,7 +895,7 @@
 #X connect 30 0 29 1;
 #X connect 30 0 31 1;
 #X connect 31 0 27 0;
-#X restore 168 360 pd bee;
+#X restore 278 304 pd bee;
 #N canvas 1 95 607 636 fly 0;
 #X obj 147 657 dac~;
 #X obj 110 274 +~ 284;
@@ -965,7 +965,7 @@
 #X connect 28 0 0 1;
 #X connect 29 0 28 1;
 #X connect 30 0 28 0;
-#X restore 30 360 pd fly;
+#X restore 140 304 pd fly;
 #N canvas 0 50 682 607 circada1 0;
 #X obj 17 7 noise~;
 #X obj 98 468 dac~;
@@ -1046,41 +1046,41 @@
 #X connect 33 0 1 1;
 #X connect 34 0 33 0;
 #X connect 35 0 28 0;
-#X restore 114 208 pd circada1;
-#X obj 82 339 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+#X restore 224 202 pd circada1;
+#X obj 192 283 tgl 15 1 empty mosquito empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 140 282 tgl 15 1 empty fly empty 0 -6 0 8 -262144 -1 -1 0 1
 ;
-#X obj 30 338 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+#X obj 278 283 tgl 15 1 empty bee empty 0 -6 0 8 -262144 -1 -1 0 1
 ;
-#X obj 168 339 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+#X obj 454 127 tgl 15 1 empty bullcricket empty 0 -6 0 8 -262144 -1
+-1 0 1;
+#X obj 562 127 tgl 15 1 empty japanese empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 391 183 tgl 15 1 empty flutter empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 136 128 tgl 15 1 empty cricketA empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 216 127 tgl 15 1 empty cricketB empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 295 127 tgl 15 1 empty cricketC empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 311 183 tgl 15 1 empty rattler empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 374 129 tgl 15 1 empty chirper empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 263 235 tgl 15 1 empty frogC empty 0 -6 0 8 -262144 -1 -1 0
 1;
-#X obj 344 113 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+#X obj 134 80 tgl 15 1 empty critters empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 227 80 tgl 15 1 empty critters2 empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 204 235 tgl 15 1 empty frogB empty 0 -6 0 8 -262144 -1 -1 0
 1;
-#X obj 452 113 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+#X obj 139 236 tgl 15 1 empty frogA empty 0 -6 0 8 -262144 -1 -1 0
 1;
-#X obj 281 189 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
-1;
-#X obj 26 114 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
-;
-#X obj 106 113 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
-1;
-#X obj 185 113 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
-1;
-#X obj 201 189 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
-1;
-#X obj 264 115 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
-1;
-#X obj 153 271 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
-1;
-#X obj 24 46 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
-;
-#X obj 117 46 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
-;
-#X obj 94 271 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
-;
-#X obj 29 272 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
-;
-#X obj 114 188 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0
-1;
+#X obj 224 182 tgl 15 1 empty cicadaB empty 0 -6 0 8 -262144 -1 -1
+0 1;
 #N canvas 0 50 548 524 circada2 0;
 #X obj 138 450 dac~;
 #X obj 187 27 noise~;
@@ -1156,9 +1156,9 @@
 #X connect 31 0 28 0;
 #X connect 32 0 31 0;
 #X connect 33 0 17 0;
-#X restore 28 208 pd circada2;
-#X obj 28 188 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
-;
+#X restore 138 202 pd circada2;
+#X obj 138 182 tgl 15 1 empty cicadaA empty 0 -6 0 8 -262144 -1 -1
+0 1;
 #N canvas 0 50 590 525 flutter 0;
 #X obj 121 158 sig~ 1;
 #X obj 121 190 /~;
@@ -1212,8 +1212,44 @@
 #X connect 23 0 7 0;
 #X connect 23 0 7 1;
 #X connect 24 0 23 1;
-#X restore 281 208 pd flutter;
+#X restore 391 202 pd flutter;
 #X text 30 416 a patch by Andy J Farnell;
+#N canvas 55 120 786 564 ctrl-master 0;
+#X msg 166 99 \; critters \$1 \; critters2 \$1 \;;
+#X obj 110 154 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 110 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 309 107 \; cricketA \$1 \; cricketB \$1 \; cricketC \$1 \; chirper
+\$1 \; bullcricket \$1 \; japanese \$1 \;;
+#X obj 110 310 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 166 273 \; frogA \$1 \; frogB \$1 \; frogC \$1 \;;
+#X obj 110 252 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 280 253 \; cicadaA \$1 \; cicadaB \$1 \; rattler \$1 \; flutter
+\$1 \;;
+#X obj 110 359 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 166 342 \; fly \$1 \; mosquito \$1 \; bee \$1 \;;
+#X obj 110 125 tgl 15 0 empty empty All 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 109 24 loadbang;
+#X msg 109 46 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 6 0 7 0;
+#X connect 8 0 9 0;
+#X connect 10 0 1 0;
+#X connect 10 0 2 0;
+#X connect 10 0 6 0;
+#X connect 10 0 4 0;
+#X connect 10 0 8 0;
+#X connect 11 0 12 0;
+#X connect 12 0 10 0;
+#X coords 0 -1 1 1 50 300 2 100 100;
+#X restore 72 25 pd ctrl-master;
 #X connect 16 0 1 0;
 #X connect 17 0 14 0;
 #X connect 18 0 13 0;
