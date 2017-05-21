@@ -2,6 +2,8 @@
 layout: default
 ---
 
+Back to the [Home page](index)
+
 ## Resources
 
 * Go to the [FMOD page](fmod).

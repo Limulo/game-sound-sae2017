@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Che cos'è un videogioco? - Dichiarazione d'intenti
 
 Un videogioco è la declinazione moderna più diffusa e pervasiva del gioco.
@@ -656,6 +660,8 @@ Che cosa è PureData? PureData è un linguaggio di programmazione a nodi nato a 
 Esempi di procedurale bells, clocks, water, insects, engine, guns, helicopter (thanks to Andy Farnell and Alexey Reshetnikov).
 
 ## Music
+
+Go to the [references page](refereces)
 
 {% comment %}
 non linearità
