@@ -91,10 +91,12 @@ Esempio: In "Shadow of the Beast II" (1992, Psygnnosis) l'organo a onda quadra √
 
 Alla tadizionale tecnica del loop si associano soluzioni creative per offrire una sensazione di variazione maggiore: la trasposizione di frasi sonore e la tecnica del double tracking.
 
+<a id="sonic-loop">
 <audio controls style="width:100%">
   <source src="./music/Sonic_Labyrinth.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
+</a>
 
 Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibilit√† che si manifesta
 
