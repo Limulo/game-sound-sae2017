@@ -145,7 +145,7 @@ Other books of interest:
 
 ---
 
-CC music:
+## CC music:
 
 * [incompetech](http://incompetech.com/music/royalty-free/music.html)
 * [ccMixter](http://ccmixter.org/)

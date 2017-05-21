@@ -661,7 +661,7 @@ Esempi di procedurale bells, clocks, water, insects, engine, guns, helicopter (t
 
 ## Music
 
-Go to the [references page](refereces)
+Go to the [references page](references)
 
 {% comment %}
 non linearità
