@@ -96,7 +96,7 @@ Alla tadizionale tecnica del loop si associano soluzioni creative per offrire un
   <source src="./music/Sonic_Labyrinth.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
-</a>
+<a/>
 
 Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibilità che si manifesta
 
