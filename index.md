@@ -4,9 +4,9 @@ layout: default
 
 ## Introduction
 
-Go to the [FMOD page](fmod).
-Go to [pt1](pt1)
-Go to [pt2](pt2)
+* Go to the [FMOD page](fmod).
+* Go to [pt1](pt1)
+* Go to [pt2](pt2)
 
 {% comment %}
 
@@ -84,6 +84,7 @@ Procedural (computational) audio **definition**:
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
 * Dinesh Pai and Kees van den Doel **Modal Synthesis for Vibrating Objects** [paper](http://www.cs.ubc.ca/~kvdoel/publications/modalpaper.pdf) and [code example](http://www.cs.ubc.ca/~kvdoel/publications/srcmodalpaper.zip) and many more [papers](http://www.cs.ubc.ca/~kvdoel/pubs.html);
+* [Changxi Zheng](http://www.cs.columbia.edu/~cxz/publications.htm) and [Doug James](http://www.cs.cornell.edu/~djames/research/index.html)
 * [Kees van den Doel](http://www.cs.ubc.ca/~kvdoel/): water simulation model's [paper](http://www.cs.ubc.ca/~kvdoel/publications/tap05.pdf);
 * Nicolas Fournel [blog](http://www.nicolasfournel.com/)
 * Dylan Menzies: [papers](http://dmu.academia.edu/DylanMenzies)
@@ -133,7 +134,7 @@ We can find the same concepts in many others software and hardware products like
 
 ### Papers
 * [liqui](http://gamma.cs.unc.edu/SoundingLiquids/soundingliquids.pdf)
-* [Zheng and James](http://www.cs.cornell.edu/projects/FractureSound/files/fractureSound_comp.pdf) - water simulation model (@ a high cost)
+* Zheng and James [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/files/fractureSound_comp.pdf), [water simulation model](http://www.cs.cornell.edu/projects/HarmonicFluids/);
 
 ### Examples
 * Playstation [VR worlds](http://designingsound.org/2016/12/the-sound-music-of-playstation-vr-worlds/)
