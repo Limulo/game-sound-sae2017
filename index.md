@@ -48,7 +48,7 @@ Il suono è  slegato dal gioco. La musica è quasi assente e gli effetti sonori 
 La programmazione audio avviene con collegamenti diretti di cavi al chip ( o se va bene il linguaggio macchina o in assembly).
 Questa caratteristica fa sì che ogni macchina suoni in maniera differente rispetto alle altre, anche se il gioco che montano è il medesimo.
 
-<img src="./images/graphics/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" />
+<img src="./images/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" />
 
 Lo sviluppo per arcade decade a inizio anni '90, e cessa definitivamente a fine anni '90.
 
@@ -193,7 +193,7 @@ Il file .MOD contiene campioni (strumenti) e pattern che indicano come e quando 
 Inizialmente si poteva disporre solo di 4 canali e 64 note. I campioni erano codificati come PCM a 8 bit ed erano riprodotti direttamente dal DAC di Amiga.
 I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di videogiochi, diffusione facilitata anche dal fatto che, al contrario di iMuse, il MOD non è proprietario (contro: diversità di implementazione).
 
-<img src="./images/graphics/pt1/MOD/ultimate_soundtracker.png" alt="MOD format" width="100%" />
+<img src="./images/pt1/MOD/ultimate_soundtracker.png" alt="MOD format" width="100%" />
 
 ### Confronto di audio in videogame
 
