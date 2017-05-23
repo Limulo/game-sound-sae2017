@@ -1,8 +1,8 @@
-#N canvas 352 228 697 489 10;
-#X obj 509 35 abs-out;
-#X obj 78 40 bng 15 250 50 0 empty empty marimba 17 7 0 10 -262144
+#N canvas 64 78 1052 645 10;
+#N canvas 502 242 620 402 sounds 0;
+#X obj 23 44 bng 15 250 50 0 empty \$0-marimba marimba 17 7 0 10 -262144
 -1 -1;
-#N canvas 713 180 579 480 bell-partials 0;
+#N canvas 711 180 579 480 bell-partials 0;
 #X obj 149 75 abs-bell-partial 1 1 1;
 #X obj 32 331 *~ 0.25;
 #X obj 32 353 throw~ out;
@@ -31,30 +31,92 @@
 #X connect 10 0 7 0;
 #X connect 10 0 8 0;
 #X connect 10 0 9 0;
-#X restore 78 186 pd bell-partials;
-#X msg 78 125 \$1 \$1;
-#X obj 78 60 random 300;
-#X obj 78 82 + 100, f 7;
-#X obj 198 40 bng 15 250 50 0 empty empty xilophone 17 7 0 10 -262144
+#X restore 23 190 pd bell-partials;
+#X msg 23 129 \$1 \$1;
+#X obj 23 64 random 300;
+#X obj 23 86 + 100, f 7;
+#X obj 123 44 bng 15 250 50 0 empty \$0-xilophone xilophone 17 7 0
+10 -262144 -1 -1;
+#X obj 123 64 random 300;
+#X obj 223 44 bng 15 250 50 0 empty \$0-tubular tubular_bells 17 7
+0 10 -262144 -1 -1;
+#X obj 123 86 + 600, f 7;
+#X msg 223 108 \$1 5000;
+#X obj 223 86 + 60, f 7;
+#X obj 223 64 random 100;
+#X msg 337 150 344 9177;
+#X obj 337 44 bng 15 250 50 0 empty \$0-bell bell 17 7 0 10 -262144
 -1 -1;
-#X obj 198 60 random 300;
-#X obj 328 40 bng 15 250 50 0 empty empty tubular_bells 17 7 0 10 -262144
--1 -1;
-#X obj 198 82 + 600, f 7;
-#X msg 328 104 \$1 5000;
-#X obj 328 82 + 60, f 7;
-#X obj 328 60 random 100;
-#X text 406 149 tibetan bell;
-#X msg 328 148 344 9177;
-#X connect 1 0 4 0;
-#X connect 3 0 2 0;
-#X connect 4 0 5 0;
-#X connect 5 0 3 0;
-#X connect 6 0 7 0;
-#X connect 7 0 9 0;
-#X connect 8 0 12 0;
-#X connect 9 0 3 0;
-#X connect 10 0 2 0;
+#X obj 339 192 catch~ out;
+#X obj 339 294 hip~ 5;
+#X obj 339 316 clip~ -1 1;
+#X obj 339 358 dac~;
+#X obj 338 243 *~;
+#X obj 338 265 *~;
+#X obj 426 62 vsl 15 100 0 1 0 0 empty empty empty 0 -9 0 10 -262130
+-1 -1 6930 1;
+#X msg 426 170 \$1 20;
+#X obj 426 192 line~;
+#X obj 479 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 479 126 swap 1;
+#X obj 479 148 -;
+#X msg 479 170 \$1 20;
+#X obj 479 192 line~;
+#X obj 530 93 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 530 113 \; pd dsp \$1;
+#X obj 479 4 loadbang;
+#X msg 426 33 0.7;
+#X msg 479 33 0;
+#X msg 530 33 1;
+#X connect 0 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 7 0 11 0;
+#X connect 8 0 2 0;
+#X connect 9 0 1 0;
+#X connect 10 0 9 0;
 #X connect 11 0 10 0;
-#X connect 12 0 11 0;
-#X connect 14 0 2 0;
+#X connect 12 0 1 0;
+#X connect 13 0 12 0;
+#X connect 14 0 18 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 0;
+#X connect 16 0 17 1;
+#X connect 18 0 19 0;
+#X connect 19 0 15 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 22 0 18 1;
+#X connect 23 0 24 0;
+#X connect 24 0 25 0;
+#X connect 24 1 25 1;
+#X connect 25 0 26 0;
+#X connect 26 0 27 0;
+#X connect 27 0 19 1;
+#X connect 28 0 29 0;
+#X connect 30 0 31 0;
+#X connect 30 0 32 0;
+#X connect 30 0 33 0;
+#X connect 31 0 20 0;
+#X connect 32 0 23 0;
+#X connect 33 0 28 0;
+#X restore 953 608 pd sounds;
+#X obj 281 123 image /home/v1a1l1e1/Documents/repos/game-sound-sae2017/procedural/PureData_examples/01-bells/marimba.gif
+;
+#X obj 774 162 image /home/v1a1l1e1/Documents/repos/game-sound-sae2017/procedural/PureData_examples/01-bells/xilophone.gif
+;
+#X obj 725 443 image tubular.gif;
+#X obj 348 100 bng 15 250 50 0 \$0-marimba empty empty 17 7 0 10 -86277
+-260097 -257985;
+#X obj 781 121 bng 15 250 50 0 \$0-xilophone empty empty 17 7 0 10
+-162280 -1 -1;
+#X obj 842 347 bng 15 250 50 0 \$0-tubular empty empty 17 7 0 10 -33289
+-1 -1;
+#X obj 265 412 image tibetan.gif;
+#X obj 251 493 bng 15 250 50 0 \$0-bell empty empty 17 7 0 10 -86853
+-1 -1;

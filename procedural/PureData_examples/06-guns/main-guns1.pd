@@ -3,7 +3,7 @@
 #N canvas 0 50 450 300 (subpatch) 0;
 #X array c 4096 float 2;
 #X coords 0 1 4096 -1 400 140 1 0 0;
-#X restore 583 388 graph;
+#X restore 583 528 graph;
 #X obj 200 45 bng 15 250 50 0 empty \$0-one-shot oneshot 0 -6 1 8 -261234
 -1 -1;
 #X obj 200 278 +~;
@@ -13,14 +13,14 @@
 #X floatatom 471 143 5 0 0 2 noise #0-noise-dly -, f 5;
 #X obj 434 180 f 100;
 #X floatatom 513 143 5 0 0 0 - #0-noise-amt -, f 5;
-#X obj 810 143 hip~ 100;
+#X obj 810 283 hip~ 100;
 #X obj 247 63 metro 80;
-#X obj 810 121 delread~ a 100;
+#X obj 810 261 delread~ a 100;
 #X obj 292 157 del 12;
 #X floatatom 329 140 5 0 0 2 barrel #0-barrel-dly -, f 5;
-#X obj 582 314 bp-programmer;
+#X obj 582 454 bp-programmer;
 #X floatatom 396 354 5 0 0 1 Q #0-formant-reso -, f 5;
-#X obj 582 274 bng 15 250 50 0 empty \$0-random empty 0 -6 0 8 -204786
+#X obj 582 414 bng 15 250 50 0 empty \$0-random empty 0 -6 0 8 -204786
 -1 -1;
 #N canvas 27 95 348 399 random 0;
 #X obj 3 189 outlet;
@@ -45,7 +45,7 @@
 #X connect 9 0 1 0;
 #X connect 9 1 5 0;
 #X connect 9 2 3 1;
-#X restore 582 293 pd random 800 to 5k;
+#X restore 582 433 pd random 800 to 5k;
 #X obj 202 414 *~;
 #X floatatom 461 354 5 0 100 1 amp #0-formant-gain -, f 5;
 #X floatatom 369 140 5 0 0 0 - #0-barrel-amt -, f 5;
@@ -148,11 +148,11 @@
 #X obj 201 302 +~;
 #X obj 202 572 *~ 0.8;
 #X obj 200 150 f 60;
-#X floatatom 809 92 5 20 400 0 - #0-environment-size -, f 5;
+#X floatatom 809 232 5 20 400 0 - #0-environment-size -, f 5;
 #X obj 202 383 bpar8~ 3;
 #X obj 247 616 *~ 0.85;
 #X obj 247 640 delwrite~ a 400;
-#X obj 751 189 combsweep;
+#X obj 751 329 combsweep;
 #N canvas 115 95 480 507 nwave 0;
 #X obj 0 143 vline~;
 #X obj 21 48 t a a;
@@ -182,14 +182,14 @@
 #X obj 384 109 s trig;
 #X obj 200 89 trigger bang bang bang bang;
 #X obj 311 586 r trig;
-#X obj 751 143 r trig;
-#X text 794 71 optional environment;
-#X obj 751 213 rev3~ 100 60 5000 10;
-#X obj 751 166 del 100;
+#X obj 751 283 r trig;
+#X text 794 211 optional environment;
+#X obj 751 353 rev3~ 100 60 5000 10;
+#X obj 751 306 del 100;
 #X obj 396 434 r trig;
 #X floatatom 471 442 5 0 0 2 dly #0-shockwave-dly -, f 5;
 #X obj 228 354 r body formant;
-#X obj 582 352 s body formant;
+#X obj 582 492 s body formant;
 #X floatatom 471 473 5 10 100 2 height #0-shockwave-height -, f 5
 ;
 #X obj 396 456 del 44;
@@ -308,13 +308,13 @@
 #X connect 26 0 11 0;
 #X restore 240 460 pd tanh afarnell;
 #X obj 461 373 / 100;
-#X obj 579 240 hsl 128 15 0 40 0 0 \$0-shockwave-height ctrl-shockwave-height
+#X obj 579 380 hsl 128 15 0 40 0 0 \$0-shockwave-height ctrl-shockwave-height
 shockwave-height -2 7 0 10 -262130 -1 -1 2900 1;
-#X obj 579 225 hsl 128 15 0 100 0 0 \$0-shockwave-dly ctrl-shockwave-dly
+#X obj 579 365 hsl 128 15 0 100 0 0 \$0-shockwave-dly ctrl-shockwave-dly
 shockwave-dly -2 7 0 10 -262130 -1 -1 3899 1;
-#X obj 579 205 hsl 128 15 1 200 0 0 \$0-formant-gain ctrl-formant-gain
+#X obj 579 345 hsl 128 15 1 200 0 0 \$0-formant-gain ctrl-formant-gain
 formant-gain -2 7 0 10 -204786 -1 -1 893 1;
-#X obj 579 190 hsl 128 15 0 50 0 0 \$0-formant-reso ctrl-formant-reso
+#X obj 579 330 hsl 128 15 0 50 0 0 \$0-formant-reso ctrl-formant-reso
 formant-resonance -2 7 0 10 -204786 -1 -1 2697 1;
 #X obj 434 284 *~;
 #X obj 452 220 tgl 15 0 empty comp-noiseburst empty 17 7 0 10 -261682
@@ -325,23 +325,23 @@ formant-resonance -2 7 0 10 -204786 -1 -1 2697 1;
 #X obj 200 239 *~;
 #X obj 218 220 tgl 15 0 empty comp-shell empty 17 7 0 10 -261682 -1
 -1 1 1;
-#X obj 579 130 hsl 128 15 0 25 0 0 \$0-barrel-amt ctrl-barrel-amt barrel-amt
+#X obj 579 270 hsl 128 15 0 25 0 0 \$0-barrel-amt ctrl-barrel-amt barrel-amt
 -2 7 0 10 -204800 -1 -1 3099 1;
-#X obj 579 115 hsl 128 15 0 50 0 0 \$0-barrel-dly ctrl-barrel-dly barrel-dly
+#X obj 579 255 hsl 128 15 0 50 0 0 \$0-barrel-dly ctrl-barrel-dly barrel-dly
 -2 7 0 10 -204800 -1 -1 1524 1;
-#X obj 579 165 hsl 128 15 0 25 0 0 \$0-noise-amt ctrl-noise-amt noise-amt
+#X obj 579 305 hsl 128 15 0 25 0 0 \$0-noise-amt ctrl-noise-amt noise-amt
 -2 7 0 10 -228856 -1 -1 3900 1;
-#X obj 579 150 hsl 128 15 0 50 0 0 \$0-noise-dly ctrl-noise-dly noise-dly
+#X obj 579 290 hsl 128 15 0 50 0 0 \$0-noise-dly ctrl-noise-dly noise-dly
 -2 7 0 10 -228856 -1 -1 3099 1;
-#X obj 579 90 hsl 128 15 0 50 0 0 \$0-chirptime-amt ctrl-chirptime-amt
+#X obj 579 230 hsl 128 15 0 50 0 0 \$0-chirptime-amt ctrl-chirptime-amt
 chirptime-amt -2 7 0 10 -261234 -1 -1 9898 1;
 #X obj 396 514 *~;
 #X obj 522 476 tgl 15 0 empty comp-shockwave empty 17 7 0 10 -261682
 -1 -1 1 1;
-#X obj 733 247 *~;
-#X obj 733 213 tgl 15 0 empty comp-ambience empty 17 7 0 10 -261682
+#X obj 733 387 *~;
+#X obj 733 353 tgl 15 0 empty comp-ambience empty 17 7 0 10 -261682
 -1 -1 1 1;
-#X obj 579 50 hsl 128 15 20 400 0 0 \$0-environment-size ctrl-env-size
+#X obj 579 190 hsl 128 15 20 400 0 0 \$0-environment-size ctrl-env-size
 env-size -2 7 0 10 -203904 -1 -1 2200 1;
 #X text 574 10 a patch by Andy J Farnell;
 #X obj 202 664 throw~ out;
@@ -362,7 +362,7 @@ env-size -2 7 0 10 -203904 -1 -1 2200 1;
 #X obj 305 390 hip~ 5;
 #X obj 305 412 clip~ -1 1;
 #X obj 321 310 catch~ out;
-#X obj 107 106 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 0 1
+#X obj 107 106 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X msg 107 381 \; pd dsp \$1;
 #X obj 103 188 abs-hid;
@@ -448,18 +448,19 @@ ctrl-barrel-amt 6.1 \; ctrl-noise-dly 12.2 \; ctrl-noise-amt 7.677
 #X connect 38 0 16 0;
 #X coords 0 -1 1 1 77 120 2 100 100;
 #X restore 1024 82 pd output;
-#X obj 733 291 throw~ out;
-#X obj 579 65 hsl 128 15 0 1 0 0 \$0-environment-amt ctrl-env-amt env-amt
--2 7 0 10 -203904 -1 -1 12395 1;
-#X floatatom 922 91 5 20 400 0 - #0-environment-amt -, f 5;
-#X obj 922 230 line~;
-#X obj 733 269 *~;
-#X msg 922 208 \$1 20;
+#X obj 733 431 throw~ out;
+#X obj 579 205 hsl 128 15 0 1 0 0 \$0-environment-amt ctrl-env-amt
+env-amt -2 7 0 10 -203904 -1 -1 12395 1;
+#X floatatom 922 231 5 20 400 0 - #0-environment-amt -, f 5;
+#X obj 922 370 line~;
+#X obj 733 409 *~;
+#X msg 922 348 \$1 20;
 #X text 1022 22 X to reload;
 #X text 1022 33 Y for a new body;
 #X text 393 414 shockwave;
 #X text 1022 43 RT automatic fire;
 #X text 1022 53 LT oneshot;
+#X obj 772 101 image ak47.gif;
 #X connect 2 0 37 0;
 #X connect 3 0 27 0;
 #X connect 4 0 7 0;
