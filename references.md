@@ -53,7 +53,6 @@ Sound effects in video games:
 * [Journey]();
 {% endcomment %}
 
-
 ### Application of Procedural Audio on other fields
 
 * [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out.
@@ -145,6 +144,13 @@ Other books of interest:
 
 ---
 
+* portale [NesDev](http://wiki.nesdev.com/w/index.php/Nesdev)
+* [Video Game Music Preservation Foundation](http://www.vgmpf.com/Wiki/index.php/Main_Page)
+* [Atari Museum](http://www.atarimuseum.com/mainmenu/mainmenu.html)
+* [C64 Wiki](https://www.c64-wiki.com/wiki/Main_Page)
+* [Game database](http://www.gamesdatabase.org/)
+* [Archive.org videogame section](http://www.gamesdatabase.org/)
+
 ## CC music:
 
 * [incompetech](http://incompetech.com/music/royalty-free/music.html)
@@ -167,8 +173,6 @@ Other books of interest:
 <img src="./images/infocom-brain-1.jpg" alt="infocom ads 1" width="100%" />
 
 <img src="./images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%" />
-
----
 
 ### Conferences
 * Audio Mostly
@@ -216,4 +220,3 @@ http://www.gdcvault.com/play/1022315/The-Neuroscience-of-Game
 * howlers.ls
 
 {% endcomment %}
-

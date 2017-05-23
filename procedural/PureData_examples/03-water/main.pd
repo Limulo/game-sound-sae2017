@@ -1,7 +1,7 @@
-#N canvas 556 288 670 275 10;
-#X obj 30 91 hsl 128 15 0.001 0.9 0 0 empty \$0-dynamics empty -2 -8
-0 10 -262144 -1 -1 12700 1;
-#X obj 27 116 s dynamics;
+#N canvas 43 78 922 603 10;
+#X obj 724 313 hsl 128 15 0.001 0.9 0 0 empty \$0-dynamics empty -2
+-8 0 10 -262144 -1 -1 12469 1;
+#X obj 721 338 s dynamics;
 #N canvas 56 95 544 408 automation 0;
 #X obj 77 27 snapshot~;
 #X obj 11 0 metro 10;
@@ -36,7 +36,7 @@
 #X connect 13 0 14 0;
 #X connect 14 0 10 0;
 #X coords 0 -1 1 1 95 36 2 100 100;
-#X restore 27 45 pd automation;
+#X restore 721 267 pd automation;
 #N canvas 239 517 226 142 water_sound_generator 0;
 #X obj 22 22 noise~;
 #X obj 22 49 s~ noise;
@@ -443,33 +443,34 @@
 #X obj 684 649 water;
 #X restore 22 76 pd water;
 #X connect 0 0 1 0;
-#X restore 26 142 pd water_sound_generator;
-#X text 25 247 Author: Alexey Reshetnikov (freezemode) \, Izhevsk \,
+#X restore 720 364 pd water_sound_generator;
+#X text 5 556 Author: Alexey Reshetnikov (freezemode) \, Izhevsk \,
 Russia.;
-#X obj 27 170 catch~ stream_left;
-#X obj 52 193 catch~ stream_right;
-#X text 26 25 Switch automation off to play with this slider manually.
-;
-#X obj 28 220 dac~;
-#X obj 448 30 loadbang;
-#X msg 448 52 0.9;
-#X obj 511 30 abs-hid;
-#X obj 511 145 swap 1;
-#X obj 511 167 -;
-#X obj 511 189 s \$0-dynamics;
-#X obj 511 124 line;
-#X msg 511 102 \$1 500;
+#X obj 721 392 catch~ stream_left;
+#X obj 746 415 catch~ stream_right;
+#X obj 722 442 dac~;
+#X obj 773 158 loadbang;
+#X msg 773 180 0.9;
+#X obj 720 43 abs-hid;
+#X obj 720 158 swap 1;
+#X obj 720 180 -;
+#X obj 720 202 s \$0-dynamics;
+#X obj 720 137 line;
+#X msg 720 115 \$1 500;
+#X obj 344 298 image water.gif;
+#X text 720 247 this slider manually.;
+#X text 720 237 Switch automation off to play with;
 #X connect 0 0 1 0;
 #X connect 2 0 0 0;
-#X connect 5 0 8 0;
-#X connect 6 0 8 1;
-#X connect 9 0 10 0;
-#X connect 10 0 14 0;
-#X connect 11 0 16 0;
-#X connect 11 1 16 0;
+#X connect 5 0 7 0;
+#X connect 6 0 7 1;
+#X connect 8 0 9 0;
+#X connect 9 0 13 0;
+#X connect 10 0 15 0;
+#X connect 10 1 15 0;
+#X connect 11 0 12 0;
+#X connect 11 1 12 1;
 #X connect 12 0 13 0;
-#X connect 12 1 13 1;
-#X connect 13 0 14 0;
-#X connect 15 0 12 0;
-#X connect 16 0 15 0;
-#X coords 0 275 1 274 85 60 0;
+#X connect 14 0 11 0;
+#X connect 15 0 14 0;
+#X coords 0 603 1 602 85 60 0;

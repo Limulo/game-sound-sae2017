@@ -31,7 +31,7 @@ E teniamo in considerazione fattori come:
 
 Citiamo per amor di completezza quelli che sono considerati i due antesignani dei videogiochi. Siamo alla fine degli anni '50-inizio anni '60, in USA, nelle università.
 1958: tennis for two
-1962: spacewar! [TODO: foto]
+1962: spacewar!
 Si tratta di software sviluppato sui supercomputer dei cintri di rricerca, più sperimentazioni e simulazioni che veri e propri videogames. Dovremo attendere la fine degli anni '70 per avere i primi giochi su computer.
 
 ## intanto in sala giochi...
@@ -48,7 +48,7 @@ Il suono è  slegato dal gioco. La musica è quasi assente e gli effetti sonori 
 La programmazione audio avviene con collegamenti diretti di cavi al chip ( o se va bene il linguaggio macchina o in assembly).
 Questa caratteristica fa sì che ogni macchina suoni in maniera differente rispetto alle altre, anche se il gioco che montano è il medesimo.
 
-[TODO: time line]
+<img src="./images/graphics/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" />
 
 Lo sviluppo per arcade decade a inizio anni '90, e cessa definitivamente a fine anni '90.
 
@@ -145,7 +145,7 @@ I computer iniziano a diffondersi nelle case e offrono una caratteristica import
 IBM si accorge dell'importanza commerciale dei videogiochiper computer e perlanciare il PCJr nel 1984 chiede a Sierra On-Line (una delle sftware house più importanti per videogame per computer) di creare un gioco apposito. Nasce King's Quest. Il PCJr monda un'interfaccia standard perle priferiche. Questo srà fondamentale per la successiva creazione di schede audio e controller.
 Un altro computer che nasce con il videogame in mente è Commodore64, che è tanto legato all'idea di console da prevedere un adattatore d'antenna per poter essere usato anche collegato al televisore, proprio come le home console.
 
-L'audio in questa fase è ancora agli albori. Richiama per certi versi l'audio delle coin-op (spesso l'ahrdware è lo stesso).
+L'audio in questa fase è ancora agli albori. Richiama per certi versi l'audio delle coin-op (spesso l'hardware è lo stesso).
 
 ### Soundcards
 
@@ -154,8 +154,6 @@ La prima scheda audio per computer e AdLib per Amiga. Segue Creative Instruments
 Queste prime schede audio mostravano delle limitazioni, come SoundBlaster che mixa internamente i due canali audio in uno riducendo le capacità espressive e rifucendola qualità dell'audio. Si sviluppano allora moduli esterni da collegare per afruttare a pieno le potenzialità di queste nuove componenti.
 
 La scheda audio permette di sfruttare enormemente il potere creative del computer, permettendo la programmazione di suoni e composizioni musicali grazie a tool come Visual Composer e Instrument Maker per Adlib.
-
-[TODO: emu su dosbox]
 
 ### MIDI
 
@@ -174,17 +172,18 @@ Il sequencing è la tecnica compositiva tramite messaggi MIDI. Si tratta di una 
 
 iMuse (Michael Land, Peter McCowell) è il sound engine di SCUMM, game engine di LucasArts.
 iMuse nasce nel 1991 (brevettato nel 1994); è un sistema che premette l'introduzione di componenti di audio dinamico in un linguaggio di scripting. Fondamentalmente iMuse è un database di sequenze musicali che possono contenere **punti di decisione** o **markers** all'interno delle tracce.
+
 Il sistema, utilizzando eventi SysEx nei file MIDI, si permette l'interazione tra le azioni del giocatore e il sonoro del gioco.
 Gli eventi in questione sono di due tipi: **markers** e **hooks**.
+
 Un *marker* viene inserito nel file MIDI nel punto che, una volta raggiunto dal lettore MIDI, deve triggerare l'esecuzione di un particolare comando da parte dello script del gioco. Il comando in questione è inserito in una lista (coda - FIFO) è ne viene attivata l'esecuzione non appena il MIDI player raggiunge un marker con un determinato ID. I comandi possono essere qualsiasi cosa, dal fade in/out alle pause.
+
 Un *hook* contiene un ID e l'azione da eseguire una volta che l'hook viene raggiunto. Lo script lancia un comando che si occupa di aspettare che un certo hook venga incontrato (callback), e quindi di mettere in esecuzione il comando contenuto in quest'ultimo.
 Gli hook si distinguono in vari tipi, quali ad esempio salti, trasposizioni, abilitazione/disabilitazione di strumenti.
 
 Esempio: transizioni tra rooms:
 - marker trigger: aspetta fino a che si raggiunga il punto appropriato prima di fare la transizione alla nuova sequenza
 - jump hooks: nella sequenza mette in riproduzione un'altra parte della sequenza prima della transizione
-
-{TODO: esempio su dosBox}
 
 #### MOD format
 
@@ -194,7 +193,7 @@ Il file .MOD contiene campioni (strumenti) e pattern che indicano come e quando 
 Inizialmente si poteva disporre solo di 4 canali e 64 note. I campioni erano codificati come PCM a 8 bit ed erano riprodotti direttamente dal DAC di Amiga.
 I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di videogiochi, diffusione facilitata anche dal fatto che, al contrario di iMuse, il MOD non è proprietario (contro: diversità di implementazione).
 
-![TODO: immagine MOD format]()
+<img src="./images/graphics/pt1/MOD/ultimate_soundtracker.png" alt="MOD format" width="100%" />
 
 ### Confronto di audio in videogame
 
@@ -305,7 +304,7 @@ I sound designers elaborano quelli che potrebbero essere gli effetti da usare, i
 I musicisti e sound designers stilano quindi un elenco di assets (armi, personaggi, UI, modelli, livelli, ...) che saranno utili in fase di sviluppo.
 Si occupano anche di stabilire quali siano le limitazioni tecniche del sistema su cui si deve sviluppare (il numero di canali, surround o stereo, importanza del suono nel videogioco,...) e stilano un elenco di tools per lo sviluppo. Alcuni di questi possono già essere disponibili (banchi di effetti, editors,...), altri sarà necessario programmarli da zero. Per fare questo si deve tenere conto della piattaforma di destinazione, del sound engine che si andrà ad utilizzare e del playback engine offerto dal sistema di gioco.
 
-### produzione
+### Produzione
 
 In fase di produzione si ultima o si realizza se non lo si è fatto in preproduzione il **cue spotting**.
 Si creano delle scratch tracks per il compositore, ovvero idee di massima della musica che si vorrebbe inserire nei vari passaggi, come punto di riferimento per la composizione vera e propria.
@@ -439,8 +438,7 @@ reverb, delay, doppler effect, filtering, fast realtime convolution.
 ### Attenuation & damping
 
 attenuazione esmorzamento: un discorso legato alla distanza tra emitter e listener, grandezza geometrica ricavata dal modello tridimensionale, in base alla quale viene modificato in tempo reale la frequenza di taglio di un filtro passa basso e un amplificatore di livello.
-Lo stesso si applica in casi in cui ci sia un ostacolo tra emittere e listener: occlusione ottenuta con filtri opportunamente settati.
-Materiali diversi
+Lo stesso si applica in casi in cui ci sia un ostacolo tra emittere e listener: occlusione ottenuta con filtri opportunamente settati. Materiali diversi
 
 ### Alignement
 
@@ -455,6 +453,7 @@ esempio PS3 (chiedi a Vale di intervenire)
 Il game audio engine deve essere in grado di interfacciarsi e gestire complessi database di informazioni. Uno di questi è rappresentato dall'insieme degli audio file associati a tutte le varie linee di dialogo (in una o più lingue) presenti nel gioco.
 
 ### Music
+
 Il game audio engine deve essere in grado di gestire l'eventuale colonna sonora musiclae interattiva (vedi ad esempio il sistema _iMuse_).
 
 ---
@@ -480,12 +479,12 @@ Tutto questo è appannaggio del **physics engine** che non si occupa solo di col
 <tr>
 <td>
 
-<iframe width="45%" height="315" src="https://www.youtube.com/embed/cIcg5eotZlY" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/cIcg5eotZlY" frameborder="0" allowfullscreen></iframe>
 
 </td>
 <td>
 
-<iframe width="45%" height="315" src="https://www.youtube.com/embed/wKLaMN9dnjQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/wKLaMN9dnjQ" frameborder="0" allowfullscreen></iframe>
 
 </td>
 </tr>
@@ -565,11 +564,11 @@ A ben vedere il concetto di audio procedurale non ci è del tutto estraneo; un e
 
 <img src="./images/graphics/beh-mod-impl.png" alt="behaviour, model, implementation" width="50%" />
 
-classi di modelli (tassonomia)
+TODO: classi di modelli (tassonomia)
 
 ## Vantaggi e svantaggi del paradigma procedurale, il futuro
 
-tra i vantaggi possiamo contare:
+tra i vantaggi possiamo considerare:
 
 ### Differimento
 
@@ -615,31 +614,20 @@ Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualc
 
 In un futuro presumibilmente non troppo lontano, il paradigma procedurale avrà preso piede e il modno del lavoro nel settore dell'audio per videogiochi dsi arricchira di tutta una serie di nuove figure professionali.
 
-Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, etc...), così anche nel mondo dell'audio procedurale ci saranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua, fuoco, impatti, sfregamenti, acustica delle stanze, etc...).
+Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, etc...), così anche nel mondo dell'audio procedurale ci saranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua e [bolle](http://www.cs.cornell.edu/projects/Sound/bubbles/), fuoco, [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/), impatti, [frizioni e sfregamenti](http://independent.academia.edu/StefaniaSerafin), [accartocciamenti](http://www.cs.columbia.edu/cg/crumpling/), [acustica delle stanze](http://www.ness-music.eu/wp-content/uploads/2013/04/TASL2256897.pdf), etc...).
 
-#### Water
+C'è addirittura che si specializza nel processo inverso, ovvero nel ricreare animazioni basandosi sul suono in una sorta di _inverse fooley_, il che può portare a risultati davvero sorprendenti:
 
-TODO
-
-#### Friction
-
-TODO
-
-#### Impacts
-
-TODO
-
-#### Crumpling
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Gue12UjXd5U" frameborder="0" allowfullscreen></iframe>
-
-C'è addirittura che si specializza nel processo inverso, ovvero nel ricreare animazioni basandosi sul suono in una sorta di [inverse fooley]()
-
+<table>
+<tr>
+<td>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/EGkQkdCKztM?start=130" frameborder="0" allowfullscreen></iframe>
-
-Il che può portare a risultati davvero sorprendenti:
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/EGkQkdCKztM?start=224" frameborder="0" allowfullscreen></iframe>
+</td>
+<td>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/EGkQkdCKztM?start=226" frameborder="0" allowfullscreen></iframe>
+</td>
+</tr>
+<table>
 
 ## Esempi di audio procedurale (Pure Data)
 
@@ -651,7 +639,9 @@ Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa Pure
 
 Che cosa è PureData? PureData è un linguaggio di programmazione a nodi nato a metà degli anni '90 ad opera di Miller Puckette che all'epoca lavorava all'IRCAM di Parigi.
 
-Esempi di procedurale bells, clocks, water, insects, engine, guns, helicopter (thanks to Andy Farnell and Alexey Reshetnikov).
+Esempi di procedurale: bells, clocks, water, insects, engine, guns, helicopter (thanks to Andy Farnell and Alexey Reshetnikov).
+
+Per utilizzare questi esempi è necessario installare una versione di PureData e delle seguenti librerie aggiuntive ().
 
 ## Music
 
