@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Che cos'è un videogioco? - Dichiarazione d'intenti
+# Pt.1
+
+## Che cos'è un videogioco? - Dichiarazione d'intenti
 
 Un videogioco è la declinazione moderna più diffusa e pervasiva del gioco.
 Il gioco è un'attività che accompagna da sempre la storia dell'uomo. Se ne ritrovano esemplari molto antichi, che non si discostano molto dai giochi ai quali siamo abituati noi.
@@ -25,14 +27,14 @@ E teniamo in considerazione fattori come:
 * ruolo dell'audio nel gioco
 * gestione dinamica del suono (transizioni)
 
-# Once upon a time ...
+## Once upon a time ...
 
 Citiamo per amor di completezza quelli che sono considerati i due antesignani dei videogiochi. Siamo alla fine degli anni '50-inizio anni '60, in USA, nelle università.
 1958: tennis for two
-1962: spacewar! [foto]
+1962: spacewar! [TODO: foto]
 Si tratta di software sviluppato sui supercomputer dei cintri di rricerca, più sperimentazioni e simulazioni che veri e propri videogames. Dovremo attendere la fine degli anni '70 per avere i primi giochi su computer.
 
-# intanto in sala giochi...
+## intanto in sala giochi...
 
 Immaginiamo di essere nel XV secolo. Nelle corti si pratica un gioco che consiste nel guidare il percorso di sfere di metallo/legno facendo attezione ad evitare alcune buche.
 Negli anni '30 questa idea diventa il ballyhoo, progenitore del pinball, che a sua volta spinge alla creazione delle cosiddette coin-operated machines, o coin-op. I cabinati.
@@ -46,13 +48,13 @@ Il suono è  slegato dal gioco. La musica è quasi assente e gli effetti sonori 
 La programmazione audio avviene con collegamenti diretti di cavi al chip ( o se va bene il linguaggio macchina o in assembly).
 Questa caratteristica fa sì che ogni macchina suoni in maniera differente rispetto alle altre, anche se il gioco che montano è il medesimo.
 
-[time line]
+[TODO: time line]
 
 Lo sviluppo per arcade decade a inizio anni '90, e cessa definitivamente a fine anni '90.
 
-# una sala giochi in salotto
+## una sala giochi in salotto
 
-## porting
+### porting
 
 Il mercato degli arcade è rimasto a lungo il settore leader per i videogiochi. Tanto da trainare la creazione, sviluppo e successo di altre tecnologie, come le home consoles. E' infatti grazie al porting di giochi per arcade che le home console si sono imposte sul mercato. Come per le coin-op, si fa uso di sintesi sottrattiva.
 Nel 1972 esce Magnavox Odyssey.
@@ -68,9 +70,9 @@ Negli anni '80 fanno l'ingresso sul mercato i PSG (Programmable Sound Generator)
 Il più famoso PSG è General Instruments AY-3-8910 usato in moltissimi arcade, in Intellivision, in ZX Spectrum e in Sega Master System.
 Il suono si arricchisce e nuove possibilità creative si aprono, prevalentemente nello sviluppo di effetti sonori.
 
-## maturazione delle console
+### maturazione delle console
 
-### NES
+#### NES
 
 A metà anni '80 il mercato delle console ristagna, saturo di una miriade di giochi tutti molto simili tra loro.
 Una ventata d'aria fesca arriva nel 1983 con il Colecovision di Coleco che viene distribuito con Donkey Kong (Nintendo).
@@ -81,7 +83,7 @@ Il NES monta un PSG proprietario che garantisce 5 canali audio (2 pulse, 1 tri, 
 La gestione della memoria è ancora conflittuale, effetti e musica rivaleggiano per l'appropriazione delle risorse. Per risparmiare spazio in memria si fa largo uso di loop.
 A seguito del successo del NES NIntendo abbandona lo sviluppo per arcade.
 
-### Genesis
+#### Genesis
 
 Diventa leader nello sviluppo per arcade Sega, che sfrutta i titoli su coin-op per lanciare le proprie conosole.
 Al Sega Master System fa seguito il Sega Genesis (o Mega Drive) a 16 bit.
@@ -108,21 +110,11 @@ Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibil
 * nella struttura della stessa, con piccoli riff e frasi ripetuti, sorretti da un suono di basso continuo;
 * nella scelta di armonia modale, con richiami a ambienti esotici ed evocativi
 
-### SNES
+#### SNES
 
 Successore del NES è il SuperNES (SNES) che monta molti elementi per la creazione e la gestione audio, tra cui un DSP Sony. Questo DSP permette di utilizzare la sintesi a wavetable, quindi superando anche il Genesis dal punto di vista di qualità dei suoni prodotti. Nintendo tuttavia preferisce rimanere su suoni che richiamano i chiptune del NES e stilisticamente richiamare genri musicali in voga al momento, come dance, hard rock, hip hop.
 
-{% comment %}
-[esempio endorsement -
-
-[Cliff Hanger](https://youtu.be/dnXvGAtdhL8?t=20s)
-{% endcomment %}
-
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/dnXvGAtdhL8?start=20" frameborder="0" allowfullscreen></iframe>
-
-{% comment %}
-[Moonwalker](https://youtu.be/r37TJdTI5M0)
-{% endcomment %}
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/r37TJdTI5M0" frameborder="0" allowfullscreen></iframe>
 
@@ -131,7 +123,7 @@ Sega mostra un'attenzione particolare per l'audio. Ne è un esempio il Sega Drea
 Ma non ha successo e Sega scompare dal mercato.
 ---
 
-### PS1, PS2, PS3, Xbox : verso il PC
+#### PS1, PS2, PS3, Xbox : verso il PC
 
 Con Sony Playstation 1 nel mercato delle home console fa il suo ingresso il CD ROM, che si porta dietro il CD audio. La qualità audio aumenta, lo spazio su CD è maggiore rispetto a quello delle ROM. Si possono creare molti suoni e creare layer complessi. Ma a scapito dell'interattività e della dinamicità.
 Non si risole ancora la gestione delle transizioni, che rimangono hard cuts.
@@ -143,9 +135,9 @@ L'architettura delle console si complica, iniziano a montare microprocessori sim
 
 Non a caso entra nel mercato delle console anche Microsoft con Xbox. Da console di gioco si passa a lettore CD /DVD /BlueRay /streaming online.
 
-# I computer
+## I computer
 
-## I primi computer
+### I primi computer
 
 Se agli albori i PC erano macchinari ingombranti appannaggio delle università e dei centri di ricerca, dal 1977 diventano uno dei mezzi preferiti per giocare.
 Wozniack stesso in un'intervista racconta di come l'Apple II sia stato dotato di speaker perchè doveva fungere da mezzo per videogiochi. Wozniack e Jobs arrivavano dal mondo degli arcade avendo sviluppato nel 1976 Breakout per Atari.
@@ -155,7 +147,7 @@ Un altro computer che nasce con il videogame in mente è Commodore64, che è tan
 
 L'audio in questa fase è ancora agli albori. Richiama per certi versi l'audio delle coin-op (spesso l'ahrdware è lo stesso).
 
-## Soundcards
+### Soundcards
 
 Un forte sviluppo dell'audio per computer si ha con la creazione di schede audio di terze parti che ampliano le capacità delle singole macchine.
 La prima scheda audio per computer e AdLib per Amiga. Segue Creative Instruments/Labs con Game Blaster (da notare il nome della scheda) poi evolutasi nella Sound Balster.
@@ -163,18 +155,14 @@ Queste prime schede audio mostravano delle limitazioni, come SoundBlaster che mi
 
 La scheda audio permette di sfruttare enormemente il potere creative del computer, permettendo la programmazione di suoni e composizioni musicali grazie a tool come Visual Composer e Instrument Maker per Adlib.
 
-[emu su dosbox]
+[TODO: emu su dosbox]
 
-## MIDI
+### MIDI
 
 In questo periodo intanto prende piede un protocollo di trasmissione dati audio: il MIDI ideato da Roland.
 Il MIDI è un protocollo di trasmissione dati audio che prevede lo scambio di messaggi contenenti comandi per la creazione e la riproduzione di suoni. I suoni veri e propri non vengono trasmessi, permettendo un notevole risprmio in termini di memoria usata.
 Questo fa sì che il MIDI sia massicciamente usato, tra gli altri, anche dai produttori di videogiochi.
 Roland nel 1987 rilascia una scheda MIDI, l'MT32. Sebbene sia possibile usare l'MT32 per qualsiasi applicazione, Roland ha evidentemente in mente i videogiochi come campo priilegiato di utlizzo, infatti firma un accordo con Sierra On-Line che si impegna a rendere l'MT32 il sistema audio standard per i suoi giochi.
-
-{% comment %}
-[video 8 bit guy](https://www.youtube.com/watch?v=BMmFcs-_4x4&feature=youtu.be&t=4m57s)
-{% endcomment %}
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4?start=297" frameborder="0" allowfullscreen></iframe>
 
@@ -182,7 +170,7 @@ Tuttavia non esistendo uno standard ogni produttore implementava a modo suo il p
 
 Il sequencing è la tecnica compositiva tramite messaggi MIDI. Si tratta di una composizione lineare. In alcuni casi si è adattato il MIDI a sistema capace di creare audio dinamico e interattivo.
 
-### iMuse
+#### iMuse
 
 iMuse (Michael Land, Peter McCowell) è il sound engine di SCUMM, game engine di LucasArts.
 iMuse nasce nel 1991 (brevettato nel 1994); è un sistema che premette l'introduzione di componenti di audio dinamico in un linguaggio di scripting. Fondamentalmente iMuse è un database di sequenze musicali che possono contenere **punti di decisione** o **markers** all'interno delle tracce.
@@ -196,9 +184,9 @@ Esempio: transizioni tra rooms:
 - marker trigger: aspetta fino a che si raggiunga il punto appropriato prima di fare la transizione alla nuova sequenza
 - jump hooks: nella sequenza mette in riproduzione un'altra parte della sequenza prima della transizione
 
-{esempio su dosBox}
+{TODO: esempio su dosBox}
 
-### MOD format
+#### MOD format
 
 Il formato MOD è un formato di file usato prevalentemente per rappresentare musica. MOD è l'estensione del formato (Module/Modular). Il formato è stato ideato da Karsten Obarski per sopperire alla mancanza di tool per comporre musica per Amiga; il primo utilizzo del formato .MOD è stato con l'Ultimate Soundtracker di Amiga.
 I file MOD sono infatti legati al tracker come strumento compositivo, e ne hanno anche condizionato l'estetica e l'utilizzo, tanto che questi software non sono sostanzialmente cambiati dai loro primi esemplari. Quindi il formato .MOD è il formato "nativo" dei tracker.
@@ -206,40 +194,32 @@ Il file .MOD contiene campioni (strumenti) e pattern che indicano come e quando 
 Inizialmente si poteva disporre solo di 4 canali e 64 note. I campioni erano codificati come PCM a 8 bit ed erano riprodotti direttamente dal DAC di Amiga.
 I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di videogiochi, diffusione facilitata anche dal fatto che, al contrario di iMuse, il MOD non è proprietario (contro: diversità di implementazione).
 
-![immagine MOD format]()
+![TODO: immagine MOD format]()
 
-## Confronto di audio in videogame
-
-{% comment %}
-[DOOM](https://www.youtube.com/watch?v=m9HvAXZgGeQ&feature=youtu.be&t=20s)
-{% endcomment %}
+### Confronto di audio in videogame
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/m9HvAXZgGeQ?start=20" frameborder="0" allowfullscreen></iframe>
 
-{% comment %}
-[Myst](https://youtu.be/D30r0iRH73Q)
-{% endcomment %}
-
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/D30r0iRH73Q" frameborder="0" allowfullscreen></iframe>
 
-# I giochi moderni
+## I giochi moderni
 
 Attualmente la grafica e la modalità di gioco spingono verso un iper-realismo. Il suono si adegua con l'uso di surround, che però fronisce una simulazione della realtà SOLO dal punto di vista del posizionamento.
 Da citare la modalità di fruizione audio offerta da NIntendo Wii in cui i suoni sono emessi anche dai controller, aumentando l'immersività.
 
 Con Xbox si inizia a dleineare la tendenza delle console e dei computer a convergere in un unico sistema. Questa tendenza permane ai girni nostri e si arricchisce di nuove potenzialità con i nuovi apparecchi per l'home entaitainment (smartTV).
 
-### VR
+#### VR
 
 Oculus Rift e i vari sistemi di realtà virtuale stanno cambiando la modalità di gioco. Vedremo come l'audio si adeguerà a queste nuove modalità.
 
-### Handheld games
+#### Handheld games
 
 I giochi per dispositivi portatili sono pensati per essere giocati in pubblico, quindi la musica e i suoni non solo non sono importanti, ma devono poteressere elimimnati per non disturbare.
 
 ----
 
-# Figure professionali
+## Figure professionali
 
 Abbiamo visto che il videogioco è un software. Abbiamo visto che alla sua creazione e sviluppo concorrono numerose figure professionali, dagli scrittori ai programmatori, dai compositori ai grafici.
 
@@ -264,7 +244,7 @@ Nei vari reparti ci saranno quindi varie figure professionali, quali: scrittori 
 
 Vediamo nello specifico quali sono le fasi di sviluppo del gioco.
 
-## Pre produzione
+### Pre produzione
 
 Nella fase di preproduzione si delinea l'idea, il concept e la visione d'insieme del gioco.
 Viene prodotto un documento, il **design document** che contiene:
@@ -279,22 +259,22 @@ Viene prodotto un documento, il **design document** che contiene:
 
 Questo documento deve essere approvato dal publisher.
 
-## Sviluppo
+### Sviluppo
 
 I singoli punti del design document vengono presi in consegna dai rispettivi reparti coordinati dal produttore. Ciascuno sviluppa i propri contenuti e spesso ci si interfaccia tra vari diaprtimenti. Il design document infatti è una guida iniziale e serve a trasmettere l'idea di massima del gioco. Questo poi, in fase di sviluppo subirà modifiche, aggiustamenti, correzioni. I singoli reparti si interfacciano per portare avanti il lavoro in maniera coerente.
 Ad assicurarsi che lo sviluppo non deragli dal concept espresso nel design document ci pensa il reparto QA, che sottopone il gioco a varie fasi di verifica.
 
-## Debug
+### Debug
 
 Una volta che il gioco è uscito dal reparto sviluppo e il QA ha dato la propria approvazione, si passa alla fase di debug e testing.
 In questa fase vengono anche scritti i manuali e i vari documenti relativi al gioco. Si pensa inoltre anche al porting (PC, Mac, Linux, Android, iOS, Xbox, PS, ...) ed alla localizzazione.
 Spesso infatti il gioco presenta dialoghi, sia parlati che sotto forma di testo, che devono essere adattati alla lingua dei vari Paesi inclusi nel piano di distribuzione.
 
-## Release
+### Release
 
 Una volta che i test vanno a buon fine e che tutti i materiali accessori sono stati preparati, è tempo del lancio e della distribuzione. Di questa parte si occupa il reparto marketing (o uno studio a cui si affida il lavoro).
 
-# La produzione audio
+## La produzione audio
 
 La produzione audio per un videogioco richiama per molti versi la produzione audio per i film.
 Anche nei videogiochi si fa uso di foley (foley artists) e live sounds (field recording). Tuttavia c'è da ricordare che mentre il film propone una fruizione lineare dei suoi contenuti, nel videogioco il timing e le immagini cambiano dinamicamente. A differenza dei film, quindi, la fase di post produzione è diversa.
@@ -302,7 +282,7 @@ La fase di produzione varia a seconda del tipo di gioco, della piattaforma a cui
 
 Rintracciamo però a grandi linee le fasi comuni:
 
-## pre produzione - better think as a programmer
+### pre produzione - better think as a programmer
 
 In fase di pre produzione viene prodotto l'**audio design document** (che confluisce nel design document) in cui si analizza il concetto e la possibile implemnetazione dell'audio per il videogioco.
 Il documento si compone di varie sezioni, relative a musica, sound design e dialoghi.
@@ -325,7 +305,7 @@ I sound designers elaborano quelli che potrebbero essere gli effetti da usare, i
 I musicisti e sound designers stilano quindi un elenco di assets (armi, personaggi, UI, modelli, livelli, ...) che saranno utili in fase di sviluppo.
 Si occupano anche di stabilire quali siano le limitazioni tecniche del sistema su cui si deve sviluppare (il numero di canali, surround o stereo, importanza del suono nel videogioco,...) e stilano un elenco di tools per lo sviluppo. Alcuni di questi possono già essere disponibili (banchi di effetti, editors,...), altri sarà necessario programmarli da zero. Per fare questo si deve tenere conto della piattaforma di destinazione, del sound engine che si andrà ad utilizzare e del playback engine offerto dal sistema di gioco.
 
-## produzione
+### produzione
 
 In fase di produzione si ultima o si realizza se non lo si è fatto in preproduzione il **cue spotting**.
 Si creano delle scratch tracks per il compositore, ovvero idee di massima della musica che si vorrebbe inserire nei vari passaggi, come punto di riferimento per la composizione vera e propria.
@@ -336,7 +316,7 @@ In quest fase viene creato il layering dei suoni, l'equalizzazione e si applican
 
 Un grosso vantaggio si ha con l'uso di DSP in tempo reale che risparmia il tempo di registrazione. Con un DSP in tempo reale l'audio risponde al physics engine e al graphics engine quando questi engine rilevano la necessità di un riscontro sonoro (si apre una porta, c'è una collisione,...)
 
-### Il dialogo
+#### Il dialogo
 
 Il dialogo viene realizzato con la tecnica del **voiceover**. Spesso ci si rivolge a professionisti (attori, doppiatori, direttori di doppiaggio) per ottenere un risultato professionale e molto credibile.
 
@@ -355,23 +335,19 @@ Generalmente si registrano tutte le battute di un attore invece di registrare di
 
 I dialoghi vengono registrati in studi per l'ADR. I file sono poi sottoposti al QA e se passano il controllo vengono tagliati nei singoli assets e passano al processamento degli effetti.
 
-### La localizzazione
+#### La localizzazione
 
-----------
-{% comment %}
+TODO
 
-[get lamp](https://youtu.be/Zctp972y_Eg)
-{% endcomment %}
+---
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/Zctp972y_Eg" frameborder="0" allowfullscreen></iframe>
 
 ---
 
+# Pt.2
+
 {% comment %}
-
-* Game Engine
-* vedendo l'esempio del FPS
-
 ```
 notarget
 fov
@@ -386,7 +362,6 @@ s_show 1
 s_show 0
 sv_gravity 100 (default 800)
 ```
-
 {% endcomment %}
 
 ## Suono come modello data driven/event based
@@ -413,7 +388,6 @@ Un esempio potrebbero essere i sintetizzatori dove si parla di [voice stealing](
 
 Un esempio di voice stealing nel videogioco lo si ha in _Super Mario Bros_, dove il sound engine agisce sulla voce assegnata alla melodia principale (il suono più acuto), deallocandola e riassegnandola per la sintesi degli effetti sonori delle monete.
 
-[Super Mario Bros](https://youtu.be/Dp7fVUfj8oI?t=2m3s)
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dp7fVUfj8oI?start=123" frameborder="0" allowfullscreen></iframe>
 
 Lo switching è guidato anche dal ruolo che il particolare suono riveste all'interno della **narrazione**: in una sitauzione in cui sono presenti molti suoni, sono quelli meno importanti ai fini di quanto si deve raccontare ad essere sacrificati per primi.
@@ -502,7 +476,20 @@ L'interità dei modelli e delle loro mesh non sono fondamentali soltanto per ott
 
 Tutto questo è appannaggio del **physics engine** che non si occupa solo di collisioni ma valuta l'interà fisicità del mondo virtuale in cui siamo immersi: masse, densità, velocità e accelerazioni, forze, torsioni.
 
-<iframe width="45%" height="315" src="https://www.youtube.com/embed/cIcg5eotZlY" frameborder="0" allowfullscreen></iframe> | <iframe width="45%" height="315" src="https://www.youtube.com/embed/wKLaMN9dnjQ" frameborder="0" allowfullscreen></iframe>
+<table>
+<tr>
+<td>
+
+<iframe width="45%" height="315" src="https://www.youtube.com/embed/cIcg5eotZlY" frameborder="0" allowfullscreen></iframe>
+
+</td>
+<td>
+
+<iframe width="45%" height="315" src="https://www.youtube.com/embed/wKLaMN9dnjQ" frameborder="0" allowfullscreen></iframe>
+
+</td>
+</tr>
+</table>
 
 A tutto questo si aggiunge la componente di **intelligenza artificiale** che ha il compito di simulare comportamenti "_intelligenti_" per tutti quegli attori che, nel gioco, non sono comandati da un player umano.
 
@@ -542,7 +529,7 @@ Immaginiamoci con un arma di fronte alla fortificazione di un piccolo bunker dal
 
 Ad ogni impatto (di un proiettile sulla lastra) la lastra viene eccitata e di tutti i possibili modi strutturali saranno quelli primari ad assorbire il maggior quantitativo di energia e, come risultato, percepiremo sempre più chiaramente le frequenza di risonanza della lastra mano a mano che i proiettili continuano ad incidere su essa.
 
-Lo stesso effetto non è ottenibile riproducendo lo stesso audiofile ripetuttamente per ogni nuovo impatto. 
+Lo stesso effetto non è ottenibile riproducendo lo stesso audiofile ripetuttamente per ogni nuovo impatto.
 
 ---
 
@@ -615,13 +602,14 @@ Al momento attuale non sembra ci sia interesse nell'implementare quanto necessar
 
 ### new skills
 
+TODO
+
 ### la sintesi è brutta
 
 Permane la falsa concezione che la sintesi audio sia in qualche modo sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
 
 In realtà non è così e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
 Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude. Quello di cui c'è bisogno è il **verosimile** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) oaddirittura dell'**hyperrealism** ("_more than reality_").
-
 
 ### The Future
 
@@ -631,9 +619,15 @@ Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mo
 
 #### Water
 
+TODO
+
 #### Friction
 
+TODO
+
 #### Impacts
+
+TODO
 
 #### Crumpling
 
@@ -655,11 +649,15 @@ Tipico è il caso del layer di _implementazione_: in questa fase infatti qualsia
 
 Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa PureData come linguaggio di programmazione.
 
-Che cosa è PureData? PureData è un linguaggio di programmazione a nodi nato a metà degli anni '90 ad opera di Miller Puckette che all'epoca lavorava all'IRCAM di Parigi. 
+Che cosa è PureData? PureData è un linguaggio di programmazione a nodi nato a metà degli anni '90 ad opera di Miller Puckette che all'epoca lavorava all'IRCAM di Parigi.
 
 Esempi di procedurale bells, clocks, water, insects, engine, guns, helicopter (thanks to Andy Farnell and Alexey Reshetnikov).
 
 ## Music
+
+TODO
+
+## References
 
 Go to the [references page](references)
 
