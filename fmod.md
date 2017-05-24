@@ -1,6 +1,6 @@
 # FMOD
 
-Back to [Home](index)
+Back to [Home](index);
 
 **FMOD** is a software tool by _Firelight Technologies_ (Melbourne, Australia). It helps sound designers to better organize audio assets in order to be used inside games (or interactive applications more generally).
 

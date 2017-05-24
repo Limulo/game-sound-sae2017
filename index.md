@@ -12,11 +12,10 @@ Durante le lezioni si mostrano diversi esempi realizzati in linguaggio di progra
 Gli autori restano a disposizione all'indirizzo **info[at]limulo.net**, per ogni eventuale dubbio, osservazione e approfondimento!
 
 ---
-Go to the [Part 1](pt1).
-Go to the [Part 2](pt2).
-Go to the [Refereces](references) page.
-Go to the [Fmod](fmod) page.
----
+* Go to the [Part 1](#pt1);
+* Go to the [Part 2](#pt2);
+* Go to the [Refereces](references) page;
+* Go to the [Fmod](fmod) page;
 
 <a id="pt1"></a>
 ## Pt1: Che cos'è un videogioco? - Dichiarazione d'intenti

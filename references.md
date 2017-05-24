@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Back to [Home](index)
+Back to [Home](index);
 
 ## Resources
 
