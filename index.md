@@ -2,14 +2,32 @@
 layout: default
 ---
 
-# Pt.1
+Questa pagina raccoglie tutto il materiale che [limulo.net](http://limulo.net) ha prodotto nel preparare alcune lezioni in merito all'audio nei videogiochi e ai game engines.
 
-## Che cos'è un videogioco? - Dichiarazione d'intenti
+Durante le lezioni si fornisce una panoramica storica dell'evoluzione del suono nei videogiochi, dagli anni '50 ad oggi; si dà poi uno sguardo alle diverse figure professionali coinvolte nello sviluppo di un videogioco e si analizzano gli strumenti impiegati nelle varie fasi (_game engines_, altri _tools_ e _middleware_). In classe vengono mostrati diversi esempi, tra cui _AdLib Visual Composer_, _Fasttracker_ e _Unity_.
+
+Infine si passa ad esaminare approfonditamente il funzionamento del suono, sia come modello _data driven_ sia come paradigma _procedurale_.
+Durante le lezioni si mostrano diversi esempi realizzati in linguaggio di programmazione _PureData_. Inolte viene illustrato il middleware _fmod_.
+
+Gli autori restano a disposizione all'indirizzo **info[at]limulo.net**, per ogni eventuale dubbio, osservazione e approfondimento!
+
+---
+Go to the [Part 1](pt1).
+Go to the [Part 2](pt2).
+Go to the [Refereces](references) page.
+Go to the [Fmod](fmod) page.
+---
+
+<a id="pt1"></a>
+## Pt1: Che cos'è un videogioco? - Dichiarazione d'intenti
 
 Un videogioco è la declinazione moderna più diffusa e pervasiva del gioco.
 Il gioco è un'attività che accompagna da sempre la storia dell'uomo. Se ne ritrovano esemplari molto antichi, che non si discostano molto dai giochi ai quali siamo abituati noi.
+
 Per gioco intendiamo una **narrazione** guidata dalle **scelte** che uno o più giocatori compiono in conformità ad un insieme di **regole** che limtano il campo d'azione.
+
 Un gioco è quindi uno strumento di intrattenimento, come un film, un libro. Si distingue da queste forme espressive, però, in virtù della propria **interattività**, privilegiando ad una narrazione lineare una narrazione a salti, non determinata a priori, ma emergente dall'interazione tra giocatore e gioco.
+
 Il videogioco si distingue intoltre da altre forme di gioco in quanto punto di convergenza di diversi elementi eterogenei ta loro. In questo senso il videogioco è un **prodotto** di intrattenimento ( ma non solo ) **multimediale**, che si avvale cioè di almeno un paio di mezzi espressivi differenti (grafica, audio, animazione, testo, interfaccia utente, controlli hardware).
 
 Il videogioco è un software; un software molto complesso, capace di raccogliere input provenienti da differenti domini e di farli coesistere in maniera coerente all'interno
@@ -30,8 +48,10 @@ E teniamo in considerazione fattori come:
 ## Once upon a time ...
 
 Citiamo per amor di completezza quelli che sono considerati i due antesignani dei videogiochi. Siamo alla fine degli anni '50-inizio anni '60, in USA, nelle università.
-1958: tennis for two
-1962: spacewar!
+
+* 1958: tennis for two
+* 1962: spacewar!
+
 Si tratta di software sviluppato sui supercomputer dei cintri di rricerca, più sperimentazioni e simulazioni che veri e propri videogames. Dovremo attendere la fine degli anni '70 per avere i primi giochi su computer.
 
 ## intanto in sala giochi...
@@ -42,7 +62,9 @@ Negli anni '30 questa idea diventa il ballyhoo, progenitore del pinball, che a s
 Ci spostiamo quindi in sala giochi.
 Siamo alla fine degli anni '60 / inizio anni '70, le coin-op montano componenti elettrici discreti, collegati tra loro attraverso cavi che si congiungono in schede madri. C'è sicuramente uno stadio di ventilazione per raffreddare le parti meccaniche che si surriscaldano per l'utilizzo.
 In una sala giochi ci sono molte coin-op che funzionano simultaneamente e ininterrottamente.
+
 Il suono serve quindi ad attirare l'attenzione e ad invitare a giocare. Viene rubata l'idea al suono delle slot machine, ovvero al suono della vincita ( la perdita non ha suono). Tante macchine corrispondono, statisticamente, a tanti suoni di vittoria, invitando gli avventori a tentare la fortuna, facendo credere in una fcilità di vincita.
+
 Il suono è  slegato dal gioco. La musica è quasi assente e gli effetti sonori sono funzione del gameplay (se un evento richiede molte risorse l'audio è sacrificato ed il gioco rimane muto). Si implementa sintesi sottrattiva.
 
 La programmazione audio avviene con collegamenti diretti di cavi al chip ( o se va bene il linguaggio macchina o in assembly).
@@ -57,11 +79,15 @@ Lo sviluppo per arcade decade a inizio anni '90, e cessa definitivamente a fine 
 ### porting
 
 Il mercato degli arcade è rimasto a lungo il settore leader per i videogiochi. Tanto da trainare la creazione, sviluppo e successo di altre tecnologie, come le home consoles. E' infatti grazie al porting di giochi per arcade che le home console si sono imposte sul mercato. Come per le coin-op, si fa uso di sintesi sottrattiva.
+
 Nel 1972 esce Magnavox Odyssey.
-E' nel 1975 però che le home consoles hanno un boom con il porting di Pong per la home console di Atari. Il successo è stato tale che nel giro di un anno sono nate quasi un cventinaio di compagnie che offrivano una propria home console con un gioco simile a Pong.
+E' nel 1975 però che le home consoles hanno un boom con il porting di Pong per la home console di Atari. Il successo è stato tale che nel giro di un anno sono nate quasi un centinaio di compagnie che offrivano una propria home console con un gioco simile a Pong.
 Il chip che Atari usa per Pong (General Instruments AY-3-85-00) viene chiamato "Pong chip". Il chip è responsabile anche di generare il suono per il gioco. Tutte le altre compagnie usano lo stesso chip, quindi tutti i giochi pseudo-pong hanno lo stesso suono. Quel suono diventa marca sonora di un gioco, un genre ed un'epoca.
+
 Un paio d'anni dopo Atari sviluppa il VCS (Video Computer System) - noto dall'82 come Atari 2600 - che sbanca sul mercato grazie al porting di Space Invaders.
+
 Il VCS offre, a livello audio, 2 canali e la possibilità di selzionare la forma d'onda. Tuttavia i due canali hanno ciascuno un proprio tuning e, per la modalità di creazione del tune set, le note generate non appartengono ad alcuna scala, ma si discostano di alcuni (anche parecchi) centesimi di semitono (differenti tra PAL e NTSC).
+
 Mattel sviluppa Intellivision, un sistema che era pensato per essere espandibile e funzionare come strumento general purpose. Una di queste espandìsioni offre un sound chip aggiuntivo, arriavando a offrire 6 canali audio (record per l'epoca).
 
 Il porting di giochi da arcade pone dei problemi per quanto riguarda la musica. A livello compositivo si predilige l'uso di loop di sequenze sonore (soprattutto dagli anni '80). Le transizioni tra scene o eventi nel gioco non vengono trattate, ma si lasciano hard cuts. Tuttavia l'utilizzo delle console in ambiente domestico fa mutare la funzine della musica da un richiamo urlato e fuori dal gioco a un suono più immersivo e non fastidioso, adatto all'ambiente domestico.
@@ -339,12 +365,11 @@ I dialoghi vengono registrati in studi per l'ADR. I file sono poi sottoposti al 
 TODO
 
 ---
+Una interessante rifelssione:
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/Zctp972y_Eg" frameborder="0" allowfullscreen></iframe>
 
 ---
-
-# Pt.2
 
 {% comment %}
 ```
@@ -363,7 +388,8 @@ sv_gravity 100 (default 800)
 ```
 {% endcomment %}
 
-## Suono come modello data driven/event based
+<a id="pt2"></a>
+## Pt2: Suono come modello data driven/event based
 
 Nell'ultima parte della sua storia, il suono nel videogioco si presenta come un modello guidato dai dati (**data driven model**).
 
@@ -627,7 +653,7 @@ C'è addirittura che si specializza nel processo inverso, ovvero nel ricreare an
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/EGkQkdCKztM?start=226" frameborder="0" allowfullscreen></iframe>
 </td>
 </tr>
-<table>
+</table>
 
 ## Esempi di audio procedurale (Pure Data)
 
@@ -639,7 +665,7 @@ Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa Pure
 
 Che cosa è PureData? PureData è un linguaggio di programmazione a nodi nato a metà degli anni '90 ad opera di Miller Puckette che all'epoca lavorava all'IRCAM di Parigi.
 
-Esempi di procedurale: bells, clocks, water, insects, engine, guns, helicopter (thanks to Andy Farnell and Alexey Reshetnikov).
+Esempi di procedurale: bells, clocks, water, insects, engine, guns, helicopter (thanks to _Andy Farnell_ and _Alexey Reshetnikov_).
 
 Per utilizzare questi esempi è necessario installare una versione di PureData e delle seguenti librerie aggiuntive ().
 
@@ -647,9 +673,7 @@ Per utilizzare questi esempi è necessario installare una versione di PureData e
 
 TODO
 
-## References
 
-Go to the [references page](references)
 
 {% comment %}
 non linearità

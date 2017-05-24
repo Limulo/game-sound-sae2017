@@ -1,11 +1,13 @@
 # FMOD
 
+Back to [Home](index)
+
 **FMOD** is a software tool by _Firelight Technologies_ (Melbourne, Australia). It helps sound designers to better organize audio assets in order to be used inside games (or interactive applications more generally).
 
 If you take a tour of the [FMOD website](http://www.fmod.org/), you will see that FMOD comes in three flavours:
 * **Studio**: similar to a DAW, FMOD Studio is a software with a graphic user interface that makes all the features of FMOD easy to use;
-* **API**: is the way a programmer would use FMOD; 
-* **IO**: it's a sound effect store that FMOD users can directly access from FMOD Studio; 
+* **API**: is the way a programmer would use FMOD;
+* **IO**: it's a sound effect store that FMOD users can directly access from FMOD Studio;
 
 FMOD can be integrated with the principal game engines [Unity](http://www.fmod.org/documentation/#content/generated/engine_new_unity/overview.html) and [Unreal Engine](http://www.fmod.org/documentation/#content/generated/engine_ue4/overview.html).
 
@@ -34,7 +36,7 @@ TODO: File Structure of a project
 ## Preferences
 TODO
 
-## Audio Bin 
+## Audio Bin
 
 ![audio bin](./fmod/screenshots/audio_bin.png)
 
@@ -79,7 +81,7 @@ The **Loop Toggle button** is used when you want to extend the trigger region mo
 
 ### Multi Sound Modules
 
-It is not timelocked. Unlike the non­timelocked single sound module, this module doesn’t stop outputting a signal when the cursor leaves its trigger region. 
+It is not timelocked. Unlike the non­timelocked single sound module, this module doesn’t stop outputting a signal when the cursor leaves its trigger region.
 
 <!-- ![multi sound](./fmod/screenshots/multi_sound.png) -->
 <img src="./fmod/screenshots/multi_sound.png" alt="event" width="100%" />
@@ -112,7 +114,7 @@ Note that, when automating the properties of a sound module, is possible to plac
 
 When you create an event with one or more parameter, the game code needs to include _function calls_ to update these parameters.
 
-What values a parameter might have depends on the game engine and game mechanics. Lets pretend they says they are going to give us a boolean parameter: in this case we will create an event parameter which goes from 0.0 to 1.0. 
+What values a parameter might have depends on the game engine and game mechanics. Lets pretend they says they are going to give us a boolean parameter: in this case we will create an event parameter which goes from 0.0 to 1.0.
 
 If we want our event sound module to react to this parameter only when it is equal to 1, we are going to set the corresponding range slider (minimum = 1.0; maximum= 10.0).
 
@@ -193,7 +195,7 @@ Here's an image showing how to add effect on the channel.
 
 Bypass is also possible. Like in many DAW _flip to faders_ is also possible. Rearranging effects is possible when you have more than one.
 
-### Effect send 
+### Effect send
 
 TODO
 
@@ -221,7 +223,7 @@ Snapshot can be triggered by:
 * game code (see the FMOD API for more);
 * an event via a **snapshot trigger region**
 
-It is also possible for multiple snapshot or for multiple instances of the same snapshot. 
+It is also possible for multiple snapshot or for multiple instances of the same snapshot.
 
 When more than one snapshot acts on the same parameter, what happens when more of them are active at the same time? Well, their name is _overriding snapshot_ so the answer is that one "overrides" the other.
 
@@ -261,7 +263,7 @@ To use it, the game needs to set the __FMOD_STUDIO_INIT_LIVEUPDATE__ flag.
 
 In Unity ([link](https://youtu.be/91GT1eb6xeQ?t=4m12s)):
 1. Edit > Project Settings > Player
-2. In _Resolution and Presentation_ make sure you have the _Run in background_ selected. 
+2. In _Resolution and Presentation_ make sure you have the _Run in background_ selected.
 3. play the game
 4. Open the FMOD Studio project
 3. in Studio: File > Connect to Game...
@@ -280,7 +282,7 @@ Profiler wold record:
 * File I/O
 * Levels
 * Voices (self/total) indicates the number of voices playing through a track.
-* Lifespan 
+* Lifespan
 * Instances (self / Total)
 
 ## Case Study: Footsteps

@@ -2,13 +2,9 @@
 layout: default
 ---
 
-Back to the [Home page](index)
+Back to [Home](index)
 
 ## Resources
-
-* Go to the [FMOD page](fmod).
-* Go to [pt1](pt1)
-* Go to [pt2](pt2)
 
 ### Personnel (a few of them)
 
@@ -39,34 +35,30 @@ Sound effects in video games:
 * Christian Heinrichs
 * [Stefania Serafin](https://ccrma.stanford.edu/~serafin/publ.html) and her work on contact models;
 
-### Application of Procedural Audio in Games
+### Procedural Audio in Games (some examples)
 
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
 * [GTA V audio](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and the RAGE audio Engine. [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s)
-* [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peterr Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
+* [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peter Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
 * [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
-* iMuse [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689), [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ);
+* iMuse: [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ), [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689);
 
 {% comment %}
 * [Abzu](https://www.youtube.com/watch?v=CWU1pZVw0xM&feature=youtu.be&t=15m24s);
 * [Journey]();
 {% endcomment %}
 
-### Application of Procedural Audio on other fields
+### Procedural Audio on other fields
 
 * [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out.
 
-A possible example of this kind os synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/).
+A possible example of this kind of synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/). [Line6 Pod](https://en.wikipedia.org/wiki/Pod_%28amp_modeler%29) product, for example, implements a sound engine which simulate a lot of preamps, cabinets and room acoustics.
 
-* [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [PianoTeq](https://www.pianoteq.com/home) products, [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also the Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html).
-Other examples are the Roland instruments like the [Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) use the [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) modelling synthesis engine in parallel with traditional PCM synthetizer.
-[Line6 Pod](https://en.wikipedia.org/wiki/Pod_%28amp_modeler%29) product, for example, implements a sound engine which simulate a lot of preamps, cabinets and room acoustics.
+* [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [PianoTeq](https://www.pianoteq.com/home) products, [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also the Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html). Other examples are the Roland instruments like the [Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) use the [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) modelling synthesis engine in parallel with traditional PCM synthetizer.
 
-We can find the same concepts in many others software and hardware products like virtual instruments by [Togu Audio Line (Tal)](https://tal-software.com/Products), effects by [The Audio Thing](https://www.audiothing.net/), [Native Instruments B4](http://www.soundonsound.com/reviews/native-instruments-b4-ii).
-* Hardware instruments and Expanders: (ex)GEM DRAKE technology;
-* RjDj
-* Smule
+We can find the same concepts in many others software and hardware products like virtual instruments by [Togu Audio Line (Tal)](https://tal-software.com/Products), effects by [The Audio Thing](https://www.audiothing.net/), [Native Instruments B4](http://www.soundonsound.com/reviews/native-instruments-b4-ii), and more...
+* Hardware instruments and Expanders: see (ex)GEM DRAKE technology;
 
 ### Tools (a few of them)
 
@@ -75,19 +67,25 @@ We can find the same concepts in many others software and hardware products like
 * **Tsugi** [audio products](http://tsugi-studio.com/web/en/products.html) like, for example, [Game Synth](http://tsugi-studio.com/web/en/products-gamesynth.html) or [DSP retro](http://tsugi-studio.com/web/en/products-dspretro.html) among others;
 * [bfxr](http://www.bfxr.net/) an online and offline sound effect generator. It was born after the [Tomas Pettersson](http://www.drpetter.se/about.html) [sfxr](http://drpetter.se/project_sfxr.html) previous project. This is [as3sfxr](http://www.superflashbros.net/as3sfxr/), a Flash porting.
 * [Le sound AudioGaming](https://lesound.io/)
-* [Praat](http://www.fon.hum.uva.nl/praat/), [Sonic Visualizer](http://www.sonicvisualiser.org/);
-* [PureData](https://puredata.info/), [Max/MSP](https://cycling74.com/) and Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
-* [SuperCollider](https://supercollider.github.io/), [CSound](http://csound.github.io/)
-* [Chuck](http://chuck.cs.princeton.edu/)
+* [Praat](http://www.fon.hum.uva.nl/praat/);
+* [Sonic Visualizer](http://www.sonicvisualiser.org/);
+* [PureData](https://puredata.info/);
+* [Max/MSP](https://cycling74.com/);
+* Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
+* [SuperCollider](https://supercollider.github.io/). Here's the Supercollider [code repository](http://sccode.org/) and Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from Farnell's "_Designing Sound_" book;
+* [CSound](http://csound.github.io/);
+* [Chuck](http://chuck.cs.princeton.edu/);
 * [Faust](http://faust.grame.fr/) a DSP programming language;
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
 * [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
 and Rendering of Environmental Audio;
 
 ### Courses
+
 * Mooc: [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
 
 ### Books
+
 Books about music in video games:
 
 * Karen Kollins "[Game Sound](https://mitpress.mit.edu/books/game-sound)" - MIT press;
@@ -108,12 +106,12 @@ Other books of interest:
 
 * [GDC Doom Music](http://www.gdcvault.com/play/1024068/-DOOM-Behind-the);
 * [GDC Final Fantasy XV - interactive music and tools](http://www.gdcvault.com/play/1023971/Epic-AND-Interactive-Music-in);
-* [gamasutra 1](http://www.gamasutra.com/blogs/JasonYu/20170323/292591/Deconstructing_The_Music_of_the_8_Dungeons_of_Links_Awakening.php);
-* [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M)
 * Akash Thakkar & Disasterpiece [GDC talk](http://www.gdcvault.com/play/1024135/The-Sound-and-Music-of) about the game "_Hiperlight Drfiter_";
 * [Audio talk GDC 2017](http://www.gdcvault.com/play/1023224/Outside-the-Studio-Walls-MicroTalk)
 * [Karen Collins 2013](http://www.gdcvault.com/play/1017959/Biff-Boom-Pow-Introducing-Students)
 * [Karen Collins 2014](http://www.gdcvault.com/play/1020359/Selling-Games-and-the-Code)
+* [gamasutra 1](http://www.gamasutra.com/blogs/JasonYu/20170323/292591/Deconstructing_The_Music_of_the_8_Dungeons_of_Links_Awakening.php);
+* [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M)
 
 ---
 
@@ -122,8 +120,6 @@ Other books of interest:
 * paper: [liqui](http://gamma.cs.unc.edu/SoundingLiquids/soundingliquids.pdf)
 * Zheng and James [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/files/fractureSound_comp.pdf), [water simulation model](http://www.cs.cornell.edu/projects/HarmonicFluids/);
 * Playstation [VR worlds](http://designingsound.org/2016/12/the-sound-music-of-playstation-vr-worlds/)
-* Supercollider [code repository](http://sccode.org/) and Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from the "_Designing Sound_" book;
-* [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
 
 ---
 
@@ -133,23 +129,24 @@ Other books of interest:
 * [AES Lecturers](http://www.aes-uk.org/meetings/) - [YouTube channel](https://www.youtube.com/user/aesuksection)
 * project [Bar-B-Q](https://www.projectbarbq.com/)
 * [IAsig](https://www.iasig.org/)
+* [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
 
 ---
 
 * [Lost Chocolate Blog](http://blog.lostchocolatelab.com/)
 * [game audio podcast ep.4 - about procedural audio](http://www.gameaudiopodcast.com/?p=161)
-* [part 1](http://designingsound.org/2010/01/audio-implementation-greats-1-audio-toolsets-part-1/) and [part 2](http://designingsound.org/2010/01/audio-implementation-greats-2-audio-toolsets-part-2/)
+* Designing Sound Blog articles: [part 1](http://designingsound.org/2010/01/audio-implementation-greats-1-audio-toolsets-part-1/) and [part 2](http://designingsound.org/2010/01/audio-implementation-greats-2-audio-toolsets-part-2/)
 * [Gaf](http://cedric.cnam.fr/PUBLIS/RC1568.pdf), [IEZA](https://users-cs.au.dk/dsound/DigitalAudio.dir/Unity/IEZA.pdf) and [this](http://captivatingsound.com/ieza-framework-for-game-audio/). [GAL](https://www.researchgate.net/publication/238660174_GAME_AUDIO_LAB_-_AN_ARCHITECTURAL_FRAMEWORK_FOR_NONLINEAR_AUDIO_IN_GAMES) and [this](http://www.aes.org/e-lib/browse.cfm?elib=15169);
 * Artificial intelligence for speach synthesis: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see Gene Kogan and other project.
 
 ---
 
-* portale [NesDev](http://wiki.nesdev.com/w/index.php/Nesdev)
-* [Video Game Music Preservation Foundation](http://www.vgmpf.com/Wiki/index.php/Main_Page)
-* [Atari Museum](http://www.atarimuseum.com/mainmenu/mainmenu.html)
-* [C64 Wiki](https://www.c64-wiki.com/wiki/Main_Page)
-* [Game database](http://www.gamesdatabase.org/)
-* [Archive.org videogame section](http://www.gamesdatabase.org/)
+* [NesDev](http://wiki.nesdev.com/w/index.php/Nesdev) portal;
+* [Video Game Music Preservation Foundation](http://www.vgmpf.com/Wiki/index.php/Main_Page);
+* [Atari Museum](http://www.atarimuseum.com/mainmenu/mainmenu.html);
+* [C64 Wiki](https://www.c64-wiki.com/wiki/Main_Page);
+* [Game database](http://www.gamesdatabase.org/);
+* [Archive.org videogame section](http://www.gamesdatabase.org/);
 
 ## CC music:
 
