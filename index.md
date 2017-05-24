@@ -18,7 +18,7 @@ Gli autori restano a disposizione all'indirizzo **info[at]limulo.net**, per ogni
 * Go to the [Fmod](fmod) page;
 
 <a id="pt1"></a>
-## Pt1: Che cos'è un videogioco? - Dichiarazione d'intenti
+## Pt1: Che cos'è un videogioco?
 
 Un videogioco è la declinazione moderna più diffusa e pervasiva del gioco.
 Il gioco è un'attività che accompagna da sempre la storia dell'uomo. Se ne ritrovano esemplari molto antichi, che non si discostano molto dai giochi ai quali siamo abituati noi.
@@ -29,15 +29,14 @@ Un gioco è quindi uno strumento di intrattenimento, come un film, un libro. Si 
 
 Il videogioco si distingue intoltre da altre forme di gioco in quanto punto di convergenza di diversi elementi eterogenei ta loro. In questo senso il videogioco è un **prodotto** di intrattenimento ( ma non solo ) **multimediale**, che si avvale cioè di almeno un paio di mezzi espressivi differenti (grafica, audio, animazione, testo, interfaccia utente, controlli hardware).
 
-Il videogioco è un software; un software molto complesso, capace di raccogliere input provenienti da differenti domini e di farli coesistere in maniera coerente all'interno
-di un unico ambiente.
+Il videogioco è un software; un software molto complesso, capace di raccogliere input provenienti da differenti domini e di farli coesistere in maniera coerente all'interno di un unico ambiente.
 
-Di tutti i domini che concorrono a creare un videogioco ci concentriamo sulla sua componente audio, studiando l'evoluzione della tecnologia e delle tecniche nel corso della storia per meglio capire dove siamo arrivati, perchè e come possiamo inserirci professionalemnte nel panorama contemporaneo.
+Di tutti i domini che concorrono a creare un videogioco ci concentriamo sulla sua componente audio, studiando l'evoluzione della tecnologia e delle tecniche nel corso della storia per meglio capire dove siamo arrivati, perchè e come possiamo inserirci professionalmente nel panorama contemporaneo.
 
 Facciamo attenzione a quelli che sono i problemi principali che si sono dovuti affrontare nella creazione di audio per videogiochi:
 
 * la gestione dell risorse (scarsità di memoria)
-* difficoltà di programmare audio e di comporre in codice
+* difficoltà di programmare audio e di comporre musica in codice
 
 E teniamo in considerazione fattori come:
 
@@ -46,81 +45,85 @@ E teniamo in considerazione fattori come:
 
 ## Once upon a time ...
 
-Citiamo per amor di completezza quelli che sono considerati i due antesignani dei videogiochi. Siamo alla fine degli anni '50-inizio anni '60, in USA, nelle università.
+Citiamo per amor di completezza quelli che sono considerati i due antesignani dei videogiochi. Siamo alla fine degli anni '50, inizio anni '60, in USA, nelle università.
 
 * 1958: tennis for two
 * 1962: spacewar!
 
-Si tratta di software sviluppato sui supercomputer dei cintri di rricerca, più sperimentazioni e simulazioni che veri e propri videogames. Dovremo attendere la fine degli anni '70 per avere i primi giochi su computer.
+Si tratta di software sviluppato sui **supercomputer** dei centri di ricerca, più sperimentazioni e simulazioni che veri e propri videogames. Dovremo attendere la fine degli anni '70 per avere i primi giochi su computer.
 
-## intanto in sala giochi...
+## Intanto in sala giochi...
 
 Immaginiamo di essere nel XV secolo. Nelle corti si pratica un gioco che consiste nel guidare il percorso di sfere di metallo/legno facendo attezione ad evitare alcune buche.
-Negli anni '30 questa idea diventa il ballyhoo, progenitore del pinball, che a sua volta spinge alla creazione delle cosiddette coin-operated machines, o coin-op. I cabinati.
+Negli anni '30 questa idea diventa il **ballyhoo**, progenitore del **pinball**, che a sua volta spinge alla creazione delle cosiddette coin-operated machines, o **coin-op**: i cabinati.
 
-Ci spostiamo quindi in sala giochi.
-Siamo alla fine degli anni '60 / inizio anni '70, le coin-op montano componenti elettrici discreti, collegati tra loro attraverso cavi che si congiungono in schede madri. C'è sicuramente uno stadio di ventilazione per raffreddare le parti meccaniche che si surriscaldano per l'utilizzo.
+Ci spostiamo quindi in **sala giochi**.
+Siamo alla fine degli anni '60, inizio anni '70. Le coin-op montano _componenti elettrici discreti_, collegati tra loro attraverso cavi che si congiungono in schede madri. C'è sicuramente uno stadio di ventilazione per raffreddare le parti elettriche e meccaniche che si surriscaldano per l'utilizzo.
+
 In una sala giochi ci sono molte coin-op che funzionano simultaneamente e ininterrottamente.
 
-Il suono serve quindi ad attirare l'attenzione e ad invitare a giocare. Viene rubata l'idea al suono delle slot machine, ovvero al suono della vincita ( la perdita non ha suono). Tante macchine corrispondono, statisticamente, a tanti suoni di vittoria, invitando gli avventori a tentare la fortuna, facendo credere in una fcilità di vincita.
+Il suono serve quindi ad attirare l'attenzione e ad invitare a giocare. Viene rubata l'idea al suono delle _slot machine_, ovvero al suono della vincita (la perdita non ha suono). Tante macchine corrispondono, statisticamente, a tanti suoni di vittoria, invitando gli avventori a tentare la fortuna, facendo credere in una facilità di vincita.
 
-Il suono è  slegato dal gioco. La musica è quasi assente e gli effetti sonori sono funzione del gameplay (se un evento richiede molte risorse l'audio è sacrificato ed il gioco rimane muto). Si implementa sintesi sottrattiva.
-
-La programmazione audio avviene con collegamenti diretti di cavi al chip ( o se va bene il linguaggio macchina o in assembly).
-Questa caratteristica fa sì che ogni macchina suoni in maniera differente rispetto alle altre, anche se il gioco che montano è il medesimo.
+Il suono è slegato dal gioco. La musica è quasi assente e gli effetti sonori sono funzione del gameplay (se un evento richiede molte risorse l'audio è sacrificato ed il gioco rimane muto). Si implementa **sintesi sottrattiva**.
 
 <img src="./images/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" />
 
+La programmazione audio avviene con collegamenti diretti di cavi al chip (o se va bene in _linguaggio macchina_ o in _assembly_).
+Questa caratteristica fa sì che ogni macchina suoni in maniera differente rispetto alle altre, anche se il gioco che montano è il medesimo.
+
 Lo sviluppo per arcade decade a inizio anni '90, e cessa definitivamente a fine anni '90.
 
-## una sala giochi in salotto
+## Una sala giochi in salotto
 
-### porting
+### Porting
 
-Il mercato degli arcade è rimasto a lungo il settore leader per i videogiochi. Tanto da trainare la creazione, sviluppo e successo di altre tecnologie, come le home consoles. E' infatti grazie al porting di giochi per arcade che le home console si sono imposte sul mercato. Come per le coin-op, si fa uso di sintesi sottrattiva.
+Il mercato degli arcade è rimasto a lungo il settore leader per i videogiochi. Tanto da trainare la creazione, sviluppo e successo di altre tecnologie, come le **home consoles**. E' infatti grazie al _porting_ di giochi per arcade che le home console si sono imposte sul mercato. Come per le coin-op, si fa uso di sintesi sottrattiva.
 
-Nel 1972 esce Magnavox Odyssey.
-E' nel 1975 però che le home consoles hanno un boom con il porting di Pong per la home console di Atari. Il successo è stato tale che nel giro di un anno sono nate quasi un centinaio di compagnie che offrivano una propria home console con un gioco simile a Pong.
-Il chip che Atari usa per Pong (General Instruments AY-3-85-00) viene chiamato "Pong chip". Il chip è responsabile anche di generare il suono per il gioco. Tutte le altre compagnie usano lo stesso chip, quindi tutti i giochi pseudo-pong hanno lo stesso suono. Quel suono diventa marca sonora di un gioco, un genre ed un'epoca.
+Nel 1972 esce _Magnavox Odyssey_.
+E' nel 1975 però che le home consoles hanno un boom con il porting di _Pong_ per la home console di _Atari_. Il successo è stato tale che nel giro di un anno sono nate quasi un centinaio di compagnie che offrivano una propria home console con un gioco simile a Pong.
 
-Un paio d'anni dopo Atari sviluppa il VCS (Video Computer System) - noto dall'82 come Atari 2600 - che sbanca sul mercato grazie al porting di Space Invaders.
+Il chip che Atari usa per Pong (_General Instruments AY-3-85-00_) viene chiamato "_Pong chip_". Il chip è responsabile anche di generare il suono per il gioco. Tutte le altre compagnie usano lo stesso chip, quindi tutti i giochi pseudo-pong hanno lo stesso suono. Quel suono diventa marca sonora di un gioco, un genere ed un'epoca.
+
+Un paio d'anni dopo Atari sviluppa il _VCS_ (Video Computer System) - noto dall'82 come Atari _2600_ - che sbanca sul mercato grazie al porting di _Space Invaders_.
 
 Il VCS offre, a livello audio, 2 canali e la possibilità di selzionare la forma d'onda. Tuttavia i due canali hanno ciascuno un proprio tuning e, per la modalità di creazione del tune set, le note generate non appartengono ad alcuna scala, ma si discostano di alcuni (anche parecchi) centesimi di semitono (differenti tra PAL e NTSC).
 
-Mattel sviluppa Intellivision, un sistema che era pensato per essere espandibile e funzionare come strumento general purpose. Una di queste espandìsioni offre un sound chip aggiuntivo, arriavando a offrire 6 canali audio (record per l'epoca).
+_Mattel_ sviluppa _Intellivision_, un sistema che era pensato per essere espandibile e funzionare come strumento general purpose. Una di queste espandìsioni offre un sound chip aggiuntivo, arrivando a offrire 6 canali audio (record per l'epoca).
 
-Il porting di giochi da arcade pone dei problemi per quanto riguarda la musica. A livello compositivo si predilige l'uso di loop di sequenze sonore (soprattutto dagli anni '80). Le transizioni tra scene o eventi nel gioco non vengono trattate, ma si lasciano hard cuts. Tuttavia l'utilizzo delle console in ambiente domestico fa mutare la funzine della musica da un richiamo urlato e fuori dal gioco a un suono più immersivo e non fastidioso, adatto all'ambiente domestico.
+Il porting di giochi da arcade pone dei problemi per quanto riguarda la musica. A livello compositivo si predilige l'uso di **loop** di sequenze sonore (soprattutto dagli anni '80). Le **transizioni** tra scene o eventi nel gioco non vengono trattate, ma si lasciano **hard cuts**. Tuttavia l'utilizzo delle console in ambiente domestico fa mutare la funzine della musica da un richiamo urlato e fuori dal gioco a un suono più immersivo e non fastidioso, adatto all'ambiente domestico.
 
-Negli anni '80 fanno l'ingresso sul mercato i PSG (Programmable Sound Generator), ovvero sintetizzatori basilari o DAC.
-Il più famoso PSG è General Instruments AY-3-8910 usato in moltissimi arcade, in Intellivision, in ZX Spectrum e in Sega Master System.
+Negli anni '80 fanno l'ingresso sul mercato i **PSG** (Programmable Sound Generator), ovvero sintetizzatori basilari o DAC.
+Il più famoso PSG è _General Instruments AY-3-8910_ usato in moltissimi arcade, in Intellivision, in ZX Spectrum e in Sega Master System.
 Il suono si arricchisce e nuove possibilità creative si aprono, prevalentemente nello sviluppo di effetti sonori.
 
-### maturazione delle console
+### Maturazione delle console
 
 #### NES
 
 A metà anni '80 il mercato delle console ristagna, saturo di una miriade di giochi tutti molto simili tra loro.
-Una ventata d'aria fesca arriva nel 1983 con il Colecovision di Coleco che viene distribuito con Donkey Kong (Nintendo).
-Nel 1985 Nintendo entra nel mercato delle home console con il NES, distribuito con Super Mario. Nel 1986 Nintendo rilascia The legend of Zelda.
+Una ventata d'aria fesca arriva nel 1983 con il _Colecovision_ di _Coleco_ che viene distribuito con _Donkey Kong_ (Nintendo).
+Nel 1985 _Nintendo_ entra nel mercato delle home console con il _NES_, distribuito con _Super Mario_. Nel 1986 Nintendo rilascia _The legend of Zelda_.
+
 Le home console si distaccano dal mondo arcade e iniziano a camminare con le proprie gambe.
 
 Il NES monta un PSG proprietario che garantisce 5 canali audio (2 pulse, 1 tri, 1 noise, 1 DCM). La tecnologia è a 8 bit, ma l'audio prodotto è innovativo.
-La gestione della memoria è ancora conflittuale, effetti e musica rivaleggiano per l'appropriazione delle risorse. Per risparmiare spazio in memria si fa largo uso di loop.
+La gestione della memoria è ancora conflittuale, effetti e musica rivaleggiano per l'appropriazione delle risorse. Per risparmiare spazio in memoria si fa largo uso di loop.
 A seguito del successo del NES NIntendo abbandona lo sviluppo per arcade.
 
 #### Genesis
 
-Diventa leader nello sviluppo per arcade Sega, che sfrutta i titoli su coin-op per lanciare le proprie conosole.
-Al Sega Master System fa seguito il Sega Genesis (o Mega Drive) a 16 bit.
-L'avvento dei 16 bit rendo possibile la sintesi FM, quindi il suono diventa più definito e ricco e la musica assume un'importanza maggiore nel gioco e per la prima volta acquisisce pari importanza rispetto agli effetti sonori come valore narrativo.
+Diventa leader nello sviluppo per arcade _Sega_, che sfrutta i titoli su coin-op per lanciare le proprie conosole.
+Al _Sega Master System_ fa seguito il _Sega Genesis_ (o _Mega Drive_) a 16 bit.
 
-Il Genesis monta un PSG 3+1 (texas instruments SN76489) e un chip Yamaha per FM (YM2612) 6 canali + 1 campionatore.
+L'avvento dei 16 bit rendo possibile la **sintesi FM**, quindi il suono diventa più definito e ricco e la musica assume un'importanza maggiore nel gioco e per la prima volta acquisisce pari importanza rispetto agli effetti sonori come valore narrativo.
+
+Il Genesis monta un PSG 3+1 (_Texas Instruments SN76489_) e un chip Yamaha per FM (_YM2612_) 6 canali + 1 campionatore.
 
 La programazione audio rimane difficile, si basa ancora prevalentemente sulla conoscenza dell'hardware (si programma tramite cassette).
-Quindi si riutilizzano più suoni per diversi giochi (**NOTA** inizia a emergere il concetto di riutilizzo delle risorse)
-Esempio: In "Shadow of the Beast II" (1992, Psygnnosis) l'organo a onda quadra è lo stesso di "Fatal Rewind" (1991, Psygnosis) che a sua volta condivide il suono di flauto con "Misadventure of Flint"(1993).
+Quindi si riutilizzano più suoni per diversi giochi (**NOTA**: inizia a emergere il concetto di riutilizzo delle risorse)
+Esempio: In "_Shadow of the Beast II_" (1992, Psygnnosis) l'organo a onda quadra è lo stesso di "_Fatal Rewind_" (1991, Psygnosis) che a sua volta condivide il suono di flauto con "_Misadventure of Flint_"(1993).
 
-Alla tadizionale tecnica del loop si associano soluzioni creative per offrire una sensazione di variazione maggiore: la trasposizione di frasi sonore e la tecnica del double tracking.
+Alla tadizionale tecnica del loop si associano soluzioni creative per offrire una sensazione di variazione maggiore: la **trasposizione** di frasi sonore e la tecnica del **double tracking**.
 
 <a id="sonic-loop">
 <audio controls style="width:100%">
@@ -137,85 +140,96 @@ Le musiche implementate nei giochi per Genesis sono esempi di una nuova sensibil
 
 #### SNES
 
-Successore del NES è il SuperNES (SNES) che monta molti elementi per la creazione e la gestione audio, tra cui un DSP Sony. Questo DSP permette di utilizzare la sintesi a wavetable, quindi superando anche il Genesis dal punto di vista di qualità dei suoni prodotti. Nintendo tuttavia preferisce rimanere su suoni che richiamano i chiptune del NES e stilisticamente richiamare genri musicali in voga al momento, come dance, hard rock, hip hop.
+Successore del NES è il _SuperNES_ (SNES) che monta molti elementi per la creazione e la gestione audio, tra cui un DSP Sony. Questo DSP permette di utilizzare la **sintesi wavetable**, quindi superando anche il Genesis dal punto di vista di qualità dei suoni prodotti. Nintendo tuttavia preferisce rimanere su suoni che richiamano i chiptune del NES e stilisticamente richiamare genri musicali in voga al momento, come dance, hard rock, hip hop.
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/dnXvGAtdhL8?start=20" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/r37TJdTI5M0" frameborder="0" allowfullscreen></iframe>
 
 ---
-Sega mostra un'attenzione particolare per l'audio. Ne è un esempio il Sega Dreamcast del 1998, a 128 bit. Il Dreamcast monta un processore audio dedicato con una memoria dedicata che permette un accesso non concorrenziale alla memoria del sistema.
+Sega mostra un'attenzione particolare per l'audio. Ne è un esempio il _Sega Dreamcast_ del 1998, a 128 bit. Il Dreamcast monta un processore audio dedicato con una memoria dedicata che permette un accesso non concorrenziale alla memoria del sistema.
 Ma non ha successo e Sega scompare dal mercato.
----
 
 #### PS1, PS2, PS3, Xbox : verso il PC
 
-Con Sony Playstation 1 nel mercato delle home console fa il suo ingresso il CD ROM, che si porta dietro il CD audio. La qualità audio aumenta, lo spazio su CD è maggiore rispetto a quello delle ROM. Si possono creare molti suoni e creare layer complessi. Ma a scapito dell'interattività e della dinamicità.
-Non si risole ancora la gestione delle transizioni, che rimangono hard cuts.
+Con _Sony Playstation 1_, nel mercato delle home console fa il suo ingresso il **CD ROM**, che si porta dietro il CD audio. La qualità audio aumenta, lo spazio su CD è maggiore rispetto a quello delle ROM. Si possono creare molti suoni e creare layer complessi. Ma a scapito dell'interattività e della dinamicità.
+Non si risolve ancora la gestione delle transizioni, che rimangono hard cuts.
 
-La qualità audio continua a creascere, superando la qualità CD (si arriva a 48KHz), fino ad arrivare a PlayStation 2 che introduce il DVD ROM.
-Playstation 3 ha il supporto per il surround e permette lo stream audio 7.1 a 96KBs.
+La qualità audio continua a creascere, superando la qualità CD (si arriva a 48KHz), fino ad arrivare a _PlayStation 2_ che introduce il DVD ROM. _Playstation 3_ ha il supporto per il surround e permette lo stream audio 7.1 a 96KBs.
 
-L'architettura delle console si complica, iniziano a montare microprocessori simili a quelli dei moderni computer e le loro funzionalità si diversificano sempre più, facendo della conosole uno strumento più general purpose rispetto al mero gioco. Il sogno di Intellivision si realizza.
+L'architettura delle console si complica, iniziano a montare microprocessori simili a quelli dei moderni computer e le loro funzionalità si diversificano sempre più, facendo della console uno strumento più general purpose rispetto al mero gioco. Il sogno di Intellivision si realizza.
 
-Non a caso entra nel mercato delle console anche Microsoft con Xbox. Da console di gioco si passa a lettore CD /DVD /BlueRay /streaming online.
+Non a caso entra nel mercato delle console anche _Microsoft_ con _Xbox_. Da console di gioco si passa a lettore CD/DVD/BlueRay/streaming online.
 
 ## I computer
 
 ### I primi computer
 
 Se agli albori i PC erano macchinari ingombranti appannaggio delle università e dei centri di ricerca, dal 1977 diventano uno dei mezzi preferiti per giocare.
-Wozniack stesso in un'intervista racconta di come l'Apple II sia stato dotato di speaker perchè doveva fungere da mezzo per videogiochi. Wozniack e Jobs arrivavano dal mondo degli arcade avendo sviluppato nel 1976 Breakout per Atari.
+_Wozniack_ stesso in un'intervista racconta di come l'Apple II sia stato dotato di speaker perchè doveva fungere da mezzo per videogiochi (Wozniack e Jobs arrivavano dal mondo degli arcade avendo sviluppato nel 1976 _Breakout_ per Atari).
+
 I computer iniziano a diffondersi nelle case e offrono una caratteristica importantissima: possono essere programmati. I giocatori iniziano a diventare anche creatori.
-IBM si accorge dell'importanza commerciale dei videogiochiper computer e perlanciare il PCJr nel 1984 chiede a Sierra On-Line (una delle sftware house più importanti per videogame per computer) di creare un gioco apposito. Nasce King's Quest. Il PCJr monda un'interfaccia standard perle priferiche. Questo srà fondamentale per la successiva creazione di schede audio e controller.
-Un altro computer che nasce con il videogame in mente è Commodore64, che è tanto legato all'idea di console da prevedere un adattatore d'antenna per poter essere usato anche collegato al televisore, proprio come le home console.
+
+_IBM_ si accorge dell'importanza commerciale dei videogiochiper computer e perlanciare il _PCJr_ nel 1984 chiede a _Sierra On-Line_ (una delle software house più importanti per videogame per computer) di creare un gioco apposito. Nasce "_King's Quest_".
+
+Il PCJr monta un'interfaccia standard per le priferiche. Questo sarà fondamentale per la successiva creazione di schede audio e controller.
+
+Un altro computer che nasce con il videogame in mente è _Commodore64_, che è tanto legato all'idea di console da prevedere un adattatore d'antenna per poter essere usato anche collegato al televisore, proprio come le home console.
 
 L'audio in questa fase è ancora agli albori. Richiama per certi versi l'audio delle coin-op (spesso l'hardware è lo stesso).
 
 ### Soundcards
 
-Un forte sviluppo dell'audio per computer si ha con la creazione di schede audio di terze parti che ampliano le capacità delle singole macchine.
-La prima scheda audio per computer e AdLib per Amiga. Segue Creative Instruments/Labs con Game Blaster (da notare il nome della scheda) poi evolutasi nella Sound Balster.
-Queste prime schede audio mostravano delle limitazioni, come SoundBlaster che mixa internamente i due canali audio in uno riducendo le capacità espressive e rifucendola qualità dell'audio. Si sviluppano allora moduli esterni da collegare per afruttare a pieno le potenzialità di queste nuove componenti.
+Un forte sviluppo dell'audio per computer si ha con la creazione di **schede audio** di terze parti che ampliano le capacità delle singole macchine.
 
-La scheda audio permette di sfruttare enormemente il potere creative del computer, permettendo la programmazione di suoni e composizioni musicali grazie a tool come Visual Composer e Instrument Maker per Adlib.
+La prima scheda audio per computer e _AdLib_ per _Amiga_. Segue _Creative Instruments/Labs_ con _Game Blaster_ (da notare il nome della scheda) poi evolutasi nella _Sound Blaster_.
+
+Queste prime schede audio mostravano delle limitazioni, come SoundBlaster che mixa internamente i due canali audio in uno, riducendo le capacità espressive e riducendola qualità dell'audio. Si sviluppano allora moduli esterni da collegare per afruttare a pieno le potenzialità di queste nuove componenti.
+
+La scheda audio permette di sfruttare enormemente il potere creative del computer, permettendo la programmazione di suoni e composizioni musicali grazie a tool come _Visual Composer_ e _Instrument Maker_ per Adlib.
 
 ### MIDI
 
-In questo periodo intanto prende piede un protocollo di trasmissione dati audio: il MIDI ideato da Roland.
+In questo periodo intanto prende piede un protocollo di trasmissione dati audio: il **MIDI** ideato da _Roland_.
+
 Il MIDI è un protocollo di trasmissione dati audio che prevede lo scambio di messaggi contenenti comandi per la creazione e la riproduzione di suoni. I suoni veri e propri non vengono trasmessi, permettendo un notevole risprmio in termini di memoria usata.
 Questo fa sì che il MIDI sia massicciamente usato, tra gli altri, anche dai produttori di videogiochi.
-Roland nel 1987 rilascia una scheda MIDI, l'MT32. Sebbene sia possibile usare l'MT32 per qualsiasi applicazione, Roland ha evidentemente in mente i videogiochi come campo priilegiato di utlizzo, infatti firma un accordo con Sierra On-Line che si impegna a rendere l'MT32 il sistema audio standard per i suoi giochi.
+
+Roland nel 1987 rilascia una scheda MIDI, l'_MT32_. Sebbene sia possibile usare l'MT32 per qualsiasi applicazione, Roland ha evidentemente in mente i videogiochi come campo priilegiato di utilizzo, infatti firma un accordo con Sierra On-Line che si impegna a rendere l'MT32 il sistema audio standard per i suoi giochi.
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/BMmFcs-_4x4?start=297" frameborder="0" allowfullscreen></iframe>
 
-Tuttavia non esistendo uno standard ogni produttore implementava a modo suo il protocollo rendendo difficile per i programmatori adattare il proprio lavoro alle varie situazioni. Nel 1991 si arriva alla definizione dello standard: GMIDI poi ampliato in GSMIDI.
+Tuttavia non esistendo uno standard, ogni produttore implementava a modo suo il protocollo rendendo difficile per i programmatori adattare il proprio lavoro alle varie situazioni. Nel 1991 si arriva alla definizione dello standard: **GMIDI** poi ampliato in **GSMIDI**.
 
-Il sequencing è la tecnica compositiva tramite messaggi MIDI. Si tratta di una composizione lineare. In alcuni casi si è adattato il MIDI a sistema capace di creare audio dinamico e interattivo.
+Il **sequencing** è la tecnica compositiva tramite messaggi MIDI. Si tratta di una composizione lineare. In alcuni casi si è adattato il MIDI a sistema capace di creare audio dinamico e interattivo.
 
 #### iMuse
 
-iMuse (Michael Land, Peter McCowell) è il sound engine di SCUMM, game engine di LucasArts.
-iMuse nasce nel 1991 (brevettato nel 1994); è un sistema che premette l'introduzione di componenti di audio dinamico in un linguaggio di scripting. Fondamentalmente iMuse è un database di sequenze musicali che possono contenere **punti di decisione** o **markers** all'interno delle tracce.
+**iMuse** (Michael Land, Peter McCowell) è il sound engine di _SCUMM_, game engine di _LucasArts_.
+
+Nasce nel 1991 (brevettato nel 1994); è un sistema che premette l'introduzione di componenti di audio dinamico in un linguaggio di scripting. Fondamentalmente iMuse è un database di sequenze musicali che possono contenere **punti di decisione** o **markers** all'interno delle tracce.
 
 Il sistema, utilizzando eventi SysEx nei file MIDI, si permette l'interazione tra le azioni del giocatore e il sonoro del gioco.
 Gli eventi in questione sono di due tipi: **markers** e **hooks**.
 
-Un *marker* viene inserito nel file MIDI nel punto che, una volta raggiunto dal lettore MIDI, deve triggerare l'esecuzione di un particolare comando da parte dello script del gioco. Il comando in questione è inserito in una lista (coda - FIFO) è ne viene attivata l'esecuzione non appena il MIDI player raggiunge un marker con un determinato ID. I comandi possono essere qualsiasi cosa, dal fade in/out alle pause.
+Un _marker_ viene inserito nel file MIDI nel punto che, una volta raggiunto dal lettore MIDI, deve triggerare l'esecuzione di un particolare comando da parte dello script del gioco. Il comando in questione è inserito in una lista (coda - FIFO) è ne viene attivata l'esecuzione non appena il MIDI player raggiunge un marker con un determinato ID. I comandi possono essere qualsiasi cosa, dal fade in/out alle pause.
 
-Un *hook* contiene un ID e l'azione da eseguire una volta che l'hook viene raggiunto. Lo script lancia un comando che si occupa di aspettare che un certo hook venga incontrato (callback), e quindi di mettere in esecuzione il comando contenuto in quest'ultimo.
+Un _hook_ contiene un ID e l'azione da eseguire una volta che l'hook viene raggiunto. Lo script lancia un comando che si occupa di aspettare che un certo hook venga incontrato (callback), e quindi di mettere in esecuzione il comando contenuto in quest'ultimo.
 Gli hook si distinguono in vari tipi, quali ad esempio salti, trasposizioni, abilitazione/disabilitazione di strumenti.
 
 Esempio: transizioni tra rooms:
-- marker trigger: aspetta fino a che si raggiunga il punto appropriato prima di fare la transizione alla nuova sequenza
-- jump hooks: nella sequenza mette in riproduzione un'altra parte della sequenza prima della transizione
+* marker trigger: aspetta fino a che si raggiunga il punto appropriato prima di fare la transizione alla nuova sequenza
+* jump hooks: nella sequenza mette in riproduzione un'altra parte della sequenza prima della transizione
 
 #### MOD format
 
-Il formato MOD è un formato di file usato prevalentemente per rappresentare musica. MOD è l'estensione del formato (Module/Modular). Il formato è stato ideato da Karsten Obarski per sopperire alla mancanza di tool per comporre musica per Amiga; il primo utilizzo del formato .MOD è stato con l'Ultimate Soundtracker di Amiga.
+Il formato **MOD** è un formato di file usato prevalentemente per rappresentare musica. MOD è l'estensione del formato (Module/Modular). Il formato è stato ideato da Karsten Obarski per sopperire alla mancanza di tool per comporre musica per Amiga; il primo utilizzo del formato .MOD è stato con l'_Ultimate Soundtracker_ di Amiga.
+
 I file MOD sono infatti legati al tracker come strumento compositivo, e ne hanno anche condizionato l'estetica e l'utilizzo, tanto che questi software non sono sostanzialmente cambiati dai loro primi esemplari. Quindi il formato .MOD è il formato "nativo" dei tracker.
-Il file .MOD contiene campioni (strumenti) e pattern che indicano come e quando i campioni devono suonare ed in quale ordine.
+
+Il file .MOD contiene **campioni** (strumenti) e pattern che indicano come e quando i campioni devono suonare ed in quale ordine.
 Inizialmente si poteva disporre solo di 4 canali e 64 note. I campioni erano codificati come PCM a 8 bit ed erano riprodotti direttamente dal DAC di Amiga.
+
 I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di videogiochi, diffusione facilitata anche dal fatto che, al contrario di iMuse, il MOD non è proprietario (contro: diversità di implementazione).
 
 <img src="./images/pt1/MOD/ultimate_soundtracker.png" alt="MOD format" width="100%" />
@@ -228,10 +242,11 @@ I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di vide
 
 ## I giochi moderni
 
-Attualmente la grafica e la modalità di gioco spingono verso un iper-realismo. Il suono si adegua con l'uso di surround, che però fronisce una simulazione della realtà SOLO dal punto di vista del posizionamento.
-Da citare la modalità di fruizione audio offerta da NIntendo Wii in cui i suoni sono emessi anche dai controller, aumentando l'immersività.
+Attualmente la grafica e la modalità di gioco spingono verso un iper-realismo. Il suono si adegua con l'uso di surround, che però fornisce una simulazione della realtà SOLO dal punto di vista del posizionamento.
 
-Con Xbox si inizia a dleineare la tendenza delle console e dei computer a convergere in un unico sistema. Questa tendenza permane ai girni nostri e si arricchisce di nuove potenzialità con i nuovi apparecchi per l'home entaitainment (smartTV).
+Da citare la modalità di fruizione audio offerta da Nintendo Wii in cui i suoni sono emessi anche dai controller, aumentando l'immersività.
+
+Con Xbox si inizia a delineare la tendenza delle console e dei computer a convergere in un unico sistema. Questa tendenza permane ai giorni nostri e si arricchisce di nuove potenzialità con i nuovi apparecchi per l'home entaitainment (smartTV).
 
 #### VR
 
@@ -240,8 +255,6 @@ Oculus Rift e i vari sistemi di realtà virtuale stanno cambiando la modalità d
 #### Handheld games
 
 I giochi per dispositivi portatili sono pensati per essere giocati in pubblico, quindi la musica e i suoni non solo non sono importanti, ma devono poteressere elimimnati per non disturbare.
-
-----
 
 ## Figure professionali
 
@@ -465,14 +478,6 @@ reverb, delay, doppler effect, filtering, fast realtime convolution.
 attenuazione esmorzamento: un discorso legato alla distanza tra emitter e listener, grandezza geometrica ricavata dal modello tridimensionale, in base alla quale viene modificato in tempo reale la frequenza di taglio di un filtro passa basso e un amplificatore di livello.
 Lo stesso si applica in casi in cui ci sia un ostacolo tra emittere e listener: occlusione ottenuta con filtri opportunamente settati. Materiali diversi
 
-### Alignement
-
-Uno scenario in cui più giocatori prendono parte ad un partita multiplayer.
-Un server preposto al controllo e al master clock per la ricezione e ridistribuzione dei pacchetti.
-A seconda della contingeza ci possono essere latenze che si sommano e si accumulano, e possono essere diverse da caso a caso, e da giocatore a giocatore e cambiare nel tempo.
-Il game engine, e più nello specifico l'audio engine per quanto concerne il suono, deve essere in grado di gestire situazioni come questa e di riordinare opportunamente i pacchettin in arrivo per dare un audio sempre corerente
-esempio PS3 (chiedi a Vale di intervenire)
-
 ### Dialogues
 
 Il game audio engine deve essere in grado di interfacciarsi e gestire complessi database di informazioni. Uno di questi è rappresentato dall'insieme degli audio file associati a tutte le varie linee di dialogo (in una o più lingue) presenti nel gioco.
@@ -480,6 +485,14 @@ Il game audio engine deve essere in grado di interfacciarsi e gestire complessi 
 ### Music
 
 Il game audio engine deve essere in grado di gestire l'eventuale colonna sonora musiclae interattiva (vedi ad esempio il sistema _iMuse_).
+
+### Alignement
+
+Uno scenario in cui più giocatori prendono parte ad un partita multiplayer.
+Un server preposto al controllo e al master clock per la ricezione e ridistribuzione dei pacchetti.
+A seconda della contingeza ci possono essere latenze che si sommano e si accumulano, e possono essere diverse da caso a caso, e da giocatore a giocatore e cambiare nel tempo.
+Il game engine, e più nello specifico l'audio engine per quanto concerne il suono, deve essere in grado di gestire situazioni come questa e di riordinare opportunamente i pacchettin in arrivo per dare un audio sempre corerente
+esempio PS3 (chiedi a Vale di intervenire)
 
 ---
 A ben vedere però questo sistema basato sui sample audio sembra in contraddizione netta con il dominio visivo, caratterizzato invece da un comportamento **continuo** e guidato da uno stream di parametri piuttosto che da eventi **discreti**.
@@ -503,14 +516,10 @@ Tutto questo è appannaggio del **physics engine** che non si occupa solo di col
 <table>
 <tr>
 <td>
-
 <iframe width="100%" src="https://www.youtube.com/embed/cIcg5eotZlY" frameborder="0" allowfullscreen></iframe>
-
 </td>
 <td>
-
 <iframe width="100%" src="https://www.youtube.com/embed/wKLaMN9dnjQ" frameborder="0" allowfullscreen></iframe>
-
 </td>
 </tr>
 </table>
@@ -562,7 +571,7 @@ Il suono insomma risulta essere malamente accoppiato con il motore di gioco sott
 L'audio veniva generato in tempo reale e rispecchiava linearmente le azioni del giocatore e le reazioni dell'engine. L'audio veniva sintetizzato in tempo reale.
 Questa tendenza si è interrotta indicativamente attorno alla seconda metà degli anni '90, momento storico dove si può collocare la comparsa sul mercato dei prini CD e che vede il diffondersi dell'audio campionato ad alta qualità (44100@16bit).
 
-Attenzione, questo **non significa che in passato i sample non venissereo utilizzati**; Nintendo, SEGA e ancora prima nelle coin-op, dove possibile, si inserivano sistemi DAC in grado di riprodurre, seppure non con la stessa qualità CD, campioni e sample pre-registrati, soprattutto per la voce. La ricerca del "_realismo_" tuttavia ha infine soppiantato i sistemi di sintesi tradizionale.
+Attenzione, questo **non significa che in passato i sample non venissero utilizzati**; Nintendo, SEGA e ancora prima nelle coin-op, dove possibile, si inserivano sistemi DAC in grado di riprodurre, seppure non con la stessa qualità CD, campioni e sample pre-registrati, soprattutto per la voce. La ricerca del "_realismo_" tuttavia ha infine soppiantato i sistemi di sintesi tradizionale.
 
 Tali sistemi però sono sopravissuti in una parte del mercato legato all'audio: la **musica** e gli **strumenti musicali**. In questi campi ci si accorge subito dell limitazion intrinseche dell'audio per campioni (il sample è un _tradimento_ della realtà), per questo la ricerca e lo sviluppo di nuovi sistemi di sintesi continua a progredire.
 
@@ -587,7 +596,7 @@ Processo guidato da uno stream continuo di dati provenienti dall'interazione del
 
 A ben vedere il concetto di audio procedurale non ci è del tutto estraneo; un esempio a cui siamo abituati è il _riverbero artificiale_.
 
-<img src="./images/graphics/beh-mod-impl.png" alt="behaviour, model, implementation" width="50%" />
+<img src="./images/graphics/beh-mod-impl.png" alt="behaviour, model, implementation" width="30%;" />
 
 TODO: classi di modelli (tassonomia)
 
@@ -633,7 +642,7 @@ TODO
 Permane la falsa concezione che la sintesi audio sia in qualche modo sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
 
 In realtà non è così e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
-Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude. Quello di cui c'è bisogno è il **verosimile** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) oaddirittura dell'**hyperrealism** ("_more than reality_").
+Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude. Quello di cui c'è bisogno è il **verosimile** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) o addirittura dell'**hyperrealism** ("_more than reality_").
 
 ### The Future
 
@@ -643,16 +652,7 @@ Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mo
 
 C'è addirittura che si specializza nel processo inverso, ovvero nel ricreare animazioni basandosi sul suono in una sorta di _inverse fooley_, il che può portare a risultati davvero sorprendenti:
 
-<table>
-<tr>
-<td>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/EGkQkdCKztM?start=130" frameborder="0" allowfullscreen></iframe>
-</td>
-<td>
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/EGkQkdCKztM?start=226" frameborder="0" allowfullscreen></iframe>
-</td>
-</tr>
-</table>
 
 ## Esempi di audio procedurale (Pure Data)
 
