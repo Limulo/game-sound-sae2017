@@ -8,8 +8,10 @@ Back to [Home](index);
 
 ### Personnel (a few of them)
 
-Music in videogames, generative and adaptive music:
+Composers and researchers in videogame music, generative and adaptive music:
 
+* [Rob Hubbard](https://en.wikipedia.org/wiki/Rob_Hubbard) - [talk](https://www.youtube.com/watch?v=DiPdjbsiQqM), [here](https://youtu.be/J-ww9G9u4pY) and [here](https://youtu.be/pgPEaI0GHBI?list=RDdvmSpZWW45k) his way of composing music for the C64 is analyzed;
+* [Robert "Bobby" Prince](https://en.wikipedia.org/wiki/Robert_Prince_%28video_game_composer%29);
 * Karen Collins;
 * Brian Eno;
 * Leonard J Paul: [website](http://school.videogameaudio.com/apply/), [Youtube channel](https://www.youtube.com/channel/UCRkeuj7LOpX__NGQN1I0ANg), [talk](https://www.youtube.com/watch?v=2y86R4cDA9U), [lesson](https://www.youtube.com/watch?v=tvx_QgS7D8Q)
@@ -69,6 +71,9 @@ We can find the same concepts in many others software and hardware products like
 * [Le sound AudioGaming](https://lesound.io/)
 * [Praat](http://www.fon.hum.uva.nl/praat/);
 * [Sonic Visualizer](http://www.sonicvisualiser.org/);
+* [PaulStretch](http://hypermammut.sourceforge.net/paulstretch/) by [Paul Nasca](http://www.paulnasca.com);
+* [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
+and Rendering of Environmental Audio;
 * [PureData](https://puredata.info/);
 * [Max/MSP](https://cycling74.com/);
 * Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
@@ -77,8 +82,6 @@ We can find the same concepts in many others software and hardware products like
 * [Chuck](http://chuck.cs.princeton.edu/);
 * [Faust](http://faust.grame.fr/) a DSP programming language;
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
-* [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
-and Rendering of Environmental Audio;
 
 ### Courses
 
@@ -95,12 +98,17 @@ Books about sound effects and related topics:
 
 * Andy Farnell's "[Designing Sound](https://mitpress.mit.edu/books/designing-sound)" - MIT press;
 * Perry Cook "[Real Sound Synthesis for Interactive Applications](http://www.cs.princeton.edu/~prc/AKPetersBook.htm)" - CRC press;
-* Mark Grimshaw's "[Game Sound Technology and Player Interaction: Concepts and Developments](http://www.igi-global.com/book/game-sound-technology-player-interaction/41766)"
+* Mark Grimshaw's "[Game Sound Technology and Player Interaction: Concepts and Developments](http://www.igi-global.com/book/game-sound-technology-player-interaction/41766)" - IGI Global;
 
 Other books of interest:
-
-* Micheal Chion "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)"
-* [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001)
+* Anna Anthropy "Rise of videogame zinester" - 7 stories press;
+* Chris Solarski "Interactive stories and videogame art" - CRC press;
+* Ernest Adams "Foundamentals of game design" - Pearson;
+* James Newman "Videogames" (2nd ed) - Routledge;
+* Blake J. Harris "Console Wars" - multiplayer.it edizioni;
+* Marco Accordi Rickards "Storia del videogioco" - Carocci editore;
+* Micheal Chion "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)" - Lindau;
+* [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001) - Ricordi, Lim;
 
 ## Talks, references and other materials
 
@@ -147,6 +155,12 @@ Other books of interest:
 * [C64 Wiki](https://www.c64-wiki.com/wiki/Main_Page);
 * [Game database](http://www.gamesdatabase.org/);
 * [Archive.org videogame section](http://www.gamesdatabase.org/);
+
+## Emulators, retro stuff
+
+* [JSIDPlay 2](http://haendel.ddns.net/~ken/), a Commodore 64 emulator with oscilloscope to inspect different SID voice waveforms;
+* [High Voltage Sid Collection](http://www.hvsc.c64.org/) a music database for the C64;
+* [Byte magazine](https://archive.org/details/byte-magazine?sort=-date)
 
 ## CC music:
 

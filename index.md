@@ -4,10 +4,11 @@ layout: default
 
 Questa pagina raccoglie tutto il materiale che [limulo.net](http://limulo.net) ha prodotto nel preparare alcune lezioni in merito all'audio nei videogiochi e ai game engines.
 
-Durante le lezioni si fornisce una panoramica storica dell'evoluzione del suono nei videogiochi, dagli anni '50 ad oggi; si dà poi uno sguardo alle diverse figure professionali coinvolte nello sviluppo di un videogioco e si analizzano gli strumenti impiegati nelle varie fasi (_game engines_, altri _tools_ e _middleware_). In classe vengono mostrati diversi esempi, tra cui _AdLib Visual Composer_, _Fasttracker_ e _Unity_.
+Durante le lezioni si fornisce una panoramica storica dell'evoluzione del suono nei videogiochi, dagli anni '50 ad oggi; si dà poi uno sguardo alle diverse figure professionali coinvolte nello sviluppo di un videogioco e si analizzano gli strumenti impiegati nelle varie fasi (_game engines_, altri _tools_ e _middleware_).
 
 Infine si passa ad esaminare approfonditamente il funzionamento del suono, sia come modello _data driven_ sia come paradigma _procedurale_.
-Durante le lezioni si mostrano diversi esempi realizzati in linguaggio di programmazione _PureData_. Inolte viene illustrato il middleware _fmod_.
+
+In classe vengono mostrati diversi esempi pratici usando tools e middleware come _AdLib Visual Composer_, _Fasttracker_, _Unity_ e _fmod_. Inoltre vengono mostrati diversi esempi realizzati in linguaggio di programmazione _PureData_.
 
 Gli autori restano a disposizione all'indirizzo **info[at]limulo.net**, per ogni eventuale dubbio, osservazione e approfondimento!
 
@@ -376,13 +377,6 @@ I dialoghi vengono registrati in studi per l'ADR. I file sono poi sottoposti al 
 
 TODO
 
----
-Una interessante rifelssione:
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Zctp972y_Eg" frameborder="0" allowfullscreen></iframe>
-
----
-
 {% comment %}
 ```
 notarget
@@ -666,7 +660,16 @@ Che cosa è PureData? PureData è un linguaggio di programmazione a nodi nato a 
 
 Esempi di procedurale: bells, clocks, water, insects, engine, guns, helicopter (thanks to _Andy Farnell_ and _Alexey Reshetnikov_).
 
-Per utilizzare questi esempi è necessario installare una versione di PureData e delle seguenti librerie aggiuntive ().
+Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree/master/procedural/PureData_examples) è necessario installare una versione di [PureData](http://puredata.info/) e delle seguenti librerie aggiuntive:
+* list_abs (for the **[list_dot]** and **[list_emath]** objects);
+* zexy (for the **[>~]** object);
+* iem_t3_lib (the **[t3_bpe]**, **[t3_line~]** and **[t3_delay]** objects);
+* motex (**[ln~]** object);
+* lyonpotpourri (**[adsr~]** object);
+* creb (**[ead~]** object);
+* cxc, cyclone, purepd (**[delta~]** object);
+* iemlib (**[init]** object);
+* ggee (**[image]** object);
 
 ## Music
 
@@ -762,3 +765,8 @@ Pattern matching / search tecniques
     Constraints
 
 {% endcomment %}
+
+---
+Una interessante riflessione:
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Zctp972y_Eg" frameborder="0" allowfullscreen></iframe>
