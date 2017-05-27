@@ -18,7 +18,7 @@ Composers and researchers in videogame music, generative and adaptive music:
 * Yann Seznec: [website](http://www.yannseznec.com/);
 * Winifred Phillips: [website](http://www.winifredphillips.com/);
 
-Sound effects in video games:
+Sound effects in video games and many more:
 
 * Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
@@ -36,6 +36,7 @@ Sound effects in video games:
 * [Rod Selfridge](https://rodselfridge.wordpress.com/)
 * Christian Heinrichs
 * [Stefania Serafin](https://ccrma.stanford.edu/~serafin/publ.html) and her work on contact models;
+* [Gary Scavone](http://www.music.mcgill.ca/~gary/) from the [Computational Acoustic Modelling Loaboratory](http://www.music.mcgill.ca/caml/doku.php?id=home);
 
 ### Procedural Audio in Games (some examples)
 
@@ -83,6 +84,15 @@ and Rendering of Environmental Audio;
 * [Faust](http://faust.grame.fr/) a DSP programming language;
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
 
+Tools for development:
+
+* [RtAudio](https://www.music.mcgill.ca/~gary/rtaudio/);
+* [OpenAL](http://www.openal-soft.org/);
+
+Assets:
+
+* [Open Game Art](https://opengameart.org/)
+
 ### Courses
 
 * Mooc: [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
@@ -101,6 +111,7 @@ Books about sound effects and related topics:
 * Mark Grimshaw's "[Game Sound Technology and Player Interaction: Concepts and Developments](http://www.igi-global.com/book/game-sound-technology-player-interaction/41766)" - IGI Global;
 
 Other books of interest:
+
 * Anna Anthropy "Rise of videogame zinester" - 7 stories press;
 * Chris Solarski "Interactive stories and videogame art" - CRC press;
 * Ernest Adams "Foundamentals of game design" - Pearson;
@@ -116,10 +127,10 @@ Other books of interest:
 * [GDC Final Fantasy XV - interactive music and tools](http://www.gdcvault.com/play/1023971/Epic-AND-Interactive-Music-in);
 * Akash Thakkar & Disasterpiece [GDC talk](http://www.gdcvault.com/play/1024135/The-Sound-and-Music-of) about the game "_Hiperlight Drfiter_";
 * [Audio talk GDC 2017](http://www.gdcvault.com/play/1023224/Outside-the-Studio-Walls-MicroTalk)
-* [Karen Collins 2013](http://www.gdcvault.com/play/1017959/Biff-Boom-Pow-Introducing-Students)
-* [Karen Collins 2014](http://www.gdcvault.com/play/1020359/Selling-Games-and-the-Code)
+* Karen Collins [@GDC 2013](http://www.gdcvault.com/play/1017959/Biff-Boom-Pow-Introducing-Students), [@GDC 2014](http://www.gdcvault.com/play/1020359/Selling-Games-and-the-Code);
 * [gamasutra 1](http://www.gamasutra.com/blogs/JasonYu/20170323/292591/Deconstructing_The_Music_of_the_8_Dungeons_of_Links_Awakening.php);
-* [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M)
+* [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M);
+* [Full Indie Talks and presentation](http://www.fullindie.com/presentations/);
 
 ---
 
