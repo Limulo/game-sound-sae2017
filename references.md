@@ -12,6 +12,7 @@ Composers and researchers in videogame music, generative and adaptive music:
 
 * [Rob Hubbard](https://en.wikipedia.org/wiki/Rob_Hubbard) - [talk](https://www.youtube.com/watch?v=DiPdjbsiQqM), [here](https://youtu.be/J-ww9G9u4pY) and [here](https://youtu.be/pgPEaI0GHBI?list=RDdvmSpZWW45k) his way of composing music for the C64 is analyzed;
 * [Robert "Bobby" Prince](https://en.wikipedia.org/wiki/Robert_Prince_%28video_game_composer%29);
+* [George Alistair "the Fat man" Sanger](https://en.wikipedia.org/wiki/George_Sanger_%28musician%29)
 * Karen Collins;
 * Brian Eno;
 * Leonard J Paul: [website](http://school.videogameaudio.com/apply/), [Youtube channel](https://www.youtube.com/channel/UCRkeuj7LOpX__NGQN1I0ANg), [talk](https://www.youtube.com/watch?v=2y86R4cDA9U), [lesson](https://www.youtube.com/watch?v=tvx_QgS7D8Q)
@@ -166,6 +167,10 @@ Other books of interest:
 * [C64 Wiki](https://www.c64-wiki.com/wiki/Main_Page);
 * [Game database](http://www.gamesdatabase.org/);
 * [Archive.org videogame section](http://www.gamesdatabase.org/);
+
+## Other interesting researches
+
+* [VoCo: Text-based Insertion and Replacement in Audio Narration](http://gfx.cs.princeton.edu/pubs/Jin_2017_VTI/);
 
 ## Emulators, retro stuff
 
