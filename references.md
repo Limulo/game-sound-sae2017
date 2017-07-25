@@ -90,6 +90,13 @@ Tools for development:
 * [RtAudio](https://www.music.mcgill.ca/~gary/rtaudio/);
 * [OpenAL](http://www.openal-soft.org/);
 
+Trakers:
+
+* [playerPro](https://sourceforge.net/projects/playerpro/) is a public domain tracker and it was used by Aphex Twin as his main compositional tool for the "Druqs" album (source [here](http://cdm.link/2017/07/aphex-twin-gave-us-peek-inside-90s-classic-heres-learned/));
+* [Renoise](http://www.renoise.com/) is a multiplatform modern tracker.
+
+Se vuoi lo inserisco come risorse nelle lezioni
+
 Assets:
 
 * [Open Game Art](https://opengameart.org/)
