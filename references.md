@@ -38,6 +38,8 @@ Sound effects in video games and many more:
 * Christian Heinrichs
 * [Stefania Serafin](https://ccrma.stanford.edu/~serafin/publ.html) and her work on contact models;
 * [Gary Scavone](http://www.music.mcgill.ca/~gary/) from the [Computational Acoustic Modelling Loaboratory](http://www.music.mcgill.ca/caml/doku.php?id=home);
+* Lucas Mengual "_Modal synthesis for weapons_" research: [talk](https://www.youtube.com/watch?v=6vJhJDHL7JA) and [paper](http://www.eecs.qmul.ac.uk/~josh/documents/2016/mengual%20moffat%20reiss%20-%202016.pdf);
+* [Dr Joshua D Reiss]() from Queen Mary University of London. **Intelligent Sound** [Youtube channel](https://www.youtube.com/user/IntelligentSoundEng), [blog](https://intelligentsoundengineering.wordpress.com/) and [twitter channel](https://twitter.com/IntelSoundEng)
 
 ### Procedural Audio in Games (some examples)
 
@@ -97,13 +99,18 @@ Trakers:
 
 Se vuoi lo inserisco come risorse nelle lezioni
 
-Assets:
+Assets and other videogame resources:
 
 * [Open Game Art](https://opengameart.org/)
+* [Bit Gem](https://shop.bitgem3d.com/)
+* [CGTrader](https://www.cgtrader.com/)
+* [TurboSquid](https://www.turbosquid.com)
+* [Pixelation.org](https://pixelation.org/)
 
-### Courses
+### Courses and MOOC
 
-* Mooc: [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
+* [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
+* [Coursera Introduction to Game Development](https://www.coursera.org/learn/game-development/)
 
 ### Books
 
@@ -139,6 +146,10 @@ Other books of interest:
 * [gamasutra 1](http://www.gamasutra.com/blogs/JasonYu/20170323/292591/Deconstructing_The_Music_of_the_8_Dungeons_of_Links_Awakening.php);
 * [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M);
 * [Full Indie Talks and presentation](http://www.fullindie.com/presentations/);
+* PoliMi lecturer PierPaolo Lanzi [talk](https://www.youtube.com/watch?v=74Cji-XYrlI) about science in videogames;
+* **AES Audio for games** [twitter channel](https://twitter.com/aesgames) and [website](http://www.aes.org/conferences/61/).
+* [Pompeu Fabra Audio Signal Processing Lab](https://www.upf.edu/web/mtg/audio-signal-processing-lab)
+* Queen Mary University [software projects page](https://code.soundsoftware.ac.uk/explore)
 
 ---
 
