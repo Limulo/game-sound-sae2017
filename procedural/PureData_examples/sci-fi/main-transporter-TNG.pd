@@ -1,4 +1,5 @@
-#N canvas 43 123 529 671 10;
+#N canvas 76 78 701 557 10;
+#N canvas 627 99 611 650 sound 0;
 #X obj 409 70 *;
 #X obj 409 90 *;
 #X obj 409 110 *;
@@ -9,7 +10,7 @@
 #X obj 409 190 *;
 #X obj 409 210 *;
 #X obj 264 299 hip~ 100;
-#X obj 367 600 dac~;
+#X obj 327 630 dac~;
 #X obj 409 230 *;
 #X obj 409 250 *;
 #X obj 409 269 *;
@@ -64,13 +65,11 @@
 #X obj 90 87 *~ 6500;
 #X obj 262 107 +~ 12;
 #X obj 281 139 +~ 12;
-#X obj 5 -24 bng 25 250 50 0 beam_me_up empty transport 0 -6 0 8 -262144
--1 -1;
 #X obj 278 -49 r beam_me_up;
-#X obj 406 441 r beam_me_up;
+#X obj 426 441 r beam_me_up;
 #X obj 316 508 *~ 0.1;
-#X obj 407 566 *~ 0.5;
-#N canvas 0 0 349 464 activate 0;
+#X obj 427 536 *~ 0.5;
+#N canvas 0 50 349 464 activate 0;
 #X obj 100 217 +~;
 #X obj 84 270 *~;
 #X obj 5 166 lop~ 30;
@@ -129,7 +128,11 @@
 #X connect 23 0 14 1;
 #X connect 25 0 21 0;
 #X connect 26 0 24 0;
-#X restore 406 462 pd activate;
+#X restore 426 462 pd activate;
+#X obj 273 573 hip~ 5;
+#X obj 273 595 clip~ -1 1;
+#X obj 353 573 hip~ 5;
+#X obj 353 595 clip~ -1 1;
 #X connect 0 0 1 0;
 #X connect 0 0 27 1;
 #X connect 1 0 2 0;
@@ -190,8 +193,8 @@
 #X connect 26 0 40 0;
 #X connect 27 0 40 0;
 #X connect 28 0 40 0;
-#X connect 29 0 10 0;
-#X connect 29 1 10 1;
+#X connect 29 0 70 0;
+#X connect 29 1 72 0;
 #X connect 30 0 15 1;
 #X connect 30 0 57 0;
 #X connect 30 0 58 1;
@@ -234,10 +237,18 @@
 #X connect 63 0 32 0;
 #X connect 63 0 64 0;
 #X connect 64 0 33 0;
-#X connect 66 0 61 0;
-#X connect 67 0 70 0;
-#X connect 68 0 29 0;
-#X connect 69 0 10 1;
-#X connect 69 0 10 0;
-#X connect 70 0 68 0;
-#X connect 70 0 69 0;
+#X connect 65 0 61 0;
+#X connect 66 0 69 0;
+#X connect 67 0 29 0;
+#X connect 68 0 70 0;
+#X connect 68 0 72 0;
+#X connect 69 0 67 0;
+#X connect 69 0 68 0;
+#X connect 70 0 71 0;
+#X connect 71 0 10 0;
+#X connect 72 0 73 0;
+#X connect 73 0 10 1;
+#X restore 628 526 pd sound;
+#X obj 347 268 image teleporter.gif;
+#X obj 367 449 bng 25 250 50 0 beam_me_up empty empty 0 -6 0 8 -262130
+-1 -1;

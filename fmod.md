@@ -1,11 +1,13 @@
 # FMOD
 
+Back to [Home](index);
+
 **FMOD** is a software tool by _Firelight Technologies_ (Melbourne, Australia). It helps sound designers to better organize audio assets in order to be used inside games (or interactive applications more generally).
 
 If you take a tour of the [FMOD website](http://www.fmod.org/), you will see that FMOD comes in three flavours:
 * **Studio**: similar to a DAW, FMOD Studio is a software with a graphic user interface that makes all the features of FMOD easy to use;
-* **API**: is the way a programmer would use FMOD; 
-* **IO**: it's a sound effect store that FMOD users can directly access from FMOD Studio; 
+* **API**: is the way a programmer would use FMOD;
+* **IO**: it's a sound effect store that FMOD users can directly access from FMOD Studio;
 
 FMOD can be integrated with the principal game engines [Unity](http://www.fmod.org/documentation/#content/generated/engine_new_unity/overview.html) and [Unreal Engine](http://www.fmod.org/documentation/#content/generated/engine_ue4/overview.html).
 
@@ -23,8 +25,8 @@ TODO: File Structure of a project
 
 ## Interface Overview
 
-<!-- ![overview](./fmod/screenshots/overview.png) -->
-<img src="./fmod/screenshots/overview.png" alt="overview" width="100%" />
+<!-- ![overview](./images/fmod-screenshots/overview.png) -->
+<img src="./images/fmod-screenshots/overview.png" alt="overview" width="100%" />
 
 
 1. Menu Bar;
@@ -34,17 +36,17 @@ TODO: File Structure of a project
 ## Preferences
 TODO
 
-## Audio Bin 
+## Audio Bin
 
-![audio bin](./fmod/screenshots/audio_bin.png)
+![audio bin](./images/fmod-screenshots/audio_bin.png)
 
 
 To import audio go to **Window > Audio Bin**. The Audio bin window opens. Now select the audio file from the file system and drag and drop it inside the _Audio Bin_.
 
 ## Events
 
-<!-- ![event](./fmod/screenshots/event.png) -->
-<img src="./fmod/screenshots/event.png" alt="event" width="100%" />
+<!-- ![event](./images/fmod-screenshots/event.png) -->
+<img src="./images/fmod-screenshots/event.png" alt="event" width="100%" />
 
 They can be **triggered** and their **parameters manipulated**.
 In-game events and (FMOD)events are different in the sense that a game can have multiple different instances of events which triggers the same FMOD events (i.e. multiple characters - the player and some npc - all using the same FMOD footsteps event).
@@ -54,22 +56,22 @@ Multiple instances: Game event instances each with its own timeline and paramete
 ### Event browser
 multiple events can be collected inside a folder in order to organize your project.
 
-![event folders](./fmod/screenshots/event_folders.png)
+![event folders](./images/fmod-screenshots/event_folders.png)
 
 ### Modules, deck and trigger regions
 A **module** is a component of a signal chain characterised by its ability to be displayed in the deck when active.
 **Sound modules** are modules from which the audio in an event originates. They are represented by coloured boxes on the event tracks called _trigger regions_.
 
-![trigger region](./fmod/screenshots/trigger_region.png)
+![trigger region](./images/fmod-screenshots/trigger_region.png)
 
 The module will emit sound as long as the cursor will stay above the _trigger region_.
 
-<!-- ![deck](./fmod/screenshots/deck.png) -->
-<img src="./fmod/screenshots/deck.png" alt="deck" width="100%" />
+<!-- ![deck](./images/fmod-screenshots/deck.png) -->
+<img src="./images/fmod-screenshots/deck.png" alt="deck" width="100%" />
 
 On the _deck_ we see the module corresponding to the trigger region we have selected on the Editor
 
-![module](./fmod/screenshots/module.png)
+![module](./images/fmod-screenshots/module.png)
 
 ### Timelocked Sound Module
 
@@ -79,10 +81,10 @@ The **Loop Toggle button** is used when you want to extend the trigger region mo
 
 ### Multi Sound Modules
 
-It is not timelocked. Unlike the non­timelocked single sound module, this module doesn’t stop outputting a signal when the cursor leaves its trigger region. 
+It is not timelocked. Unlike the non­timelocked single sound module, this module doesn’t stop outputting a signal when the cursor leaves its trigger region.
 
-<!-- ![multi sound](./fmod/screenshots/multi_sound.png) -->
-<img src="./fmod/screenshots/multi_sound.png" alt="event" width="100%" />
+<!-- ![multi sound](./images/fmod-screenshots/multi_sound.png) -->
+<img src="./images/fmod-screenshots/multi_sound.png" alt="event" width="100%" />
 
 Whether a module falls silent when untriggered usually depends on whether that module is set to loop.
 
@@ -92,8 +94,8 @@ In the other hand, if you set the **loop** toogle, the sound module stops produc
 
 In FMOD Studio, the primary way to make an event adaptive is to give it **parameters**.
 
-<!-- ![parameters](./fmod/screenshots/parameter.png) -->
-<img src="./fmod/screenshots/parameter.png" alt="parameter" width="100%" />
+<!-- ![parameters](./images/fmod-screenshots/parameter.png) -->
+<img src="./images/fmod-screenshots/parameter.png" alt="parameter" width="100%" />
 
 The _Timeline_ is actually a special kind of parameter that automatically advances, and that all events have by default.
 
@@ -112,17 +114,17 @@ Note that, when automating the properties of a sound module, is possible to plac
 
 When you create an event with one or more parameter, the game code needs to include _function calls_ to update these parameters.
 
-What values a parameter might have depends on the game engine and game mechanics. Lets pretend they says they are going to give us a boolean parameter: in this case we will create an event parameter which goes from 0.0 to 1.0. 
+What values a parameter might have depends on the game engine and game mechanics. Lets pretend they says they are going to give us a boolean parameter: in this case we will create an event parameter which goes from 0.0 to 1.0.
 
 If we want our event sound module to react to this parameter only when it is equal to 1, we are going to set the corresponding range slider (minimum = 1.0; maximum= 10.0).
 
 In addition to this, if we don't want the output of our event sound module to change abruptly, as the boolean parameter will do, we need to set the event parameter **Seek Speed** to something greater than 0.0 secs.
 
-![seek speed](./fmod/screenshots/seek_speed.png)
+![seek speed](./images/fmod-screenshots/seek_speed.png)
 
 However FMOD includes a number of _built-in parameters_ that are automatically updated based on information routinely fed to FMOD Studio's geometry system.
 
-![3D panner](./fmod/screenshots/3D_panner.png)
+![3D panner](./images/fmod-screenshots/3D_panner.png)
 
 The 3D Panner:
 * distance
@@ -131,8 +133,8 @@ The 3D Panner:
 * event cone angle
 * event orientation
 
-<!-- ![3D panner module](./fmod/screenshots/3D_panner_module.png) -->
-<img src="./fmod/screenshots/3D_panner_module.png" alt="3D panner module" width="100%" />
+<!-- ![3D panner module](./images/fmod-screenshots/3D_panner_module.png) -->
+<img src="./images/fmod-screenshots/3D_panner_module.png" alt="3D panner module" width="100%" />
 
 ### Modulators
 
@@ -140,8 +142,8 @@ TODO
 
 ## Making Interactive Music Tutorial
 
-<!-- ![interactive music](./fmod/screenshots/interactive_music_01.png) -->
-<img src="./fmod/screenshots/interactive_music_01.png" alt="interactive music" width="100%" />
+<!-- ![interactive music](./images/fmod-screenshots/interactive_music_01.png) -->
+<img src="./images/fmod-screenshots/interactive_music_01.png" alt="interactive music" width="100%" />
 
 We have interesting elements here:
 * Tempo Marker
@@ -153,8 +155,8 @@ We have interesting elements here:
 
 (_Snap to ruler_ option)
 
-<!-- ![interactive music](./fmod/screenshots/interactive_music_02.png) -->
-<img src="./fmod/screenshots/interactive_music_02.png" alt="interactive music" width="100%" />
+<!-- ![interactive music](./images/fmod-screenshots/interactive_music_02.png) -->
+<img src="./images/fmod-screenshots/interactive_music_02.png" alt="interactive music" width="100%" />
 
 1. background music + event triggered in quantization
 
@@ -174,14 +176,14 @@ Pay attention not to get confused: Transition Region != Transition marker != Tra
 
 Here's the mixer window:
 
-<!-- ![mixer window](./fmod/screenshots/mixer_window.png) -->
-<img src="./fmod/screenshots/mixer_window.png" alt="mixer window" width="100%" />
+<!-- ![mixer window](./images/fmod-screenshots/mixer_window.png) -->
+<img src="./images/fmod-screenshots/mixer_window.png" alt="mixer window" width="100%" />
 
 
 Most mixing in FMOD Studio requires that all events in the project are routed into group buses (for example, sound effects, music, voices).
 
-<!-- ![group buses](./fmod/screenshots/group_buses.png) -->
-<img src="./fmod/screenshots/group_buses.png" alt="group buses" width="100%" />
+<!-- ![group buses](./images/fmod-screenshots/group_buses.png) -->
+<img src="./images/fmod-screenshots/group_buses.png" alt="group buses" width="100%" />
 
 When you assign an event _A_ to a group in the Mixer window, it means that whenever the game will instantiate a new _A_ event, its audio output will be routed to the group.
 
@@ -193,14 +195,14 @@ Here's an image showing how to add effect on the channel.
 
 Bypass is also possible. Like in many DAW _flip to faders_ is also possible. Rearranging effects is possible when you have more than one.
 
-### Effect send 
+### Effect send
 
 TODO
 
 ### Snapshots
 
-<!-- ![snapshot](./fmod/screenshots/snapshot.png) -->
-<img src="./fmod/screenshots/snapshot.png" alt="snapshot" width="100%" />
+<!-- ![snapshot](./images/fmod-screenshots/snapshot.png) -->
+<img src="./images/fmod-screenshots/snapshot.png" alt="snapshot" width="100%" />
 
 **Overriding snapshots**: only buses and properties that are scoped in the snapshot can be affected by that snapshot (right click -> _scope-in_). When a snapshot is active, it acts like a mask, replacing the normal values of its scoped-in properties with the values specified in the snapshot.
 
@@ -208,20 +210,20 @@ Snapshots can be audited (snapshot have the _play_/_stop_ button in the transpor
 
 #### How to make smoother snapshot transitions?
 
-<!-- ![snapshot transition](./fmod/screenshots/snapshot_transition_01.png) -->
-<img src="./fmod/screenshots/snapshot_transition_01.png" alt="snapshot transition" width="100%" />
+<!-- ![snapshot transition](./images/fmod-screenshots/snapshot_transition_01.png) -->
+<img src="./images/fmod-screenshots/snapshot_transition_01.png" alt="snapshot transition" width="100%" />
 
 With the snapshot mixer in focus, push the _track button_ in the transport to view track in an horizontal fashion. Now we can act on transitions over time.
 
 **snapshot intensity** property - AHDSR modulator
 
-![snapshot transition](./fmod/screenshots/snapshot_transition_02.png)
+![snapshot transition](./images/fmod-screenshots/snapshot_transition_02.png)
 
 Snapshot can be triggered by:
 * game code (see the FMOD API for more);
 * an event via a **snapshot trigger region**
 
-It is also possible for multiple snapshot or for multiple instances of the same snapshot. 
+It is also possible for multiple snapshot or for multiple instances of the same snapshot.
 
 When more than one snapshot acts on the same parameter, what happens when more of them are active at the same time? Well, their name is _overriding snapshot_ so the answer is that one "overrides" the other.
 
@@ -235,14 +237,14 @@ Content created in Studio has to be built in a convenient **format** in order th
 
 ### Assigning events to Banks
 
-<!-- ![banks](./fmod/screenshots/bank_02.png) -->
-<img src="./fmod/screenshots/bank_02.png" alt="banks" width="100%" />
+<!-- ![banks](./images/fmod-screenshots/bank_02.png) -->
+<img src="./images/fmod-screenshots/bank_02.png" alt="banks" width="100%" />
 
 
 A **bank** is a package which contains all the necessary files an data to make our game have audio. A game scene can have one or more banks, it will be useful for memory menagement purpose.
 
-<!-- ![banks](./fmod/screenshots/bank_01.png)-->
-<img src="./fmod/screenshots/bank_01.png" alt="banks" width="100%" />
+<!-- ![banks](./images/fmod-screenshots/bank_01.png)-->
+<img src="./images/fmod-screenshots/bank_01.png" alt="banks" width="100%" />
 
 * prior to trigger an event, at least one _bank_ that contains that event must be loaded in the game;
 * if we want our event to appear in the game, we need to assign it to _one_ or _more_ banks;
@@ -250,8 +252,8 @@ A **bank** is a package which contains all the necessary files an data to make o
 
 File > Build...
 
-<!-- ![banks](./fmod/screenshots/bank_03.png)-->
-<img src="./fmod/screenshots/bank_03.png" alt="banks" width="100%" />
+<!-- ![banks](./images/fmod-screenshots/bank_03.png)-->
+<img src="./images/fmod-screenshots/bank_03.png" alt="banks" width="100%" />
 
 ## Live Update Tutorial
 
@@ -261,7 +263,7 @@ To use it, the game needs to set the __FMOD_STUDIO_INIT_LIVEUPDATE__ flag.
 
 In Unity ([link](https://youtu.be/91GT1eb6xeQ?t=4m12s)):
 1. Edit > Project Settings > Player
-2. In _Resolution and Presentation_ make sure you have the _Run in background_ selected. 
+2. In _Resolution and Presentation_ make sure you have the _Run in background_ selected.
 3. play the game
 4. Open the FMOD Studio project
 3. in Studio: File > Connect to Game...
@@ -280,7 +282,7 @@ Profiler wold record:
 * File I/O
 * Levels
 * Voices (self/total) indicates the number of voices playing through a track.
-* Lifespan 
+* Lifespan
 * Instances (self / Total)
 
 ## Case Study: Footsteps
