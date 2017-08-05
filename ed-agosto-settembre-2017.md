@@ -6,6 +6,10 @@ layout: default
 
 Back to [Home](index);
 
+<!--
+Scarica le <a href="./slides/Game Engines Game Sound Techniques maggio 2017.pdf" >slides</a> delle lezioni! <img src="./images/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" />
+-->
+
 TODO: Description
 
 * Go to the [Part 1](#pt1);

@@ -6,6 +6,9 @@ layout: default
 
 Back to [Home](index);
 
+Scarica le <a href="./slides/Game Engines Game Sound Techniques maggio 2017.pdf" >slides</a> delle lezioni! <img src="./images/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" />
+
+
 Durante le lezioni si fornisce una panoramica storica dell'evoluzione del suono nei videogiochi, dagli anni '50 ad oggi; si dà poi uno sguardo alle diverse figure professionali coinvolte nello sviluppo di un videogioco e si analizzano gli strumenti impiegati nelle varie fasi (_game engines_, altri _tools_ e _middleware_).
 
 Infine si passa ad esaminare approfonditamente il funzionamento del suono, sia come modello _data driven_ sia come paradigma _procedurale_.
