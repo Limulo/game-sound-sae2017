@@ -55,16 +55,16 @@ Da ricordare che, usando l'istruzione `poke` del linguaggio di programmazione BA
 
 Il programma usa la prima voce impostata come _onda triangolare_ per riprodurre una nota A440 di durata pari a circa 500 millisecondi. Le istruzioni usate sono:
 
-0) indirizzamento del SID `SI=54272`;
-1) impostazione del volume master (registo 4: `L=SI+24` con valori da 0 a 15, volume basso/alto);
-2) impostazione dell'envelope con 4 bit per ciascuna fase = 2 byte per la memorizzazione (registri 5 e 6: `A=SI+5` e `H=SI+6`, rispettivamente per attack/decay e sustain/release);
-3) impostazione della frequenza (registri 0 e 1: `FL=SI` e `FH=SI+1` )
-4) selezione dell'onda (registro 4). Alcuni valori possibili sono:
+1. indirizzamento del SID `SI=54272`;
+2. impostazione del volume master (registo 4: `L=SI+24` con valori da 0 a 15, volume basso/alto);
+3. impostazione dell'envelope con 4 bit per ciascuna fase = 2 byte per la memorizzazione (registri 5 e 6: `A=SI+5` e `H=SI+6`, rispettivamente per attack/decay e sustain/release);
+4. impostazione della frequenza (registri 0 e 1: `FL=SI` e `FH=SI+1` )
+5. selezione dell'onda (registro 4). Alcuni valori possibili sono:
   * tringolare: 17;
   * dente di sega: 33;
   * rettangolare: 65 --> parametro addizionale "_duty cycle_" (registri 2 e 3 `TL=SI+2`, `TL=SI+3`);
   * noise: 129;
-5) ciclo _for_ per la durata della nota.
+6. ciclo _for_ per la durata della nota.
 
 #### Riferimenti e Links
 
@@ -106,6 +106,7 @@ Anche dalle immagini che mostrano la forma d'onda della parte iniziale della pri
 <img src="./images/ed-agosto-settembre-2017/pt2/waveform1.jpg" alt="waveform 1" width="100%" />
 
 <img src="./images/ed-agosto-settembre-2017/pt2/waveform2.jpg" alt="waveform 2" width="100%" />
+![wave](/images/ed-agosto-settembre-2017/pt2/waveform2.jpg)
 
 Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).
 {: class="dashed"}
