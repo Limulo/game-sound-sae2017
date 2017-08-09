@@ -66,12 +66,6 @@ Il programma usa la prima voce impostata come _onda triangolare_ per riprodurre 
   * noise: 129;
 6. ciclo _for_ per la durata della nota.
 
-#### Riferimenti e Links
-
-* [.sid files collection/database](http://hvsc.c64.org/)
-* [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore;
-* SID [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID)
-
 #### Hubbard
 
 Il SID è uno chip che dispone di sole 3 voci ma non è detto che nelle mani di capaci musicisti programmatori non possa ricreare la polifonia e la ricchezza timbrica di un ensamble molto più numeroso
@@ -108,8 +102,24 @@ Anche dalle immagini che mostrano la forma d'onda della parte iniziale della pri
 <img src="./images/ed-agosto-settembre-2017/pt2/waveform2.jpg" alt="waveform 2" width="100%" />
 ![wave](/images/ed-agosto-settembre-2017/pt2/waveform2.jpg)
 
-Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).
+
+Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>
+[.sid files collection/database](http://hvsc.c64.org/)
+[VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore;
+SID [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID)
 {: class="dashed"}
+
+
+### Procedura sword by Rod Selfridge
+
+PD objects which are needed:
+* prvu~ (_iemlib_ library??)
+* acos (_cyclone_ library)
+* atan~ (_cyclone_ library)
+* [>~] e [<~] (_zexy_ library)
+* Uzi (_cyclone_ library)
+* spigot~ (?? library)
+* sin~
 
 
 

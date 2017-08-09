@@ -1,0 +1,2 @@
+#N canvas 521 95 808 624 10;
+#X obj 46 25 SwordCorInterp;

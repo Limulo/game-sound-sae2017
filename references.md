@@ -29,17 +29,16 @@ Sound effects in video games and many more:
 * [Changxi Zheng](http://www.cs.columbia.edu/~cxz/publications.htm) and [Doug James](http://www.cs.cornell.edu/~djames/research/index.html)
 * [Kees van den Doel](http://www.cs.ubc.ca/~kvdoel/): water simulation model's [paper](http://www.cs.ubc.ca/~kvdoel/publications/tap05.pdf);
 * Nicolas Fournel [blog](http://www.nicolasfournel.com/)
-* Dylan Menzies: [papers](http://dmu.academia.edu/DylanMenzies)
+* Dylan Menzies: [papers](http://dmu.academia.edu/DylanMenzies), [pubblications](https://www.researchgate.net/profile/Dylan_Menzies/publications)
 * Dr Stefan Bilbao: [website](http://www.eca.ed.ac.uk/reid-school-of-music/stefan-bilbao)
 * Mark Grimshaw: [thesis](https://www.amazon.com/Acoustic-Ecology-First-Person-Shooter-Experience/dp/3639024087/ref=sr_1_2?ie=UTF8&s=books&qid=1215249610&sr=8-2)
-* Dylan Menzies: [pubblications](https://www.researchgate.net/profile/Dylan_Menzies/publications)
 * [Anton Woldhek](http://www.woldhek.eu/anton/)
-* [Rod Selfridge](https://rodselfridge.wordpress.com/)
+* [Rod Selfridge](https://rodselfridge.wordpress.com/): [sword sounds](http://smc2017.aalto.fi/media/materials/proceedings/SMC17_p299.pdf)
 * Christian Heinrichs
 * [Stefania Serafin](https://ccrma.stanford.edu/~serafin/publ.html) and her work on contact models;
 * [Gary Scavone](http://www.music.mcgill.ca/~gary/) from the [Computational Acoustic Modelling Loaboratory](http://www.music.mcgill.ca/caml/doku.php?id=home);
 * Lucas Mengual "_Modal synthesis for weapons_" research: [talk](https://www.youtube.com/watch?v=6vJhJDHL7JA) and [paper](http://www.eecs.qmul.ac.uk/~josh/documents/2016/mengual%20moffat%20reiss%20-%202016.pdf);
-* [Dr Joshua D Reiss]() from Queen Mary University of London. **Intelligent Sound** [Youtube channel](https://www.youtube.com/user/IntelligentSoundEng), [blog](https://intelligentsoundengineering.wordpress.com/) and [twitter channel](https://twitter.com/IntelSoundEng)
+* [Dr Joshua D Reiss](http://www.eecs.qmul.ac.uk/~josh/) from Queen Mary University of London. **Intelligent Sound** [Youtube channel](https://www.youtube.com/user/IntelligentSoundEng), [blog](https://intelligentsoundengineering.wordpress.com/) and [twitter channel](https://twitter.com/IntelSoundEng)
 
 ### Procedural Audio in Games (some examples)
 
@@ -139,6 +138,7 @@ Other books of interest:
 
 ## Talks, references and other materials
 
+* [PAN: Procedural Audio Now](http://proceduralaudionow.com/)
 * [GDC Doom Music](http://www.gdcvault.com/play/1024068/-DOOM-Behind-the);
 * [GDC Final Fantasy XV - interactive music and tools](http://www.gdcvault.com/play/1023971/Epic-AND-Interactive-Music-in);
 * Akash Thakkar & Disasterpiece [GDC talk](http://www.gdcvault.com/play/1024135/The-Sound-and-Music-of) about the game "_Hiperlight Drfiter_";
