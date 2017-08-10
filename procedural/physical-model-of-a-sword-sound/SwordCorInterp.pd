@@ -1,106 +1,106 @@
-#N canvas 9 23 1440 851 10;
-#X obj 315 22 loadbang;
-#X obj 315 44 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#N canvas 1 78 1585 822 10;
+#X obj 802 22 loadbang;
+#X obj 802 44 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 315 85 s myMet;
-#X obj -221 455 s topSpeed;
-#X obj -273 429 hsl 100 20 0 700 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 566 1;
-#X floatatom -276 455 8 0 0 0 - - -;
-#X text -165 346 Blade Length;
-#X text -9 37 Arm Length;
-#X text -165 433 Top Speed;
-#X obj 21 251 hsl 100 20 0 360 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 27 1;
-#X floatatom 18 280 8 0 0 0 - - -;
-#X obj -279 516 hsl 100 20 0 0.09 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 1672 1;
-#X obj -280 601 hsl 100 20 0.0001 0.1 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 832 1;
-#X floatatom -282 546 8 0 0 0 - - -;
-#X floatatom -283 629 8 0 0 0 - - -;
-#X obj -225 628 s tipThick;
-#X text -165 518 Hilt Thickness;
-#X text -173 602 Tip Thickness;
-#X obj 143 73 bng 50 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+#X obj 802 85 s myMet;
+#X obj 266 455 s topSpeed;
+#X obj 214 429 hsl 100 20 0 700 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 495 1;
+#X floatatom 211 455 8 0 0 0 - - -, f 8;
+#X text 322 346 Blade Length;
+#X text 478 37 Arm Length;
+#X text 322 433 Top Speed;
+#X obj 508 251 hsl 100 20 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2475 1;
+#X floatatom 505 280 8 0 0 0 - - -, f 8;
+#X obj 208 516 hsl 100 20 0 0.09 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1100 1;
+#X obj 207 601 hsl 100 20 0.0001 0.1 0 0 empty empty empty -2 -8 0
+10 -262144 -1 -1 684 1;
+#X floatatom 205 546 8 0 0 0 - - -, f 8;
+#X floatatom 204 629 8 0 0 0 - - -, f 8;
+#X obj 262 628 s tipThick;
+#X text 322 518 Hilt Thickness;
+#X text 314 602 Tip Thickness;
+#X obj 630 73 bng 50 250 50 0 empty empty empty 17 7 0 10 -4034 -1
 -1;
-#X obj 143 126 s GO;
-#X obj 143 27 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 630 126 s GO;
+#X obj 630 27 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 143 46 metro 200;
-#X obj 197 22 hsl 100 20 500 30 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 630 46 metro 200;
+#X obj 684 22 hsl 100 20 500 30 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 83 73 bng 50 250 50 0 empty empty empty 17 7 0 10 -257985 -1
+#X obj 570 73 bng 50 250 50 0 empty empty empty 17 7 0 10 -257985 -1
 -1;
-#X obj 83 150 s setUp;
-#X obj -329 403 r setUp;
-#X obj -40 228 r setUp;
-#X obj -333 493 r setUp;
-#X obj -334 581 r setUp;
-#X obj -43 17 loadbang;
-#X obj -276 403 r thisTS;
-#X obj -282 493 r thisHT;
-#X obj -283 581 r thisTT;
-#X obj -92 15 r setUp;
-#X obj 83 21 loadbang;
-#X obj 83 45 delay 13;
-#X obj 19 326 hsl 100 20 180 360 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3850 1;
-#X floatatom 16 358 8 0 0 0 - - -;
-#X obj -42 306 r setUp;
-#X obj 14 439 hsl 100 20 0 180 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 275 1;
-#X floatatom 11 471 8 0 0 0 - - -;
-#X obj -47 419 r setUp;
-#X obj 12 517 hsl 100 20 0 180 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9350 1;
-#X floatatom 9 549 8 0 0 0 - - -;
-#X obj -49 497 r setUp;
-#X obj 66 470 s presweepElev;
-#X obj 90 547 s postsweepElev;
-#X text 125 440 pre-sweep elevation;
-#X text 123 517 post-sweep elevation;
-#X text 132 249 pre-sweep azimuth;
-#X text 130 327 post-sweep azimuth;
-#X obj 73 279 s presweepAzim;
-#X obj 85 358 s postsweepAzim;
-#X obj -43 59 s start_armLength;
-#X msg -43 38 0.35;
-#X obj -275 52 hsl 100 20 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 4970 1;
-#X obj -276 146 hsl 100 20 -50 50 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 4999 1;
-#X obj -276 237 hsl 100 20 -50 50 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 5148 1;
-#X obj -278 75 s Xobs;
-#X obj -279 170 s Yobs;
-#X obj -279 264 s Zobs;
-#X floatatom -318 75 5 0 0 0 - - -;
-#X floatatom -318 167 5 0 0 0 - - -;
-#X floatatom -319 259 5 0 0 0 - - -;
-#X msg -270 28 0;
-#X msg -270 211 0;
-#X obj -323 26 r setUp;
-#X obj -328 123 r setUp;
-#X obj -332 214 r setUp;
-#X msg -220 121 0;
-#X msg 136 221 90;
-#X msg -231 29 4;
-#X msg -208 400 0.5;
-#X msg -189 24 0.2;
-#X msg -141 404 35;
-#X obj -278 7 r thisXobs;
-#X obj -279 99 r thisYobs;
-#X obj -279 192 r thisZobs;
-#X obj 18 227 r thisPrA;
-#X obj 16 305 r thisPoA;
-#X obj 11 418 r thisPrE;
-#X obj 9 496 r thisPoE;
-#X msg 175 222 10;
-#X obj 428 145 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
-#X obj 491 145 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
-#X text 488 54 Gain;
-#X obj 436 25 loadbang;
+#X obj 570 150 s setUp;
+#X obj 158 403 r setUp;
+#X obj 447 228 r setUp;
+#X obj 154 493 r setUp;
+#X obj 153 581 r setUp;
+#X obj 444 17 loadbang;
+#X obj 211 403 r thisTS;
+#X obj 205 493 r thisHT;
+#X obj 204 581 r thisTT;
+#X obj 395 15 r setUp;
+#X obj 570 21 loadbang;
+#X obj 570 45 delay 13;
+#X obj 506 326 hsl 100 20 180 360 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 4950 1;
+#X floatatom 503 358 8 0 0 0 - - -, f 8;
+#X obj 445 306 r setUp;
+#X obj 501 439 hsl 100 20 0 180 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4950 1;
+#X floatatom 498 471 8 0 0 0 - - -, f 8;
+#X obj 440 419 r setUp;
+#X obj 499 517 hsl 100 20 0 180 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4950 1;
+#X floatatom 496 549 8 0 0 0 - - -, f 8;
+#X obj 438 497 r setUp;
+#X obj 553 470 s presweepElev;
+#X obj 577 547 s postsweepElev;
+#X text 612 440 pre-sweep elevation;
+#X text 610 517 post-sweep elevation;
+#X text 619 249 pre-sweep azimuth;
+#X text 617 327 post-sweep azimuth;
+#X obj 560 279 s presweepAzim;
+#X obj 572 358 s postsweepAzim;
+#X obj 444 59 s start_armLength;
+#X msg 444 38 0.35;
+#X obj 212 52 hsl 100 20 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5346 1;
+#X obj 211 146 hsl 100 20 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5049 1;
+#X obj 211 237 hsl 100 20 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4999 1;
+#X obj 209 75 s Xobs;
+#X obj 208 170 s Yobs;
+#X obj 208 264 s Zobs;
+#X floatatom 169 75 5 0 0 0 - - -, f 5;
+#X floatatom 169 167 5 0 0 0 - - -, f 5;
+#X floatatom 168 259 5 0 0 0 - - -, f 5;
+#X msg 217 28 0;
+#X msg 217 211 0;
+#X obj 164 26 r setUp;
+#X obj 159 123 r setUp;
+#X obj 155 214 r setUp;
+#X msg 267 121 0;
+#X msg 623 221 90;
+#X msg 256 29 4;
+#X msg 279 400 0.5;
+#X msg 298 24 0.2;
+#X msg 346 404 35;
+#X obj 209 7 r thisXobs;
+#X obj 208 99 r thisYobs;
+#X obj 208 192 r thisZobs;
+#X obj 505 227 r thisPrA;
+#X obj 503 305 r thisPoA;
+#X obj 498 418 r thisPrE;
+#X obj 496 496 r thisPoE;
+#X msg 662 222 10;
+#X obj 915 145 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 978 145 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X text 975 54 Gain;
+#X obj 923 25 loadbang;
 #N canvas 555 179 313 396 opLevels 0;
 #X obj 83 210 dac~;
 #X obj 30 70 catch~ l;
@@ -122,20 +122,20 @@
 #X connect 6 0 9 0;
 #X connect 7 0 4 1;
 #X connect 7 0 3 1;
-#X restore 427 102 pd opLevels;
-#X obj 430 73 hsl 100 25 0.1 1e+09 1 0 empty empty empty -2 -8 0 10
--262144 -1 -1 5248 1;
-#X obj 427 2 r GAIN;
-#X floatatom 370 103 8 0 0 0 - - -;
-#X obj -227 545 s hiltThick;
-#X obj 315 63 metro 25;
-#X msg 206 221 100;
-#X msg 79 494 120;
-#X msg 126 416 60;
-#X msg 89 307 270;
-#X msg 170 416 90;
-#X msg -171 120 1;
-#N canvas 226 253 928 460 sources 1;
+#X restore 914 102 pd opLevels;
+#X obj 917 73 hsl 100 25 0.1 1e+09 1 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 7622 1;
+#X obj 914 2 r GAIN;
+#X floatatom 857 103 8 0 0 0 - - -, f 8;
+#X obj 260 545 s hiltThick;
+#X obj 802 63 metro 25;
+#X msg 693 221 100;
+#X msg 566 494 120;
+#X msg 613 416 60;
+#X msg 576 307 270;
+#X msg 657 416 90;
+#X msg 316 120 1;
+#N canvas 226 253 928 460 sources 0;
 #X obj 117 -98 sweepTime;
 #N canvas 452 68 1135 756 arcDist 0;
 #X obj 118 59 bng 50 250 50 0 empty empty empty 17 7 0 10 -4034 -1
@@ -296,7 +296,7 @@ are greater than 180 degrees.;
 #X connect 70 0 71 0;
 #X restore 117 -121 pd arcDist;
 #X obj 187 -120 centreAngles;
-#N canvas 656 32 742 749 tipRe 0;
+#N canvas 656 50 742 749 tipRe 0;
 #X text -122 17 Start calculation with elevation = 0 \, arm length
 is constant \, acceleration/deceleration is constant.;
 #X msg -249 393 \$1 \$2;
@@ -524,7 +524,7 @@ the elevation angle is not considered.;
 #X obj 381 351 outlet;
 #X obj 381 323 spigot;
 #X obj 336 322 spigot;
-#X floatatom 335 361 5 0 0 0 - - -;
+#X floatatom 335 361 5 0 0 0 - - -, f 5;
 #X msg 384 257 1;
 #X msg 413 258 0;
 #X obj 420 217 r PGA;
@@ -567,56 +567,56 @@ the elevation angle is not considered.;
 #X connect 26 1 27 0;
 #X connect 27 0 15 0;
 #X restore 745 174 pd sourceTipSpeed;
-#N canvas 144 122 1130 580 sourceTipPositions 0;
-#X obj 271 193 r Zobs;
+#N canvas 142 122 1130 580 sourceTipPositions 0;
+#X obj 301 193 r Zobs;
 #X obj 185 191 r Yobs;
 #X obj 101 183 r Xobs;
 #X obj 86 252 -~;
 #X obj 86 276 *~;
 #X obj 170 254 -~;
 #X obj 170 283 *~;
-#X obj 256 254 -~;
-#X obj 256 278 *~;
+#X obj 286 254 -~;
+#X obj 286 278 *~;
 #X obj 155 317 +~;
 #X obj 155 349 +~;
 #X obj 155 376 sqrt~;
-#X obj 271 235 line~;
-#X msg 271 213 \$1 5;
+#X obj 301 235 line~;
+#X msg 301 213 \$1 5;
 #X obj 185 233 line~;
 #X msg 185 212 \$1 5;
 #X obj 101 229 line~;
 #X msg 101 207 \$1 5;
 #X obj 86 163 *~ 1;
 #X obj 170 169 *~ 1;
-#X obj 256 173 *~ 1;
+#X obj 286 173 *~ 1;
 #X obj 521 414 outlet~;
 #X obj 434 414 outlet~;
 #X obj 155 401 outlet~;
 #X text 150 439 source distance from Observer;
 #X text 360 440 source - Obs Elevation;
 #X text 525 438 source - Obs Azimuth;
-#X obj 831 345 r myMet;
-#X obj 830 370 snapshot~;
-#X floatatom 899 391 0 0 0 0 - - -;
-#X obj 738 149 /~;
-#X obj 738 172 atan~;
-#X obj 738 195 /~ 3.14159;
-#X obj 738 219 abs~;
-#X obj 723 285 spigot~;
-#X obj 762 242 >~ 0;
-#X obj 690 230 sig~ 1;
+#X obj 830 385 r myMet;
+#X obj 830 430 snapshot~;
+#X floatatom 899 451 0 0 0 0 - - -;
+#X obj 740 109 /~;
+#X obj 740 132 atan~;
+#X obj 740 155 /~ 3.14159;
+#X obj 740 179 abs~;
+#X obj 723 325 spigot~;
+#X obj 769 202 >~ 0;
+#X obj 682 179 sig~ 1;
 #X obj 723 262 -~;
-#X obj 858 309 spigot~;
-#X obj 897 265 <~ 0;
-#X obj 830 396 outlet;
-#X text 822 423 Pan Value;
-#X obj 797 242 r myMet;
-#X obj 762 263 snapshot~;
-#X obj 930 264 r myMet;
-#X obj 897 287 snapshot~;
+#X obj 858 349 spigot~;
+#X obj 904 269 <~ 0;
+#X obj 830 456 outlet;
+#X text 822 483 Pan Value;
+#X obj 814 202 r myMet;
+#X obj 769 263 snapshot~;
+#X obj 957 269 r myMet;
+#X obj 904 327 snapshot~;
 #X obj 86 136 r~ tipX;
 #X obj 170 145 r~ tipY;
-#X obj 256 150 r~ tipZ;
+#X obj 286 150 r~ tipZ;
 #X text 171 33 Calculates position of the tip source.;
 #N canvas 380 110 1003 782 SourceAngles 0;
 #X obj -8305 185 *~;
@@ -1247,7 +1247,7 @@ the elevation angle is not considered.;
 #X obj 177 247 <= 0;
 #X obj 150 188 t f f;
 #X obj 23 231 spigot~;
-#X floatatom 188 285 5 0 0 0 - - -;
+#X floatatom 188 285 5 0 0 0 - - -, f 5;
 #X floatatom 274 352 0 0 0 0 - - -;
 #X floatatom 328 375 0 0 0 0 - - -;
 #X floatatom 490 228 0 0 0 0 - - -;
@@ -2026,7 +2026,7 @@ the elevation angle is not considered.;
 #X obj 23 231 spigot~;
 #X floatatom 341 376 0 0 0 0 - - -;
 #X floatatom 351 213 0 0 0 0 - - -;
-#X floatatom 182 313 5 0 0 0 - - -;
+#X floatatom 182 313 5 0 0 0 - - -, f 5;
 #X text 39 39 comment;
 #X connect 0 0 30 0;
 #X connect 1 0 2 0;
@@ -2409,7 +2409,7 @@ the elevation angle is not considered.;
 #X obj 177 247 <= 0;
 #X obj 150 188 t f f;
 #X obj 23 231 spigot~;
-#X floatatom 182 289 5 0 0 0 - - -;
+#X floatatom 182 289 5 0 0 0 - - -, f 5;
 #X floatatom 292 264 0 0 0 0 - - -;
 #X floatatom 326 356 0 0 0 0 - - -;
 #X connect 0 0 30 0;
@@ -2811,7 +2811,7 @@ the elevation angle is not considered.;
 #X connect 18 0 10 0;
 #X restore 311 -99 pd sourceQuantity;
 #N canvas 332 130 768 537 contPlaneFind 0;
-#N canvas 300 23 1010 851 baseFind 0;
+#N canvas 300 50 1010 851 baseFind 0;
 #X obj -8813 28 bng 50 250 50 0 empty empty empty 17 7 0 10 -4034 -1
 -1;
 #X obj -8813 81 s GO;
@@ -3474,7 +3474,7 @@ the sword when the observer position is projected on;
 #X obj 177 247 <= 0;
 #X obj 150 188 t f f;
 #X obj 23 231 spigot~;
-#X floatatom 188 285 5 0 0 0 - - -;
+#X floatatom 188 285 5 0 0 0 - - -, f 5;
 #X floatatom 282 331 0 0 0 0 - - -;
 #X floatatom 321 361 0 0 0 0 - - -;
 #X connect 0 0 30 0;
@@ -3858,7 +3858,7 @@ the sword when the observer position is projected on;
 #X obj 177 247 <= 0;
 #X obj 150 188 t f f;
 #X obj 23 231 spigot~;
-#X floatatom 188 285 5 0 0 0 - - -;
+#X floatatom 188 285 5 0 0 0 - - -, f 5;
 #X floatatom 234 332 0 0 0 0 - - -;
 #X floatatom 295 378 0 0 0 0 - - -;
 #X connect 0 0 30 0;
@@ -4212,7 +4212,7 @@ the sword when the observer position is projected on;
 #X restore 49 210 pd sourcePositions;
 #X text 480 -91 Patch that holds all the sources that are used to produce
 the basic aeolian tone.;
-#N canvas 230 416 532 341 strike 1;
+#N canvas 230 416 532 341 strike 0;
 #X obj 107 151 line~;
 #X obj 107 38 r strike;
 #X obj 107 86 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -4356,151 +4356,151 @@ the basic aeolian tone.;
 #X connect 22 1 32 3;
 #X connect 22 2 32 4;
 #X connect 22 3 32 5;
-#X restore 219 144 pd sources;
-#X floatatom 227 52 5 0 0 0 - - -;
-#X obj -276 345 hsl 100 20 0.1 3 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3561 1;
-#X floatatom -319 368 5 0 0 0 - - -;
-#X obj -324 319 r setUp;
-#X obj -279 300 r thisLength;
-#X obj -279 368 s bladeLen;
-#X text -160 56 X Position;
-#X text -166 149 Y Position;
-#X text -168 239 Z Position;
-#X msg -271 321 0.2;
-#X msg -232 322 1;
-#X msg -190 317 2;
-#X obj 83 126 Uzi 20;
-#X msg 79 416 45;
-#X msg 109 492 135;
-#X obj 969 366 s thisPoE;
-#X obj 945 387 s thisPrE;
-#X obj 922 408 s thisPoA;
-#X obj 898 326 s thisPrA;
-#X obj 732 392 s thisXobs;
-#X obj 874 348 s thisTT;
-#X obj 850 370 s thisHT;
-#X obj 827 393 s thisTS;
-#X obj 803 325 s thisLength;
-#X obj 779 348 s thisZobs;
-#X obj 755 370 s thisYobs;
-#X obj 993 346 s GAIN;
-#X obj 62 0 r preswing;
-#X obj 1017 325 s preswing;
-#X msg -131 561 0.025;
-#X msg -78 119 -3;
-#X obj -170 100 loadbang;
-#X obj -158 25 loadbang;
-#X obj -196 189 loadbang;
-#X obj -189 292 loadbang;
-#X obj -141 384 loadbang;
-#X obj -153 487 loadbang;
-#X obj 136 200 loadbang;
-#X obj 169 394 loadbang;
-#X msg -196 210 0.5;
-#X floatatom -82 63 0 0 0 0 - - -;
-#X msg 87 225 135;
-#X msg 238 222 179;
-#X msg -204 491 0.01;
-#X msg 436 48 5e+06;
-#X msg -272 122 0.07;
-#X msg -210 575 0.007;
-#X msg -135 212 2;
-#X msg -150 320 0.781;
-#X obj 584 32 bng 25 250 50 0 empty empty empty 17 7 0 10 -261234 -1
--1;
-#X obj 584 80 s MLB;
-#X msg -228 211 1;
-#X obj 637 33 bng 25 250 50 0 empty empty empty 17 7 0 10 -262130 -1
--1;
-#X obj 637 81 s SWD1;
-#X obj 584 60 uzi 20;
-#X obj 637 61 uzi 20;
-#X obj 584 104 bng 25 250 50 0 empty empty empty 17 7 0 10 -204786
+#X restore 706 144 pd sources;
+#X floatatom 714 52 5 0 0 0 - - -, f 5;
+#X obj 211 345 hsl 100 20 0.1 3 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3072 1;
+#X floatatom 168 368 5 0 0 0 - - -, f 5;
+#X obj 163 319 r setUp;
+#X obj 208 300 r thisLength;
+#X obj 208 368 s bladeLen;
+#X text 327 56 X Position;
+#X text 321 149 Y Position;
+#X text 319 239 Z Position;
+#X msg 216 321 0.2;
+#X msg 255 322 1;
+#X msg 297 317 2;
+#X obj 570 126 Uzi 20;
+#X msg 566 416 45;
+#X msg 596 492 135;
+#X obj 1456 366 s thisPoE;
+#X obj 1432 387 s thisPrE;
+#X obj 1409 408 s thisPoA;
+#X obj 1385 326 s thisPrA;
+#X obj 1219 392 s thisXobs;
+#X obj 1361 348 s thisTT;
+#X obj 1337 370 s thisHT;
+#X obj 1314 393 s thisTS;
+#X obj 1290 325 s thisLength;
+#X obj 1266 348 s thisZobs;
+#X obj 1242 370 s thisYobs;
+#X obj 1480 346 s GAIN;
+#X obj 549 0 r preswing;
+#X obj 1504 325 s preswing;
+#X msg 356 561 0.025;
+#X msg 409 119 -3;
+#X obj 317 100 loadbang;
+#X obj 329 25 loadbang;
+#X obj 291 189 loadbang;
+#X obj 298 292 loadbang;
+#X obj 346 384 loadbang;
+#X obj 334 487 loadbang;
+#X obj 623 200 loadbang;
+#X obj 656 394 loadbang;
+#X msg 291 210 0.5;
+#X floatatom 405 63 0 0 0 0 - - -;
+#X msg 574 225 135;
+#X msg 725 222 179;
+#X msg 283 491 0.01;
+#X msg 923 48 5e+06;
+#X msg 215 122 0.07;
+#X msg 277 575 0.007;
+#X msg 352 212 2;
+#X msg 337 320 0.781;
+#X obj 1071 32 bng 25 250 50 0 empty empty empty 17 7 0 10 -261234
 -1 -1;
-#X obj 584 132 uzi 20;
-#X obj 584 152 s SWD2;
-#X obj 740 215 r MLB;
-#X obj 739 140 r SWD1;
-#X obj 738 -7 r PGA;
-#X obj 738 67 r SWD2;
-#X obj 732 288 route Xpos Ypos Zpos Len TopSpeed HiltThick TipThick
+#X obj 1071 80 s MLB;
+#X msg 259 211 1;
+#X obj 1124 33 bng 25 250 50 0 empty empty empty 17 7 0 10 -262130
+-1 -1;
+#X obj 1124 81 s SWD1;
+#X obj 1071 60 uzi 20;
+#X obj 1124 61 uzi 20;
+#X obj 1071 104 bng 25 250 50 0 empty empty empty 17 7 0 10 -204786
+-1 -1;
+#X obj 1071 132 uzi 20;
+#X obj 1071 152 s SWD2;
+#X obj 1227 215 r MLB;
+#X obj 1226 140 r SWD1;
+#X obj 1225 -7 r PGA;
+#X obj 1225 67 r SWD2;
+#X obj 1219 288 route Xpos Ypos Zpos Len TopSpeed HiltThick TipThick
 PreAzim PostAzim PreElev PostElev Gain Trigger;
-#X obj 634 104 bng 25 250 50 0 empty empty empty 17 7 0 10 -204800
+#X obj 1121 104 bng 25 250 50 0 empty empty empty 17 7 0 10 -204800
 -1 -1;
-#X obj 634 132 uzi 20;
-#X obj 634 152 s PGA;
-#X msg -128 120 0.35;
-#X obj 818 566 hsl 85 35 0.1 1e+09 1 0 empty empty Gain 0 16 0 14 -203904
--1 -1 4453 1;
-#X obj 818 619 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
-#X obj 881 619 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
-#X obj 864 508 bng 50 250 50 0 empty empty Go 14 24 0 16 -4034 -1 -1
-;
-#X obj 804 508 bng 50 250 50 0 empty empty Prime 0 22 0 16 -257985
--1 -1;
-#X obj 633 636 hsl 100 35 0 180 0 0 empty empty Elevation-Post 2 16
-0 12 -261682 -1 -1 9350 1;
-#X obj 633 598 hsl 100 35 0 180 0 0 empty empty Elevation-Pre 2 16
-0 12 -261682 -1 -1 275 1;
-#X obj 633 554 hsl 100 35 180 360 0 0 empty empty Azimuth-Post 2 16
-0 12 -261234 -1 -1 3850 1;
-#X obj 633 516 hsl 100 35 0 360 0 0 empty empty Azimuth-Pre 2 16 0
-12 -261234 -1 -1 27 1;
-#X obj 427 518 hsl 100 35 -50 50 0 0 empty empty Observer-X 2 16 0
-12 -262130 -1 -1 4970 1;
-#X obj 427 558 hsl 100 35 -50 50 0 0 empty empty Observer-Y 2 16 0
-12 -262130 -1 -1 4999 1;
-#X obj 427 598 hsl 100 35 -50 50 0 0 empty empty Observer-Z 2 16 0
-12 -262130 -1 -1 5148 1;
-#X obj 634 708 hsl 100 35 0 700 0 0 empty empty Top-Tip-Speed 2 16
-0 12 -204786 -1 -1 566 1;
-#X obj 427 666 hsl 100 35 0 0.09 0 0 empty empty Thickness-Hilt 2 16
-0 12 -204800 -1 -1 1672 1;
-#X obj 427 705 hsl 100 35 0.0001 0.1 0 0 empty empty Thickness-Tip
-2 16 0 12 -204800 -1 -1 832 1;
-#X obj 718 440 bng 50 250 50 0 empty empty MLB 12 22 0 16 -261234 -1
+#X obj 1121 132 uzi 20;
+#X obj 1121 152 s PGA;
+#X msg 359 120 0.35;
+#X obj 1305 566 hsl 85 35 0.1 1e+09 1 0 empty empty Gain 0 16 0 14
+-203904 -1 -1 0 1;
+#X obj 1305 619 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 1368 619 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 1351 508 bng 50 250 50 0 empty empty Go 14 24 0 16 -4034 -1
 -1;
-#X obj 516 440 bng 50 250 50 0 empty empty Model1 5 22 0 12 -262130
+#X obj 1291 508 bng 50 250 50 0 empty empty Prime 0 22 0 16 -257985
 -1 -1;
-#X obj 584 440 bng 50 250 50 0 empty empty Model2 5 22 0 12 -204786
+#X obj 1120 636 hsl 100 35 0 180 0 0 empty empty Elevation-Post 2 16
+0 12 -261682 -1 -1 0 1;
+#X obj 1120 598 hsl 100 35 0 180 0 0 empty empty Elevation-Pre 2 16
+0 12 -261682 -1 -1 0 1;
+#X obj 1120 554 hsl 100 35 180 360 0 0 empty empty Azimuth-Post 2 16
+0 12 -261234 -1 -1 0 1;
+#X obj 1120 516 hsl 100 35 0 360 0 0 empty empty Azimuth-Pre 2 16 0
+12 -261234 -1 -1 0 1;
+#X obj 914 518 hsl 100 35 -50 50 0 0 empty empty Observer-X 2 16 0
+12 -262130 -1 -1 0 1;
+#X obj 914 558 hsl 100 35 -50 50 0 0 empty empty Observer-Y 2 16 0
+12 -262130 -1 -1 0 1;
+#X obj 914 598 hsl 100 35 -50 50 0 0 empty empty Observer-Z 2 16 0
+12 -262130 -1 -1 0 1;
+#X obj 1121 708 hsl 100 35 0 700 0 0 empty empty Top-Tip-Speed 2 16
+0 12 -204786 -1 -1 0 1;
+#X obj 914 666 hsl 100 35 0 0.09 0 0 empty empty Thickness-Hilt 2 16
+0 12 -204800 -1 -1 0 1;
+#X obj 914 705 hsl 100 35 0.0001 0.1 0 0 empty empty Thickness-Tip
+2 16 0 12 -204800 -1 -1 0 1;
+#X obj 1205 440 bng 50 250 50 0 empty empty MLB 12 22 0 16 -261234
 -1 -1;
-#X obj 652 440 bng 50 250 50 0 empty empty PGA 12 22 0 16 -204800 -1
--1;
-#X floatatom 534 525 8 0 0 0 - - -;
-#X floatatom 535 563 8 0 0 0 - - -;
-#X floatatom 536 604 8 0 0 0 - - -;
-#X floatatom 538 674 8 0 0 0 - - -;
-#X floatatom 539 713 8 0 0 0 - - -;
-#X floatatom 744 529 5 0 0 0 - - -;
-#X floatatom 744 561 5 0 0 0 - - -;
-#X floatatom 744 607 5 0 0 0 - - -;
-#X floatatom 743 646 5 0 0 0 - - -;
-#X floatatom 743 716 8 0 0 0 - - -;
-#X floatatom 913 576 8 0 0 0 - - -;
-#X text 465 498 Distance - Metres;
-#X text 460 647 Thickness - Metres;
-#X text 679 499 Angles - Degrees;
-#X text 670 689 Speed - Metres/Second;
-#X text 605 765 Demo of sword / swing effect using real-time Aeolian
+#X obj 1003 440 bng 50 250 50 0 empty empty Model1 5 22 0 12 -262130
+-1 -1;
+#X obj 1071 440 bng 50 250 50 0 empty empty Model2 5 22 0 12 -204786
+-1 -1;
+#X obj 1139 440 bng 50 250 50 0 empty empty PGA 12 22 0 16 -204800
+-1 -1;
+#X floatatom 1021 525 8 0 0 0 - - -, f 8;
+#X floatatom 1022 563 8 0 0 0 - - -, f 8;
+#X floatatom 1023 604 8 0 0 0 - - -, f 8;
+#X floatatom 1025 674 8 0 0 0 - - -, f 8;
+#X floatatom 1026 713 8 0 0 0 - - -, f 8;
+#X floatatom 1231 529 5 0 0 0 - - -, f 5;
+#X floatatom 1231 561 5 0 0 0 - - -, f 5;
+#X floatatom 1231 607 5 0 0 0 - - -, f 5;
+#X floatatom 1230 646 5 0 0 0 - - -, f 5;
+#X floatatom 1230 716 8 0 0 0 - - -, f 8;
+#X floatatom 1400 576 8 0 0 0 - - -, f 8;
+#X text 952 498 Distance - Metres;
+#X text 947 647 Thickness - Metres;
+#X text 1166 499 Angles - Degrees;
+#X text 1157 689 Speed - Metres/Second;
+#X text 1092 765 Demo of sword / swing effect using real-time Aeolian
 tone synthesis model. For the angles \, 0 degrees azimuth is directly
 behind the swordsperson \, 180 degrees directly infront and the point
 of strike & maximum velocity.;
-#X text 800 470 Click Prime after changing;
-#X text 800 481 settings \, prior to Go.;
-#X obj 427 762 hsl 100 35 0.1 3 0 0 empty empty Blade-Length 2 16 0
-12 -203904 -45076 -45076 3561 1;
-#X floatatom 539 771 8 0 0 0 - - -;
-#X msg 738 14 Xpos 0.2 \, Ypos 0.5 \, Zpos 2 \, Len 1.143 \, TopSpeed
+#X text 1287 470 Click Prime after changing;
+#X text 1287 481 settings \, prior to Go.;
+#X obj 914 762 hsl 100 35 0.1 3 0 0 empty empty Blade-Length 2 16 0
+12 -203904 -45076 -45076 0 1;
+#X floatatom 1026 771 8 0 0 0 - - -, f 8;
+#X msg 1225 14 Xpos 0.2 \, Ypos 0.5 \, Zpos 2 \, Len 1.143 \, TopSpeed
 40 \, HiltThick 0.0152 \, TipThick 0.0085 \, PreAzim 1 \, PostAzim
 250 \, PreElev 5 \, PostElev 170 \, Gain 20000 \, Trigger bang;
-#X msg 738 87 Xpos 0.2 \, Ypos 0.5 \, Zpos 1 \, Len 1.2 \, TopSpeed
+#X msg 1225 87 Xpos 0.2 \, Ypos 0.5 \, Zpos 1 \, Len 1.2 \, TopSpeed
 36 \, HiltThick 0.016 \, TipThick 0.013 \, PreAzim 60 \, PostAzim 235
 \, PreElev 45 \, PostElev 120 \, Gain 20000 \, Trigger bang;
-#X msg 739 161 Xpos 0.2 \, Ypos 1 \, Zpos 1 \, Len 1.118 \, TopSpeed
+#X msg 1226 161 Xpos 0.2 \, Ypos 1 \, Zpos 1 \, Len 1.118 \, TopSpeed
 36 \, HiltThick 0.013 \, TipThick 0.008 \, PreAzim 112 \, PostAzim
 235 \, PreElev 90 \, PostElev 90 \, Gain 20000 \, Trigger bang;
-#X msg 740 238 Xpos 3 \, Ypos 1 \, Zpos 0.5 \, Len 0.781 \, TopSpeed
+#X msg 1227 238 Xpos 3 \, Ypos 1 \, Zpos 0.5 \, Len 0.781 \, TopSpeed
 35 \, HiltThick 0.028 \, TipThick 0.057 \, PreAzim 6 \, PostAzim 300
 \, PreElev 25 \, PostElev 90 \, Gain 50000 \, Trigger bang;
 #X connect 0 0 1 0;
@@ -4689,4 +4689,4 @@ of strike & maximum velocity.;
 #X connect 208 0 163 0;
 #X connect 209 0 163 0;
 #X connect 210 0 163 0;
-#X coords 0 -1 1 1 580 410 2 400 430;
+#X coords 0 -1 1 1 600 410 2 900 430;
