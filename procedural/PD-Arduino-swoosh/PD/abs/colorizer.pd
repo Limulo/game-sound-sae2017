@@ -1,0 +1,13 @@
+#N canvas 562 533 240 174 10;
+#X obj 27 17 inlet toggle;
+#X obj 27 123 outlet color;
+#X msg 54 74 color 13 22 22;
+#X msg 27 95 color 16 22 22;
+#X obj 27 47 sel 1;
+#X text 153 75 red;
+#X text 153 99 green;
+#X connect 0 0 4 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 4 1 2 0;
