@@ -110,9 +110,11 @@ SID [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64
 {: class="dashed"}
 
 
-### Procedura sword by Rod Selfridge
+### Procedural sword by Rod Selfridge
 
+A model by _Rod Selfridge_ (here's the [paper]())
 PD objects which are needed:
+
 * prvu~ (_iemlib_ library??)
 * acos (_cyclone_ library)
 * atan~ (_cyclone_ library)

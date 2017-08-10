@@ -1,0 +1,107 @@
+#N canvas 54 174 1311 519 10;
+#X obj 100 105 cnv 15 90 240 empty empty OpenClose 5 12 0 14 -232576
+-66577 0;
+#X obj 105 155 tgl 15 0 empty empty ON/OFF 17 7 0 10 -258699 -1 -1
+0 1;
+#X obj 288 139 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 288 119 change;
+#X obj 288 193 reverse;
+#X obj 147 178 tgl 15 0 empty empty rev. 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 105 178 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 348 193 spigot;
+#X obj 105 228 tgl 15 0 empty empty ON/OFF 17 7 0 10 -258699 -1 -1
+0 1;
+#X obj 415 139 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 415 119 change;
+#X obj 415 266 reverse;
+#X obj 147 251 tgl 15 0 empty empty rev. 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 105 251 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 475 266 spigot;
+#X obj 105 305 tgl 15 0 empty empty ON/OFF 17 7 0 10 -258699 -1 -1
+0 1;
+#X obj 535 139 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 535 119 change;
+#X obj 535 343 reverse;
+#X obj 147 328 tgl 15 0 empty empty rev. 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 105 328 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 595 343 spigot;
+#X obj 9 155 colorizer;
+#X obj 9 228 colorizer;
+#X obj 9 305 colorizer;
+#X obj 9 100 loadbang;
+#X msg 9 122 0;
+#X obj 288 96 inlet cardoor-left;
+#X obj 415 96 inlet trunk;
+#X obj 535 96 inlet cardoor-right;
+#X text 105 135 1) door left;
+#X text 105 208 2) trunk;
+#X text 105 288 3) door right;
+#X obj 348 397 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 475 397 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 595 397 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 595 417 outlet cardoor-right;
+#X obj 475 417 outlet trunk;
+#X obj 348 417 outlet cardoor-left;
+#X text 167 121 v02;
+#X obj 732 416 outlet cardoor-left-2-silencer;
+#X obj 759 392 outlet trunk-2-silencer;
+#X obj 799 372 outlet cardoor-right-2-silencer;
+#X obj 732 193 f;
+#X obj 759 266 f;
+#X obj 799 343 f;
+#X connect 1 0 7 1;
+#X connect 1 0 22 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 1;
+#X connect 6 0 7 0;
+#X connect 6 0 43 0;
+#X connect 7 0 33 0;
+#X connect 8 0 14 1;
+#X connect 8 0 23 0;
+#X connect 9 0 11 0;
+#X connect 10 0 9 0;
+#X connect 11 0 13 0;
+#X connect 12 0 11 1;
+#X connect 13 0 14 0;
+#X connect 13 0 44 0;
+#X connect 14 0 34 0;
+#X connect 15 0 21 1;
+#X connect 15 0 24 0;
+#X connect 16 0 18 0;
+#X connect 17 0 16 0;
+#X connect 18 0 20 0;
+#X connect 19 0 18 1;
+#X connect 20 0 21 0;
+#X connect 20 0 45 0;
+#X connect 21 0 35 0;
+#X connect 22 0 1 0;
+#X connect 23 0 8 0;
+#X connect 24 0 15 0;
+#X connect 25 0 26 0;
+#X connect 26 0 1 0;
+#X connect 26 0 8 0;
+#X connect 26 0 15 0;
+#X connect 27 0 3 0;
+#X connect 28 0 10 0;
+#X connect 29 0 17 0;
+#X connect 33 0 38 0;
+#X connect 34 0 37 0;
+#X connect 35 0 36 0;
+#X connect 43 0 40 0;
+#X connect 44 0 41 0;
+#X connect 45 0 42 0;
+#X coords 0 -1 1 1 90 250 2 100 100;
