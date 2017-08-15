@@ -100,8 +100,6 @@ Anche dalle immagini che mostrano la forma d'onda della parte iniziale della pri
 <img src="./images/ed-agosto-settembre-2017/pt2/waveform1.jpg" alt="waveform 1" width="100%" />
 
 <img src="./images/ed-agosto-settembre-2017/pt2/waveform2.jpg" alt="waveform 2" width="100%" />
-![wave](/images/ed-agosto-settembre-2017/pt2/waveform2.jpg)
-
 
 Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>
 [.sid files collection/database](http://hvsc.c64.org/)
@@ -109,6 +107,10 @@ Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2]
 SID [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID)
 {: class="dashed"}
 
+TODO: ascolto del brano su multitraccia Audacity
+
+
+{% comment %}
 
 ### Procedural sword by Rod Selfridge
 
@@ -122,7 +124,7 @@ PD objects which are needed:
 * Uzi (_cyclone_ library)
 * spigot~ (?? library)
 * sin~
-
+{% endcomment %}
 
 
 <a id="pt3"></a>

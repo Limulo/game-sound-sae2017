@@ -1,8 +1,8 @@
-#N canvas 64 7 433 467 10;
+#N canvas 557 154 544 531 10;
 #X obj 28 24 bng 20 400 50 0 empty empty boom 0 -6 1 8 -262144 -33289
 -33289;
 #X obj 335 447 dac~;
-#N canvas 131 35 293 592 pressurewave 0;
+#N canvas 131 50 293 592 pressurewave 0;
 #X obj 149 525 *~;
 #X obj 31 270 sig~ 1;
 #X obj 31 292 -~;
@@ -14,7 +14,7 @@
 #X obj 1 25 delwrite~ \$0-variabledelay 10000;
 #X obj 31 361 vd~ \$0-variabledelay;
 #X obj 149 546 s~ \$0-feedback;
-#X obj 91 245 -~ 1e-04;
+#X obj 91 245 -~ 0.0001;
 #X obj 91 144 del 3;
 #X obj 141 143 * 8000;
 #X obj 1 246 inlet~ sound;
@@ -65,7 +65,7 @@
 #X obj 274 170 *~;
 #X obj 335 397 catch~ out;
 #X obj 141 89 hsl 64 12 0 1 0 1 empty empty vol 15 6 1 8 -262144 -1
--1 6300 1;
+-1 4900 1;
 #X obj 122 106 *~;
 #X obj 122 128 throw~ out;
 #X obj 115 153 hsl 64 12 0 1 0 1 empty empty fx 15 6 1 8 -262144 -1
@@ -154,15 +154,15 @@
 -1 6300 1;
 #X obj 7 170 *~;
 #X obj 7 192 throw~ out;
-#X obj 89 354 hsl 64 12 0 1 0 1 empty empty sweep 15 6 1 8 -262144
+#X obj 90 354 hsl 64 12 0 1 0 1 empty empty sweep 15 6 1 8 -262144
 -1 -1 4700 1;
-#X obj 64 337 hsl 64 12 0 1 0 1 empty empty delay 15 6 1 8 -262144
+#X obj 65 337 hsl 64 12 0 1 0 1 empty empty delay 15 6 1 8 -262144
 -1 -1 4200 1;
 #X obj 36 313 r trig;
 #X obj 10 447 throw~ out;
 #X obj 233 7 hsl 64 12 0 1 0 1 empty empty spread 15 6 1 8 -262144
 -1 -1 2200 1;
-#N canvas 143 170 222 478 blast 0;
+#N canvas 141 197 222 478 blast 0;
 #X obj 3 -21 noise~;
 #X obj 4 211 *~;
 #X obj 4 90 clip~ -1 1;
@@ -241,7 +241,7 @@
 #X obj 219 238 * 100;
 #X obj 250 348 hsl 64 12 0 1 0 1 empty empty width 15 6 1 8 -262144
 -1 -1 4300 1;
-#X obj 218 304 r trig;
+#X obj 219 304 r trig;
 #X obj 209 408 hsl 64 12 0 1 0 1 empty empty vol 15 6 1 8 -262144 -1
 -1 4100 1;
 #X obj 190 447 throw~ out;
@@ -255,10 +255,10 @@
 #X obj 10 426 *~;
 #X obj 29 411 hsl 64 12 0 1 0 1 empty empty vol 15 6 1 8 -262144 -1
 -1 2400 1;
-#X obj 218 326 del 30;
-#X obj 258 267 hsl 64 12 0 1 0 1 empty empty delay 15 6 1 8 -262144
+#X obj 219 326 del 30;
+#X obj 261 267 hsl 64 12 0 1 0 1 empty empty delay 15 6 1 8 -262144
 -1 -1 2900 1;
-#X obj 255 284 * 200;
+#X obj 258 284 * 200;
 #X obj 247 365 * 20;
 #X obj 177 46 hsl 64 12 0 1 0 1 empty empty decay 15 6 1 8 -262144
 -1 -1 2500 1;

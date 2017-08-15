@@ -71,8 +71,8 @@ We can find the same concepts in many others software and hardware products like
 * Audiokinetic **Wwsise**'s plugins: [SoundSeed](https://www.audiokinetic.com/products/wwise-add-ons/soundseed/)
 * [adx2](http://www.criware.com/en/products/adx2.html) by Cri middleware
 * **Tsugi** [audio products](http://tsugi-studio.com/web/en/products.html) like, for example, [Game Synth](http://tsugi-studio.com/web/en/products-gamesynth.html) or [DSP retro](http://tsugi-studio.com/web/en/products-dspretro.html) among others;
+* **AudioGaming** [Le sound](https://lesound.io/product-category/sound-design/) sound design products;
 * [bfxr](http://www.bfxr.net/) an online and offline sound effect generator. It was born after the [Tomas Pettersson](http://www.drpetter.se/about.html) [sfxr](http://drpetter.se/project_sfxr.html) previous project. This is [as3sfxr](http://www.superflashbros.net/as3sfxr/), a Flash porting.
-* [Le sound AudioGaming](https://lesound.io/)
 * [Praat](http://www.fon.hum.uva.nl/praat/);
 * [Sonic Visualizer](http://www.sonicvisualiser.org/);
 * [PaulStretch](http://hypermammut.sourceforge.net/paulstretch/) by [Paul Nasca](http://www.paulnasca.com);

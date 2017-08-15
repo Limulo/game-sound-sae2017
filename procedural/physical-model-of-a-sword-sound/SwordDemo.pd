@@ -1,2 +1,4 @@
-#N canvas 521 95 808 624 10;
-#X obj 46 25 SwordCorInterp;
+#N canvas 441 181 661 481 10;
+#X declare -path abstractions;
+#X obj 25 21 SwordCorInterp;
+#X obj 25 450 declare -path abstractions;

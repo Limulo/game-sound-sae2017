@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="896.26312"
+   height="511.15244"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="physically-inpired-model.svg"
+   inkscape:export-filename="/home/v1a1l1e1/Documents/repos/game-sound-sae2017/images/graphics/physically-inpired-model.png"
+   inkscape:export-xdpi="102.82647"
+   inkscape:export-ydpi="102.82647">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4328"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7320-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3374"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3376"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3378"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3380"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask4001">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4003"
+         width="144.45181"
+         height="129.29953"
+         x="303.04578"
+         y="29.077654" />
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="375.0498"
+     inkscape:cy="257.15555"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5">
+    <sodipodi:guide
+       orientation="1,0"
+       position="157.42811,42.714285"
+       id="guide3533" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1962.3844,184.94262)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="database"
+     style="display:inline"
+     transform="translate(-1962.3844,184.94262)">
+    <path
+       sodipodi:nodetypes="ccc"
+       inkscape:connector-curvature="0"
+       id="path5388"
+       d="m 1676.9187,-233.76414 0,142.781942 159.9999,0"
+       style="display:inline;opacity:0.3;fill:none;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-9)" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5392"
+       d="m 1467.5727,589.91469 0,-845.56429"
+       style="display:inline;opacity:0.25;fill:none;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-9)" />
+    <g
+       style="display:inline"
+       transform="translate(641.33284,-483.62785)"
+       id="g3160"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 866.37213,220.41222 99.60258,0 43.60259,42.83743 0,138.83743 -143.20517,0 z"
+         id="path3162"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 966.07937,221.01547 0,41.05857 43.41163,0.35306 z"
+         id="path3164"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5533"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(1862.8663,-970.01907)"><flowRegion
+         id="flowRegion5535"><rect
+           id="rect5537"
+           width="586.18353"
+           height="335.72067"
+           x="-121.27673"
+           y="704.13757" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:96px;line-height:79.00000215%;font-family:'Hockey is Lif';-inkscape-font-specification:'Hockey is Lif Medium';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="flowPara5539">limulo.net</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5547"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,-1,1,0,673.47531,385.73302)"><flowRegion
+         id="flowRegion5549"><rect
+           id="rect5551"
+           width="681.20099"
+           height="66.13623"
+           x="-121.27673"
+           y="704.13757" /></flowRegion><flowPara
+         id="flowPara5553"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:80px;line-height:79.00000215%;font-family:'Hockey is Lif';-inkscape-font-specification:'Hockey is Lif Medium';text-align:center;writing-mode:lr-tb;text-anchor:middle">astrazione crescente</flowPara></flowRoot>    <flowRoot
+       transform="translate(1129.3814,-554.44917)"
+       style="font-style:normal;font-weight:normal;font-size:22px;line-height:125%;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot5599"
+       xml:space="preserve"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083"><flowRegion
+         id="flowRegion5601"><rect
+           style="text-align:start;text-anchor:start"
+           y="302.32602"
+           x="391.39307"
+           height="145.25314"
+           width="89.496765"
+           id="rect5603" /></flowRegion><flowPara
+         style="font-size:86px;line-height:100%;text-align:center;letter-spacing:-1.09000003px;text-anchor:middle"
+         id="flowPara5605">.c</flowPara><flowPara
+         style="font-size:48px;line-height:100%;text-align:center;letter-spacing:-1.09000003px;text-anchor:middle"
+         id="flowPara5607">file</flowPara></flowRoot>    <path
+       inkscape:export-ydpi="75.001083"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-9)"
+       d="m 2179.9719,-71.634849 442.3138,0.568462"
+       id="path3505"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:export-ydpi="75.001083"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:;marker-end:url(#Arrow1Mend-9)"
+       d="m 2080.438,-14.777709 c -4.2857,117.142859 171.9719,207.711319 171.9719,207.711319"
+       id="path4271"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="display:inline;fill:#e6e6e6;stroke:#000000;stroke-width:4.83962297;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3200"
+       width="242.26205"
+       height="136.09248"
+       x="1969.8042"
+       y="-140.09441"
+       ry="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3190"
+       style="font-style:normal;font-weight:normal;font-size:22px;line-height:125%;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(1583.2977,-423.14329)"><flowRegion
+         id="flowRegion3192"><rect
+           id="rect3194"
+           width="223.25943"
+           height="163.99921"
+           x="391.39307"
+           y="302.32602" /></flowRegion><flowPara
+         style="font-size:48px;line-height:108.00000429%;text-align:center;letter-spacing:-1.09000003px;text-anchor:middle"
+         id="flowPara3198">signal based model</flowPara></flowRoot>    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3204"
+       d="M 2707.1147,25.222291 C 2694.2576,145.22229 2515.1428,201.50504 2515.1428,201.50504"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3378)"
+       inkscape:export-filename="/home/nicola/Documents/repos/website-restyle2016/assets/images/USBtiny-programmer/01.png"
+       inkscape:export-xdpi="75.001083"
+       inkscape:export-ydpi="75.001083" />
+    <path
+       style="display:inline;fill:#e6e6e6;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:"
+       d="m 2709.6702,-177.94279 141.9775,211.579309 -273.4061,0 z"
+       id="rect3218"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3220"
+       style="font-style:normal;font-weight:normal;font-size:22px;line-height:125%;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(2187.6498,-380.52982)"><flowRegion
+         id="flowRegion3222"><rect
+           id="rect3224"
+           width="262.15027"
+           height="131.16925"
+           x="391.39307"
+           y="302.32602"
+           style="fill:#000000" /></flowRegion><flowPara
+         style="font-size:48px;line-height:108.00000429%;text-align:center;letter-spacing:-1.09000003px;text-anchor:middle;fill:#000000"
+         id="flowPara3228">physical </flowPara><flowPara
+         style="font-size:48px;line-height:108.00000429%;text-align:center;letter-spacing:-1.09000003px;text-anchor:middle;fill:#000000"
+         id="flowPara3381">model</flowPara></flowRoot>    <circle
+       id="path4257"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:"
+       cy="207.78125"
+       cx="2394.0981"
+       r="111.42857" />
+    <flowRoot
+       transform="translate(1893.2977,-166.00043)"
+       style="font-style:normal;font-weight:normal;font-size:22px;line-height:125%;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot4259"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4261"><rect
+           y="302.32602"
+           x="391.39307"
+           height="163.99921"
+           width="223.25943"
+           id="rect4263" /></flowRegion><flowPara
+         id="flowPara4265"
+         style="font-size:48px;line-height:108.00000429%;text-align:center;letter-spacing:-1.09000003px;text-anchor:middle">physically </flowPara><flowPara
+         style="font-size:48px;line-height:108.00000429%;text-align:center;letter-spacing:-1.09000003px;text-anchor:middle"
+         id="flowPara4267">inspired</flowPara><flowPara
+         style="font-size:48px;line-height:108.00000429%;text-align:center;letter-spacing:-1.09000003px;text-anchor:middle"
+         id="flowPara4269">model</flowPara></flowRoot>  </g>
+</svg>

@@ -1,63 +1,63 @@
-#N canvas 666 25 608 656 10;
+#N canvas 148 93 713 561 10;
 #X obj 10 9 loadbang;
 #X msg 10 31 \; pd dsp 1;
 #X msg 9 65 \; pd dsp 0;
 #X obj 100 61 A-timebase;
-#X obj 32 173 B-synth1;
-#X obj 32 150 C-bassline-seq;
-#X obj 100 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 29 169 B-synth1;
+#X obj 29 146 C-bassline-seq;
+#X obj 100 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X floatatom 157 35 5 0 0 0 - - -;
+#X floatatom 157 35 5 0 0 0 - - -, f 5;
 #X msg 157 10 125;
-#X obj 32 282 throw~;
+#X obj 29 278 throw~;
 #X obj 409 132 catch~;
 #X obj 409 188 hip~ 4;
 #X obj 409 212 clip~ -1 1;
 #X obj 409 239 dac~;
 #X obj 476 23 vsl 15 100 0 0.9 0 0 empty empty master_volume 0 -9 0
-10 -257985 -1 -1 0 1;
+10 -257985 -1 -1 3500 1;
 #X msg 476 139 \$1 20;
 #X obj 476 161 line~;
 #X obj 409 164 *~;
 #X obj 157 89 s time;
-#X obj 32 125 r time;
-#X obj 430 633 throw~;
-#X obj 430 525 D-synth2;
-#X obj 496 499 hsl 100 15 0 0.9 0 0 empty empty decay -2 -8 0 10 -262144
--1 -1 1600 1;
-#X obj 495 535 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -260097
--1 -1 7100 1;
-#X msg 445 562 \$1 20;
-#X obj 445 584 line~;
-#X obj 430 610 *~;
-#X obj 107 183 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -260097
--1 -1 6800 1;
-#X msg 47 209 \$1 20;
-#X obj 47 231 line~;
-#X obj 32 257 *~;
-#X obj 338 411 r time;
-#X obj 388 411 loadbang;
-#X msg 388 433 38 40 52 44;
-#X floatatom 426 458 5 0 0 0 - - -;
-#X obj 351 479 E-arpeggiator;
-#X obj 48 599 throw~;
-#X obj 130 499 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -260097
+#X obj 29 121 r time;
+#X obj 500 523 throw~;
+#X obj 500 415 D-synth2;
+#X obj 566 389 hsl 100 15 0 0.9 0 0 empty empty decay -2 -8 0 10 -262144
+-1 -1 5700 1;
+#X obj 565 425 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -260097
+-1 -1 2500 1;
+#X msg 562 452 \$1 20;
+#X obj 562 474 line~;
+#X obj 500 500 *~;
+#X obj 104 179 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -260097
+-1 -1 5300 1;
+#X msg 101 205 \$1 20;
+#X obj 101 227 line~;
+#X obj 29 253 *~;
+#X obj 500 286 r time;
+#X obj 550 286 loadbang;
+#X msg 550 308 38 40 52 44;
+#X floatatom 588 333 5 0 0 0 - - -, f 5;
+#X obj 500 354 E-arpeggiator;
+#X obj 28 489 throw~;
+#X obj 130 389 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -260097
+-1 -1 5500 1;
+#X msg 127 416 \$1 20;
+#X obj 127 438 line~;
+#X obj 28 464 *~;
+#X obj 28 353 G-drum_seq;
+#X obj 28 377 F-drum-synth;
+#X obj 28 329 r time;
+#X obj 256 495 throw~;
+#X obj 338 395 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -260097
 -1 -1 7700 1;
-#X msg 63 526 \$1 20;
-#X obj 63 548 line~;
-#X obj 48 574 *~;
-#X obj 48 463 G-drum_seq;
-#X obj 48 487 F-drum-synth;
-#X obj 48 439 r time;
-#X obj 243 419 throw~;
-#X obj 325 319 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -260097
--1 -1 9400 1;
-#X msg 258 346 \$1 20;
-#X obj 258 368 line~;
-#X obj 243 394 *~;
-#X obj 243 288 H-chord-synth;
-#X obj 243 262 I-chords-seq;
-#X obj 243 233 r time;
+#X msg 335 422 \$1 20;
+#X obj 335 444 line~;
+#X obj 256 470 *~;
+#X obj 256 364 H-chord-synth;
+#X obj 256 338 I-chords-seq;
+#X obj 256 309 r time;
 #X connect 0 0 1 0;
 #X connect 3 1 18 0;
 #X connect 4 0 30 0;
