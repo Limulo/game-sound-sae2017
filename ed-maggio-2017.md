@@ -131,7 +131,7 @@ Alla tadizionale tecnica del loop si associano soluzioni creative per offrire un
 
 <a id="sonic-loop">
 <audio controls style="width:100%">
-  <source src="./music/Sonic_Labyrinth.ogg" type="audio/ogg">
+  <source src="./sounds/Sonic_Labyrinth.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
 <a/>
@@ -380,23 +380,6 @@ I dialoghi vengono registrati in studi per l'ADR. I file sono poi sottoposti al 
 
 TODO
 
-{% comment %}
-```
-notarget
-fov
-cl_testlight
-gl_lightmap 0
-noclip
-gl_lightmap 1
-noclip
-cl_testlights 1
-cl_testlights 0
-s_show 1
-s_show 0
-sv_gravity 100 (default 800)
-```
-{% endcomment %}
-
 <a id="pt2"></a>
 ## Pt2: Suono come modello data driven/event based
 
@@ -495,6 +478,23 @@ esempio PS3 (chiedi a Vale di intervenire)
 A ben vedere però questo sistema basato sui sample audio sembra in contraddizione netta con il dominio visivo, caratterizzato invece da un comportamento **continuo** e guidato da uno stream di parametri piuttosto che da eventi **discreti**.
 
 ## Come funziona un FPS
+
+{% comment %}
+```
+notarget
+fov
+cl_testlight
+gl_lightmap 0
+noclip
+gl_lightmap 1
+noclip
+cl_testlights 1
+cl_testlights 0
+s_show 1
+s_show 0
+sv_gravity 100 (default 800)
+```
+{% endcomment %}
 
 Consideriamo un semplice modello 3D costituito da 4 facce triangolari: occorrono 3 (OpenGL ne usa 4 in realtà) valori numerici corrispondenti ai 3 assi cartesiani per identificare la posizione di ciascuno dei suoi vertici nello spazio tridimensionale.
 
@@ -630,11 +630,11 @@ Tra gli svantaggi:
 
 Al momento attuale non sembra ci sia interesse nell'implementare quanto necessario per inserire questo paradigma nel workflow per la produzione di giochi. Spesso in questi casi ci si scontra con metodi di lavoro consolidati che sono difficili da modificare, soprattutto per via dei costi e dei tempi necessari per la transizione.
 
-### new skills
+### New skills
 
 TODO
 
-### la sintesi è brutta
+### La sintesi è brutta (si fa per dire)
 
 Permane la falsa concezione che la sintesi audio sia in qualche modo sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
 
@@ -663,7 +663,8 @@ Che cosa è PureData? PureData è un linguaggio di programmazione a nodi nato a 
 
 Esempi di procedurale: bells, clocks, water, insects, engine, guns, helicopter (thanks to _Andy Farnell_ and _Alexey Reshetnikov_).
 
-Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree/master/procedural/PureData_examples) è necessario installare una versione di [PureData](http://puredata.info/) e delle seguenti librerie aggiuntive:
+
+Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree/master/resources/procedural/PureData_examples) è necessaria l'installazione di [PureData](http://puredata.info/) e delle seguenti librerie aggiuntive:
 * list_abs (for the **[list_dot]** and **[list_emath]** objects);
 * zexy (for the **[>~]** object);
 * iem_t3_lib (the **[t3_bpe]**, **[t3_line~]** and **[t3_delay]** objects);
@@ -673,12 +674,11 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 * cxc, cyclone, purepd (**[delta~]** object);
 * iemlib (**[init]** object);
 * ggee (**[image]** object);
+{: class="dashed"}
 
 ## Music
 
 TODO
-
-
 
 {% comment %}
 non linearità
@@ -722,7 +722,7 @@ chord has a major 3rd the melody will use a flattened one. This is interesting w
 
 esempio [Zen Games](http://www.limulo.net/games/ZenGame/)
 Le note sono prese a prestito dalla scala pentatonica maggiore di C
-set di regole
+set di regole:
 * durata nel tempo
 * durata della frase che condiziona il verificarsi di una pausa e la durata della stessa
 * probabilità di scegliere una nota all'interno dell'accordo

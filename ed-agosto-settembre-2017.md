@@ -26,13 +26,12 @@ TODO
 ## Pt2:
 
 
-
-
 ### SID
 
 Il SID (Sound Interface Device) era il chip sonoro utilizzato dal Vic20, C64 e C128, sviluppato da _Robert Yannes_ di _MOS technology_ il quale, oltre al background tecnico, ne sapeva molto anche di musica.
 
-<img src="./images/ed-agosto-settembre-2017/pt2/sid.jpg" alt="sid" width="60%" />
+<!--<img src="./images/ed-agosto-settembre-2017/pt2/sid.jpg" alt="sid" width="60%" />-->
+[sid](./images/ed-agosto-settembre-2017/pt2/sid.jpg){: width="60%"}
 
 Il suo intento era sviluppare un chip di sintesi sottrattiva totalemente differente dai sistemi sonori presenti nei computer dell'epoca e il risultato fu qualcosa di innovativo.
 
@@ -107,7 +106,7 @@ Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2]
 SID [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID)
 {: class="dashed"}
 
-TODO: ascolto del brano su multitraccia Audacity
+TODO: ascolto del brano su multitraccia **Audacity**
 
 
 {% comment %}
