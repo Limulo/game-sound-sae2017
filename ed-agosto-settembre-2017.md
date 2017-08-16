@@ -75,21 +75,21 @@ Ecco le tracce separate per apprezzare meglio la ricchezza di variazioni, il tim
 
 <a id="hubbard-1">
 <audio controls style="width:100%">
-  <source src="./music/Rob_Hubbard/commando_track1_voice1.ogg" type="audio/ogg">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice1.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
 <a/>
 
 <a id="hubbard-2">
 <audio controls style="width:100%">
-  <source src="./music/Rob_Hubbard/commando_track1_voice2.ogg" type="audio/ogg">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice2.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
 <a/>
 
 <a id="hubbard-3">
 <audio controls style="width:100%">
-  <source src="./music/Rob_Hubbard/commando_track1_voice3.ogg" type="audio/ogg">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice3.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
 <a/>
@@ -100,13 +100,15 @@ Anche dalle immagini che mostrano la forma d'onda della parte iniziale della pri
 
 <img src="./images/ed-agosto-settembre-2017/pt2/waveform2.jpg" alt="waveform 2" width="100%" />
 
+TODO: ascolto del brano su multitraccia **Audacity**.
+
 Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>
 [.sid files collection/database](http://hvsc.c64.org/)
 [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore;
 SID [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID)
 {: class="dashed"}
 
-TODO: ascolto del brano su multitraccia **Audacity**
+
 
 
 {% comment %}
