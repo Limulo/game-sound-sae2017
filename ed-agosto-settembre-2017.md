@@ -295,16 +295,19 @@ Anche la musica è una elemento che può certo avvantaggiarsi delle tecniche di 
 
 Per la musica si potrebbe aprire un intero capitolo a parte parlando di composizioni interattive, musica generativa/algoritmica, passando per iMuse, Farnell,
 
-Forse in un lezione futura :)
+Forse in una lezione futura :)
 
 {% comment %}
+
 linear music (shuffling) 37:00 / radio GTAV - ducking, changing mix, djishing thing, cross fade - interactive composition
 markers, timing (iMuse style of stuff)
+
 {% endcomment %}
 
 ---
 
 {% comment %}
+
 # dall'edizione precedente:
 
 non linearità
@@ -388,6 +391,7 @@ Chaos generator
 Grammatiche
 Pattern matching / search tecniques
     Constraints
+
 {% endcomment %}
 
 
@@ -403,6 +407,7 @@ TODO
 
 
 {% comment %}
+
 ### Procedural sword by Rod Selfridge
 
 A model by _Rod Selfridge_ (here's the [paper]())
@@ -415,6 +420,7 @@ PD objects which are needed:
 * Uzi (_cyclone_ library)
 * spigot~ (?? library)
 * sin~
+
 {% endcomment %}
 
 ### Godot & libpd integration

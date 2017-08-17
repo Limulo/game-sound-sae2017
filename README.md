@@ -6,8 +6,6 @@ Questo repository raccoglie tutto il materiale che [limulo.net](http://limulo.ne
 Per fruire dei contenuti delle lezioni visita il sito dedicato [https://limulo.github.io/game-sound-sae2017/](https://limulo.github.io/game-sound-sae2017/).
 Scriveteci all'indirizzo **info[at]limulo.net**, restiamo a disposizione per ogni eventuale dubbio, osservazione e approfondimento!
 
-
-![sid](./images/ed-agosto-settembre-2017/pt2/sid.jpg){: width="60%"}
 ## How to
 
 Di seguito alcune indicazioni ad uso interno per la pubblicazione dei contenuti per il sito.
