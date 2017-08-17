@@ -23,6 +23,7 @@ Sound effects in video games and many more:
 
 * Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
+* Ge Wang: [website](http://www.gewang.com/)
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
 * Paul Weir, sound designer for the Hello Game's **No Man Sky**, [talk](http://www.gdcvault.com/play/1024067/The-Sound-of-No-Man), [in game sounds](https://www.youtube.com/watch?v=BgAslKUaNx4);
 * Dinesh Pai and Kees van den Doel **Modal Synthesis for Vibrating Objects** [paper](http://www.cs.ubc.ca/~kvdoel/publications/modalpaper.pdf) and [code example](http://www.cs.ubc.ca/~kvdoel/publications/srcmodalpaper.zip) and many more [papers](http://www.cs.ubc.ca/~kvdoel/pubs.html);
@@ -43,7 +44,8 @@ Sound effects in video games and many more:
 ### Procedural Audio in Games (some examples)
 
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
-* [GTA V audio](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and the RAGE audio Engine. [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s)
+* GTA V and its RAGE audio engine: [talk](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and [slides](http://www.gdcvault.com/play/1020247/The-Sound-of-Grand-Theft). [Assets and memory](https://youtu.be/L4GuM15QOFE?t=13m47s), [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s);
+* [Smule](https://www.smule.com/)'s [Leaf Trombone](http://www.gewang.com/publish/files/2015-jnmr-worldstage.pdf), [Ocarina](http://www.gewang.com/ocarina/), etc...;
 * [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peter Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
 * [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
@@ -76,6 +78,7 @@ We can find the same concepts in many others software and hardware products like
 * [Praat](http://www.fon.hum.uva.nl/praat/);
 * [Sonic Visualizer](http://www.sonicvisualiser.org/);
 * [PaulStretch](http://hypermammut.sourceforge.net/paulstretch/) by [Paul Nasca](http://www.paulnasca.com);
+* Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
 * [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
 and Rendering of Environmental Audio;
 * [PureData](https://puredata.info/);
@@ -96,8 +99,6 @@ Trakers:
 
 * [playerPro](https://sourceforge.net/projects/playerpro/) is a public domain tracker and it was used by Aphex Twin as his main compositional tool for the "Druqs" album (source [here](http://cdm.link/2017/07/aphex-twin-gave-us-peek-inside-90s-classic-heres-learned/));
 * [Renoise](http://www.renoise.com/) is a multiplatform modern tracker.
-
-Se vuoi lo inserisco come risorse nelle lezioni
 
 Assets and other videogame resources:
 
@@ -139,6 +140,7 @@ Other books of interest:
 ## Talks, references and other materials
 
 * [PAN: Procedural Audio Now](http://proceduralaudionow.com/)
+* Scott Selfon of _Microsoft Corporation_ talks about repetition in videogames @ GDC 2014: "[_Techniques for Fighting Repetition in Game Audio_](http://www.gdcvault.com/play/1020319/Techniques-for-Fighting-Repetition-in)". Hre he talks about titles which uses audio in a innovative way: "[Crossing the Streams: Game Audio Rule Breakers of the Past Decade](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio)" @ GDC 2013.
 * [GDC Doom Music](http://www.gdcvault.com/play/1024068/-DOOM-Behind-the);
 * [GDC Final Fantasy XV - interactive music and tools](http://www.gdcvault.com/play/1023971/Epic-AND-Interactive-Music-in);
 * Akash Thakkar & Disasterpiece [GDC talk](http://www.gdcvault.com/play/1024135/The-Sound-and-Music-of) about the game "_Hiperlight Drfiter_";

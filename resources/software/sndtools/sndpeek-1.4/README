@@ -1,0 +1,23 @@
+
+sndpeek: a real-time audio visualization tool (animated, 3D)
+
+sndpeek homepage:
+    http://www.gewang.com/software/sndpeek/
+
+---
+
+who it is for: audio/multimedia researchers, developers, composers,
+and performers
+
+supported platforms:
+  - MacOS X (CoreAudio)
+  - Linux (ALSA/OSS/Jack)
+  - Windows/Cygwin (DirectSound)
+
+authors:
+  Ge Wang (gewang@cs.princeton.edu)
+  Perry R. Cook (prc@cs.princeton.edu)
+  Ananya Misra (amisra@cs.princeton.edu)
+
+---
+

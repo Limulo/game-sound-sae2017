@@ -1,0 +1,25 @@
+
+rt_lpc: real-time LPC synthesis + analysis + visualization 
+
+homepage:
+    http://soundlab.cs.princeton.edu/software/rt_lpc/
+
+---
+
+who it is for: audio/multimedia researchers, developers, composers, and performers
+
+supported platforms:
+  - MacOS X (CoreAudio)
+  - Linux (ALSA/OSS/Jack)
+  - Windows/Cygwin (DirectSound)
+
+authors:
+  Ananya Misra (amisra@cs.princeton.edu)
+  Ge Wang (gewang@cs.princeton.edu)
+  Perry R. Cook (prc@cs.princeton.edu)
+
+Princeton Sound Lab:
+    http://soundlab.cs.princeton.edu/
+
+---
+
