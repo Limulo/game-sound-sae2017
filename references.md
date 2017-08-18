@@ -4,7 +4,7 @@ layout: default
 
 Back to [Home](index);
 
-## Resources
+## References
 
 ### Personnel (a few of them)
 
@@ -44,7 +44,7 @@ Sound effects in video games and many more:
 ### Procedural Audio in Games (some examples)
 
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
-* GTA V and its RAGE audio engine: [talk](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and [slides](http://www.gdcvault.com/play/1020247/The-Sound-of-Grand-Theft). [Assets and memory](https://youtu.be/L4GuM15QOFE?t=13m47s), [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s);
+* GTA V and its RAGE audio engine: Alastair MacGregor's [talk](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and [slides](http://www.gdcvault.com/play/1020247/The-Sound-of-Grand-Theft). [Assets and memory](https://youtu.be/L4GuM15QOFE?t=13m47s), [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s);
 * [Smule](https://www.smule.com/)'s [Leaf Trombone](http://www.gewang.com/publish/files/2015-jnmr-worldstage.pdf), [Ocarina](http://www.gewang.com/ocarina/), etc...;
 * [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peter Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
 * [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop;

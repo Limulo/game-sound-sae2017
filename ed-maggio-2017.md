@@ -5,12 +5,9 @@ layout: default
 ## Edizione Maggio 2017
 
 Back to [Home](index);
-
+<br/><br/>
 Scarica le [slides](/resources/slides/Game Engines Game Sound Techniques maggio 2017.pdf) delle lezioni!
-{% comment %}
-Scarica le <a href="./slides/Game Engines Game Sound Techniques maggio 2017.pdf" >slides</a> delle lezioni!
-{% endcomment %}
----
+{: class="dashed"}
 
 Durante le lezioni si fornisce una panoramica storica dell'evoluzione del suono nei videogiochi, dagli anni '50 ad oggi; si dà poi uno sguardo alle diverse figure professionali coinvolte nello sviluppo di un videogioco e si analizzano gli strumenti impiegati nelle varie fasi (_game engines_, altri _tools_ e _middleware_).
 
@@ -72,7 +69,8 @@ Il suono serve quindi ad attirare l'attenzione e ad invitare a giocare. Viene ru
 
 Il suono è slegato dal gioco. La musica è quasi assente e gli effetti sonori sono funzione del gameplay (se un evento richiede molte risorse l'audio è sacrificato ed il gioco rimane muto). Si implementa **sintesi sottrattiva**.
 
-<img src="./images/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" />
+![timeline](./images/pt1/intro/tl-coloured-bar.png)
+<!-- <img src="./images/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" /> -->
 
 La programmazione audio avviene con collegamenti diretti di cavi al chip (o se va bene in _linguaggio macchina_ o in _assembly_).
 Questa caratteristica fa sì che ogni macchina suoni in maniera differente rispetto alle altre, anche se il gioco che montano è il medesimo.
@@ -211,11 +209,11 @@ Il **sequencing** è la tecnica compositiva tramite messaggi MIDI. Si tratta di 
 
 #### iMuse
 
-**iMuse** (Michael Land, Peter McCowell) è il sound engine di _SCUMM_, game engine di _LucasArts_.
+**iMuse** (Michael Land, Peter McConnell) è il sound engine di _SCUMM_, game engine di _LucasArts_.
 
 Nasce nel 1991 (brevettato nel 1994); è un sistema che premette l'introduzione di componenti di audio dinamico in un linguaggio di scripting. Fondamentalmente iMuse è un database di sequenze musicali che possono contenere **punti di decisione** o **markers** all'interno delle tracce.
 
-Il sistema, utilizzando eventi SysEx nei file MIDI, si permette l'interazione tra le azioni del giocatore e il sonoro del gioco.
+Il sistema, utilizzando eventi SysEx nei file MIDI, permette l'interazione tra le azioni del giocatore e il sonoro del gioco.
 Gli eventi in questione sono di due tipi: **markers** e **hooks**.
 
 Un _marker_ viene inserito nel file MIDI nel punto che, una volta raggiunto dal lettore MIDI, deve triggerare l'esecuzione di un particolare comando da parte dello script del gioco. Il comando in questione è inserito in una lista (coda - FIFO) è ne viene attivata l'esecuzione non appena il MIDI player raggiunge un marker con un determinato ID. I comandi possono essere qualsiasi cosa, dal fade in/out alle pause.
@@ -238,7 +236,8 @@ Inizialmente si poteva disporre solo di 4 canali e 64 note. I campioni erano cod
 
 I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di videogiochi, diffusione facilitata anche dal fatto che, al contrario di iMuse, il MOD non è proprietario (contro: diversità di implementazione).
 
-<img src="./images/pt1/MOD/ultimate_soundtracker.png" alt="MOD format" width="100%" />
+![MOD format](./images/pt1/MOD/ultimate_soundtracker.png)
+<!-- <img src="./images/pt1/MOD/ultimate_soundtracker.png" alt="MOD format" width="100%" /> -->
 
 ### Confronto di audio in videogame
 
@@ -595,7 +594,8 @@ Processo guidato da uno stream continuo di dati provenienti dall'interazione del
 
 A ben vedere il concetto di audio procedurale non ci è del tutto estraneo; un esempio a cui siamo abituati è il _riverbero artificiale_.
 
-<img src="./images/graphics/beh-mod-impl.png" alt="behaviour, model, implementation" width="30%;" />
+![behaviour, model, implementation](./images/graphics/beh-mod-impl.png){: width="30%" }
+<!-- <img src="./images/graphics/beh-mod-impl.png" alt="behaviour, model, implementation" width="30%;" /> -->
 
 TODO: classi di modelli (tassonomia)
 
