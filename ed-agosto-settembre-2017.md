@@ -130,7 +130,7 @@ Your browser does not support the audio element.
 
 La ripetizioni nel sonoro per un videogame non è sempre un male: talvolta al giocatore va dato una sorta di feedback, una **audio reward** ad indicare che si sta facendo qualcosa di giusto o qualcosa che migliora la propria condizione (es. bere la pozione rinvigorente in "_Prince of Persia_").
 
-![prince](./images/ed-agosto-settembre-2017/pt2/prince-of-persia.png)
+![prince](./images/ed-agosto-settembre-2017/pt2/prince-of-persia.png){: width="60%"}
 
 <a id="prince-of-persia">
 <audio controls style="width:100%">
@@ -182,11 +182,11 @@ Eventualmente poi il suono associato all'evento viene prodotto o elaborato succe
 
 Qui risiede la grande abilità del sound designer il cui talento e capacità sono fondamentali nella riuscita.
 
-![A and b](./images/ed-agosto-settembre-2017/graphics/collision.png)
+![A and b](./images/graphics/collision.png)
 
 Ammesso che la relazione `martello-->colpisce-->incudine` produca lo stesso suono di `incudine-->colpisce-->martello`, i suoni da ricreare sono comunque tantissimi: la **crescita** dei sound assets è **combinatoria**!
 
-![combinatoria](./images/ed-agosto-settembre-2017/pt2/combinazioni.gif)
+![combinatoria](./images/ed-agosto-settembre-2017/pt2/combinazioni.gif){: width="60%"}
 
 Un oggetto può essere colpito in un particolare punto o subire un impatti da un corpo che poi rimane in contatto. Può essere strisciato e causare una eccitazione da frizione, soffiato per eccitarne eventuali cavità d'aria oppure scosso da una vicina sorgente ad esso accoppiata ed essere portato in risonanza.
 
@@ -329,7 +329,7 @@ Gli hook si distinguono in vari tipi, quali ad esempio salti, trasposizioni, abi
 
 Vediamone un paio di esempi sfruttando il motore _ScummVM_ e giocando a _Monkey Island 2: LeChuck revenge_ (nota: nella particolare dimostrazione usiamo una emulazione software della scheda _Roland MT-32_, all'epoca lo stato dell'arte dell'audio nel mondo videoludico);
 
-![iMuse in ScummVM](./images/ed-agosto-settembre-2017/pt2/monkey2-scabb.gif)
+![iMuse in ScummVM](./images/ed-agosto-settembre-2017/pt2/monkey2-scabb.gif){: width="100%"}
 
 ---
 
@@ -474,10 +474,10 @@ La differenza è che, mentre per una produzione tradizionale la configurazione d
 <table>
 <tr>
 <td>
-<img src="./images/screenshot-01.jpg" alt="quake 2 screenshot" style="" />
+<img src="./images/pt2/screenshot-01.jpg" alt="quake 2 screenshot" width="100%;" />
 </td>
 <td>
-<img src="./images/screenshot-02.jpg" alt="quake 2 screenshot" style="" />
+<img src="./images/pt2/screenshot-02.jpg" alt="quake 2 screenshot" width="100%;" />
 </td>
 </tr>
 </table>
@@ -508,7 +508,7 @@ Lo stesso si applica in casi in cui ci sia un ostacolo tra emittere e listener: 
 
 #### Dialogues
 
-![gabriel knight talking](./images/pt2/screenshot-02.jpg)
+![gabriel knight talking](./images/pt2/gabriel-talking.jpg)
 
 Il game audio engine deve essere in grado di interfacciarsi e gestire complessi database di informazioni. Uno di questi è rappresentato dall'insieme degli audio file associati a tutte le varie linee di dialogo (in una o più lingue) presenti nel gioco.
 
@@ -530,7 +530,7 @@ L'audio engine deve interfacciarsi con quella parte di software in carico di ges
 
 ### Suono come modello event based/data driven
 
-![data driven](./images/graphics/data-driven.png)
+![data driven](./images/graphics/data-driven.png){: width="60%"}
 
 A ben vedere nell'ultima parte della sua storia, come analizzato fino ad ora, il suono nel videogioco si presenta come un modello guidato dai dati (**data driven model**).
 
@@ -601,7 +601,7 @@ TODO
 
 Abbiamo detto che il paradigma del suono procedurale prevede una stratificazione delle diverse fasi. Questo significa che ciascuna di esse può essere svolta con un particolare strumento hardware o software piuttosto che un altro, a seconda delle esigenze del progetto o delle particolari propensioni del suon designer.
 
-![behaviour model implementation](./images/graphics/beh-mod-impl.png)
+![behaviour model implementation](./images/graphics/beh-mod-impl.png){: width="60%"}
 
 Tipico è il caso del layer di _implementazione_: in questa fase infatti qualsiasi strumento software può essere usato per implementare il modello, come ad esempio Chuck, SuperCollider, CSound o PureData.
 
