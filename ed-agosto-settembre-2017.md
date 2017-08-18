@@ -6,9 +6,7 @@ layout: default
 
 Back to [Home](index);
 
-<!--
-Scarica le <a href="./slides/Game Engines Game Sound Techniques maggio 2017.pdf" >slides</a> delle lezioni!
--->
+<!-- Scarica le <a href="./slides/Game Engines Game Sound Techniques maggio 2017.pdf" >slides</a> delle lezioni! -->
 
 TODO: Description
 
@@ -24,7 +22,6 @@ TODO
 
 <a id="pt2"></a>
 ## Pt2:
-
 
 ### SID
 
@@ -111,7 +108,7 @@ SID [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64
 
 Scott Selfon di _Microsoft Corporation_ parla della ripetizione nel videogioco al GDC 2014 in un [talk](http://www.gdcvault.com/play/1020319/Techniques-for-Fighting-Repetition-in) intitolato "_Techniques for Fighting Repetition in Game Audio_":
 
-<audio controls>
+<audio controls style="width:100%">
   <source src="http://twvideo01.ubm-us.net/o1/vault/gdc05/audio/techniques.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
@@ -146,7 +143,6 @@ La ripetizione può verificarsi nell'ambito dei:
 * **fooley**: esempio tipico è quello dei _footsteps_, in cui lo stesso identico suono si sente ripetuto più e più volte durante il gioco. L'effetto suona innaturale e contribuisce a buttare fuori lo spettatore rompendo l'illusione.
 * **fisica**: se il Physics engine lavora per simulare, ad esempio, una lattina che rotola al suolo, e l'integrazione prevede che un suono venga riprodotto a loop sempre uguale a se stesso ad intervalli di tempo regolari, ecco che si ha lo stesso tipo di problema (indipendentemente che il suono ben si sposi con l'immagine renderizzata a schermo);
 * **suono senza corrispondenza visiva** (o per meglio dire, con errata corrispondenza visiva): una cosa che accade tipicamente con i suoni d'ambiene, spesso pre-prodotti e inseriti nel gioco senza che ci sia poi una comunicazione tra i game e audio engines. Un esempio potrebbe essere il bubolare del **gufo** o l'**ululato** del lupo in uno scenario di un bosco pauroso. La traccia ambientale potrebbe essere prerenderizzata (mono, stereo o multicanale), tuttavia non risultare realistica quando il gufo suoni sempre "_pannato_" a destra nonostante l'avanzare e il muoversi del player nel bosco.
-
 
 ### Grandi matrici
 
