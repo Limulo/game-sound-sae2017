@@ -106,9 +106,9 @@
 #X connect 32 0 23 0;
 #X connect 33 0 28 0;
 #X restore 953 608 pd sounds;
-#X obj 281 123 image /home/v1a1l1e1/Documents/repos/game-sound-sae2017/procedural/PureData_examples/01-bells/marimba.gif
+#X obj 281 123 image marimba.gif
 ;
-#X obj 774 162 image /home/v1a1l1e1/Documents/repos/game-sound-sae2017/procedural/PureData_examples/01-bells/xilophone.gif
+#X obj 774 162 image xilophone.gif
 ;
 #X obj 725 443 image tubular.gif;
 #X obj 348 100 bng 15 250 50 0 \$0-marimba empty empty 17 7 0 10 -86277

@@ -153,6 +153,7 @@ Other books of interest:
 * **AES Audio for games** [twitter channel](https://twitter.com/aesgames) and [website](http://www.aes.org/conferences/61/).
 * [Pompeu Fabra Audio Signal Processing Lab](https://www.upf.edu/web/mtg/audio-signal-processing-lab)
 * Queen Mary University [software projects page](https://code.soundsoftware.ac.uk/explore)
+* [Csound Magazine](http://www.csounds.com/journal/articleIndex.html);
 
 ---
 

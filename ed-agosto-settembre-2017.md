@@ -182,7 +182,7 @@ Eventualmente poi il suono associato all'evento viene prodotto o elaborato succe
 
 Qui risiede la grande abilità del sound designer il cui talento e capacità sono fondamentali nella riuscita.
 
-![A and b](./images/graphics/collision.png)
+![A and b](./images/graphics/collision.png){: width="50%"}
 
 Ammesso che la relazione `martello-->colpisce-->incudine` produca lo stesso suono di `incudine-->colpisce-->martello`, i suoni da ricreare sono comunque tantissimi: la **crescita** dei sound assets è **combinatoria**!
 
@@ -330,8 +330,6 @@ Gli hook si distinguono in vari tipi, quali ad esempio salti, trasposizioni, abi
 Vediamone un paio di esempi sfruttando il motore _ScummVM_ e giocando a _Monkey Island 2: LeChuck revenge_ (nota: nella particolare dimostrazione usiamo una emulazione software della scheda _Roland MT-32_, all'epoca lo stato dell'arte dell'audio nel mondo videoludico);
 
 ![iMuse in ScummVM](./images/ed-agosto-settembre-2017/pt2/monkey2-scabb.gif){: width="100%"}
-
----
 
 Per la musica si potrebbe aprire un intero capitolo a parte parlando di composizioni interattive, musica generativa/algoritmica, passando per iMuse, Farnell,
 
@@ -542,28 +540,72 @@ A ben vedere però questo sistema basato sui sample audio sembra in contraddizio
 
 ### Souno come processo
 
-#### come funziona un FDS
+Tutti i "trucchi" discussi poco fa, usati normalmente per ridurre o mascherare la ripetitività, sono in realtà dei rimedi temporanei.
+
+Un modo alternativo, mutuato dalla storia del videogioco, è quello di pensare il sonoro come sintetico: in questo modo due suoni associati allo stesso evento non suonerebbero mai esattamente allo stesso modo.
+
+Si tratta in fondo di una caratteristica peculiare del metodo di sintesi sottrattica, la quale fa uso del rumore come forma d'onda base.
+
+Non esistono due esempi dello stesso tipo di impatto, a fare uso di eccitazione con noise e formanti del materiale, che abbiano la stessa composizione spettrale.
+
+Anche se le differenze potrebbero essere estremamente sottili, il nostro **cervello** ha la capacità particolare di riconoscere queste sorgenti come "_vive_".
+
+#### come funziona un FPS
+TODO
 
 #### Realismo (?!)
-porta
-lastra percossa
+* esempio _porta_:
+
+* esempio _lastra percossa_: alcuni suoni come le campane o i tubi creano differenti suoni in base al proprio stato. un tubo che è già in vibrazione e che venga colpito in un punto diverso, incorporerà le nuove eccitazioni nel pattern di vibrazione a creare un suono diverso rispetto a quello che avrebbe fatto se colpito in stato di quiete. Niente di simile è ottenibile usando i campioni.
+
+#### Implementazione usando la sintesi
+TODO
+
+tipologie di suono: classi sonore relativamente piccole, canne, lastre di metallo o corde possono essere programmate con relativa facilità usando sorgenti di tipo generico.
+
+#### Physical modelling
+
+![PM vs. PIM](./images/graphics/physically-inpired-model.png)
+
+physical modelling / physical informed modelling (differenze)
+Waveguide (difetto: uso della memoria per implementare delay per la propagazione e i risuonatori)
+MSD (Mass, Spring, damper)
+
+tipologie di suono: questo approccio lavora bene per "_dropped sound_", collisions, tubi o lastre percosse, eccitazione di strutture fisse.
+
+#### Granular approximation
+
+Utile l'analisi statistica della densità
+
+tipologie di suono: suoni con struttura eterogenea, onde che si infrangono sulla spiaggia, pioggia, grandi gruppi di persone (ae esempio il suono degli applausi).
+
+---
+
 anlog and virtual analog
-physical modelling
 Perry Cook and Andy J. Farnell
 audio procedurale
 
 perchè scegliere il procedurale e quando sceglierlo.
 
-New skills
-
 #### vantaggi e svantaggi del paradigma procedurale
 
-#### New skills, the future
+* Dynamic level of details
 
-- tecniche audio procedurale
-	- papers
-	- animazione a partire dal suono
-	- musica generativa (?)
+Il suono sintetico si dimostra vincente rispetto all'approccio _data driven_ quando si debbano descrive ampie scene con innumerevoli sorgenti sonore (tra 100 e 1000 sorgenti concorrenti).
+
+I dati sottoforma di campione hanno un costo fisso (lo streaming dati da disco non cambia se il suono deve essere riprodotto completamente dry oppure deve subire real-time processings).
+Inoltre, la densità di suoni che possono essere riprodotti in una scena ha un limite:
+* sia in termini di accuratezza del mix dei vari suoni (più suoni = più difficile sommarli tra loro, problemi di dinamica e saturazione);
+* sia dal punto di vista psicoacustico (alcuni dei contibuti sonori sono inutili all'atto pratico perchè non posso essere uditi per via dei diversi mascheramenti, in tempo o in frequenza).
+
+Già quando si arriva a sommare 100 suoni simultanei, si può vedere che il contributo di ogni nuovo suono aggiuntivo, in rapporto al costo computazionale associato, diminuisce.
+
+D'altro canto, una approccio sintetico può offrire un costo variabile ad ogni sorgente: un esempio potrebbe essere il suono di un bicchiere che si infrange cadendo a terra.
+
+Un metodo sintetico potrebbe produrre un suono molto "_realistico_" e mantenere ancora un alto grado di correlazione audio-video rimpiazzando i frammenti perimetrali con singoli segnali sinusoidali o granuli di rumore, fornendo un alto grado di dettaglio per quie frammenti che cadono vicino al player.
+
+#### New skills, the future
+TODO
 
 ### The Future
 
@@ -573,7 +615,7 @@ Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mo
 
 #### Animation driven by audio
 
-C'è addirittura che si specializza nel processo inverso, ovvero nel ricreare animazioni basandosi sul suono in una sorta di [**inverse fooley**](http://www.cs.cornell.edu/projects/Sound/ifa/), il che può portare a risultati davvero sorprendenti:
+C'è addirittura chi si specializza nel processo inverso, ovvero nel ricreare animazioni basandosi sul suono in una sorta di [**inverse fooley**](http://www.cs.cornell.edu/projects/Sound/ifa/), il che può portare a risultati davvero sorprendenti:
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/EGkQkdCKztM?start=130" frameborder="0" allowfullscreen></iframe>
 
@@ -599,22 +641,66 @@ TODO
 
 ### PureData: esempi di audio procedurale e musica generativa
 
-Abbiamo detto che il paradigma del suono procedurale prevede una stratificazione delle diverse fasi. Questo significa che ciascuna di esse può essere svolta con un particolare strumento hardware o software piuttosto che un altro, a seconda delle esigenze del progetto o delle particolari propensioni del suon designer.
+Abbiamo detto che il paradigma del suono procedurale prevede una stratificazione delle diverse fasi. Questo significa che ciascuna di esse può essere svolta con un particolare strumento hardware o software piuttosto che un altro, a seconda delle esigenze del progetto o delle particolari propensioni del suond designer.
 
 ![behaviour model implementation](./images/graphics/beh-mod-impl.png){: width="60%"}
 
-Tipico è il caso del layer di _implementazione_: in questa fase infatti qualsiasi strumento software può essere usato per implementare il modello, come ad esempio Chuck, SuperCollider, CSound o PureData.
+Tipico è il caso del layer di _implementazione_: in questa fase infatti qualsiasi strumento software può essere usato per implementare il modello. Esistono infatti svariati linguaggi che possono essere utilizzati per la fase di implementazione (Supercollider, Csound, Faust, C++ via STK, Chuck, etc...). Ogni linguaggio possiede determinate caratteristiche che lo rendono più indicato per un task specifico.
 
-Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa PureData come linguaggio di programmazione.
+Parleremo di Pure data, che sembra essere un valido compromesso in termini di efficienza, facilità di apprendimento, di integrazione in altri tipi di sistema come può essere un game engine esistente (grazie in particolar modo a progetti software di integrazione come libpd, vedi sotto).
+
+Pure Data, come Godot, è _free software_ quindi aperto per essere modificato ed esteso liberamente.
+
+#### Introduzione al linguaggio di programmazione PureData
 
 Che cosa è PureData? [PureData](http://puredata.info/) è un linguaggio di programmazione a nodi nato a metà degli anni '90 ad opera di Miller Puckette che all'epoca lavorava all'IRCAM di Parigi.
 
-Esempi di procedurale: bells, clocks, water, insects, engine, guns, helicopter (thanks to _Andy Farnell_, _Alexey Reshetnikov_ and _Rod Selfridge_).
+Pure Data è un linguaggio di programmazioni a paradigma _dataflow_ e, sebbene manchi di ricorsione e di una effettiva accuratezza "_al sample_" nell'implementazione di filtri FIR, IIR, è uno strumento molto produttivo e permette di risolvere il 90% dei problemi di sound design sintetico.
+
+
+Uno degli obiettivi cui siamo interessati è quello di fare uso della memoria il meno possibile (no lookup table, ring buffers per dly, etc...).
+- funzioni cosinusoidali: troncamente della approssimazione in serie di Taylor;
+- noise come pseudo random generation;
+- etc
+<br/><br/>
+Perchè evitare l'uso della memoria? Uno dei motivi è quello di facilitare l'esecuzione del codice in un ambiente multithread, in cui i diversi thread sono distribuiti su più processori.
+{: class="dashed"}
+
+---
+
+Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa PureData come linguaggio di programmazione (thanks to _Andy Farnell_, _Alexey Reshetnikov_ and _Rod Selfridge_).
+
+#### Material and structure
+
+* **telephone**: bakelite resonators
+
+
+#### Wind
+
+Il vento in sè non produce suono [link](rycoote)
+
+#### Water
+TODO
+
+#### Machines
+
+Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il risultato di un qualche tipo di inefficienza e di frizione: in teoria, la macchina perfetta non emette alcun rumore.
+
+* **electric motors**:
+
+* **fans**:
+
+* **elicopter**:
+
+* **clocks**:
+
+---
+
 
 Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree/master/resources/procedural/PureData_examples) è necessaria l'installazione di [PureData](http://puredata.info/) e delle seguenti librerie aggiuntive:
 * list_abs (for the **[list_dot]** and **[list_emath]** objects);
 * zexy (for the **[>~]** and **[<~]** object);
-* iemlib (**[prvu~]**, **[init]**, **[t3_bpe]**, **[t3_line~]** and **[t3_delay]** objects); iem_t3_lib (the
+* iemlib (**[prvu~]**, **[init]**, **[t3_bpe]**, **[t3_line~]** and **[t3_delay]** objects);
 * motex (**[ln~]** object);
 * lyonpotpourri (**[adsr~]** object);
 * creb (**[ead~]** object);
@@ -629,3 +715,9 @@ TODO
 #### Call for partecipants
 
 Si tratta di un lavoro in corso che permetterà di integrare il motore audio _PureData_ all'interno del game engine _Godot_. [Qui](https://github.com/Limulo/godot) il link al repository sul quale _limulo.net_ sta facendo i primi test: ogni contributo è benvenuto!
+
+---
+
+## References
+
+Vai alla pagina [references](references) per maggiori informazioni.
