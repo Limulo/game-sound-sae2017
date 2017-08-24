@@ -68,7 +68,7 @@ Abbiamo visto che il videogioco altro non è se non un software. Sebbene nei mod
 
 Cosa significa avere un sistema semplificato di programmazione come ho detto prima?
 
-< prendi da diario in codice + schemi >
+TODO: prendi da diario in codice + schemi
 ![]()
 
 ### Com'è fatto un game engine?
@@ -99,8 +99,6 @@ Generalmente un game engine non può mancare di:
 - gestione rete
 - gestione memoria (garbage collection)
 - camera e punti luce
-
-
 
 
 <a id="pt2"></a>
