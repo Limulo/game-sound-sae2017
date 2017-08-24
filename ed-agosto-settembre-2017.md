@@ -6,6 +6,7 @@ layout: default
 
 Back to [Home](index);
 <br/><br/>
+Presto disponibili le slide delle lezioni!
 <!-- Scarica le <a href="./slides/Game Engines Game Sound Techniques maggio 2017.pdf" >slides</a> delle lezioni! -->
 {: class="dashed"}
 
@@ -19,7 +20,88 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 
 <a id="pt1"></a>
 ## Pt1: Game Engines
-TODO
+
+### Che cos'è un game engine?
+
+Il videogioco è una modalità moderna di declinazione del concetto di gioco. La sua particolarità risiede nel mezzo con cui si fruisce del gioco: uno schermo. Storicamente i videogiochi hanno visto i natali negli arcade (sale gioco), a cui si sono aggiunte le console e infine i PC.
+
+Un videogioco altro non è che un software, un insieme di codici contenenti le istruzioni comprensibili da una macchina.
+Ogni macchina per le sue peculiarità (hardware, OS quando presente) comprende un particolare insieme di codici, non utilizzabili da altri macchinari, per quanto simili come finalità di utilizzo.
+
+Inoltre, assieme alla complessità logica e grafica i giochi si sono man mano diversificati anche in virtù di un genere di appartenenza. Possiamo pensare a un'avventura testuale, un RPG, un'avventura grafica, un race game, un FPS. Tutti questi sono videogiochi, ma differiscono notevolmente tra di loro sia per quanto riguarda la logica interna sia per quanto riguarda la performance richiesta alla macchina.
+
+Consideriamo:
+- un'avventura testuale richiede un'efficienza in termini di parsing del testo (comprensione delle istruzioni digitate dall'utente), ma non ha grafica;
+- un RPG richiede memoria per gestire le statistiche e i vari livelli durante il gioco. A differenza delle avventure testuali richiede anche la capacità di render grafico;
+- un'avventura grafica richiede un render grafico, la possibilità di emettere suono e di gestire la fisica, e la gestione dell'input dell'utente attraverso interfaccia grafica (GUI);
+- un race game si basa sulla simulazione, quindi saranno necessari modelli accurati e una corretta impostazione della fisica del gioco per poter riprodurre il più fedelemente possibile questi modelli nel gioco. A ciò si aggiunge il render grafico che deve essere accurato, una capacità responsiva veloce e una gestione di controller articolata;
+- un FPS ha bisogno di un'ottima resa grafica, di un sistema di gestione delle collisioni ottimale, di un sistema di AI e di gestire l'input utente attraverso interfacce grafiche anche molto complesse.
+
+Si vede che anche solo considerando pochi esempi di videogiochi, questi differscano non solo in genere, ma anche in risorse di cui necessitano.
+
+Quindi ora, mettiamoci nei panni di una software house. Possiamo decidere di sviluppare ogni videogame da zero. Questo è dispendioso in termini di persone coinvolte e di tempo impiegato nella realizzazione del videogioco (concept, creazione degli asset, programmazione del gioco - interazione, fisica, grafica, suono -, ottimizzazione per varie piattaforme - abbiamo visto prima che macchine diverse comprendono codici - o linguaggi - diversi). Questa modalità a lungo andare non è efficiente. Allora ci domandiamo, perchè reinventare ogni volta la ruota? Quando abbiamo realizzato un videogioco, ad esempio un RPG, abbiamo già a disposizione tutta una serie di strumenti software che possono essere riutilizzati in altri giochi RPG. Quello che cambierebbe allora sarebbero solo gli assets (grafiche, suoni, modelli, script,...). Questo è dispendioso solo in termini di rendere il pacchetto software già realizzato il più generico possibile, in modo da essere utilizzabile più e più volte per diversi giochi. Una volta che si crea questo motore di gioco (game engine), lo sviluppo di ulteriori giochi è facilitato, si possono spender più tempo e soldi in termini di sviluppo asset e soprattutto in level design. Il tutto è ulteriormente semplificato dall'utilizzo di un'IDE grafica (interfaccia di sviluppo grafica) che rende trasparente il livello di programmazione. I vari reparti interessati nello sviluppo del gioco lavorano ciascuno nel proprio ambito sulla medesima piattaforma di sviluppo (sullo stesso progetto) senza preoccuparsi di integrare le varie componenti tra di loro. Il reparto che si occupa di programmazione si occupa di collegare le risorse sia tra di loro sia con la logica sottostante utilizzando codice.
+
+Ecco quindi che come software house abbiamo creato un nostro game engine ad uso interno.
+
+TODO: slides con esempi engine storici
+
+Ma se siamo sviluppatori indipendenti e non abbiamo un reparto che si occupa di programmazione e sviluppo software capace di creare dal nulla un game engine? Alcune software house importanti (Epic Games - Unreal e Id Software - xxx) hanno rilasciato al pubblico i loro engine, entrambi utilizzati per la realizzazione di FPS, il genere di videogiochi più in voga al tempo. Altre software house si sono specializzate nello sviluppo di game engine per terze parti. Negli ultimi anni si ha una vera e propria profusione di game engine di respiro più genrico, per cui oggi non si ha che l'imbarazzo della scelta.
+Una nota: esistono game engine più generici (Unity3D, Godot,...) e altri pensati per la realizzaizone di una tipologia precisa di videogiochi (Inform, Unreal, ...). Alcuni game engine offrono molte risorse (render 3D, compatibilità con sistemi VR, gestione rete per multiplayer online, streaming video...), ma alle volte non tutte sono necessarie per il gioco che si vuole realizzare. Quindi si sceglie (visto che oggi lo si può fare) il game engine in funzione del gioco da realizzare. Non uso Ableton Live per fare editing al campione, come non uso ProTools per fare una performnca dal vivo che richiede flessibilità e affidabilità.
+Middleware: come pro tools può essere espanso con plugin che ne amplificano le funzionalità, così i game engine possono essere ampliati in alcune loro funzionalità grazie all'uso di middleware (di cui avete già visto un esempio in Wwise). Ci sono middleware molto famosi, come Havok per la fisica e l'AI e euphoria per la fisica e le collisioni.
+
+<table>
+<tr>
+<td>
+<iframe width="100%" src="https://www.youtube.com/embed/cIcg5eotZlY" frameborder="0" allowfullscreen></iframe>
+</td>
+<td>
+<iframe width="100%" src="https://www.youtube.com/embed/wKLaMN9dnjQ" frameborder="0" allowfullscreen></iframe>
+</td>
+</tr>
+</table>
+
+Un'ulteriore nota di carattere generale: sebbene il livello di programmazione è trasparente all'utente del game engine, questo non scompare. Il gioco non cessa di essere software e il software altro non è che codice scritto in un linguaggio di programmazione. In parole povere, non si prescinde dal codice, ci sono sistemi semplificati di programmazione resi disponibili dai game engine, ma non esistono game engine in cui si può creare un gioco senza programmare.
+
+### Spaccato sulla programmazione
+
+Abbiamo visto che il videogioco altro non è se non un software. Sebbene nei moderni sistemi di sviluppo non è necessario essere in grado di programmare se si creano assets (ad esempio audio), è anche vero che ci si dovrà interfacciare con reparti tecnici che invece lavorano con il codice (ad esempio un DSP guy o audio programmer/coder). Quindi familiarizzare con un po' di nomenclatura facilita il lavoro di entrambi.
+
+Cosa significa avere un sistema semplificato di programmazione come ho detto prima?
+
+< prendi da diario in codice + schemi >
+![]()
+
+### Com'è fatto un game engine?
+
+Prendiamo Godot come game engine di esempio.
+Perchè godot?
+- open source: posso modificarlo come voglio e c'è una comunity che amplia e consolida la piattaforma
+- multipiattaforma: linux, Windows, Mac OS
+- 2D e 3D: parimenti sviluppato per entrambi i formati di gioco
+- leggero e veloce non pesa sulla memoria del sistema operativo
+- GDScript è mutuato su Python (Godot3 ha porting per Python): è un inguaggio molto usato (dalla computer vision alla AI, al NLP)
+- GUI
+- gestione salvataggi
+
+* Filesystem: accesso a risorse sul computer e visualizzazione gererchia cartelle all'interno del progetto
+* pannello risorse: le risorse usate nel gioco (file audio, file video, scene, sprite/modelli 3D, mesh, textures, immagini)
+* hierarchy: gerarchia della scena (Nodo root, nodi figli, nodi fratelli, scripts associati ai singoli nodi, scene istanziate)
+* properties: proprietà del nodo: variabili modificabili per il nodo (estendibili tramite script)
+* Node Signals: segnali emessi/recepiti dal nodo (sistema di comunicazione fra vari elementi)
+* Node Group: assegnazione dei nodi a gruppi per associare comportamento comune a più elementi (esempio enemies)
+
+Generalmente un game engine non può mancare di:
+- motore di render: sia 2d che 3d, si occupa di raccogliere tutte le informazioni della scena e sintetizzarle a schermo in un'immagine coerente (luci, collisioni, colori) responsiva dell'input dell'utente (60 fps).
+- render 3d: i modelli 3d si compongono di "facce" ovvero poligoni costruiti usando triangoli. Ciascun vertice di ciascun triangolo è sottoposto a forze, illuminazione, deformazione, movimento... Tutto questo viene calcolato per milioni di vertici 60 volte al secondo.
+- motore di fisica: 60 volte al secondo il sistema controlla le collisioni dei corpi, le interazioni tra questi, i movimenti (anche solo camminare è determinato da un intervento sulla fisica: s = v0+v*t+a*t^2
+- motore audio: generalmente si distingue un emitter (= microfono) e un receiver (= altoparlante) per la gestione dei suoni diegetici. Un player audio stereo o multicanale è utilizzatoo invece per i suoni extradiegeteici (colonna sonora)
+- AI: i primi esempi di AI risalgono a PacMan, ma soprattutto al giorno d'oggi l'AI ha assunto un ruolo di rilievo in molti giochi. Chi si occupa di gestirla a livello software è il game engine.
+- gestione rete
+- gestione memoria (garbage collection)
+- camera e punti luce
+
+
+
 
 <a id="pt2"></a>
 ## Pt2: Game Sound overview
@@ -599,17 +681,6 @@ L'interità dei modelli e delle loro mesh non sono fondamentali soltanto per ott
 
 Tutto questo è appannaggio del **physics engine** che non si occupa solo di collisioni ma valuta l'interà fisicità del mondo virtuale in cui siamo immersi: masse, densità, velocità e accelerazioni, forze, torsioni.
 
-<table>
-<tr>
-<td>
-<iframe width="100%" src="https://www.youtube.com/embed/cIcg5eotZlY" frameborder="0" allowfullscreen></iframe>
-</td>
-<td>
-<iframe width="100%" src="https://www.youtube.com/embed/wKLaMN9dnjQ" frameborder="0" allowfullscreen></iframe>
-</td>
-</tr>
-</table>
-
 A tutto questo si aggiunge la componente di **intelligenza artificiale** che ha il compito di simulare comportamenti "_intelligenti_" per tutti quegli attori che, nel gioco, non sono comandati da un player umano.
 
 Ebbene tutto questo viene calcolato di continuo, sempre in funzione dei dati di movimento ottenuti dalle azioni del giocatore, 60 se non più volte al secondo.
@@ -854,11 +925,7 @@ Che cosa è PureData? [PureData](http://puredata.info/) è un linguaggio di prog
 Pure Data è un linguaggio di programmazioni a paradigma _dataflow_ e, sebbene manchi di ricorsione e di una effettiva accuratezza "_al sample_" nell'implementazione di filtri FIR, IIR, è uno strumento molto produttivo e permette di risolvere il 90% dei problemi di sound design sintetico.
 
 
-Uno degli obiettivi cui siamo interessati è quello di fare uso della memoria il meno possibile (no lookup table, ring buffers per dly, etc...).
-<br/>
-* funzioni cosinusoidali: troncamente della approssimazione in serie di Taylor;
-* noise come pseudo random generation;
-* etc
+Uno degli obiettivi cui siamo interessati è quello di fare uso della memoria il meno possibile (no lookup table, ring buffers per dly, etc...). Si usano dunque i troncamenti delle approssimazioni in serie di Taylor delle varie funzioni anzichè ricorrere a lookup tables, il rumore è generato come numeri pseudo casuali, etc...
 <br/><br/>
 Perchè evitare l'uso della memoria? Uno dei motivi è quello di facilitare l'esecuzione del codice in un ambiente multithread, in cui i diversi thread sono distribuiti su più processori.
 {: class="dashed"}
@@ -894,7 +961,6 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 
 ---
 
-
 Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree/master/resources/procedural/PureData_examples) è necessaria l'installazione di [PureData](http://puredata.info/) e delle seguenti librerie aggiuntive:
 <br/>
 * list_abs (for the **[list_dot]** and **[list_emath]** objects);
@@ -905,8 +971,6 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 * creb (**[ead~]** object);
 * cxc, cyclone, purepd (**[Uzi]**, **[acos]**, **[atan~]**, **[delta~]** objects);
 * ggee (**[image]** object);
-{: class="dashed"}
-
 
 ### Godot & libpd integration
 TODO
