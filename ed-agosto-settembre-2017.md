@@ -579,18 +579,17 @@ Ai sample che vengono riprodotti si possono certo applicare delle **modificazion
 
 A ben vedere però questo sistema basato sui sample audio sembra in contraddizione netta con il dominio visivo, caratterizzato invece da un comportamento **continuo** e guidato da uno stream di parametri piuttosto che da eventi **discreti**.
 
+### Come funziona un FPS?
 
-INSERISCI QUI
+L'immagine che vediamo quando giochiamo **non esiste** prima del run time!
 
-## Come funziona un FPS?
-
-TODO: l'immagine che vediamo **non esiste** prima del run time. UV mapping, normals, etc...
+, normals, etc...
 
 Consideriamo un semplice modello 3D costituito da 4 facce triangolari: occorrono 3 (OpenGL ne usa 4 in realtà) valori numerici corrispondenti ai 3 assi cartesiani per identificare la posizione di ciascuno dei suoi vertici nello spazio tridimensionale.
 
-Un modello estrapolato da un moderno FPS tuttavia è composto da una moltitudine di poligoni, centinaia se non migliaia (**high poly**). Questi vartici e la loro configurazione nello spazio costituisce la **mesh** del modello ma da sola, non è bastevole per creare l'illusione di realismo.
+Un modello estrapolato da un moderno FPS tuttavia è composto da una moltitudine di poligoni, centinaia se non migliaia (_high poly_). Questi vertici e la loro configurazione nello spazio costituisce la **mesh** del modello ma da sola, non basta per creare l'illusione di realismo.
 
-Serve una **texture** da poter mappare sulla mesh che riproduca fedelmente le caratteristiceh visive come colori e dettagli dell'oggetto.
+Serve una **texture** da poter mappare sulla mesh che riproduca fedelmente le caratteristiceh visive come colori e dettagli dell'oggetto ([UV mapping](https://en.wikipedia.org/wiki/UV_mapping)).
 
 Perchè il modello possa essere visto nel mondo tridimensionale occorrono **luci**: ogni oggetto dunque, colpito dai raggi irradiati da tutte le fonti di luce presenti nel mondo virtuale, verrà descritto in modo ancora più realistico, in più se il modello riporta alcuni valori per le grandezze fisice associate ai materiali di cui è composto, come coefficienti di riflessione e assorbimento, e così via, l'effetto potrà essere ancora più realistico.
 
@@ -615,7 +614,7 @@ A tutto questo si aggiunge la componente di **intelligenza artificiale** che ha 
 
 Ebbene tutto questo viene calcolato di continuo, sempre in funzione dei dati di movimento ottenuti dalle azioni del giocatore, 60 se non più volte al secondo.
 
-## Realismo (?!): suono come processo
+### Realismo (?!) / Suono come processo
 
 Il sample audio è una registrazione, e come tale si tratta di un qualche cosa fissato nel tempo: una registrazione cattura la perturbazione della densità dell'aria, l'effetto di un movimento nello spazio in un particolare istante ma non ci dice nulla in merito al comportamento.
 
@@ -633,9 +632,11 @@ In abito audio invece quello che si fa, in pratica, è "_premere il tasto play_"
 
 Inoltre, un approccio _data driven_ come questo ha i suoi svantaggi vediamo un paio di esempi:
 
-### La porta
+#### La porta
 
 Supponiamo di avvicinarci ad una abitazione sconosciuta. L'intento è quello di entravi senza destare l'attenzione di chi sta all'interno. Nel gioco guideremo il nostro avatar fin sulla soglia e, a questo punto, a seconda dell'ispirazione del momento, potremo aprire la porta di colpo e preciparci all'interno oppure socchiuderla lentamente e magari interromperci al primo sospetto di non essere soli.
+
+![door](./images/esempi-procedurale/open-door.png){: width="30%"}
 
 Secondo l'approccio tradizionale _sample based_ un campione preregistrato di scricchiolio viene riprodoto non appena si verifica l'evento "_collisione_" tra il nostro avatar e l'oggetto _porta_. Specie se l'audio file è lungo si nota che la riproduzione dell'audio file prosegue, anche se l'azione sulla porta si interrompe dopo breve.
 
@@ -643,9 +644,11 @@ Anche nel caso il game sound engine utilizzasse meccanismi di dissolvenza in usc
 
 Immaginiamo cosa accadrebbe se poi scostassimo la porta ripetutamente, avanti ed indietro...
 
-### Lastra percossa
+#### Lastra percossa
 
 Alcuni oggetti come le campane o i tubi creano differenti suoni in base al proprio stato. un tubo che è già in vibrazione e che venga colpito in un punto diverso, incorporerà le nuove eccitazioni nel pattern di vibrazione a creare un suono diverso rispetto a quello che avrebbe fatto se colpito in stato di quiete. Niente di simile è ottenibile usando i campioni.
+
+![plate](./images/esempi-procedurale/steel-plate.png){: width="30%"}
 
 Immaginiamoci con un arma di fronte alla fortificazione di un piccolo bunker dal quale dobbiamo stanare i nostri nemici. Cominciamo a sparare e colpiamo ripetutamente una delle lastre di metallo che rivestono l'esterno della costruzione.
 
@@ -675,7 +678,7 @@ Non esistono due esempi dello stesso tipo di impatto, a fare uso di eccitazione 
 
 Anche se le differenze potrebbero essere estremamente sottili, il nostro **cervello** ha la capacità particolare di riconoscere queste sorgenti come "_vive_".
 
-FINE DELL'INSERZIONE
+---
 
 Tali sistemi però sono sopravissuti in una parte del mercato legato all'audio: la **musica** e gli **strumenti musicali**. In questi campi ci si accorge subito dell limitazion intrinseche dell'audio per campioni (il sample è un _tradimento_ della realtà), per questo la ricerca e lo sviluppo di nuovi sistemi di sintesi continua a progredire.
 
@@ -683,7 +686,11 @@ Nascono i primi sistemi di sintesi basati su modelli: i fenomeni della fisica de
 
 Quando si vuole simulare i suoni dei vecchi sintetizzatori analogici, si sviluppano tecnologie volte a riprodurre in digitale tutte le idiosincrasie dei componenti elettrici discreti che li costituivano e nascono i modelli [virtual analog](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer).
 
+![virtual analog](./images/ed-agosto-settembre-2017/pt2/virtual-analog.jpg)
+
 Quando invece si vuole simulare strumenti musicali acustici o elettroacustici nascono modelli volti a riprodurre i fenomeni fisici delle sollecitazioni, vibrazioni, attenuazioni dei materiali: nasce il [physical modelling](https://en.wikipedia.org/wiki/Physical_modelling_synthesis).
+
+![physical modelling](./images/ed-agosto-settembre-2017/pt2/physical-modelling.jpg)
 
 Esistono da diversi anni scuole di pensiero volte a traslare questi metodi di sintesi, da tempo diffusisi sul mercato e molto apprezzati per le loro qualità, nel mondo videoludico.
 
@@ -706,22 +713,23 @@ A ben vedere il concetto di audio procedurale non ci è del tutto estraneo; un e
 TODO: classi di modelli (tassonomia)
 TODO: perchè scegliere il procedurale e quando sceglierlo.
 
-## vantaggi e svantaggi del paradigma procedurale
-tra i vantaggi possiamo considerare:
+### Vantaggi e svantaggi del paradigma procedurale
 
-### Differimento
+Tra i vantaggi possiamo considerare:
+
+#### Differimento
 
 metre l'atto di registrare un suono è un azione che fissa nel tempo senza lasciare alcune possibilità di intervento successivo, l'audio procedurale è dinamico e lascia che molte delle decisioni, anche strutturali, vengano rimandate al real-time;
 
-### variabilità
+#### Variabilità
 
 Caratteristica fondamentale del suono procedurale che garantisce la possibilità pressochè completa di modificazione del suono in tempo reale e di produrre in questo modo risultati sonori anche molto diversi tra loro pur facendo capo ad uno stesso modello.
 
-### Default forms
+#### Default forms
 
 dal momento che la **crescita** dei sounds assets è **combinatoria** (es. incudine martello), diventa difficile provvedere alla creazione di tutti i suond assets necessari mano a mano che il mondo virtuale cresce. Il vantaggio di un modello procedurale è che il suono può essere generato in modo automatico derivando le proprietà dagli oggetti presenti nel gioco. Questo **non elimina** la figura del **sound designer**, il quale interviene laddove alcuni suoni necessitino di particolari caratteristiche perchè più importanti per la narrazione, ma **garantisce** che ogni oggetto abbia sempre un **suono di default** associato, senza incorrere così nel rischio che qualche evento sonoro non possa essere triggerato.
 
-### Costo variabile e dinamico (Dynamic Level of Details)
+#### Costo variabile e dinamico (Dynamic Level of Details)
 
 Il suono sintetico si dimostra vincente rispetto all'approccio _data driven_ quando si debbano descrive ampie scene con innumerevoli sorgenti sonore (tra 100 e 1000 sorgenti concorrenti).
 
@@ -749,31 +757,29 @@ Lo stesso dicasi se il suono riprodotto da un modello si trova riprodotto in ass
 
 Tra gli svantaggi:
 
-### Industrial inertia: you gotta ship titles
+#### Industrial inertia: you gotta ship titles
 
 Al momento attuale non sembra ci sia interesse nell'implementare quanto necessario per inserire questo paradigma nel workflow per la produzione di giochi. Spesso in questi casi ci si scontra con metodi di lavoro consolidati che sono difficili da modificare, soprattutto per via dei costi e dei tempi necessari per la transizione.
 
-### New skills
-
-TODO
-
-### La sintesi è brutta (si fa per dire)
+#### La sintesi è brutta (si fa per dire)
 
 Permane la falsa concezione che la sintesi audio sia in qualche modo sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
 
 In realtà non è così e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
 Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude. Quello di cui c'è bisogno è il **verosimile** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) o addirittura dell'**hyperrealism** ("_more than reality_").
 
-#### New skills
+### New skills
 TODO
 
-## The Future
+### The Future
 
 In un futuro presumibilmente non troppo lontano, il paradigma procedurale avrà preso piede e il mondo del lavoro nel settore dell'audio per videogiochi si arricchirà di tutta una serie di nuove figure professionali.
 
+![water](./images/pt2/future-water.jpg)
+
 Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, etc...), così anche nel mondo dell'audio procedurale ci saranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua e [bolle](http://www.cs.cornell.edu/projects/Sound/bubbles/), fuoco, [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/), impatti, [frizioni e sfregamenti](http://independent.academia.edu/StefaniaSerafin), [accartocciamenti](http://www.cs.columbia.edu/cg/crumpling/), [acustica delle stanze](http://www.ness-music.eu/wp-content/uploads/2013/04/TASL2256897.pdf), etc...).
 
-### Animation driven by audio
+#### Animation driven by audio
 
 C'è addirittura chi si specializza nel processo inverso, ovvero nel ricreare animazioni basandosi sul suono in una sorta di [**inverse fooley**](http://www.cs.cornell.edu/projects/Sound/ifa/), il che può portare a risultati davvero sorprendenti:
 
@@ -829,9 +835,6 @@ tipologie di suono: suoni con struttura eterogenea, onde che si infrangono sulla
 
 ---
 
-
-
-
 ### PureData: esempi di audio procedurale e musica generativa
 
 Abbiamo detto che il paradigma del suono procedurale prevede una stratificazione delle diverse fasi. Questo significa che ciascuna di esse può essere svolta con un particolare strumento hardware o software piuttosto che un altro, a seconda delle esigenze del progetto o delle particolari propensioni del suond designer.
@@ -852,9 +855,10 @@ Pure Data è un linguaggio di programmazioni a paradigma _dataflow_ e, sebbene m
 
 
 Uno degli obiettivi cui siamo interessati è quello di fare uso della memoria il meno possibile (no lookup table, ring buffers per dly, etc...).
-- funzioni cosinusoidali: troncamente della approssimazione in serie di Taylor;
-- noise come pseudo random generation;
-- etc
+<br/>
+* funzioni cosinusoidali: troncamente della approssimazione in serie di Taylor;
+* noise come pseudo random generation;
+* etc
 <br/><br/>
 Perchè evitare l'uso della memoria? Uno dei motivi è quello di facilitare l'esecuzione del codice in un ambiente multithread, in cui i diversi thread sono distribuiti su più processori.
 {: class="dashed"}
@@ -870,7 +874,8 @@ Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa Pure
 
 #### Wind
 
-Il vento in sè non produce suono [link](rycoote)
+Il vento in sè non produce suono (molto interessante a tale proposito il [seminario "_Squeezing out noise_"](https://vimeo.com/89488861) di Chris Woolf, technical consultant per _Rycote_)
+
 
 #### Water
 TODO
@@ -891,6 +896,7 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 
 
 Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree/master/resources/procedural/PureData_examples) è necessaria l'installazione di [PureData](http://puredata.info/) e delle seguenti librerie aggiuntive:
+<br/>
 * list_abs (for the **[list_dot]** and **[list_emath]** objects);
 * zexy (for the **[>~]** and **[<~]** object);
 * iemlib (**[prvu~]**, **[init]**, **[t3_bpe]**, **[t3_line~]** and **[t3_delay]** objects);
