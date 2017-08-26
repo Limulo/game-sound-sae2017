@@ -894,13 +894,16 @@ Concetti di:
 * "_one project per game_";
 * uno o più game events possono essere associati al medesimo eevento in _fmdo_ e triggerarne diverse istanze;
 * modules --> sound modules --> one or more trigger regions (play until mouse leaves the trigger region);
+
+![3d Panner](./images/ed-agosto-settembre-2017/pt3/3D-panner.png)
+
 * 3D panner
   - min and max distance
   - attenuation curve
   - sound size
   - min extent (eventualmente impiegato per sovrascrivere per sovrascrivere quanto impostato con gli altri parametri)
 
-
+![3D sound](./images/ed-agosto-settembre-2017/pt3/3D-sound.png)
 
 * pt motors / parametrization
 * pt footsteps
