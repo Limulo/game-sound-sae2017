@@ -1,16 +1,16 @@
-#N canvas 81 78 959 577 10;
+#N canvas 342 146 959 577 10;
 #X obj 40 31 hsl 64 12 0 1 0 0 empty empty door 20 6 1 8 -262144 -1
--1 3300 1;
-#N canvas 102 50 470 102 wood 0;
+-1 0 1;
+#N canvas 100 78 674 195 wood 0;
 #X obj 232 1 inlet~;
-#X obj 423 42 *~ 0.2;
-#X obj 232 83 outlet~;
-#X obj 144 42 bp~ 250 2;
-#X obj 212 42 bp~ 395 2;
-#X obj 76 42 bp~ 125 1;
-#X obj 1 42 bp~ 62.5 1;
-#X obj 282 42 bp~ 560 3;
-#X obj 351 42 bp~ 790 3;
+#X obj 483 62 *~ 0.2;
+#X obj 232 123 outlet~;
+#X obj 164 62 bp~ 250 2;
+#X obj 242 62 bp~ 395 2;
+#X obj 86 62 bp~ 125 1;
+#X obj 1 62 bp~ 62.5 1;
+#X obj 322 62 bp~ 560 3;
+#X obj 401 62 bp~ 790 3;
 #X connect 0 0 1 0;
 #X connect 0 0 3 0;
 #X connect 0 0 4 0;
@@ -26,7 +26,7 @@
 #X connect 7 0 2 0;
 #X connect 8 0 2 0;
 #X restore 37 73 pd wood;
-#N canvas 1 132 156 602 stickslip 0;
+#N canvas 1 159 280 607 stickslip 0;
 #X obj 8 344 timer;
 #X obj 8 537 vline~;
 #X obj 8 268 metro;
@@ -96,7 +96,7 @@
 #X connect 28 0 6 0;
 #X connect 29 0 8 0;
 #X restore 37 51 pd stickslip;
-#N canvas 32 50 176 325 squarepanel 0;
+#N canvas 30 105 281 384 squarepanel 0;
 #X obj 54 212 dfbef 16 0.05;
 #X obj 54 189 dfbef 10.12 0.05;
 #X obj 54 166 dfbef 7.14 0.05;
@@ -184,7 +184,7 @@
 #X floatatom 506 287 5 0 0 0 - - -, f 5;
 #X obj 474 68 abs-hid;
 #X obj 564 156 f;
-#X obj 665 95 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 665 95 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 665 115 metro 100;
 #X obj 506 306 abs;

@@ -45,6 +45,9 @@ Ecco quindi che come software house abbiamo creato un nostro game engine ad uso 
 
 TODO: slides con esempi engine storici
 
+Il nostro game engine è comunque lungi dall'essere un'innovazione nell'industria. Appoggiarsi a game engine (nel caso di sviluppo di videogiochi) o a porzioni di software già pronto (nella fase di sviluppo e creazione software) è una pratica vecchia quanto la compter science. Per quanto possibile non si reinventa la ruota. Si cerca, al più, di migliorarla.
+A partire dagli arcade, passando per le prime console e quindi approdando ai PC, la tecnologia ha reso sempre più semplice e desiderabile riutilizzare software già scritto, testato, ottimizzato, sul quale è possibile costruire nuovi programmi in minor tempo e in modo più efficiente.
+
 Ma se siamo sviluppatori indipendenti e non abbiamo un reparto che si occupa di programmazione e sviluppo software capace di creare dal nulla un game engine? Alcune software house importanti (Epic Games - Unreal e Id Software - xxx) hanno rilasciato al pubblico i loro engine, entrambi utilizzati per la realizzazione di FPS, il genere di videogiochi più in voga al tempo. Altre software house si sono specializzate nello sviluppo di game engine per terze parti. Negli ultimi anni si ha una vera e propria profusione di game engine di respiro più genrico, per cui oggi non si ha che l'imbarazzo della scelta.
 Una nota: esistono game engine più generici (Unity3D, Godot,...) e altri pensati per la realizzaizone di una tipologia precisa di videogiochi (Inform, Unreal, ...). Alcuni game engine offrono molte risorse (render 3D, compatibilità con sistemi VR, gestione rete per multiplayer online, streaming video...), ma alle volte non tutte sono necessarie per il gioco che si vuole realizzare. Quindi si sceglie (visto che oggi lo si può fare) il game engine in funzione del gioco da realizzare. Non uso Ableton Live per fare editing al campione, come non uso ProTools per fare una performnca dal vivo che richiede flessibilità e affidabilità.
 Middleware: come pro tools può essere espanso con plugin che ne amplificano le funzionalità, così i game engine possono essere ampliati in alcune loro funzionalità grazie all'uso di middleware (di cui avete già visto un esempio in Wwise). Ci sono middleware molto famosi, come Havok per la fisica e l'AI e euphoria per la fisica e le collisioni.
@@ -68,8 +71,28 @@ Abbiamo visto che il videogioco altro non è se non un software. Sebbene nei mod
 
 Cosa significa avere un sistema semplificato di programmazione come ho detto prima?
 
-TODO: prendi da diario in codice + schemi
-![]()
+![astrazione](./images/ed-agosto-settembre-2017/pt1/livelli-astrazione.png)
+
+![compilatori](./images/ed-agosto-settembre-2017/pt1/compilatori-1.png)
+
+Il computer è una macchina universale. Significa che può compiere qualsiasi compito per il quale le si forniscano le corrette istruzioni. Il computer però non fa nulla da solo. Non è come una radio, che una volta accesa, capterà automaticamente le onde radio a una data frequenza e le renderà in forma di onda sonora. Il computer una volta acceso rimane in stand-by. Attende istruzioni.
+Le istruzioni comprese dal computer sono in forma binaria. Significa che sono in forma di sequenze di caratteri '1' e '0'.
+E' possibile programmare, ovvero fornire istruzioni al computer, in forma binaria, ma non è molto efficiente. Questo per due motivi principali:
+- le istruzioni raggiungono lunghezze considerevoli in breve tempo, quindi richiedoo del tempo per essere redatte;
+- la possibilità di errore cresce esponenzialmente con la lunghezza delle istruzioni così come la difficoltà di correggere l'errore.
+Il vantaggio di programmare in binario è, però, l'assenza di livelli intermedi tra programmatore/software ed hardware.
+Per facilitare il compito del programmatore sono nati linguaggi di programmazione più vicini al linguaggio naturale, che grazie ad una macchina (l'assembler), vengono tradotti in binario. Ogni macchina comprende un particolare dialetto bianrio, quindi avrà un proprio assembly (il linguaggio compreso dall'assembler) dedicato. Non posso usare l'assembly per Intel su una macchina Motorola.
+L'assembly è a tutti gli effetti quello che si chiama linguaggio a basso livello (ovvero, un linguaggio che usa simboli e alfabeto proprio degli esseri umani e che comunica in linea piuttosto diretta con l'hardware).
+Per rendere la programmazione indipendente dalla macchina su cui si lavora (sviluppo un editor di testo che possa funzionare su DOS, Unix, Solaris, ...), sono stati creati dei linguaggi ancora più vicini al linguaggio naturale e che si avvantaggiano del compilatore, un software che traduce il file sorgente in un file scritto nell'assembly relativo alla macchina di destinazione, che a sua volta sarà reso in binario.
+
+Parlando di linguaggi vicini al linguaggio naturale, forse diamo un'idea un po' fuorviante. In realtà un linguaggio di programmazione è un linguaggio formale, ovvero un linguaggio con una grammatica, una sintassi e dei fortemente vincolato. Al contrario del linguaggio naturale, l'ambiguità è inesistente, pena la non computabilità del file sorgente.
+
+Infine, a un livello di astrazione ulteriore si situano i cosiddetti linguaggi di scripting, che richiedono un passaggio intermedio ulteriore rispetto ai linguaggi compilati per essere resi in binario
+
+binario (-) assembly (-) linguaggi compilati (-) scripting
+X           assembler    compilatore             interprete
+
+Più un linguaggio ha una grammatica e sintassi formale più si evitano ambiguità e più è semplice formulare istruzioni. Di contro, bisogna padroneggiare una buona percentuale del linguaggio prima di essere in grado di utilizzarlo.
 
 ### Com'è fatto un game engine?
 
@@ -191,20 +214,15 @@ Anche dalle immagini che mostrano la forma d'onda della parte iniziale della pri
 
 TODO: ascolto del brano su multitraccia **Audacity**.
 
-Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>
-[.sid files collection/database](http://hvsc.c64.org/)
-[VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore;
-SID [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID)
+Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>mentre la musica di Hubbard proviene dal database [High Voltage SID Collection](http://hvsc.c64.org/). Il programma è stato scritto e eseguito utilizzando [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore. Qui altre interessanti informazioni sul SID: [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID).
 {: class="dashed"}
 
 ### Re-Re-Repetition
 
-Scott Selfon di _Microsoft Corporation_ parla della ripetizione nel videogioco al GDC 2014 in un [talk](http://www.gdcvault.com/play/1020319/Techniques-for-Fighting-Repetition-in) intitolato "_Techniques for Fighting Repetition in Game Audio_":
+Partiamo analizzando la _ripetizione_! La ripetizione in ambito audio all'interno di un videogioco può essere un bene o un male, cerchiamo di capire come e perchè; inoltre cerchiamo di visualizzare quali possibili soluzioni si possano adottare per ovviare ad eventuali problemi che la ripetizione possa causare.
 
-<audio controls style="width:100%">
-  <source src="http://twvideo01.ubm-us.net/o1/vault/gdc05/audio/techniques.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+Scott Selfon di _Microsoft Corporation_ parla della ripetizione nel videogioco al GDC 2014 in un [talk](http://www.gdcvault.com/play/1020319/Techniques-for-Fighting-Repetition-in) intitolato "_Techniques for Fighting Repetition in Game Audio_".
+{: class="dashed"}
 
 #### Quando la ripetizione è un bene
 
@@ -872,6 +890,18 @@ Vedi [questo talk](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Gam
 ### FMOD
 TODO
 
+Concetti di:
+* "_one project per game_";
+* uno o più game events possono essere associati al medesimo eevento in _fmdo_ e triggerarne diverse istanze;
+* modules --> sound modules --> one or more trigger regions (play until mouse leaves the trigger region);
+* 3D panner
+  - min and max distance
+  - attenuation curve
+  - sound size
+  - min extent (eventualmente impiegato per sovrascrivere per sovrascrivere quanto impostato con gli altri parametri)
+
+
+
 * pt motors / parametrization
 * pt footsteps
 * pt music
@@ -922,11 +952,12 @@ Che cosa è PureData? [PureData](http://puredata.info/) è un linguaggio di prog
 
 Pure Data è un linguaggio di programmazioni a paradigma _dataflow_ e, sebbene manchi di ricorsione e di una effettiva accuratezza "_al sample_" nell'implementazione di filtri FIR, IIR, è uno strumento molto produttivo e permette di risolvere il 90% dei problemi di sound design sintetico.
 
-
+{% comment %}
 Uno degli obiettivi cui siamo interessati è quello di fare uso della memoria il meno possibile (no lookup table, ring buffers per dly, etc...). Si usano dunque i troncamenti delle approssimazioni in serie di Taylor delle varie funzioni anzichè ricorrere a lookup tables, il rumore è generato come numeri pseudo casuali, etc...
 <br/><br/>
 Perchè evitare l'uso della memoria? Uno dei motivi è quello di facilitare l'esecuzione del codice in un ambiente multithread, in cui i diversi thread sono distribuiti su più processori.
 {: class="dashed"}
+{% endcomment %}
 
 ---
 
@@ -935,7 +966,6 @@ Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa Pure
 #### Material and structure
 
 * **telephone**: bakelite resonators
-
 
 #### Wind
 
@@ -955,7 +985,16 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 
 * **elicopter**:
 
-* **clocks**:
+* **clocks**: Il suono di un orologio che ticchetta può essere realizzato sovrapponendo diverse componenti più semplici per ottenere un risultato finale organico. Interessante a tale proposito l'[aneddoto raccontato dallo stesso Farnell](https://youtu.be/sp83-Pq7TyQ?t=57m50s) in un seminario sull'audio procedurale all'AES nel 2013 in cui ricorda d'avere analizzato il suono di una sveglia dopo averlo registrato ad alta risoluzione e riprodotto a velocità ridotta.
+
+* **creaking**: movimento [_slip-stick_](https://en.wikipedia.org/wiki/Stick-slip_phenomenon). Un segnale di controllo (che simboleggi la forza impiegata nel movimento) che varia da 0 e 1 produce una serie di impulsi in uscita. Questi passano attraverso una serie di filtri passabanda per riprodurre le formanti di una struttura _quadrata_ in _legno_.
+
+{% comment %}
+https://en.wikipedia.org/wiki/Vibrations_of_a_circular_membrane
+http://frame3dd.sourceforge.net/
+http://www.acs.psu.edu/drussell/demos.html
+http://www.acs.psu.edu/drussell/Demos/MembraneSquare/Square.html
+{% endcomment %}
 
 ---
 
