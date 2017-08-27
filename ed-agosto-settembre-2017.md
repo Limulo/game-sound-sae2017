@@ -156,7 +156,7 @@ Ecco qui di seguito un piccolo programma d'esempio:
 
 <a id="c64-sound">
 <audio controls style="width:100%">
-  <source src="./resources/sounds/c64-sound.ogg" type="audio/ogg">
+  <source src="./sounds/c64-sound.ogg" type="audio/ogg">
 Your browser does not support the audio element.
 </audio>
 <a/>
@@ -627,7 +627,7 @@ Un esempio interessante per quanto riguarda il posizionamento del suono nello sp
 
 In questo gioco l'[audio binuaurale](https://www.polygon.com/2017/8/9/16120082/hellblade-binaural-audio-psychosis) diventa importantissimo per rappresentare con efficacia le voci interiori della protagonista che soffre di un disturbo psichico.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LQQ2Jm2dgXk?list=PLbpkF8TRYizaT6GfMcKBG-RoUOQ6BJRXp" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/LQQ2Jm2dgXk?list=PLbpkF8TRYizaT6GfMcKBG-RoUOQ6BJRXp" frameborder="0" allowfullscreen></iframe>
 
 A proposito di binuaurale, mai sentito parlare del fenomeno denominato [ASMR](https://it.wikipedia.org/wiki/Autonomous_sensory_meridian_response)? Ecco un [interessante articolo](https://emshort.blog/2017/07/27/second-person-storytelling-in-asmr/) a rigurdo.
 {: class="dashed"}
@@ -797,7 +797,7 @@ Pionieri di questa filosofia di pensiero sono persone come [Perry Cook](http://w
 <table>
 <tr>
 <td>
-<img src="./images/pt2/book-Perry-Cook.jpg" alt="Perry Cook's book" width="100%;" />
+<img src="./images/pt2/book-Perry-Cook.png" alt="Perry Cook's book" width="100%;" />
 </td>
 <td>
 <img src="./images/pt2/book-designing-sounds.jpg" alt="Andy Farnell's book" width="100%;" />
@@ -1010,17 +1010,31 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 
 * **creaking**: movimento [_slip-stick_](https://en.wikipedia.org/wiki/Stick-slip_phenomenon). Un segnale di controllo (che simboleggi la forza impiegata nel movimento) che varia da 0 e 1 produce una serie di impulsi in uscita. Questi passano attraverso una serie di filtri passabanda per riprodurre le formanti di una struttura _quadrata_ in _legno_.
 
-![vibrational modes rectangular membrane](http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode11.gif)
-
+<table style="width=100%">
+<tr>
+<td>
+<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode11.gif" alt="11" style="" />
+</td>
+<td>
+<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode12.gif" alt="11" style="" />
+</td>
+<td>
+<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode21.gif" alt="11" style="" />
+</td>
+<td>
+<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode22.gif" alt="11" style="" />
+</td>
+</tr>
+</table>
 Speed of sound in solids (wood): 3300 - 5000 m/s
 
 test mathjax
 
-$$
+\[
 
 f_{11} = \frac{c}{ 2 L }
 
-$$
+\]
 
 
 {% comment %}
