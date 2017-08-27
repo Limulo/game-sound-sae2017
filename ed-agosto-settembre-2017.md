@@ -23,7 +23,7 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 
 ### Che cos'è un game engine?
 
-Il videogioco è una modalità moderna di declinazione del concetto di gioco. La sua particolarità risiede nel mezzo con cui si fruisce del gioco: uno schermo. Storicamente i videogiochi hanno visto i natali negli arcade (sale gioco), a cui si sono aggiunte le console e infine i PC.
+Il videogioco è una moderna di declinazione del concetto di gioco. La sua particolarità risiede nel mezzo con cui si fruisce del gioco: uno **schermo**. Storicamente i videogiochi hanno visto i natali negli arcade (sale gioco), a cui si sono aggiunte le console e infine i PC.
 
 Un videogioco altro non è che un software, un insieme di codici contenenti le istruzioni comprensibili da una macchina.
 Ogni macchina per le sue peculiarità (hardware, OS quando presente) comprende un particolare insieme di codici, non utilizzabili da altri macchinari, per quanto simili come finalità di utilizzo.
@@ -128,9 +128,8 @@ Generalmente un game engine non può mancare di:
 ## Pt2: Game Sound overview
 
 ### Panoramica storica
-TODO
 
-coin-op, consoles, PC, MOD format, MIDI, MT-32
+TODO: coin-op, consoles, PC, MOD format, MIDI, MT-32
 
 #### SID
 
@@ -177,7 +176,7 @@ Il programma usa la prima voce impostata come _onda triangolare_ per riprodurre 
   * noise: 129;
 6. ciclo _for_ per la durata della nota.
 
-#### Hubbard
+#### Rob Hubbard
 
 Il SID è uno chip che dispone di sole 3 voci ma non è detto che nelle mani di capaci musicisti programmatori non possa ricreare la polifonia e la ricchezza timbrica di un ensamble molto più numeroso
 
@@ -273,7 +272,7 @@ Tutto questo fa sì che ci sia bisogno di un gran numero di variazioni e che si 
 
 Il workflow comunce infatti può essere compreso se si pensa a come l'audio viene normalemnte implementato all'interno del videogioco: come un evento che corrisponde ad un determinato suono.
 
-![evnt --> snd](TODO)
+![event --> snd](./images/graphics/event-sound.png){: width="60%"}
 
 Eventualmente poi il suono associato all'evento viene prodotto o elaborato successivamente a seconda di uno o più parametri che derivano dall'game engine. Alcuni esempi potrebbero essere:
 * il _carico_ per un automobile in corsa;
@@ -423,7 +422,7 @@ Nel caso dei dialoghi eventualmente si possono applicare modifiche in real-time 
 
 In tale caso è possibile aggiungere più o meno rumore, crakcles o distorsione in modo dinamico e in termpo reale.
 
-TODO: altro esempio è il filtering real time che si applica per simulare la voce proveniente da una comunicazione telefonica. Filtro passabanda da 300Hz a 3000Hz.
+Altro esempio è il filtering real time che si applica per simulare la voce proveniente da una comunicazione telefonica. in genere utilizzando un filtro passabanda da 300Hz a 3000Hz.
 {: class="dashed"}
 
 Resta comunque il fatto che la stessa frase non può essere mai detta identicamente 2 volte di fila! E' inaccettabile all'ascolto.
@@ -623,6 +622,18 @@ Il panning "_reale_" è più complcato rispetto ad una semplice variazione di vo
 panning, multicanale (stereo, 5.1, 7.1, ambisonic (non usato), binaurale);
 {: class="nota"}
 
+---
+Un esempio interessante per quanto riguarda il posizionamento del suono nello spazio lo si ha ad esempio nel gioco "_Hellblade: Senua's sacrifice_", sviluppato da [Ninja Theory](https://en.wikipedia.org/wiki/Ninja_Theory) e pubblicato pochi giorni fa.
+
+In questo gioco l'[audio binuaurale](https://www.polygon.com/2017/8/9/16120082/hellblade-binaural-audio-psychosis) diventa importantissimo per rappresentare con efficacia le voci interiori della protagonista che soffre di un disturbo psichico.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LQQ2Jm2dgXk?list=PLbpkF8TRYizaT6GfMcKBG-RoUOQ6BJRXp" frameborder="0" allowfullscreen></iframe>
+
+A proposito di binuaurale, mai sentito parlare del fenomeno denominato [ASMR](https://it.wikipedia.org/wiki/Autonomous_sensory_meridian_response)? Ecco un [interessante articolo](https://emshort.blog/2017/07/27/second-person-storytelling-in-asmr/) a rigurdo.
+{: class="dashed"}
+
+Nel gioco l'audio è [talvolta utilizzato](https://youtu.be/5-D57571odo?t=2m11s) come mezzo (quasi) esclusivo per riuscire ad orientarsi nel mondo tridimentsionale.
+
 #### Ambience
 
 Parlando di sample, quando si registra si predilige il suono diretto e si fa di tutto per escludere quello riverberato
@@ -631,7 +642,9 @@ reverb, delay, doppler effect, filtering, fast realtime convolution.
 
 #### Attenuation & damping
 
-TODO: due sfere concentriche centrate sulla posizione dell'_emitter_ nel 3D world. Le due sfere dividono lo spazio in 3 volumi.
+Due sfere concentriche centrate sulla posizione dell'_emitter_ nel 3D world. Le due sfere dividono lo spazio in 3 volumi.
+
+![3D sound](./images/ed-agosto-settembre-2017/pt3/3D-sound.png)
 
 Attenuazione e smorzamento: un discorso legato alla distanza tra emitter e listener, grandezza geometrica ricavata dal modello tridimensionale, in base alla quale viene modificato in tempo reale la frequenza di taglio di un filtro passa basso e un amplificatore di livello.
 
@@ -656,7 +669,7 @@ A seconda della contingeza ci possono essere latenze che si sommano e si accumul
 Il game engine, e più nello specifico l'audio engine per quanto concerne il suono, deve essere in grado di gestire situazioni come questa e di riordinare opportunamente i pacchetti in arrivo per dare un audio sempre corerente.
 
 {% comment %}
-TODO: PS3 streaming audio 7.1
+PS3 streaming audio 7.1
 {% endcomment %}
 
 #### Encoding/Decoding, data streams
@@ -669,9 +682,9 @@ L'audio engine deve interfacciarsi con quella parte di software in carico di ges
 
 A ben vedere nell'ultima parte della sua storia, come analizzato fino ad ora, il suono nel videogioco si presenta come un modello guidato dai dati (**data driven model**).
 
-![evnt --> snd](TODO)
-
 In altri termini, è costituito da una moltitudine di file audio raccolti in un database e che vengono messi in riproduzione all'occorrenza, in seguito al verificarsi di particolari eventi (**event based**).
+
+![event --> snd](./images/graphics/event-sound.png){: width="60%"}
 
 Ai sample che vengono riprodotti si possono certo applicare delle **modificazioni in tempo reale** come abbiamo già detto (attenuazione dovuta alla distanza, combinazioni e layering, random e granularità).
 
@@ -680,8 +693,6 @@ A ben vedere però questo sistema basato sui sample audio sembra in contraddizio
 ### Come funziona un FPS?
 
 L'immagine che vediamo quando giochiamo **non esiste** prima del run time!
-
-, normals, etc...
 
 Consideriamo un semplice modello 3D costituito da 4 facce triangolari: occorrono 3 (OpenGL ne usa 4 in realtà) valori numerici corrispondenti ai 3 assi cartesiani per identificare la posizione di ciascuno dei suoi vertici nello spazio tridimensionale.
 
@@ -723,7 +734,7 @@ Inoltre, un approccio _data driven_ come questo ha i suoi svantaggi vediamo un p
 
 Supponiamo di avvicinarci ad una abitazione sconosciuta. L'intento è quello di entravi senza destare l'attenzione di chi sta all'interno. Nel gioco guideremo il nostro avatar fin sulla soglia e, a questo punto, a seconda dell'ispirazione del momento, potremo aprire la porta di colpo e preciparci all'interno oppure socchiuderla lentamente e magari interromperci al primo sospetto di non essere soli.
 
-![door](./images/esempi-procedurale/open-door.png){: width="30%"}
+![door](./images/esempi-procedurale/open-door.png){: width="50%"}
 
 Secondo l'approccio tradizionale _sample based_ un campione preregistrato di scricchiolio viene riprodoto non appena si verifica l'evento "_collisione_" tra il nostro avatar e l'oggetto _porta_. Specie se l'audio file è lungo si nota che la riproduzione dell'audio file prosegue, anche se l'azione sulla porta si interrompe dopo breve.
 
@@ -735,7 +746,7 @@ Immaginiamo cosa accadrebbe se poi scostassimo la porta ripetutamente, avanti ed
 
 Alcuni oggetti come le campane o i tubi creano differenti suoni in base al proprio stato. un tubo che è già in vibrazione e che venga colpito in un punto diverso, incorporerà le nuove eccitazioni nel pattern di vibrazione a creare un suono diverso rispetto a quello che avrebbe fatto se colpito in stato di quiete. Niente di simile è ottenibile usando i campioni.
 
-![plate](./images/esempi-procedurale/steel-plate.png){: width="30%"}
+![plate](./images/esempi-procedurale/steel-plate.png){: width="50%"}
 
 Immaginiamoci con un arma di fronte alla fortificazione di un piccolo bunker dal quale dobbiamo stanare i nostri nemici. Cominciamo a sparare e colpiamo ripetutamente una delle lastre di metallo che rivestono l'esterno della costruzione.
 
@@ -782,6 +793,18 @@ Quando invece si vuole simulare strumenti musicali acustici o elettroacustici na
 Esistono da diversi anni scuole di pensiero volte a traslare questi metodi di sintesi, da tempo diffusisi sul mercato e molto apprezzati per le loro qualità, nel mondo videoludico.
 
 Pionieri di questa filosofia di pensiero sono persone come [Perry Cook](http://www.cs.princeton.edu/~prc/AKPetersBook.htm) e [Andy Farnell](https://mitpress.mit.edu/books/designing-sound), solo per citare i più noti, i quali ritengono possibile derivare dagli studi fatti fino ad ora, modelli finalizzati non tanto a simulare suoni appartenenti al dominio musicale ma piuttosto volti a sintetizzare una moltitudine di classi sonore associate ad oggetti e fenomeni quotidiani.
+
+<table>
+<tr>
+<td>
+<img src="./images/pt2/book-Perry-Cook.jpg" alt="Perry Cook's book" width="100%;" />
+</td>
+<td>
+<img src="./images/pt2/book-designing-sounds.jpg" alt="Andy Farnell's book" width="100%;" />
+</td>
+</tr>
+</table>
+
 Così da rendere possibile la sintesi, potenziale, di ogni tipo di suono possibile.
 
 Da questo punto di vista il suono nel videogioco diventa un modello inteso come processo (**sound as a process**), in contrasto con il paradigma precedente di _event driven/data driven model_.
@@ -795,7 +818,6 @@ Processo guidato da uno stream continuo di dati provenienti dall'interazione del
 A ben vedere il concetto di audio procedurale non ci è del tutto estraneo; un esempio a cui siamo abituati è il _riverbero artificiale_.
 
 ![behaviour, model, implementation](./images/graphics/beh-mod-impl.png){: width="30%" }
-<!-- <img src="./images/graphics/beh-mod-impl.png" alt="behaviour, model, implementation" width="30%;" /> -->
 
 TODO: classi di modelli (tassonomia)
 TODO: perchè scegliere il procedurale e quando sceglierlo.
@@ -842,6 +864,12 @@ Nel caso il problema venga affrontato con il paradigma procedurale invece, sopra
 
 Lo stesso dicasi se il suono riprodotto da un modello si trova riprodotto in associazione con altri suoni che causerebbero il _mascheramento_ nel tempo o in frequenza di alcune sue componenti.
 
+#### Real Time
+
+Talvolta è semplicemente impossibile conoscere a priori quale sarà il suono da registrare (o il tipo di processing cui sottoporlo).
+
+Esempio di audio procedurale in "_No Man Sky_" (raycasting per procedural occlusion, tool interno per sintesi di vocalizzazione di creature aliene: _VocAlien_).
+
 Tra gli svantaggi:
 
 #### Industrial inertia: you gotta ship titles
@@ -864,7 +892,7 @@ In un futuro presumibilmente non troppo lontano, il paradigma procedurale avrà 
 
 ![water](./images/pt2/future-water.jpg)
 
-Proprio come negli ultimi 20 anni sono nate specializzazione di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, etc...), così anche nel mondo dell'audio procedurale ci saranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua e [bolle](http://www.cs.cornell.edu/projects/Sound/bubbles/), fuoco, [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/), impatti, [frizioni e sfregamenti](http://independent.academia.edu/StefaniaSerafin), [accartocciamenti](http://www.cs.columbia.edu/cg/crumpling/), [acustica delle stanze](http://www.ness-music.eu/wp-content/uploads/2013/04/TASL2256897.pdf), etc...).
+Proprio come negli ultimi 20 anni sono nate specializzazioni di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, etc...), così anche nel mondo dell'audio procedurale ci saranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua e [bolle](http://www.cs.cornell.edu/projects/Sound/bubbles/), fuoco, [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/), impatti, [frizioni e sfregamenti](http://independent.academia.edu/StefaniaSerafin), [accartocciamenti](http://www.cs.columbia.edu/cg/crumpling/), [acustica delle stanze](http://www.ness-music.eu/wp-content/uploads/2013/04/TASL2256897.pdf), etc...).
 
 #### Animation driven by audio
 
@@ -878,11 +906,7 @@ Se, come spesso accade, l'audio è considerato come accessorio e secondario risp
 
 ![sierra lip sync](./images/ed-agosto-settembre-2017/pt2/sierra-lipsync.jpg)
 
-**Procedural animation**: [Tom Clancy's Ghost Recon Advanced Warfighter 2](https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Advanced_Warfighter)) (Ubisoft 2007) case study: un aeroplano precipitato nel deserto esplode e continua a bruciare a terra. Le fiamme sono sferzate a destra e a sinistra da un vento irregolare. Polvere e fumo sono generati proceduralemtne in base al livello dell'audio pre-prodotto.
-
-Vedi [questo talk](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio) di Scott Selfon al minuto 23:14!
-
-
+**Procedural animation**: [Tom Clancy's Ghost Recon Advanced Warfighter 2](https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Advanced_Warfighter)) (Ubisoft 2007) case study: un aeroplano precipitato nel deserto esplode e continua a bruciare a terra. Le fiamme sono sferzate a destra e a sinistra da un vento irregolare. Polvere e fumo sono generati proceduralemtne in base al livello dell'audio pre-prodotto (vedi [questo talk](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio) di Scott Selfon al minuto 23:14)!
 
 <a id="pt3"></a>
 ## Pt3: Game Sound workshop
@@ -902,15 +926,9 @@ Concetti di:
   - attenuation curve
   - sound size
   - min extent (eventualmente impiegato per sovrascrivere per sovrascrivere quanto impostato con gli altri parametri)
-
-![3D sound](./images/ed-agosto-settembre-2017/pt3/3D-sound.png)
-
 * pt motors / parametrization
 * pt footsteps
 * pt music
-
-TODO: esempio di audio procedurale in "_No Man Sky_" (raycasting per procedural occlusion, tool interno per sintesi di vocalizzazione di creature aliene: _VocAlien_).
-
 
 ---
 
@@ -921,7 +939,7 @@ tipologie di suono: classi sonore relativamente piccole, canne, lastre di metall
 
 #### Physical modelling
 
-![PM vs. PIM](./images/graphics/physically-inpired-model.png)
+![PM vs. PIM](./images/graphics/physically-inpired-model.png){: width="80%"}
 
 physical modelling / physical informed modelling (differenze)
 Waveguide (difetto: uso della memoria per implementare delay per la propagazione e i risuonatori)
@@ -941,7 +959,7 @@ tipologie di suono: suoni con struttura eterogenea, onde che si infrangono sulla
 
 Abbiamo detto che il paradigma del suono procedurale prevede una stratificazione delle diverse fasi. Questo significa che ciascuna di esse può essere svolta con un particolare strumento hardware o software piuttosto che un altro, a seconda delle esigenze del progetto o delle particolari propensioni del suond designer.
 
-![behaviour model implementation](./images/graphics/beh-mod-impl.png){: width="60%"}
+![behaviour model implementation](./images/graphics/beh-mod-impl.png){: width="40%"}
 
 Tipico è il caso del layer di _implementazione_: in questa fase infatti qualsiasi strumento software può essere usato per implementare il modello. Esistono infatti svariati linguaggi che possono essere utilizzati per la fase di implementazione (Supercollider, Csound, Faust, C++ via STK, Chuck, etc...). Ogni linguaggio possiede determinate caratteristiche che lo rendono più indicato per un task specifico.
 
@@ -992,6 +1010,19 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 
 * **creaking**: movimento [_slip-stick_](https://en.wikipedia.org/wiki/Stick-slip_phenomenon). Un segnale di controllo (che simboleggi la forza impiegata nel movimento) che varia da 0 e 1 produce una serie di impulsi in uscita. Questi passano attraverso una serie di filtri passabanda per riprodurre le formanti di una struttura _quadrata_ in _legno_.
 
+![vibrational modes rectangular membrane](http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode11.gif)
+
+Speed of sound in solids (wood): 3300 - 5000 m/s
+
+test mathjax
+
+$$
+
+f_{11} = \frac{c}{ 2 L }
+
+$$
+
+
 {% comment %}
 https://en.wikipedia.org/wiki/Vibrations_of_a_circular_membrane
 http://frame3dd.sourceforge.net/
@@ -1014,6 +1045,8 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 
 ### Godot & libpd integration
 TODO
+
+[Godot](https://www.patreon.com/godotengine) è un game engine libero!
 
 #### Call for partecipants
 
