@@ -1013,28 +1013,30 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 <table style="width=100%">
 <tr>
 <td>
-<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode11.gif" alt="11" style="" />
+<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode11.gif" alt="11" style="width:100%" />
 </td>
 <td>
-<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode12.gif" alt="11" style="" />
+<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode12.gif" alt="11" style="width:100%" />
 </td>
 <td>
-<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode21.gif" alt="11" style="" />
+<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode21.gif" alt="11" style="width:100%" />
 </td>
 <td>
-<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode22.gif" alt="11" style="" />
+<img src="http://www.acs.psu.edu/drussell/Demos/MembraneSquare/mode22.gif" alt="11" style="width:100%" />
 </td>
 </tr>
 </table>
+
+
 Speed of sound in solids (wood): 3300 - 5000 m/s
 
-test mathjax
+TODO: test mathjax
 
-\[
+\\[
 
 f_{11} = \frac{c}{ 2 L }
 
-\]
+\\]
 
 
 {% comment %}
