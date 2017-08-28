@@ -23,7 +23,20 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 
 ### Che cos'è un game engine?
 
-Il videogioco è una moderna di declinazione del concetto di gioco. La sua particolarità risiede nel mezzo con cui si fruisce del gioco: uno **schermo**. Storicamente i videogiochi hanno visto i natali negli arcade (sale gioco), a cui si sono aggiunte le console e infine i PC.
+#### Cos'è un videogioco?
+Il videogioco è una moderna di declinazione del concetto di **gioco**. La sua particolarità risiede nel mezzo con cui si fruisce del gioco: uno **schermo**. Storicamente i videogiochi hanno visto i natali negli arcade (sale gioco), a cui si sono aggiunte le console e infine i PC.
+
+##### Le caratteristiche del gioco
+
+Un gioco è:
+
+una narrazione guidata da scelte che uno o più giocatori compiono in conformità a un insieme di regole che limitano il campo d’azione.
+
+Le sue caratteristiche sono:
+
+* Intrattenimento (non solo: [studi sull'impatto del videogioco sulla salute e le capacità cognitive](https://www.scienceopen.com/search#%7B%22id%22%3A%22%22%2C%22isExactMatch%22%3Atrue%2C%22context%22%3Anull%2C%22kind%22%3A77%2C%22order%22%3A0%2C%22orderLowestFirst%22%3Afalse%2C%22query%22%3A%22videogame%20%22%2C%22filters%22%3A%5B%5D%7D))
+* Interattività
+* Multimedialità
 
 Un videogioco altro non è che un software, un insieme di codici contenenti le istruzioni comprensibili da una macchina.
 Ogni macchina per le sue peculiarità (hardware, OS quando presente) comprende un particolare insieme di codici, non utilizzabili da altri macchinari, per quanto simili come finalità di utilizzo.
@@ -54,6 +67,7 @@ A partire dagli arcade, passando per le prime console e quindi approdando ai PC,
 
 Ma se siamo sviluppatori indipendenti e non abbiamo un reparto che si occupa di programmazione e sviluppo software capace di creare dal nulla un game engine? Alcune software house importanti (Epic Games - Unreal e Id Software - xxx) hanno rilasciato al pubblico i loro engine, entrambi utilizzati per la realizzazione di FPS, il genere di videogiochi più in voga al tempo. Altre software house si sono specializzate nello sviluppo di game engine per terze parti. Negli ultimi anni si ha una vera e propria profusione di game engine di respiro più genrico, per cui oggi non si ha che l'imbarazzo della scelta.
 Una nota: esistono game engine più generici (Unity3D, Godot,...) e altri pensati per la realizzaizone di una tipologia precisa di videogiochi (Inform, Unreal, ...). Alcuni game engine offrono molte risorse (render 3D, compatibilità con sistemi VR, gestione rete per multiplayer online, streaming video...), ma alle volte non tutte sono necessarie per il gioco che si vuole realizzare. Quindi si sceglie (visto che oggi lo si può fare) il game engine in funzione del gioco da realizzare. Non uso Ableton Live per fare editing al campione, come non uso ProTools per fare una performnca dal vivo che richiede flessibilità e affidabilità.
+
 Middleware: come pro tools può essere espanso con plugin che ne amplificano le funzionalità, così i game engine possono essere ampliati in alcune loro funzionalità grazie all'uso di middleware (di cui avete già visto un esempio in Wwise). Ci sono middleware molto famosi, come Havok per la fisica e l'AI e euphoria per la fisica e le collisioni.
 
 <table>
@@ -73,35 +87,47 @@ Un'ulteriore nota di carattere generale: sebbene il livello di programmazione è
 
 Abbiamo visto che il videogioco altro non è se non un software. Sebbene nei moderni sistemi di sviluppo non è necessario essere in grado di programmare se si creano assets (ad esempio audio), è anche vero che ci si dovrà interfacciare con reparti tecnici che invece lavorano con il codice (ad esempio un DSP guy o audio programmer/coder). Quindi familiarizzare con un po' di nomenclatura facilita il lavoro di entrambi.
 
+Inoltre, padroneggiare i principi di programmazione torna utile anche da un punto di vista creativo, rendendo possibile usare tool di sviluppo audio come SuperCollider o Chuck con cui si possono realizzare effetti audio e suoni inediti e del tutto originali. Inoltre questi strumenti sono utilizzabili durante live performances per creare jam con il codice (live coding). A tal proposito, rimandiamo all'interessante [talk](https://www.youtube.com/watch?v=TK1mBqKvIyU) del creatore di [Sonic Pi](http://sonic-pi.net/), Sam Aaron. Il movimento di riferimento è [Algorave](https://algorave.com/) e il sito in cui trovare informazioni è [toplap](https://toplap.org/).
+
+Per chi fosse interessato ad approfondire da subito il mondo della programmazione, consigliamo di seguire [questa breve lezione](http://hello.processing.org/) tenuta da Daniel Shiffman, portabandiera della [Processing](http://processing.org) Foundation.
+{: class="dashed"}
+
 Cosa significa avere un sistema semplificato di programmazione come ho detto prima?
+
+Il computer è una macchina universale. Significa che può compiere qualsiasi compito per il quale le si forniscano le corrette istruzioni. Il computer però non fa nulla da solo. Non è come una radio, che una volta accesa, capterà automaticamente le onde radio a una data frequenza e le renderà in forma di onda sonora. Il computer una volta acceso rimane in stand-by. Attende istruzioni.
+
+Le istruzioni comprese dal computer sono in forma binaria. Significa che sono in forma di sequenze di caratteri `1` e `0`.
+E' possibile programmare, ovvero fornire istruzioni al computer, in forma binaria, ma non è molto efficiente. Questo per due motivi principali:
+- le istruzioni raggiungono lunghezze considerevoli in breve tempo, quindi richiedoo del tempo per essere redatte;
+- la possibilità di errore cresce esponenzialmente con la lunghezza delle istruzioni così come la difficoltà di correggere l'errore.
+
+Il vantaggio di programmare in binario è, però, l'assenza di livelli intermedi tra programmatore/software ed hardware.
+Per facilitare il compito del programmatore sono nati linguaggi di programmazione più vicini al linguaggio naturale, che grazie ad una macchina (l'**assembler**), vengono tradotti in binario. Ogni macchina comprende un particolare dialetto binario, quindi avrà un proprio assembly (il linguaggio compreso dall'assembler) dedicato. Non posso usare l'assembly per Intel su una macchina Motorola.
+
+L'assembly è a tutti gli effetti quello che si chiama linguaggio a basso livello (ovvero, un linguaggio che usa simboli e alfabeto proprio degli esseri umani e che comunica in linea piuttosto diretta con l'hardware).
+
+Per rendere la programmazione indipendente dalla macchina su cui si lavora (sviluppo un editor di testo che possa funzionare su DOS, Unix, Solaris, ...), sono stati creati dei linguaggi ancora più vicini al linguaggio naturale e che si avvantaggiano del **compilatore**, un software che traduce il file sorgente in un file scritto nell'assembly relativo alla macchina di destinazione, che a sua volta sarà reso in binario.
+
+Parlando di linguaggi vicini al linguaggio naturale, forse diamo un'idea un po' fuorviante. In realtà un linguaggio di programmazione è un linguaggio formale, ovvero un linguaggio con una grammatica, una sintassi e dei fortemente vincolato. Al contrario del linguaggio naturale, l'ambiguità è inesistente, pena la non computabilità del file sorgente.
+
+Infine, a un livello di astrazione ulteriore si situano i cosiddetti *linguaggi di scripting*, che richiedono un passaggio intermedio ulteriore rispetto ai linguaggi compilati per essere resi in binario
+
+TODO: immagine
+binario (-) assembly (-) linguaggi compilati (-) scripting
+X           assembler    compilatore             interprete
 
 ![astrazione](./images/ed-agosto-settembre-2017/pt1/livelli-astrazione.png)
 
 ![compilatori](./images/ed-agosto-settembre-2017/pt1/compilatori-1.png)
 
-Il computer è una macchina universale. Significa che può compiere qualsiasi compito per il quale le si forniscano le corrette istruzioni. Il computer però non fa nulla da solo. Non è come una radio, che una volta accesa, capterà automaticamente le onde radio a una data frequenza e le renderà in forma di onda sonora. Il computer una volta acceso rimane in stand-by. Attende istruzioni.
-Le istruzioni comprese dal computer sono in forma binaria. Significa che sono in forma di sequenze di caratteri '1' e '0'.
-E' possibile programmare, ovvero fornire istruzioni al computer, in forma binaria, ma non è molto efficiente. Questo per due motivi principali:
-- le istruzioni raggiungono lunghezze considerevoli in breve tempo, quindi richiedoo del tempo per essere redatte;
-- la possibilità di errore cresce esponenzialmente con la lunghezza delle istruzioni così come la difficoltà di correggere l'errore.
-Il vantaggio di programmare in binario è, però, l'assenza di livelli intermedi tra programmatore/software ed hardware.
-Per facilitare il compito del programmatore sono nati linguaggi di programmazione più vicini al linguaggio naturale, che grazie ad una macchina (l'assembler), vengono tradotti in binario. Ogni macchina comprende un particolare dialetto bianrio, quindi avrà un proprio assembly (il linguaggio compreso dall'assembler) dedicato. Non posso usare l'assembly per Intel su una macchina Motorola.
-L'assembly è a tutti gli effetti quello che si chiama linguaggio a basso livello (ovvero, un linguaggio che usa simboli e alfabeto proprio degli esseri umani e che comunica in linea piuttosto diretta con l'hardware).
-Per rendere la programmazione indipendente dalla macchina su cui si lavora (sviluppo un editor di testo che possa funzionare su DOS, Unix, Solaris, ...), sono stati creati dei linguaggi ancora più vicini al linguaggio naturale e che si avvantaggiano del compilatore, un software che traduce il file sorgente in un file scritto nell'assembly relativo alla macchina di destinazione, che a sua volta sarà reso in binario.
-
-Parlando di linguaggi vicini al linguaggio naturale, forse diamo un'idea un po' fuorviante. In realtà un linguaggio di programmazione è un linguaggio formale, ovvero un linguaggio con una grammatica, una sintassi e dei fortemente vincolato. Al contrario del linguaggio naturale, l'ambiguità è inesistente, pena la non computabilità del file sorgente.
-
-Infine, a un livello di astrazione ulteriore si situano i cosiddetti linguaggi di scripting, che richiedono un passaggio intermedio ulteriore rispetto ai linguaggi compilati per essere resi in binario
-
-binario (-) assembly (-) linguaggi compilati (-) scripting
-X           assembler    compilatore             interprete
-
 Più un linguaggio ha una grammatica e sintassi formale più si evitano ambiguità e più è semplice formulare istruzioni. Di contro, bisogna padroneggiare una buona percentuale del linguaggio prima di essere in grado di utilizzarlo.
 
 ### Com'è fatto un game engine?
+TODO: copia da slide
+- rendering 2D/3D
 
-Prendiamo Godot come game engine di esempio.
-Perchè godot?
+---
+Prendiamo [Godot](http://godotengine.org) come game engine di esempio.
 - open source: posso modificarlo come voglio e c'è una comunity che amplia e consolida la piattaforma
 - multipiattaforma: linux, Windows, Mac OS
 - 2D e 3D: parimenti sviluppato per entrambi i formati di gioco
@@ -109,6 +135,7 @@ Perchè godot?
 - GDScript è mutuato su Python (Godot3 ha porting per Python): è un inguaggio molto usato (dalla computer vision alla AI, al NLP)
 - GUI
 - gestione salvataggi
+- visual programming (dalla versione 3)
 
 * Filesystem: accesso a risorse sul computer e visualizzazione gererchia cartelle all'interno del progetto
 * pannello risorse: le risorse usate nel gioco (file audio, file video, scene, sprite/modelli 3D, mesh, textures, immagini)
