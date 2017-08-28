@@ -28,7 +28,11 @@ Il videogioco è una moderna di declinazione del concetto di gioco. La sua parti
 Un videogioco altro non è che un software, un insieme di codici contenenti le istruzioni comprensibili da una macchina.
 Ogni macchina per le sue peculiarità (hardware, OS quando presente) comprende un particolare insieme di codici, non utilizzabili da altri macchinari, per quanto simili come finalità di utilizzo.
 
-Inoltre, assieme alla complessità logica e grafica i giochi si sono man mano diversificati anche in virtù di un genere di appartenenza. Possiamo pensare a un'avventura testuale, un RPG, un'avventura grafica, un race game, un FPS. Tutti questi sono videogiochi, ma differiscono notevolmente tra di loro sia per quanto riguarda la logica interna sia per quanto riguarda la performance richiesta alla macchina.
+TODO: integrazione con parti storiche. un solo genere --> collasso del mercato --> '85 esce SuperMarioBros e il NES.
+
+Inoltre, assieme alla complessità logica e grafica i giochi si sono man mano diversificati anche in virtù di un genere di appartenenza. Possiamo pensare a un'avventura testuale, un RPG, un'avventura grafica, un race game, un FPS.
+
+Tutti questi sono videogiochi, ma differiscono notevolmente tra di loro sia per quanto riguarda la logica interna sia per quanto riguarda la performance richiesta alla macchina.
 
 Consideriamo:
 - un'avventura testuale richiede un'efficienza in termini di parsing del testo (comprensione delle istruzioni digitate dall'utente), ma non ha grafica;
@@ -267,6 +271,8 @@ La ripetizione può verificarsi nell'ambito dei:
 * **suono senza corrispondenza visiva** (o per meglio dire, con _errata_ corrispondenza visiva): una cosa che accade tipicamente con i suoni d'ambiene, spesso pre-prodotti e inseriti nel gioco senza che ci sia poi una comunicazione tra i game e audio engines. Un esempio potrebbe essere il bubolare del **gufo** o l'**ululato** del lupo in uno scenario di un bosco pauroso. La traccia ambientale potrebbe essere prerenderizzata (mono, stereo o multicanale), tuttavia non risultare realistica quando il gufo suoni sempre "_pannato_" a destra nonostante l'avanzare e il muoversi del player nel bosco.
 
 #### Grandi matrici
+
+TODO: lista suoni prince of persia
 
 Tutto questo fa sì che ci sia bisogno di un gran numero di variazioni e che si debba lavorare per "_riempire gli spreadsheet_" (parte dell'_audio design document_) e registrare centinaia se non migliaia di suoni diversi. Una matrice ad incroci enorme che richiede un sacco di tempo e risorse per essere prodotta.
 
@@ -632,7 +638,7 @@ In questo gioco l'[audio binuaurale](https://www.polygon.com/2017/8/9/16120082/h
 A proposito di binuaurale, mai sentito parlare del fenomeno denominato [ASMR](https://it.wikipedia.org/wiki/Autonomous_sensory_meridian_response)? Ecco un [interessante articolo](https://emshort.blog/2017/07/27/second-person-storytelling-in-asmr/) a rigurdo.
 {: class="dashed"}
 
-Nel gioco l'audio è [talvolta utilizzato](https://youtu.be/5-D57571odo?t=2m11s) come mezzo (quasi) esclusivo per riuscire ad orientarsi nel mondo tridimentsionale.
+Nel gioco l'audio è [talvolta utilizzato](https://youtu.be/5-D57571odo?t=2m11s) come mezzo (quasi) esclusivo per riuscire ad orientarsi nel mondo tridimensionale.
 
 #### Ambience
 
@@ -1030,14 +1036,7 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 
 Speed of sound in solids (wood): 3300 - 5000 m/s
 
-TODO: test mathjax
-
-\\[
-
-f_{11} = \frac{c}{ 2 L }
-
-\\]
-
+TODO: test mathjax f_{11} = \frac{c}{ 2 L }
 
 {% comment %}
 https://en.wikipedia.org/wiki/Vibrations_of_a_circular_membrane
@@ -1063,6 +1062,8 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 TODO
 
 [Godot](https://www.patreon.com/godotengine) è un game engine libero!
+
+audio server architecture
 
 #### Call for partecipants
 
