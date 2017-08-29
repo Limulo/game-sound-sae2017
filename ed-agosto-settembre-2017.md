@@ -54,9 +54,11 @@ Inoltre, assieme alla complessità logica e grafica i giochi ci sono man mano di
 La _diversificazione dei generi_ non è stata solo uno sbocco naturale dovuto all'innovazione tecnologica ma anche una necessità dell'industria per far fronte ad una stagnazione del mercato, ormai saturo di giochi, uno [clone](http://www.pong-story.com/mypongs.htm) dell'altro, sia negli arcade, console e primi pc. Uno su tutti è l'esempio di Pong il cui chip (l'[AY-3-8500](https://it.wikipedia.org/wiki/AY-3-8500))
 <br/><br/>
 ![collasso](./images/ed-agosto-settembre-2017/pt1/pong/collapse.png)
+<br/><br/>
+La saturazione del mercato fu causata anche da una mancanza di regolamentazione nel _copyright_ associato al prodotto videoludico!
 {: class="dashed"}
 
-Possiamo esaminare ad esempio a un'avventura testuale o grafica, un RPG, un race game e un FPS. Tutti questi sono videogiochi, ma differiscono notevolmente tra di loro sia per quanto riguarda la logica interna sia per quanto riguarda la performance richiesta alla macchina.
+Di generi videoludici ne esistono moltissimi, possiamo qui esaminarne alcuni, come ad esempio un'avventura testuale o grafica, un RPG, un race game e un FPS. Tutti questi sono videogiochi, ma differiscono notevolmente tra di loro sia per quanto riguarda la logica interna sia per quanto riguarda la performance richiesta alla macchina.
 
 1. un'avventura testuale (come [Colossal Cave Adventure](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure) del 1976) richiede un'efficienza in termini di _parsing del testo_ (comprensione delle istruzioni digitate dall'utente), ma non ha grafica;
 2. un'avventura grafica (come [Gabriel Knight](https://en.wikipedia.org/wiki/Gabriel_Knight) della Sierra) invece richiede un _render grafico_, la possibilità di emettere _suono_ e di gestire la _fisica_, e la gestione dell'_input_ dell'utente attraverso _interfaccia grafica_ (GUI);
@@ -68,7 +70,7 @@ Si vede che anche solo considerando pochi esempi di videogiochi, questi differsc
 
 ### Perchè si utilizza il game engine?
 
-TODO
+Per capire perchè il game engine è importante...
 
 #### Mettiamoci nei panni...
 
@@ -76,7 +78,7 @@ Quindi ora, mettiamoci nei panni di una software house. Possiamo decidere di svi
 
 Questa modalità a lungo andare non è efficiente. Allora ci domandiamo, perchè reinventare ogni volta la ruota?
 
-Quando abbiamo realizzato un videogioco, ad esempio un RPG, abbiamo già a disposizione tutta una serie di strumenti software che possono essere riutilizzati in altri giochi RPG. Quello che cambierebbe allora sarebbero solo gli assets (grafiche, suoni, modelli, script,...). Questo è dispendioso solo in termini di rendere il pacchetto software già realizzato il più generico possibile, in modo da essere utilizzabile più e più volte per diversi giochi.
+Quando abbiamo realizzato un videogioco, ad esempio un RPG, abbiamo già a disposizione tutta una serie di strumenti software che possono essere riutilizzati in altri giochi RPG. Quello che cambierebbe allora sarebbero solo gli **assets** (grafiche, suoni, modelli, script,...). Questo è dispendioso solo in termini di rendere il pacchetto software già realizzato il più generico possibile, in modo da essere utilizzabile più e più volte per diversi giochi.
 
 Una volta che si crea questo _motore di gioco_ (**game engine**), lo sviluppo di ulteriori giochi è facilitato, si possono spender più tempo e soldi in termini di sviluppo asset e soprattutto in level design. Il tutto è ulteriormente semplificato dall'utilizzo di un'IDE grafica (interfaccia di sviluppo grafica) che rende trasparente il livello di programmazione.
 
@@ -105,7 +107,7 @@ Non uso _Ableton Live_ per fare editing al campione, come non uso _ProTools_ per
 
 #### Middleware
 
-Come pro tools può essere espanso con plugin che ne amplificano le funzionalità, così i game engine possono essere ampliati in alcune loro funzionalità grazie all'uso di middleware (di cui avete già visto un esempio in Wwise). Ci sono middleware molto famosi, come Havok per la fisica e l'AI e euphoria per la fisica e le collisioni.
+Come pro tools può essere espanso con plugin che ne amplificano le funzionalità, così i game engine possono essere ampliati in alcune loro funzionalità grazie all'uso di middleware (di cui avete già visto un esempio in Wwise). Ci sono middleware molto famosi, come _Havok_ per la **fisica** e l'**AI** e _Euphoria_ per la fisica e le collisioni.
 
 <table style="width:100%">
 <tr>
@@ -160,7 +162,7 @@ Parlando di linguaggi vicini al linguaggio naturale, forse diamo un'idea un po' 
 
 Infine, a un livello di astrazione ulteriore si situano i cosiddetti **linguaggi di scripting**, che richiedono un passaggio intermedio ulteriore rispetto ai linguaggi compilati per essere resi in binario
 
-![programming languages evolution](./images/ed-agosto-settembre-2017/pt1/binary-2-scripting/programming-lang-evo.png) 
+![programming languages evolution](./images/ed-agosto-settembre-2017/pt1/binary-2-scripting/programming-lang-evo.png)
 
 Più un linguaggio ha una grammatica e sintassi formale più si evitano ambiguità e più è semplice formulare istruzioni. Di contro, bisogna padroneggiare una buona percentuale del linguaggio prima di essere in grado di utilizzarlo.
 {: class="note"}
@@ -170,16 +172,18 @@ Più un linguaggio ha una grammatica e sintassi formale più si evitano ambiguit
 Ecco le principali funzionalità che non possono mancare in un qualsiasi game engine:
 * rendering engine (_motore di render_): sia 2D che 3D, si occupa di raccogliere tutte le informazioni della scena e sintetizzarle a schermo in un'immagine coerente (camera, luci, occlusioni, colori, texture) responsiva dell'input dell'utente (60 fps). Render 3d: i modelli 3d si compongono di "facce" ovvero poligoni costruiti usando triangoli. Ciascun vertice di ciascun triangolo è sottoposto a forze, illuminazione, deformazione, movimento... Tutto questo viene calcolato per milioni di vertici 60 volte al secondo;
 * physics engine (_motore di fisica_): 60 volte al secondo il sistema controlla le collisioni dei corpi, le interazioni tra questi, i movimenti - anche solo camminare - è determinato da un intervento sulla fisica: `s = s0 + v0*t + 1/2a*t^2`;
-* sound engine (_motore audio_): generalmente si distingue un **emitter** (= altoparlante) e un **listener** (= microfono o array di microfoni) per la gestione dei suoni diegetici. Un player audio stereo o multicanale è utilizzato invece per i suoni extra-diegeteici (colonna sonora));
-* interprete del linguaggio di scripting
+* sound engine (_motore audio_): generalmente si distingue un **emitter** (= altoparlante) e un **listener** (= microfono o array di microfoni) per la gestione dei suoni _diegetici_. Un player audio stereo o multicanale è utilizzato invece per i suoni _extra-diegeteici_ (colonna sonora);
+* interprete del linguaggio di scripting;
 * AI engine (_motore di intelligenza artificiale_): i primi esempi di AI risalgono a PacMan, ma soprattutto al giorno d'oggi l'AI ha assunto un ruolo di rilievo in molti giochi. Chi si occupa di gestirla a livello software è il game engine;
 * animation tools;
-* memory management (garbage collection)
-* threading (physics engine e AI engine)
-* video support (codecs)
-* network management
-* UI/GUI ()
-* VR
+* particle systems;
+* memory management (garbage collection);
+* threading (physics engine e AI engine);
+* video support (codecs);
+* network management;
+* UI/GUI ();
+* VR;
+* etc...
 
 Interessate il progetto [openHMD](http://www.openhmd.net/) (open <b>H</b>ead <b>M</b>ounted <b>D</b>isplay) che offre un set di librerie libere e open source pensate per la gestione del VR e AR.
 {: class="dashed"}
@@ -208,7 +212,6 @@ Come è strutturata l'interfaccia di _Godot_:
 * properties: proprietà del nodo: variabili modificabili per il nodo (estendibili tramite script)
 * Node Signals: segnali emessi/recepiti dal nodo (sistema di comunicazione fra vari elementi)
 * Node Group: assegnazione dei nodi a gruppi per associare comportamento comune a più elementi (esempio enemies)
-
 
 <a id="pt2"></a>
 ## Pt2: Game Sound overview
