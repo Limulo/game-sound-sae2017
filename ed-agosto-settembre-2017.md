@@ -23,14 +23,17 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 
 ### Che cos'è un game engine?
 
+Il **game engine** (o motore di gioco) è un componente software usato per aiutare lo sviluppo l'esecuzione di un _videogioco_. Prima di esaminarlo in dettaglio conveniamo sulla definizione di **videogioco**.
+
 #### Cos'è un videogioco?
-Il videogioco è una moderna di declinazione del concetto di **gioco**. La sua particolarità risiede nel mezzo con cui si fruisce del gioco: uno **schermo**. Storicamente i videogiochi hanno visto i natali negli arcade (sale gioco), a cui si sono aggiunte le console e infine i PC.
 
-##### Le caratteristiche del gioco
+Il _videogioco_ è una moderna di declinazione del concetto di **gioco**. La sua particolarità risiede nel mezzo con cui si fruisce del gioco: uno **schermo**.
 
-Un gioco è:
+![videogioco](./images/ed-agosto-settembre-2017/pt1/natron/natron-output.png)
 
-una narrazione guidata da scelte che uno o più giocatori compiono in conformità a un insieme di regole che limitano il campo d’azione.
+####   Le caratteristiche del gioco
+
+Un **gioco** è una narrazione guidata da scelte che uno o più giocatori compiono in conformità a un insieme di regole che limitano il campo d’azione.
 
 Le sue caratteristiche sono:
 
@@ -38,30 +41,38 @@ Le sue caratteristiche sono:
 * Interattività
 * Multimedialità
 
-Un videogioco altro non è che un **software**, un insieme di codici contenenti le istruzioni comprensibili da una macchina.
+---
+
+#### Il videogame è software!
+
+Storicamente i videogiochi hanno visto i natali negli arcade (sale gioco), a cui si sono aggiunte le console e infine i PC. Un videogioco altro non è che un **software**, un insieme di codici contenenti le istruzioni comprensibili da una macchina.
+
 Ogni macchina per le sue peculiarità (hardware, OS quando presente) comprende un particolare insieme di codici, non utilizzabili da altri macchinari, per quanto simili come finalità di utilizzo.
 
+Inoltre, assieme alla complessità logica e grafica i giochi ci sono man mano diversificati anche in virtù di un genere di appartenenza.
+
+La _diversificazione dei generi_ non è stata solo uno sbocco naturale dovuto all'innovazione tecnologica ma anche una necessità dell'industria per far fronte ad una stagnazione del mercato, ormai saturo di giochi, uno [clone](http://www.pong-story.com/mypongs.htm) dell'altro, sia negli arcade, console e primi pc. Uno su tutti è l'esempio di Pong il cui chip (l'[AY-3-8500](https://it.wikipedia.org/wiki/AY-3-8500))
+<br/></br/>
 ![collasso](./images/ed-agosto-settembre-2017/pt1/pong/collapse.png)
+{: class="dashed"}
 
+Possiamo esaminare ad esempio a un'avventura testuale o grafica, un RPG, un race game e un FPS. Tutti questi sono videogiochi, ma differiscono notevolmente tra di loro sia per quanto riguarda la logica interna sia per quanto riguarda la performance richiesta alla macchina.
 
-TODO: integrazione con parti storiche. un solo genere --> collasso del mercato --> '85 esce SuperMarioBros e il NES.
-TODO: [pong clones](http://www.pong-story.com/mypongs.htm)
-TODO: same chip [AY-3-8500](https://it.wikipedia.org/wiki/AY-3-8500)
-
-Inoltre, assieme alla complessità logica e grafica i giochi ci sono man mano diversificati anche in virtù di un genere di appartenenza. Possiamo esaminare ad esempio a un'avventura testuale o grafica, un RPG, un race game, un FPS.
-
-Tutti questi sono videogiochi, ma differiscono notevolmente tra di loro sia per quanto riguarda la logica interna sia per quanto riguarda la performance richiesta alla macchina.
-
-Consideriamo:
-* un'avventura testuale richiede un'efficienza in termini di parsing del testo (comprensione delle istruzioni digitate dall'utente), ma non ha grafica;
-* un'avventura grafica richiede un render grafico, la possibilità di emettere suono e di gestire la fisica, e la gestione dell'input dell'utente attraverso interfaccia grafica (GUI);
-* un RPG richiede memoria per gestire le statistiche e i vari livelli durante il gioco. A differenza delle avventure testuali richiede anche la capacità di render grafico;
-* un race game si basa sulla simulazione, quindi saranno necessari modelli accurati e una corretta impostazione della fisica del gioco per poter riprodurre il più fedelemente possibile questi modelli nel gioco. A ciò si aggiunge il render grafico che deve essere accurato, una capacità responsiva veloce e una gestione di controller articolata;
-* un FPS ha bisogno di un'ottima resa grafica, di un sistema di gestione delle collisioni ottimale, di un sistema di AI e di gestire l'input utente attraverso interfacce grafiche anche molto complesse.
+1. un'avventura testuale (come [Colossal Cave Adventure](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure) del 1976) richiede un'efficienza in termini di _parsing del testo_ (comprensione delle istruzioni digitate dall'utente), ma non ha grafica;
+2. un'avventura grafica (come [Gabriel Knight](https://en.wikipedia.org/wiki/Gabriel_Knight) della Sierra) invece richiede un _render grafico_, la possibilità di emettere _suono_ e di gestire la _fisica_, e la gestione dell'_input_ dell'utente attraverso _interfaccia grafica_ (GUI);
+3. un RPG (come [Ultima](https://en.wikipedia.org/wiki/Ultima_%28series%29)) richiede _memoria_ per gestire le statistiche e i vari livelli durante il gioco. A differenza delle avventure testuali richiede anche la capacità di render grafico;
+4. un race game (come [Indianapolis]()) si basa sulla _simulazione_, quindi saranno necessari modelli accurati e una corretta impostazione della _fisica_ del gioco per poter riprodurre il più fedelemente possibile questi modelli nel gioco. A ciò si aggiunge il _render grafico_ che deve essere accurato, una capacità responsiva veloce e una gestione di controller articolata;
+5. un FPS (come [Wofenstein 3D](https://it.wikipedia.org/wiki/Wolfenstein_3D)) ha bisogno di un'ottima resa _grafica_, di un sistema di gestione delle collisioni ottimale, di un sistema di _AI_ e di gestire l'input utente attraverso interfacce grafiche anche molto complesse.
 
 Si vede che anche solo considerando pochi esempi di videogiochi, questi differscano non solo in genere, ma anche in risorse di cui necessitano.
 
-Quindi ora, mettiamoci nei panni di una software house. Possiamo decidere di sviluppare ogni videogame da zero. Questo è dispendioso in termini di persone coinvolte e di tempo impiegato nella realizzazione del videogioco (concept, creazione degli asset, programmazione del gioco - interazione, fisica, grafica, suono -, ottimizzazione per varie piattaforme - abbiamo visto prima che macchine diverse comprendono codici - o linguaggi - diversi).
+### Perchè si utilizza il game engine?
+
+TODO:
+
+#### Mettiamoci nei panni...
+
+Quindi ora, mettiamoci nei panni di una software house. Possiamo decidere di sviluppare ogni videogame da zero. Questo è dispendioso in termini di persone coinvolte e di tempo impiegato nella realizzazione del videogioco (concept, creazione degli asset, programmazione del gioco - interazione, fisica, grafica, suono, ottimizzazione per varie piattaforme - abbiamo visto prima che macchine diverse comprendono codici - o linguaggi - diversi).
 
 Questa modalità a lungo andare non è efficiente. Allora ci domandiamo, perchè reinventare ogni volta la ruota?
 
@@ -73,7 +84,7 @@ I vari reparti interessati nello sviluppo del gioco lavorano ciascuno nel propri
 
 Ecco quindi che come software house abbiamo creato un nostro game engine ad uso interno.
 
----
+#### Game engine storici
 
 Il nostro game engine è comunque lungi dall'essere un'innovazione nell'industria. Appoggiarsi a game engine (nel caso di sviluppo di videogiochi) o a porzioni di software già pronto (nella fase di sviluppo e creazione software) è una pratica vecchia quanto la computer science. Per quanto possibile non si reinventa la ruota. Si cerca, al più, di migliorarla.
 
@@ -81,14 +92,18 @@ Il nostro game engine è comunque lungi dall'essere un'innovazione nell'industri
 
 A partire dagli arcade, passando per le prime console e quindi approdando ai PC, la tecnologia ha reso sempre più semplice e desiderabile riutilizzare software già scritto, testato, ottimizzato, sul quale è possibile costruire nuovi programmi in minor tempo e in modo più efficiente.
 
+#### Game engine di moderna concezione
+
 Ma se siamo sviluppatori indipendenti e non abbiamo un reparto che si occupa di programmazione e sviluppo software capace di creare dal nulla un game engine? Alcune software house importanti (Epic Games con "_Unreal_" e Id Software con "_idTech_") hanno rilasciato al pubblico i loro engine, entrambi utilizzati per la realizzazione di FPS, il genere di videogiochi più in voga al tempo.
 
 Altre software house si sono specializzate nello sviluppo di game engine per terze parti. Negli ultimi anni si ha una vera e propria profusione di game engine di respiro più genrico, per cui oggi non si ha che l'imbarazzo della scelta.
 
-Una nota: esistono game engine più generici (Unity3D, Godot,...) e altri pensati per la realizzaizone di una tipologia precisa di videogiochi (Inform, Unreal, ...). Alcuni game engine offrono molte risorse (render 3D, compatibilità con sistemi VR, gestione rete per multiplayer online, streaming video...), ma alle volte non tutte sono necessarie per il gioco che si vuole realizzare. Quindi si sceglie (visto che oggi lo si può fare) il game engine in funzione del gioco da realizzare. Non uso _Ableton Live_ per fare editing al campione, come non uso _ProTools_ per fare una performance dal vivo che richiede flessibilità e affidabilità.
+Una nota: esistono game engine più generici (Unity3D, Godot,...) e altri pensati per la realizzaizone di una tipologia precisa di videogiochi (Inform, Unreal, ...). Alcuni game engine offrono molte risorse (render 3D, compatibilità con sistemi VR, gestione rete per multiplayer online, streaming video...), ma alle volte non tutte sono necessarie per il gioco che si vuole realizzare. Quindi si sceglie (visto che oggi lo si può fare) il game engine in funzione del gioco da realizzare.
+<br/><br/>
+Non uso _Ableton Live_ per fare editing al campione, come non uso _ProTools_ per fare una performance dal vivo che richiede flessibilità e affidabilità.
 {: class="note"}
 
-### Middleware
+#### Middleware
 
 Come pro tools può essere espanso con plugin che ne amplificano le funzionalità, così i game engine possono essere ampliati in alcune loro funzionalità grazie all'uso di middleware (di cui avete già visto un esempio in Wwise). Ci sono middleware molto famosi, come Havok per la fisica e l'AI e euphoria per la fisica e le collisioni.
 
@@ -106,11 +121,18 @@ Come pro tools può essere espanso con plugin che ne amplificano le funzionalit�
 Un'ulteriore nota di carattere generale: sebbene il livello di programmazione è trasparente all'utente del game engine, questo non scompare. Il gioco non cessa di essere software e il software altro non è che codice scritto in un linguaggio di programmazione. In parole povere, non si prescinde dal codice, ci sono sistemi semplificati di programmazione resi disponibili dai game engine, ma non esistono game engine in cui si può creare un gioco senza programmare.
 {: class="note"}
 
-### Spaccato sulla programmazione
+#### Spaccato sulla programmazione
 
-Abbiamo visto che il videogioco altro non è se non un software. Sebbene nei moderni sistemi di sviluppo non è necessario essere in grado di programmare se si creano assets (ad esempio audio), è anche vero che ci si dovrà interfacciare con reparti tecnici che invece lavorano con il codice (ad esempio un DSP guy o audio programmer/coder). Quindi familiarizzare con un po' di nomenclatura facilita il lavoro di entrambi.
+Abbiamo visto che il videogioco altro non è se non un **software**. Sebbene nei moderni sistemi di sviluppo non sia necessario essere in grado di programmare se si creano assets (ad esempio audio), è anche vero che ci si dovrà interfacciare con reparti tecnici che invece lavorano con il codice (ad esempio un _DSP guy_ o _audio programmer/coder_). Quindi familiarizzare con un po' di nomenclatura facilita il lavoro di entrambi.
 
-Inoltre, padroneggiare i principi di programmazione torna utile anche da un punto di vista creativo, rendendo possibile usare tool di sviluppo audio come SuperCollider o Chuck con cui si possono realizzare effetti audio e suoni inediti e del tutto originali. Inoltre questi strumenti sono utilizzabili durante live performances per creare jam con il codice (live coding). A tal proposito, rimandiamo all'interessante [talk](https://www.youtube.com/watch?v=TK1mBqKvIyU) del creatore di [Sonic Pi](http://sonic-pi.net/), Sam Aaron. Il movimento di riferimento è [Algorave](https://algorave.com/) e il sito in cui trovare informazioni è [toplap](https://toplap.org/).
+In sostanza, imparare i rudimenti della programmazione è fondamentale, soprattutro per operare nell'ambito multimediale, per i seguenti motivi:
+1. imparare a programmare fornisce un **linguaggio comune** spendibile in tutti i contesti in cui ci si debba interfacciare con un team di sviluppatori;
+2. imparare a programmare non implica che per forza si debba cercare uno sbocco professionale nel campo. Così come si impara a _leggere e scrivere_ senza pensare di divenire _scrittori_, così programmare sta diventando l'equivalente dell'**alfabetizzazione** del secolo scorso.
+
+Le nuove tecnologie si stanno evolvendo a ritmi sostenuti (esempi) e, se questo è da una parte salutato con entusiasmo, dall'altra è guardato con preoccupazione. L'unico modo per interfacciarsi serenamente con la tecnologia, ovvero non caderne vittima e non fuggirla come una minaccia è conoscerla!
+{: class="note"}
+
+3. inoltre, padroneggiare i principi di programmazione torna utile anche da un punto di vista **creativo**, rendendo possibile usare tool di sviluppo audio come SuperCollider o Chuck con cui si possono realizzare effetti audio e suoni inediti e del tutto originali. Inoltre questi strumenti sono utilizzabili durante live performances per creare jam con il codice (live coding). A tal proposito, rimandiamo all'interessante [talk](https://www.youtube.com/watch?v=TK1mBqKvIyU) del creatore di [Sonic Pi](http://sonic-pi.net/), Sam Aaron. Il movimento di riferimento è [Algorave](https://algorave.com/) e il sito in cui trovare informazioni è [toplap](https://toplap.org/).
 
 Per chi fosse interessato ad approfondire da subito il mondo della programmazione, consigliamo di seguire [questa breve lezione](http://hello.processing.org/) tenuta da Daniel Shiffman, portabandiera della [Processing](http://processing.org) Foundation.
 {: class="dashed"}
@@ -120,8 +142,9 @@ Cosa significa avere un sistema semplificato di programmazione come ho detto pri
 Il computer è una macchina universale. Significa che può compiere qualsiasi compito per il quale le si forniscano le corrette istruzioni. Il computer però non fa nulla da solo. Non è come una radio, che una volta accesa, capterà automaticamente le onde radio a una data frequenza e le renderà in forma di onda sonora. Il computer una volta acceso rimane in stand-by. Attende istruzioni.
 
 Le istruzioni comprese dal computer sono in forma binaria. Significa che sono in forma di sequenze di caratteri `1` e `0`.
+
 E' possibile programmare, ovvero fornire istruzioni al computer, in forma binaria, ma non è molto efficiente. Questo per due motivi principali:
-- le istruzioni raggiungono lunghezze considerevoli in breve tempo, quindi richiedoo del tempo per essere redatte;
+- le istruzioni raggiungono lunghezze considerevoli in breve tempo, quindi richiedo del tempo per essere redatte;
 - la possibilità di errore cresce esponenzialmente con la lunghezza delle istruzioni così come la difficoltà di correggere l'errore.
 
 Il vantaggio di programmare in binario è, però, l'assenza di livelli intermedi tra programmatore/software ed hardware.
@@ -131,55 +154,60 @@ L'assembly è a tutti gli effetti quello che si chiama linguaggio a basso livell
 
 Per rendere la programmazione indipendente dalla macchina su cui si lavora (sviluppo un editor di testo che possa funzionare su DOS, Unix, Solaris, ...), sono stati creati dei linguaggi ancora più vicini al linguaggio naturale e che si avvantaggiano del **compilatore**, un software che traduce il file sorgente in un file scritto nell'assembly relativo alla macchina di destinazione, che a sua volta sarà reso in binario.
 
-Parlando di linguaggi vicini al linguaggio naturale, forse diamo un'idea un po' fuorviante. In realtà un linguaggio di programmazione è un linguaggio formale, ovvero un linguaggio con una grammatica, una sintassi e dei fortemente vincolato. Al contrario del linguaggio naturale, l'ambiguità è inesistente, pena la non computabilità del file sorgente.
-
-Infine, a un livello di astrazione ulteriore si situano i cosiddetti *linguaggi di scripting*, che richiedono un passaggio intermedio ulteriore rispetto ai linguaggi compilati per essere resi in binario
-
-TODO: immagine
-binario (-) assembly (-) linguaggi compilati (-) scripting
-X           assembler    compilatore             interprete
-
 ![astrazione](./images/ed-agosto-settembre-2017/pt1/livelli-astrazione.png)
 
-![compilatori](./images/ed-agosto-settembre-2017/pt1/compilatori-1.png)
+Parlando di linguaggi vicini al linguaggio naturale, forse diamo un'idea un po' fuorviante. In realtà un linguaggio di programmazione è un linguaggio formale, ovvero un linguaggio con una grammatica, una sintassi e dei fortemente vincolato. Al contrario del linguaggio naturale, l'ambiguità è inesistente, pena la non computabilità del file sorgente.
+
+Infine, a un livello di astrazione ulteriore si situano i cosiddetti **linguaggi di scripting**, che richiedono un passaggio intermedio ulteriore rispetto ai linguaggi compilati per essere resi in binario
+
+![programming languages evolution](./images/graphics/programming-lang-evo.png)
 
 Più un linguaggio ha una grammatica e sintassi formale più si evitano ambiguità e più è semplice formulare istruzioni. Di contro, bisogna padroneggiare una buona percentuale del linguaggio prima di essere in grado di utilizzarlo.
+{: class="note"}
 
 ### Com'è fatto un game engine?
-TODO: copia da slide
-- rendering 2D/3D
 
----
+Ecco le principali funzionalità che non possono mancare in un qualsiasi game engine:
+* rendering engine (_motore di render_): sia 2D che 3D, si occupa di raccogliere tutte le informazioni della scena e sintetizzarle a schermo in un'immagine coerente (camera, luci, occlusioni, colori, texture) responsiva dell'input dell'utente (60 fps). Render 3d: i modelli 3d si compongono di "facce" ovvero poligoni costruiti usando triangoli. Ciascun vertice di ciascun triangolo è sottoposto a forze, illuminazione, deformazione, movimento... Tutto questo viene calcolato per milioni di vertici 60 volte al secondo;
+* physics engine (_motore di fisica_): 60 volte al secondo il sistema controlla le collisioni dei corpi, le interazioni tra questi, i movimenti - anche solo camminare - è determinato da un intervento sulla fisica: `s = s0 + v0*t + 1/2a*t^2`;
+* sound engine (_motore audio_): generalmente si distingue un **emitter** (= altoparlante) e un **listener** (= microfono o array di microfoni) per la gestione dei suoni diegetici. Un player audio stereo o multicanale è utilizzato invece per i suoni extra-diegeteici (colonna sonora));
+* interprete del linguaggio di scripting
+* AI engine (_motore di intelligenza artificiale_): i primi esempi di AI risalgono a PacMan, ma soprattutto al giorno d'oggi l'AI ha assunto un ruolo di rilievo in molti giochi. Chi si occupa di gestirla a livello software è il game engine;
+* animation tools;
+* memory management (garbage collection)
+* threading (physics engine e AI engine)
+* video support (codecs)
+* network management
+* UI/GUI ()
+* VR
+
+Interessate il progetto [openHMD](http://www.openhmd.net/) (open <b>H</b>ead <b>M</b>ounted <b>D</b>isplay) che offre un set di librerie libere e open source pensate per la gestione del VR e AR.
+{: class="dashed"}
+
+### Godot
+
 Prendiamo [Godot](http://godotengine.org) come game engine di esempio.
-- open source: posso modificarlo come voglio e c'è una comunity che amplia e consolida la piattaforma
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/XptlVErsL-o" frameborder="0" allowfullscreen></iframe>
+
+Perchè abbiamo scelto _Godot_:
+- open source: posso modificarlo come voglio e c'è una community che amplia e consolida la piattaforma
 - multipiattaforma: linux, Windows, Mac OS
 - 2D e 3D: parimenti sviluppato per entrambi i formati di gioco
 - leggero e veloce non pesa sulla memoria del sistema operativo
-- GDScript è mutuato su Python (Godot3 ha porting per Python): è un inguaggio molto usato (dalla computer vision alla AI, al NLP)
+- GDScript è mutuato su Python (Godot3 ha porting per Python): è un linguaggio molto usato (dalla computer vision alla AI, al NLP)
 - GUI
-- gestione salvataggi
 - visual programming (dalla versione 3)
 
+![Godot interface](./images/pt1/engines/Godot2.png)
+
+Come è strutturata l'interfaccia di _Godot_:
 * Filesystem: accesso a risorse sul computer e visualizzazione gererchia cartelle all'interno del progetto
 * pannello risorse: le risorse usate nel gioco (file audio, file video, scene, sprite/modelli 3D, mesh, textures, immagini)
 * hierarchy: gerarchia della scena (Nodo root, nodi figli, nodi fratelli, scripts associati ai singoli nodi, scene istanziate)
 * properties: proprietà del nodo: variabili modificabili per il nodo (estendibili tramite script)
 * Node Signals: segnali emessi/recepiti dal nodo (sistema di comunicazione fra vari elementi)
 * Node Group: assegnazione dei nodi a gruppi per associare comportamento comune a più elementi (esempio enemies)
-
-Generalmente un game engine non può mancare di:
-- motore di render: sia 2d che 3d, si occupa di raccogliere tutte le informazioni della scena e sintetizzarle a schermo in un'immagine coerente (luci, collisioni, colori) responsiva dell'input dell'utente (60 fps).
-- render 3d: i modelli 3d si compongono di "facce" ovvero poligoni costruiti usando triangoli. Ciascun vertice di ciascun triangolo è sottoposto a forze, illuminazione, deformazione, movimento... Tutto questo viene calcolato per milioni di vertici 60 volte al secondo.
-- motore di fisica: 60 volte al secondo il sistema controlla le collisioni dei corpi, le interazioni tra questi, i movimenti (anche solo camminare è determinato da un intervento sulla fisica: s = v0+v*t+a*t^2
-- motore audio: generalmente si distingue un emitter (= microfono) e un receiver (= altoparlante) per la gestione dei suoni diegetici. Un player audio stereo o multicanale è utilizzatoo invece per i suoni extradiegeteici (colonna sonora)
-- AI: i primi esempi di AI risalgono a PacMan, ma soprattutto al giorno d'oggi l'AI ha assunto un ruolo di rilievo in molti giochi. Chi si occupa di gestirla a livello software è il game engine.
-- gestione rete
-- gestione memoria (garbage collection)
-- camera e punti luce
-
-
-### Godot
-TODO: perchè abbiamo scelto Godot. Un nuovo game Engine che vogliamo presentarvi. Libero e Open Source.
 
 
 <a id="pt2"></a>
