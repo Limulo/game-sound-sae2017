@@ -52,7 +52,7 @@ Ogni macchina per le sue peculiarità (hardware, OS quando presente) comprende u
 Inoltre, assieme alla complessità logica e grafica i giochi ci sono man mano diversificati anche in virtù di un genere di appartenenza.
 
 La _diversificazione dei generi_ non è stata solo uno sbocco naturale dovuto all'innovazione tecnologica ma anche una necessità dell'industria per far fronte ad una stagnazione del mercato, ormai saturo di giochi, uno [clone](http://www.pong-story.com/mypongs.htm) dell'altro, sia negli arcade, console e primi pc. Uno su tutti è l'esempio di Pong il cui chip (l'[AY-3-8500](https://it.wikipedia.org/wiki/AY-3-8500))
-<br/></br/>
+<br/><br/>
 ![collasso](./images/ed-agosto-settembre-2017/pt1/pong/collapse.png)
 {: class="dashed"}
 
@@ -61,14 +61,14 @@ Possiamo esaminare ad esempio a un'avventura testuale o grafica, un RPG, un race
 1. un'avventura testuale (come [Colossal Cave Adventure](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure) del 1976) richiede un'efficienza in termini di _parsing del testo_ (comprensione delle istruzioni digitate dall'utente), ma non ha grafica;
 2. un'avventura grafica (come [Gabriel Knight](https://en.wikipedia.org/wiki/Gabriel_Knight) della Sierra) invece richiede un _render grafico_, la possibilità di emettere _suono_ e di gestire la _fisica_, e la gestione dell'_input_ dell'utente attraverso _interfaccia grafica_ (GUI);
 3. un RPG (come [Ultima](https://en.wikipedia.org/wiki/Ultima_%28series%29)) richiede _memoria_ per gestire le statistiche e i vari livelli durante il gioco. A differenza delle avventure testuali richiede anche la capacità di render grafico;
-4. un race game (come [Indianapolis]()) si basa sulla _simulazione_, quindi saranno necessari modelli accurati e una corretta impostazione della _fisica_ del gioco per poter riprodurre il più fedelemente possibile questi modelli nel gioco. A ciò si aggiunge il _render grafico_ che deve essere accurato, una capacità responsiva veloce e una gestione di controller articolata;
+4. un race game (come [Indianapolis 500](https://it.wikipedia.org/wiki/Indianapolis_500%3A_The_Simulation)) si basa sulla _simulazione_, quindi saranno necessari modelli accurati e una corretta impostazione della _fisica_ del gioco per poter riprodurre il più fedelemente possibile questi modelli nel gioco. A ciò si aggiunge il _render grafico_ che deve essere accurato, una capacità responsiva veloce e una gestione di controller articolata;
 5. un FPS (come [Wofenstein 3D](https://it.wikipedia.org/wiki/Wolfenstein_3D)) ha bisogno di un'ottima resa _grafica_, di un sistema di gestione delle collisioni ottimale, di un sistema di _AI_ e di gestire l'input utente attraverso interfacce grafiche anche molto complesse.
 
 Si vede che anche solo considerando pochi esempi di videogiochi, questi differscano non solo in genere, ma anche in risorse di cui necessitano.
 
 ### Perchè si utilizza il game engine?
 
-TODO:
+TODO
 
 #### Mettiamoci nei panni...
 
@@ -160,7 +160,7 @@ Parlando di linguaggi vicini al linguaggio naturale, forse diamo un'idea un po' 
 
 Infine, a un livello di astrazione ulteriore si situano i cosiddetti **linguaggi di scripting**, che richiedono un passaggio intermedio ulteriore rispetto ai linguaggi compilati per essere resi in binario
 
-![programming languages evolution](./images/graphics/programming-lang-evo.png)
+![programming languages evolution](./images/ed-agosto-settembre-2017/pt1/binary-2-scripting/programming-lang-evo.png) 
 
 Più un linguaggio ha una grammatica e sintassi formale più si evitano ambiguità e più è semplice formulare istruzioni. Di contro, bisogna padroneggiare una buona percentuale del linguaggio prima di essere in grado di utilizzarlo.
 {: class="note"}
