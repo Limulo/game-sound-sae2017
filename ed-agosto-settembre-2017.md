@@ -38,39 +38,61 @@ Le sue caratteristiche sono:
 * Interattività
 * Multimedialità
 
-Un videogioco altro non è che un software, un insieme di codici contenenti le istruzioni comprensibili da una macchina.
+Un videogioco altro non è che un **software**, un insieme di codici contenenti le istruzioni comprensibili da una macchina.
 Ogni macchina per le sue peculiarità (hardware, OS quando presente) comprende un particolare insieme di codici, non utilizzabili da altri macchinari, per quanto simili come finalità di utilizzo.
 
-TODO: integrazione con parti storiche. un solo genere --> collasso del mercato --> '85 esce SuperMarioBros e il NES.
+![collasso](./images/ed-agosto-settembre-2017/pt1/pong/collapse.png)
 
-Inoltre, assieme alla complessità logica e grafica i giochi si sono man mano diversificati anche in virtù di un genere di appartenenza. Possiamo pensare a un'avventura testuale, un RPG, un'avventura grafica, un race game, un FPS.
+
+TODO: integrazione con parti storiche. un solo genere --> collasso del mercato --> '85 esce SuperMarioBros e il NES.
+TODO: [pong clones](http://www.pong-story.com/mypongs.htm)
+TODO: same chip [AY-3-8500](https://it.wikipedia.org/wiki/AY-3-8500)
+
+Inoltre, assieme alla complessità logica e grafica i giochi ci sono man mano diversificati anche in virtù di un genere di appartenenza. Possiamo esaminare ad esempio a un'avventura testuale o grafica, un RPG, un race game, un FPS.
 
 Tutti questi sono videogiochi, ma differiscono notevolmente tra di loro sia per quanto riguarda la logica interna sia per quanto riguarda la performance richiesta alla macchina.
 
 Consideriamo:
-- un'avventura testuale richiede un'efficienza in termini di parsing del testo (comprensione delle istruzioni digitate dall'utente), ma non ha grafica;
-- un RPG richiede memoria per gestire le statistiche e i vari livelli durante il gioco. A differenza delle avventure testuali richiede anche la capacità di render grafico;
-- un'avventura grafica richiede un render grafico, la possibilità di emettere suono e di gestire la fisica, e la gestione dell'input dell'utente attraverso interfaccia grafica (GUI);
-- un race game si basa sulla simulazione, quindi saranno necessari modelli accurati e una corretta impostazione della fisica del gioco per poter riprodurre il più fedelemente possibile questi modelli nel gioco. A ciò si aggiunge il render grafico che deve essere accurato, una capacità responsiva veloce e una gestione di controller articolata;
-- un FPS ha bisogno di un'ottima resa grafica, di un sistema di gestione delle collisioni ottimale, di un sistema di AI e di gestire l'input utente attraverso interfacce grafiche anche molto complesse.
+* un'avventura testuale richiede un'efficienza in termini di parsing del testo (comprensione delle istruzioni digitate dall'utente), ma non ha grafica;
+* un'avventura grafica richiede un render grafico, la possibilità di emettere suono e di gestire la fisica, e la gestione dell'input dell'utente attraverso interfaccia grafica (GUI);
+* un RPG richiede memoria per gestire le statistiche e i vari livelli durante il gioco. A differenza delle avventure testuali richiede anche la capacità di render grafico;
+* un race game si basa sulla simulazione, quindi saranno necessari modelli accurati e una corretta impostazione della fisica del gioco per poter riprodurre il più fedelemente possibile questi modelli nel gioco. A ciò si aggiunge il render grafico che deve essere accurato, una capacità responsiva veloce e una gestione di controller articolata;
+* un FPS ha bisogno di un'ottima resa grafica, di un sistema di gestione delle collisioni ottimale, di un sistema di AI e di gestire l'input utente attraverso interfacce grafiche anche molto complesse.
 
 Si vede che anche solo considerando pochi esempi di videogiochi, questi differscano non solo in genere, ma anche in risorse di cui necessitano.
 
-Quindi ora, mettiamoci nei panni di una software house. Possiamo decidere di sviluppare ogni videogame da zero. Questo è dispendioso in termini di persone coinvolte e di tempo impiegato nella realizzazione del videogioco (concept, creazione degli asset, programmazione del gioco - interazione, fisica, grafica, suono -, ottimizzazione per varie piattaforme - abbiamo visto prima che macchine diverse comprendono codici - o linguaggi - diversi). Questa modalità a lungo andare non è efficiente. Allora ci domandiamo, perchè reinventare ogni volta la ruota? Quando abbiamo realizzato un videogioco, ad esempio un RPG, abbiamo già a disposizione tutta una serie di strumenti software che possono essere riutilizzati in altri giochi RPG. Quello che cambierebbe allora sarebbero solo gli assets (grafiche, suoni, modelli, script,...). Questo è dispendioso solo in termini di rendere il pacchetto software già realizzato il più generico possibile, in modo da essere utilizzabile più e più volte per diversi giochi. Una volta che si crea questo motore di gioco (game engine), lo sviluppo di ulteriori giochi è facilitato, si possono spender più tempo e soldi in termini di sviluppo asset e soprattutto in level design. Il tutto è ulteriormente semplificato dall'utilizzo di un'IDE grafica (interfaccia di sviluppo grafica) che rende trasparente il livello di programmazione. I vari reparti interessati nello sviluppo del gioco lavorano ciascuno nel proprio ambito sulla medesima piattaforma di sviluppo (sullo stesso progetto) senza preoccuparsi di integrare le varie componenti tra di loro. Il reparto che si occupa di programmazione si occupa di collegare le risorse sia tra di loro sia con la logica sottostante utilizzando codice.
+Quindi ora, mettiamoci nei panni di una software house. Possiamo decidere di sviluppare ogni videogame da zero. Questo è dispendioso in termini di persone coinvolte e di tempo impiegato nella realizzazione del videogioco (concept, creazione degli asset, programmazione del gioco - interazione, fisica, grafica, suono -, ottimizzazione per varie piattaforme - abbiamo visto prima che macchine diverse comprendono codici - o linguaggi - diversi).
+
+Questa modalità a lungo andare non è efficiente. Allora ci domandiamo, perchè reinventare ogni volta la ruota?
+
+Quando abbiamo realizzato un videogioco, ad esempio un RPG, abbiamo già a disposizione tutta una serie di strumenti software che possono essere riutilizzati in altri giochi RPG. Quello che cambierebbe allora sarebbero solo gli assets (grafiche, suoni, modelli, script,...). Questo è dispendioso solo in termini di rendere il pacchetto software già realizzato il più generico possibile, in modo da essere utilizzabile più e più volte per diversi giochi.
+
+Una volta che si crea questo _motore di gioco_ (**game engine**), lo sviluppo di ulteriori giochi è facilitato, si possono spender più tempo e soldi in termini di sviluppo asset e soprattutto in level design. Il tutto è ulteriormente semplificato dall'utilizzo di un'IDE grafica (interfaccia di sviluppo grafica) che rende trasparente il livello di programmazione.
+
+I vari reparti interessati nello sviluppo del gioco lavorano ciascuno nel proprio ambito sulla medesima piattaforma di sviluppo (sullo stesso progetto) senza preoccuparsi di integrare le varie componenti tra di loro. Il reparto che si occupa di programmazione si occupa di collegare le risorse sia tra di loro sia con la logica sottostante utilizzando codice.
 
 Ecco quindi che come software house abbiamo creato un nostro game engine ad uso interno.
 
-TODO: slides con esempi engine storici
+---
 
-Il nostro game engine è comunque lungi dall'essere un'innovazione nell'industria. Appoggiarsi a game engine (nel caso di sviluppo di videogiochi) o a porzioni di software già pronto (nella fase di sviluppo e creazione software) è una pratica vecchia quanto la compter science. Per quanto possibile non si reinventa la ruota. Si cerca, al più, di migliorarla.
+Il nostro game engine è comunque lungi dall'essere un'innovazione nell'industria. Appoggiarsi a game engine (nel caso di sviluppo di videogiochi) o a porzioni di software già pronto (nella fase di sviluppo e creazione software) è una pratica vecchia quanto la computer science. Per quanto possibile non si reinventa la ruota. Si cerca, al più, di migliorarla.
+
+![engine storici](./images/ed-agosto-settembre-2017/pt1/engine-storici.png)
+
 A partire dagli arcade, passando per le prime console e quindi approdando ai PC, la tecnologia ha reso sempre più semplice e desiderabile riutilizzare software già scritto, testato, ottimizzato, sul quale è possibile costruire nuovi programmi in minor tempo e in modo più efficiente.
 
-Ma se siamo sviluppatori indipendenti e non abbiamo un reparto che si occupa di programmazione e sviluppo software capace di creare dal nulla un game engine? Alcune software house importanti (Epic Games - Unreal e Id Software - xxx) hanno rilasciato al pubblico i loro engine, entrambi utilizzati per la realizzazione di FPS, il genere di videogiochi più in voga al tempo. Altre software house si sono specializzate nello sviluppo di game engine per terze parti. Negli ultimi anni si ha una vera e propria profusione di game engine di respiro più genrico, per cui oggi non si ha che l'imbarazzo della scelta.
-Una nota: esistono game engine più generici (Unity3D, Godot,...) e altri pensati per la realizzaizone di una tipologia precisa di videogiochi (Inform, Unreal, ...). Alcuni game engine offrono molte risorse (render 3D, compatibilità con sistemi VR, gestione rete per multiplayer online, streaming video...), ma alle volte non tutte sono necessarie per il gioco che si vuole realizzare. Quindi si sceglie (visto che oggi lo si può fare) il game engine in funzione del gioco da realizzare. Non uso Ableton Live per fare editing al campione, come non uso ProTools per fare una performnca dal vivo che richiede flessibilità e affidabilità.
+Ma se siamo sviluppatori indipendenti e non abbiamo un reparto che si occupa di programmazione e sviluppo software capace di creare dal nulla un game engine? Alcune software house importanti (Epic Games con "_Unreal_" e Id Software con "_idTech_") hanno rilasciato al pubblico i loro engine, entrambi utilizzati per la realizzazione di FPS, il genere di videogiochi più in voga al tempo.
 
-Middleware: come pro tools può essere espanso con plugin che ne amplificano le funzionalità, così i game engine possono essere ampliati in alcune loro funzionalità grazie all'uso di middleware (di cui avete già visto un esempio in Wwise). Ci sono middleware molto famosi, come Havok per la fisica e l'AI e euphoria per la fisica e le collisioni.
+Altre software house si sono specializzate nello sviluppo di game engine per terze parti. Negli ultimi anni si ha una vera e propria profusione di game engine di respiro più genrico, per cui oggi non si ha che l'imbarazzo della scelta.
 
-<table>
+Una nota: esistono game engine più generici (Unity3D, Godot,...) e altri pensati per la realizzaizone di una tipologia precisa di videogiochi (Inform, Unreal, ...). Alcuni game engine offrono molte risorse (render 3D, compatibilità con sistemi VR, gestione rete per multiplayer online, streaming video...), ma alle volte non tutte sono necessarie per il gioco che si vuole realizzare. Quindi si sceglie (visto che oggi lo si può fare) il game engine in funzione del gioco da realizzare. Non uso _Ableton Live_ per fare editing al campione, come non uso _ProTools_ per fare una performance dal vivo che richiede flessibilità e affidabilità.
+{: class="note"}
+
+### Middleware
+
+Come pro tools può essere espanso con plugin che ne amplificano le funzionalità, così i game engine possono essere ampliati in alcune loro funzionalità grazie all'uso di middleware (di cui avete già visto un esempio in Wwise). Ci sono middleware molto famosi, come Havok per la fisica e l'AI e euphoria per la fisica e le collisioni.
+
+<table style="width:100%">
 <tr>
 <td>
 <iframe width="100%" src="https://www.youtube.com/embed/cIcg5eotZlY" frameborder="0" allowfullscreen></iframe>
@@ -82,6 +104,7 @@ Middleware: come pro tools può essere espanso con plugin che ne amplificano le 
 </table>
 
 Un'ulteriore nota di carattere generale: sebbene il livello di programmazione è trasparente all'utente del game engine, questo non scompare. Il gioco non cessa di essere software e il software altro non è che codice scritto in un linguaggio di programmazione. In parole povere, non si prescinde dal codice, ci sono sistemi semplificati di programmazione resi disponibili dai game engine, ma non esistono game engine in cui si può creare un gioco senza programmare.
+{: class="note"}
 
 ### Spaccato sulla programmazione
 
@@ -153,6 +176,10 @@ Generalmente un game engine non può mancare di:
 - gestione rete
 - gestione memoria (garbage collection)
 - camera e punti luce
+
+
+### Godot
+TODO: perchè abbiamo scelto Godot. Un nuovo game Engine che vogliamo presentarvi. Libero e Open Source.
 
 
 <a id="pt2"></a>
@@ -299,7 +326,55 @@ La ripetizione può verificarsi nell'ambito dei:
 
 #### Grandi matrici
 
+{% comment%}
 TODO: lista suoni prince of persia
+
+### I suoni di "Prince of Persia"
+
+Un videogioco a piattaforme ambientato in un intricato palazzo della Persia medievale, originariamente pubblicato per Apple II da Brøderbund nel 1989, e successivamente portato su molti altri sistemi.
+
+Footsteps
+Soft landing
+Medium landing ("Oof!")
+Hard landing (Splat!)
+Sword clash
+Stab opponent
+Stab skeleton
+Stabbed by opponent
+Bones leap to life
+Impaled by spikes
+Slicer blades clash
+Character gets sliced in half
+Gate rising
+Gate stops at top
+Gate coming down slow
+Gate reaches bottom (Clang!)
+Gate crashes down
+Entrance door closes
+Exit door opening
+Bump into wall (soft)
+Bump into wall (hard)
+Bump into mirror
+Falling floor lands on your head
+Loose floor shakes
+Falling floor lands
+Drink position--1 unit of strength restored
+Drink special potion--strength boosted to higher level
+Drink poison (lose 1 unit of strength)
+Unsheathe sword
+Jump through mirror
+Grab on to ledge
+Drink potion (glug glug)
+
+https://github.com/jmechner/Prince-of-Persia-Apple-II
+http://www.jordanmechner.com/downloads/popsource.pdf
+https://it.wikipedia.org/wiki/MOS_6502
+
+
+
+
+
+{% endcomment%}
 
 Tutto questo fa sì che ci sia bisogno di un gran numero di variazioni e che si debba lavorare per "_riempire gli spreadsheet_" (parte dell'_audio design document_) e registrare centinaia se non migliaia di suoni diversi. Una matrice ad incroci enorme che richiede un sacco di tempo e risorse per essere prodotta.
 
@@ -747,6 +822,7 @@ Ebbene tutto questo viene calcolato di continuo, sempre in funzione dei dati di 
 
 ### Realismo (?!) / Suono come processo
 
+
 Il sample audio è una registrazione, e come tale si tratta di un qualche cosa fissato nel tempo: una registrazione cattura la perturbazione della densità dell'aria, l'effetto di un movimento nello spazio in un particolare istante ma non ci dice nulla in merito al comportamento.
 
 In questo senso l'audio fruito attraverso i campioni resta un procedimento **statico**, come un **interruttore** che può essere solamente acceso o spento, una **fotografia** fissa ed immutabile anzichè vivida e dinamica.
@@ -911,6 +987,8 @@ Al momento attuale non sembra ci sia interesse nell'implementare quanto necessar
 
 #### La sintesi è brutta (si fa per dire)
 
+>"Il tutto è più grande della somma delle sue parti." (Ludwig Von Bertalanffy)
+
 Permane la falsa concezione che la sintesi audio sia in qualche modo sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
 
 In realtà non è così e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
@@ -940,6 +1018,8 @@ Se, come spesso accade, l'audio è considerato come accessorio e secondario risp
 ![sierra lip sync](./images/ed-agosto-settembre-2017/pt2/sierra-lipsync.jpg)
 
 **Procedural animation**: [Tom Clancy's Ghost Recon Advanced Warfighter 2](https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Advanced_Warfighter)) (Ubisoft 2007) case study: un aeroplano precipitato nel deserto esplode e continua a bruciare a terra. Le fiamme sono sferzate a destra e a sinistra da un vento irregolare. Polvere e fumo sono generati proceduralemtne in base al livello dell'audio pre-prodotto (vedi [questo talk](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio) di Scott Selfon al minuto 23:14)!
+
+---
 
 <a id="pt3"></a>
 ## Pt3: Game Sound workshop
@@ -1090,7 +1170,7 @@ TODO
 
 [Godot](https://www.patreon.com/godotengine) è un game engine libero!
 
-audio server architecture
+TODO: immagine audio server / audio player / stream / sample / architecture
 
 #### Call for partecipants
 
