@@ -357,55 +357,50 @@ La ripetizione può verificarsi nell'ambito dei:
 
 #### Grandi matrici
 
-{% comment%}
 TODO: lista suoni prince of persia
 
 ### I suoni di "Prince of Persia"
 
 Un videogioco a piattaforme ambientato in un intricato palazzo della Persia medievale, originariamente pubblicato per Apple II da Brøderbund nel 1989, e successivamente portato su molti altri sistemi.
 
-Footsteps
-Soft landing
-Medium landing ("Oof!")
-Hard landing (Splat!)
-Sword clash
-Stab opponent
-Stab skeleton
-Stabbed by opponent
-Bones leap to life
-Impaled by spikes
-Slicer blades clash
-Character gets sliced in half
-Gate rising
-Gate stops at top
-Gate coming down slow
-Gate reaches bottom (Clang!)
-Gate crashes down
-Entrance door closes
-Exit door opening
-Bump into wall (soft)
-Bump into wall (hard)
-Bump into mirror
-Falling floor lands on your head
-Loose floor shakes
-Falling floor lands
-Drink position--1 unit of strength restored
-Drink special potion--strength boosted to higher level
-Drink poison (lose 1 unit of strength)
-Unsheathe sword
-Jump through mirror
-Grab on to ledge
-Drink potion (glug glug)
+Per maggiori informazioni su questo bel gioco vi rimandiamo a [questo link](). Inoltro, per chi fosse interessato, [ecco il link](https://github.com/jmechner/Prince-of-Persia-Apple-II) al repository GitHub dove l'autore del gioco, Jordan Mechner, ha rilasciato il codice sorgente per [MOS 6502](https://it.wikipedia.org/wiki/MOS_6502) originale. Sul sito personale dell'autore si possono consultare anche il  e i diari di sviluppo!
+{: class="dashed"}
 
-https://github.com/jmechner/Prince-of-Persia-Apple-II
-http://www.jordanmechner.com/downloads/popsource.pdf
-https://it.wikipedia.org/wiki/MOS_6502
+I suoni si cui il gioco fa uso (almeno nella sua versione per PC-MSDOS) sono 32. Sono stati realizzati dal sound designer Tom Retting. Eccone la lista, come la si può leggere dal [design document](http://www.jordanmechner.com/downloads/popsource.pdf) originale:
+* Footsteps
+* Soft landing
+* Medium landing ("Oof!")
+* Hard landing (Splat!)
+* Sword clash
+* Stab opponent
+* Stab skeleton
+* Stabbed by opponent
+* Bones leap to life
+* Impaled by spikes
+* Slicer blades clash
+* Character gets sliced in half
+* Gate rising
+* Gate stops at top
+* Gate coming down slow
+* Gate reaches bottom (Clang!)
+* Gate crashes down
+* Entrance door closes
+* Exit door opening
+* Bump into wall (soft)
+* Bump into wall (hard)
+* Bump into mirror
+* Falling floor lands on your head
+* Loose floor shakes
+* Falling floor lands
+* Drink position--1 unit of strength restored
+* Drink special potion--strength boosted to higher level
+* Drink poison (lose 1 unit of strength)
+* Unsheathe sword
+* Jump through mirror
+* Grab on to ledge
+* Drink potion (glug glug)
 
-
-
-
-
-{% endcomment%}
+---
 
 Tutto questo fa sì che ci sia bisogno di un gran numero di variazioni e che si debba lavorare per "_riempire gli spreadsheet_" (parte dell'_audio design document_) e registrare centinaia se non migliaia di suoni diversi. Una matrice ad incroci enorme che richiede un sacco di tempo e risorse per essere prodotta.
 
@@ -421,10 +416,6 @@ Eventualmente poi il suono associato all'evento viene prodotto o elaborato succe
 ![spreadsheets 1](./images/ed-agosto-settembre-2017/pt2/spreadsheet-1.jpg)
 
 ![spreadsheets 2](./images/ed-agosto-settembre-2017/pt2/spreadsheet-2.jpg)
-
-{% comment %}
-Qui risiede la grande abilità del sound designer il cui talento e capacità sono fondamentali nella riuscita.
-{% endcomment %}
 
 ---
 
@@ -539,12 +530,12 @@ Un esempio potrebbe essere il plug-in [Reflect](https://www.audiokinetic.com/pro
 Ad oggi la cosa può sembrare scontata ma, forse qualcuno se ne ricorderà, prima che il calcolo dinamico delle occlusioni diventasse possibile e venisse implementato massicciamente, poteva capitare che si sentisse il suono di un nemico sopraggiungere dal lato ma che, voltandosi verso la direzione di provenienza del suono, non ci fosse nulla se non un muro. Il nemico c'era ma aldilà della parete.
 {: class="dashed"}
 
-{% comment %}
 TODO: nota sulla tecnologia
 
-grandi variazioni in ambito audio --> comportano piccole differenze nella percezione della verosimiglianza;
-piccole variazioni in ambito grafico --> comportano immani differenze nella percezione di cosa è verosimile.
-{% endcomment %}
+un'osservazione personalissima:
+* grandi variazioni in ambito audio --> comportano piccole differenze nella percezione della verosimiglianza;
+* piccole variazioni in ambito grafico --> comportano immani differenze nella percezione di cosa è verosimile.
+{: class="dashed"}
 
 ### When to apply all those effects
 
@@ -601,99 +592,6 @@ Vediamone un paio di esempi sfruttando il motore _ScummVM_ e giocando a _Monkey 
 Per la musica si potrebbe aprire un intero capitolo a parte parlando di composizioni interattive, musica generativa/algoritmica, passando per iMuse, Farnell,
 
 Forse in una lezione futura :)
-
-{% comment %}
-
-linear music (shuffling) 37:00 / radio GTAV - ducking, changing mix, djishing thing, cross fade - interactive composition
-markers, timing (iMuse style of stuff)
-
----
-
-### dall'edizione precedente:
-
-non linearità
-
-* variazione del tempo (space invaders + mario alla fine di ogni livello)
-* variable pitch ( a che vedere con le limitazioni tecniche della memoria)
-* variabile rhythm/meter (esempio fraseggiatore o Zen games)
-* volume and dynamic
-* variable DSP (reverb and distorsion)
-* variable melody
-* variable harmony
-variable mix (sostituzione di strumenti o di layers)
-
-_vedi Roads_
-
-Concetti di [musica generativa](https://en.wikipedia.org/wiki/Generative_music), esempio sono _Music for Airports_, _Discreet Music_ etc...
-architetto e compositore vs gardener (intervento di [Brian Eno](https://vimeo.com/55969912))
-
-Individuazione dei metodi formali, delle regole nella composizione della musica: Guido D'Arezzo (1026), Mozart, etc...
-Composizione automatica
-contollo delle sequenze --> musica algoritmica (Xenakis, Koenig, Truax)
-
-processi stocastici
-    + tabelle della probabilità
-    + distribuzione di probabilità
-    + catene markoviane
-
----
-
-## Catene Markoviane
-
-(Andrey Markov 1856 - 1922) è il nome che viene assegnato ad una macchina a stati statistica discreta nella quale lo stat osuccessivo è determinato da una matrice dei pesi di probabilità assocaiti ai passaggi tra stati diversi all'interno di una sequenza.
-
-Dati statistici possono essere estratti da una musica data per ottenere poi una nuova composizione generata nello stile esaminato.
-
-citando Farnell:
-> For example, a Markov machine can quickly be trained to under stand 12 bar blues and notice that more often than not a F7 follows a C and that a where a
-chord has a major 3rd the melody will use a flattened one. This is interesting when data from more than one composer is interpolated to see what Handel, Jean Michel Jarre and Jimi Hendrix might have written together.
-
-### Case Study: Zen Game
-
-esempio [Zen Games](http://www.limulo.net/games/ZenGame/)
-Le note sono prese a prestito dalla scala pentatonica maggiore di C
-set di regole:
-* durata nel tempo
-* durata della frase che condiziona il verificarsi di una pausa e la durata della stessa
-* probabilità di scegliere una nota all'interno dell'accordo
-* probabilità di scegliere una nota successiva che si trovi nelle vicinanze di quella appena cantata
-* probabilità che la nota da cnatare sia acuta piuttosto che grave
-
-## Artificial Intelligence
-
-memoria ritenuta diventa conoscenza
-
-conoscenza + processo.
-
-### AI adattiva
-
-### Sistemi esperti
-
-per semplificare all'estremo si può dire che i sistemi esperti sono quelli che possiedono un libr od iregole (l'armonia jazz, il rock, etc...) dal quale possono attingere per operare delle decisioni. Ma questa conoscenza non è fissa. Quello che definisce i sistemi esperti come AI è il fatto che questi possono correggere la loror conoscenza.
-
-### Neural Networks
-
-### Cellular Automata
-
-Gli automi cellulari sono una collezione di programmi molto piccoli che vivono in un ambiente circoscritto e interagiscono tra loro. Ognuno è una macchina a stati che evolve su base di una matrice di regole e anche dell'input esterno.
-
-Una **intelligenza emergente** si ottiene dalla rispettive interazioni e dal modo in cui gli output di alcuni diventa input per altri.
-
-Esempio game of life in Processing
-
-### Algoritmi genetici
-
-Condisioni ambientali possono far prosperare o uccidere le nuove generazioni le quali portano con sè, talvolta mutato, il patrimonio genetico dei genitori.
-
----
-
-Frattali (auto similarità) - 1/f rumore frazionale
-Chaos generator
-Grammatiche
-Pattern matching / search tecniques
-    Constraints
-
-{% endcomment %}
 
 ### Game audio engine tradizionale
 
@@ -806,10 +704,6 @@ Un server preposto al controllo e al master clock per la ricezione e ridistribuz
 A seconda della contingeza ci possono essere latenze che si sommano e si accumulano, e possono essere diverse da caso a caso, e da giocatore a giocatore e cambiare nel tempo.
 
 Il game engine, e più nello specifico l'audio engine per quanto concerne il suono, deve essere in grado di gestire situazioni come questa e di riordinare opportunamente i pacchetti in arrivo per dare un audio sempre corerente.
-
-{% comment %}
-PS3 streaming audio 7.1
-{% endcomment %}
 
 #### Encoding/Decoding, data streams
 
@@ -1117,12 +1011,11 @@ Che cosa è PureData? [PureData](http://puredata.info/) è un linguaggio di prog
 
 Pure Data è un linguaggio di programmazioni a paradigma _dataflow_ e, sebbene manchi di ricorsione e di una effettiva accuratezza "_al sample_" nell'implementazione di filtri FIR, IIR, è uno strumento molto produttivo e permette di risolvere il 90% dei problemi di sound design sintetico.
 
-{% comment %}
-Uno degli obiettivi cui siamo interessati è quello di fare uso della memoria il meno possibile (no lookup table, ring buffers per dly, etc...). Si usano dunque i troncamenti delle approssimazioni in serie di Taylor delle varie funzioni anzichè ricorrere a lookup tables, il rumore è generato come numeri pseudo casuali, etc...
+
+Uno degli obiettivi cui si è interessati è quello di fare il minor uso possibile della memoria (evitando quini, ove possibile, lookup table, ring buffers per dly, etc...). Si usano dunque i troncamenti delle approssimazioni in serie di Taylor delle varie funzioni anzichè ricorrere a lookup tables, il rumore è generato come numeri pseudo casuali, etc...
 <br/><br/>
 Perchè evitare l'uso della memoria? Uno dei motivi è quello di facilitare l'esecuzione del codice in un ambiente multithread, in cui i diversi thread sono distribuiti su più processori.
 {: class="dashed"}
-{% endcomment %}
 
 ---
 
@@ -1146,13 +1039,15 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 
 * **electric motors**:
 
-* **fans**:
+* **fans**: il suono macchine come le ventole degli impianti di areazione, le quali funzionno di continuo, è più soggetto a problematiche di _ripetizione_. Se il suono viene generato per mezzo della sintesi (usando come base il rumore in questo caso) ecco che il problema è risolto: il suono acquista una caratteristica _viva_ e il cervello non è più in grado di identificare alcun _pattern_.
 
 * **elicopter**:
 
 * **clocks**: Il suono di un orologio che ticchetta può essere realizzato sovrapponendo diverse componenti più semplici per ottenere un risultato finale organico. Interessante a tale proposito l'[aneddoto raccontato dallo stesso Farnell](https://youtu.be/sp83-Pq7TyQ?t=57m50s) in un seminario sull'audio procedurale all'AES nel 2013 in cui ricorda d'avere analizzato il suono di una sveglia dopo averlo registrato ad alta risoluzione e riprodotto a velocità ridotta.
 
 * **creaking**: movimento [_slip-stick_](https://en.wikipedia.org/wiki/Stick-slip_phenomenon). Un segnale di controllo (che simboleggi la forza impiegata nel movimento) che varia da 0 e 1 produce una serie di impulsi in uscita. Questi passano attraverso una serie di filtri passabanda per riprodurre le formanti di una struttura _quadrata_ in _legno_.
+
+Di seguito alcune belle animazioni che mostrano i _modi_ principali per una membrana rettangolare, tratte dalla [pagina](http://www.acs.psu.edu/drussell/demos.html) del professor Daniel Russel della _Pennsylvania State University_.
 
 <table style="width=100%">
 <tr>
@@ -1171,17 +1066,10 @@ Vale la pena di sottolineare che tutti i suoni prodotti dalla macchine sono il r
 </tr>
 </table>
 
+![rectangular membrane formulae](./images/ed-agosto-settembre-2017/pt3/godot/door.png)
 
-Speed of sound in solids (wood): 3300 - 5000 m/s
-
-TODO: test mathjax f_{11} = \frac{c}{ 2 L }
-
-{% comment %}
-https://en.wikipedia.org/wiki/Vibrations_of_a_circular_membrane
-http://frame3dd.sourceforge.net/
-http://www.acs.psu.edu/drussell/demos.html
-http://www.acs.psu.edu/drussell/Demos/MembraneSquare/Square.html
-{% endcomment %}
+Sicuramente da approfondirne le caratteristiche: [Frame3dd](http://frame3dd.sourceforge.net/). Un software libero per studiare le dinamiche strutturali statiche e dinamiche. Che possa esserci utile nell'analisi dei modi?
+{: class="dashed"}
 
 ---
 
@@ -1196,16 +1084,42 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 * cxc, cyclone, purepd (**[Uzi]**, **[acos]**, **[atan~]**, **[delta~]** objects);
 * ggee (**[image]** object);
 
-### Godot & libpd integration
-TODO
+### Godot: audio architecture
 
 [Godot](https://www.patreon.com/godotengine) è un game engine libero!
 
+![godoto audio architecture 1](./images/ed-agosto-settembre-2017/pt3/godot/scene-servers-drivers)
+
 TODO: immagine audio server / audio player / stream / sample / architecture
+
+
+Interrogato dal **driver**, l'**audio server** deve fornire lui tutti i _samples_ (campioni audio 32 bit) di cui ha bisogno.
+
+Per farlo deve copiare i dati immagazzinati nel proprio _internal buffer_ sul _p_buffer_ che il driver gli ha fornito.
+
+Ad ogni richiestadel driver, l'audio server passa in rassegna tutte le **voci** (esaminandone con cura la _coda dei comandi_ rispettiva in modo tale da sapere se la voce deve essere riprodotta, messa in pausa, eliminata dalla codam etc...) e chiede al **mixer** di mixarle. In seguito si passa ad analizzare gli **stream** e a scrivere infine sul _p_buffer_.
+
+Il **mixer** elabora l'audio che passa attraverso i suoi **canali** provvedendo eventualmente a calcolare eventuali **effetti** da applicare sull'audio passante. Una volta fatto questo, copia i dati contenuti sul proprio _internal_buffer_ a quello dell'_audio_server_.
+
+L'**audio player**:
+
+Lo **stream player**:
+
+L'**event player**:
+
+#### Godot & libpd integration
+
+Il software libero è vincente in quanto consente l'accesso diretto al codice sorgente rendendo più veloci e agili integrazioni, modifiche e migliorie altrimenti impossibili in progetti software proprietari.
+
+In questo modo ci è stato possibile avviare un progetto di integrazione in Godot dell'engine audio _PureData_ grazie al wrapper [libpd](http://libpd.cc/) ideato da Peter Brinkmann.
+
+![PD-Player](./images/ed-agosto-settembre-2017/pt3/godot/Pd-Player.png){: width="60%"}
 
 #### Call for partecipants
 
-Si tratta di un lavoro in corso che permetterà di integrare il motore audio _PureData_ all'interno del game engine _Godot_. [Qui](https://github.com/Limulo/godot) il link al repository sul quale _limulo.net_ sta facendo i primi test: ogni contributo è benvenuto!
+Il progetto è ancora in fase embrionale ma contiamo di refinirlo sempre più per poi rilasciarlo ufficialemtne al pubblico in modo che tutti possano avvantaggiarsi anche di un audio _veramente_ procedurale all'interno di Godot.
+
+[Qui](https://github.com/Limulo/godot) il link al repository sul quale _limulo.net_ sta facendo i primi test: ogni contributo è benvenuto!
 
 ---
 
