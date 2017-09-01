@@ -54,7 +54,7 @@ Inoltre, assieme alla complessità logica e grafica i giochi ci sono man mano di
 La _diversificazione dei generi_ non è stata solo uno sbocco naturale dovuto all'innovazione tecnologica ma anche una necessità dell'industria per far fronte ad una stagnazione del mercato, ormai saturo di giochi, uno [clone](http://www.pong-story.com/mypongs.htm) dell'altro, sia negli arcade, console e primi pc. Uno su tutti è l'esempio di Pong il cui chip (l'[AY-3-8500](https://it.wikipedia.org/wiki/AY-3-8500))
 <br/><br/>
 ![collasso](./images/ed-agosto-settembre-2017/pt1/pong/collapse.png)
-<br/><br/>
+<br/>
 La saturazione del mercato fu causata anche da una mancanza di regolamentazione nel _copyright_ associato al prodotto videoludico!
 {: class="dashed"}
 
@@ -216,96 +216,19 @@ Come è strutturata l'interfaccia di _Godot_:
 <a id="pt2"></a>
 ## Pt2: Game Sound overview
 
-### Panoramica storica
-
-TODO: coin-op, consoles, PC, MOD format, MIDI, MT-32
-
-#### SID
-
-Il SID (Sound Interface Device) era il chip sonoro utilizzato dal Vic20, C64 e C128, sviluppato da _Robert Yannes_ di _MOS technology_ il quale, oltre al background tecnico, ne sapeva molto anche di musica.
-
-![sid](./images/ed-agosto-settembre-2017/pt2/sid.jpg){: width="60%"}
-
-Il suo intento era sviluppare un chip di sintesi sottrattiva totalemente differente dai sistemi sonori presenti nei computer dell'epoca e il risultato fu qualcosa di innovativo.
-
-Il chip era programmabile in BASIC o in linguaggio macchina e possedeva molte caratteristiche interessanti, le principali elencate qui di seguito:
-
-* 3 generatori di suono (voci);
-* 4 diverse forme d'onda disponibili (sawtooth, triangle, rectangle w/ pulse width modulation, noise);
-* 3 modulatori d'ampiezza (adsr);
-* 1 controllo di Master volume (in 16 steps);
-
-Erano possibili **effetti** come la _ring modulation_ o l'[_hard sync_](https://en.wikipedia.org/wiki/Oscillator_sync#Hard_Sync) tra gli oscillatori.
-
-Inoltre il SID disponeva di un **filtro programmabile** (low pass, bandpass, high pass), con frequenza di taglio e risonanza selezionabile. Il funzionamento del filtro era possibile grazie alla presenza di alcuni componenti analogici che completavano il circuito: 2 capacitori. Questa caratteristica rendeva il suono del SID unico e difficilmente replicabile fedelmente, anche al giorno d'oggi.
-
-Ecco qui di seguito un piccolo programma d'esempio:
-
-![sid screenshot](./images/ed-agosto-settembre-2017/pt2/sid-screenshot.jpg)
-
-<a id="c64-sound">
-<audio controls style="width:100%">
-  <source src="./sounds/c64-sound.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-Da ricordare che, usando l'istruzione `poke` del linguaggio di programmazione BASIC è possibile accedere e scrivere sui singoli registri interni del SID specificando sia l'indirizzo, sia il valore numerico da memorizzarvi.
-
-Il programma usa la prima voce impostata come _onda triangolare_ per riprodurre una nota A440 di durata pari a circa 500 millisecondi. Le istruzioni usate sono:
-
-1. indirizzamento del SID `SI=54272`;
-2. impostazione del volume master (registo 4: `L=SI+24` con valori da 0 a 15, volume basso/alto);
-3. impostazione dell'envelope con 4 bit per ciascuna fase = 2 byte per la memorizzazione (registri 5 e 6: `A=SI+5` e `H=SI+6`, rispettivamente per attack/decay e sustain/release);
-4. impostazione della frequenza (registri 0 e 1: `FL=SI` e `FH=SI+1` )
-5. selezione dell'onda (registro 4). Alcuni valori possibili sono:
-  * tringolare: 17;
-  * dente di sega: 33;
-  * rettangolare: 65 --> parametro addizionale "_duty cycle_" (registri 2 e 3 `TL=SI+2`, `TL=SI+3`);
-  * noise: 129;
-6. ciclo _for_ per la durata della nota.
-
-#### Rob Hubbard
-
-Il SID è uno chip che dispone di sole 3 voci ma non è detto che nelle mani di capaci musicisti programmatori non possa ricreare la polifonia e la ricchezza timbrica di un ensamble molto più numeroso
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/pgPEaI0GHBI?list=PLXhLeiiveJmNhFf5ShVwwXspGfgt-ww8c" frameborder="0" allowfullscreen></iframe>
-
-Ecco le tracce separate per apprezzare meglio la ricchezza di variazioni, il timing e intuire l'ingegnosità dei programmi scritti da Hubbard:
-
-<a id="hubbard-1">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice1.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-<a id="hubbard-2">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice2.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-<a id="hubbard-3">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice3.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-Anche dalle immagini che mostrano la forma d'onda della parte iniziale della prima voce si può comprendere la complessità della lavorazione:
-
-![waveform 1](./images/ed-agosto-settembre-2017/pt2/waveform1.jpg)
-
-![waveform 2](./images/ed-agosto-settembre-2017/pt2/waveform2.jpg)
-
-TODO: ascolto del brano su multitraccia **Audacity**.
-
-Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>mentre la musica di Hubbard proviene dal database [High Voltage SID Collection](http://hvsc.c64.org/). Il programma è stato scritto e eseguito utilizzando [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore. Qui altre interessanti informazioni sul SID: [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID).
-{: class="dashed"}
-
 ### Re-Re-Repetition
+
+Quando siamo fruitori di opere di intrattenimento - libri, cinema, teatro, etc... - tra noi e gli autori dell'opera si instaura una sorta di tacito accordo.
+
+Da una parte nasce (inconsciamente) in noi volontà di sospendere l'incredulità ([_suspension of disbelief_](https://it.wikipedia.org/wiki/Sospensione_dell'incredulit%C3%A0)) per mettere momentaneamente da parte le nostre facoltà critiche, ignorare le incongruenze secondarie e godere appieno dell'opera di fantasia. Come spettatori ci lasciamo guidare e ci abbandoniamo alla narrazione.
+
+Dall'altra parte l'autore si impegna ad introdurci e nel guidarci attraverso un percorso comune per raccontare una storia.
+
+La sospensione dell'incredulità nasce da un equilibrio molto sottile, tanto più difficile da creare quanto da mantenere da parte dell'autore dell'opera, soprattutto in epoca moderna dove si è bombardati da flussi continui di informazione e da moltissime forme diverse di intrattenimento.
+
+Declinando il concetto al mondo videoludico, un suono ripetitivo viene riconosciuto dal nostro cervello come un **pattern**. Il nostro cervello è abilissimo ad identificare pattern, strutture ricorrenti di ogni tipo, è quando questo avviene il contratto si rompe.
+
+---
 
 Partiamo analizzando la _ripetizione_! La ripetizione in ambito audio all'interno di un videogioco può essere un bene o un male, cerchiamo di capire come e perchè; inoltre cerchiamo di visualizzare quali possibili soluzioni si possano adottare per ovviare ad eventuali problemi che la ripetizione possa causare.
 
@@ -329,102 +252,39 @@ Anche nell'ambito dei suoni associati alla **UI** la ripetizione è quasi necess
 
 #### Quando la ripetizione è un male
 
-Quando siamo fruitori di opere di intrattenimento - libri, cinema, teatro, etc... - tra noi e gli autori dell'opera si instaura una sorta di tacito accordo.
-
-Da una parte nasce (inconsciamente) in noi volontà di sospendere l'incredulità ([_suspension of disbelief_](https://it.wikipedia.org/wiki/Sospensione_dell'incredulit%C3%A0)) per mettere momentaneamente da parte le nostre facoltà critiche, ignorare le incongruenze secondarie e godere appieno dell'opera di fantasia. Come spettatori ci lasciamo guidare e ci abbandoniamo alla narrazione.
-
-Dall'altra parte l'autore si impegna ad introdurci e nel guidarci attraverso un percorso comune per raccontare una storia.
-
-La sospensione dell'incredulità nasce da un equilibrio molto sottile, tanto più difficile da creare quanto da mantenere da parte dell'autore dell'opera, soprattutto in epoca moderna dove si è bombardati da flussi continui di informazione e da moltissime forme diverse di intrattenimento.
-
-Declinando il concetto al mondo videoludico, un suono ripetitivo viene riconosciuto dal nostro cervello come un **pattern**.
-
-Il nostro cervello è abilissimo ad identificare pattern, strutture ricorrenti di ogni tipo, è quando questo avviene il contratto si rompe.
-
----
-
-I casi in cui la ripetizione NON è bene sono quelli in cui causerebbe la rottura dell'illusione: se il suono che udiamo è lo stesso che abbiamo già ascoltato, il nostro cervello intuisce immediatamente che qualcosa non funziona come dovrebbe.
+I casi in cui la ripetizione NON è bene sono quelli in cui causerebbe la **rottura dell'illusione**: se il suono che udiamo è lo stesso che abbiamo già ascoltato, il nostro cervello intuisce immediatamente che qualcosa non funziona come dovrebbe.
 
 Un suono che si ripete, sempre uguale a sé stesso, anche solo due volte di fila, è quanto di più innaturale si possa percepire.
 
-Nella realtà di tutti i giorni non si verifica mai nulla di simile, basta considerare semplicemente _la posizione della nostra testa_ all'interno dell'ambiente, essa non è mai nella stessa esatta posizione in istanti ravvicinati (le nostre orecchie non mentono e sanno riconoscere ogni tipo di variazione).
-
 La ripetizione può verificarsi nell'ambito dei:
-* **dialoghi**: immaginiamo una sitzaione in cui affrontiamo uno schieramento di nemici e ognuno di essi pronunci un grido di battaglia assolutamente identico a quello pronunciato dai vicini;
+* **dialoghi**: immaginiamo una situazione in cui affrontiamo uno schieramento di nemici e ognuno di essi pronunci un grido di battaglia assolutamente identico a quello pronunciato dai vicini;
 * **fooley**: esempio tipico è quello dei _footsteps_, in cui lo stesso identico suono si sente ripetuto più e più volte durante il gioco. L'effetto suona innaturale e contribuisce a "_buttare fuori_" lo spettatore rompendo l'illusione;
 * **fisica**: se il physics engine lavora per simulare, ad esempio, una lattina che rotola al suolo, e l'integrazione prevede che un suono venga riprodotto a loop ad intervalli di tempo regolari, ecco che si ha lo stesso tipo di problema (indipendentemente che il suono ben si sposi con l'immagine renderizzata a schermo);
-* **suono senza corrispondenza visiva** (o per meglio dire, con _errata_ corrispondenza visiva): una cosa che accade tipicamente con i suoni d'ambiene, spesso pre-prodotti e inseriti nel gioco senza che ci sia poi una comunicazione tra i game e audio engines. Un esempio potrebbe essere il bubolare del **gufo** o l'**ululato** del lupo in uno scenario di un bosco pauroso. La traccia ambientale potrebbe essere prerenderizzata (mono, stereo o multicanale), tuttavia non risultare realistica quando il gufo suoni sempre "_pannato_" a destra nonostante l'avanzare e il muoversi del player nel bosco.
+* **suono senza corrispondenza visiva** (o per meglio dire, con _errata_ corrispondenza visiva): una cosa che accade tipicamente con i suoni d'ambiene, spesso pre-prodotti e inseriti nel gioco senza che ci sia poi una comunicazione tra i game e audio engines (discuteremo meglio questo aspetto fra poco).
 
 #### Grandi matrici
 
-TODO: lista suoni prince of persia
-
-### I suoni di "Prince of Persia"
-
-Un videogioco a piattaforme ambientato in un intricato palazzo della Persia medievale, originariamente pubblicato per Apple II da Brøderbund nel 1989, e successivamente portato su molti altri sistemi.
-
-Per maggiori informazioni su questo bel gioco vi rimandiamo a [questo link](). Inoltro, per chi fosse interessato, [ecco il link](https://github.com/jmechner/Prince-of-Persia-Apple-II) al repository GitHub dove l'autore del gioco, Jordan Mechner, ha rilasciato il codice sorgente per [MOS 6502](https://it.wikipedia.org/wiki/MOS_6502) originale. Sul sito personale dell'autore si possono consultare anche il  e i diari di sviluppo!
-{: class="dashed"}
-
-I suoni si cui il gioco fa uso (almeno nella sua versione per PC-MSDOS) sono 32. Sono stati realizzati dal sound designer Tom Retting. Eccone la lista, come la si può leggere dal [design document](http://www.jordanmechner.com/downloads/popsource.pdf) originale:
-* Footsteps
-* Soft landing
-* Medium landing ("Oof!")
-* Hard landing (Splat!)
-* Sword clash
-* Stab opponent
-* Stab skeleton
-* Stabbed by opponent
-* Bones leap to life
-* Impaled by spikes
-* Slicer blades clash
-* Character gets sliced in half
-* Gate rising
-* Gate stops at top
-* Gate coming down slow
-* Gate reaches bottom (Clang!)
-* Gate crashes down
-* Entrance door closes
-* Exit door opening
-* Bump into wall (soft)
-* Bump into wall (hard)
-* Bump into mirror
-* Falling floor lands on your head
-* Loose floor shakes
-* Falling floor lands
-* Drink position--1 unit of strength restored
-* Drink special potion--strength boosted to higher level
-* Drink poison (lose 1 unit of strength)
-* Unsheathe sword
-* Jump through mirror
-* Grab on to ledge
-* Drink potion (glug glug)
-
----
-
 Tutto questo fa sì che ci sia bisogno di un gran numero di variazioni e che si debba lavorare per "_riempire gli spreadsheet_" (parte dell'_audio design document_) e registrare centinaia se non migliaia di suoni diversi. Una matrice ad incroci enorme che richiede un sacco di tempo e risorse per essere prodotta.
 
-Il workflow comunce infatti può essere compreso se si pensa a come l'audio viene normalemnte implementato all'interno del videogioco: come un evento che corrisponde ad un determinato suono.
+![spreadsheets](./images/ed-agosto-settembre-2017/pt2/spreadsheet-03.jpg)
+
+Il workflow comunce infatti può essere compreso se si pensa a come l'audio viene normalemnte implementato all'interno del videogioco: come un **evento** che corrisponde ad un determinato **suono**.
 
 ![event --> snd](./images/graphics/event-sound.png){: width="60%"}
 
-Eventualmente poi il suono associato all'evento viene prodotto o elaborato successivamente a seconda di uno o più parametri che derivano dall'game engine. Alcuni esempi potrebbero essere:
-* il _carico_ per un automobile in corsa;
-* il livello di _salute_ per il player;
-* il _punteggio_ della partita a regolare il livello di eccitamento del pubblico sugli spalti dello stadio.
+Che cosa si intende per evento? All'interno del game engine, un _evento_ potrebbe essere qualsiasi verificarsi di una qualche condizione: ad esempio il click del mouse, il raggiungimento di un determinato punteggio, il fatto di pronunciare una determinata frase oppure no, oppure ancora una collisione tra due corpi rilevata e riportata dall'engine di fisica,
 
-![spreadsheets 1](./images/ed-agosto-settembre-2017/pt2/spreadsheet-1.jpg)
-
-![spreadsheets 2](./images/ed-agosto-settembre-2017/pt2/spreadsheet-2.jpg)
-
----
-
-![A and b](./images/graphics/collision.png){: width="50%"}
+![A and b](./images/graphics/collision.png){: width="30%"}
 
 Ammesso che la relazione `martello-->colpisce-->incudine` produca lo stesso suono di `incudine-->colpisce-->martello`, gli assets audio da ricreare sono comunque tantissimi: la **crescita** è **combinatoria**!
 
-![combinatoria](./images/ed-agosto-settembre-2017/pt2/combinazioni.gif){: width="60%"}
+![combinatoria](./images/ed-agosto-settembre-2017/pt2/combinazioni.gif){: width="40%"}
 
+Se dovessimo realizzare un suono per ciascuna delle combinazioni possibili di due oggetti tra tutti quelli presenti all'interno del gioco ecco che ne servirebbero già un'ottantina in un caso come quello mostrato qui di seguito:
+
+![armature](./images/ed-agosto-settembre-2017/pt2/simple-rpg-sounds.jpg)
+
+Senza contare che, come abbiamo già detto, un oggetto non ha solo un singolo modo di "_suonare_"
 
 Un oggetto può essere colpito in un particolare punto o subire un impatto da un corpo che poi rimane in contatto. Può essere strisciato e causare una eccitazione da frizione, soffiato per eccitarne eventuali cavità d'aria oppure scosso da una vicina sorgente ad esso accoppiata ed essere portato in risonanza.
 <br/><br/>
@@ -439,7 +299,6 @@ Questi personaggi possono poi indossare diversi tipi di calzari e possono cammin
 All'interno dell'equazione potremmo poi inserire anche il paramtro _peso_, dovuto ad esempio dal numero di oggetti trasportati nell'inventario personale, oppure ancora considerare la pendenza del terreno, e così via...
 {: class="note"}
 
-
 Come si vede la matrice degli assets sonori in un caso come questo diventerebbe davvero gigantesca e multidimensionale.
 
 Un caso di studio interessante potrebbe essere quello illustrato da _Alastair MacGregor_ della _Rockstar games_ al GDC 2014 rigaurdo agli assets del gioco GTA V (vedi minuto [13:47](https://youtu.be/L4GuM15QOFE?t=13m47s))
@@ -448,21 +307,20 @@ Un caso di studio interessante potrebbe essere quello illustrato da _Alastair Ma
 
 ![GTA V assets 2](./images/ed-agosto-settembre-2017/pt2/GTA-slide-2.jpg)
 
-TODO: argomenta suoni di impatto, dialoghi, programmi radiofonici, etc...
+TODO: argomenta suoni di impatto, dialoghi (walla), programmi radiofonici, etc...
 
 #### Realtime
 
-Una possibile soluzione alla ripetizione e alla conseguente necessità di avere numerosi assets è di genereare variazioni in **realtime**, usando le capacità offerte dai dispositivi **hardware** della piattaforma ove possibile oppure programmando via **software** (a basso livello magari) le features che ci interessano per creare varaizione.
-
-Un altro modo per risolvere problemi di ripetitività è quello di **tenere traccia delle variazioni**.
-
-Tenere traccia in qualche modo, di quale sia stato l'audio appena riprodotto per operare delle scelte intelligenti sul nuovo audio da riprodurre così da sincerarsi di non ripetere e non essere ridondanti.
+Una possibile soluzione alla ripetizione e alla conseguente necessità di avere numerosi assets è di genereare variazioni in **realtime**, usando, ove possibile, le capacità offerte dai dispositivi **hardware** della piattaforma oppure programmando via **software** le features necessarie.
 
 Ecco le principali accortezze che si potrebbero avere:
 
 ##### Volume / attenuation
 
-Si tratta di un sistema facile ed economico da metter in atto perchè comporta operazioni CPU base. Fornisce già una discreta illusione della profondità e della spazialità, tuttavia non è uno dei sistemi più incisivi per vincere la ripetitività;
+Si tratta di un sistema facile ed economico da mettere in atto perchè comporta operazioni CPU base. Fornisce già una discreta illusione della profondità e della spazialità, tuttavia non è uno dei sistemi più incisivi per vincere la ripetitività;
+
+TODO: cosa significa **costo CPU**?
+{: class="note"}
 
 ##### Pitch changes
 
@@ -480,12 +338,9 @@ Pitch shifting più avanzati possono essee usati: si tratta dei pitch shifting c
 
 Spesso l'hardware dei dispositivi su cui il gioco verrà giocato permette di effettuare operazioni di filtraggio in modo diretto senza costi di alcun tipo. In caso questo non sia possibile invece è comunque semplice implementare lo stesso tipo di filtri base come un LPF o un banco di BPF, via codice DSP.
 
-TODO: cosa significa **costo CPU**?
-{: class="note"}
-
 Usare i filtri sul sonoro e anche sulle voci permette di raggiungere un alto grado di variabilità. Non importa se il filtraggio non rispetta con accuratezza la fisica del fenomeno, il semplice fatto che ci sia un filtro fa suonare il tutto più naturale.
 
-Applicare variazioni randomiche sul filtto di una voce infatti, aiuta a illudere il giocatore sulla presenza di elementi attenuanti come l'umidità ad esempio, ma soprtattutto fornisce la sensazione di direzionalità: nell'esperienza quotidiana, come ascoltatori ci accorgiamo che la nostra testa non è mai perfettamente ferma nello stesso punto e, anche piccole variazioni nella posizione, possono modificare lo spettro dell'audio percepito.
+Applicare variazioni randomiche sul filtto di una voce infatti, aiuta a illudere il giocatore sulla presenza di elementi attenuanti come l'umidità ad esempio, ma soprtattutto fornisce la sensazione di direzionalità: nell'esperienza quotidiana, come ascoltatori ci accorgiamo che **la nostra testa** non è mai perfettamente ferma nello stesso punto e, anche piccole variazioni nella posizione, possono modificare lo spettro dell'audio percepito.
 
 Anche questa è una tecnica relativamente economica da applicare.
 
@@ -493,7 +348,9 @@ Anche questa è una tecnica relativamente economica da applicare.
 
 Di nuovo in questo caso si può citare l'esempio dei _footsteps_. Il suono dei passi è infatti un suono molto articolato, per questo si può pensare di **spezzarlo nelle sue componenti individuali** e applicare variazioni casuali a ciascuna di queste per ottenere un risultato molto più ricco.
 
-Un altro espediente è quello di **variare il tempo** che intercorre tra i vari elementi. In un suono ambientale che debba generare un tappeto costante di sottofondo, un particolare altamente riconoscibile come un ululato o il suono di un gufo può destare l'interesse dell'ascoltatore, pertanto una ripetizione a loop dell'audiofile, verrebbe immediatemente classificata come finta.
+TODO: esempio di tappeto sonoro + suono interessante spot. Il cervello si aggrappa alle variazioni!!
+
+Un altro espediente è quello di **variare il tempo** che intercorre tra i vari elementi. In un suono ambientale che debba generare un tappeto costante di sottofondo, un particolare altamente riconoscibile come un **ululato** o il bubolare di un **gufo** può destare l'interesse dell'ascoltatore (il cervello si aggrappa a cose di questo tipo), pertanto una ripetizione a loop dell'audiofile, verrebbe immediatemente classificata come finta.
 
 In questi casi meglio separe le diverse parti e lavorare con tempi diversi e casuali frapposti tra i suoni che possono essere più problematici.
 
@@ -512,6 +369,8 @@ Ad esempio una _mitragliatrice_ che abbia terminato la sua raffica potrà avere 
 ##### Positional variation
 
 La variazioni applicata al posizionamento dei suoni nell'ambiente è importante; in particolare per tutti quei suoni che non hanno un proprio corrispettivo visivo.
+
+  Un esempio potrebbe essere il bubolare del **gufo** o l'**ululato** del lupo in uno scenario di un bosco pauroso. La traccia ambientale potrebbe essere prerenderizzata (mono, stereo o multicanale), tuttavia non risultare realistica quando il gufo suoni sempre "_pannato_" a destra nonostante l'avanzare e il muoversi del player nel bosco.
 
 Il _bubolare di un gufo_ nello scenario del bosco deve essere posizionato con cognizione e mantenere la propria posizione coerentemente con i movimenti del giocatore.
 
@@ -532,7 +391,7 @@ Ad oggi la cosa può sembrare scontata ma, forse qualcuno se ne ricorderà, prim
 
 TODO: nota sulla tecnologia
 
-un'osservazione personalissima:
+un'osservazione personalissima:<br/>
 * grandi variazioni in ambito audio --> comportano piccole differenze nella percezione della verosimiglianza;
 * piccole variazioni in ambito grafico --> comportano immani differenze nella percezione di cosa è verosimile.
 {: class="dashed"}
@@ -620,9 +479,11 @@ Il game audio engine dispone di una serie di strumenti integrati per aggiungere 
 
 #### Blending
 
-![multisampling](./images/graphics/multisampling.png)
+Il _leitmotif_ è: le **risorse sono limitate**.
 
 Crossfade parametrico tra campioni diversi, quello che nella sintesi prende il nome di **multisampling**. Questa tecnica è implementata in gran misura nei campionatori i quali infatti rispondono a diverse velocity di tocco con un mix tra campioni corrispondenti.
+
+![multisampling](./images/graphics/multisampling.png)
 
 In un gioco, immaginiamo una caduta di un oggetto da diverse altezze; questo comporta intensità diversa ma non solo, anche variazione timbrica.
 
@@ -632,7 +493,7 @@ Molti game audio system incorporano un mixer del tutto analogo a quallo in uso n
 
 La differenza è che, mentre per una produzione tradizionale la configurazione del banco rimane statica, praticamente invariata lungo tutta la durato di Un medesimo brano o album, nel caso di un videogioco  il mixer deve spesso riconfigurarsi del tutto in pochi istanti.
 
-<table>
+<table style="width:100%;">
 <tr>
 <td>
 <img src="./images/pt2/screenshot-01.jpg" alt="quake 2 screenshot" width="100%;" />
@@ -647,7 +508,14 @@ Un esempio potrebbe essere il passaggio da una sitauzione _in-game_ ad un _menù
 
 #### Real time controllers
 
-Il game sound engine deve fornire un'interfaccia per ricevere parametri real time dal game engine ed usarli, spesso mappandoli sulle frequenze cutoff di filtri o sul controllo di volumi piuttosto che pitch shifting.
+Il game sound engine deve stabilire con il game engine un'interfaccia per ricevere (e inviare) parametri real time da utilizzarsi per controllare interattivamente controlli quali volume, pitch o frequenza di taglio.
+
+![senua parameters](./images/ed-agosto-settembre-2017/pt2/senua-parameters.jpg)
+
+Alcuni esempi di parametri utilizzabile per modificare i suoni i nriproduzione potrebbero essere:
+* il livello di _salute_ per il player;
+* il _carico_ per un automobile in corsa;
+* il _punteggio_ della partita a regolare il livello di eccitamento del pubblico sugli spalti dello stadio.
 
 #### Positioning
 
@@ -674,8 +542,7 @@ Nel gioco l'audio è [talvolta utilizzato](https://youtu.be/5-D57571odo?t=2m11s)
 #### Ambience
 
 Parlando di sample, quando si registra si predilige il suono diretto e si fa di tutto per escludere quello riverberato
-Questo perchè il suono d'ambienza viene calcolato in tempo reale da processori dedicati.
-reverb, delay, doppler effect, filtering, fast realtime convolution.
+Questo perchè il suono d'ambienza viene calcolato in tempo reale da processori dedicati (reverb, delay, doppler effect, filtering, fast realtime convolution).
 
 #### Attenuation & damping
 
@@ -746,7 +613,6 @@ A tutto questo si aggiunge la componente di **intelligenza artificiale** che ha 
 Ebbene tutto questo viene calcolato di continuo, sempre in funzione dei dati di movimento ottenuti dalle azioni del giocatore, 60 se non più volte al secondo.
 
 ### Realismo (?!) / Suono come processo
-
 
 Il sample audio è una registrazione, e come tale si tratta di un qualche cosa fissato nel tempo: una registrazione cattura la perturbazione della densità dell'aria, l'effetto di un movimento nello spazio in un particolare istante ma non ci dice nulla in merito al comportamento.
 
@@ -828,7 +694,7 @@ Esistono da diversi anni scuole di pensiero volte a traslare questi metodi di si
 
 Pionieri di questa filosofia di pensiero sono persone come [Perry Cook](http://www.cs.princeton.edu/~prc/AKPetersBook.htm) e [Andy Farnell](https://mitpress.mit.edu/books/designing-sound), solo per citare i più noti, i quali ritengono possibile derivare dagli studi fatti fino ad ora, modelli finalizzati non tanto a simulare suoni appartenenti al dominio musicale ma piuttosto volti a sintetizzare una moltitudine di classi sonore associate ad oggetti e fenomeni quotidiani.
 
-<table>
+<table style="width:100%;">
 <tr>
 <td>
 <img src="./images/pt2/book-Perry-Cook.png" alt="Perry Cook's book" width="100%;" />
@@ -912,12 +778,16 @@ Al momento attuale non sembra ci sia interesse nell'implementare quanto necessar
 
 #### La sintesi è brutta (si fa per dire)
 
->"Il tutto è più grande della somma delle sue parti." (Ludwig Von Bertalanffy)
+>"Il tutto è più grande della somma delle sue parti." (Aristotele, Metafisica)
+
+TODO: citazione Eisenberg
 
 Permane la falsa concezione che la sintesi audio sia in qualche modo sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
 
 In realtà non è così e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
-Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude. Quello di cui c'è bisogno è il **verosimile** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) o addirittura dell'**hyperrealism** ("_more than reality_").
+Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude.
+
+Quello di cui c'è bisogno è il **verosimile** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) o addirittura dell'**hyperrealism** ("_more than reality_").
 
 ### New skills
 TODO
@@ -1066,7 +936,7 @@ Di seguito alcune belle animazioni che mostrano i _modi_ principali per una memb
 </tr>
 </table>
 
-![rectangular membrane formulae](./images/ed-agosto-settembre-2017/pt3/godot/door.png)
+![rectangular membrane formulae](./images/ed-agosto-settembre-2017/pt3/door.png)
 
 Sicuramente da approfondirne le caratteristiche: [Frame3dd](http://frame3dd.sourceforge.net/). Un software libero per studiare le dinamiche strutturali statiche e dinamiche. Che possa esserci utile nell'analisi dei modi?
 {: class="dashed"}
@@ -1088,7 +958,7 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 
 [Godot](https://www.patreon.com/godotengine) è un game engine libero!
 
-![godoto audio architecture 1](./images/ed-agosto-settembre-2017/pt3/godot/scene-servers-drivers)
+![godot audio architecture 1](./images/ed-agosto-settembre-2017/pt3/godot/scene-servers-drivers.png)
 
 TODO: immagine audio server / audio player / stream / sample / architecture
 
@@ -1121,8 +991,138 @@ Il progetto è ancora in fase embrionale ma contiamo di refinirlo sempre più pe
 
 [Qui](https://github.com/Limulo/godot) il link al repository sul quale _limulo.net_ sta facendo i primi test: ogni contributo è benvenuto!
 
----
-
 ## References
 
 Vai alla pagina [references](references) per maggiori informazioni.
+
+## Approfondimenti
+
+Gli argomenti sono tantissimi e nel poco tempo a disposizione non è sempre possibile trattare tutto con la dovuta attenzione e dovizia di particolari. Di seguito alcuni degli argomenti che avremo voluto illustrare a lezione ma che purtroppo, per i motivi di cui sopra, non hanno trovato spazio all'interno della trattazione.
+
+### I suoni di "Prince of Persia"
+
+Un videogioco a piattaforme ambientato in un intricato palazzo della Persia medievale, originariamente pubblicato per Apple II da Brøderbund nel 1989, e successivamente portato su molti altri sistemi.
+
+Per maggiori informazioni su questo bel gioco vi rimandiamo a [questo link](). Inoltro, per chi fosse interessato, [ecco il link](https://github.com/jmechner/Prince-of-Persia-Apple-II) al repository GitHub dove l'autore del gioco, Jordan Mechner, ha rilasciato il codice sorgente per [MOS 6502](https://it.wikipedia.org/wiki/MOS_6502) originale. Sul sito personale dell'autore si possono consultare anche il  e i diari di sviluppo!
+{: class="dashed"}
+
+I suoni si cui il gioco fa uso (almeno nella sua versione per PC-MSDOS) sono 32. Sono stati realizzati dal sound designer Tom Retting. Eccone la lista, come la si può leggere dal [design document](http://www.jordanmechner.com/downloads/popsource.pdf) originale:
+* Footsteps
+* Soft landing
+* Medium landing ("Oof!")
+* Hard landing (Splat!)
+* Sword clash
+* Stab opponent
+* Stab skeleton
+* Stabbed by opponent
+* Bones leap to life
+* Impaled by spikes
+* Slicer blades clash
+* Character gets sliced in half
+* Gate rising
+* Gate stops at top
+* Gate coming down slow
+* Gate reaches bottom (Clang!)
+* Gate crashes down
+* Entrance door closes
+* Exit door opening
+* Bump into wall (soft)
+* Bump into wall (hard)
+* Bump into mirror
+* Falling floor lands on your head
+* Loose floor shakes
+* Falling floor lands
+* Drink position--1 unit of strength restored
+* Drink special potion--strength boosted to higher level
+* Drink poison (lose 1 unit of strength)
+* Unsheathe sword
+* Jump through mirror
+* Grab on to ledge
+* Drink potion (glug glug)
+
+---
+
+#### SID
+
+Il SID (Sound Interface Device) era il chip sonoro utilizzato dal Vic20, C64 e C128, sviluppato da _Robert Yannes_ di _MOS technology_ il quale, oltre al background tecnico, ne sapeva molto anche di musica.
+
+![sid](./images/ed-agosto-settembre-2017/pt2/sid.jpg){: width="60%"}
+
+Il suo intento era sviluppare un chip di sintesi sottrattiva totalemente differente dai sistemi sonori presenti nei computer dell'epoca e il risultato fu qualcosa di innovativo.
+
+Il chip era programmabile in BASIC o in linguaggio macchina e possedeva molte caratteristiche interessanti, le principali elencate qui di seguito:
+
+* 3 generatori di suono (voci);
+* 4 diverse forme d'onda disponibili (sawtooth, triangle, rectangle w/ pulse width modulation, noise);
+* 3 modulatori d'ampiezza (adsr);
+* 1 controllo di Master volume (in 16 steps);
+
+Erano possibili **effetti** come la _ring modulation_ o l'[_hard sync_](https://en.wikipedia.org/wiki/Oscillator_sync#Hard_Sync) tra gli oscillatori.
+
+Inoltre il SID disponeva di un **filtro programmabile** (low pass, bandpass, high pass), con frequenza di taglio e risonanza selezionabile. Il funzionamento del filtro era possibile grazie alla presenza di alcuni componenti analogici che completavano il circuito: 2 capacitori. Questa caratteristica rendeva il suono del SID unico e difficilmente replicabile fedelmente, anche al giorno d'oggi.
+
+Ecco qui di seguito un piccolo programma d'esempio:
+
+![sid screenshot](./images/ed-agosto-settembre-2017/pt2/sid-screenshot.jpg)
+
+<a id="c64-sound">
+<audio controls style="width:100%">
+  <source src="./sounds/c64-sound.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<a/>
+
+Da ricordare che, usando l'istruzione `poke` del linguaggio di programmazione BASIC è possibile accedere e scrivere sui singoli registri interni del SID specificando sia l'indirizzo, sia il valore numerico da memorizzarvi.
+
+Il programma usa la prima voce impostata come _onda triangolare_ per riprodurre una nota A440 di durata pari a circa 500 millisecondi. Le istruzioni usate sono:
+
+1. indirizzamento del SID `SI=54272`;
+2. impostazione del volume master (registo 4: `L=SI+24` con valori da 0 a 15, volume basso/alto);
+3. impostazione dell'envelope con 4 bit per ciascuna fase = 2 byte per la memorizzazione (registri 5 e 6: `A=SI+5` e `H=SI+6`, rispettivamente per attack/decay e sustain/release);
+4. impostazione della frequenza (registri 0 e 1: `FL=SI` e `FH=SI+1` )
+5. selezione dell'onda (registro 4). Alcuni valori possibili sono:
+  * tringolare: 17;
+  * dente di sega: 33;
+  * rettangolare: 65 --> parametro addizionale "_duty cycle_" (registri 2 e 3 `TL=SI+2`, `TL=SI+3`);
+  * noise: 129;
+6. ciclo _for_ per la durata della nota.
+
+#### Rob Hubbard
+
+Il SID è uno chip che dispone di sole 3 voci ma non è detto che nelle mani di capaci musicisti programmatori non possa ricreare la polifonia e la ricchezza timbrica di un ensamble molto più numeroso
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/pgPEaI0GHBI?list=PLXhLeiiveJmNhFf5ShVwwXspGfgt-ww8c" frameborder="0" allowfullscreen></iframe>
+
+Ecco le tracce separate per apprezzare meglio la ricchezza di variazioni, il timing e intuire l'ingegnosità dei programmi scritti da Hubbard:
+
+<a id="hubbard-1">
+<audio controls style="width:100%">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice1.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<a/>
+
+<a id="hubbard-2">
+<audio controls style="width:100%">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice2.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<a/>
+
+<a id="hubbard-3">
+<audio controls style="width:100%">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice3.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<a/>
+
+Anche dalle immagini che mostrano la forma d'onda della parte iniziale della prima voce si può comprendere la complessità della lavorazione:
+
+![waveform 1](./images/ed-agosto-settembre-2017/pt2/waveform1.jpg)
+
+![waveform 2](./images/ed-agosto-settembre-2017/pt2/waveform2.jpg)
+
+TODO: ascolto del brano su multitraccia **Audacity**.
+
+Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>mentre la musica di Hubbard proviene dal database [High Voltage SID Collection](http://hvsc.c64.org/). Il programma è stato scritto e eseguito utilizzando [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore. Qui altre interessanti informazioni sul SID: [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID).
+{: class="dashed"}

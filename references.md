@@ -125,6 +125,7 @@ Books about sound effects and related topics:
 * Andy Farnell's "[Designing Sound](https://mitpress.mit.edu/books/designing-sound)" - MIT press;
 * Perry Cook "[Real Sound Synthesis for Interactive Applications](http://www.cs.princeton.edu/~prc/AKPetersBook.htm)" - CRC press;
 * Mark Grimshaw's "[Game Sound Technology and Player Interaction: Concepts and Developments](http://www.igi-global.com/book/game-sound-technology-player-interaction/41766)" - IGI Global;
+* Stephen McAdams and Emmanuel Bigand , "[Thinking in Sound: The Cognitive Psychology of Human Audition](http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780198522577.001.0001/acprof-9780198522577)" - Oxford Science Pubblications;
 
 Other books of interest:
 
@@ -140,7 +141,7 @@ Other books of interest:
 ## Talks, references and other materials
 
 * [PAN: Procedural Audio Now](http://proceduralaudionow.com/)
-* Scott Selfon of _Microsoft Corporation_ talks about repetition in videogames @ GDC 2014: "[_Techniques for Fighting Repetition in Game Audio_](http://www.gdcvault.com/play/1020319/Techniques-for-Fighting-Repetition-in)". Hre he talks about titles which uses audio in a innovative way: "[Crossing the Streams: Game Audio Rule Breakers of the Past Decade](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio)" @ GDC 2013.
+* Scott Selfon of _Microsoft Corporation_ talks about repetition in videogames @ GDC 2014: "[_Techniques for Fighting Repetition in Game Audio_](http://www.gdcvault.com/play/1020319/Techniques-for-Fighting-Repetition-in)". Here he talks about titles which uses audio in a innovative way: "[Crossing the Streams: Game Audio Rule Breakers of the Past Decade](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio)" @ GDC 2013.
 * [GDC Doom Music](http://www.gdcvault.com/play/1024068/-DOOM-Behind-the);
 * [GDC Final Fantasy XV - interactive music and tools](http://www.gdcvault.com/play/1023971/Epic-AND-Interactive-Music-in);
 * Akash Thakkar & Disasterpiece [GDC talk](http://www.gdcvault.com/play/1024135/The-Sound-and-Music-of) about the game "_Hiperlight Drfiter_";
