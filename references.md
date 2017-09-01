@@ -62,6 +62,7 @@ Sound effects in video games and many more:
 
 A possible example of this kind of synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/). [Line6 Pod](https://en.wikipedia.org/wiki/Pod_%28amp_modeler%29) product, for example, implements a sound engine which simulate a lot of preamps, cabinets and room acoustics.
 [Acustica-Audio](http://www.acustica-audio.com/) also uses a lot of interesting [technology](http://www.acustica-audio.com/index.php?option=com_content&view=article&id=14&Itemid=247) inside their plugins: [Nebula3](https://www.geforce.com/games-applications/pc-applications/nebula-3/description) for example, which "_is a multi-effect plug-in that is able to emulate and replicate several types of audio equipment and uses libraries which are created using a sophisticated “sampling approach” making it possible to “record” aspects of the sound of audio devices and play them back_".
+* [AudioThing](https://www.audiothing.net/);
 
 * [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [PianoTeq](https://www.pianoteq.com/home) products, [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also the Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html). Other examples are the Roland instruments like the [Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) use the [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) modelling synthesis engine in parallel with traditional PCM synthetizer.
 
@@ -112,6 +113,7 @@ Assets and other videogame resources:
 
 * [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
 * [Coursera Introduction to Game Development](https://www.coursera.org/learn/game-development/)
+* MIT Open Course Ware: [SoundDesign](https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-sound-design-spring-2016/), [Algorithmic and Generative Music](https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-algorithmic-and-generative-music-spring-2010/), [Interactive Music Systems](https://ocw.mit.edu/courses/music-and-theater-arts/21m-385-interactive-music-systems-fall-2016/);
 
 ### Books
 
