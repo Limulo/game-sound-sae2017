@@ -354,8 +354,6 @@ Anche questa è una tecnica relativamente economica da applicare.
 
 Di nuovo in questo caso si può citare l'esempio dei _footsteps_. Il suono dei passi è infatti un suono molto articolato, per questo si può pensare di **spezzarlo nelle sue componenti individuali** e applicare variazioni casuali a ciascuna di queste per ottenere un risultato molto più ricco.
 
-TODO: esempio di tappeto sonoro + suono interessante spot. Il cervello si aggrappa alle variazioni!!
-
 Un altro espediente è quello di **variare il tempo** che intercorre tra i vari elementi. In un suono ambientale che debba generare un tappeto costante di sottofondo, un particolare altamente riconoscibile come un **ululato** o il bubolare di un **gufo** può destare l'interesse dell'ascoltatore (il cervello si aggrappa a cose di questo tipo), pertanto una ripetizione a loop dell'audiofile, verrebbe immediatemente classificata come finta.
 
 In questi casi meglio separe le diverse parti e lavorare con tempi diversi e casuali frapposti tra i suoni che possono essere più problematici.
@@ -376,11 +374,9 @@ Ad esempio una _mitragliatrice_ che abbia terminato la sua raffica potrà avere 
 
 La variazioni applicata al posizionamento dei suoni nell'ambiente è importante; in particolare per tutti quei suoni che non hanno un proprio corrispettivo visivo.
 
-  Un esempio potrebbe essere il bubolare del **gufo** o l'**ululato** del lupo in uno scenario di un bosco pauroso. La traccia ambientale potrebbe essere prerenderizzata (mono, stereo o multicanale), tuttavia non risultare realistica quando il gufo suoni sempre "_pannato_" a destra nonostante l'avanzare e il muoversi del player nel bosco.
+Il _bubolare di un gufo_ nello scenario del bosco visto poco fa deve essere posizionato con cognizione e mantenere la propria posizione coerentemente con i movimenti del giocatore (la cosa potrebbe non essere scontata: pensiamo ad un audio ambientale prerenderizzato; mono, stereo o multicanale).
 
-Il _bubolare di un gufo_ nello scenario del bosco deve essere posizionato con cognizione e mantenere la propria posizione coerentemente con i movimenti del giocatore.
-
-Inoltre, considerando che i suoni non sono quasi mai omnidirezionali, occorre considerare anche quale la **direzione** verso cui la sorgente sonora è orientata.
+Inoltre, considerando che i suoni non sono quasi **mai omnidirezionali**, occorre considerare anche quale la **direzione** verso cui la sorgente sonora è orientata.
 
 Un "_epic fail_" in questo caso sarebbe il percepire un gufo sul proprio lato destro quando, sopraggiungendo dal bosco, si sia ormai arrivati a costeggiare sulla destra un alto edificio.
 
@@ -395,12 +391,14 @@ Un esempio potrebbe essere il plug-in [Reflect](https://www.audiokinetic.com/pro
 Ad oggi la cosa può sembrare scontata ma, forse qualcuno se ne ricorderà, prima che il calcolo dinamico delle occlusioni diventasse possibile e venisse implementato massicciamente, poteva capitare che si sentisse il suono di un nemico sopraggiungere dal lato ma che, voltandosi verso la direzione di provenienza del suono, non ci fosse nulla se non un muro. Il nemico c'era ma aldilà della parete.
 {: class="dashed"}
 
+{% comment %}
 TODO: nota sulla tecnologia
 
 un'osservazione personalissima:<br/>
 * grandi variazioni in ambito audio --> comportano piccole differenze nella percezione della verosimiglianza;
 * piccole variazioni in ambito grafico --> comportano immani differenze nella percezione di cosa è verosimile.
 {: class="dashed"}
+{% endcomment %}
 
 ### When to apply all those effects
 
@@ -588,6 +586,32 @@ alcuni esempi di codifice dei file audio potrebbero essere:
 * [Opus](https://it.wikipedia.org/wiki/Opus_%28codec_audio%29)
 * [flac](https://it.wikipedia.org/wiki/Free_Lossless_Audio_Codec)
 * [musepack](https://it.wikipedia.org/wiki/Musepack)
+* per Xbox: [XMA e WXMA](https://en.wikipedia.org/wiki/Windows_Media_Audio)
+* per Playstation: Atrac [AT9](https://en.wikipedia.org/wiki/Adaptive_Transform_Acoustic_Coding)
+
+### traditional game Audio Practice
+
+#### FMOD
+TODO
+
+Concetti di:
+* "_one project per game_";
+* uno o più game events possono essere associati al medesimo eevento in _fmdo_ e triggerarne diverse istanze;
+* modules --> sound modules --> one or more trigger regions (play until mouse leaves the trigger region);
+
+![3d Panner](./images/ed-agosto-settembre-2017/pt3/3D-panner.png)
+
+* 3D panner
+  - min and max distance
+  - attenuation curve
+  - sound size
+  - min extent (eventualmente impiegato per sovrascrivere per sovrascrivere quanto impostato con gli altri parametri)
+* pt motors / parametrization
+* pt footsteps
+* pt music
+
+<a id="pt3"></a>
+## Pt3: Sound as a Process
 
 ### Suono come modello event based/data driven
 
@@ -652,6 +676,96 @@ Un approccio _event based/data driven_ in somma rende il suono malamente accoppi
 All'inizio della storia dei videogame, delle console e dei computer, era l'**audio** la motivazione principale che ha **guidato lo sviluppo tecnologico**.
 
 L'audio veniva generato in tempo reale e rispecchiava linearmente le azioni del giocatore e le reazioni dell'engine. L'audio veniva sintetizzato in tempo reale. Questa tendenza si è interrotta indicativamente attorno alla seconda metà degli anni '90, momento storico dove si può collocare la comparsa sul mercato dei prini CD e che vede il diffondersi dell'audio campionato ad alta qualità (44100@16bit).
+
+---
+#### Case studey: il SID
+
+Il SID (Sound Interface Device) era il chip sonoro utilizzato dal Vic20, C64 e C128, sviluppato da _Robert Yannes_ di _MOS technology_ il quale, oltre al background tecnico, ne sapeva molto anche di musica.
+
+![sid](./images/ed-agosto-settembre-2017/pt2/sid.jpg){: width="60%"}
+
+Il suo intento era sviluppare un chip di sintesi sottrattiva totalemente differente dai sistemi sonori presenti nei computer dell'epoca e il risultato fu qualcosa di innovativo.
+
+Il chip era programmabile in BASIC o in linguaggio macchina e possedeva molte caratteristiche interessanti, le principali elencate qui di seguito:
+
+* 3 generatori di suono (voci);
+* 4 diverse forme d'onda disponibili (sawtooth, triangle, rectangle w/ pulse width modulation, noise);
+* 3 modulatori d'ampiezza (adsr);
+* 1 controllo di Master volume (in 16 steps);
+
+Erano possibili **effetti** come la _ring modulation_ o l'[_hard sync_](https://en.wikipedia.org/wiki/Oscillator_sync#Hard_Sync) tra gli oscillatori.
+
+Inoltre il SID disponeva di un **filtro programmabile** (low pass, bandpass, high pass), con frequenza di taglio e risonanza selezionabile. Il funzionamento del filtro era possibile grazie alla presenza di alcuni componenti analogici che completavano il circuito: 2 capacitori. Questa caratteristica rendeva il suono del SID unico e difficilmente replicabile fedelmente, anche al giorno d'oggi.
+
+Ecco qui di seguito un piccolo programma d'esempio:
+
+![sid screenshot](./images/ed-agosto-settembre-2017/pt2/sid-screenshot.jpg)
+
+<a id="c64-sound">
+<audio controls style="width:100%">
+  <source src="./sounds/c64-sound.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<a/>
+
+Da ricordare che, usando l'istruzione `poke` del linguaggio di programmazione BASIC è possibile accedere e scrivere sui singoli registri interni del SID specificando sia l'indirizzo, sia il valore numerico da memorizzarvi.
+
+Il programma usa la prima voce impostata come _onda triangolare_ per riprodurre una nota A440 di durata pari a circa 500 millisecondi. Le istruzioni usate sono:
+
+1. indirizzamento del SID `SI=54272`;
+2. impostazione del volume master (registo 4: `L=SI+24` con valori da 0 a 15, volume basso/alto);
+3. impostazione dell'envelope con 4 bit per ciascuna fase = 2 byte per la memorizzazione (registri 5 e 6: `A=SI+5` e `H=SI+6`, rispettivamente per attack/decay e sustain/release);
+4. impostazione della frequenza (registri 0 e 1: `FL=SI` e `FH=SI+1` )
+5. selezione dell'onda (registro 4). Alcuni valori possibili sono:
+  * tringolare: 17;
+  * dente di sega: 33;
+  * rettangolare: 65 --> parametro addizionale "_duty cycle_" (registri 2 e 3 `TL=SI+2`, `TL=SI+3`);
+  * noise: 129;
+6. ciclo _for_ per la durata della nota.
+
+#### Rob Hubbard
+
+Il SID è uno chip che dispone di sole 3 voci ma non è detto che nelle mani di capaci musicisti programmatori non possa ricreare la polifonia e la ricchezza timbrica di un ensamble molto più numeroso
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/pgPEaI0GHBI?list=PLXhLeiiveJmNhFf5ShVwwXspGfgt-ww8c" frameborder="0" allowfullscreen></iframe>
+
+Si tratta della in game music del gioco "Commando" uscito per C64 nel 1985. Ecco le tracce separate per apprezzare meglio la ricchezza di variazioni, il timing e intuire l'ingegnosità dei programmi scritti da Hubbard:
+
+<a id="hubbard-1">
+<audio controls style="width:100%">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice1.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<a/>
+
+<a id="hubbard-2">
+<audio controls style="width:100%">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice2.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<a/>
+
+<a id="hubbard-3">
+<audio controls style="width:100%">
+  <source src="./resources/music/Rob_Hubbard/commando_track1_voice3.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<a/>
+
+Anche dalle immagini che mostrano la forma d'onda della parte iniziale della prima voce si può comprendere la complessità della lavorazione:
+
+![waveform 1](./images/ed-agosto-settembre-2017/pt2/waveform1.jpg)
+
+![waveform 2](./images/ed-agosto-settembre-2017/pt2/waveform2.jpg)
+
+TODO: ascolto del brano su multitraccia **Audacity**.
+
+Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>mentre la musica di Hubbard proviene dal database [High Voltage SID Collection](http://hvsc.c64.org/). Il programma è stato scritto e eseguito utilizzando [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore. Qui altre interessanti informazioni sul SID: [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID).
+{: class="dashed"}
+
+Il lavoro di Hubbard inoltre è un mirabile esempio di come spesso si riescano ad ottenere risultati ammirevoli partendo da risolrse limitate o necessità stringenti.
+{: class="note"}
+---
 
 Attenzione, questo **non significa che in passato i sample non venissero utilizzati**; Nintendo, SEGA e ancora prima nelle coin-op, dove possibile, si inserivano sistemi DAC in grado di riprodurre, seppure non con la stessa qualità CD, campioni e sample pre-registrati, soprattutto per la voce. La ricerca del "_realismo_" tuttavia ha infine soppiantato i sistemi di sintesi tradizionale.
 
@@ -846,33 +960,11 @@ Se, come spesso accade, l'audio è considerato come accessorio e secondario risp
 
 ![sierra lip sync](./images/ed-agosto-settembre-2017/pt2/sierra-lipsync.jpg)
 
-**Procedural animation**: [Tom Clancy's Ghost Recon Advanced Warfighter 2](https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Advanced_Warfighter)) (Ubisoft 2007) case study: un aeroplano precipitato nel deserto esplode e continua a bruciare a terra. Le fiamme sono sferzate a destra e a sinistra da un vento irregolare. Polvere e fumo sono generati proceduralmetne in base al livello dell'audio pre-prodotto (vedi [questo talk](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio) di Scott Selfon al minuto 23:14)!
+**Procedural animation**: [Tom Clancy's Ghost Recon Advanced Warfighter 2](https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Advanced_Warfighter) (Ubisoft 2007) case study: un aeroplano precipitato nel deserto esplode e continua a bruciare a terra. Le fiamme sono sferzate a destra e a sinistra da un vento irregolare. Polvere e fumo sono generati proceduralmetne in base al livello dell'audio pre-prodotto (vedi [questo talk](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio) di Scott Selfon al minuto 23:14)!
 
 ---
 
-<a id="pt3"></a>
-## Pt3: Game Sound workshop
-
-### FMOD
-TODO
-
-Concetti di:
-* "_one project per game_";
-* uno o più game events possono essere associati al medesimo eevento in _fmdo_ e triggerarne diverse istanze;
-* modules --> sound modules --> one or more trigger regions (play until mouse leaves the trigger region);
-
-![3d Panner](./images/ed-agosto-settembre-2017/pt3/3D-panner.png)
-
-* 3D panner
-  - min and max distance
-  - attenuation curve
-  - sound size
-  - min extent (eventualmente impiegato per sovrascrivere per sovrascrivere quanto impostato con gli altri parametri)
-* pt motors / parametrization
-* pt footsteps
-* pt music
-
----
+### Procedural Audio practice
 
 #### Implementazione usando la sintesi
 TODO
@@ -881,7 +973,7 @@ tipologie di suono: classi sonore relativamente piccole, canne, lastre di metall
 
 #### Physical modelling
 
-![PM vs. PIM](./images/graphics/physically-inpired-model.png){: width="80%"}
+![PM vs. PIM](./images/graphics/physically-inpired-model-bis.png){: width="80%"}
 
 physical modelling / physical informed modelling (differenze)
 Waveguide (difetto: uso della memoria per implementare delay per la propagazione e i risuonatori)
@@ -932,7 +1024,6 @@ Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa Pure
 #### Wind
 
 Il vento in sè non produce suono (molto interessante a tale proposito il [seminario "_Squeezing out noise_"](https://vimeo.com/89488861) di Chris Woolf, technical consultant per _Rycote_)
-
 
 #### Water
 TODO
@@ -1075,88 +1166,3 @@ I suoni si cui il gioco fa uso (almeno nella sua versione per PC-MSDOS) sono 32.
 * Drink potion (glug glug)
 
 ---
-
-#### SID
-
-Il SID (Sound Interface Device) era il chip sonoro utilizzato dal Vic20, C64 e C128, sviluppato da _Robert Yannes_ di _MOS technology_ il quale, oltre al background tecnico, ne sapeva molto anche di musica.
-
-![sid](./images/ed-agosto-settembre-2017/pt2/sid.jpg){: width="60%"}
-
-Il suo intento era sviluppare un chip di sintesi sottrattiva totalemente differente dai sistemi sonori presenti nei computer dell'epoca e il risultato fu qualcosa di innovativo.
-
-Il chip era programmabile in BASIC o in linguaggio macchina e possedeva molte caratteristiche interessanti, le principali elencate qui di seguito:
-
-* 3 generatori di suono (voci);
-* 4 diverse forme d'onda disponibili (sawtooth, triangle, rectangle w/ pulse width modulation, noise);
-* 3 modulatori d'ampiezza (adsr);
-* 1 controllo di Master volume (in 16 steps);
-
-Erano possibili **effetti** come la _ring modulation_ o l'[_hard sync_](https://en.wikipedia.org/wiki/Oscillator_sync#Hard_Sync) tra gli oscillatori.
-
-Inoltre il SID disponeva di un **filtro programmabile** (low pass, bandpass, high pass), con frequenza di taglio e risonanza selezionabile. Il funzionamento del filtro era possibile grazie alla presenza di alcuni componenti analogici che completavano il circuito: 2 capacitori. Questa caratteristica rendeva il suono del SID unico e difficilmente replicabile fedelmente, anche al giorno d'oggi.
-
-Ecco qui di seguito un piccolo programma d'esempio:
-
-![sid screenshot](./images/ed-agosto-settembre-2017/pt2/sid-screenshot.jpg)
-
-<a id="c64-sound">
-<audio controls style="width:100%">
-  <source src="./sounds/c64-sound.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-Da ricordare che, usando l'istruzione `poke` del linguaggio di programmazione BASIC è possibile accedere e scrivere sui singoli registri interni del SID specificando sia l'indirizzo, sia il valore numerico da memorizzarvi.
-
-Il programma usa la prima voce impostata come _onda triangolare_ per riprodurre una nota A440 di durata pari a circa 500 millisecondi. Le istruzioni usate sono:
-
-1. indirizzamento del SID `SI=54272`;
-2. impostazione del volume master (registo 4: `L=SI+24` con valori da 0 a 15, volume basso/alto);
-3. impostazione dell'envelope con 4 bit per ciascuna fase = 2 byte per la memorizzazione (registri 5 e 6: `A=SI+5` e `H=SI+6`, rispettivamente per attack/decay e sustain/release);
-4. impostazione della frequenza (registri 0 e 1: `FL=SI` e `FH=SI+1` )
-5. selezione dell'onda (registro 4). Alcuni valori possibili sono:
-  * tringolare: 17;
-  * dente di sega: 33;
-  * rettangolare: 65 --> parametro addizionale "_duty cycle_" (registri 2 e 3 `TL=SI+2`, `TL=SI+3`);
-  * noise: 129;
-6. ciclo _for_ per la durata della nota.
-
-#### Rob Hubbard
-
-Il SID è uno chip che dispone di sole 3 voci ma non è detto che nelle mani di capaci musicisti programmatori non possa ricreare la polifonia e la ricchezza timbrica di un ensamble molto più numeroso
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/pgPEaI0GHBI?list=PLXhLeiiveJmNhFf5ShVwwXspGfgt-ww8c" frameborder="0" allowfullscreen></iframe>
-
-Ecco le tracce separate per apprezzare meglio la ricchezza di variazioni, il timing e intuire l'ingegnosità dei programmi scritti da Hubbard:
-
-<a id="hubbard-1">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice1.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-<a id="hubbard-2">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice2.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-<a id="hubbard-3">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice3.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-Anche dalle immagini che mostrano la forma d'onda della parte iniziale della prima voce si può comprendere la complessità della lavorazione:
-
-![waveform 1](./images/ed-agosto-settembre-2017/pt2/waveform1.jpg)
-
-![waveform 2](./images/ed-agosto-settembre-2017/pt2/waveform2.jpg)
-
-TODO: ascolto del brano su multitraccia **Audacity**.
-
-Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>mentre la musica di Hubbard proviene dal database [High Voltage SID Collection](http://hvsc.c64.org/). Il programma è stato scritto e eseguito utilizzando [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore. Qui altre interessanti informazioni sul SID: [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID).
-{: class="dashed"}
