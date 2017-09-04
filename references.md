@@ -87,7 +87,7 @@ and Rendering of Environmental Audio;
 * Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
 * [SuperCollider](https://supercollider.github.io/). Here's the Supercollider [code repository](http://sccode.org/) and Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from Farnell's "_Designing Sound_" book;
 * [CSound](http://csound.github.io/);
-* [Chuck](http://chuck.cs.princeton.edu/);
+* [Chuck](http://chuck.cs.princeton.edu/). [Here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!
 * [Faust](http://faust.grame.fr/) a DSP programming language;
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
 
@@ -117,13 +117,10 @@ Assets and other videogame resources:
 
 ### Books
 
-Books about music in video games:
+Books about music, sound effects and sound topics in general:
 
 * Karen Kollins "[Game Sound](https://mitpress.mit.edu/books/game-sound)" - MIT press;
 * Winifred Phillips "[A Composer's Guide to Game Music](https://www.amazon.com/dp/0262026643/ref=cm_sw_su_dp)" - MIT press;
-
-Books about sound effects and related topics:
-
 * Andy Farnell's "[Designing Sound](https://mitpress.mit.edu/books/designing-sound)" - MIT press;
 * Perry Cook "[Real Sound Synthesis for Interactive Applications](http://www.cs.princeton.edu/~prc/AKPetersBook.htm)" - CRC press;
 * Mark Grimshaw's "[Game Sound Technology and Player Interaction: Concepts and Developments](http://www.igi-global.com/book/game-sound-technology-player-interaction/41766)" - IGI Global;
@@ -132,7 +129,7 @@ Books about sound effects and related topics:
 Other books of interest:
 
 * Anna Anthropy "Rise of videogame zinester" - 7 stories press;
-* Chris Solarski "Interactive stories and videogame art" - CRC press;
+* Chris Solarsky "[Interactive story and videogame art](http://www.solarskistudio.com/books.html)" - CRC press;
 * Ernest Adams "Foundamentals of game design" - Pearson;
 * James Newman "Videogames" (2nd ed) - Routledge;
 * Blake J. Harris "Console Wars" - multiplayer.it edizioni;

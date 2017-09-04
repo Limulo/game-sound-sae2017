@@ -266,10 +266,6 @@ La ripetizione può verificarsi nell'ambito dei:
 
 La ripetizione può essere ovviata utilizzando diverse varianti dello stesso suono e riprodurre, di volta in volta, una versione diversa dalla precedente.
 
-Il lavoro del sound designer è quello di preparare un grand numero di assets sonori "_riempiendo gli speadsheed_" (derivati in fase di preproduzione dall'_audio design document_) e registrare centinaia se non migliaia di suoni diversi. Una matrice ad incroci enorme che richiede un sacco di tempo e risorse per essere prodotta.
-
-![spreadsheets](./images/ed-agosto-settembre-2017/pt2/spreadsheet-03.jpg)
-
 Il workflow comunce infatti può essere compreso se si pensa a come l'audio viene normalemnte implementato all'interno del videogioco: come un **evento** che corrisponde ad un determinato **suono**.
 
 ![event --> snd](./images/graphics/event-sound.png){: width="60%"}
@@ -305,7 +301,13 @@ Questi personaggi possono poi indossare diversi tipi di calzari e possono cammin
 All'interno dell'equazione potremmo poi inserire anche il paramtro _peso_, dovuto ad esempio dal numero di oggetti trasportati nell'inventario personale, oppure ancora considerare la pendenza del terreno, e così via...
 {: class="note"}
 
-Come si vede la matrice degli assets sonori in un caso come questo diventerebbe davvero gigantesca e multidimensionale.
+Il lavoro del sound designer è quello di preparare un grand numero di assets sonori "_riempiendo gli speadsheed_" (derivati in fase di preproduzione dall'_audio design document_) e registrare centinaia se non migliaia di suoni diversi. Una matrice ad incroci enorme che richiede un sacco di tempo e risorse per essere prodotta.
+
+![spreadsheets](./images/ed-agosto-settembre-2017/pt2/spreadsheet-03.jpg)
+
+Come si vede la matrice degli assets sonori in un caso come quelli illustrati diventerebbe davvero gigantesca e multidimensionale.
+
+---
 
 Un caso di studio interessante potrebbe essere quello illustrato da _Alastair MacGregor_ della _Rockstar games_ al GDC 2014 rigaurdo agli assets del gioco GTA V (vedi minuto [13:47](https://youtu.be/L4GuM15QOFE?t=13m47s))
 
@@ -344,9 +346,11 @@ Pitch shifting più avanzati possono essee usati: si tratta dei pitch shifting c
 
 Spesso l'hardware dei dispositivi su cui il gioco verrà giocato permette di effettuare operazioni di filtraggio in modo diretto senza costi di alcun tipo. In caso questo non sia possibile invece è comunque semplice implementare lo stesso tipo di filtri base come un LPF o un banco di BPF, via codice DSP.
 
-Usare i filtri sul sonoro e anche sulle voci permette di raggiungere un alto grado di variabilità. Non importa se il filtraggio non rispetta con accuratezza la fisica del fenomeno, il semplice fatto che ci sia un filtro fa suonare il tutto più naturale.
+L'uso del filtro è fondamentale per restituire senzazioni come la **distanza** (un filtro passa basso è ottimo per ricalcare il naturale _roll-off_ delle alte frequenze) oppure per sottolineare la presenza di **elementi attenuanti** come l'umidità ad esempio (ne parleremo meglio fra poco).
 
-Applicare variazioni randomiche sul filtto di una voce infatti, aiuta a illudere il giocatore sulla presenza di elementi attenuanti come l'umidità ad esempio, ma soprtattutto fornisce la sensazione di direzionalità: nell'esperienza quotidiana, come ascoltatori ci accorgiamo che **la nostra testa** non è mai perfettamente ferma nello stesso punto e, anche piccole variazioni nella posizione, possono modificare lo spettro dell'audio percepito.
+Applicare variazioni randomiche sul filtto di una voce inoltre, aiuta soprattutto a fornire la **sensazione di direzionalità**: nell'esperienza quotidiana, come ascoltatori ci accorgiamo che **la nostra testa** non è mai perfettamente ferma nello stesso punto e, anche piccole variazioni nella posizione, possono modificare lo spettro dell'audio percepito.
+
+Usare i filtri sul sonoro e anche sulle voci permette di raggiungere un alto grado di variabilità. Non importa se il filtraggio non rispetta con accuratezza la fisica del fenomeno, il semplice fatto che ci sia un filtro fa suonare il tutto più naturale.
 
 Anche questa è una tecnica relativamente economica da applicare.
 
@@ -367,8 +371,6 @@ Semplicemente contemplare il silenzio come una delle possibili opzioni nel venta
 ##### Envelope
 
 Applicare curve di inviluppo su volume o frequenza di taglio dei filtri aggiungono ancora ulteriore variabilità.
-
-Ad esempio una _mitragliatrice_ che abbia terminato la sua raffica potrà avere diverse curve di inviluppo applicate alla coda del suono in decadimento.
 
 ##### Positional variation
 
@@ -400,7 +402,7 @@ un'osservazione personalissima:<br/>
 {: class="dashed"}
 {% endcomment %}
 
-### When to apply all those effects
+### Quando applicare tutti questi effetti?
 
 #### Dialoghi
 
