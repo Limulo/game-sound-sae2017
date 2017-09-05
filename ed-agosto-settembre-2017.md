@@ -7,7 +7,7 @@ layout: default
 Back to [Home](index);
 <br/><br/>
 Presto disponibili le slide delle lezioni!
-<!-- Scarica le <a href="./slides/Game Engines Game Sound Techniques maggio 2017.pdf" >slides</a> delle lezioni! -->
+<!-- Scarica le [slides](./resources/slides/Game Engines Game Sound Techniques Agu-Sep 2017.pdf) delle lezioni! -->
 {: class="dashed"}
 
 Di seguito parte dei contenuti trattati durante le lezioni:
@@ -635,7 +635,7 @@ In un gioco che si basi pesantemente sull'aspetto grafico, l'immagine mostrata a
 
 Consideriamo un semplice modello 3D costituito da 4 facce triangolari: occorrono 3 (OpenGL ne usa 4 in realtà) valori numerici corrispondenti ai 3 assi cartesiani per identificare la posizione di ciascuno dei suoi vertici nello spazio tridimensionale.
 
-Un modello estrapolato da un moderno FPS tuttavia è composto da una moltitudine di poligoni, centinaia se non migliaia (_high poly_). Questi vertici e la loro configurazione nello spazio costituisce la **mesh** del modello ma da sola, non basta per creare l'illusione di realismo.
+Un modello estrapolato da un moderno videogioco tuttavia è composto da una moltitudine di poligoni, centinaia se non migliaia (_high poly_). Questi vertici e la loro configurazione nello spazio costituisce la **mesh** del modello ma da sola, non basta per creare l'illusione di realismo.
 
 Serve una **texture** da poter mappare sulla mesh che riproduca fedelmente le caratteristiceh visive come colori e dettagli dell'oggetto ([UV mapping](https://en.wikipedia.org/wiki/UV_mapping)).
 
