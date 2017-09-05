@@ -1,4 +1,5 @@
-#N canvas 237 191 599 415 10;
+#N canvas 235 191 599 415 10;
+#X declare -path abs;
 #N canvas 1 111 1161 596 sound 0;
 #N canvas 73 50 356 792 engine 0;
 #X obj 155 769 outlet~;
@@ -246,7 +247,7 @@
 #X obj 32 226 r \$0-gear-mix;
 #X obj 32 248 * 0.1;
 #X obj 431 18 hsl 64 12 0 1 0 1 \$0-engine-speed empty engine-speed
-0 6 1 8 -262144 -1 -1 4095 1;
+0 6 1 8 -262144 -1 -1 3150 1;
 #X obj 145 30 r \$0-engine-speed;
 #X obj 145 50 * 90;
 #X obj 145 70 + 1;
@@ -256,7 +257,7 @@
 #X obj 300 138 * 2;
 #X obj 298 358 vrdel 500 3000 0.2;
 #X obj 431 6 hsl 64 12 0 1 0 1 \$0-distance empty distance 10 6 1 8
--262144 -1 -1 1638 1;
+-262144 -1 -1 0 1;
 #X obj 369 378 r \$0-distance;
 #X obj 296 509 hip~ 5;
 #X obj 296 531 clip~ -1 1;
@@ -307,6 +308,7 @@
 #X msg 1022 229 \$1 100;
 #X obj 954 179 * -0.01;
 #X msg 690 236 0.5;
+#X obj 992 25 declare -path abs;
 #X connect 0 0 22 0;
 #X connect 1 0 17 0;
 #X connect 2 0 24 0;

@@ -1,4 +1,4 @@
-#N canvas 112 100 787 222 10;
+#N canvas 110 100 787 222 10;
 #X text 120 148 thanks to Andy J Farnell;
 #N canvas 257 109 1053 602 sound 0;
 #X obj 290 242 *~;
@@ -103,7 +103,7 @@
 #X obj 429 343 pan-level-1;
 #X obj 330 343 pan-level-1;
 #X obj 238 343 pan-level-1;
-#X obj 113 419 tgl 15 0 cut empty empty 17 7 0 10 -258113 -1 -1 1 1
+#X obj 113 419 tgl 15 0 cut empty empty 17 7 0 10 -258113 -1 -1 0 1
 ;
 #X obj 33 545 loadbang;
 #X msg 33 567 1;
@@ -220,7 +220,7 @@
 #X connect 108 0 1 1;
 #X coords 0 -1 1 1 600 125 2 100 340;
 #X restore 122 14 pd sound;
-#N canvas 318 178 862 562 ctrl 0;
+#N canvas 316 178 862 562 ctrl 0;
 #N canvas 1 186 175 257 windspeed 0;
 #X obj 13 41 +~ 1;
 #X obj 12 151 +~;
@@ -292,7 +292,7 @@
 #X connect 9 0 1 0;
 #X restore 32 579 pd windspeed;
 #X obj 444 593 delwrite~ a 3000;
-#X obj 177 115 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 0
+#X obj 177 115 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 1
 1;
 #X msg 177 65 \; pd dsp \$1;
 #X obj 32 191 adc~ 1;
@@ -415,6 +415,7 @@
 #X msg 142 61 90;
 #X msg 107 61 45;
 #X obj 107 29 t b b;
+#X text 168 100 DSP;
 #X connect 0 0 30 0;
 #X connect 2 0 3 0;
 #X connect 4 0 6 0;

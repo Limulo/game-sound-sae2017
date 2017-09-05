@@ -1,4 +1,5 @@
 #N canvas 1 78 1351 689 10;
+#X declare -path abs;
 #X obj 311 614 tabwrite~ c;
 #N canvas 0 50 450 300 (subpatch) 0;
 #X array c 4096 float 2;
@@ -362,7 +363,7 @@ env-size -2 7 0 10 -203904 -1 -1 2200 1;
 #X obj 305 390 hip~ 5;
 #X obj 305 412 clip~ -1 1;
 #X obj 321 310 catch~ out;
-#X obj 107 106 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 1 1
+#X obj 107 106 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X msg 107 381 \; pd dsp \$1;
 #X obj 103 188 abs-hid;
@@ -461,6 +462,7 @@ env-amt -2 7 0 10 -203904 -1 -1 12395 1;
 #X text 1022 43 RT automatic fire;
 #X text 1022 53 LT oneshot;
 #X obj 772 101 image ak47.gif;
+#X obj 1026 210 declare -path abs;
 #X connect 2 0 37 0;
 #X connect 3 0 27 0;
 #X connect 4 0 7 0;
