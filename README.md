@@ -17,11 +17,9 @@ Le immagini per il sito possono essere pubblicate usando la seguente line di cod
 ![sid](./images/ed-agosto-settembre-2017/pt2/sid.jpg){: width="60%"}
 ```
 
-### Formule matematiche in Google Presentation_
+### Formule matematiche in Google Presentation
 
 Al momento della stesura di questi contenuti, _Google presentation_ non fornisce la possibilità di integrare nella slides le formule matematiche.
 
 Un soluzione alternativa è renderizzarle come immagini altrove (ad esempio con [questa](http://www.codecogs.com/latex/eqneditor.php) utility on-line ) e inserirle come immagini.
 
-
----

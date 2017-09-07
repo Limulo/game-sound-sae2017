@@ -6,8 +6,7 @@ layout: default
 
 Back to [Home](index);
 <br/><br/>
-Presto disponibili le slide delle lezioni!
-<!-- Scarica le [slides](./resources/slides/Game Engines Game Sound Techniques Agu-Sep 2017.pdf) delle lezioni! -->
+Scarica le [slides](./resources/slides/2017-09-Game Engines Game Sound Techniques.pdf) delle lezioni!
 {: class="dashed"}
 
 Di seguito parte dei contenuti trattati durante le lezioni:
@@ -29,7 +28,7 @@ Il **game engine** (o motore di gioco) è un componente software usato per aiuta
 
 Il _videogioco_ è una moderna di declinazione del concetto di **gioco**. La sua particolarità risiede nel mezzo con cui si fruisce del gioco: uno **schermo**.
 
-![videogioco](./images/ed-agosto-settembre-2017/pt1/natron/natron-output.png)
+![videogioco](./images/2017-09/pt1/natron/natron-output.png)
 
 ####   Le caratteristiche del gioco
 
@@ -53,7 +52,7 @@ Inoltre, assieme alla complessità logica e grafica i giochi ci sono man mano di
 
 La _diversificazione dei generi_ non è stata solo uno sbocco naturale dovuto all'innovazione tecnologica ma anche una necessità dell'industria per far fronte ad una stagnazione del mercato, ormai saturo di giochi, uno [clone](http://www.pong-story.com/mypongs.htm) dell'altro, sia negli arcade, console e primi pc. Uno su tutti è l'esempio di Pong il cui chip (l'[AY-3-8500](https://it.wikipedia.org/wiki/AY-3-8500))
 <br/><br/>
-![collasso](./images/ed-agosto-settembre-2017/pt1/pong/collapse.png)
+![collasso](./images/2017-09/pt1/pong/collapse.png)
 <br/>
 La saturazione del mercato fu causata anche da una mancanza di regolamentazione nel _copyright_ associato al prodotto videoludico!
 {: class="dashed"}
@@ -90,7 +89,7 @@ Ecco quindi che come software house abbiamo creato un nostro game engine ad uso 
 
 Il nostro game engine è comunque lungi dall'essere un'innovazione nell'industria. Appoggiarsi a game engine (nel caso di sviluppo di videogiochi) o a porzioni di software già pronto (nella fase di sviluppo e creazione software) è una pratica vecchia quanto la computer science. Per quanto possibile non si reinventa la ruota. Si cerca, al più, di migliorarla.
 
-![engine storici](./images/ed-agosto-settembre-2017/pt1/engine-storici.png)
+![engine storici](./images/2017-09/pt1/engine-storici.png)
 
 A partire dagli arcade, passando per le prime console e quindi approdando ai PC, la tecnologia ha reso sempre più semplice e desiderabile riutilizzare software già scritto, testato, ottimizzato, sul quale è possibile costruire nuovi programmi in minor tempo e in modo più efficiente.
 
@@ -156,13 +155,13 @@ L'assembly è a tutti gli effetti quello che si chiama linguaggio a basso livell
 
 Per rendere la programmazione indipendente dalla macchina su cui si lavora (sviluppo un editor di testo che possa funzionare su DOS, Unix, Solaris, ...), sono stati creati dei linguaggi ancora più vicini al linguaggio naturale e che si avvantaggiano del **compilatore**, un software che traduce il file sorgente in un file scritto nell'assembly relativo alla macchina di destinazione, che a sua volta sarà reso in binario.
 
-![astrazione](./images/ed-agosto-settembre-2017/pt1/livelli-astrazione.png)
+![astrazione](./images/2017-09/pt1/livelli-astrazione.png)
 
 Parlando di linguaggi vicini al linguaggio naturale, forse diamo un'idea un po' fuorviante. In realtà un linguaggio di programmazione è un linguaggio formale, ovvero un linguaggio con una grammatica, una sintassi e dei fortemente vincolato. Al contrario del linguaggio naturale, l'ambiguità è inesistente, pena la non computabilità del file sorgente.
 
 Infine, a un livello di astrazione ulteriore si situano i cosiddetti **linguaggi di scripting**, che richiedono un passaggio intermedio ulteriore rispetto ai linguaggi compilati per essere resi in binario
 
-![programming languages evolution](./images/ed-agosto-settembre-2017/pt1/binary-2-scripting/programming-lang-evo.png)
+![programming languages evolution](./images/2017-09/pt1/binary-2-scripting/programming-lang-evo.png)
 
 Più un linguaggio ha una grammatica e sintassi formale più si evitano ambiguità e più è semplice formulare istruzioni. Di contro, bisogna padroneggiare una buona percentuale del linguaggio prima di essere in grado di utilizzarlo.
 {: class="note"}
@@ -239,7 +238,7 @@ La _ripetizione_  è considerata un male nell'audio per il videogioco, perchè s
 
 Tuttavia la ripetizione non è sempre un male: al giocatore va data una sorta di feedback, una **audio reward** ad indicare che si sta facendo qualcosa di giusto o qualcosa che migliora la propria condizione (es. bere la pozione rinvigorente in "_Prince of Persia_").
 
-![prince](./images/ed-agosto-settembre-2017/pt2/prince-of-persia.png){: width="60%"}
+![prince](./images/2017-09/pt2/prince-of-persia.png){: width="60%"}
 
 <a id="prince-of-persia">
 <audio controls style="width:100%">
@@ -280,11 +279,11 @@ Che cosa si intende per evento? All'interno del game engine, un _evento_ potrebb
 
 Ammesso che la relazione `martello--> colpisce--> incudine` produca lo stesso suono di `incudine--> colpisce--> martello`, gli assets audio da ricreare sono comunque tantissimi: la **crescita** è **combinatoria**!
 
-![combinatoria](./images/ed-agosto-settembre-2017/pt2/combinazioni.gif){: width="40%"}
+![combinatoria](./images/2017-09/pt2/combinazioni.gif){: width="40%"}
 
 Se dovessimo realizzare un suono per ciascuna delle combinazioni possibili di due oggetti tra tutti quelli presenti all'interno del gioco ecco che ne servirebbero già un'ottantina in un caso come quello mostrato qui di seguito:
 
-![armature](./images/ed-agosto-settembre-2017/pt2/simple-rpg-sounds.jpg)
+![armature](./images/2017-09/pt2/simple-rpg-sounds.jpg)
 
 Senza contare che, come abbiamo già detto, un oggetto non ha solo un singolo modo di "_suonare_"!
 
@@ -303,7 +302,7 @@ All'interno dell'equazione potremmo poi inserire anche il paramtro _peso_, dovut
 
 Il lavoro del sound designer è quello di preparare un grand numero di assets sonori "_riempiendo gli speadsheed_" (derivati in fase di preproduzione dall'_audio design document_) e registrare centinaia se non migliaia di suoni diversi. Una matrice ad incroci enorme che richiede un sacco di tempo e risorse per essere prodotta.
 
-![spreadsheets](./images/ed-agosto-settembre-2017/pt2/spreadsheet-03.jpg)
+![spreadsheets](./images/2017-09/pt2/spreadsheet-03.jpg)
 
 Come si vede la matrice degli assets sonori in un caso come quelli illustrati diventerebbe davvero gigantesca e multidimensionale.
 
@@ -311,9 +310,9 @@ Come si vede la matrice degli assets sonori in un caso come quelli illustrati di
 
 Un caso di studio interessante potrebbe essere quello illustrato da _Alastair MacGregor_ della _Rockstar games_ al GDC 2014 rigaurdo agli assets del gioco GTA V (vedi minuto [13:47](https://youtu.be/L4GuM15QOFE?t=13m47s))
 
-![GTA V assets 1](./images/ed-agosto-settembre-2017/pt2/GTA-slide-1.jpg)
+![GTA V assets 1](./images/2017-09/pt2/GTA-slide-1.jpg)
 
-![GTA V assets 2](./images/ed-agosto-settembre-2017/pt2/GTA-slide-2.jpg)
+![GTA V assets 2](./images/2017-09/pt2/GTA-slide-2.jpg)
 
 TODO: argomenta suoni di impatto, dialoghi (walla), programmi radiofonici, etc...
 
@@ -452,7 +451,7 @@ Gli hook si distinguono in vari tipi, quali ad esempio salti, trasposizioni, abi
 
 Vediamone un paio di esempi sfruttando il motore _ScummVM_ e giocando a _Monkey Island 2: LeChuck revenge_ (nota: nella particolare dimostrazione usiamo una emulazione software della scheda _Roland MT-32_, all'epoca lo stato dell'arte dell'audio nel mondo videoludico);
 
-![iMuse in ScummVM](./images/ed-agosto-settembre-2017/pt2/monkey2-scabb.gif){: width="100%"}
+![iMuse in ScummVM](./images/2017-09/pt2/monkey2-scabb.gif){: width="100%"}
 
 Per la musica si potrebbe aprire un intero capitolo a parte parlando di composizioni interattive, musica generativa/algoritmica, passando per iMuse, Farnell,
 
@@ -516,7 +515,7 @@ Un esempio potrebbe essere il passaggio da una sitauzione _in-game_ ad un _menù
 
 Il game sound engine deve stabilire con il game engine un'interfaccia per ricevere (e inviare) parametri real time da utilizzarsi per controllare interattivamente controlli quali volume, pitch o frequenza di taglio.
 
-![senua parameters](./images/ed-agosto-settembre-2017/pt2/senua-parameters.jpg)
+![senua parameters](./images/2017-09/pt2/senua-parameters.jpg)
 
 Alcuni esempi di parametri utilizzabile per modificare i suoni i nriproduzione potrebbero essere:
 * il livello di _salute_ per il player;
@@ -529,7 +528,7 @@ Come funziona l'audio in un gioco: **emitters** sono oggetti nello spazio tridim
 
 Ogni emitter nel 3D world è caratterizzato dalla presenza due sfere ad esso concentriche che dividono lo spazio in 3 volumi.
 
-![3D sound](./images/ed-agosto-settembre-2017/pt3/3D-sound.png)
+![3D sound](./images/2017-09/pt3/3D-sound.png)
 
 Attenuazione e smorzamento: un discorso legato alla **distanza** tra emitter e listener, grandezza geometrica ricavata dal modello tridimensionale, in base alla quale viene modificato in tempo reale l'amplificatore di livello e/o la frequenza di taglio di un filtro passa basso.
 
@@ -601,7 +600,7 @@ Concetti di:
 * uno o più game events possono essere associati al medesimo eevento in _fmdo_ e triggerarne diverse istanze;
 * modules --> sound modules --> one or more trigger regions (play until mouse leaves the trigger region);
 
-![3d Panner](./images/ed-agosto-settembre-2017/pt3/3D-panner.png)
+![3d Panner](./images/2017-09/pt3/3D-panner.png)
 
 * 3D panner
   - min and max distance
@@ -637,19 +636,38 @@ Consideriamo un semplice modello 3D costituito da 4 facce triangolari: occorrono
 
 Un modello estrapolato da un moderno videogioco tuttavia è composto da una moltitudine di poligoni, centinaia se non migliaia (_high poly_). Questi vertici e la loro configurazione nello spazio costituisce la **mesh** del modello ma da sola, non basta per creare l'illusione di realismo.
 
-Serve una **texture** da poter mappare sulla mesh che riproduca fedelmente le caratteristiceh visive come colori e dettagli dell'oggetto ([UV mapping](https://en.wikipedia.org/wiki/UV_mapping)).
+Serve una **texture** da poter mappare sulla mesh che riproduca fedelmente le caratteristiche visive come colori e dettagli dell'oggetto ([UV mapping](https://en.wikipedia.org/wiki/UV_mapping)).
 
-Perchè il modello possa essere visto nel mondo tridimensionale occorrono **luci**: ogni oggetto dunque, colpito dai raggi irradiati da tutte le fonti di luce presenti nel mondo virtuale, verrà descritto in modo ancora più realistico, in più se il modello riporta alcuni valori per le grandezze fisice associate ai materiali di cui è composto, come coefficienti di riflessione e assorbimento, e così via, l'effetto potrà essere ancora più realistico.
+Perchè il modello possa essere visto nel mondo tridimensionale occorrono **luci**: ogni oggetto dunque, colpito dai raggi irradiati da tutte le fonti di luce presenti nel mondo virtuale, verrà descritto in modo ancora più realistico, in più se il modello riporta alcuni valori per le grandezze fisice associate ai materiali di cui è composto, come coefficienti di riflessione e assorbimento, e così via, l'effetto potrà essere ancora migliore.
 
-Moltiplichiamo il tutto per la moltitudine di modelli simultaneamente all'interno del mondo 3D virtuale e avremo quanto computato da una speciale componente del game engine, il **rendering engine** (che traspone il tutto su una superficie flat 2D), coadiuvato da componenti hardware che aiutano ad accelerare l'immane qunatitativo di calcoli richiesti.
+Moltiplichiamo il tutto per la moltitudine di modelli simultaneamente presenti all'interno del mondo 3D virtuale e avremo quanto computato da una componente del game engine, il **rendering engine** (che traspone il tutto su una superficie flat 2D: il nostro schermo), coadiuvato da una speciale componente hardware, la **GPU**, che aiuta accelerando e parallelizzando il processing.
 
-L'interità dei modelli e delle loro mesh non sono fondamentali soltanto per ottenere una immagine 2D in uscita ma anche per creare la cosìdetta **word geometry** per il il calcolo e dell **collisioni**, indispensabili per prevedere e computare i comportamenti fisici.
+L'interità dei modelli e delle loro mesh non sono fondamentali soltanto per ottenere una immagine 2D in uscita ma anche per creare la cosìdetta **word geometry** per il calcolo delle **collisioni**, indispensabili per prevedere e computare i comportamenti fisici.
 
 Tutto questo è appannaggio del **physics engine** che non si occupa solo di collisioni ma valuta l'interà fisicità del mondo virtuale in cui siamo immersi: masse, densità, velocità e accelerazioni, forze, torsioni.
 
 A tutto questo si aggiunge la componente di **intelligenza artificiale** che ha il compito di simulare comportamenti "_intelligenti_" per tutti quegli attori che, nel gioco, non sono comandati da un player umano.
 
 Ebbene tutto questo viene calcolato di continuo, sempre in funzione dei dati di movimento ottenuti dalle azioni del giocatore, 60 se non più volte al secondo.
+
+---
+
+Quando la grafica 3D cominciava ad affermarsi nel mondo del videogioco (siamo agli inizi degli anni '90) i modelli erano composti da un numero limitato di poligoni (_low poly_) per una questione di limitazioni della capacità hardware delle macchine del tempo, PC o PlayStation 1 ad esempio.
+
+<table style="width:100%;">
+<tr>
+<td>
+<img src="./images/2017-09/pt3/crash-bandicoot.jpg" alt="Crash Badicoot" width="100%;" />
+</td>
+<td>
+<img src="./images/2017-09/pt3/alone-in-the-dark.jpg" alt="Alone in the Dark" width="100%;" />
+</td>
+</tr>
+</table>
+
+Eppure negli stessi anni al cinema si poteva assistere alla proiezione di [Toy Story](https://en.wikipedia.org/wiki/Toy_Story), il primo film di animazione interamente realizzato in computer grafica. Nel film i modelli sono molto più definiti dei loro corrispettivi in ambito videogames, ma questo solo perchè i numerosi calcoli richiesti per renderizzare ciascuno dei frame erano svolti da grandi "_render farm_", niente di comparabile ad una contemporanea console per uso domestico. Inoltre il risultato di un rendering spesso era pronto dopo diverso tempo che i dati erano stati introdotti.
+
+Sotto questa luce, il _low poly_ dei primi videogiochi 3D diventa una prova evidente che la grafica dovesse (e deve) necessariamente essere calcolata in tempo reale!
 
 ### Suono come processo
 
@@ -680,11 +698,12 @@ All'inizio della storia dei videogame, delle console e dei computer, era l'**aud
 L'audio veniva generato in tempo reale e rispecchiava linearmente le azioni del giocatore e le reazioni dell'engine. L'audio veniva sintetizzato in tempo reale. Questa tendenza si è interrotta indicativamente attorno alla seconda metà degli anni '90, momento storico dove si può collocare la comparsa sul mercato dei prini CD e che vede il diffondersi dell'audio campionato ad alta qualità (44100@16bit).
 
 ---
+
 #### Case studey: il SID
 
 Il SID (Sound Interface Device) era il chip sonoro utilizzato dal Vic20, C64 e C128, sviluppato da _Robert Yannes_ di _MOS technology_ il quale, oltre al background tecnico, ne sapeva molto anche di musica.
 
-![sid](./images/ed-agosto-settembre-2017/pt2/sid.jpg){: width="60%"}
+![sid](./images/2017-09/pt3/sid.jpg){: width="60%"}
 
 Il suo intento era sviluppare un chip di sintesi sottrattiva totalemente differente dai sistemi sonori presenti nei computer dell'epoca e il risultato fu qualcosa di innovativo.
 
@@ -701,7 +720,7 @@ Inoltre il SID disponeva di un **filtro programmabile** (low pass, bandpass, hig
 
 Ecco qui di seguito un piccolo programma d'esempio:
 
-![sid screenshot](./images/ed-agosto-settembre-2017/pt2/sid-screenshot.jpg)
+![sid screenshot](./images/2017-09/pt3/sid-screenshot.jpg)
 
 <a id="c64-sound">
 <audio controls style="width:100%">
@@ -756,16 +775,14 @@ Your browser does not support the audio element.
 
 Anche dalle immagini che mostrano la forma d'onda della parte iniziale della prima voce si può comprendere la complessità della lavorazione:
 
-![waveform 1](./images/ed-agosto-settembre-2017/pt2/waveform1.jpg)
+![waveform 1](./images/2017-09/pt3/waveform1.jpg)
 
-![waveform 2](./images/ed-agosto-settembre-2017/pt2/waveform2.jpg)
-
-TODO: ascolto del brano su multitraccia **Audacity**.
+![waveform 2](./images/2017-09/pt3/waveform2.jpg)
 
 Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>mentre la musica di Hubbard proviene dal database [High Voltage SID Collection](http://hvsc.c64.org/). Il programma è stato scritto e eseguito utilizzando [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore. Qui altre interessanti informazioni sul SID: [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID).
 {: class="dashed"}
 
-Il lavoro di Hubbard inoltre è un mirabile esempio di come spesso si riescano ad ottenere risultati ammirevoli partendo da risolrse limitate o necessità stringenti.
+Il lavoro di Hubbard inoltre è un mirabile esempio di come spesso si riescano ad ottenere risultati ammirevoli partendo da **risorse limitate** o necessità stringenti.
 {: class="note"}
 ---
 
@@ -815,7 +832,7 @@ Nascono i primi sistemi di sintesi basati su **modelli**: i fenomeni della fisic
 
 Quando si vuole simulare i suoni dei vecchi sintetizzatori analogici, si sviluppano tecnologie volte a riprodurre in digitale tutte le idiosincrasie dei componenti elettrici discreti che li costituivano e nascono i modelli [virtual analog](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer).
 
-![virtual analog](./images/ed-agosto-settembre-2017/pt2/virtual-analog.jpg)
+![virtual analog](./images/2017-09/pt3/virtual-analog.jpg)
 
 ad esempio:
 * la tecnologia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) di Arturia, usata in plugin come il [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) o l'[arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/).
@@ -828,13 +845,13 @@ ad esempio:
 
 Quando invece si vuole simulare strumenti musicali acustici o elettroacustici nascono modelli volti a riprodurre i fenomeni fisici delle sollecitazioni, vibrazioni, attenuazioni dei materiali: nasce il [physical modelling](https://en.wikipedia.org/wiki/Physical_modelling_synthesis).
 
-![physical modelling](./images/ed-agosto-settembre-2017/pt2/physical-modelling.jpg)
+![physical modelling](./images/2017-09/pt3/physical-modelling.jpg)
 
 * [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview);
 * i pianoforti virtuali di [PianoTeq](https://www.pianoteq.com/home);
 * Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) oppure [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14);
 * Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) e [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html).
-* Altri esempi potrebbero essere l'[Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) di Roland, che fa uso dell'engine di dintesi per modelli [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) in parallelo con la tradizionale dintesi per campioni;
+* Altri esempi potrebbero essere l'[Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) di Roland, che fa uso dell'engine di sintesi per modelli [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) in parallelo con la tradizionale sintesi per campioni;
 * [Native Instruments B4](http://www.soundonsound.com/reviews/native-instruments-b4-ii), etc...
 
 Solo un appunto interessante a proposito di [Pianoteq](https://www.pianoteq.com/pianoteq5): il peso del software è di soli 40MB. In confronto al [Ravenscroft Virtual Piano 275](https://www.vilabsaudio.com/Ravenscroft-By-VI-Labs) - che fa uso di 17.000 samples - che richiede 6GB per funzionare (perchè i dati sono compressi) e un HD a stato solido per garantire una performance ottimale!
@@ -870,16 +887,17 @@ A ben vedere il concetto di audio procedurale non ci è del tutto estraneo; un e
 
 ![behaviour, model, implementation](./images/graphics/beh-mod-impl.png){: width="30%" }
 
-TODO: classi di modelli (tassonomia)
-TODO: perchè scegliere il procedurale e quando sceglierlo.
-
 ### Vantaggi e svantaggi del paradigma procedurale
 
 Tra i vantaggi possiamo considerare:
 
 #### Differimento
 
-metre l'atto di registrare un suono è un azione che fissa nel tempo senza lasciare alcune possibilità di intervento successivo, l'audio procedurale è dinamico e lascia che molte delle decisioni, anche strutturali, vengano rimandate al real-time;
+Metre l'atto di registrare un suono è un azione che fissa nel tempo senza lasciare alcune possibilità di intervento successivo, l'audio procedurale è dinamico e lascia che molte delle decisioni, anche strutturali, vengano rimandate al real-time.
+
+Talvolta è semplicemente impossibile conoscere a priori quale sarà il suono che il gioco dovrà riprodurre e, di conseguenza, impossibile sapere come registrarlo o realizzarlo in fase di produzione. In un caso come questo, il moderno sound designer potrebbe avvantaggiarsi dell'audio procedurale e predisponendo un modello per il suono e lasciare che questo venga confezionato "_durante_" il gioco.
+
+Un esempio pratico di quanto detto lo si trova nel videogame "_No Man Sky_". Il gioco si basa interamente su contenuti generati proceduralmente (non escluivamente sonori). Proprio per la natura del gioco, Paul Weir il suond designer di _Hello Games_, intento a risolvere il problema del suono delle creature, diversissime tra loro e inconoscibili prima della partita, ha realizzato il tool _VocAlien_: una sorta di plugin che integrato nel game audio engine si occupasse di sintetizzare i suoni necessari secondo dei parametri di volta in volta diversi, passatigli dall'engine di gioco. (ecco [qui il talk](http://www.gdcvault.com/play/1024067/The-Sound-of-No-Man)).
 
 #### Variabilità
 
@@ -902,7 +920,7 @@ Già quando si arriva a sommare 100 suoni simultanei, si può vedere che il cont
 
 D'altro canto, una approccio sintetico può offrire un costo variabile ad ogni sorgente: un esempio potrebbe essere il suono di un bicchiere che si infrange cadendo a terra.
 
-Un metodo sintetico potrebbe produrre un suono molto "_realistico_" e mantenere ancora un alto grado di correlazione audio-video rimpiazzando i frammenti perimetrali con singoli segnali sinusoidali o granuli di rumore, fornendo un alto grado di dettaglio per quie frammenti che cadono vicino al player.
+Un metodo sintetico potrebbe produrre un suono molto "_realistico_" e mantenere ancora un alto grado di correlazione audio-video rimpiazzando i frammenti perimetrali con singoli segnali sinusoidali o granuli di rumore, fornendo un alto grado di dettaglio per quei frammenti che cadono vicino al player.
 
 ---
 
@@ -915,12 +933,6 @@ Nel caso il problema venga affrontato con il paradigma procedurale invece, sopra
 
 Lo stesso dicasi se il suono riprodotto da un modello si trova riprodotto in associazione con altri suoni che causerebbero il _mascheramento_ nel tempo o in frequenza di alcune sue componenti.
 
-#### Real Time
-
-Talvolta è semplicemente impossibile conoscere a priori quale sarà il suono da registrare (o il tipo di processing cui sottoporlo).
-
-Esempio di audio procedurale in "_No Man Sky_" (raycasting per procedural occlusion, tool interno per sintesi di vocalizzazione di creature aliene: _VocAlien_).
-
 Tra gli svantaggi:
 
 #### Industrial inertia: you gotta ship titles
@@ -929,18 +941,32 @@ Al momento attuale non sembra ci sia interesse nell'implementare quanto necessar
 
 #### New workflows, new skills
 
-Il paradigma procedurale richiede personale che sappia operare in campo audio in nuovi modi. Per studiare modelli derivati o ispirati dal mondo reale e implementarli poi un una forma hardware o software richiede abilità e competenze che normalmente non fanno parte del bagaglio culturale di un sound designer tradizionale.
+Il paradigma procedurale richiede personale che sappia operare in campo audio in nuovi modi. Studiare modelli derivati o ispirati dal mondo reale e implementarli poi in una forma hardware o software richiede abilità e competenze che normalmente non fanno parte del bagaglio culturale di un sound designer tradizionale.
 
 #### La sintesi è brutta (si fa per dire)
 
-Permane la falsa concezione che la sintesi audio sia in qualche modo sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
+Permane la falsa concezione che la sintesi audio sia, in qualche modo, sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
 
-In realtà non è così e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
+In realtà non è così, ne abbiamo avuto la prova più e più volte durante queste lezioni e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
 Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude.
+
+Non c'è bisogno che il suono sia perfettamente fedele al fenomeno percepito nella realtà, quello che è veramente importante è il **verosimile**, è la **resa** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) o addirittura dell'**hyperrealism** ("_more than reality_").
 
 >"Il tutto è più grande della somma delle sue parti." (Aristotele, Metafisica)
 
-Quello di cui c'è bisogno è il **verosimile** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) o addirittura dell'**hyperrealism** ("_more than reality_").
+Questo perchè suono ed immagine combinati assieme generano sempre un risultato inaspettato, assolutamente assente se lo si ricercasse in una sola delle sue componenti. E' questo il concetto del **valore aggiunto** di Chion.
+
+---
+
+Si tratta di una cosa che si può sperimentare anche quando si fa un **mix**: supponiamo di averne ottenuto uno che suoni davvero bene.
+
+Tutto è al suo posto e si è ricavato la propria posizione sia nello spazio sterofonico che nel range dinamico e di frequenza. Non ci sono sovrapposizioni, conflitti di alcun genere e il tutto risulta comprensibile e omogeneo.
+
+Ora, se tornassimo ad ascoltare una delle singole tracce che compongono il mix, magari la chitarra elettrica, il basso o il pianoforte, ci accorgeremmo molto probabilmente di quanto il suono processato, se preso singolarmente, risulti in realtà molto diverso da quello emesso dallo strumento reale.
+
+Il suono è stato probabilmente filtrato, equalizzato, compresso, ripulito di eventuali fastidiose risonanze, emagari suona anche un po' più "_piccolo_" che nella realtà eppure, se reinserito nel mix, ecco che lo strumento riacquista di colpo tutte le sue componenti e trasmette un senso tutto diverso.
+
+Questo è possibili grazie al fatto che lo strumento è affiancato ad altri, si fa forza dell'essere parte di un insieme, arricchisce, ed è arricchito al contempo di dignificati nuovi che, non avrebbe se preso singolarmente!
 
 ### The Future
 
@@ -960,7 +986,7 @@ Se, come spesso accade, l'audio è considerato come accessorio e secondario risp
 
 **Automatic lip sync**: un sistema studiato da moltissimo tempo per animare grafiche e modelli 3D in modo automatico basandosi sul segnale audio (vedi [patent Sierra](https://patentimages.storage.googleapis.com/c3/e3/32/01720ae146f119/US5430835.pdf)).
 
-![sierra lip sync](./images/ed-agosto-settembre-2017/pt2/sierra-lipsync.jpg)
+![sierra lip sync](./images/2017-09/pt3/sierra-lipsync.jpg)
 
 **Procedural animation**: [Tom Clancy's Ghost Recon Advanced Warfighter 2](https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Advanced_Warfighter) (Ubisoft 2007) case study: un aeroplano precipitato nel deserto esplode e continua a bruciare a terra. Le fiamme sono sferzate a destra e a sinistra da un vento irregolare. Polvere e fumo sono generati proceduralmetne in base al livello dell'audio pre-prodotto (vedi [questo talk](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio) di Scott Selfon al minuto 23:14)!
 
@@ -1063,7 +1089,7 @@ Di seguito alcune belle animazioni che mostrano i _modi_ principali per una memb
 </tr>
 </table>
 
-![rectangular membrane formulae](./images/ed-agosto-settembre-2017/pt3/door.png)
+![rectangular membrane formulae](./images/2017-09/pt3/door.png)
 
 Sicuramente da approfondirne le caratteristiche: [Frame3dd](http://frame3dd.sourceforge.net/). Un software libero per studiare le dinamiche strutturali statiche e dinamiche. Che possa esserci utile nell'analisi dei modi?
 {: class="dashed"}
@@ -1085,7 +1111,7 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 
 [Godot](https://www.patreon.com/godotengine) è un game engine libero!
 
-![godot audio architecture 1](./images/ed-agosto-settembre-2017/pt3/godot/scene-servers-drivers.png)
+![godot audio architecture 1](./images/2017-09/pt3/godot/scene-servers-drivers.png)
 
 TODO: immagine audio server / audio player / stream / sample / architecture
 
@@ -1110,7 +1136,7 @@ Il software libero è vincente in quanto consente l'accesso diretto al codice so
 
 In questo modo ci è stato possibile avviare un progetto di integrazione in Godot dell'engine audio _PureData_ grazie al wrapper [libpd](http://libpd.cc/) ideato da Peter Brinkmann.
 
-![PD-Player](./images/ed-agosto-settembre-2017/pt3/godot/Pd-Player.png){: width="60%"}
+![PD-Player](./images/2017-09/pt3/godot/Pd-Player.png){: width="60%"}
 
 #### Call for partecipants
 
@@ -1134,37 +1160,331 @@ Per maggiori informazioni su questo bel gioco vi rimandiamo a [questo link](). I
 {: class="dashed"}
 
 I suoni si cui il gioco fa uso (almeno nella sua versione per PC-MSDOS) sono 32. Sono stati realizzati dal sound designer Tom Retting. Eccone la lista, come la si può leggere dal [design document](http://www.jordanmechner.com/downloads/popsource.pdf) originale:
+
+<table style="width:100%">
+
+<tr>
+<td>Entrance door closes</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/entrance-door-closes.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Footsteps</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/footsteps.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Loose floor shakes (7 vers.)</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/loose-floor-shakes.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Falling floor lands (7 vers.)</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/falling-floor-lands.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Moveable floor</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/moveable-floor.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Gate coming down slow</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/gate-coming-down-slow.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Gate crashes down</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/gate-crashes-down.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Gate reaches bottom (Clang!)</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/gate-reaches-bottom.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Gate rising</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/gate-rising.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Gate stops at top</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/gate-stops-at-top.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Spikes coming out</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/spikes-coming-out.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Impaled by spikes</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/impaled-by-spikes.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Slicer blades clash</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/slicer-blades-clash.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Character gets sliced in half</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/character-get-sliced-in-half.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Grab on to ledge</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/grab-on-to-ledge.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Unsheathe sword</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/unsheathe-sword.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Sword swipe</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/sword-swipe.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Sword clash</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/sword-clash.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Stab opponent</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/stab-opponent.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Stabbed by opponent / Drink poison</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/stabbed-by-opponent.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Bones leap to life</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/bones-leap-to-life.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Drink potion</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/drink-potion.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Soft landing</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/soft-landing.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Medium landing ("Oof!")</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/medium-landing.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Hard landing (Splat!)</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/hard-landing.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Bump soft</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/bump-into-wall-soft.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Jump through mirror</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/jump-through-mirror.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+<tr>
+<td>Exit door opening</td>
+<td>
+<audio controls>
+  <source src="./sounds/pop/exit-door-opening.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+
+</table>
+
+{% comment %}
+* Entrance door closes
+
 * Footsteps
-* Soft landing
-* Medium landing ("Oof!")
-* Hard landing (Splat!)
-* Sword clash
-* Stab opponent
-* Stab skeleton
-* Stabbed by opponent
-* Bones leap to life
-* Impaled by spikes
-* Slicer blades clash
-* Character gets sliced in half
+
+* Loose floor shakes (7 versions)
+* Falling floor lands
+* Movable floor
+
+* Gate coming down slow
+* Gate crashes down
+* Gate reaches bottom (Clang!)
 * Gate rising
 * Gate stops at top
-* Gate coming down slow
-* Gate reaches bottom (Clang!)
-* Gate crashes down
-* Entrance door closes
-* Exit door opening
-* Bump into wall (soft)
-* Bump into wall (hard)
-* Bump into mirror
-* Falling floor lands on your head
-* Loose floor shakes
-* Falling floor lands
-* Drink position--1 unit of strength restored
-* Drink special potion--strength boosted to higher level
-* Drink poison (lose 1 unit of strength)
-* Unsheathe sword
-* Jump through mirror
+
+* Spikes-coming-out
+* Impaled by spikes
+
+* Slicer blades clash
+* Character gets sliced in half
+
 * Grab on to ledge
+
+* Unsheathe sword
+* Sword swipe
+* Sword clash
+* Stab opponent
+* Stabbed by opponent / Drink poison (lose 1 unit of strength)
+* Bones leap to life
+
 * Drink potion (glug glug)
+
+* Soft landing
+* Medium landing (“Oof!”)
+* Hard landing (Splat!)
+* Bump (soft)
+
+* Jump through mirror
+
+* Exit door opening
+{% endcomment %}
 
 ---

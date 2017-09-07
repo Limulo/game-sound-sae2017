@@ -6,7 +6,7 @@ layout: default
 
 Back to [Home](index);
 <br/><br/>
-Scarica le [slides](/resources/slides/Game Engines Game Sound Techniques maggio 2017.pdf) delle lezioni!
+Scarica le [slides](/resources/slides/2017-05-Game Engines Game Sound Techniques.pdf) delle lezioni!
 {: class="dashed"}
 
 Durante le lezioni si fornisce una panoramica storica dell'evoluzione del suono nei videogiochi, dagli anni '50 ad oggi; si dà poi uno sguardo alle diverse figure professionali coinvolte nello sviluppo di un videogioco e si analizzano gli strumenti impiegati nelle varie fasi (_game engines_, altri _tools_ e _middleware_).
@@ -69,8 +69,7 @@ Il suono serve quindi ad attirare l'attenzione e ad invitare a giocare. Viene ru
 
 Il suono è slegato dal gioco. La musica è quasi assente e gli effetti sonori sono funzione del gameplay (se un evento richiede molte risorse l'audio è sacrificato ed il gioco rimane muto). Si implementa **sintesi sottrattiva**.
 
-![timeline](./images/pt1/intro/tl-coloured-bar.png)
-<!-- <img src="./images/pt1/intro/tl-coloured-bar.png" alt="timeline" width="100%" /> -->
+![timeline](./images/2017-05/pt1/intro/tl-coloured-bar.png)
 
 La programmazione audio avviene con collegamenti diretti di cavi al chip (o se va bene in _linguaggio macchina_ o in _assembly_).
 Questa caratteristica fa sì che ogni macchina suoni in maniera differente rispetto alle altre, anche se il gioco che montano è il medesimo.
@@ -236,8 +235,7 @@ Inizialmente si poteva disporre solo di 4 canali e 64 note. I campioni erano cod
 
 I tracker e i file .MOD si sono quindi diffusi ampiamente nello sviluppo di videogiochi, diffusione facilitata anche dal fatto che, al contrario di iMuse, il MOD non è proprietario (contro: diversità di implementazione).
 
-![MOD format](./images/pt1/MOD/ultimate_soundtracker.png)
-<!-- <img src="./images/pt1/MOD/ultimate_soundtracker.png" alt="MOD format" width="100%" /> -->
+![MOD format](./images/2017-05/pt1/MOD/ultimate_soundtracker.png)
 
 ### Confronto di audio in videogame
 
@@ -595,7 +593,6 @@ Processo guidato da uno stream continuo di dati provenienti dall'interazione del
 A ben vedere il concetto di audio procedurale non ci è del tutto estraneo; un esempio a cui siamo abituati è il _riverbero artificiale_.
 
 ![behaviour, model, implementation](./images/graphics/beh-mod-impl.png){: width="30%" }
-<!-- <img src="./images/graphics/beh-mod-impl.png" alt="behaviour, model, implementation" width="30%;" /> -->
 
 TODO: classi di modelli (tassonomia)
 
