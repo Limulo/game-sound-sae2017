@@ -202,7 +202,7 @@ Perchè abbiamo scelto _Godot_:
 - GUI
 - visual programming (dalla versione 3)
 
-![Godot interface](./images/pt1/engines/Godot2.png)
+![Godot interface](./images/2017-05/pt1/engines/Godot2.png)
 
 Come è strutturata l'interfaccia di _Godot_:
 * Filesystem: accesso a risorse sul computer e visualizzazione gererchia cartelle all'interno del progetto
@@ -501,10 +501,10 @@ La differenza è che, mentre per una produzione tradizionale la configurazione d
 <table style="width:100%;">
 <tr>
 <td>
-<img src="./images/pt2/screenshot-01.jpg" alt="quake 2 screenshot" width="100%;" />
+<img src="./images/2017-05/pt2/screenshot-01.jpg" alt="quake 2 screenshot" width="100%;" />
 </td>
 <td>
-<img src="./images/pt2/screenshot-02.jpg" alt="quake 2 screenshot" width="100%;" />
+<img src="./images/2017-05/pt2/screenshot-02.jpg" alt="quake 2 screenshot" width="100%;" />
 </td>
 </tr>
 </table>
@@ -528,7 +528,7 @@ Come funziona l'audio in un gioco: **emitters** sono oggetti nello spazio tridim
 
 Ogni emitter nel 3D world è caratterizzato dalla presenza due sfere ad esso concentriche che dividono lo spazio in 3 volumi.
 
-![3D sound](./images/2017-09/pt3/3D-sound.png)
+![3D sound](./images/2017-09/pt2/3D-sound.png)
 
 Attenuazione e smorzamento: un discorso legato alla **distanza** tra emitter e listener, grandezza geometrica ricavata dal modello tridimensionale, in base alla quale viene modificato in tempo reale l'amplificatore di livello e/o la frequenza di taglio di un filtro passa basso.
 
@@ -559,7 +559,7 @@ Questo perchè il suono d'ambienza viene calcolato in tempo reale da processori 
 
 #### Dialogues
 
-![gabriel knight talking](./images/pt2/gabriel-talking.jpg)
+![gabriel knight talking](./images/2017-05/pt2/gabriel-talking.jpg)
 
 Il game audio engine deve essere in grado di interfacciarsi e gestire complessi **database** di informazioni. Uno di questi è rappresentato dall'insieme degli audio file associati a tutte le varie linee di dialogo (in una o più lingue) presenti nel gioco.
 
@@ -600,7 +600,7 @@ Concetti di:
 * uno o più game events possono essere associati al medesimo eevento in _fmdo_ e triggerarne diverse istanze;
 * modules --> sound modules --> one or more trigger regions (play until mouse leaves the trigger region);
 
-![3d Panner](./images/2017-09/pt3/3D-panner.png)
+![3d Panner](./images/2017-09/pt2/3D-panner.png)
 
 * 3D panner
   - min and max distance
@@ -616,7 +616,7 @@ Concetti di:
 
 ### Suono come modello event based/data driven
 
-![data driven](./images/graphics/data-driven.png){: width="60%"}
+![data driven](./images/graphics/data-driven.png){: width="40%"}
 
 A ben vedere nell'ultima parte della sua storia, come analizzato fino ad ora, il suono nel videogioco si presenta come un modello guidato dai dati (**data driven model**).
 
@@ -865,10 +865,10 @@ Pionieri di questa filosofia di pensiero sono persone come [Perry Cook](http://w
 <table style="width:100%;">
 <tr>
 <td>
-<img src="./images/pt2/book-Perry-Cook.png" alt="Perry Cook's book" width="100%;" />
+<img src="./images/2017-05/pt2/book-Perry-Cook.png" alt="Perry Cook's book" width="100%;" />
 </td>
 <td>
-<img src="./images/pt2/book-designing-sounds.jpg" alt="Andy Farnell's book" width="100%;" />
+<img src="./images/2017-05/pt2/book-designing-sounds.jpg" alt="Andy Farnell's book" width="100%;" />
 </td>
 </tr>
 </table>
@@ -972,7 +972,7 @@ Questo è possibili grazie al fatto che lo strumento è affiancato ad altri, si 
 
 In un futuro presumibilmente non troppo lontano, il paradigma procedurale avrà preso ancora più piede e il mondo del lavoro nel settore dell'audio per videogiochi si arricchirà di tutta una serie di nuove figure professionali.
 
-![water](./images/pt2/future-water.jpg)
+![water](./images/2017-05/pt2/future-water.jpg)
 
 Proprio come negli ultimi 20 anni sono nate specializzazioni di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, _compositing_ etc...), così anche nel mondo del sound design nasceranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua e [bolle](http://www.cs.cornell.edu/projects/Sound/bubbles/), fuoco, [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/), impatti, [frizioni e sfregamenti](http://independent.academia.edu/StefaniaSerafin), [accartocciamenti](http://www.cs.columbia.edu/cg/crumpling/), [acustica delle stanze](http://www.ness-music.eu/wp-content/uploads/2013/04/TASL2256897.pdf), etc...).
 
@@ -1187,14 +1187,14 @@ I suoni si cui il gioco fa uso (almeno nella sua versione per PC-MSDOS) sono 32.
 <td>Loose floor shakes (7 vers.)</td>
 <td>
 <audio controls>
-  <source src="./sounds/pop/loose-floor-shakes.ogg" type="audio/ogg">
+  <source src="./sounds/pop/loose-floor-shakes-(7-versions).ogg" type="audio/ogg">
   Your browser does not support the audio element.
 </audio>
 </td>
 </tr>
 
 <tr>
-<td>Falling floor lands (7 vers.)</td>
+<td>Falling floor lands</td>
 <td>
 <audio controls>
   <source src="./sounds/pop/falling-floor-lands.ogg" type="audio/ogg">
@@ -1486,5 +1486,3 @@ I suoni si cui il gioco fa uso (almeno nella sua versione per PC-MSDOS) sono 32.
 
 * Exit door opening
 {% endcomment %}
-
----
