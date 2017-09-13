@@ -86,7 +86,7 @@ and Rendering of Environmental Audio;
 * [PureData](https://puredata.info/);
 * [Max/MSP](https://cycling74.com/);
 * Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
-* [SuperCollider](https://supercollider.github.io/). Here's the Supercollider [code repository](http://sccode.org/) and Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from Farnell's "_Designing Sound_" book;
+* [SuperCollider](https://supercollider.github.io/). If you want to learn how to use SuperCollider the Eli Fieldsteel [Youtube playlist](https://www.youtube.com/watch?v=yRzsOOiJ_p4&list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC). Here's the Supercollider [code repository](http://sccode.org/) and Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from Farnell's "_Designing Sound_" book;
 * [CSound](http://csound.github.io/);
 * [Chuck](http://chuck.cs.princeton.edu/). [Here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!
 * [Faust](http://faust.grame.fr/) a DSP programming language;
