@@ -2,6 +2,15 @@
 layout: default
 ---
 
+## Autodesk Human IK middleware
+
+[Autodesk Huma IK]() used in [Assassin Creed 2](http://usa.autodesk.com/adsk/servlet/item?siteID=123112&id=15230317).
+[Autodesk GameDev portal](https://gamedev.autodesk.com/)
+How many [games](https://www.youtube.com/watch?v=olTJN72plew) use Autodesk Human IK?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/blLBRmNA3zI" frameborder="0" allowfullscreen></iframe>
+
+
 ## Automatic Mixing
 
 L'intelligenza artificiale può avere applicazioni anche in ambito di mixing, si veda ad esempio la sezione [papers-doc](./resources/papers_docs/automatic-mixing/) di questo repository per avere una idea più precisa. Di seguito intanto alcuni link interessanti a riguardo:
