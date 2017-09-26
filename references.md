@@ -24,11 +24,12 @@ Sound effects in video games and many more:
 
 * Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
-* Ge Wang: [website](http://www.gewang.com/)
+* Ge Wang: [website](http://www.gewang.com/) and [TED talk](https://www.ted.com/talks/ge_wang_the_diy_orchestra_of_the_future);
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
 * Paul Weir, sound designer for the Hello Game's **No Man Sky**, [talk](http://www.gdcvault.com/play/1024067/The-Sound-of-No-Man), [in game sounds](https://www.youtube.com/watch?v=BgAslKUaNx4);
 * Dinesh Pai and Kees van den Doel **Modal Synthesis for Vibrating Objects** [paper](http://www.cs.ubc.ca/~kvdoel/publications/modalpaper.pdf) and [code example](http://www.cs.ubc.ca/~kvdoel/publications/srcmodalpaper.zip) and many more [papers](http://www.cs.ubc.ca/~kvdoel/pubs.html);
-* [Changxi Zheng](http://www.cs.columbia.edu/~cxz/publications.htm) and [Doug James](http://www.cs.cornell.edu/~djames/research/index.html)
+* [Changxi Zheng](http://www.cs.columbia.edu/~cxz/publications.htm) and [Doug James](http://www.cs.cornell.edu/~djames/research/index.html): [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/files/fractureSound_comp.pdf), [water simulation model](http://www.cs.cornell.edu/projects/HarmonicFluids/);
+* William Moss and Hengchin Yeh Sounding Liquids [paper](http://gamma.cs.unc.edu/SoundingLiquids/soundingliquids.pdf) and [website](http://gamma.cs.unc.edu/SoundingLiquids/);
 * [Kees van den Doel](http://www.cs.ubc.ca/~kvdoel/): water simulation model's [paper](http://www.cs.ubc.ca/~kvdoel/publications/tap05.pdf);
 * Nicolas Fournel [blog](http://www.nicolasfournel.com/)
 * Dylan Menzies: [papers](http://dmu.academia.edu/DylanMenzies), [pubblications](https://www.researchgate.net/profile/Dylan_Menzies/publications)
@@ -41,6 +42,7 @@ Sound effects in video games and many more:
 * [Gary Scavone](http://www.music.mcgill.ca/~gary/) from the [Computational Acoustic Modelling Loaboratory](http://www.music.mcgill.ca/caml/doku.php?id=home);
 * Lucas Mengual "_Modal synthesis for weapons_" research: [talk](https://www.youtube.com/watch?v=6vJhJDHL7JA) and [paper](http://www.eecs.qmul.ac.uk/~josh/documents/2016/mengual%20moffat%20reiss%20-%202016.pdf);
 * [Dr Joshua D Reiss](http://www.eecs.qmul.ac.uk/~josh/) from Queen Mary University of London. **Intelligent Sound** [Youtube channel](https://www.youtube.com/user/IntelligentSoundEng), [blog](https://intelligentsoundengineering.wordpress.com/) and [twitter channel](https://twitter.com/IntelSoundEng)
+* [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M);
 
 ### Procedural Audio in Games (some examples)
 
@@ -91,11 +93,15 @@ and Rendering of Environmental Audio;
 * [Chuck](http://chuck.cs.princeton.edu/). [Here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!
 * [Faust](http://faust.grame.fr/) a DSP programming language;
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
+* [Ircam softwares](https://www.ircam.fr/innovations/forum/);
+* [ISSE](http://isse.sourceforge.net/): Interactive Source Separation Editor by [Nick  J. Bryan](https://ccrma.stanford.edu/~njb/);
 
 Tools for development:
 
 * [RtAudio](https://www.music.mcgill.ca/~gary/rtaudio/);
 * [OpenAL](http://www.openal-soft.org/);
+* The **Synthesis ToolKit** in C++ [STK](https://ccrma.stanford.edu/software/stk/download.html) by Perry R. Cook and Gary P. Scavone. [GitHub link](https://github.com/thestk/stk);
+* [JUCE](https://juce.com/)
 
 Trakers:
 
@@ -137,6 +143,8 @@ Other books of interest:
 * Marco Accordi Rickards "Storia del videogioco" - Carocci editore;
 * Micheal Chion "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)" - Lindau;
 * [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001) - Ricordi, Lim;
+* Steven W. Smith' [The Scientist and Engineer's Guide to Digital Signal Processing](http://www.dspguide.com/) - free downloadable from the website as .pdf;
+* [Music, Cognition, and Computerized Sound, and introduction to Psychoacoustics](https://mitpress.mit.edu/books/music-cognition-and-computerized-sound) edited by Perry Cook - MIT press, 2001;
 
 ## Talks, references and other materials
 
@@ -147,27 +155,19 @@ Other books of interest:
 * Akash Thakkar & Disasterpiece [GDC talk](http://www.gdcvault.com/play/1024135/The-Sound-and-Music-of) about the game "_Hiperlight Drfiter_";
 * [Audio talk GDC 2017](http://www.gdcvault.com/play/1023224/Outside-the-Studio-Walls-MicroTalk)
 * Karen Collins [@GDC 2013](http://www.gdcvault.com/play/1017959/Biff-Boom-Pow-Introducing-Students), [@GDC 2014](http://www.gdcvault.com/play/1020359/Selling-Games-and-the-Code);
-* [gamasutra 1](http://www.gamasutra.com/blogs/JasonYu/20170323/292591/Deconstructing_The_Music_of_the_8_Dungeons_of_Links_Awakening.php);
-* [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M);
+* Gamasutra [article 1](http://www.gamasutra.com/blogs/JasonYu/20170323/292591/Deconstructing_The_Music_of_the_8_Dungeons_of_Links_Awakening.php), [article 2](http://www.gamasutra.com/resource_guide/20030528/whitmore_pfv.htm) and [article 3](http://www.gamasutra.com/resource_guide/20010515/ross_pfv.htm);
 * [Full Indie Talks and presentation](http://www.fullindie.com/presentations/);
 * PoliMi lecturer PierPaolo Lanzi [talk](https://www.youtube.com/watch?v=74Cji-XYrlI) about science in videogames;
 * **AES Audio for games** [twitter channel](https://twitter.com/aesgames) and [website](http://www.aes.org/conferences/61/).
 * [Pompeu Fabra Audio Signal Processing Lab](https://www.upf.edu/web/mtg/audio-signal-processing-lab)
 * Queen Mary University [software projects page](https://code.soundsoftware.ac.uk/explore)
 * [Csound Magazine](http://www.csounds.com/journal/articleIndex.html);
-
----
-
 * [Interview with David Thall, Mads Lykke and Andy Farnell](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
-* Gamasutra [article 1](http://www.gamasutra.com/resource_guide/20030528/whitmore_pfv.htm) and [article 2](http://www.gamasutra.com/resource_guide/20010515/ross_pfv.htm)
-* paper: [liqui](http://gamma.cs.unc.edu/SoundingLiquids/soundingliquids.pdf)
-* Zheng and James [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/files/fractureSound_comp.pdf), [water simulation model](http://www.cs.cornell.edu/projects/HarmonicFluids/);
 * Playstation [VR worlds](http://designingsound.org/2016/12/the-sound-music-of-playstation-vr-worlds/)
 
 ---
 
 * [The Sounding Object project](http://soundobject.org/)
-* [Procedural Audio Now](http://proceduralaudionow.com/)
 * The [Association of Sound Designers](http://www.associationofsounddesigners.com/)
 * [AES Lecturers](http://www.aes-uk.org/meetings/) - [YouTube channel](https://www.youtube.com/user/aesuksection)
 * project [Bar-B-Q](https://www.projectbarbq.com/)
@@ -184,13 +184,6 @@ Other books of interest:
 
 ---
 
-* [NesDev](http://wiki.nesdev.com/w/index.php/Nesdev) portal;
-* [Video Game Music Preservation Foundation](http://www.vgmpf.com/Wiki/index.php/Main_Page);
-* [Atari Museum](http://www.atarimuseum.com/mainmenu/mainmenu.html);
-* [C64 Wiki](https://www.c64-wiki.com/wiki/Main_Page);
-* [Game database](http://www.gamesdatabase.org/);
-* [Archive.org videogame section](http://www.gamesdatabase.org/);
-
 ## Other interesting researches
 
 * [VoCo: Text-based Insertion and Replacement in Audio Narration](http://gfx.cs.princeton.edu/pubs/Jin_2017_VTI/);
@@ -200,12 +193,22 @@ Other books of interest:
 * [JSIDPlay 2](http://haendel.ddns.net/~ken/), a Commodore 64 emulator with oscilloscope to inspect different SID voice waveforms;
 * [High Voltage Sid Collection](http://www.hvsc.c64.org/) a music database for the C64;
 * [Byte magazine](https://archive.org/details/byte-magazine?sort=-date)
+* [NesDev](http://wiki.nesdev.com/w/index.php/Nesdev) portal;
+* [Video Game Music Preservation Foundation](http://www.vgmpf.com/Wiki/index.php/Main_Page);
+* [Atari Museum](http://www.atarimuseum.com/mainmenu/mainmenu.html);
+* [C64 Wiki](https://www.c64-wiki.com/wiki/Main_Page);
+* [Game database](http://www.gamesdatabase.org/);
+* [Archive.org videogame section](http://www.gamesdatabase.org/);
 
 ## CC music:
 
 * [incompetech](http://incompetech.com/music/royalty-free/music.html)
-* [ccMixter](http://ccmixter.org/)
+* [ccMixter](http://ccmixter.org/)  
 * [soundimage](http://soundimage.org/)
+
+## Interactive audio
+* [gametrak controller](https://en.wikipedia.org/wiki/Gametrak);
+* [SLOrk speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/)
 
 ---
 
