@@ -1,0 +1,9 @@
+[C64]
+SoundDeviceName="pulse"
+SoundBufferSize=100
+VICIIVideoCache=1
+SidEngine=1
+SidModel=1
+Printer4=1
+Acia1Base=56832
+

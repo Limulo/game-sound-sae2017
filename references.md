@@ -95,6 +95,7 @@ and Rendering of Environmental Audio;
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
 * [Ircam softwares](https://www.ircam.fr/innovations/forum/);
 * [ISSE](http://isse.sourceforge.net/): Interactive Source Separation Editor by [Nick  J. Bryan](https://ccrma.stanford.edu/~njb/);
+* Xavier Serra and Julis O. Smith [SMS tools](https://www.upf.edu/web/mtg/sms-tools). See also their [Kadenze MOOC](https://www.coursera.org/learn/audio-signal-processing);
 
 Tools for development:
 
@@ -145,6 +146,7 @@ Other books of interest:
 * [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001) - Ricordi, Lim;
 * Steven W. Smith' [The Scientist and Engineer's Guide to Digital Signal Processing](http://www.dspguide.com/) - free downloadable from the website as .pdf;
 * [Music, Cognition, and Computerized Sound, and introduction to Psychoacoustics](https://mitpress.mit.edu/books/music-cognition-and-computerized-sound) edited by Perry Cook - MIT press, 2001;
+* check out the [dsprelated](https://twitter.com/dsprelated) website. Here you will find lots of interesting books about DSP and audio programming!
 
 ## Talks, references and other materials
 
@@ -184,11 +186,11 @@ Other books of interest:
 
 ---
 
-## Other interesting researches
+### Other interesting researches
 
 * [VoCo: Text-based Insertion and Replacement in Audio Narration](http://gfx.cs.princeton.edu/pubs/Jin_2017_VTI/);
 
-## Emulators, retro stuff
+### Emulators, retro stuff
 
 * [JSIDPlay 2](http://haendel.ddns.net/~ken/), a Commodore 64 emulator with oscilloscope to inspect different SID voice waveforms;
 * [High Voltage Sid Collection](http://www.hvsc.c64.org/) a music database for the C64;
@@ -200,7 +202,7 @@ Other books of interest:
 * [Game database](http://www.gamesdatabase.org/);
 * [Archive.org videogame section](http://www.gamesdatabase.org/);
 
-## CC music:
+### CC music:
 
 * [incompetech](http://incompetech.com/music/royalty-free/music.html)
 * [ccMixter](http://ccmixter.org/)  
@@ -209,6 +211,13 @@ Other books of interest:
 ## Interactive audio
 * [gametrak controller](https://en.wikipedia.org/wiki/Gametrak);
 * [SLOrk speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/)
+
+### Game Art 
+* [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
+
+### Algorithmic Music Tools
+* [Common Music](http://commonmusic.sourceforge.net/) and **Grace**;
+
 
 ---
 
