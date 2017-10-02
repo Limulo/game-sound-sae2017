@@ -2,6 +2,8 @@
 layout: default
 ---
 
+![icona](./images/game-sound-icon/icon.png){: width="60%"}
+
 Questa pagina raccoglie tutto il materiale che [limulo.net](http://limulo.net) ha prodotto nel preparare alcune lezioni in merito ai game engines e all'audio nei videogiochi.
 
 * [edizione Maggio 2017](ed-maggio-2017)
