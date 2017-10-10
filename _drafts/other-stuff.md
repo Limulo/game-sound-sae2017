@@ -7,16 +7,16 @@ layout: default
 * procedural:
 resynthesis stands to procedural audio as motion capture (mocap) stands to computer graphics.
 
-## Free Software
-[Stallman 2014](https://www.youtube.com/watch?v=Ag1AKIl_2GM)
-
 ## Programmare: la nuova alfabetizzazione
 Un [articolo](https://savestate.co.uk/2017/09/programming-games/) interessante sui giochi che prevedono (come principio fondamentale o elemento accessorio) la programmazione nel loro gamplay.
+
+## Free Software
+[Stallman 2014](https://www.youtube.com/watch?v=Ag1AKIl_2GM)
 
 ## Pure Data
 Come nota conclusiva si potrebbe aggiungere che PureData è un linguaggio che vale la pensa di imparare perchè viene utilizzato come interfaccia dal framework [Heavy](https://enzienaudio.com/docs/index.html#01.introduction) che consente, data una patch in PD, di ottenere in uscita un oggetto in codice a basso livello (compatibile con tantissime diverse architetture hardware/software come Fabric, Unity, Wwise, VST2, sorgenti C/C++, etc...) da integrare in progetti software commerciali oppure no.
 
-## tools
+## Tools
 SPAT Ircam
 Tecniche di musica algoritmica/generativa:MaxMSP, Iannix;
 Spectral processing: SuperVP Trax, Ircam AudioSculpt, Izotope RX
@@ -29,6 +29,9 @@ Sintesi granulare: MaxMSP, Ircam CatART
 > E' probabilmente vero in linea di massima che della storia del pensiero umano gli sviluppi più fruttuosi si verificano spesso ai punti di interferenza tra due diverse linee di pensiero. Queste linee possono avere le loro radici in parti assolutamente diverse della cultura umana, in tempi diversi e in ambienti culturali diversi o di diverse tradizioni religiose; perciò, se esse realmente s'incontrano, cioè, se vengono a trovarsi in rapporti sufficientemente stretti da dare origine a un'effettiva interazione, si può allora sperare che possano seguirne nuovi e interessanti sviluppi. Werner Heisemberg
 
 [Ge Wang](http://www.gewang.com/) è laureato in filosofia e computer science.
+[Aroon Reed]()
+Libro di "modelli matematici pr la linguistica"
+![modelli matematici pr la linguistica](./images/2017-12/book-covers/mathematical-methods-in-linguistics.jpg)
 
 ## Autodesk Human IK middleware
 [Autodesk Human IK]() used in [Assassin Creed 2](http://usa.autodesk.com/adsk/servlet/item?siteID=123112&id=15230317).
@@ -43,23 +46,33 @@ A proposito di computer grafica, ecco il [PDP-11/45](http://www.chicagotribune.c
 {: class="dashed"}
 
 
+## Artificial intelligent wind instrument
+http://genekogan.com/works/birl/
+
+
 ***
 
 ## Sound for Installations
 1. generative music
 2. sound and data (coming from sensors, coming from the web (bot) )
   * different way to visualize/sonify them ([visualizing data book](http://shop.oreilly.com/product/9780596514556.do) by Ben Fry): [data visualization](https://en.wikipedia.org/wiki/Data_visualization). See **sonification**.
-  * data visualization/sonification in other fiels: researches for the most. Artificial intelligence used as a tool to do that (see [Gene Koogan]() openFrameworks examples);
-  * data can also be used to make classifications. These results can be very useful to speed up database seraches. See softare like **Shazam** or **midomi** which use the **acoustic fingerprint**. See also the **semanthic audio**.
+  * data visualization/sonification in other fiels: researches for the most. Artificial intelligence used as a tool to do that (see [Gene Koogan](https://youtu.be/sKgiA0TTwG8?t=36m8s) openFrameworks examples);
+  * data can also be used to make classifications. These results can be very useful to speed up database seraches. See softare like **Shazam** or **midomi** which use the **acoustic fingerprint**. See also the **semantic audio**.
+
+
 
 ### data
 * [soundhound](https://www.soundhound.com/) previously know as **midomi**;
 * [shazam](https://en.wikipedia.org/wiki/Shazam_%28service%29), [paper](http://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf), [how it works](https://laplacian.wordpress.com/2009/01/10/how-shazam-works/);
 * [acoustic fingerprint](https://en.wikipedia.org/wiki/Acoustic_fingerprint);
+* data transmitted with sound
+    + https://github.com/robertrypula/AudioNetwork
+    + https://github.com/quiet/quiet-js
 
 ### Sonification
-http://sonenvir.at/
-http://icad.org/
+* [SonEnvir](http://sonenvir.at/) is a research project that investigates applying sonification in a number of scientific disciplines;
+* [International Community for Aufitory Display](http://icad.org/);
+* The [sonification handbook](http://sonification.de/handbook/);
 
 ### Automatic Mixing
 L'intelligenza artificiale può avere applicazioni anche in ambito di mixing, si veda ad esempio la sezione [papers-doc](./resources/papers_docs/automatic-mixing/) di questo repository per avere una idea più precisa. Di seguito intanto alcuni link interessanti a riguardo:

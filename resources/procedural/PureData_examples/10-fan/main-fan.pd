@@ -1,4 +1,4 @@
-#N canvas 395 119 581 558 10;
+#N canvas 393 134 581 583 10;
 #N canvas 125 91 1175 660 sounds 0;
 #X obj 176 276 noise~;
 #X obj 160 360 *~;
@@ -313,3 +313,5 @@
 #X obj 288 264 image fan.gif;
 #X obj 288 233 bng 15 250 50 0 turn-on-off empty empty 17 7 0 10 -162280
 -1 -1;
+#X text 349 541 a patch by Andy J. Farnell;
+#X text 349 554 edited by Nicola Ariutti;

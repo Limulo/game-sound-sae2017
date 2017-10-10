@@ -1,5 +1,4 @@
-#N canvas 110 100 787 222 10;
-#X text 120 148 thanks to Andy J Farnell;
+#N canvas 108 115 787 222 10;
 #N canvas 257 109 1053 602 sound 0;
 #X obj 290 242 *~;
 #X obj 883 506 dac~;
@@ -103,7 +102,7 @@
 #X obj 429 343 pan-level-1;
 #X obj 330 343 pan-level-1;
 #X obj 238 343 pan-level-1;
-#X obj 113 419 tgl 15 0 cut empty empty 17 7 0 10 -258113 -1 -1 0 1
+#X obj 113 419 tgl 15 0 cut empty empty 17 7 0 10 -258113 -1 -1 1 1
 ;
 #X obj 33 545 loadbang;
 #X msg 33 567 1;
@@ -292,7 +291,7 @@
 #X connect 9 0 1 0;
 #X restore 32 579 pd windspeed;
 #X obj 444 593 delwrite~ a 3000;
-#X obj 177 115 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 1
+#X obj 177 115 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 0
 1;
 #X msg 177 65 \; pd dsp \$1;
 #X obj 32 191 adc~ 1;
@@ -474,3 +473,5 @@
 #X connect 50 1 49 0;
 #X coords 0 -1 1 1 95 150 2 100 100;
 #X restore 19 14 pd ctrl;
+#X text 120 148 a patch by Andy J Farnell;
+#X text 120 160 edited by Nicola Ariutti;

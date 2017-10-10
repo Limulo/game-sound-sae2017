@@ -1096,6 +1096,11 @@ Sicuramente da approfondirne le caratteristiche: [Frame3dd](http://frame3dd.sour
 
 ---
 
+Maggiori informazioni sulle patch e sul loro utilizzo si trovano nel file README all'interno della [apposita cartella](https://github.com/Limulo/game-sound-sae2017/tree/master/resources/procedural/PureData_examples) del [repository](https://github.com/Limulo/game-sound-sae2017).
+{: class="dashed"}
+
+
+{% comment %}
 Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree/master/resources/procedural/PureData_examples) è necessaria l'installazione di [PureData](http://puredata.info/) e delle seguenti librerie aggiuntive:
 <br/>
 * list_abs (for the **[list_dot]** and **[list_emath]** objects);
@@ -1106,6 +1111,7 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 * creb (**[ead~]** object);
 * cxc, cyclone, purepd (**[Uzi]**, **[acos]**, **[atan~]**, **[delta~]** objects);
 * ggee (**[image]** object);
+{% endcomment %}
 
 ### Godot: audio architecture
 

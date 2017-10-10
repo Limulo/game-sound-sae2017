@@ -1,4 +1,4 @@
-#N canvas 1 78 1351 689 10;
+#N canvas 0 95 1440 805 10;
 #X declare -path abs;
 #X obj 311 614 tabwrite~ c;
 #N canvas 0 50 450 300 (subpatch) 0;
@@ -463,6 +463,7 @@ env-amt -2 7 0 10 -203904 -1 -1 12395 1;
 #X text 1022 53 LT oneshot;
 #X obj 772 101 image ak47.gif;
 #X obj 1026 210 declare -path abs;
+#X text 794 9 edited by Nicola Ariutti;
 #X connect 2 0 37 0;
 #X connect 3 0 27 0;
 #X connect 4 0 7 0;

@@ -1,4 +1,4 @@
-#N canvas 57 78 1156 681 10;
+#N canvas 55 95 1156 681 10;
 #X obj 302 57 hsl 128 12 0 1 0 1 \$0-speed \$0-ctrl-speed engine-speed
 6 6 1 8 -262144 -1 -1 0 1;
 #N canvas 0 50 733 539 fourstroke 0;
@@ -816,7 +816,7 @@
 #X obj 82 666 throw~ out;
 #N canvas 172 107 740 632 output 0;
 #X obj 161 104 vsl 15 55 0 1 0 0 empty empty empty 0 -9 0 10 -262130
--1 -1 3240 1;
+-1 -1 0 1;
 #X obj 106 147 tgl 15 0 empty empty cut 17 7 0 10 -261234 -1 -1 0 1
 ;
 #X msg 331 205 \$1 20;
@@ -833,7 +833,7 @@
 #X obj 137 269 s \$0-ctrl-speed;
 #X obj 137 249 line;
 #X msg 137 226 \$1 500;
-#X obj 107 106 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 1 1
+#X obj 107 106 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X msg 107 54 \; pd dsp \$1;
 #X obj 285 489 dac~;
@@ -912,6 +912,7 @@
 #X text 296 1 RT to change speed;
 #X text 296 11 Dpad UP and DOWN to change Volume;
 #X obj 827 185 image car.gif;
+#X text 21 196 edited by Nicola Ariutti;
 #X connect 1 0 65 0;
 #X connect 1 1 65 0;
 #X connect 1 2 65 0;

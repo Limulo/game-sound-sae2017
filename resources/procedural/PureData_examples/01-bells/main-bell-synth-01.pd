@@ -1,5 +1,5 @@
-#N canvas 64 78 1052 645 10;
-#N canvas 502 242 620 402 sounds 0;
+#N canvas 62 95 1052 645 10;
+#N canvas 500 257 620 402 sounds 0;
 #X obj 23 44 bng 15 250 50 0 empty \$0-marimba marimba 17 7 0 10 -262144
 -1 -1;
 #N canvas 711 180 579 480 bell-partials 0;
@@ -106,10 +106,8 @@
 #X connect 32 0 23 0;
 #X connect 33 0 28 0;
 #X restore 953 608 pd sounds;
-#X obj 281 123 image marimba.gif
-;
-#X obj 774 162 image xilophone.gif
-;
+#X obj 281 123 image marimba.gif;
+#X obj 774 162 image xilophone.gif;
 #X obj 725 443 image tubular.gif;
 #X obj 348 100 bng 15 250 50 0 \$0-marimba empty empty 17 7 0 10 -86277
 -260097 -257985;
@@ -120,3 +118,4 @@
 #X obj 265 412 image tibetan.gif;
 #X obj 251 493 bng 15 250 50 0 \$0-bell empty empty 17 7 0 10 -86853
 -1 -1;
+#X text 769 609 a patch by Nicola Ariutti;

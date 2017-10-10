@@ -1,4 +1,4 @@
-#N canvas 679 204 510 280 10;
+#N canvas 677 219 510 280 10;
 #X declare -path abs;
 #N canvas 481 97 851 646 phone-effects 0;
 #X obj 12 80 osc~ 480;
@@ -735,7 +735,7 @@
 1;
 #X obj 78 24 loadbang;
 #X msg 78 46 0;
-#X obj 108 110 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 0 1
+#X obj 108 110 tgl 15 0 empty empty DSP 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X msg 108 167 \; pd dsp \$1;
 #X obj 381 64 moses 48;
@@ -795,6 +795,7 @@
 -258699 -1;
 #X text 192 240 a patch by Andy J Farnell;
 #X obj 37 252 declare -path abs;
+#X text 197 256 edited by Nicola Ariutti;
 #X connect 21 0 18 0;
 #X connect 22 0 19 0;
 #X connect 23 0 20 0;

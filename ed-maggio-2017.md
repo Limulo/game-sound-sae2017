@@ -661,7 +661,12 @@ Vedremo ora alcuni esempi tratti dal lavoro di _Andy Farnell_, il quale usa Pure
 Che cosa è PureData? PureData è un linguaggio di programmazione a nodi nato a metà degli anni '90 ad opera di Miller Puckette che all'epoca lavorava all'IRCAM di Parigi.
 
 Esempi di procedurale: bells, clocks, water, insects, engine, guns, helicopter (thanks to _Andy Farnell_ and _Alexey Reshetnikov_).
-s
+
+Maggiori informazioni sulle patch e sul loro utilizzo si trovano nel file README all'interno della [apposita cartella](https://github.com/Limulo/game-sound-sae2017/tree/master/resources/procedural/PureData_examples) del [repository](https://github.com/Limulo/game-sound-sae2017).
+{: class="dashed"}
+
+
+{% comment %}
 Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree/master/resources/procedural/PureData_examples) è necessaria l'installazione di [PureData](http://puredata.info/) e delle seguenti librerie aggiuntive:
 * list_abs (for the **[list_dot]** and **[list_emath]** objects);
 * zexy (for the **[>~]** object);
@@ -672,4 +677,4 @@ Per utilizzare [questi esempi](https://github.com/Limulo/game-sound-sae2017/tree
 * cxc, cyclone, purepd (**[delta~]** object);
 * iemlib (**[init]** object);
 * ggee (**[image]** object);
-{: class="dashed"}
+{% endcomment %}

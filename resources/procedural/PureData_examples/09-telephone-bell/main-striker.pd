@@ -1,4 +1,4 @@
-#N canvas 207 109 687 553 10;
+#N canvas 205 124 687 553 10;
 #X declare -path abs;
 #N canvas 46 307 724 436 sound 0;
 #X obj 579 31 catch~ \$0-striker;
@@ -559,3 +559,4 @@
 #X obj 340 255 image bakelite-telephone.gif;
 #X obj 288 80 tgl 15 0 drin-drin empty empty 17 7 0 10 -1 -262144 -1
 0 1;
+#X text 383 529 edited by Nicola Ariutti;

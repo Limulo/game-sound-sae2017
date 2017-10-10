@@ -19,6 +19,7 @@ Composers and researchers in videogame music, generative and adaptive music:
 * Leonard J Paul: [website](http://school.videogameaudio.com/apply/), [Youtube channel](https://www.youtube.com/channel/UCRkeuj7LOpX__NGQN1I0ANg), [talk](https://www.youtube.com/watch?v=2y86R4cDA9U), [lesson](https://www.youtube.com/watch?v=tvx_QgS7D8Q)
 * Yann Seznec: [website](http://www.yannseznec.com/);
 * Winifred Phillips: [website](http://www.winifredphillips.com/);
+* a special mention to [Thomas "floex" Dvorak](http://floex.cz/en/index.php) music composer for [Amanita Design](http://amanita-design.net/) and _Thomas "Pif" Dvorak_, Anamanita Design sound designer. [Here](https://www.youtube.com/watch?v=21_C4L667xw) an interesting talk about music in _Samorost 3_!
 
 Sound effects in video games and many more:
 
@@ -103,6 +104,7 @@ Tools for development:
 * [OpenAL](http://www.openal-soft.org/);
 * The **Synthesis ToolKit** in C++ [STK](https://ccrma.stanford.edu/software/stk/download.html) by Perry R. Cook and Gary P. Scavone. [GitHub link](https://github.com/thestk/stk);
 * [JUCE](https://juce.com/)
+* [Minim](http://code.compartmental.net/minim/), an audio library for the [Processing](https://processing.org/) environment;
 
 Trakers:
 
@@ -212,7 +214,7 @@ Other books of interest:
 * [gametrak controller](https://en.wikipedia.org/wiki/Gametrak);
 * [SLOrk speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/)
 
-### Game Art 
+### Game Art
 * [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
 
 ### Algorithmic Music Tools
