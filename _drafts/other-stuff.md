@@ -10,9 +10,6 @@ resynthesis stands to procedural audio as motion capture (mocap) stands to compu
 ## Programmare: la nuova alfabetizzazione
 Un [articolo](https://savestate.co.uk/2017/09/programming-games/) interessante sui giochi che prevedono (come principio fondamentale o elemento accessorio) la programmazione nel loro gamplay.
 
-## Free Software
-[Stallman 2014](https://www.youtube.com/watch?v=Ag1AKIl_2GM)
-
 ## Pure Data
 Come nota conclusiva si potrebbe aggiungere che PureData è un linguaggio che vale la pensa di imparare perchè viene utilizzato come interfaccia dal framework [Heavy](https://enzienaudio.com/docs/index.html#01.introduction) che consente, data una patch in PD, di ottenere in uscita un oggetto in codice a basso livello (compatibile con tantissime diverse architetture hardware/software come Fabric, Unity, Wwise, VST2, sorgenti C/C++, etc...) da integrare in progetti software commerciali oppure no.
 
@@ -45,7 +42,6 @@ I prodotti middleware Autodesk [non sono più disponibili](https://www.autodesk.
 A proposito di computer grafica, ecco il [PDP-11/45](http://www.chicagotribune.com/entertainment/movies/ct-star-wars-evl-lab-ent-0524-20170523-column.html) usato per il rendering delle immagini dei piani della morte nera (1975).
 {: class="dashed"}
 
-
 ## Artificial intelligent wind instrument
 http://genekogan.com/works/birl/
 
@@ -58,8 +54,6 @@ http://genekogan.com/works/birl/
   * different way to visualize/sonify them ([visualizing data book](http://shop.oreilly.com/product/9780596514556.do) by Ben Fry): [data visualization](https://en.wikipedia.org/wiki/Data_visualization). See **sonification**.
   * data visualization/sonification in other fiels: researches for the most. Artificial intelligence used as a tool to do that (see [Gene Koogan](https://youtu.be/sKgiA0TTwG8?t=36m8s) openFrameworks examples);
   * data can also be used to make classifications. These results can be very useful to speed up database seraches. See softare like **Shazam** or **midomi** which use the **acoustic fingerprint**. See also the **semantic audio**.
-
-
 
 ### data
 * [soundhound](https://www.soundhound.com/) previously know as **midomi**;
