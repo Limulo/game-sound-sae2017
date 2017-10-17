@@ -20,6 +20,9 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 <a id="pt1"></a>
 ## Pt1:
 
+Il codice è la forma di scrittura a cui siamo maggiormente sottoposti ogni istante quotidianamente.
+ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, A. McLean, MIT Press
+
 <a id="pt2"></a>
 ## Pt2:
 
