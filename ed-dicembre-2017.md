@@ -62,13 +62,13 @@ L'olio, l'acqua e altri lubrificanti servono appunto per riempire queste valli, 
 Picchi e valli in realtà non costituiscono la sola causa di attrito più che altro quella più macroscopica: esistono altre interazioni a livello molecolare o che implicano l'elettricita statica che contribuiscono all'attrito.
 {: class="dashed"}
 
-<iframe width="%100" height="315" src="https://www.youtube.com/embed/ZA_D4O6l1lo" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/ZA_D4O6l1lo" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
 
 #### Stick/Slip
 
 Questo tipo di meccanismo è chiamato _movimento stick/slip_ e si riscontra in fenomeni come l'archetto che scorre sulle corde tese di un violino ma anche nelle porte che stridono.
 
-<iframe src="https://giphy.com/embed/XTsiHInoOPnyw" width="100%" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/XTsiHInoOPnyw" width="100%" height="360" frameBorder="0" allowFullScreen></iframe>
 
 Nel fenomeno "porta che stride" il meccanismo è un po' complesso rispetto a quanto si verifica per la corda tesa (vedi Farnell "_Designing Sound_" pg. 395). Come suggerito da Farnell il fenomeno potrebbe essere modellato come mostrato nella seguente figura:
 
