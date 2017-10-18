@@ -20,7 +20,7 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 <a id="pt1"></a>
 ## Pt1:
 
-Il codice è la forma di scrittura a cui siamo maggiormente sottoposti ogni istante quotidianamente.
+>Il codice è la forma di scrittura a cui siamo maggiormente sottoposti ogni istante quotidianamente.
 ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, A. McLean, MIT Press
 
 <a id="pt2"></a>
@@ -37,13 +37,11 @@ Intuitivamente sappiamo che se spingiamo o trasciniamo un oggetto sopra ad un ta
 
 Questa forza, detta _forza di attrito_ è proporzionale al peso dell'oggetto e dipende in qualche misura dal tipo di materiali di cui sono composti i due oggetti che scivolanto l'uno sull'altro.
 
-![force scheme](illustration)
+![force scheme](./images/2017-12/pt3/stick-slip/forces-graph-1.png)
 
 Sappiamo anche che questa forza si oppone in misura maggiore nel momento in cui cominciamo a spingere ma poi, mano a mano che l'oggetto acquista velocità, essa diminuisce gradualmente.
 
 Per capire meglio come funziona immaginiamo di ingrandire notevolmente la zona soggetta allo sfregamento.
-
-![zooming in on the friction thing illustration](illustration)
 
 ![wiki image](https://en.wikipedia.org/wiki/Friction#/media/File:Friction_between_surfaces.jpg)
 
@@ -68,17 +66,17 @@ Questo tipo di meccanismo è chiamato _movimento stick/slip_ e si riscontra in f
 
 Nel fenomeno "porta che stride" il meccanismo è un po' complesso rispetto a quanto si verifica per la corda tesa (vedi Farnell "_Designing Sound_" pg. 395). Come suggerito da Farnell il fenomeno potrebbe essere modellato come mostrato nella seguente figura:
 
-![immagine modello massa con molla](modello massa con molla)
+![immagine modello massa con molla](./images/2017-12/pt3/stick-slip/forces-graph-2.png)
 
-Nell'immagine è indicata **Fw** la forza che, rivolta verso destra, stiamo esercitando sull'oggetto. La forza che esercitiamo non è tuttavia applicata direttamente all'oggetto _mover_ ma piuttosto ad una molla coneessa ad esso.
+Nell'immagine è indicata **F** la forza che, rivolta verso destra, stiamo esercitando sull'oggetto. La forza che esercitiamo non è tuttavia applicata direttamente all'oggetto _mover_ ma piuttosto ad una molla coneessa ad esso.
 
-La molla serve per modellare una sorta di _capacitanza meccanica_ **C**. Una volta che la forza che agisce sul _mover_ (data dalla somma di _Fw_ e _Fe_, la forza elastica della molla) eguaglia la **Fs** (forza di attrito statico), il _mover_ accelerata nella direzione di _Fw_, molto più velocemente di quanto avrebbe fatto solo grazie a _Fw_.
+La molla serve per modellare una sorta di _capacitanza meccanica_ **C**. Una volta che la forza che agisce sul _mover_ (data dalla somma di _F_ e _Fe_, la forza elastica della molla) eguaglia la **Fa** (forza di attrito statico), il _mover_ accelerata nella direzione di _F_, molto più velocemente di quanto avrebbe fatto solo grazie a _F_.
 
 Questo fa sì che la tensione della molla diminuisca gradualmente. La frizione cinetica ora, minore in modulo, rispetto alla statica, agisce sul _mover_  rallentandolo fino allo stop. A quel punto il _mover_ ritorna ad essere "incollato" con la superficie d'appoggio fino ache non si sia accumulato (nella molla) forza sufficiente per staccarlo di nuovo.
 
-Il movimento del _mover_ è quindi riassunto nel grafico sottostante dove si vede bene come il suo spostamento **Dm** avvenga a steps se comparato con lo spostamento costante di chi sta trainando l'oggetto.
+Il movimento del _mover_ è quindi riassunto nel grafico sottostante dove si vede bene come il suo spostamento **D** avvenga a steps se comparato con lo spostamento costante di chi sta trainando l'oggetto.
 
-![grafico degli spostamenti](grafico degli spostamenti)
+![grafico degli spostamenti](./images/2017-12/pt3/stick-slip/time-space-graph.png)
 
 Più lungo il tempo che intercorre tra step successivi, maggiore la forza che si accumula sulla molla e quindi maggiore la velocità di picco che il _mover_ avrà nel momento in cui si staccherà dal suolo.
 
@@ -86,9 +84,9 @@ Gli impulsi sono generati quando il _mover_ si slancia in avanti e in pratica qu
 
 La complessità del movimento con attrito stick/slip aumenta perchè il coefficinete dell'attrito dinamico dipende dalla velocità ma non con una relazione non semplice. A velocità basse esso aumenta con la velocità fino ad un massimo; oltre questo massimo comincia a decrescere mano a mano che la velocità comtinua a crescere.
 
-![grafico delle velocità](grafico delle velocità)
+![time velocity graph](./images/2017-12/pt3/stick-slip/time-vel-graph.png)
 
-Volendo essere precisi si dovrebbero considerare anche le proprietà delle superfici di contatto le quali variano perchè soggetto a calore dovuto allo sfregamento. Questo effetto sulla gomma è ben conosciuto dai piloti i quali, prima di cominciare una gara, provvedono a scaldare i pneumatici per far aumentare il coefficiente di attrito.
+Volendo essere precisi si dovrebbero considerare anche le proprietà delle superfici di contatto le quali variano perchè soggette a calore dovuto allo sfregamento. Questo effetto sulla gomma è ben conosciuto dai piloti i quali, prima di cominciare una gara, provvedono a scaldare i pneumatici per far aumentare il coefficiente di attrito.
 
 Dal momento che le asperità delle superfici sono casuali a livello microscopico non possiamo predire con assoluta certezza l'esatto istante di una _slip_, ma su base statistica il comportamento macroscopico può essere così predicibile da risultare praticamente periodico.
 
@@ -96,26 +94,17 @@ La periodicità aumenta quando l'interfaccia slip-stick appartiene ad una massa 
 
 Il sistema risonante tenderà a produrre picchi regolari nella forza e farà sì che lo slip accada in simpatia con la frequenza risonante, proprio come accade in una corda suonata con l'archetto.
 
+#### Model
 
+Un cardine scricchiolante è un sistema composto da due componenti il cardine/i stesso e la porta.
 
+Da una parte abbiamo  il cardine composto da due parti, una fissa ed un'altra mobile, e dall'altra invece abbiamo la porta che può essere fatta di materiali diversi e funge da risuonatore per le eccitazioni ricevute dallo _stick/slip_ motion che si crea sul cardine.
 
+Una approssimazione ragionevole del suono potrebbe essere ottenuta generando un opportuno pattern di impulsi ad eccitare una struttura di filtri risonanti che modellano una struttura spessa e rettangolare (la porta).
 
+#### DSP implementation
 
-
-* physics of the stick/slip motion
-* attrito statico, attrito dinamico (variazioni tra l'uno e l'altro).
-
-La velocità
-
-* farnell pg 395 + cook pg 176
-
-
-
-
-
-
-
-* **creaking**: movimento [_slip-stick_](https://en.wikipedia.org/wiki/Stick-slip_phenomenon). Un segnale di controllo (che simboleggi la forza impiegata nel movimento) che varia da 0 e 1 produce una serie di impulsi in uscita. Questi passano attraverso una serie di filtri passabanda per riprodurre le formanti di una struttura _quadrata_ in _legno_.
+##### The Door: wood & resonator
 
 Di seguito alcune belle animazioni che mostrano i _modi_ principali per una membrana rettangolare, tratte dalla [pagina](http://www.acs.psu.edu/drussell/demos.html) del professor Daniel Russel della _Pennsylvania State University_.
 
@@ -140,3 +129,7 @@ Di seguito alcune belle animazioni che mostrano i _modi_ principali per una memb
 
 Sicuramente da approfondirne le caratteristiche: [Frame3dd](http://frame3dd.sourceforge.net/). Un software libero per studiare le dinamiche strutturali statiche e dinamiche. Che possa esserci utile nell'analisi dei modi?
 {: class="dashed"}
+
+##### The Hinge
+
+Dato un parametro di controllo normalizzato in ingresso (un valore che varia tra 0.0 e 1.0), l'algoritmo ha il compito di riprodurre in uscita una serie di impulsi la cui alpiezza è proporzionale al tempo trascorso dall'impulso precendete.
