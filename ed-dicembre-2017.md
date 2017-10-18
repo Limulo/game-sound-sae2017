@@ -23,11 +23,17 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 >Il codice è la forma di scrittura a cui siamo maggiormente sottoposti ogni istante quotidianamente.
 ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, A. McLean, MIT Press
 
+![mathematical-methods-in-linguistics](./images/2017-12/pt1/book-covers/mathematical-methods-in-linguistics.png)
+
 <a id="pt2"></a>
 ## Pt2:
 
+TODO: write something here.
+
 <a id="pt3"></a>
 ## Pt3:
+
+TODO: add something here.
 
 ### Door simulation
 
