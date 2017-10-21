@@ -54,8 +54,9 @@ http://genekogan.com/works/birl/
   * different way to visualize/sonify them ([visualizing data book](http://shop.oreilly.com/product/9780596514556.do) by Ben Fry): [data visualization](https://en.wikipedia.org/wiki/Data_visualization). See **sonification**.
   * data visualization/sonification in other fiels: researches for the most. Artificial intelligence used as a tool to do that (see [Gene Koogan](https://youtu.be/sKgiA0TTwG8?t=36m8s) openFrameworks examples);
   * data can also be used to make classifications. These results can be very useful to speed up database seraches. See softare like **Shazam** or **midomi** which use the **acoustic fingerprint**. See also the **semantic audio**.
+3. reinventing the taditional computer-human interface (WIMP paradigm: _windows_, _icons_, _menus_, _pointer_ ) -> espandere nei sensi del tatt oe dell'udito (vedi Cook pag. 202);
 
-### data
+### Data
 * [soundhound](https://www.soundhound.com/) previously know as **midomi**;
 * [shazam](https://en.wikipedia.org/wiki/Shazam_%28service%29), [paper](http://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf), [how it works](https://laplacian.wordpress.com/2009/01/10/how-shazam-works/);
 * [acoustic fingerprint](https://en.wikipedia.org/wiki/Acoustic_fingerprint);
@@ -67,6 +68,8 @@ http://genekogan.com/works/birl/
 * [SonEnvir](http://sonenvir.at/) is a research project that investigates applying sonification in a number of scientific disciplines;
 * [International Community for Aufitory Display](http://icad.org/);
 * The [sonification handbook](http://sonification.de/handbook/);
+* vedi anche Cook pg 202 (suono 64)
+
 
 ### Automatic Mixing
 L'intelligenza artificiale può avere applicazioni anche in ambito di mixing, si veda ad esempio la sezione [papers-doc](./resources/papers_docs/automatic-mixing/) di questo repository per avere una idea più precisa. Di seguito intanto alcuni link interessanti a riguardo:

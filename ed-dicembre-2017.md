@@ -23,17 +23,21 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 >Il codice è la forma di scrittura a cui siamo maggiormente sottoposti ogni istante quotidianamente.
 ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, A. McLean, MIT Press
 
-![mathematical-methods-in-linguistics](./images/2017-12/pt1/book-covers/mathematical-methods-in-linguistics.png)
+![mathematical-methods-in-linguistics](./images/2017-12/pt1/book-covers/mathematical-methods-in-linguistics.jpg
 
 <a id="pt2"></a>
 ## Pt2:
 
-TODO: write something here.
+TODO: rivedi il calcolo associato alle combinazioni di suoni: il calcolo è vero?
 
 <a id="pt3"></a>
 ## Pt3:
 
-TODO: add something here.
+TODO: the perfect machine doesn'm make sound at all
+
+TODO: Fai una analisi veloce dell'occupazione di memoria da parte di memoria da parte di un qualsiasi browser (Chrome, Firefox) per confrontarla con quella del programma piano tech.
+
+TODO: **Pholise** walking sound simulator (via PhISM). I _subevents_ nel suono dei footsteps sono importanti per identificare sesso, identià, età, etc...
 
 ### Door simulation
 
@@ -49,7 +53,12 @@ Sappiamo anche che questa forza si oppone in misura maggiore nel momento in cui 
 
 Per capire meglio come funziona immaginiamo di ingrandire notevolmente la zona soggetta allo sfregamento.
 
-![wiki image](https://en.wikipedia.org/wiki/Friction#/media/File:Friction_between_surfaces.jpg)
+<p>
+<a href="https://commons.wikimedia.org/wiki/File:Friction_between_surfaces.jpg#/media/File:Friction_between_surfaces.jpg">
+<img alt="Friction between surfaces.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Friction_between_surfaces.jpg/1200px-Friction_between_surfaces.jpg">
+</a>
+<br>By <a href="//commons.wikimedia.org/w/index.php?title=User:CaoHao&amp;action=edit&amp;redlink=1" class="new" title="User:CaoHao (page does not exist)">CaoHao</a> - <span class="int-own-work" lang="en">Own work</span>, <a title="Creative Commons Attribution-Share Alike 4.0" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=58745249">Link</a>
+</p>
 
 Se potessimo ingrandire a sufficienza ci accorgeremmo che i due oggetti non possiedono profili perfettamente lisci, anzi, la struttura del loro bordo è piuttosto costituita da una continuità di picchi e valli di dimensioni casuali. Quando accade che ci sia un sufficiente numero di picchi di un oggetto che incontrano altrettante valli dell'altro, allora la forza richiesta per liberarli è più grande.
 

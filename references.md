@@ -83,15 +83,16 @@ We can find the same concepts in many others software and hardware products like
 * [Praat](http://www.fon.hum.uva.nl/praat/);
 * [Sonic Visualizer](http://www.sonicvisualiser.org/);
 * [PaulStretch](http://hypermammut.sourceforge.net/paulstretch/) by [Paul Nasca](http://www.paulnasca.com);
-* Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
 * [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
-and Rendering of Environmental Audio;
+and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://soundlab.cs.princeton.edu/) there's a lot of [other interesting software tools](http://soundlab.cs.princeton.edu/software/) like the
+  * Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
+  * [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!)
+  * [SMELT](http://smelt.cs.princeton.edu/) and [SMIRK](http://smirk.cs.princeton.edu/) and many others...
 * [PureData](https://puredata.info/);
 * [Max/MSP](https://cycling74.com/);
 * Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
 * [SuperCollider](https://supercollider.github.io/). If you want to learn how to use SuperCollider the Eli Fieldsteel [Youtube playlist](https://www.youtube.com/watch?v=yRzsOOiJ_p4&list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC). Here's the Supercollider [code repository](http://sccode.org/) and Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from Farnell's "_Designing Sound_" book;
 * [CSound](http://csound.github.io/);
-* [Chuck](http://chuck.cs.princeton.edu/). [Here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!
 * [Faust](http://faust.grame.fr/) a DSP programming language;
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
 * [Ircam softwares](https://www.ircam.fr/innovations/forum/);
@@ -184,7 +185,8 @@ Other books of interest:
 * [game audio podcast ep.4 - about procedural audio](http://www.gameaudiopodcast.com/?p=161)
 * Designing Sound Blog articles: [part 1](http://designingsound.org/2010/01/audio-implementation-greats-1-audio-toolsets-part-1/) and [part 2](http://designingsound.org/2010/01/audio-implementation-greats-2-audio-toolsets-part-2/)
 * [Gaf](http://cedric.cnam.fr/PUBLIS/RC1568.pdf), [IEZA](https://users-cs.au.dk/dsound/DigitalAudio.dir/Unity/IEZA.pdf) and [this](http://captivatingsound.com/ieza-framework-for-game-audio/). [GAL](https://www.researchgate.net/publication/238660174_GAME_AUDIO_LAB_-_AN_ARCHITECTURAL_FRAMEWORK_FOR_NONLINEAR_AUDIO_IN_GAMES) and [this](http://www.aes.org/e-lib/browse.cfm?elib=15169);
-* Artificial intelligence for speach synthesis: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see Gene Kogan and other project.
+* Artificial intelligence for speach synthesis: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see [Gene Kogan website](http://genekogan.com/) and other project.
+* Artificial intelligence in music: [Magenta](https://magenta.tensorflow.org/) is an OpenSource project by [Google Brain team](https://research.google.com/teams/brain/) that uses the [tensorFlow](https://www.tensorflow.org/) artificial intelligence library. [Magenta main repo](https://github.com/tensorflow/magenta) and [demo page](https://github.com/tensorflow/magenta-demos/tree/master/);
 
 ---
 
@@ -212,7 +214,9 @@ Other books of interest:
 
 ## Interactive audio
 * [gametrak controller](https://en.wikipedia.org/wiki/Gametrak);
-* [SLOrk speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/)
+* The [SLOrk](http://slork.stanford.edu/) [speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/) and [Delorean](http://music2.princeton.edu/delorean/), the [Plork](http://plork.princeton.edu/index.php) speaker;
+* [Princeton Sound Lab](http://soundlab.cs.princeton.edu/)
+* [Stanford CCRMA](https://ccrma.stanford.edu/)
 
 ### Game Art
 * [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
