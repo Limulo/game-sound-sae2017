@@ -45,7 +45,6 @@ A proposito di computer grafica, ecco il [PDP-11/45](http://www.chicagotribune.c
 ## Artificial intelligent wind instrument
 http://genekogan.com/works/birl/
 
-
 ***
 
 ## Sound for Installations
@@ -80,3 +79,6 @@ L'intelligenza artificiale può avere applicazioni anche in ambito di mixing, si
 ### Audio semantico
 Associare terminologia condivisa e comprensibile al suono. Ecco un riferimento interessante:
 * [Semantic Audio](http://www.semanticaudio.co.uk/about-2/): dal sito è possibile scaricare una serie di [plugin](http://www.semanticaudio.co.uk/projects/download/) che permette di associare la propria semantica alla propria produzione musicale e avercela sempre disponibile sottoforma di preset e di contribuire ad un database globale di terminologia;
+
+### Live Coding
+* [65daysofstatic](http://65daysofstatic.com/wordpress/) hanno usato anche [Tidalcycles](https://tidalcycles.org/) per scrivere la colonna sonora de lnoto videogame **No man's Sky** ([video](https://youtu.be/_OAKUlRlNF0));

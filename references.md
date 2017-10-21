@@ -225,6 +225,26 @@ Other books of interest:
 * [Common Music](http://commonmusic.sourceforge.net/) and **Grace**;
 
 
+### Can I use <tool name> on <OS type> ?
+
+| engine / middleware / tool | Linux | Mac OS X | Windows |
+| Pure Data | Yes | Yes | Yes |
+| Unity3D editor | [yes](https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/) | yes | yes |
+| Wwise SDK | [yes](https://www.audiokinetic.com/library/edge/?source=SDK&id=linux__specificinfo.html) | yes | yes |
+| Wwise editor | No | Yes | Yes |
+| Fmod API and lib | [yes](https://wiki.debian.org/FMOD) | yes | yes |
+| Fmod editor | no | yes | yes |
+| AGS (Adventure Game Studio) - editor | [no](http://www.adventuregamestudio.co.uk/wiki/GNU/Linux) (must use Wine and/or [winetricks](https://github.com/Winetricks/winetricks))| no | yes |
+| AGS (Adventure Game Studio) - runtime engine | [yes](https://github.com/adventuregamestudio/ags/blob/master/debian/README.md) | no | yes |
+
+### Can I integrate <middleware name> inside <game engine name>?
+
+| middleware/tool | Unity3D | Unreal |
+| Wwise | [yes](https://www.audiokinetic.com/library/edge/?source=Unity&id=main.html) | [yes](https://www.audiokinetic.com/library/edge/?source=UE4&id=index.html) |
+| Fmod | [yes](https://github.com/fmod/UnityIntegration) | [yes](https://github.com/fmod/ue4integration) |
+
+
+
 ---
 
 {% comment %}
