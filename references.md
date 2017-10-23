@@ -95,9 +95,12 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * [CSound](http://csound.github.io/);
 * [Faust](http://faust.grame.fr/) a DSP programming language;
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
-* [Ircam softwares](https://www.ircam.fr/innovations/forum/);
 * [ISSE](http://isse.sourceforge.net/): Interactive Source Separation Editor by [Nick  J. Bryan](https://ccrma.stanford.edu/~njb/);
 * Xavier Serra and Julis O. Smith [SMS tools](https://www.upf.edu/web/mtg/sms-tools). See also their [Kadenze MOOC](https://www.coursera.org/learn/audio-signal-processing);
+
+Other tools of interest:
+* [Ircam softwares](https://www.ircam.fr/innovations/forum/);
+* [VCV Rack](https://vcvrack.com/) modular synthetizer;
 
 Tools for development:
 
@@ -225,7 +228,7 @@ Other books of interest:
 * [Common Music](http://commonmusic.sourceforge.net/) and **Grace**;
 
 
-### Can I use <tool name> on <OS type> ?
+### Can I use [tool name] on [OS type] ?
 
 | engine / middleware / tool | Linux | Mac OS X | Windows |
 | Pure Data | Yes | Yes | Yes |
@@ -237,7 +240,7 @@ Other books of interest:
 | AGS (Adventure Game Studio) - editor | [no](http://www.adventuregamestudio.co.uk/wiki/GNU/Linux) (must use Wine and/or [winetricks](https://github.com/Winetricks/winetricks))| no | yes |
 | AGS (Adventure Game Studio) - runtime engine | [yes](https://github.com/adventuregamestudio/ags/blob/master/debian/README.md) | no | yes |
 
-### Can I integrate <middleware name> inside <game engine name>?
+### Can I integrate [middleware name] inside [game engine name]?
 
 | middleware/tool | Unity3D | Unreal |
 | Wwise | [yes](https://www.audiokinetic.com/library/edge/?source=Unity&id=main.html) | [yes](https://www.audiokinetic.com/library/edge/?source=UE4&id=index.html) |

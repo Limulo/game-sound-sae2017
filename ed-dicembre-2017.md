@@ -25,6 +25,8 @@ ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, 
 
 ![mathematical-methods-in-linguistics](./images/2017-12/pt1/book-covers/mathematical-methods-in-linguistics.jpg
 
+TODO: RetroPie
+
 <a id="pt2"></a>
 ## Pt2:
 
