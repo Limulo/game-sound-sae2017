@@ -195,7 +195,7 @@ Other books of interest:
 
 ### Other interesting researches
 
-* [VoCo: Text-based Insertion and Replacement in Audio Narration](http://gfx.cs.princeton.edu/pubs/Jin_2017_VTI/);
+* [VoCo: Text-based Insertion and Replacement in Audio Narration](http://gfx.cs.princeton.edu/pubs/Jin_2017_VTI/). Look at [this](https://engineering.princeton.edu/news/2017/05/16/technology-edits-voices-text) article and [this](https://youtu.be/RB7upq8nzIU) video for more information;
 
 ### Emulators, retro stuff
 
@@ -217,7 +217,7 @@ Other books of interest:
 
 ## Interactive audio
 * [gametrak controller](https://en.wikipedia.org/wiki/Gametrak);
-* The [SLOrk](http://slork.stanford.edu/) [speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/) and [Delorean](http://music2.princeton.edu/delorean/), the [Plork](http://plork.princeton.edu/index.php) speaker;
+* The [SLOrk](http://slork.stanford.edu/) [speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/) and [Delorean](http://music2.princeton.edu/delorean/), the [Plork](http://plork.princeton.edu/index.php) speaker, the [Calart Machine Orchestra](http://www.karmetik.com/) and all of its [instruments](http://www.karmetik.com/labs/instruments),  [robots](http://www.karmetik.com/labs/robots) and [publications](http://www.karmetik.com/publications);
 * [Princeton Sound Lab](http://soundlab.cs.princeton.edu/)
 * [Stanford CCRMA](https://ccrma.stanford.edu/)
 
