@@ -62,12 +62,14 @@ http://genekogan.com/works/birl/
 * data transmitted with sound
     + https://github.com/robertrypula/AudioNetwork
     + https://github.com/quiet/quiet-js
+* [Data, music information retrieval](https://www.bmat.com/)
 
 ### Sonification
 * [SonEnvir](http://sonenvir.at/) is a research project that investigates applying sonification in a number of scientific disciplines;
 * [International Community for Aufitory Display](http://icad.org/);
 * The [sonification handbook](http://sonification.de/handbook/);
 * vedi anche Cook pg 202 (suono 64)
+* [earthquake sonification](http://blogs.egu.eu/divisions/sm/2016/07/29/listening-to-earthquakes/)
 
 
 ### Automatic Mixing

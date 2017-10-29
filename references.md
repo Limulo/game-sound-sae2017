@@ -101,6 +101,8 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 Other tools of interest:
 * [Ircam softwares](https://www.ircam.fr/innovations/forum/);
 * [VCV Rack](https://vcvrack.com/) modular synthetizer;
+* GNU/Linux instrument and plugin by [Zita](http://kokkinizita.linuxaudio.org/linuxaudio/index.html);
+* [hexter](http://dssi.sourceforge.net/hexter.html) a Yamaha DX7 emulator for GNU/Linux by [Sam Bolton](http://smbolton.com/);
 
 Tools for development:
 
@@ -224,9 +226,10 @@ Other books of interest:
 ### Game Art
 * [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
 
-### Algorithmic Music Tools
+### Music Tools / Algorithmic music tools
 * [Common Music](http://commonmusic.sourceforge.net/) and **Grace**;
-
+* [Impro-Visor](https://www.cs.hmc.edu/~keller/jazz/improvisor/) by Bob Keller @ MUDD 
+* [Nyquist](http://nyquist.sourceforge.net/), a tool for sound synthesis and composition;
 
 ### Can I use [tool name] on [OS type] ?
 

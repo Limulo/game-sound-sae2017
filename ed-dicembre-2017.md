@@ -30,6 +30,10 @@ TODO: RetroPie
 <a id="pt2"></a>
 ## Pt2:
 
+In queste due ultime lezioni vorremmo dedicarci al suono nei videogiochi, concentrandoci principalmente sull'aspetto dell'effetto sonoro e tralasciando invece quello musicale.
+Verranno tuttavia fatti alcuni cenni alla musica nel videogioco e, se il tempo lo permetterà, vedremo anche alcuni esempio secondo noi particolarmente interessanti (come iMuse e alcuni esempi di musica generativa per videogames) poichè in linea con il particolare argomento che tratteremo.
+
+
 TODO: rivedi il calcolo associato alle combinazioni di suoni: il calcolo è vero?
 
 <a id="pt3"></a>
