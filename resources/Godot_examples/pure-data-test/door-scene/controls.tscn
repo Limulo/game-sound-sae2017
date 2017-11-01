@@ -1,0 +1,201 @@
+[gd_scene format=1]
+
+[node name="controls" type="Panel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 15.0
+margin/top = 11.0
+margin/right = 212.0
+margin/bottom = 268.0
+
+[node name="Button" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 33.0
+margin/top = 202.0
+margin/right = 165.0
+margin/bottom = 243.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "apply force"
+flat = false
+
+[node name="slider_mass" type="HSlider" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 18.0
+margin/top = 31.0
+margin/right = 136.0
+margin/bottom = 47.0
+range/min = 10.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 45.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = true
+focus_mode = 2
+
+[node name="Label" type="Label" parent="slider_mass"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 96.0
+margin/top = -19.0
+margin/right = 163.0
+margin/bottom = -5.0
+text = "door mass"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="value" type="Label" parent="slider_mass"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 123.0
+margin/top = 1.0
+margin/right = 163.0
+margin/bottom = 15.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="slider_losses" type="HSlider" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 18.0
+margin/top = 71.0
+margin/right = 136.0
+margin/bottom = 87.0
+range/min = 0.01
+range/max = 0.5
+range/step = 0.005
+range/page = 0.0
+range/value = 0.03
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = true
+focus_mode = 2
+
+[node name="Label" type="Label" parent="slider_losses"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 96.0
+margin/top = -19.0
+margin/right = 163.0
+margin/bottom = -5.0
+text = "door losses"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="value" type="Label" parent="slider_losses"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 123.0
+margin/top = 1.0
+margin/right = 163.0
+margin/bottom = 15.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="slider_spring" type="HSlider" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 18.0
+margin/top = 168.0
+margin/right = 136.0
+margin/bottom = 184.0
+range/min = 0.01
+range/max = 3.0
+range/step = 0.01
+range/page = 0.0
+range/value = 0.5
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = true
+focus_mode = 2
+
+[node name="Label" type="Label" parent="slider_spring"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 98.0
+margin/top = -19.0
+margin/right = 165.0
+margin/bottom = -5.0
+text = "stiffness"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="value" type="Label" parent="slider_spring"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 123.0
+margin/top = 1.0
+margin/right = 163.0
+margin/bottom = 15.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CheckButton" type="CheckButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 15.0
+margin/top = 106.0
+margin/right = 157.0
+margin/bottom = 128.0
+toggle_mode = true
+is_pressed = true
+enabled_focus_mode = 2
+shortcut = null
+text = "use spring"
+flat = false
+align = 0
+
+

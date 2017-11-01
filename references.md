@@ -117,13 +117,15 @@ Trakers:
 * [playerPro](https://sourceforge.net/projects/playerpro/) is a public domain tracker and it was used by Aphex Twin as his main compositional tool for the "Druqs" album (source [here](http://cdm.link/2017/07/aphex-twin-gave-us-peek-inside-90s-classic-heres-learned/));
 * [Renoise](http://www.renoise.com/) is a multiplatform modern tracker.
 
-Assets and other videogame resources:
+Assets and other videogame resources/tutorials:
 
 * [Open Game Art](https://opengameart.org/)
 * [Bit Gem](https://shop.bitgem3d.com/)
 * [CGTrader](https://www.cgtrader.com/)
 * [TurboSquid](https://www.turbosquid.com)
 * [Pixelation.org](https://pixelation.org/)
+* [Blend swap](https://www.blendswap.com)
+* [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
 
 ### Courses and MOOC
 
@@ -219,14 +221,13 @@ Other books of interest:
 
 ## Interactive audio
 * [gametrak controller](https://en.wikipedia.org/wiki/Gametrak);
-* The [SLOrk](http://slork.stanford.edu/) [speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/) and [Delorean](http://music2.princeton.edu/delorean/), the [Plork](http://plork.princeton.edu/index.php) speaker, the [Calart Machine Orchestra](http://www.karmetik.com/) and all of its [instruments](http://www.karmetik.com/labs/instruments),  [robots](http://www.karmetik.com/labs/robots) and [publications](http://www.karmetik.com/publications);
+* The [SLOrk](http://slork.stanford.edu/) [speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/) and [Delorean](http://music2.princeton.edu/delorean/), the [Plork](http://plork.princeton.edu/index.php) speaker, the [Calart Machine Orchestra](http://www.karmetik.com/) and all of its [instruments](http://www.karmetik.com/labs/instruments),  [robots](http://www.karmetik.com/labs/robots) and [publications](http://www.karmetik.com/publications). See also the [MoPhO](http://mopho.stanford.edu/) which stands for Stanford Mobile Phone Orchestra!;
 * [Princeton Sound Lab](http://soundlab.cs.princeton.edu/)
 * [Stanford CCRMA](https://ccrma.stanford.edu/)
 
-### Game Art
-* [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
 
 ### Music Tools / Algorithmic music tools
+
 * [Common Music](http://commonmusic.sourceforge.net/) and **Grace**;
 * [Impro-Visor](https://www.cs.hmc.edu/~keller/jazz/improvisor/) by Bob Keller @ MUDD 
 * [Nyquist](http://nyquist.sourceforge.net/), a tool for sound synthesis and composition;
