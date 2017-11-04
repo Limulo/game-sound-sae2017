@@ -5,6 +5,12 @@ layout: default
 linear music (shuffling) 37:00 / radio GTAV - ducking, changing mix, djishing thing, cross fade - interactive composition
 markers, timing (iMuse style of stuff)
 
+
+## Interesting link
+
+* [Music Theory Dog]()
+
+
 ---
 
 ### dall'edizione precedente:

@@ -1,0 +1,3 @@
+[submodule "resources/Godot_examples/door-sim"]
+	path = resources/Godot_examples/door-sim
+	url = https://github.com/Limulo/door-sim.git

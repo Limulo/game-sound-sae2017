@@ -45,7 +45,7 @@ Sound effects in video games and many more:
 * [Dr Joshua D Reiss](http://www.eecs.qmul.ac.uk/~josh/) from Queen Mary University of London. **Intelligent Sound** [Youtube channel](https://www.youtube.com/user/IntelligentSoundEng), [blog](https://intelligentsoundengineering.wordpress.com/) and [twitter channel](https://twitter.com/IntelSoundEng)
 * [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M);
 
-### Procedural Audio in Games (some examples)
+### Procedural Audio/music in Games (some examples)
 
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
 * GTA V and its RAGE audio engine: Alastair MacGregor's [talk](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and [slides](http://www.gdcvault.com/play/1020247/The-Sound-of-Grand-Theft). [Assets and memory](https://youtu.be/L4GuM15QOFE?t=13m47s), [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s);
@@ -56,6 +56,7 @@ Sound effects in video games and many more:
 * iMuse: [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ), [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689);
 
 {% comment %}
+* [El-fish](https://en.wikipedia.org/wiki/El-Fish);
 * [Abzu](https://www.youtube.com/watch?v=CWU1pZVw0xM&feature=youtu.be&t=15m24s);
 * [Journey]();
 {% endcomment %}
@@ -152,7 +153,7 @@ Other books of interest:
 * James Newman "Videogames" (2nd ed) - Routledge;
 * Blake J. Harris "Console Wars" - multiplayer.it edizioni;
 * Marco Accordi Rickards "Storia del videogioco" - Carocci editore;
-* Micheal Chion "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)" - Lindau;
+* [Micheal Chion](http://michelchion.com/biography) "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)" - Lindau;
 * [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001) - Ricordi, Lim;
 * Steven W. Smith' [The Scientist and Engineer's Guide to Digital Signal Processing](http://www.dspguide.com/) - free downloadable from the website as .pdf;
 * [Music, Cognition, and Computerized Sound, and introduction to Psychoacoustics](https://mitpress.mit.edu/books/music-cognition-and-computerized-sound) edited by Perry Cook - MIT press, 2001;
@@ -187,7 +188,7 @@ Other books of interest:
 * [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
 
 ---
-
+* **reaktoplayer** [blog](https://reaktorplayer.wordpress.com/) and [twitter profile](https://twitter.com/reaktorplayer);
 * [Lost Chocolate Blog](http://blog.lostchocolatelab.com/)
 * [game audio podcast ep.4 - about procedural audio](http://www.gameaudiopodcast.com/?p=161)
 * Designing Sound Blog articles: [part 1](http://designingsound.org/2010/01/audio-implementation-greats-1-audio-toolsets-part-1/) and [part 2](http://designingsound.org/2010/01/audio-implementation-greats-2-audio-toolsets-part-2/)
@@ -220,17 +221,21 @@ Other books of interest:
 * [soundimage](http://soundimage.org/)
 
 ## Interactive audio
+
 * [gametrak controller](https://en.wikipedia.org/wiki/Gametrak);
 * The [SLOrk](http://slork.stanford.edu/) [speaker](https://ccrma.stanford.edu/~njb/research/slorkSpeaker/) and [Delorean](http://music2.princeton.edu/delorean/), the [Plork](http://plork.princeton.edu/index.php) speaker, the [Calart Machine Orchestra](http://www.karmetik.com/) and all of its [instruments](http://www.karmetik.com/labs/instruments),  [robots](http://www.karmetik.com/labs/robots) and [publications](http://www.karmetik.com/publications). See also the [MoPhO](http://mopho.stanford.edu/) which stands for Stanford Mobile Phone Orchestra!;
 * [Princeton Sound Lab](http://soundlab.cs.princeton.edu/)
 * [Stanford CCRMA](https://ccrma.stanford.edu/)
 
 
-### Music Tools / Algorithmic music tools
+## Music Tools / Algorithmic music tools
 
 * [Common Music](http://commonmusic.sourceforge.net/) and **Grace**;
-* [Impro-Visor](https://www.cs.hmc.edu/~keller/jazz/improvisor/) by Bob Keller @ MUDD 
+* [Impro-Visor](https://www.cs.hmc.edu/~keller/jazz/improvisor/) by Bob Keller @ MUDD;
 * [Nyquist](http://nyquist.sourceforge.net/), a tool for sound synthesis and composition;
+* [Open Music](http://repmus.ircam.fr/openmusic/home) by IRCAM;
+* [myNoise](https://mynoise.net/) by Dr. Ir. Stéphane Pigeon;
+* [Sleeping Dragon](https://www.youtube.com/watch?v=0cpqNAQPWVs)
 
 ### Can I use [tool name] on [OS type] ?
 
@@ -264,9 +269,7 @@ Other books of interest:
 * from text based adventure games to graphical adventures [Computer Chronicles](https://www.youtube.com/watch?v=8qxBcOuMYCU)
 
 <img src="./images/ken-roberta.png" alt="ken and Roberta Williams" width="100%" />
-
 <img src="./images/infocom-brain-1.jpg" alt="infocom ads 1" width="100%" />
-
 <img src="./images/infocom-brain-2.jpg" alt="infocom ads 2" width="100%" />
 
 ### Conferences
