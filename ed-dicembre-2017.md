@@ -26,6 +26,9 @@ ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, 
 ![mathematical-methods-in-linguistics](./images/2017-12/pt1/book-covers/mathematical-methods-in-linguistics.jpg
 
 TODO: RetroPie
+TODO: physics engine [Bullet Physics](http://bulletphysics.org/wordpress/) ([usato all'interno della nuova versione 3 di Godot](https://godotengine.org/article/godot-30-switches-bullet-3-physics)), [Box2D](http://box2d.org/) (usato in Angry Birds), etc...
+TODO: sistemi handheld
+TODO: sistemi VR/headset 
 
 <a id="pt2"></a>
 ## Pt2:
@@ -34,12 +37,12 @@ In queste due ultime lezioni vorremmo dedicarci al suono nei videogiochi, concen
 Verranno tuttavia fatti alcuni cenni alla musica nel videogioco e, se il tempo lo permetterà, vedremo anche alcuni esempio secondo noi particolarmente interessanti (come iMuse e alcuni esempi di musica generativa per videogames) poichè in linea con il particolare argomento che tratteremo.
 
 
-TODO: rivedi il calcolo associato alle combinazioni di suoni: il calcolo è vero?
+TODO: Si potrebbe pensare di fare un esempio pratico in cui si contemplano 4 diversi possibili oggetti e si guarda quali sono i possibili eventi che possono verificarsi. Si conta poi il nomero di combinazioni e si giunge ad un valore numerico che, astraendo, diviene la formula di _calcolo combinatorio_ **[combinazione con ripetizione](https://it.wikipedia.org/wiki/Combinazione#Combinazioni_con_ripetizione)**: qualcosa del tutto simile a 2 estrazioni (valore **k**) da una urna contenentete **n** oggetti i quali vengano poi reinseriti nell'urna ad ogni nuova estrazione.
 
 <a id="pt3"></a>
 ## Pt3:
 
-TODO: the perfect machine doesn'm make sound at all
+TODO: the perfect machine doesn't make sound at all.
 
 TODO: Fai una analisi veloce dell'occupazione di memoria da parte di memoria da parte di un qualsiasi browser (Chrome, Firefox) per confrontarla con quella del programma piano tech.
 
