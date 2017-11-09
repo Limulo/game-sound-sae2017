@@ -45,7 +45,7 @@ Sound effects in video games and many more:
 * [Dr Joshua D Reiss](http://www.eecs.qmul.ac.uk/~josh/) from Queen Mary University of London. **Intelligent Sound** [Youtube channel](https://www.youtube.com/user/IntelligentSoundEng), [blog](https://intelligentsoundengineering.wordpress.com/) and [twitter channel](https://twitter.com/IntelSoundEng)
 * [Akash Thakkar](https://www.youtube.com/watch?v=K_haRMbKZ1M);
 
-### Procedural Audio/music in Games (some examples)
+### Procedural Audio/music in Games/Apps/installations and more (some examples)
 
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
 * GTA V and its RAGE audio engine: Alastair MacGregor's [talk](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and [slides](http://www.gdcvault.com/play/1020247/The-Sound-of-Grand-Theft). [Assets and memory](https://youtu.be/L4GuM15QOFE?t=13m47s), [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s);
@@ -54,6 +54,7 @@ Sound effects in video games and many more:
 * [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peter Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
 * [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
+* [Revheadz](http://revheadz.com.au/index.html#hero)'s engine sound apps;
 * iMuse: [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ), [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689);
 
 {% comment %}
