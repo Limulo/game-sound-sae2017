@@ -50,6 +50,7 @@ Sound effects in video games and many more:
 * [Fract](http://fractgame.com/) which uses PureData with Libpd as sound engine;
 * GTA V and its RAGE audio engine: Alastair MacGregor's [talk](http://www.gdcvault.com/play/1020587/The-Sound-of-Grand-Theft) and [slides](http://www.gdcvault.com/play/1020247/The-Sound-of-Grand-Theft). [Assets and memory](https://youtu.be/L4GuM15QOFE?t=13m47s), [Vehicles](https://youtu.be/L4GuM15QOFE?t=23m52s) granular engine, [Procedural audio Synthetizer tool](https://youtu.be/L4GuM15QOFE?t=28m34s);
 * [Smule](https://www.smule.com/)'s [Leaf Trombone](http://www.gewang.com/publish/files/2015-jnmr-worldstage.pdf), [Ocarina](http://www.gewang.com/ocarina/), etc...;
+* Julius Smith's [moForte](http://www.moforte.com) software house develops a series of physical model based apps like **GeoShred**, **moForte guitars** and more;
 * [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peter Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
 * [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
@@ -98,6 +99,7 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * [Heavy Audio Tools Framework](https://enzienaudio.com/);
 * [ISSE](http://isse.sourceforge.net/): Interactive Source Separation Editor by [Nick  J. Bryan](https://ccrma.stanford.edu/~njb/);
 * Xavier Serra and Julis O. Smith [SMS tools](https://www.upf.edu/web/mtg/sms-tools). See also their [Kadenze MOOC](https://www.coursera.org/learn/audio-signal-processing);
+* [Vamp plugins](http://vamp-plugins.org/index.html) - Vamp is an audio processing plugin system for plugins that extract descriptive information from audio data;
 
 Other tools of interest:
 * [Ircam softwares](https://www.ircam.fr/innovations/forum/);
