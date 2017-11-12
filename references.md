@@ -52,10 +52,12 @@ Sound effects in video games and many more:
 * [Smule](https://www.smule.com/)'s [Leaf Trombone](http://www.gewang.com/publish/files/2015-jnmr-worldstage.pdf), [Ocarina](http://www.gewang.com/ocarina/), etc...;
 * Julius Smith's [moForte](http://www.moforte.com) software house develops a series of physical model based apps like **GeoShred**, **moForte guitars** and more;
 * [Pugs Luv Beats](http://designingsound.org/2012/01/the-sound-of-pugs-luv-beats/) a game by [Lucky Frame](http://luckyframe.co.uk/) (Yann Seznec) with PureData embedded inside w/ help from Peter Brinkmann **libPD** ([gameplay](https://www.youtube.com/watch?time_continue=39&v=V0i18_--8Yc));
-* [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop;
+* [Sim Cell](https://www.youtube.com/watch?v=nQ2yq5Vqyj0) by StrangeLoop.  Listen to [this](https://soundstudiesblog.com/2014/05/29/12904/) podcast by Leonard J Paul, music and sound designer for the game, from the [Sounding Out! magazine](https://soundstudiesblog.com/). [This video](https://youtu.be/0xr4aL1C24E) shows how music and sound where crated;
+* **Vessel** by StrangeLoop uses a custom adaptive music system. See [this talk](http://gdcvault.com/play/1015599/The-Dynamic-Audio-of) by Leonard J Paul @ GDC 2012;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
 * [Revheadz](http://revheadz.com.au/index.html#hero)'s engine sound apps;
 * iMuse: [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ), [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689);
+* [RjDj project](https://github.com/rjdj/rjlib);
 
 {% comment %}
 * [El-fish](https://en.wikipedia.org/wiki/El-Fish);
@@ -63,13 +65,13 @@ Sound effects in video games and many more:
 * [Journey]();
 {% endcomment %}
 
-### Procedural Audio on other fields
+### Procedural Audio in other fields
 
 * [Virtual Analog Synthesis](https://en.wikipedia.org/wiki/Analog_modeling_synthesizer), the term was not used until the 1990s when the [Nord Lead](https://en.wikipedia.org/wiki/Nord_Lead) came out.
 
 A possible example of this kind of synthesis is the Arturia [True Analog Emulation (TAE)](https://www.arturia.com/products/drums/spark/tae%C2%AE) technology, used in software plug-ins by the company like the [mini V](https://www.arturia.com/products/analog-classics/mini-v/overview) or the [arp-2600](https://www.arturia.com/products/analog-classics/arp2600-v/). [Line6 Pod](https://en.wikipedia.org/wiki/Pod_%28amp_modeler%29) product, for example, implements a sound engine which simulate a lot of preamps, cabinets and room acoustics.
 [Acustica-Audio](http://www.acustica-audio.com/) also uses a lot of interesting [technology](http://www.acustica-audio.com/index.php?option=com_content&view=article&id=14&Itemid=247) inside their plugins: [Nebula3](https://www.geforce.com/games-applications/pc-applications/nebula-3/description) for example, which "_is a multi-effect plug-in that is able to emulate and replicate several types of audio equipment and uses libraries which are created using a sophisticated “sampling approach” making it possible to “record” aspects of the sound of audio devices and play them back_".
-* [AudioThing](https://www.audiothing.net/);
+[AudioThing](https://www.audiothing.net/);
 
 * [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [PianoTeq](https://www.pianoteq.com/home) products, [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also the Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html). Other examples are the Roland instruments like the [Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) use the [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) modelling synthesis engine in parallel with traditional PCM synthetizer.
 
@@ -103,6 +105,7 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * [Vamp plugins](http://vamp-plugins.org/index.html) - Vamp is an audio processing plugin system for plugins that extract descriptive information from audio data;
 
 Other tools of interest:
+
 * [Ircam softwares](https://www.ircam.fr/innovations/forum/);
 * [VCV Rack](https://vcvrack.com/) modular synthetizer;
 * GNU/Linux instrument and plugin by [Zita](http://kokkinizita.linuxaudio.org/linuxaudio/index.html);
@@ -116,10 +119,17 @@ Tools for development:
 * [JUCE](https://juce.com/)
 * [Minim](http://code.compartmental.net/minim/), an audio library for the [Processing](https://processing.org/) environment;
 
-Trakers:
+Trakers and places where to find `.mod` files, listen to **chiptune** music:
 
+* Read [this interesting article](https://soundstudiesblog.com/2014/06/02/retro-city-rampage/) about the sound of "[Retro City Rampage](https://www.vblank.com/RetroCityRampage/)" by Leonard J. Paul. Very interesting also his presentation about the argument you can find [here](http://videogameaudio.com/main.htm#paxdev12), from his website;
 * [playerPro](https://sourceforge.net/projects/playerpro/) is a public domain tracker and it was used by Aphex Twin as his main compositional tool for the "Druqs" album (source [here](http://cdm.link/2017/07/aphex-twin-gave-us-peek-inside-90s-classic-heres-learned/));
 * [Renoise](http://www.renoise.com/) is a multiplatform modern tracker.
+* [OpenMPT](http://openmpt.org/);
+* [Impulse tracker](http://www.users.on.net/~jtlim/ImpulseTracker/);
+* [mod Archive](http://modarchive.org/);
+* [chipmusic.org](https://chipmusic.org/) is a place where you can find many other chiptune enthusiasts. here you can listen to music too;
+* [kohina](http://www.kohina.com/) to listen to some good chiptune music;
+* [DemoScene community](https://www.scene.org/) all kind of resources here;
 
 Assets and other videogame resources/tutorials:
 
@@ -191,6 +201,7 @@ Other books of interest:
 * [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
 
 ---
+
 * **reaktoplayer** [blog](https://reaktorplayer.wordpress.com/) and [twitter profile](https://twitter.com/reaktorplayer);
 * [Lost Chocolate Blog](http://blog.lostchocolatelab.com/)
 * [game audio podcast ep.4 - about procedural audio](http://www.gameaudiopodcast.com/?p=161)
@@ -230,7 +241,6 @@ Other books of interest:
 * [Princeton Sound Lab](http://soundlab.cs.princeton.edu/)
 * [Stanford CCRMA](https://ccrma.stanford.edu/)
 
-
 ## Music Tools / Algorithmic music tools
 
 * [Common Music](http://commonmusic.sourceforge.net/) and **Grace**;
@@ -238,7 +248,7 @@ Other books of interest:
 * [Nyquist](http://nyquist.sourceforge.net/), a tool for sound synthesis and composition;
 * [Open Music](http://repmus.ircam.fr/openmusic/home) by IRCAM;
 * [myNoise](https://mynoise.net/) by Dr. Ir. Stéphane Pigeon;
-* [Sleeping Dragon](https://www.youtube.com/watch?v=0cpqNAQPWVs)
+* [Sleeping Dragon](https://www.youtube.com/watch?v=0cpqNAQPWVs);
 
 ### Can I use [tool name] on [OS type] ?
 

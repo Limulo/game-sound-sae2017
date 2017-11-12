@@ -7,6 +7,12 @@ layout: default
 * procedural:
 resynthesis stands to procedural audio as motion capture (mocap) stands to computer graphics.
 
+
+**Space Invaders** [sound chip/board](http://www.brentradio.com/images/SpaceInvaders/si_sound.htm)
+
+## Soundscape
+* [Sounding Out! Medieval sounds](https://soundstudiesblog.com/category/medieval-sounds/)
+
 ## Programmare: la nuova alfabetizzazione
 Un [articolo](https://savestate.co.uk/2017/09/programming-games/) interessante sui giochi che prevedono (come principio fondamentale o elemento accessorio) la programmazione nel loro gamplay.
 
@@ -58,7 +64,7 @@ http://genekogan.com/works/birl/
 ### Data
 * [soundhound](https://www.soundhound.com/) previously know as **midomi**;
 * [shazam](https://en.wikipedia.org/wiki/Shazam_%28service%29), [paper](http://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf), [how it works](https://laplacian.wordpress.com/2009/01/10/how-shazam-works/);
-* [acoustic fingerprint](https://en.wikipedia.org/wiki/Acoustic_fingerprint);
+* [acoustic fingerprint](https://en.wikipedia.org/wiki/Acoustic_fingerprint) - it is used by Youtube for example to banish a particular video because of copiright infringments;
 * data transmitted with sound
     + https://github.com/robertrypula/AudioNetwork
     + https://github.com/quiet/quiet-js
@@ -70,7 +76,6 @@ http://genekogan.com/works/birl/
 * The [sonification handbook](http://sonification.de/handbook/);
 * vedi anche Cook pg 202 (suono 64)
 * [earthquake sonification](http://blogs.egu.eu/divisions/sm/2016/07/29/listening-to-earthquakes/)
-
 
 ### Automatic Mixing
 L'intelligenza artificiale può avere applicazioni anche in ambito di mixing, si veda ad esempio la sezione [papers-doc](./resources/papers_docs/automatic-mixing/) di questo repository per avere una idea più precisa. Di seguito intanto alcuni link interessanti a riguardo:

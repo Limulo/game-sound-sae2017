@@ -8,7 +8,7 @@ markers, timing (iMuse style of stuff)
 
 ## Interesting link
 
-* [Music Theory Dog]()
+* [Music Theory Dog](http://www.tobyrush.com/theorypages/)
 
 
 ---

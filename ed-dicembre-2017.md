@@ -28,7 +28,7 @@ ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, 
 TODO: RetroPie
 TODO: physics engine [Bullet Physics](http://bulletphysics.org/wordpress/) ([usato all'interno della nuova versione 3 di Godot](https://godotengine.org/article/godot-30-switches-bullet-3-physics)), [Box2D](http://box2d.org/) (usato in Angry Birds), etc...
 TODO: sistemi handheld
-TODO: sistemi VR/headset 
+TODO: sistemi VR/headset
 
 <a id="pt2"></a>
 ## Pt2:
@@ -47,6 +47,14 @@ TODO: the perfect machine doesn't make sound at all.
 TODO: Fai una analisi veloce dell'occupazione di memoria da parte di memoria da parte di un qualsiasi browser (Chrome, Firefox) per confrontarla con quella del programma piano tech.
 
 TODO: **Pholise** walking sound simulator (via PhISM). I _subevents_ nel suono dei footsteps sono importanti per identificare sesso, identià, età, etc...
+
+
+
+* Vectorial vs raster
+* una fotografia di una scultura: la puoi guardare solo da un lato.
+
+
+
 
 ### Door simulation
 
