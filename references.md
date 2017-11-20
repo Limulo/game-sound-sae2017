@@ -119,6 +119,7 @@ Tools for development:
 * Steinberg VST SDK now is going toward Linux! An interesting [article](http://cdm.link/2017/03/steinberg-brings-vst-linux-good-things/) about that.
 * [JUCE](https://juce.com/)
 * [Minim](http://code.compartmental.net/minim/), an audio library for the [Processing](https://processing.org/) environment;
+* [Tones.js](https://tonejs.github.io/) and [howlers.js](https://howlerjs.com/) for audio inside Web browser;
 
 Trakers and places where to find `.mod` files, listen to **chiptune** music:
 
@@ -196,6 +197,7 @@ Other books of interest:
 * [Csound Magazine](http://www.csounds.com/journal/articleIndex.html);
 * [Interview with David Thall, Mads Lykke and Andy Farnell](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
 * Playstation [VR worlds](http://designingsound.org/2016/12/the-sound-music-of-playstation-vr-worlds/)
+* [Audio Developer Conference](https://juce.com/adc-2017) (ADC);
 
 ---
 
@@ -267,13 +269,14 @@ Other books of interest:
 | Fmod editor | no | yes | yes |
 | AGS (Adventure Game Studio) - editor | [no](http://www.adventuregamestudio.co.uk/wiki/GNU/Linux) (must use Wine and/or [winetricks](https://github.com/Winetricks/winetricks))| no | yes |
 | AGS (Adventure Game Studio) - runtime engine | [yes](https://github.com/adventuregamestudio/ags/blob/master/debian/README.md) | no | yes |
+{: class="reference-table"}
 
 ### Can I integrate [middleware name] inside [game engine name]?
 
 | middleware/tool | Unity3D | Unreal |
 | Wwise | [yes](https://www.audiokinetic.com/library/edge/?source=Unity&id=main.html) | [yes](https://www.audiokinetic.com/library/edge/?source=UE4&id=index.html) |
 | Fmod | [yes](https://github.com/fmod/UnityIntegration) | [yes](https://github.com/fmod/ue4integration) |
-
+{: class="reference-table"}
 
 
 ---
@@ -332,8 +335,5 @@ http://www.gdcvault.com/play/1022315/The-Neuroscience-of-Game
  * non-linearità nei VG
  * approcci a variabilità in VG
 
-## Tools
-* Tones.js
-* howlers.ls
 
 {% endcomment %}

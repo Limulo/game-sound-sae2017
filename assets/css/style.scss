@@ -40,3 +40,15 @@ td {
   margin: 1em 0 2em;
   border-radius: 5px;
 }
+
+/*
+This is the style to apply to the table inside the
+Reference page.
+*/
+.reference-table table{
+	border: 1px solid #f00;
+}
+
+.reference-table table td {
+	border: 1px solid #f00;
+}
