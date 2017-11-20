@@ -90,9 +90,9 @@ We can find the same concepts in many others software and hardware products like
 * [PaulStretch](http://hypermammut.sourceforge.net/paulstretch/) by [Paul Nasca](http://www.paulnasca.com);
 * [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
 and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://soundlab.cs.princeton.edu/) there's a lot of [other interesting software tools](http://soundlab.cs.princeton.edu/software/) like the
-  * Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
-  * [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!)
-  * [SMELT](http://smelt.cs.princeton.edu/) and [SMIRK](http://smirk.cs.princeton.edu/) and many others...
+* Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
+* [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!)
+* [SMELT](http://smelt.cs.princeton.edu/) and [SMIRK](http://smirk.cs.princeton.edu/) and many others...
 * [PureData](https://puredata.info/);
 * [Max/MSP](https://cycling74.com/);
 * Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
@@ -116,6 +116,7 @@ Tools for development:
 * [RtAudio](https://www.music.mcgill.ca/~gary/rtaudio/);
 * [OpenAL](http://www.openal-soft.org/);
 * The **Synthesis ToolKit** in C++ [STK](https://ccrma.stanford.edu/software/stk/download.html) by Perry R. Cook and Gary P. Scavone. [GitHub link](https://github.com/thestk/stk);
+* Steinberg VST SDK now is going toward Linux! An interesting [article](http://cdm.link/2017/03/steinberg-brings-vst-linux-good-things/) about that.
 * [JUCE](https://juce.com/)
 * [Minim](http://code.compartmental.net/minim/), an audio library for the [Processing](https://processing.org/) environment;
 
@@ -140,6 +141,11 @@ Assets and other videogame resources/tutorials:
 * [Pixelation.org](https://pixelation.org/)
 * [Blend swap](https://www.blendswap.com)
 * [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
+
+Audio Assets
+
+* [FreeSound](https://freesound.org/)
+* [Findsound](http://www.findsounds.com/);
 
 ### Courses and MOOC
 
