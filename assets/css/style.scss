@@ -45,10 +45,7 @@ td {
 This is the style to apply to the table inside the
 Reference page.
 */
-table.reference-table {
-	border: 1px solid #f00;
-}
-
 table.reference-table td {
-	border: 1px solid #f00;
+	border: 1px solid #ccc;
+	padding:0.25em;
 }
