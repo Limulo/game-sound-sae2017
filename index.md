@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![icona](./images/game-sound-icon/icon.png){: width="25%" align="right"}
+![icona](./images/game-sound-icon/icon.png){: width="25%" align="right" padding="1.0em;"}
 
 Questa pagina raccoglie tutto il materiale che [limulo.net](http://limulo.net) ha prodotto nel preparare alcune lezioni in merito ai game engines e all'audio nei videogiochi.
 
