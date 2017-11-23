@@ -12,6 +12,8 @@ resynthesis stands to procedural audio as motion capture (mocap) stands to compu
 
 ## Soundscape
 * [Sounding Out! Medieval sounds](https://soundstudiesblog.com/category/medieval-sounds/)
+* [Z3nPunk](https://www.youtube.com/channel/UCuawtNFKzgSjcEleE-va9GA/videos) or [ASMR Geek](https://www.youtube.com/channel/UCTFHebcT2mHn4Fz1baTq4bg/playlists) Youtube channels: these guys are interested in producing in-game audio recordings.
+* [myNoise](https://mynoise.net/)
 
 ## Programmare: la nuova alfabetizzazione
 Un [articolo](https://savestate.co.uk/2017/09/programming-games/) interessante sui giochi che prevedono (come principio fondamentale o elemento accessorio) la programmazione nel loro gamplay.
