@@ -30,6 +30,52 @@ TODO: physics engine [Bullet Physics](http://bulletphysics.org/wordpress/) ([usa
 TODO: sistemi handheld
 TODO: sistemi VR/headset
 
+---
+
+
+### Introduction
+
+che cosa è un game engine
+
+ampliamento del modulo di sound for media
+perchè allora paralre di game engine (col suono ha poco a che fare)
+ecco i motivi.
+
+non parliamo nello specifico di nessun gm
+ce ne sono tatni
+sono più che documentati on-line
+in buona parte sono gratuiti per usi non commerciali
+affrontiamo il GE non tanto sul come si usa (non è il core del loro piano di studi)
+affrontiamo piuuttosto per capire cosa sia e come interfacciarsi con esso o con chi ci lavora
+
+quali i punti in comune e le differenze
+per fare questo
+
+piuttosto di utilizzare uno strumento per come ti vienee dato
+cone suluzioni clichè
+utilizziamo lo strumento spingendo oltre il preset (cit. di
+lo strumento va conosciuto
+concetti di programmazione
+
+non trattiamo Godot perchè è gratuito ma perchè è LIBERO!
+(lo capiremo meglio quando arriveremo a Puredata dentro a Godot)
+Tra un software che non mi permette di ampliarlo ed uno che invece lo fa e permette di aggiungere elementi etc... scelgliamo il secondo è uno strumento.
+
+Kim cascone min 27:30
+
+<iframe src="https://player.vimeo.com/video/17082963?byline=0&portrait=0" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+approccio di indagine sullo strumento
+non prenderlo ocme una cosa data
+
+
+approccio multidisciplinare
+come tecnici audio (vari)
+vi è richiesta una certa dimestichezza con l'ambiente di sviluppo
+
+
+
 <a id="pt2"></a>
 ## Pt2:
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![icona](./images/game-sound-icon/icon.png){: width="50%"}
+![icona](./images/game-sound-icon/icon.png){: width="25%" align="right" padding="1.0em;"}
 
 Questa pagina raccoglie tutto il materiale che [limulo.net](http://limulo.net) ha prodotto nel preparare alcune lezioni in merito ai game engines e all'audio nei videogiochi.
 
@@ -12,7 +12,9 @@ Questa pagina raccoglie tutto il materiale che [limulo.net](http://limulo.net) h
 * Go to the [Refereces](references) page;
 * Go to the [Fmod](fmod) page;
 
-Gli autori restano a disposizione all'indirizzo **info[at]limulo[dot]net** e sul sito web [limulo.net](http://www.limulo.net/), per ogni eventuale dubbio, osservazione e approfondimento!
+---
+
+Scriveteci all'indirizzo **info[at]limulo[dot]net** o visitate il sito [limulo.net](http://www.limulo.net/), per ogni eventuale dubbio, osservazione e approfondimento!
 
 ---
 

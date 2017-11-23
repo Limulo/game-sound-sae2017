@@ -90,9 +90,9 @@ We can find the same concepts in many others software and hardware products like
 * [PaulStretch](http://hypermammut.sourceforge.net/paulstretch/) by [Paul Nasca](http://www.paulnasca.com);
 * [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
 and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://soundlab.cs.princeton.edu/) there's a lot of [other interesting software tools](http://soundlab.cs.princeton.edu/software/) like the
-  * Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
-  * [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!)
-  * [SMELT](http://smelt.cs.princeton.edu/) and [SMIRK](http://smirk.cs.princeton.edu/) and many others...
+* Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
+* [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!)
+* [SMELT](http://smelt.cs.princeton.edu/) and [SMIRK](http://smirk.cs.princeton.edu/) and many others...
 * [PureData](https://puredata.info/);
 * [Max/MSP](https://cycling74.com/);
 * Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
@@ -116,8 +116,10 @@ Tools for development:
 * [RtAudio](https://www.music.mcgill.ca/~gary/rtaudio/);
 * [OpenAL](http://www.openal-soft.org/);
 * The **Synthesis ToolKit** in C++ [STK](https://ccrma.stanford.edu/software/stk/download.html) by Perry R. Cook and Gary P. Scavone. [GitHub link](https://github.com/thestk/stk);
+* Steinberg VST SDK now is going toward Linux! An interesting [article](http://cdm.link/2017/03/steinberg-brings-vst-linux-good-things/) about that.
 * [JUCE](https://juce.com/)
 * [Minim](http://code.compartmental.net/minim/), an audio library for the [Processing](https://processing.org/) environment;
+* [Tones.js](https://tonejs.github.io/) and [howlers.js](https://howlerjs.com/) for audio inside Web browser;
 
 Trakers and places where to find `.mod` files, listen to **chiptune** music:
 
@@ -140,6 +142,11 @@ Assets and other videogame resources/tutorials:
 * [Pixelation.org](https://pixelation.org/)
 * [Blend swap](https://www.blendswap.com)
 * [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
+
+Audio Assets
+
+* [FreeSound](https://freesound.org/)
+* [Findsound](http://www.findsounds.com/);
 
 ### Courses and MOOC
 
@@ -190,6 +197,7 @@ Other books of interest:
 * [Csound Magazine](http://www.csounds.com/journal/articleIndex.html);
 * [Interview with David Thall, Mads Lykke and Andy Farnell](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
 * Playstation [VR worlds](http://designingsound.org/2016/12/the-sound-music-of-playstation-vr-worlds/)
+* [Audio Developer Conference](https://juce.com/adc-2017) (ADC);
 
 ---
 
@@ -261,13 +269,14 @@ Other books of interest:
 | Fmod editor | no | yes | yes |
 | AGS (Adventure Game Studio) - editor | [no](http://www.adventuregamestudio.co.uk/wiki/GNU/Linux) (must use Wine and/or [winetricks](https://github.com/Winetricks/winetricks))| no | yes |
 | AGS (Adventure Game Studio) - runtime engine | [yes](https://github.com/adventuregamestudio/ags/blob/master/debian/README.md) | no | yes |
+{: class="reference-table"}
 
 ### Can I integrate [middleware name] inside [game engine name]?
 
 | middleware/tool | Unity3D | Unreal |
 | Wwise | [yes](https://www.audiokinetic.com/library/edge/?source=Unity&id=main.html) | [yes](https://www.audiokinetic.com/library/edge/?source=UE4&id=index.html) |
 | Fmod | [yes](https://github.com/fmod/UnityIntegration) | [yes](https://github.com/fmod/ue4integration) |
-
+{: class="reference-table"}
 
 
 ---
@@ -326,8 +335,5 @@ http://www.gdcvault.com/play/1022315/The-Neuroscience-of-Game
  * non-linearità nei VG
  * approcci a variabilità in VG
 
-## Tools
-* Tones.js
-* howlers.ls
 
 {% endcomment %}
