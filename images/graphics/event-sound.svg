@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="465.63474"
-   height="174.66158"
+   width="451.53073"
+   height="164.52727"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/collision.png"
    inkscape:export-xdpi="105.26939"
    inkscape:export-ydpi="105.26939"
@@ -29,7 +29,7 @@
        style="overflow:visible">
       <path
          id="path3772"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
          transform="matrix(-0.4,0,0,-0.4,-4,0)"
          inkscape:connector-curvature="0" />
@@ -42,34 +42,35 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="211.12803"
-     inkscape:cy="-1.5490342"
+     inkscape:zoom="1.4"
+     inkscape:cx="187.71037"
+     inkscape:cy="99.407743"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="event"
      showgrid="false"
-     fit-margin-top="5"
-     fit-margin-left="5"
-     fit-margin-bottom="5"
-     fit-margin-right="5"
-     inkscape:window-width="1440"
-     inkscape:window-height="834"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     borderlayer="false">
     <sodipodi:guide
        orientation="0,1"
-       position="203.09152,17.553258"
+       position="200.53952,12.547787"
        id="guide2998" />
     <sodipodi:guide
        orientation="0,1"
-       position="228.34533,49.878138"
+       position="225.79333,44.872667"
        id="guide3000" />
     <sodipodi:guide
        orientation="0,1"
-       position="516.15383,120.05356"
+       position="513.60183,115.04809"
        id="guide3002" />
   </sodipodi:namedview>
   <metadata
@@ -81,39 +82,165 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title></dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>limulo.net</dc:title>
+          </cc:Agent>
+        </dc:creator>
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="sound"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-159.12296,-146.74468)">
+     id="sound"
+     transform="translate(-161.67496,-151.87352)"
+     style="display:inline">
     <path
-       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="m 231.19579,271.52811 244.52509,0"
-       id="path2989"
+       id="path4196"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
        inkscape:export-xdpi="202.23297"
        inkscape:export-ydpi="202.23297" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4204"
+       y="201.35268"
+       x="463.49969"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72px;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman, '"
+         y="201.35268"
+         x="463.49969"
+         id="tspan4206"
+         sodipodi:role="line">sound</tspan></text>
     <path
-       d="m 324.28571,160.93361 c 0,51.28358 -41.57355,92.85714 -92.85714,92.85714 -51.28358,0 -92.85714,-41.57356 -92.85714,-92.85714 0,-51.28358 41.57356,-92.857141 92.85714,-92.857141 51.28359,0 92.85714,41.573561 92.85714,92.857141 z"
-       sodipodi:ry="92.85714"
-       sodipodi:rx="92.85714"
-       sodipodi:cy="160.93361"
-       sodipodi:cx="231.42857"
-       id="path2987"
-       style="fill:#ff5b60;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:8.84106159;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       sodipodi:type="arc"
-       transform="matrix(0.45243436,0,0,0.45243436,132.36861,198.71621)"
+       inkscape:connector-curvature="0"
+       id="path4208"
+       d="m 516.12451,237.65139 16.43316,18.21648"
+       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:none"
+       sodipodi:nodetypes="cc"
        inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
        inkscape:export-xdpi="202.23297"
        inkscape:export-ydpi="202.23297" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:none"
+       d="m 543.51338,226.12937 -0.1848,24.53273"
+       id="path4210"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-12.165961"
+       inkscape:transform-center-y="-22.439252"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:none"
+       d="m 571.60931,237.77865 -16.91247,17.77237"
+       id="path4212"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-7.025615"
+       inkscape:transform-center-y="-15.264369"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:none"
+       d="M 570.09474,304.8637 553.66157,286.64722"
+       id="path4214"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297" />
+    <path
+       inkscape:transform-center-y="22.439255"
+       inkscape:transform-center-x="12.165961"
+       inkscape:connector-curvature="0"
+       id="path4216"
+       d="m 542.70586,316.38572 0.18481,-24.53273"
+       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:none"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297" />
+    <path
+       inkscape:transform-center-y="15.264367"
+       inkscape:transform-center-x="7.0256098"
+       inkscape:connector-curvature="0"
+       id="path4218"
+       d="m 514.60994,304.73643 16.91247,-17.77236"
+       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:none"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297" />
+    <path
+       inkscape:transform-center-y="-5.825679"
+       inkscape:transform-center-x="-15.7614"
+       inkscape:connector-curvature="0"
+       id="path4220"
+       d="m 590.1518,271.7995 -24.52588,0.60805"
+       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:none"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:none"
+       d="m 522.1518,271.7995 -24.52588,0.60805"
+       id="path4222"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-15.7614"
+       inkscape:transform-center-y="-5.825679"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297" />
+  </g>
+  <g
+     inkscape:label="event"
+     inkscape:groupmode="layer"
+     id="event"
+     transform="translate(-161.67496,-151.87352)"
+     style="display:inline">
+    <circle
+       id="path2987"
+       style="fill:#ff5b60;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:8.84106159;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       transform="matrix(0.45243436,0,0,0.45243436,132.36861,198.71621)"
+       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
+       inkscape:export-xdpi="202.23297"
+       inkscape:export-ydpi="202.23297"
+       cx="231.42857"
+       cy="160.93361"
+       r="92.85714" />
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman'"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="159.94696"
        y="200.347"
        id="text4205"
@@ -125,105 +252,6 @@
          id="tspan4207"
          x="159.94696"
          y="200.347"
-         style="font-size:72px;font-style:italic;-inkscape-font-specification:'Tom\'s New Roman, Italic'">event</tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text4209"
-       y="201.35268"
-       x="463.49969"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman'"
-       xml:space="preserve"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297"><tspan
-         style="font-size:72px;font-style:italic;-inkscape-font-specification:'Tom\'s New Roman, Italic'"
-         y="201.35268"
-         x="463.49969"
-         id="tspan4211"
-         sodipodi:role="line">sound</tspan></text>
-    <path
-       inkscape:connector-curvature="0"
-       id="path4217"
-       d="m 516.12451,237.65139 16.43316,18.21648"
-       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
-       d="m 543.51338,226.12937 -0.1848,24.53273"
-       id="path4401"
-       inkscape:connector-curvature="0"
-       inkscape:transform-center-x="-12.165961"
-       inkscape:transform-center-y="-22.439252"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
-       d="m 571.60931,237.77865 -16.91247,17.77237"
-       id="path4403"
-       inkscape:connector-curvature="0"
-       inkscape:transform-center-x="-7.025615"
-       inkscape:transform-center-y="-15.264369"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
-       d="M 570.09474,304.8637 553.66157,286.64722"
-       id="path4405"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297" />
-    <path
-       inkscape:transform-center-y="22.439255"
-       inkscape:transform-center-x="12.165961"
-       inkscape:connector-curvature="0"
-       id="path4407"
-       d="m 542.70586,316.38572 0.18481,-24.53273"
-       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297" />
-    <path
-       inkscape:transform-center-y="15.264367"
-       inkscape:transform-center-x="7.0256098"
-       inkscape:connector-curvature="0"
-       id="path4409"
-       d="m 514.60994,304.73643 16.91247,-17.77236"
-       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297" />
-    <path
-       inkscape:transform-center-y="-5.825679"
-       inkscape:transform-center-x="-15.7614"
-       inkscape:connector-curvature="0"
-       id="path3778"
-       d="m 590.1518,271.7995 -24.52588,0.60805"
-       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297" />
-    <path
-       sodipodi:nodetypes="cc"
-       style="fill:none;stroke:#787878;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
-       d="m 522.1518,271.7995 -24.52588,0.60805"
-       id="path3780"
-       inkscape:connector-curvature="0"
-       inkscape:transform-center-x="-15.7614"
-       inkscape:transform-center-y="-5.825679"
-       inkscape:export-filename="/home/nicola/Documents/repos/game-sound-sae2017/images/graphics/event-sound.png"
-       inkscape:export-xdpi="202.23297"
-       inkscape:export-ydpi="202.23297" />
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72px;font-family:'Tom\'s New Roman';-inkscape-font-specification:'Tom\'s New Roman, '">event</tspan></text>
   </g>
 </svg>

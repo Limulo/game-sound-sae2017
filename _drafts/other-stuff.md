@@ -61,6 +61,8 @@ http://genekogan.com/works/birl/
   * data can also be used to make classifications. These results can be very useful to speed up database seraches. See softare like **Shazam** or **midomi** which use the **acoustic fingerprint**. See also the **semantic audio**.
 3. reinventing the taditional computer-human interface (WIMP paradigm: _windows_, _icons_, _menus_, _pointer_ ) -> espandere nei sensi del tatt oe dell'udito (vedi Cook pag. 202);
 
+data visualization library for JavaScript [d3](https://d3js.org/)
+
 ### Data
 * [soundhound](https://www.soundhound.com/) previously know as **midomi**;
 * [shazam](https://en.wikipedia.org/wiki/Shazam_%28service%29), [paper](http://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf), [how it works](https://laplacian.wordpress.com/2009/01/10/how-shazam-works/);
@@ -76,6 +78,7 @@ http://genekogan.com/works/birl/
 * The [sonification handbook](http://sonification.de/handbook/);
 * vedi anche Cook pg 202 (suono 64)
 * [earthquake sonification](http://blogs.egu.eu/divisions/sm/2016/07/29/listening-to-earthquakes/)
+
 
 ### Automatic Mixing
 L'intelligenza artificiale può avere applicazioni anche in ambito di mixing, si veda ad esempio la sezione [papers-doc](./resources/papers_docs/automatic-mixing/) di questo repository per avere una idea più precisa. Di seguito intanto alcuni link interessanti a riguardo:
