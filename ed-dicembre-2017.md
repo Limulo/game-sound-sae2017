@@ -28,7 +28,7 @@ ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, 
 TODO: RetroPie + RaspberryPi
 TODO: physics engine [Bullet Physics](http://bulletphysics.org/wordpress/) ([usato all'interno della nuova versione 3 di Godot](https://godotengine.org/article/godot-30-switches-bullet-3-physics)), [Box2D](http://box2d.org/) (usato in Angry Birds), etc...
 TODO: sistemi handheld
-TODO: sistemi VR/headset
+TODO: sistemi VR/headset (es. [Nokia OZO](https://ozo.nokia.com/en.html), etc...)
 
 ---
 
