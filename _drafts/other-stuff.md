@@ -93,3 +93,6 @@ Associare terminologia condivisa e comprensibile al suono. Ecco un riferimento i
 
 ### Live Coding
 * [65daysofstatic](http://65daysofstatic.com/wordpress/) hanno usato anche [Tidalcycles](https://tidalcycles.org/) per scrivere la colonna sonora de lnoto videogame **No man's Sky** ([video](https://youtu.be/_OAKUlRlNF0));
+* algorave (guardian.co.uk):
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/h340aNznHnM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
