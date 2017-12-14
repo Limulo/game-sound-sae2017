@@ -1,0 +1,289 @@
+<tw-storydata name="slides" startnode="1" creator="Twine" creator-version="2.1.3" ifid="E4CE3F10-C83F-4C1A-B5A8-0F7D3441DE50" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+tw-link {
+    color: hotpink;
+}
+
+tw-link.visited {
+  	color: yellow;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: white;
+}
+
+tw-expression[name="text-color"] + tw-hook tw-link {
+	color: inherit;
+}
+
+.quote{
+  	font-family: 'Satisfy', cursive;
+  	font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Beginning" tags="" position="72,19">=&gt;&lt;=
+#Game 
+#Engines
+[
+&lt;img src=&quot;https://media.giphy.com/media/TTy5YmVmhmWhq/giphy.gif&quot; width=&quot;100%&quot;  alt=&quot;gif&quot;&gt;
+]&lt;gif|
+{
+(click: ?gif)[(goto: &quot;What&quot;)]
+(set: $visited to 0)
+(set: $videoAndGame to 0)}</tw-passagedata><tw-passagedata pid="2" name="What" tags="" position="207,20">=&gt;&lt;=
+###Cos&#x27;è un
+###game engine?
+&lt;==&gt;
+
+Un game engine è un (colour: lime)[**software**] usato durante lo sviluppo di [[videogames-&gt;videogames]]
+
+&lt;img src=&quot;https://media.giphy.com/media/JbO9pmmnZXHjy/giphy.gif&quot; width=&quot;100%&quot;&gt;</tw-passagedata><tw-passagedata pid="3" name="videogames" tags="" position="256,153">=&gt;&lt;=
+##(text-color: &quot;white&quot;)[video]&lt;video|-(text-color: &quot;white&quot;)[game]&lt;game|
+{(click: ?video)[(goto: &quot;video&quot;)]
+(click: ?game)[(goto: &quot;game&quot;)]}
+
+&lt;==
+&lt;img src=&quot;video.png&quot; width=&quot;125%&quot;&gt;
+[...stiamo parlando di [[software-&gt;sw]]](pass_to_sw|
+{
+(if: $videoAndGame is 2)[(show: ?pass_to_sw)]
+}
+
+
+</tw-passagedata><tw-passagedata pid="4" name="game" tags="" position="285,305">=&gt;&lt;=
+##Game
+&lt;==
+[Il gioco non è un&#x27;attività propria dei nostri tempi]&lt;intro|
+=&gt;&lt;=
+(click-append: ?intro)[
+[&lt;img src=&quot;story.jpg&quot; width=&quot;100%&quot;&gt;]&lt;img|]
+(click-append: ?img)[
+[[[storia videogiochi -&gt;storia]]]&lt;storia|]
+</tw-passagedata><tw-passagedata pid="5" name="sw" tags="" position="75,152">=&gt;&lt;=
+##Software
+
+&lt;img src=&quot;https://media.giphy.com/media/SEp6Zq6ZkzUNW/giphy.gif&quot; width=&quot;100%&quot;  alt=&quot;gif&quot;&gt;
+
+&lt;==
+Perchè parlare di software? [[Cosa ha a che fare con l&#x27;audio?-&gt;skills]]
+</tw-passagedata><tw-passagedata pid="6" name="coding" tags="" position="661,20">=&gt;&lt;=
+##Coding
+&lt;==
+&lt;div class=&quot;quote&quot;&gt;The process of preparing programs for a digital computer is especially attractive, not only because it can be economically and scientifically rewarding, but also because it can be an aesthetic experience much like composing poetry or music. (D. Knuth)&lt;/div&gt;
+[(align: &quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://media.giphy.com/media/l0ExqiyMDUYc4zWyQ/giphy.gif&quot; alt=&quot;gif&quot;&gt;]
+* [[Multitasking-&gt;coding5]]
+* [[Comprensione dell&#x27;ambiente in cui si lavora-&gt;conding2]]
+* [[Linguaggio comune-&gt;coding3]]
+* [[nuova alfabetizzazione-&gt;coding4]]
+]&lt;list|
+=&gt;&lt;=
+(if: $visited &gt; 3 )[
+(replace: ?list)[
+]
+[[&lt;img src=&quot;https://media.giphy.com/media/DnVvp3yHjdhyo/giphy.gif&quot;&gt; -&gt;creativity]]]
+</tw-passagedata><tw-passagedata pid="7" name="creativity" tags="" position="1033,258">=&gt;&lt;=
+##Creatività
+
+[&lt;img src=&quot;https://media.giphy.com/media/14kdiJUblbWBXy/giphy.gif&quot; width=&quot;150%&quot;&gt;]&lt;hackDaPlanet|
+&lt;==
+(click: ?hackDaPlanet) [
+
+&lt;img src=&quot;patchwork.png&quot; width=&quot;100%&quot;&gt;
+
+Non sarebbe interessante poter creare i propri [[strumenti-&gt;tools]]?
+]</tw-passagedata><tw-passagedata pid="8" name="tools" tags="" position="1273,291">=&gt;&lt;=
+##Build your 
+##own tools
+
+
+&lt;img src=&quot;https://media.giphy.com/media/JQLSsKRk2IWaI/giphy.gif&quot; width=&quot;100%&quot;&gt;
+
+[[Kim Cascone -&gt;tools2]]
+[[65DaysOfStatic -&gt;tools3]]
+
+</tw-passagedata><tw-passagedata pid="9" name="engines" tags="" position="659,123">=&gt;&lt;=
+###Panoramica dei
+###game engines
+
+&lt;==
+###[[in principio...-&gt;old-engines]]
+###[[... e adesso-&gt;mod-engines]]
+###[[Perchè si usano?-&gt;perche]]
+###[[Quali le differenze? -&gt;diff]]
+
+[[Serve un ripassino?-&gt;storia]]
+(set: $engines to 0)</tw-passagedata><tw-passagedata pid="10" name="old-engines" tags="" position="495,263">##Engines delle origini
+
+[&lt;img src=&quot;engines-old.png&quot;&gt;]&lt;old-engines|
+(click: ?old-engines)[(goto: &quot;engines&quot;)]</tw-passagedata><tw-passagedata pid="11" name="mod-engines" tags="" position="615,256">##Engines moderni
+
+&lt;img src=&quot;engines-new.png&quot;&gt;
+
+[[ Quanti ce ne sono? -&gt;engines-new-examples]]</tw-passagedata><tw-passagedata pid="12" name="video" tags="" position="156,299">=&gt;&lt;=
+##Video
+&lt;==
+|===
+&lt;img src=&quot;arcade.jpg&quot; width=&quot;100%&quot;&gt;
+&lt;img src=&quot;tv.jpg&quot;&gt;
+=|
+&lt;img src=&quot;pc.png&quot;&gt;
+&lt;==
+{(set: $game to (history:) contains &quot;game&quot;)
+(set: $videoAndGame to it + 1)
+(if: $videoAndGame is 2)[[[quindi...-&gt;videogames]]]
+(else-if: $game is false)[[[game-&gt;game]]]}
+
+</tw-passagedata><tw-passagedata pid="13" name="coding5" tags="" position="1107,118">&lt;==
+##multitasking
+(set: $visited to it +1)
+
+&lt;img src=&quot;https://media.giphy.com/media/Nx85vtTY70T3W/giphy.gif&quot; width=&quot;100%&quot;&gt;
+
+[[&lt; -&gt;coding]]</tw-passagedata><tw-passagedata pid="14" name="conding2" tags="" position="997,10">&lt;==
+(set: $visited to it +1)
+
+&lt;img src=&quot;https://media.giphy.com/media/ReImZejkBnqYU/giphy.gif&quot; width=100%&quot;&gt;
+[[&lt; -&gt;coding]]</tw-passagedata><tw-passagedata pid="15" name="coding3" tags="" position="999,113">=&gt;&lt;=
+##Sviluppare un
+##linguaggio 
+##comune
+&lt;==
+&lt;img src=&quot;https://media.giphy.com/media/WkyGxDWSQwQvK/giphy.gif&quot; width=&quot;100%&quot;&gt;
+{
+(set: $visited to it +1)
+[[&lt; -&gt;coding]]
+}</tw-passagedata><tw-passagedata pid="16" name="coding4" tags="" position="1107,10">&lt;==
+##una nuova 
+##alfabetizzazione
+(set: $visited to it +1)
+
+&lt;img src=&quot;https://media.giphy.com/media/xTiTnAyPaVtNoogdNK/giphy.gif&quot; width=&quot;100%&quot;&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/TK1mBqKvIyU#t=42s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+[[&lt; -&gt;coding]]</tw-passagedata><tw-passagedata pid="17" name="tools3" tags="" position="1349,435">=&gt;&lt;=
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/_OAKUlRlNF0&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="18" name="tools2" tags="" position="1239,436">=&gt;&lt;=
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/WJKZvulowf0&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="19" name="storia" tags="" position="264,431">=&gt;&lt;=
+##Storia dei
+##videogiochi
+
+&lt;img src=&quot;&quot; width=&quot;100%&quot;&gt;
+
+&lt;==
+[[Arcades-&gt;arcade]]
+[[Consoles -&gt;consoles]]
+[[PCs-&gt;pc]]
+[[mobile -&gt;mobile]]
+[[VR/AR-&gt;vr]]
+[[generi-&gt;generi]]
+
+{
+(set: $video to (history:) contains &quot;video&quot;)
+(set: $game to (history:) contains &quot;game&quot;)
+(if: $videoAndGame is 2)[[[quindi...-&gt;videogames]]]
+(else:)[(if: $video is false)[---
+[[video-&gt;video]]]
+(else-if: $game is false)[[[game-&gt;game]]]]
+}</tw-passagedata><tw-passagedata pid="20" name="skills" tags="" position="443,35">=&gt;&lt;=
+###Cosa deve 
+###sapere un 
+###sound designer
+
+&lt;img src=&quot;https://media.giphy.com/media/NFA61GS9qKZ68/giphy.gif&quot;&gt;
+{
+(if: $engines is 4)[(set: $style to (text-style: &quot;strike&quot;))]
+(else:)[(set: $style to (text-style: &quot;none&quot;))]
+}
+&lt;==
+$style[[[Parliamo di engines-&gt;engines]]]
+[[Parliamo di programmazione-&gt;coding]]</tw-passagedata><tw-passagedata pid="21" name="diff" tags="" position="727,261">=&gt;&lt;=
+###Cosa c&#x27;è 
+###di nuovo?
+&lt;==
+#####GUI
+&lt;img src=&quot;cryengine.jpg&quot; width=&quot;1024&quot;&gt;
+
+#####[[middleware-&gt;middlewares]]</tw-passagedata><tw-passagedata pid="22" name="arcade" tags="" position="161,574">##Arcades (click: &quot;Arcades&quot;)[(goto: &quot;storia&quot;)]
+
+&#x27;&#x27;L&#x27;ambiente&#x27;&#x27;
+=&gt;&lt;=
+&lt;img src=&quot;arcades.jpg&quot; width=&quot;100%&quot;&gt;
+&lt;==
+[&#x27;&#x27;I giochi&#x27;&#x27;]&lt;go_to_timeline|
+(click: ?go_to_timeline)[(goto: &quot;timeline&quot;)]</tw-passagedata><tw-passagedata pid="23" name="consoles" tags="" position="281,570">##Consoles (click: &quot;Consoles&quot;)[(goto: &quot;storia&quot;)]
+
+&#x27;&#x27;anni &#x27;70 - oggi&#x27;&#x27;
+&lt;img src=&quot;console-story.jpg&quot; width=&quot;95%&quot;&gt;
+</tw-passagedata><tw-passagedata pid="24" name="pc" tags="" position="399,573">##PC (click: &quot;PC&quot;)[(goto: &quot;storia&quot;)]
+&#x27;&#x27;anni &#x27;70 - oggi&#x27;&#x27;
+
+&lt;img src=&quot;pc-story.png&quot; width=&quot;100%&quot;&gt;</tw-passagedata><tw-passagedata pid="25" name="mobile" tags="" position="514,573">##Mobile Games (click: &quot;Mobile Games&quot;)[(goto: &quot;storia&quot;)]
+&lt;img src=&quot;angrybirds.jpg&quot; width=&quot;100%&quot;&gt;
+</tw-passagedata><tw-passagedata pid="26" name="vr" tags="" position="623,573">##VR / AR (click: &quot;VR / AR&quot;)[(goto: &quot;storia&quot;)]
+=&gt;&lt;=
+&lt;img src=&quot;https://media.giphy.com/media/XQlf1wQfbmpiw/giphy.gif&quot;&gt;
+&lt;img src=&quot;oculus.jpg&quot; width=&quot;75%&quot;&gt;
+[[oltre il gioco-&gt;creativity]]</tw-passagedata><tw-passagedata pid="27" name="timeline" tags="" position="162,696">##anni &#x27;60 - anni &#x27;90
+=&gt;&lt;=
+&lt;img src=&quot;arcade-story.png&quot; height=&quot;600px&quot;&gt;
+
+[[&lt; -&gt;storia]]</tw-passagedata><tw-passagedata pid="28" name="generi" tags="" position="734,576">&lt;img src=&quot;collapse.png&quot; width=&quot;125%&quot;&gt;
+Evoluzione dei [[generi-&gt;generi2]]</tw-passagedata><tw-passagedata pid="29" name="generi2" tags="" position="740,695">[&lt;img src=&quot;generi.png&quot; width=&quot;100%&quot;&gt;]&lt;generi|
+(click: ?generi)[(goto: &quot;storia&quot;) ]
+(set: $videoAndGame to it +1)
+</tw-passagedata><tw-passagedata pid="30" name="engines-new-examples" tags="" position="609,388">[&lt;img src=&quot;engines-examples.png&quot;&gt;]&lt;new-engines|
+(click: ?new-engines)[(goto: &quot;engines&quot;)]</tw-passagedata><tw-passagedata pid="31" name="perche" tags="" position="845,262">##### Integrazione di diverse componenti
+&lt;img src=&quot;integration.png&quot; width= &quot;100%&quot;&gt;
+
+##### Velocizzazione della fase di sviluppo
+[[&lt; -&gt;engines]]</tw-passagedata><tw-passagedata pid="32" name="middlewares" tags="" position="771,392">### Cosa sono?
+
+//Plugins// per il game engine che ne potenziano le funzionalità
+
+&#x27;&#x27;Esempi?&#x27;&#x27;
+
+[[Havok-&gt;havok-mw]]
+[[Euphoria-&gt;euphoria-mw]]
+[[FMod-&gt;fmod-mw]]
+[[Wwise-&gt;wwise-mw]]
+
+[[[Ritornando a noi...-&gt;skills]]](ritornando|
+(if: $engines is 4)[(show: ?ritornando)]</tw-passagedata><tw-passagedata pid="33" name="havok-mw" tags="" position="910,735">=&gt;&lt;=
+##[[Havok-&gt;middlewares]](set: $engines to it + 1)
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/cIcg5eotZlY&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="34" name="euphoria-mw" tags="" position="919,617">=&gt;&lt;=
+##[[Euphoria-&gt;middlewares]](set: $engines to it + 1)
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/HauN98naZ9U&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="35" name="fmod-mw" tags="" position="924,502">=&gt;&lt;=
+##[[FMod-&gt;middlewares]](set: $engines to it + 1)
+&lt;==
+&lt;img src=&quot;fmod-mw.png&quot; width=&quot;100%&quot;&gt;</tw-passagedata><tw-passagedata pid="36" name="wwise-mw" tags="" position="925,389">=&gt;&lt;=
+##[[Wwise-&gt;middlewares]](set: $engines to it + 1)
+&lt;==
+&lt;img src=&quot;wwise-mw.png&quot; width=&quot;100%&quot;&gt;</tw-passagedata></tw-storydata>
+

@@ -15,4 +15,4 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 * Go to the [Part 2](#pt2);
 * Go to the [Part 3](#pt3);
 
-* Go to [twine](https://github.com/Limulo/slides_GEGST_dec2017/blob/master/twine/slides.html)
+* Go to [twine](./resources/twine/slides.html)
