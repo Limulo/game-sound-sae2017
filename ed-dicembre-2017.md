@@ -104,7 +104,7 @@ TODO: **Pholise** walking sound simulator (via PhISM). I _subevents_ nel suono d
 
 ### Door simulation
 
-(vedi Cook "_Real Sound Synthesis for Interactive Applications_" pg. 174)
+(vedi Cook "_Real Sound Synthesis for Interactive Applications_" pg. 174 e Farnell "_Designing Sounds_" pg. 395)
 
 Intuitivamente sappiamo che se spingiamo o trasciniamo un oggetto sopra ad un tappeto, facciamo esperienza di una forza che resiste al movimento che vogliamo indurre all'oggetto.
 
@@ -146,11 +146,11 @@ Nel fenomeno "porta che stride" il meccanismo è un po' complesso rispetto a qua
 
 ![immagine modello massa con molla](./images/2017-12/pt3/stick-slip/forces-graph-2.png)
 
-Nell'immagine è indicata **F** la forza che, rivolta verso destra, stiamo esercitando sull'oggetto. La forza che esercitiamo non è tuttavia applicata direttamente all'oggetto _mover_ ma piuttosto ad una molla coneessa ad esso.
+Nell'immagine è indicata **F** la forza, rivolta verso destra, che stiamo esercitando sull'oggetto. La forza che esercitiamo non è tuttavia applicata direttamente all'oggetto _mover_ ma piuttosto ad una molla connessa ad esso.
 
-La molla serve per modellare una sorta di _capacitanza meccanica_ **C**. Una volta che la forza che agisce sul _mover_ (data dalla somma di _F_ e _Fe_, la forza elastica della molla) eguaglia la **Fa** (forza di attrito statico), il _mover_ accelerata nella direzione di _F_, molto più velocemente di quanto avrebbe fatto solo grazie a _F_.
+La molla serve per modellare una sorta di _capacitanza meccanica_ **C**. Una volta che la forza che agisce sul _mover_ (data dalla somma di _F_ e _Fe_, la forza elastica della molla) eguaglia la **Fa** (forza di attrito statico), il _mover_ accelera nella direzione di _F_, molto più velocemente di quanto avrebbe fatto solo grazie a _F_.
 
-Questo fa sì che la tensione della molla diminuisca gradualmente. La frizione cinetica ora, minore in modulo, rispetto alla statica, agisce sul _mover_  rallentandolo fino allo stop. A quel punto il _mover_ ritorna ad essere "incollato" con la superficie d'appoggio fino ache non si sia accumulato (nella molla) forza sufficiente per staccarlo di nuovo.
+Questo fa sì che la tensione della molla diminuisca gradualmente. La frizione cinetica ora, minore in modulo, rispetto alla statica, agisce sul _mover_  rallentandolo fino allo stop. A quel punto il _mover_ ritorna ad essere "incollato" con la superficie d'appoggio fino a che non si sia accumulata (nella molla) forza sufficiente per staccarlo di nuovo.
 
 Il movimento del _mover_ è quindi riassunto nel grafico sottostante dove si vede bene come il suo spostamento **D** avvenga a steps se comparato con lo spostamento costante di chi sta trainando l'oggetto.
 
@@ -160,7 +160,7 @@ Più lungo il tempo che intercorre tra step successivi, maggiore la forza che si
 
 Gli impulsi sono generati quando il _mover_ si slancia in avanti e in pratica questi picchi tendono a comparire in piccoli cluster dove ad un movimento ampio ne seguono altri più piccoli.
 
-La complessità del movimento con attrito stick/slip aumenta perchè il coefficinete dell'attrito dinamico dipende dalla velocità ma non con una relazione non semplice. A velocità basse esso aumenta con la velocità fino ad un massimo; oltre questo massimo comincia a decrescere mano a mano che la velocità comtinua a crescere.
+La complessità del movimento con attrito stick/slip aumenta perchè il coefficinete dell'attrito dinamico dipende dalla velocità ma con una relazione non semplice. A velocità basse esso aumenta con la velocità fino ad un massimo; oltre questo massimo comincia a decrescere mano a mano che la velocità continua a crescere.
 
 ![time velocity graph](./images/2017-12/pt3/stick-slip/time-vel-graph.png)
 

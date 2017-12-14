@@ -257,6 +257,7 @@ Other books of interest:
 * [Open Music](http://repmus.ircam.fr/openmusic/home) by IRCAM;
 * [myNoise](https://mynoise.net/) by Dr. Ir. Stéphane Pigeon;
 * [Sleeping Dragon](https://www.youtube.com/watch?v=0cpqNAQPWVs);
+* [DIN: DIN Is Noise](https://dinisnoise.org/)
 
 ### Can I use [tool name] on [OS type] ?
 
