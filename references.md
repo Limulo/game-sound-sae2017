@@ -142,6 +142,7 @@ Assets and other videogame resources/tutorials:
 * [Pixelation.org](https://pixelation.org/)
 * [Blend swap](https://www.blendswap.com)
 * [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
+* [sketchfab](https://sketchfab.com), a place where to find free downloadable 3D models;
 
 Audio Assets
 

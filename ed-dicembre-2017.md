@@ -25,10 +25,10 @@ ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, 
 
 ![mathematical-methods-in-linguistics](./images/2017-12/pt1/book-covers/mathematical-methods-in-linguistics.jpg
 
-TODO: RetroPie
+TODO: RetroPie + RaspberryPi
 TODO: physics engine [Bullet Physics](http://bulletphysics.org/wordpress/) ([usato all'interno della nuova versione 3 di Godot](https://godotengine.org/article/godot-30-switches-bullet-3-physics)), [Box2D](http://box2d.org/) (usato in Angry Birds), etc...
 TODO: sistemi handheld
-TODO: sistemi VR/headset
+TODO: sistemi VR/headset (es. [Nokia OZO](https://ozo.nokia.com/en.html), etc...)
 
 ---
 
@@ -94,12 +94,10 @@ TODO: Fai una analisi veloce dell'occupazione di memoria da parte di memoria da 
 
 TODO: **Pholise** walking sound simulator (via PhISM). I _subevents_ nel suono dei footsteps sono importanti per identificare sesso, identià, età, etc...
 
-
-
 * Vectorial vs raster
 * una fotografia di una scultura: la puoi guardare solo da un lato.
 
-
+TODO: parla di [Aeolus](http://users.skynet.be/solaris/linuxaudio/aeolus.html) + [hexter](http://dssi.sourceforge.net/hexter.html)
 
 
 ### Door simulation
