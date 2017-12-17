@@ -12,5 +12,5 @@ Presto disponibili le slides delle lezioni!
 Di seguito parte dei contenuti trattati durante le lezioni:
 
 * Go to the [Part 1](./resources/twine/slides.html);
-* Go to the [Part 2](./resources/indexa.html);
+* Go to the [Part 2](#pt2);
 * Go to the [Part 3](#pt3);
