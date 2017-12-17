@@ -260,6 +260,7 @@ Other books of interest:
 * [myNoise](https://mynoise.net/) by Dr. Ir. Stéphane Pigeon;
 * [Sleeping Dragon](https://www.youtube.com/watch?v=0cpqNAQPWVs);
 * [DIN: DIN Is Noise](https://dinisnoise.org/)
+* Impulse responses [openairlib](http://www.openairlib.net/), [room-impulse-response-data-set](http://www.isophonics.net/content/room-impulse-response-data-set);
 
 ### Can I use [tool name] on [OS type] ?
 

@@ -699,7 +699,7 @@ L'audio veniva generato in tempo reale e rispecchiava linearmente le azioni del 
 
 ---
 
-#### Case studey: il SID
+#### Case study: il SID
 
 Il SID (Sound Interface Device) era il chip sonoro utilizzato dal Vic20, C64 e C128, sviluppato da _Robert Yannes_ di _MOS technology_ il quale, oltre al background tecnico, ne sapeva molto anche di musica.
 

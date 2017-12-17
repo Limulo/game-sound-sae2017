@@ -457,21 +457,39 @@ alcuni esempi di codifice dei file audio potrebbero essere:
 
 ### Suono come modello event based/data driven
 
+Vincere la ripetitività è sinonimo di ricerca di realismo in ambito sonoro (ricordiamo che in natura non esistono suoni ripetitivi!). Nel mondo videoludico, costretto costantemente dalla ristrettezza di risorse, la soluzione adottata è quella di adottare il paradigma **data driven**.
+
 ![data driven](./images/graphics/data-driven.png){: width="40%"}
 
-A ben vedere nell'ultima parte della sua storia, come analizzato fino ad ora, il suono nel videogioco si presenta come un modello guidato dai dati (**data driven model**).
+Questo modello _guidato dai dati_ in sostanza - l'abbiamo visto ampiamente la scorsa lezione - è costituito da un enorme database che racchiude al suo interno una moltitudine di file audio preprodotti.
 
-In altri termini, è costituito da una moltitudine di file audio raccolti in un database e che vengono messi in riproduzione all'occorrenza, in seguito al verificarsi di particolari eventi (**event based**).
+Questi audio files vengono messi in riproduzione all'occorrenza, in seguito al verificarsi di particolari eventi (**event based**).
 
 ![event --> snd](./images/graphics/event-sound.png){: width="60%"}
 
-Ai sample che vengono riprodotti si possono certo applicare delle **modificazioni in tempo reale** come abbiamo già detto (attenuazione dovuta alla distanza, combinazioni e layering, random e granularità).
+Per garantire maggiore variabilità, i sample che vengono riprodotti si applicano delle **modificazioni in tempo reale** come abbiamo già detto (attenuazione dovuta alla distanza, combinazioni e layering, random e granularità).
 
-A ben vedere però questo sistema basato sui sample audio sembra in contraddizione netta con il dominio visivo, caratterizzato invece da un comportamento **continuo** e guidato da uno stream di parametri piuttosto che da eventi **discreti**.
+---
+
+La storia del vidogioco ci insegna che l'audio ha sempre rivestito un ruolo fondamentale e che per moltissimi anni è stato il **motore trainante** principale per lo **sviluppo tecnologico** del mezzo.
+
+Ne è la prova il fatto che in molti advertise dell'epoca (di seguito una pubblicità del gioco _Jaws_ dell'Atari, siamo nel 1975) il suono venisse esplicitamente menzionato e se ne vantassero le caratteristiche di realismo!
+
+![Jaws](immagine jaws)
+
+Un altro esempio l'abbiamo visto esaminando il sintetizzatore audio a 5 voci del NES.
+Questo ruolo di preminenza dell'audio è continuato a lungo culminando nel periodo d'oro delle schede audio come la fortunata _Sound Blaster_ e _Roland MT-32_ fino all'avvento del supporto CD, approssimativamente nella metà degli anni '90, periodi in cui il sample di alta qualità (44100@16bit) faceva il suo ingresso.
 
 ### Grafica per la ricerca del realismo
 
-In un gioco che si basi pesantemente sull'aspetto grafico, l'immagine mostrata a schermo è fondamentale per restituire la senzazione di **realismo**. Interessante notare comunque che l'immagine che vediamo quando giochiamo **non esiste** prima del run-time!
+D'altro canto, per quanto concerne l'aspetto grafico si può evidenziare un processo evolutivo analogo che ha portato il mercato a preferire via via sempre più la grafica tridimensionale a quella storica bidimensionale.
+
+Possiamo dire che il termine "_realismo_", se nel mondo del suono si traduce in _sample_, nella sfera della grafica esso significa _tridimensionale_ (soprattutto in certi generi)!
+
+Premesso che il realismo non è una condizione indispensabile, anzi, ci sono videogiochi (basti pensare a PacMan, o a diverse produzioni indipendenti come Fez, Limbo, etc...) che tutt'altro ci propongono rispetto ad una esperienza "_realistica_", ce ne occupiamo perchè la ricerca del realismo in ambito grafico è stato anc'essa preponderantein abito videogames.
+{: class="dashed" }
+
+In un gioco che si basi pesantemente sull'aspetto grafico, l'immagine mostrata a schermo è fondamentale per restituire la senzazione di **realismo**.
 
 Consideriamo un semplice modello 3D costituito da 4 facce triangolari: occorrono 3 (OpenGL ne usa 4 in realtà) valori numerici corrispondenti ai 3 assi cartesiani per identificare la posizione di ciascuno dei suoi vertici nello spazio tridimensionale.
 
@@ -486,8 +504,6 @@ Moltiplichiamo il tutto per la moltitudine di modelli simultaneamente presenti a
 L'interità dei modelli e delle loro mesh non sono fondamentali soltanto per ottenere una immagine 2D in uscita ma anche per creare la cosìdetta **word geometry** per il calcolo delle **collisioni**, indispensabili per prevedere e computare i comportamenti fisici.
 
 Tutto questo è appannaggio del **physics engine** che non si occupa solo di collisioni ma valuta l'interà fisicità del mondo virtuale in cui siamo immersi: masse, densità, velocità e accelerazioni, forze, torsioni.
-
-A tutto questo si aggiunge la componente di **intelligenza artificiale** che ha il compito di simulare comportamenti "_intelligenti_" per tutti quegli attori che, nel gioco, non sono comandati da un player umano.
 
 Ebbene tutto questo viene calcolato di continuo, sempre in funzione dei dati di movimento ottenuti dalle azioni del giocatore, 60 se non più volte al secondo.
 
@@ -508,138 +524,46 @@ Quando la grafica 3D cominciava ad affermarsi nel mondo del videogioco (siamo ag
 
 Eppure negli stessi anni al cinema si poteva assistere alla proiezione di [Toy Story](https://en.wikipedia.org/wiki/Toy_Story), il primo film di animazione interamente realizzato in computer grafica. Nel film i modelli sono molto più definiti dei loro corrispettivi in ambito videogames, ma questo solo perchè i numerosi calcoli richiesti per renderizzare ciascuno dei frame erano svolti da grandi "_render farm_", niente di comparabile ad una contemporanea console per uso domestico. Inoltre il risultato di un rendering spesso era pronto dopo diverso tempo che i dati erano stati introdotti.
 
+![toy story](immagine toy story)
+
 Sotto questa luce, il _low poly_ dei primi videogiochi 3D diventa una prova evidente che la grafica dovesse (e deve) necessariamente essere calcolata in tempo reale!
+
+Interessante notare dunque che l'immagine che vediamo quando giochiamo **non esiste** prima del run-time! Quanto si vede è frutto di un calcolo basato su parametri ricavati dalle azione del giocatore.
 
 ### Suono come processo
 
-Il sample audio è una registrazione, e come tale si tratta di un qualche cosa fissato nel tempo: una registrazione cattura la perturbazione della densità dell'aria, l'effetto di un movimento nello spazio in un particolare istante ma non ci dice nulla in merito al comportamento.
+Ci potremmo allora chiedere quindi che significato ha la parola **realismo** in ambito audio?
 
-In questo senso l'audio fruito attraverso i campioni resta un procedimento **statico**, come un **interruttore** che può essere solamente acceso o spento, una **fotografia** fissa ed immutabile anzichè vivida e dinamica.
+Il sample audio invece è una registrazione, e come tale si tratta di un qualche cosa fissato nel tempo e immutabile: una registrazione cattura la perturbazione della densità dell'aria, l'effetto di un movimento nello spazio in un particolare istante ma non ci dice nulla in merito al comportamento.
 
-Ci potremmo chiedere quindi che significato ha la parola **realismo**? Premesso che il realismo non è una condizione indispensabile, anzi, ci sono videogiochi (basti pensare a PacMan, o a diverse produzioni indipendenti come Fez, Limbo, etc...) che tutt'altro ci propongono rispetto ad una esperienza "_realistica_", ce ne occupiamo perchè la ricerca del realismo sembra essere stata forse "_IL_" motore principale per lo sviluppo tecnologico nell'abito dei videogames.
+In questo senso l'audio fruito attraverso i campioni resta un procedimento **statico**, si riduce alla pressione del tasto play, una **fotografia** fissa ed immutabile anzichè vivida e dinamica.
 
-Basti pensare che si è passati al massiccio uso della grafica tridimensionale non appena le tecnologie lo hanno permesso (questo vale anche per il mondo dell'**animazione**). Si ricerca sempre una maggiore definizione dei modelli. Ci si avvale del supporto di potenti motori di fisica per simulare fedelmente i comportamenti quali collisioni, esplosioni, attrazione gravitazionale, spinta del vento, forze etc...
+![fotografie modificate](fotografie)
 
-L'intelligenza artificiale contribuisce a rendere sempre più credibili i movimenti e le azioni di attori e creature npc e la lista potrebbe continuare a lungo.
-
-In abito audio invece quello che si fa, in pratica, è "_premere il tasto play_" quando serve, il che sembra un po' **riduttivo**, soprattutto per il fatto che:
+Vero che alla registrazione possono essere applicate variazioni in tempo reale ma questo non ha nulla a che spartire con quanto avviene in ambito grafico il che fa capire quanto il termine "_realismo_ sonoro" suoni alquanto **riduttivo**, soprattutto contando che anche il suono ha la sua importanza:
 
 * il suono riveste un ruolo importante di guida emotiva all'interno del gioco;
 * l'audio è una parte importante anche per la narrazione;
 * contribuisce alla percezione di _verosimiglianza_ (vedi più avanti);
 
----
+E' possibile descrivere adeguatamente una scultura con una fotografia?
 
-### Non è sempre stato così
-
-Un approccio _event based/data driven_ in somma rende il suono malamente accoppiato con il motore di gioco sottostante, incoesivo con l'esperienza complessiva. Eppure non è sempre stato così.
-
-All'inizio della storia dei videogame, delle console e dei computer, era l'**audio** la motivazione principale che ha **guidato lo sviluppo tecnologico**.
-
-L'audio veniva generato in tempo reale e rispecchiava linearmente le azioni del giocatore e le reazioni dell'engine. L'audio veniva sintetizzato in tempo reale. Questa tendenza si è interrotta indicativamente attorno alla seconda metà degli anni '90, momento storico dove si può collocare la comparsa sul mercato dei prini CD e che vede il diffondersi dell'audio campionato ad alta qualità (44100@16bit).
-
----
-
-#### Case studey: il SID
-
-Il SID (Sound Interface Device) era il chip sonoro utilizzato dal Vic20, C64 e C128, sviluppato da _Robert Yannes_ di _MOS technology_ il quale, oltre al background tecnico, ne sapeva molto anche di musica.
-
-![sid](./images/2017-09/pt3/sid.jpg){: width="60%"}
-
-Il suo intento era sviluppare un chip di sintesi sottrattiva totalemente differente dai sistemi sonori presenti nei computer dell'epoca e il risultato fu qualcosa di innovativo.
-
-Il chip era programmabile in BASIC o in linguaggio macchina e possedeva molte caratteristiche interessanti, le principali elencate qui di seguito:
-
-* 3 generatori di suono (voci);
-* 4 diverse forme d'onda disponibili (sawtooth, triangle, rectangle w/ pulse width modulation, noise);
-* 3 modulatori d'ampiezza (adsr);
-* 1 controllo di Master volume (in 16 steps);
-
-Erano possibili **effetti** come la _ring modulation_ o l'[_hard sync_](https://en.wikipedia.org/wiki/Oscillator_sync#Hard_Sync) tra gli oscillatori.
-
-Inoltre il SID disponeva di un **filtro programmabile** (low pass, bandpass, high pass), con frequenza di taglio e risonanza selezionabile. Il funzionamento del filtro era possibile grazie alla presenza di alcuni componenti analogici che completavano il circuito: 2 capacitori. Questa caratteristica rendeva il suono del SID unico e difficilmente replicabile fedelmente, anche al giorno d'oggi.
-
-Ecco qui di seguito un piccolo programma d'esempio:
-
-![sid screenshot](./images/2017-09/pt3/sid-screenshot.jpg)
-
-<a id="c64-sound">
-<audio controls style="width:100%">
-  <source src="./sounds/c64-sound.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-Da ricordare che, usando l'istruzione `poke` del linguaggio di programmazione BASIC è possibile accedere e scrivere sui singoli registri interni del SID specificando sia l'indirizzo, sia il valore numerico da memorizzarvi.
-
-Il programma usa la prima voce impostata come _onda triangolare_ per riprodurre una nota A440 di durata pari a circa 500 millisecondi. Le istruzioni usate sono:
-
-1. indirizzamento del SID `SI=54272`;
-2. impostazione del volume master (registo 4: `L=SI+24` con valori da 0 a 15, volume basso/alto);
-3. impostazione dell'envelope con 4 bit per ciascuna fase = 2 byte per la memorizzazione (registri 5 e 6: `A=SI+5` e `H=SI+6`, rispettivamente per attack/decay e sustain/release);
-4. impostazione della frequenza (registri 0 e 1: `FL=SI` e `FH=SI+1` )
-5. selezione dell'onda (registro 4). Alcuni valori possibili sono:
-  * tringolare: 17;
-  * dente di sega: 33;
-  * rettangolare: 65 --> parametro addizionale "_duty cycle_" (registri 2 e 3 `TL=SI+2`, `TL=SI+3`);
-  * noise: 129;
-6. ciclo _for_ per la durata della nota.
-
-#### Rob Hubbard
-
-Il SID è uno chip che dispone di sole 3 voci ma non è detto che nelle mani di capaci musicisti programmatori non possa ricreare la polifonia e la ricchezza timbrica di un ensamble molto più numeroso
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/pgPEaI0GHBI?list=PLXhLeiiveJmNhFf5ShVwwXspGfgt-ww8c" frameborder="0" allowfullscreen></iframe>
-
-Si tratta della in game music del gioco "Commando" uscito per C64 nel 1985. Ecco le tracce separate per apprezzare meglio la ricchezza di variazioni, il timing e intuire l'ingegnosità dei programmi scritti da Hubbard:
-
-<a id="hubbard-1">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice1.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-<a id="hubbard-2">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice2.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-<a id="hubbard-3">
-<audio controls style="width:100%">
-  <source src="./resources/music/Rob_Hubbard/commando_track1_voice3.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio>
-<a/>
-
-Anche dalle immagini che mostrano la forma d'onda della parte iniziale della prima voce si può comprendere la complessità della lavorazione:
-
-![waveform 1](./images/2017-09/pt3/waveform1.jpg)
-
-![waveform 2](./images/2017-09/pt3/waveform2.jpg)
-
-Immagini e tracce sonore sono state estrapolate utilizzando il player [SIDplay2](http://sidplay2.sourceforge.net/) e [Audacity](http://www.audacityteam.org/).<br/><br/>mentre la musica di Hubbard proviene dal database [High Voltage SID Collection](http://hvsc.c64.org/). Il programma è stato scritto e eseguito utilizzando [VICE](http://vice-emu.sourceforge.net/index.html#download), importante emulatore commodore. Qui altre interessanti informazioni sul SID: [datasheet](http://www.waitingforfriday.com/?p=661) e [wiki](https://www.c64-wiki.com/wiki/SID).
-{: class="dashed"}
-
-Il lavoro di Hubbard inoltre è un mirabile esempio di come spesso si riescano ad ottenere risultati ammirevoli partendo da **risorse limitate** o necessità stringenti.
-{: class="note"}
----
-
-Attenzione, questo **non significa che in passato i sample non venissero utilizzati**; Nintendo, SEGA e ancora prima nelle coin-op, dove possibile, si inserivano sistemi DAC in grado di riprodurre, seppure non con la stessa qualità CD, campioni e sample pre-registrati, soprattutto per la voce. La ricerca del "_realismo_" tuttavia ha infine soppiantato i sistemi di sintesi tradizionale.
+![david](scultura del david)
 
 ### Niente trucchi da quattro soldi!
 
+In generale, anche per una questione di risorse, l'audio del videogioco è stato per lungo tempo un audio sintetizzato in tempo reale. Un audio che rispecchiava linearmente le azioni del giocatore e le reazioni dell'engine.
+
 Sotto questa luce, i "_trucchi_" descritti poco fa, usati normalmente per ridurre o mascherare la ripetitività, sono in realtà dei rimedi temporanei.
+
+Attenzione, questo **non significa che in passato i sample non venissero utilizzati**; Nintendo, SEGA e ancora prima nelle coin-op, dove possibile, si inserivano sistemi DAC in grado di riprodurre, seppure non con la stessa qualità CD, campioni e sample pre-registrati, soprattutto per la voce.
+{: class="dashed" }
 
 Un modo alternativo, mutuato dalla storia del videogioco, è quello di pensare il sonoro come **sintetico**: in questo modo due suoni associati allo stesso evento non suonerebbero mai esattamente allo stesso modo.
 
-Si tratta in fondo di una caratteristica peculiare della sintesi sottrattica, la quale fa uso del rumore come forma d'onda base.
+Si tratta in fondo di una caratteristica peculiare della sintesi sottrattica, la quale fa uso del rumore come forma d'onda base. Anche se le differenze potrebbero essere estremamente sottili, il nostro **cervello** ha la capacità particolare di riconoscere queste sorgenti come "_vive_".
 
-Anche se le differenze potrebbero essere estremamente sottili, il nostro **cervello** ha la capacità particolare di riconoscere queste sorgenti come "_vive_".
-
-Inoltre, un approccio _data driven_ come questo ha i suoi svantaggi vediamo un paio di esempi:
+Inoltre, l'approccio _data driven_ ha i suoi svantaggi vediamo un paio di esempi:
 
 #### La porta
 
@@ -681,6 +605,7 @@ ad esempio:
 * Anche l'italiana [Acustica-Audio](http://www.acustica-audio.com/) usa molta [tecnologia](http://www.acustica-audio.com/index.php?option=com_content&view=article&id=14&Itemid=247) interessante all'interno dei loro plugin come il [Nebula3](https://www.geforce.com/games-applications/pc-applications/nebula-3/description) ad esempio, che "_is a multi-effect plug-in that is able to emulate and replicate several types of audio equipment and uses libraries which are created using a sophisticated “sampling approach” making it possible to “record” aspects of the sound of audio devices and play them back_".
 * Interessantissimi anche i lavori dell'italiana [AudioThing](https://www.audiothing.net/);
 * I virtual instruments della svizzera [Togu Audio Line (Tal)](https://tal-software.com/Products);
+* [Hexter](http://dssi.sourceforge.net/hexter.html), sintetizzatore che emula gli strumenti Yamaha serie X;
 
 ---
 
@@ -726,13 +651,25 @@ Processo guidato da uno stream continuo di dati provenienti dall'interazione del
 
 A ben vedere il concetto di audio procedurale non ci è del tutto estraneo; un esempio a cui siamo abituati è il _riverbero digitale_ che usiamo tutti i giorni sottoforma di plug-in o di outboard fisico in studio.
 
+#### Esempi in PureData tratti principalmente dal lavoro di Andy Farnell...
+
+Segui [questo link](#pure-data-practice")!
+
+#### Behaviour, Model, implementation
+
 ![behaviour, model, implementation](./images/graphics/beh-mod-impl.png){: width="30%" }
+
+TODO: argomenta immagini raster vs. vettoriali.
+
+![raster e vettoriale](raster e vettoriale)
+
+TODO: altro esmpio della torta e della ricetta.
 
 ### Vantaggi e svantaggi del paradigma procedurale
 
 Tra i vantaggi possiamo considerare:
 
-#### Differimento
+#### Posticipazione
 
 Mentre l'atto di registrare un suono è un azione che fissa nel tempo senza lasciare alcune possibilità di intervento successivo, l'audio procedurale è dinamico e lascia che molte delle decisioni, anche strutturali, vengano rimandate al real-time.
 
@@ -740,15 +677,11 @@ Talvolta è semplicemente impossibile conoscere a priori quale sarà il suono ch
 
 Un esempio pratico di quanto detto lo si trova nel videogame "_No Man Sky_". Il gioco si basa interamente su contenuti generati proceduralmente (non escluivamente sonori). Proprio per la natura del gioco, Paul Weir il suond designer di _Hello Games_, intento a risolvere il problema del suono delle creature, diversissime tra loro e inconoscibili prima della partita, ha realizzato il tool _VocAlien_: una sorta di plugin che integrato nel game audio engine si occupasse di sintetizzare i suoni necessari secondo dei parametri di volta in volta diversi, passatigli dall'engine di gioco. (ecco [qui il talk](http://www.gdcvault.com/play/1024067/The-Sound-of-No-Man)).
 
-#### Variabilità
+#### Differimento e Variabilità
 
 Caratteristica fondamentale del suono procedurale che garantisce la possibilità pressochè completa di modificazione del suono in tempo reale e di produrre in questo modo risultati sonori anche molto diversi tra loro pur facendo capo ad uno stesso modello.
 
-#### Default forms
-
-Dal momento che la **crescita** dei sounds assets è **combinatoria**, diventa difficile provvedere alla creazione di tutti i suond assets necessari mano a mano che il mondo virtuale cresce. Il vantaggio di un modello procedurale è che il suono può essere generato in modo automatico derivando le proprietà dagli oggetti presenti nel gioco. Questo **non elimina** la figura del **sound designer**, il quale interviene laddove alcuni suoni necessitino di particolari caratteristiche perchè più importanti per la narrazione, ma **garantisce** che ogni oggetto abbia sempre un **suono di default** associato, senza incorrere così nel rischio che qualche evento sonoro non possa essere triggerato.
-
-#### Costo variabile e dinamico (Dynamic Level of Details)
+#### Costo dinamico (Dynamic Level of Details) e LOAD
 
 Il suono sintetico si dimostra vincente rispetto all'approccio _data driven_ quando si debbano descrive ampie scene con innumerevoli sorgenti sonore (tra 100 e 1000 sorgenti concorrenti).
 
@@ -774,24 +707,22 @@ Nel caso il problema venga affrontato con il paradigma procedurale invece, sopra
 
 Lo stesso dicasi se il suono riprodotto da un modello si trova riprodotto in associazione con altri suoni che causerebbero il _mascheramento_ nel tempo o in frequenza di alcune sue componenti.
 
-Tra gli svantaggi:
+#### Default forms
 
-#### Industrial inertia: you gotta ship titles
+Dal momento che la **crescita** dei sounds assets è **combinatoria**, diventa difficile provvedere alla creazione di tutti i suond assets necessari mano a mano che il mondo virtuale cresce. Il vantaggio di un modello procedurale è che il suono può essere generato in modo automatico derivando le proprietà dagli oggetti presenti nel gioco.
 
-Al momento attuale non sembra ci sia interesse nell'implementare quanto necessario per inserire questo paradigma nel workflow per la produzione di giochi. Spesso in questi casi ci si scontra con metodi di lavoro consolidati che sono difficili da modificare, soprattutto per via dei costi e dei tempi necessari per la transizione.
+Questo **non elimina** la figura del **sound designer**, il quale interviene laddove alcuni suoni necessitino di particolari caratteristiche perchè più importanti per la narrazione, ma **garantisce** che ogni oggetto abbia sempre un **suono di default** associato, senza incorrere così nel rischio che qualche evento sonoro non possa essere triggerato.
 
-#### New workflows, new skills
+---
 
-Il paradigma procedurale richiede personale che sappia operare in campo audio in nuovi modi. Studiare modelli derivati o ispirati dal mondo reale e implementarli poi in una forma hardware o software richiede abilità e competenze che normalmente non fanno parte del bagaglio culturale di un sound designer tradizionale.
+L'audio procedurale è da intendersi come uno dei tanti strumenti nella toolbox del sound designer. L'abilità propria del sound designer tradizionale è ancora fondamentale laddove determinati suoni abbiano bisogno di essere particolarmente caratterizzati, magari per ottenere il così detto **hyper-realism** ("_more than reality_").
 
-#### La sintesi è brutta (si fa per dire)
-
-Permane la falsa concezione che la sintesi audio sia, in qualche modo, sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente.
-
-In realtà non è così, ne abbiamo avuto la prova più e più volte durante queste lezioni e, se anche lo fosse, il ragionamento non sta in piedi in quanto il **realismo** non serve!
+Sì perchè in fondo il **realismo** non serve!
 Lo sanno bene i sound designer e tutti coloro che, in generale, hanno già qualche esperienza nel mondo dell'intrattenimento, il realismo spesso delude.
 
-Non c'è bisogno che il suono sia perfettamente fedele al fenomeno percepito nella realtà, quello che è veramente importante è il **verosimile**, è la **resa** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)) o addirittura dell'**hyperrealism** ("_more than reality_").
+![PM vs. PIM](./images/graphics/physically-inpired-model-bis.png){: width="80%"}
+
+Non c'è bisogno che il suono sia perfettamente fedele al fenomeno percepito nella realtà, quello che è veramente importante è il **verosimile**, è la **resa** (come dice molto bene [Chion](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)).
 
 >"Il tutto è più grande della somma delle sue parti." (Aristotele, Metafisica)
 
@@ -809,13 +740,34 @@ Il suono è stato probabilmente filtrato, equalizzato, compresso, ripulito di ev
 
 Questo è possibili grazie al fatto che lo strumento è affiancato ad altri, si fa forza dell'essere parte di un insieme, arricchisce, ed è arricchito al contempo di dignificati nuovi che, non avrebbe se preso singolarmente!
 
+
+### Svantaggi
+
+Tra gli svantaggi del paradigma _audio procedurale_:
+
+#### Industrial inertia: you gotta ship titles
+
+Al momento attuale non sembra ci sia interesse nell'implementare quanto necessario per inserire questo paradigma nel workflow per la produzione di giochi. Spesso in questi casi ci si scontra con metodi di lavoro consolidati che sono difficili da modificare, soprattutto per via dei costi e dei tempi necessari per la transizione.
+
+#### New workflows, new skills
+
+Il paradigma procedurale richiede personale che sappia operare in campo audio in nuovi modi. Studiare modelli derivati o ispirati dal mondo reale e implementarli poi in una forma hardware o software richiede abilità e competenze che normalmente non fanno parte del bagaglio culturale di un sound designer tradizionale.
+
+#### Synthesis = fake (what?)
+
+Permane la falsa concezione che la sintesi audio sia, in qualche modo, sinonimo di finzione (sintesi = suono "_di plastica_") e, come tale, sia qualcosa di insoddisfacende, di deludente. In realtà non è così lo abbiamo visto poco fa parlando anche di _hyper-realism_ e _valore aggiunto_.
+
 ### The Future
 
-In un futuro presumibilmente non troppo lontano, il paradigma procedurale avrà preso ancora più piede e il mondo del lavoro nel settore dell'audio per videogiochi si arricchirà di tutta una serie di nuove figure professionali.
+Cosa ci riserva il futuro dell'audio nei videogames?
+
+Se avessimo fatto questa domanda a metà degli anni '90 declinandola al mondo della grafica di sicuro nessuno avrebbe potuto immaginare che, nell'arco di pochi anni a venire si sarebbe profilata tutta una serie di nuovissime figure professionali che prima non esistevano: professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, _compositing_ etc...
+
+In ambito audio, in un futuro presumibilmente non troppo lontano, il paradigma procedurale avrà preso ancora più piede e il mondo del lavoro nel settore dell'audio per videogiochi si arricchirà di tutta una serie di nuove figure professionali.
 
 ![water](./images/2017-05/pt2/future-water.jpg)
 
-Proprio come negli ultimi 20 anni sono nate specializzazioni di ogni tipo nel mondo della computer grafica (professionisti che si occupano esclusivamente di _rigging_, _textures_, _animazione_, _modellazione_, _light_, _visual fxs_, _compositing_ etc...), così anche nel mondo del sound design nasceranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua e [bolle](http://www.cs.cornell.edu/projects/Sound/bubbles/), fuoco, [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/), impatti, [frizioni e sfregamenti](http://independent.academia.edu/StefaniaSerafin), [accartocciamenti](http://www.cs.columbia.edu/cg/crumpling/), [acustica delle stanze](http://www.ness-music.eu/wp-content/uploads/2013/04/TASL2256897.pdf), etc...).
+Proprio come negli ultimi 20 anni sono nate specializzazioni di ogni tipo nel mondo della computer grafica, così anche nel mondo del sound design nasceranno nuove figure speciallizzate nella modellazione di suoni e fenomeni fisici differenti (acqua e [bolle](http://www.cs.cornell.edu/projects/Sound/bubbles/), fuoco, [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/), impatti, [frizioni e sfregamenti](http://independent.academia.edu/StefaniaSerafin), [accartocciamenti](http://www.cs.columbia.edu/cg/crumpling/), [acustica delle stanze](http://www.ness-music.eu/wp-content/uploads/2013/04/TASL2256897.pdf), etc...).
 
 #### Animation driven by audio
 
@@ -833,6 +785,7 @@ Se, come spesso accade, l'audio è considerato come accessorio e secondario risp
 
 ---
 
+<a id="pure-data-practice""></a>
 ### Procedural Audio practice
 
 #### Implementazione usando la sintesi
@@ -856,8 +809,6 @@ Utile l'analisi statistica della densità
 
 tipologie di suono: suoni con struttura eterogenea, onde che si infrangono sulla spiaggia, pioggia, grandi gruppi di persone (ae esempio il suono degli applausi).
 
----
-
 ### PureData: esempi di audio procedurale e musica generativa
 
 Abbiamo detto che il paradigma del suono procedurale prevede una stratificazione delle diverse fasi. Questo significa che ciascuna di esse può essere svolta con un particolare strumento hardware o software piuttosto che un altro, a seconda delle esigenze del progetto o delle particolari propensioni del suond designer.
@@ -875,7 +826,6 @@ Pure Data, come Godot, è _free software_ quindi aperto per essere modificato ed
 Che cosa è PureData? [PureData](http://puredata.info/) è un linguaggio di programmazione a nodi nato a metà degli anni '90 ad opera di Miller Puckette che all'epoca lavorava all'IRCAM di Parigi.
 
 Pure Data è un linguaggio di programmazioni a paradigma _dataflow_ e, sebbene manchi di ricorsione e di una effettiva accuratezza "_al sample_" nell'implementazione di filtri FIR, IIR, è uno strumento molto produttivo e permette di risolvere il 90% dei problemi di sound design sintetico.
-
 
 Uno degli obiettivi cui si è interessati è quello di fare il minor uso possibile della memoria (evitando quindi, ove possibile, lookup table, ring buffers per dly, etc...). Si usano dunque i troncamenti delle approssimazioni in serie di Taylor delle varie funzioni anzichè ricorrere a lookup tables, il rumore è generato come numeri pseudo casuali, etc...
 <br/><br/>
