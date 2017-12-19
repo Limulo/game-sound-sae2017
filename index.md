@@ -8,6 +8,7 @@ Questa pagina raccoglie tutto il materiale che [limulo.net](http://limulo.net) h
 
 * [edizione Maggio 2017](ed-maggio-2017)
 * [edizione Agosto-Settembre 2017](ed-agosto-settembre-2017)
++ [edizione Dicembre 2017](ed-dicembre-2017)
 
 * Go to the [Refereces](references) page;
 * Go to the [Fmod](fmod) page;
