@@ -6,7 +6,7 @@ layout: default
 
 Back to [Home](index);
 <br/><br/>
-Ecco le slindes delle lezioni: [pt1 (interattiva)](./resources/twine/slides.html), pt2 e pt3!
+Ecco le slindes delle lezioni: [pt1](./resources/twine/slides.html), [pt2 e pt3](http://www.limulo.net/res/GEGST/2017-dec/slides/pt2-3/)(interattive)!
 {: class="dashed"}
 
 Di seguito parte dei contenuti trattati durante le lezioni:
