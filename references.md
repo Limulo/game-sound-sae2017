@@ -103,6 +103,7 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * [ISSE](http://isse.sourceforge.net/): Interactive Source Separation Editor by [Nick  J. Bryan](https://ccrma.stanford.edu/~njb/);
 * Xavier Serra and Julis O. Smith [SMS tools](https://www.upf.edu/web/mtg/sms-tools). See also their [Kadenze MOOC](https://www.coursera.org/learn/audio-signal-processing);
 * [Vamp plugins](http://vamp-plugins.org/index.html) - Vamp is an audio processing plugin system for plugins that extract descriptive information from audio data;
+* [Tartini](http://miracle.otago.ac.nz/tartini/index.html);
 
 Other tools of interest:
 
