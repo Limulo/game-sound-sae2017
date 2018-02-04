@@ -475,7 +475,7 @@ La storia del vidogioco ci insegna che l'audio ha sempre rivestito un ruolo fond
 
 Ne è la prova il fatto che in molti advertise dell'epoca (di seguito una pubblicità del gioco _Jaws_ dell'Atari, siamo nel 1975) il suono venisse esplicitamente menzionato e se ne vantassero le caratteristiche di realismo!
 
-![Jaws](immagine jaws)
+![Jaws](https://raw.githubusercontent.com/Limulo/slides_GEGST_dec2017/master/images/pt3/jaws.jpg)
 
 Un altro esempio l'abbiamo visto esaminando il sintetizzatore audio a 5 voci del NES.
 Questo ruolo di preminenza dell'audio è continuato a lungo culminando nel periodo d'oro delle schede audio come la fortunata _Sound Blaster_ e _Roland MT-32_ fino all'avvento del supporto CD, approssimativamente nella metà degli anni '90, periodi in cui il sample di alta qualità (44100@16bit) faceva il suo ingresso.
@@ -524,7 +524,7 @@ Quando la grafica 3D cominciava ad affermarsi nel mondo del videogioco (siamo ag
 
 Eppure negli stessi anni al cinema si poteva assistere alla proiezione di [Toy Story](https://en.wikipedia.org/wiki/Toy_Story), il primo film di animazione interamente realizzato in computer grafica. Nel film i modelli sono molto più definiti dei loro corrispettivi in ambito videogames, ma questo solo perchè i numerosi calcoli richiesti per renderizzare ciascuno dei frame erano svolti da grandi "_render farm_", niente di comparabile ad una contemporanea console per uso domestico. Inoltre il risultato di un rendering spesso era pronto dopo diverso tempo che i dati erano stati introdotti.
 
-![toy story](immagine toy story)
+![toy story](https://raw.githubusercontent.com/Limulo/slides_GEGST_dec2017/master/images/pt3/toy-story-1.jpg)
 
 Sotto questa luce, il _low poly_ dei primi videogiochi 3D diventa una prova evidente che la grafica dovesse (e deve) necessariamente essere calcolata in tempo reale!
 
@@ -538,7 +538,7 @@ Il sample audio invece è una registrazione, e come tale si tratta di un qualche
 
 In questo senso l'audio fruito attraverso i campioni resta un procedimento **statico**, si riduce alla pressione del tasto play, una **fotografia** fissa ed immutabile anzichè vivida e dinamica.
 
-![fotografie modificate](fotografie)
+![fotografie modificate](./images/2017-12/pt3/fotografie_modificate.jpg)
 
 Vero che alla registrazione possono essere applicate variazioni in tempo reale ma questo non ha nulla a che spartire con quanto avviene in ambito grafico il che fa capire quanto il termine "_realismo_ sonoro" suoni alquanto **riduttivo**, soprattutto contando che anche il suono ha la sua importanza:
 
@@ -548,7 +548,7 @@ Vero che alla registrazione possono essere applicate variazioni in tempo reale m
 
 E' possibile descrivere adeguatamente una scultura con una fotografia?
 
-![david](scultura del david)
+![david](https://raw.githubusercontent.com/Limulo/slides_GEGST_dec2017/master/images/pt3/david2.jpg)
 
 ### Niente trucchi da quattro soldi!
 
@@ -661,7 +661,7 @@ Segui [questo link](#pure-data-practice")!
 
 TODO: argomenta immagini raster vs. vettoriali.
 
-![raster e vettoriale](raster e vettoriale)
+![raster e vettoriale](https://raw.githubusercontent.com/Limulo/slides_GEGST_dec2017/master/images/pt3/vectrorial_vs_raster.png)
 
 TODO: altro esmpio della torta e della ricetta.
 

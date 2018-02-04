@@ -104,6 +104,7 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * Xavier Serra and Julis O. Smith [SMS tools](https://www.upf.edu/web/mtg/sms-tools). See also their [Kadenze MOOC](https://www.coursera.org/learn/audio-signal-processing);
 * [Vamp plugins](http://vamp-plugins.org/index.html) - Vamp is an audio processing plugin system for plugins that extract descriptive information from audio data;
 * [Tartini](http://miracle.otago.ac.nz/tartini/index.html);
+* [Baudline](http://baudline.com/what_is_baudline.html): an interesting tool for doing spectral analysis of sounds;
 
 Other tools of interest:
 
