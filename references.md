@@ -105,6 +105,7 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * [Vamp plugins](http://vamp-plugins.org/index.html) - Vamp is an audio processing plugin system for plugins that extract descriptive information from audio data;
 * [Tartini](http://miracle.otago.ac.nz/tartini/index.html);
 * [Baudline](http://baudline.com/what_is_baudline.html): an interesting tool for doing spectral analysis of sounds;
+* [qiano](https://github.com/claytonotey/qiano) a physical modeled piano!
 
 Other tools of interest:
 
