@@ -23,7 +23,7 @@ Al momento della stesura di questi contenuti, _Google presentation_ non fornisce
 
 Un soluzione alternativa è renderizzarle come immagini altrove (ad esempio con [questa](http://www.codecogs.com/latex/eqneditor.php) utility on-line ) e inserirle come immagini.
 
-### Publich the slides as a website
+### Publish the slides as a website
 
 Using _github pages_ and _pandoc_: Andrea Basile [link](http://anbasile.github.io/programming/2015/12/25/hosting-reveal-pres-on-github/)
 

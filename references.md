@@ -113,6 +113,7 @@ Other tools of interest:
 * [VCV Rack](https://vcvrack.com/) modular synthetizer;
 * GNU/Linux instrument and plugin by [Zita](http://kokkinizita.linuxaudio.org/linuxaudio/index.html);
 * [hexter](http://dssi.sourceforge.net/hexter.html) a Yamaha DX7 emulator for GNU/Linux by [Sam Bolton](http://smbolton.com/);
+* [Intermorphic](https://intermorphic.com/), a company with many years of experience in building generative music apps and sound engines. [Koan](https://en.wikipedia.org/wiki/Koan_(program), Noatikl, Liptikl, Mixtikl, Wotja are only a few of the software they developed;
 
 Tools for development:
 
@@ -123,6 +124,8 @@ Tools for development:
 * [JUCE](https://juce.com/)
 * [Minim](http://code.compartmental.net/minim/), an audio library for the [Processing](https://processing.org/) environment;
 * [Tones.js](https://tonejs.github.io/) and [howlers.js](https://howlerjs.com/) for audio inside Web browser;
+
+
 
 Trakers and places where to find `.mod` files, listen to **chiptune** music:
 
@@ -153,11 +156,12 @@ Audio Assets
 * [FreeSound](https://freesound.org/)
 * [Findsound](http://www.findsounds.com/);
 
-### Courses and MOOC
+### Courses, MOOCs & tutorials
 
 * [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
 * [Coursera Introduction to Game Development](https://www.coursera.org/learn/game-development/)
 * MIT Open Course Ware: [SoundDesign](https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-sound-design-spring-2016/), [Algorithmic and Generative Music](https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-algorithmic-and-generative-music-spring-2010/), [Interactive Music Systems](https://ocw.mit.edu/courses/music-and-theater-arts/21m-385-interactive-music-systems-fall-2016/);
+* [Learning Web Audio by Recreating The Works of Steve Reich and Brian Eno](http://teropa.info/blog/2016/07/28/javascript-systems-music.html);
 
 ### Books
 

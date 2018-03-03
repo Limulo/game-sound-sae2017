@@ -783,9 +783,10 @@ Se, come spesso accade, l'audio è considerato come accessorio e secondario risp
 
 **Procedural animation**: [Tom Clancy's Ghost Recon Advanced Warfighter 2](https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Advanced_Warfighter) (Ubisoft 2007) case study: un aeroplano precipitato nel deserto esplode e continua a bruciare a terra. Le fiamme sono sferzate a destra e a sinistra da un vento irregolare. Polvere e fumo sono generati proceduralmetne in base al livello dell'audio pre-prodotto (vedi [questo talk](http://www.gdcvault.com/play/1017780/Crossing-the-Streams-Game-Audio) di Scott Selfon al minuto 23:14)!
 
+![Ghost recon](./images/2017-09/pt3/Ghost-Recon.png)
+
 ---
 
-<a id="pure-data-practice""></a>
 ### Procedural Audio practice
 
 #### Implementazione usando la sintesi
