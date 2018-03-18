@@ -23,7 +23,7 @@ Composers and researchers in videogame music, generative and adaptive music:
 
 Sound effects in video games and many more:
 
-* Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
+* Andy Farnell main [website](http://www.obiwannabe.co.uk/) is offline. It seems we have found a copy of it [here](http://www.moz.ac.at/sem/lehre/lib/pd-sounddesign/); you can still have a look at the original one from the _wayback machine_ [here](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/). Take a look at this [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), and to the "_Designing Sound_" companion [website](http://mitpress2.mit.edu/designingsound/tarball.asp);
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
 * Ge Wang: [website](http://www.gewang.com/) and [TED talk](https://www.ted.com/talks/ge_wang_the_diy_orchestra_of_the_future);
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
@@ -125,8 +125,6 @@ Tools for development:
 * [Minim](http://code.compartmental.net/minim/), an audio library for the [Processing](https://processing.org/) environment;
 * [Tones.js](https://tonejs.github.io/) and [howlers.js](https://howlerjs.com/) for audio inside Web browser;
 
-
-
 Trakers and places where to find `.mod` files, listen to **chiptune** music:
 
 * Read [this interesting article](https://soundstudiesblog.com/2014/06/02/retro-city-rampage/) about the sound of "[Retro City Rampage](https://www.vblank.com/RetroCityRampage/)" by Leonard J. Paul. Very interesting also his presentation about the argument you can find [here](http://videogameaudio.com/main.htm#paxdev12), from his website;
@@ -150,6 +148,7 @@ Assets and other videogame resources/tutorials:
 * [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
 * [sketchfab](https://sketchfab.com), a place where to find free downloadable 3D models;
 * [video game maps](http://www.vgmaps.com/)
+* Godot Engine lead developer Juan Linietsky ["Advantages of Open Source in GameDev"](https://www.docdroid.net/Z5nf1FB/advantages-of-open-source-in-gamedev-1.pdf) presentation;
 
 Audio Assets
 
@@ -162,6 +161,8 @@ Audio Assets
 * [Coursera Introduction to Game Development](https://www.coursera.org/learn/game-development/)
 * MIT Open Course Ware: [SoundDesign](https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-sound-design-spring-2016/), [Algorithmic and Generative Music](https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-algorithmic-and-generative-music-spring-2010/), [Interactive Music Systems](https://ocw.mit.edu/courses/music-and-theater-arts/21m-385-interactive-music-systems-fall-2016/);
 * [Learning Web Audio by Recreating The Works of Steve Reich and Brian Eno](http://teropa.info/blog/2016/07/28/javascript-systems-music.html);
+* Andy Farnell lecture on [Procedural Audio](https://www.youtube.com/watch?v=sp83-Pq7TyQ) @ Dolby, London on 9th April 2013.
+* Andy Farnell [Granular Synthesis talk](https://www.youtube.com/watch?v=Qxqtc2bgDpw) at UWE Bristol (4/10/2017). A great introduction on granular synthesis in PD and its application in physically modelled sound like _fire_! The philosophy of [breaking down a sound into its singular components](https://youtu.be/Qxqtc2bgDpw?t=1h14m03s), "_gestalt effect_", "_the real is not real enough_", cartoon: what it really means to be a sound designer! Talking about the [clock sound](https://youtu.be/Qxqtc2bgDpw?t=1h29m20s);
 
 ### Books
 
@@ -289,7 +290,6 @@ Other books of interest:
 | Fmod | [yes](https://github.com/fmod/UnityIntegration) | [yes](https://github.com/fmod/ue4integration) |
 {: class="reference-table"}
 
-
 ---
 
 {% comment %}
@@ -345,6 +345,5 @@ http://www.gdcvault.com/play/1022315/The-Neuroscience-of-Game
  * approcci compositivi a musica dinamica in VG
  * non-linearità nei VG
  * approcci a variabilità in VG
-
 
 {% endcomment %}
