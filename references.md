@@ -23,7 +23,7 @@ Composers and researchers in videogame music, generative and adaptive music:
 
 Sound effects in video games and many more:
 
-* Andy Farnell main [website](http://www.obiwannabe.co.uk/) is offline. It seems we have found a copy of it [here](http://www.moz.ac.at/sem/lehre/lib/pd-sounddesign/); you can still have a look at the original one from the _wayback machine_ [here](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/). Take a look at this [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), and to the "_Designing Sound_" companion [website](http://mitpress2.mit.edu/designingsound/tarball.asp);
+* Andy Farnell main [website](http://obiwannabe.co.uk/) is offline. It seems we have found a copy of it [here](http://www.moz.ac.at/sem/lehre/lib/pd-sounddesign/); you can still have a look at the original one from the _wayback machine_ [here](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/). Take a look at this [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), and to the "_Designing Sound_" companion [website](http://mitpress2.mit.edu/designingsound/tarball.asp);
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
 * Ge Wang: [website](http://www.gewang.com/) and [TED talk](https://www.ted.com/talks/ge_wang_the_diy_orchestra_of_the_future);
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
