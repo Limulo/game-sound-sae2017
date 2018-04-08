@@ -23,7 +23,7 @@ Composers and researchers in videogame music, generative and adaptive music:
 
 Sound effects in video games and many more:
 
-* Andy Farnell main [website](http://obiwannabe.co.uk/) is offline. It seems we have found a copy of it [here](http://www.moz.ac.at/sem/lehre/lib/pd-sounddesign/); you can still have a look at the original one from the _wayback machine_ [here](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/). Take a look at this [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), and to the "_Designing Sound_" companion [website](http://mitpress2.mit.edu/designingsound/tarball.asp);
+* Andy Farnell main website, ["http://obiwannabe.co.uk"](http://obiwannabe.co.uk/), is offline. It seems we have found a copy of it [here](http://www.moz.ac.at/sem/lehre/lib/pd-sounddesign/); you can still have a look at the original one from the _wayback machine_ [here](http://web.archive.org/web/20151226070327/http://obiwannabe.co.uk/). Take a look at this [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), and to the "_Designing Sound_" companion [website](http://mitpress2.mit.edu/designingsound/tarball.asp);
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
 * Ge Wang: [website](http://www.gewang.com/) and [TED talk](https://www.ted.com/talks/ge_wang_the_diy_orchestra_of_the_future);
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
@@ -73,10 +73,20 @@ A possible example of this kind of synthesis is the Arturia [True Analog Emulati
 [Acustica-Audio](http://www.acustica-audio.com/) also uses a lot of interesting [technology](http://www.acustica-audio.com/index.php?option=com_content&view=article&id=14&Itemid=247) inside their plugins: [Nebula3](https://www.geforce.com/games-applications/pc-applications/nebula-3/description) for example, which "_is a multi-effect plug-in that is able to emulate and replicate several types of audio equipment and uses libraries which are created using a sophisticated “sampling approach” making it possible to “record” aspects of the sound of audio devices and play them back_".
 [AudioThing](https://www.audiothing.net/);
 
-* [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [PianoTeq](https://www.pianoteq.com/home) products, [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also the Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html). Other examples are the Roland instruments like the [Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) use the [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) modelling synthesis engine in parallel with traditional PCM synthetizer.
+* [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [Moddart](https://www.pianoteq.com/modartt?from=modartt.com) products (like [PianoTeq](https://www.pianoteq.com/home) or [Organteq](https://www.modartt.com/organteq)), [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also the Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html). Other examples are the Roland instruments like the [Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) use the [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) modelling synthesis engine in parallel with traditional PCM synthetizer.
 
 We can find the same concepts in many others software and hardware products like virtual instruments by [Togu Audio Line (Tal)](https://tal-software.com/Products), effects by [The Audio Thing](https://www.audiothing.net/), [Native Instruments B4](http://www.soundonsound.com/reviews/native-instruments-b4-ii), and more...
+
+Other examples can be:
+
 * Hardware instruments and Expanders: see (ex)GEM DRAKE technology;
+* [qiano](https://github.com/claytonotey/qiano) a physical modeled piano!
+* [setBfree](http://setbfree.org/), a  DSP tonewheel organ emulation;
+
+<iframe src="https://player.vimeo.com/video/130633814" width="100%" height="242" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+* [hexter](http://dssi.sourceforge.net/hexter.html) a Yamaha DX7 emulator for GNU/Linux by [Sam Bolton](http://smbolton.com/);
+* [aeolus](http://users.skynet.be/solaris/linuxaudio/aeolus.html), Aeolus is a synthesised pipe organ emulator;
 
 ### Tools (a few of them)
 
@@ -105,14 +115,12 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * [Vamp plugins](http://vamp-plugins.org/index.html) - Vamp is an audio processing plugin system for plugins that extract descriptive information from audio data;
 * [Tartini](http://miracle.otago.ac.nz/tartini/index.html);
 * [Baudline](http://baudline.com/what_is_baudline.html): an interesting tool for doing spectral analysis of sounds;
-* [qiano](https://github.com/claytonotey/qiano) a physical modeled piano!
 
 Other tools of interest:
 
 * [Ircam softwares](https://www.ircam.fr/innovations/forum/);
 * [VCV Rack](https://vcvrack.com/) modular synthetizer;
 * GNU/Linux instrument and plugin by [Zita](http://kokkinizita.linuxaudio.org/linuxaudio/index.html);
-* [hexter](http://dssi.sourceforge.net/hexter.html) a Yamaha DX7 emulator for GNU/Linux by [Sam Bolton](http://smbolton.com/);
 * [Intermorphic](https://intermorphic.com/), a company with many years of experience in building generative music apps and sound engines. [Koan](https://en.wikipedia.org/wiki/Koan_(program), Noatikl, Liptikl, Mixtikl, Wotja are only a few of the software they developed;
 
 Tools for development:
