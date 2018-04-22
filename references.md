@@ -103,7 +103,7 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
 * [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!)
 * [SMELT](http://smelt.cs.princeton.edu/) and [SMIRK](http://smirk.cs.princeton.edu/) and many others...
-* [PureData](https://puredata.info/);
+* [PureData](https://puredata.info/). Learn PureData with Johannes Kreidler's "[loadbang](http://pd-tutorial.com/)" book;
 * [Max/MSP](https://cycling74.com/);
 * Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
 * [SuperCollider](https://supercollider.github.io/). If you want to learn how to use SuperCollider the Eli Fieldsteel [Youtube playlist](https://www.youtube.com/watch?v=yRzsOOiJ_p4&list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC). Here's the Supercollider [code repository](http://sccode.org/) and Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from Farnell's "_Designing Sound_" book;
