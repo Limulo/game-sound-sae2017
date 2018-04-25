@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Edizione Gennaio 2018
+## Edizione Gennaio 2018 (lezione integrativa)
 
 Back to [Home](index);
 <br/><br/>

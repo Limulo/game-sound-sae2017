@@ -20,7 +20,7 @@ Di seguito parte dei contenuti trattati durante le lezioni:
 <a id="pt1"></a>
 ## Pt1: Game Engines
 
-TODO
+Per la prima parte, fare riferimento all'edizione precedente ([edizione agosto/settembre 2017](ed-agosto-settembre-2017#pt1)).
 
 <a id="pt2"></a>
 ## Pt2: Game Sound overview

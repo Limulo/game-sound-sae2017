@@ -9,11 +9,14 @@ Questa pagina raccoglie tutto il materiale che [limulo.net](http://limulo.net) h
 * [edizione Maggio 2017](ed-maggio-2017)
 * [edizione Agosto-Settembre 2017](ed-agosto-settembre-2017)
 * [edizione Dicembre 2017](ed-dicembre-2017)
-* [edizione Gennaio 2018](ed-gennaio-2018)
+* [edizione Gennaio 2018](ed-gennaio-2018) (lezione integrativa)
+* [edizione Aprile 2018](ed-aprile-2018)
 
 * Go to the [Refereces](references) page;
-* Go to the [Fmod](fmod) page;
 
+{% comment %}
+* Go to the [Fmod](fmod) page;
+{% endcomment %}
 ---
 
 Scriveteci all'indirizzo **info [at] limulo[dot] net** o visitate il sito [limulo.net](http://www.limulo.net/), per ogni eventuale dubbio, osservazione e approfondimento!
