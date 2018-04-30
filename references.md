@@ -101,7 +101,7 @@ Other examples can be:
 * [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
 and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://soundlab.cs.princeton.edu/) there's a lot of [other interesting software tools](http://soundlab.cs.princeton.edu/software/) like the
 * Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
-* [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!)
+* [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!). [Here](http://chuck.cs.princeton.edu/doc/develop/) the developer's tutorial on how chuck works;
 * [SMELT](http://smelt.cs.princeton.edu/) and [SMIRK](http://smirk.cs.princeton.edu/) and many others...
 * [PureData](https://puredata.info/). Learn PureData with Johannes Kreidler's "[loadbang](http://pd-tutorial.com/)" book;
 * [Max/MSP](https://cycling74.com/);
@@ -235,6 +235,7 @@ Other books of interest:
 * [Gaf](http://cedric.cnam.fr/PUBLIS/RC1568.pdf), [IEZA](https://users-cs.au.dk/dsound/DigitalAudio.dir/Unity/IEZA.pdf) and [this](http://captivatingsound.com/ieza-framework-for-game-audio/). [GAL](https://www.researchgate.net/publication/238660174_GAME_AUDIO_LAB_-_AN_ARCHITECTURAL_FRAMEWORK_FOR_NONLINEAR_AUDIO_IN_GAMES) and [this](http://www.aes.org/e-lib/browse.cfm?elib=15169);
 * Artificial intelligence for speach synthesis: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), [NPSS](http://www.dtic.upf.edu/~mblaauw/NPSS/) which is a neural parametric singing sinthesizer,an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see [Gene Kogan website](http://genekogan.com/) and other project.
 * Artificial intelligence in music: [Magenta](https://magenta.tensorflow.org/) is an OpenSource project by [Google Brain team](https://research.google.com/teams/brain/) that uses the [tensorFlow](https://www.tensorflow.org/) artificial intelligence library. [Magenta main repo](https://github.com/tensorflow/magenta) and [demo page](https://github.com/tensorflow/magenta-demos/tree/master/);
+* A [Game Audio Blog](https://matarnoldaudio.wordpress.com/) By Mat Arnold. [here](https://matarnoldaudio.wordpress.com/2018/03/21/imuse-and-the-future-of-midi-in-game-audio/) an interesting article about **iMuse**;
 
 ---
 
@@ -277,6 +278,7 @@ Other books of interest:
 * [Sleeping Dragon](https://www.youtube.com/watch?v=0cpqNAQPWVs);
 * [DIN: DIN Is Noise](https://dinisnoise.org/)
 * Impulse responses [openairlib](http://www.openairlib.net/), [room-impulse-response-data-set](http://www.isophonics.net/content/room-impulse-response-data-set);
+* [OAML](https://oamldev.github.io/), **Open Adaptive Music Library** and [OAMLStudio](https://github.com/oamldev/oamlStudio), the companion authoring tool;
 
 ### Can I use [tool name] on [OS type] ?
 

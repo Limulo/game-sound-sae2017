@@ -5,6 +5,10 @@ layout: default
 linear music (shuffling) 37:00 / radio GTAV - ducking, changing mix, djishing thing, cross fade - interactive composition
 markers, timing (iMuse style of stuff)
 
+## Musica adattativa
+
+* [OAML](https://oamldev.github.io/), **Open Adaptive Music Library** and [OAMLStudio](https://github.com/oamldev/oamlStudio), the companion authoring tool;
+
 
 ## Interesting link
 
