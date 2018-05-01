@@ -56,6 +56,10 @@ Sound effects in video games and many more:
 * **Vessel** by StrangeLoop uses a custom adaptive music system. See [this talk](http://gdcvault.com/play/1015599/The-Dynamic-Audio-of) by Leonard J Paul @ GDC 2012;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
 * [Revheadz](http://revheadz.com.au/index.html#hero)'s engine sound apps;
+* [SDL](http://www.sound-design-lab.com/english_page.html) (Sound Design Lab) is a small company specialized in researching the field of engine sound. **RealEngineSim** and **Vehicle Sound Simulator**, [**Ride Yamaha**](https://www.youtube.com/watch?v=7um559qrHMg) or [Trans4motor](http://www.sound-design-lab.com/Trans4motor/Trans4motor.html) are only a few of their software products. They make use of procedural techniques to recreate realistic sound of a variety of engines (as stated in [this](http://tsugi-studio.com/blog/2018/05/01/real-time-synthesis-of-engines/) interview by Osamu Maeda, the SDL director);
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/fjKpwHKIgGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 * iMuse: [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ), [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689);
 * [RjDj project](https://github.com/rjdj/rjlib);
 
