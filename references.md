@@ -125,7 +125,7 @@ Other tools of interest:
 * [Ircam softwares](https://www.ircam.fr/innovations/forum/);
 * [VCV Rack](https://vcvrack.com/) modular synthetizer;
 * GNU/Linux instrument and plugin by [Zita](http://kokkinizita.linuxaudio.org/linuxaudio/index.html);
-* [Intermorphic](https://intermorphic.com/), a company with many years of experience in building generative music apps and sound engines. [Koan](https://en.wikipedia.org/wiki/Koan_(program), Noatikl, Liptikl, Mixtikl, Wotja are only a few of the software they developed;
+* [Intermorphic](https://intermorphic.com/), a company with many years of experience in building generative music apps and sound engines. [Koan](https://en.wikipedia.org/wiki/Koan_(program)), Noatikl, Liptikl, Mixtikl, Wotja are only a few of the software they developed;
 
 Tools for development:
 
@@ -149,7 +149,9 @@ Trakers and places where to find `.mod` files, listen to **chiptune** music:
 * [kohina](http://www.kohina.com/) to listen to some good chiptune music;
 * [DemoScene community](https://www.scene.org/) all kind of resources here;
 
-Assets and other videogame resources/tutorials:
+### Assets
+
+.. and other videogame resources/tutorials:
 
 * [Open Game Art](https://opengameart.org/)
 * [Bit Gem](https://shop.bitgem3d.com/)
@@ -162,7 +164,7 @@ Assets and other videogame resources/tutorials:
 * [video game maps](http://www.vgmaps.com/)
 * Godot Engine lead developer Juan Linietsky ["Advantages of Open Source in GameDev"](https://www.docdroid.net/Z5nf1FB/advantages-of-open-source-in-gamedev-1.pdf) presentation;
 
-Audio Assets
+Audio Assets:
 
 * [FreeSound](https://freesound.org/)
 * [Findsound](http://www.findsounds.com/);
@@ -189,12 +191,13 @@ Books about music, sound effects and sound topics in general:
 
 Other books of interest:
 
-* Anna Anthropy "Rise of videogame zinester" - 7 stories press;
+* K.Collins, B.Kapralos, H.Tessler "_The Oxfrod hadbook of Interactive Audio_" - Oxford Univeristy press, 2014. [Here a link](http://global.oup.com/us/companion.websites/9780199797226/) to the companion website;
+* Anna Anthropy "_Rise of videogame zinester_" - 7 stories press;
 * Chris Solarsky "[Interactive story and videogame art](http://www.solarskistudio.com/books.html)" - CRC press;
-* Ernest Adams "Foundamentals of game design" - Pearson;
-* James Newman "Videogames" (2nd ed) - Routledge;
-* Blake J. Harris "Console Wars" - multiplayer.it edizioni;
-* Marco Accordi Rickards "Storia del videogioco" - Carocci editore;
+* Ernest Adams "_Foundamentals of game design_" - Pearson;
+* James Newman "_Videogames_" (2nd ed) - Routledge;
+* Blake J. Harris "_Console Wars_" - multiplayer.it edizioni;
+* Marco Accordi Rickards "_Storia del videogioco_" - Carocci editore;
 * [Micheal Chion](http://michelchion.com/biography) "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)" - Lindau;
 * [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001) - Ricordi, Lim;
 * Steven W. Smith' [The Scientist and Engineer's Guide to Digital Signal Processing](http://www.dspguide.com/) - free downloadable from the website as .pdf;
@@ -220,14 +223,18 @@ Other books of interest:
 * [Interview with David Thall, Mads Lykke and Andy Farnell](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
 * Playstation [VR worlds](http://designingsound.org/2016/12/the-sound-music-of-playstation-vr-worlds/)
 * [Audio Developer Conference](https://juce.com/adc-2017) (ADC);
+* Peter McConnell [GDC 2015 talk](https://www.youtube.com/watch?v=IFFy2iI8fX8) about music in videogames;
+* Game Audio Programming [talk](https://www.youtube.com/watch?v=Vjm--AqG04Y);
+* Signal Processing for Sound Design [talk](https://www.youtube.com/watch?v=jVac5IFXpFo);
 
 ---
 
 * [The Sounding Object project](http://soundobject.org/)
 * The [Association of Sound Designers](http://www.associationofsounddesigners.com/)
 * [AES Lecturers](http://www.aes-uk.org/meetings/) - [YouTube channel](https://www.youtube.com/user/aesuksection)
-* project [Bar-B-Q](https://www.projectbarbq.com/)
-* [IAsig](https://www.iasig.org/)
+* project [Bar-B-Q](https://www.projectbarbq.com/);
+* [IAsig](https://www.iasig.org/);
+* [G.A.N.G.](http://www.audiogang.org/): a network of game audio and music workers!
 * [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
 
 ---
@@ -283,6 +290,7 @@ Other books of interest:
 * [DIN: DIN Is Noise](https://dinisnoise.org/)
 * Impulse responses [openairlib](http://www.openairlib.net/), [room-impulse-response-data-set](http://www.isophonics.net/content/room-impulse-response-data-set);
 * [OAML](https://oamldev.github.io/), **Open Adaptive Music Library** and [OAMLStudio](https://github.com/oamldev/oamlStudio), the companion authoring tool;
+
 
 ### Can I use [tool name] on [OS type] ?
 
