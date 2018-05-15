@@ -61,6 +61,8 @@ A proposito di computer grafica, ecco il [PDP-11/45](http://www.chicagotribune.c
 
 * [Artificial intelligent wind instrument](http://genekogan.com/works/birl/)
 * [Magenta]()
+* [ISMIR](http://ismir.net/index.php): music information retrieval group of interest;
+* **ESR - Environmental Sound Recognition**;
 
 ### Automatic Mixing
 
@@ -116,7 +118,7 @@ Associare terminologia condivisa e comprensibile al suono. Ecco un riferimento i
 * [ICLC](http://iclc.livecodenetwork.org/)
 
 
-## Altri appunti 
+## Altri appunti
 
 >Il codice è la forma di scrittura a cui siamo maggiormente sottoposti ogni istante quotidianamente.
 ref. "Speacking Code - Coding as aesthetic and political expression", G. Geoff, A. McLean, MIT Press

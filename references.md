@@ -27,6 +27,7 @@ Sound effects in video games and many more:
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
 * Ge Wang: [website](http://www.gewang.com/) and [TED talk](https://www.ted.com/talks/ge_wang_the_diy_orchestra_of_the_future);
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
+* Niels Bottcher [website](http://www.jenkamusic.dk/niels/PhD/videos.html);
 * Paul Weir, sound designer for the Hello Game's **No Man Sky**, [talk](http://www.gdcvault.com/play/1024067/The-Sound-of-No-Man), [in game sounds](https://www.youtube.com/watch?v=BgAslKUaNx4);
 * Dinesh Pai and Kees van den Doel **Modal Synthesis for Vibrating Objects** [paper](http://www.cs.ubc.ca/~kvdoel/publications/modalpaper.pdf) and [code example](http://www.cs.ubc.ca/~kvdoel/publications/srcmodalpaper.zip) and many more [papers](http://www.cs.ubc.ca/~kvdoel/pubs.html);
 * [Changxi Zheng](http://www.cs.columbia.edu/~cxz/publications.htm) and [Doug James](http://www.cs.cornell.edu/~djames/research/index.html): [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/files/fractureSound_comp.pdf), [water simulation model](http://www.cs.cornell.edu/projects/HarmonicFluids/);
@@ -163,6 +164,8 @@ Trakers and places where to find `.mod` files, listen to **chiptune** music:
 * [sketchfab](https://sketchfab.com), a place where to find free downloadable 3D models;
 * [video game maps](http://www.vgmaps.com/)
 * Godot Engine lead developer Juan Linietsky ["Advantages of Open Source in GameDev"](https://www.docdroid.net/Z5nf1FB/advantages-of-open-source-in-gamedev-1.pdf) presentation;
+* [Game Sound XYZ](https://gamesounds.xyz/);
+* [Make Human](http://www.makehumancommunity.org/), a tool to easily prototype a human body model with rigs, clothes and textures;
 
 Audio Assets:
 
