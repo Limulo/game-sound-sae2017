@@ -171,6 +171,7 @@ Audio Assets:
 
 * [FreeSound](https://freesound.org/)
 * [Findsound](http://www.findsounds.com/);
+* [Philarmonia orchestra sound samples](http://www.philharmonia.co.uk/explore/sound_samples): thousands of free, downloadable sound samples specially recorded by Philharmonia Orchestra players. These samples are suitable for creating any kind of music, no matter what style;
 
 ### Courses, MOOCs & tutorials
 
