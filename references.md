@@ -172,6 +172,10 @@ Audio Assets:
 * [FreeSound](https://freesound.org/)
 * [Findsound](http://www.findsounds.com/);
 * [Philarmonia orchestra sound samples](http://www.philharmonia.co.uk/explore/sound_samples): thousands of free, downloadable sound samples specially recorded by Philharmonia Orchestra players. These samples are suitable for creating any kind of music, no matter what style;
+* [The University of Iowa Musical Instrument Samples](http://theremin.music.uiowa.edu/MIS.html) The University of Iowa Musical Instrument Samples (MIS): these recordings have been freely available and may be downloaded and used for any projects, without restrictions;
+* [Virtual Playing Orchestra](http://virtualplaying.com/virtual-playing-orchestra/) This is a free orchestral sample library featuring section and solo instruments for woodwinds, brass, strings and percussion;
+* [Sonatina Symphonic Orchestra](http://sso.mattiaswestlund.net/download.html) a creative commons-licensed orchestral sample library;
+* [VSCO 2 Community Edition](http://vis.versilstudios.net/vsco-community.html): this library is under a Creative Commons 0 (i.e. public domain) license. 3 GB of samples for free with no rules, no royalties, no limits on how or when you can use it.
 
 ### Courses, MOOCs & tutorials
 
