@@ -200,6 +200,7 @@ Other books of interest:
 * [Interview with David Thall, Mads Lykke and Andy Farnell](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
 * Playstation [VR worlds](http://designingsound.org/2016/12/the-sound-music-of-playstation-vr-worlds/)
 * [Audio Developer Conference](https://juce.com/adc-2017) (ADC);
+* [Game Music Festival](http://gmfest.com/);
 
 ---
 
