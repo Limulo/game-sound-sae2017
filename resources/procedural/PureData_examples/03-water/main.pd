@@ -1,4 +1,4 @@
-#N canvas 41 78 922 603 10;
+#N canvas 39 78 922 603 10;
 #X declare -path abs;
 #X obj 724 333 hsl 128 15 0.001 0.9 0 0 empty \$0-dynamics empty -2
 -8 0 10 -262144 -1 -1 12700 1;
@@ -447,9 +447,9 @@
 #X restore 720 384 pd water_sound_generator;
 #X text 5 556 Author: Alexey Reshetnikov (freezemode) \, Izhevsk \,
 Russia.;
-#X obj 721 412 catch~ stream_left;
-#X obj 746 435 catch~ stream_right;
-#X obj 722 462 dac~;
+#X obj 721 432 catch~ stream_left;
+#X obj 771 455 catch~ stream_right;
+#X obj 722 552 dac~;
 #X obj 773 178 loadbang;
 #X msg 773 200 0.9;
 #X obj 720 63 abs-hid;
@@ -462,10 +462,14 @@ Russia.;
 #X text 720 267 this slider manually.;
 #X text 720 257 Switch automation off to play with;
 #X obj 720 40 declare -path abs;
+#X obj 721 508 hip~ 5;
+#X obj 721 530 clip~ -1 1;
+#X obj 771 485 hip~ 5;
+#X obj 771 507 clip~ -1 1;
 #X connect 0 0 1 0;
 #X connect 2 0 0 0;
-#X connect 5 0 7 0;
-#X connect 6 0 7 1;
+#X connect 5 0 20 0;
+#X connect 6 0 22 0;
 #X connect 8 0 9 0;
 #X connect 9 0 13 0;
 #X connect 10 0 15 0;
@@ -475,4 +479,8 @@ Russia.;
 #X connect 12 0 13 0;
 #X connect 14 0 11 0;
 #X connect 15 0 14 0;
+#X connect 20 0 21 0;
+#X connect 21 0 7 0;
+#X connect 22 0 23 0;
+#X connect 23 0 7 1;
 #X coords 0 603 1 602 85 60 0;

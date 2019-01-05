@@ -23,10 +23,11 @@ Composers and researchers in videogame music, generative and adaptive music:
 
 Sound effects in video games and many more:
 
-* Andy Farnell: [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), [website1](https://web-beta.archive.org/web/20151210193227/http://www.obiwannabe.co.uk/), [website2](http://mitpress2.mit.edu/designingsound/tarball.asp), [lesson](https://www.youtube.com/watch?v=sp83-Pq7TyQ);
+* Andy Farnell main website, ["http://obiwannabe.co.uk"](http://obiwannabe.co.uk/), is offline. It seems we have found a copy of it [here](http://www.moz.ac.at/sem/lehre/lib/pd-sounddesign/); you can still have a look at the original one from the _wayback machine_ [here](http://web.archive.org/web/20151226070327/http://obiwannabe.co.uk/). Take a look at this [interview](http://designingsound.org/2012/01/procedural-audio-interview-with-andy-farnell/), and to the "_Designing Sound_" companion [website](http://mitpress2.mit.edu/designingsound/tarball.asp);
 * Perry Cook: [website](http://www.cs.princeton.edu/~prc/);
 * Ge Wang: [website](http://www.gewang.com/) and [TED talk](https://www.ted.com/talks/ge_wang_the_diy_orchestra_of_the_future);
 * Graham Gatheral: [website](http://www.gatheral.co.uk/), [talk](https://vimeo.com/75442176);
+* Niels Bottcher [website](http://www.jenkamusic.dk/niels/PhD/videos.html);
 * Paul Weir, sound designer for the Hello Game's **No Man Sky**, [talk](http://www.gdcvault.com/play/1024067/The-Sound-of-No-Man), [in game sounds](https://www.youtube.com/watch?v=BgAslKUaNx4);
 * Dinesh Pai and Kees van den Doel **Modal Synthesis for Vibrating Objects** [paper](http://www.cs.ubc.ca/~kvdoel/publications/modalpaper.pdf) and [code example](http://www.cs.ubc.ca/~kvdoel/publications/srcmodalpaper.zip) and many more [papers](http://www.cs.ubc.ca/~kvdoel/pubs.html);
 * [Changxi Zheng](http://www.cs.columbia.edu/~cxz/publications.htm) and [Doug James](http://www.cs.cornell.edu/~djames/research/index.html): [fracture sound](http://www.cs.cornell.edu/projects/FractureSound/files/fractureSound_comp.pdf), [water simulation model](http://www.cs.cornell.edu/projects/HarmonicFluids/);
@@ -56,6 +57,10 @@ Sound effects in video games and many more:
 * **Vessel** by StrangeLoop uses a custom adaptive music system. See [this talk](http://gdcvault.com/play/1015599/The-Dynamic-Audio-of) by Leonard J Paul @ GDC 2012;
 * [Spore](https://www.youtube.com/watch?v=Wk9At6aeLjQ);
 * [Revheadz](http://revheadz.com.au/index.html#hero)'s engine sound apps;
+* [SDL](http://www.sound-design-lab.com/english_page.html) (Sound Design Lab) is a small company specialized in researching the field of engine sound. **RealEngineSim** and **Vehicle Sound Simulator**, [**Ride Yamaha**](https://www.youtube.com/watch?v=7um559qrHMg) or [Trans4motor](http://www.sound-design-lab.com/Trans4motor/Trans4motor.html) are only a few of their software products. They make use of procedural techniques to recreate realistic sound of a variety of engines (as stated in [this](http://tsugi-studio.com/blog/2018/05/01/real-time-synthesis-of-engines/) interview by Osamu Maeda, the SDL director);
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/fjKpwHKIgGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 * iMuse: [Monkey Island 2 example](https://www.youtube.com/watch?v=-XuClagw6IQ), [X-Wing example](https://www.youtube.com/watch?v=8ya04gZiP-Y&index=3&list=PL0943E4EFB1B77689);
 * [RjDj project](https://github.com/rjdj/rjlib);
 
@@ -73,10 +78,20 @@ A possible example of this kind of synthesis is the Arturia [True Analog Emulati
 [Acustica-Audio](http://www.acustica-audio.com/) also uses a lot of interesting [technology](http://www.acustica-audio.com/index.php?option=com_content&view=article&id=14&Itemid=247) inside their plugins: [Nebula3](https://www.geforce.com/games-applications/pc-applications/nebula-3/description) for example, which "_is a multi-effect plug-in that is able to emulate and replicate several types of audio equipment and uses libraries which are created using a sophisticated “sampling approach” making it possible to “record” aspects of the sound of audio devices and play them back_".
 [AudioThing](https://www.audiothing.net/);
 
-* [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [PianoTeq](https://www.pianoteq.com/home) products, [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also the Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html). Other examples are the Roland instruments like the [Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) use the [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) modelling synthesis engine in parallel with traditional PCM synthetizer.
+* [Physical modelling synthesis](https://en.wikipedia.org/wiki/Physical_modelling_synthesis) engines are used in softwares like the [Arturia Stage-73 V](https://www.arturia.com/products/analog-classics/stage-73-v/overview), the [Moddart](https://www.pianoteq.com/modartt?from=modartt.com) products (like [PianoTeq](https://www.pianoteq.com/home) or [Organteq](https://www.modartt.com/organteq)), [Supreme Piano](http://www.supremepiano.com/) which uses an hybrid synthesis modelling, but also the Antares [Auto-tune](http://www.antarestech.com/products/detail.php?product=Auto-Tune_8_66) or [Throath](http://www.antarestech.com/products/detail.php?product=THROAT_Evo_14), Celemony [Melodyne](http://www.celemony.com/en/melodyne/what-is-melodyne) and [Capstan](http://www.celemony.com/en/start), [Izotope RX](https://www.izotope.com/en/products/repair-and-edit/rx.html). Other examples are the Roland instruments like the [Aerophone AE-10](https://www.roland.com/us/products/aerophone_ae-10/) use the [SuperNATURAL](http://www.rolandus.com/blog/2013/06/04/what-is-supernatural/) modelling synthesis engine in parallel with traditional PCM synthetizer.
 
 We can find the same concepts in many others software and hardware products like virtual instruments by [Togu Audio Line (Tal)](https://tal-software.com/Products), effects by [The Audio Thing](https://www.audiothing.net/), [Native Instruments B4](http://www.soundonsound.com/reviews/native-instruments-b4-ii), and more...
+
+Other examples can be:
+
 * Hardware instruments and Expanders: see (ex)GEM DRAKE technology;
+* [qiano](https://github.com/claytonotey/qiano) a physical modeled piano!
+* [setBfree](http://setbfree.org/), a  DSP tonewheel organ emulation;
+
+<iframe src="https://player.vimeo.com/video/130633814" width="100%" height="242" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+* [hexter](http://dssi.sourceforge.net/hexter.html) a Yamaha DX7 emulator for GNU/Linux by [Sam Bolton](http://smbolton.com/);
+* [aeolus](http://users.skynet.be/solaris/linuxaudio/aeolus.html), Aeolus is a synthesised pipe organ emulator;
 
 ### Tools (a few of them)
 
@@ -91,9 +106,9 @@ We can find the same concepts in many others software and hardware products like
 * [Tapestrea](http://taps.cs.princeton.edu/): Techniques And Paradigms for Expressive Synthesis, Transformation,
 and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://soundlab.cs.princeton.edu/) there's a lot of [other interesting software tools](http://soundlab.cs.princeton.edu/software/) like the
 * Ge Wang's [sndtools](http://sndtools.cs.princeton.edu/): [soundpeek](http://soundlab.cs.princeton.edu/software/sndpeek/), [rt_lpc](http://soundlab.cs.princeton.edu/software/rt_lpc/) and [rt_pvc](http://soundlab.cs.princeton.edu/software/rt_pvc/);
-* [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!)
+* [Chuck](http://chuck.cs.princeton.edu/) ([here](http://mtiid.calarts.edu/projects/software/chuck-racks/)'s a tool which makes it possible to write and execute ChucK programs as VST/AudioUnit plugins!). [Here](http://chuck.cs.princeton.edu/doc/develop/) the developer's tutorial on how chuck works;
 * [SMELT](http://smelt.cs.princeton.edu/) and [SMIRK](http://smirk.cs.princeton.edu/) and many others...
-* [PureData](https://puredata.info/);
+* [PureData](https://puredata.info/). Learn PureData with Johannes Kreidler's "[loadbang](http://pd-tutorial.com/)" book;
 * [Max/MSP](https://cycling74.com/);
 * Simbolic Sound's [Kyma](http://kyma.symbolicsound.com/);
 * [SuperCollider](https://supercollider.github.io/). If you want to learn how to use SuperCollider the Eli Fieldsteel [Youtube playlist](https://www.youtube.com/watch?v=yRzsOOiJ_p4&list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC). Here's the Supercollider [code repository](http://sccode.org/) and Supercollider [code snippets](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider) ported from the Pure Data esamples from Farnell's "_Designing Sound_" book;
@@ -103,13 +118,15 @@ and Rendering of Environmental Audio. Here at [Princeton Sound lab](http://sound
 * [ISSE](http://isse.sourceforge.net/): Interactive Source Separation Editor by [Nick  J. Bryan](https://ccrma.stanford.edu/~njb/);
 * Xavier Serra and Julis O. Smith [SMS tools](https://www.upf.edu/web/mtg/sms-tools). See also their [Kadenze MOOC](https://www.coursera.org/learn/audio-signal-processing);
 * [Vamp plugins](http://vamp-plugins.org/index.html) - Vamp is an audio processing plugin system for plugins that extract descriptive information from audio data;
+* [Tartini](http://miracle.otago.ac.nz/tartini/index.html);
+* [Baudline](http://baudline.com/what_is_baudline.html): an interesting tool for doing spectral analysis of sounds;
 
 Other tools of interest:
 
 * [Ircam softwares](https://www.ircam.fr/innovations/forum/);
 * [VCV Rack](https://vcvrack.com/) modular synthetizer;
 * GNU/Linux instrument and plugin by [Zita](http://kokkinizita.linuxaudio.org/linuxaudio/index.html);
-* [hexter](http://dssi.sourceforge.net/hexter.html) a Yamaha DX7 emulator for GNU/Linux by [Sam Bolton](http://smbolton.com/);
+* [Intermorphic](https://intermorphic.com/), a company with many years of experience in building generative music apps and sound engines. [Koan](https://en.wikipedia.org/wiki/Koan_(program)), Noatikl, Liptikl, Mixtikl, Wotja are only a few of the software they developed;
 
 Tools for development:
 
@@ -133,7 +150,9 @@ Trakers and places where to find `.mod` files, listen to **chiptune** music:
 * [kohina](http://www.kohina.com/) to listen to some good chiptune music;
 * [DemoScene community](https://www.scene.org/) all kind of resources here;
 
-Assets and other videogame resources/tutorials:
+### Assets
+
+.. and other videogame resources/tutorials:
 
 * [Open Game Art](https://opengameart.org/)
 * [Bit Gem](https://shop.bitgem3d.com/)
@@ -144,17 +163,28 @@ Assets and other videogame resources/tutorials:
 * [Game Art Tricks](https://simonschreibt.de/game-art-tricks/) articles by [@simonschreibt](https://twitter.com/simonschreibt).
 * [sketchfab](https://sketchfab.com), a place where to find free downloadable 3D models;
 * [video game maps](http://www.vgmaps.com/)
+* Godot Engine lead developer Juan Linietsky ["Advantages of Open Source in GameDev"](https://www.docdroid.net/Z5nf1FB/advantages-of-open-source-in-gamedev-1.pdf) presentation;
+* [Game Sound XYZ](https://gamesounds.xyz/);
+* [Make Human](http://www.makehumancommunity.org/), a tool to easily prototype a human body model with rigs, clothes and textures;
 
-Audio Assets
+Audio Assets:
 
 * [FreeSound](https://freesound.org/)
 * [Findsound](http://www.findsounds.com/);
+* [Philarmonia orchestra sound samples](http://www.philharmonia.co.uk/explore/sound_samples): thousands of free, downloadable sound samples specially recorded by Philharmonia Orchestra players. These samples are suitable for creating any kind of music, no matter what style;
+* [The University of Iowa Musical Instrument Samples](http://theremin.music.uiowa.edu/MIS.html) The University of Iowa Musical Instrument Samples (MIS): these recordings have been freely available and may be downloaded and used for any projects, without restrictions;
+* [Virtual Playing Orchestra](http://virtualplaying.com/virtual-playing-orchestra/) This is a free orchestral sample library featuring section and solo instruments for woodwinds, brass, strings and percussion;
+* [Sonatina Symphonic Orchestra](http://sso.mattiaswestlund.net/download.html) a creative commons-licensed orchestral sample library;
+* [VSCO 2 Community Edition](http://vis.versilstudios.net/vsco-community.html): this library is under a Creative Commons 0 (i.e. public domain) license. 3 GB of samples for free with no rules, no royalties, no limits on how or when you can use it.
 
-### Courses and MOOC
+### Courses, MOOCs & tutorials
 
 * [Kadenze Physics-Based Sound Synthesis for Games and Interactive Systems](https://www.kadenze.com/courses/physics-based-sound-synthesis-for-games-and-interactive-systems/info)
 * [Coursera Introduction to Game Development](https://www.coursera.org/learn/game-development/)
 * MIT Open Course Ware: [SoundDesign](https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-sound-design-spring-2016/), [Algorithmic and Generative Music](https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-algorithmic-and-generative-music-spring-2010/), [Interactive Music Systems](https://ocw.mit.edu/courses/music-and-theater-arts/21m-385-interactive-music-systems-fall-2016/);
+* [Learning Web Audio by Recreating The Works of Steve Reich and Brian Eno](http://teropa.info/blog/2016/07/28/javascript-systems-music.html);
+* Andy Farnell lecture on [Procedural Audio](https://www.youtube.com/watch?v=sp83-Pq7TyQ) @ Dolby, London on 9th April 2013.
+* Andy Farnell [Granular Synthesis talk](https://www.youtube.com/watch?v=Qxqtc2bgDpw) at UWE Bristol (4/10/2017). A great introduction on granular synthesis in PD and its application in physically modelled sound like _fire_! The philosophy of [breaking down a sound into its singular components](https://youtu.be/Qxqtc2bgDpw?t=1h14m03s), "_gestalt effect_", "_the real is not real enough_", cartoon: what it really means to be a sound designer! Talking about the [clock sound](https://youtu.be/Qxqtc2bgDpw?t=1h29m20s);
 
 ### Books
 
@@ -169,12 +199,13 @@ Books about music, sound effects and sound topics in general:
 
 Other books of interest:
 
-* Anna Anthropy "Rise of videogame zinester" - 7 stories press;
+* K.Collins, B.Kapralos, H.Tessler "_The Oxfrod hadbook of Interactive Audio_" - Oxford Univeristy press, 2014. [Here a link](http://global.oup.com/us/companion.websites/9780199797226/) to the companion website;
+* Anna Anthropy "_Rise of videogame zinester_" - 7 stories press;
 * Chris Solarsky "[Interactive story and videogame art](http://www.solarskistudio.com/books.html)" - CRC press;
-* Ernest Adams "Foundamentals of game design" - Pearson;
-* James Newman "Videogames" (2nd ed) - Routledge;
-* Blake J. Harris "Console Wars" - multiplayer.it edizioni;
-* Marco Accordi Rickards "Storia del videogioco" - Carocci editore;
+* Ernest Adams "_Foundamentals of game design_" - Pearson;
+* James Newman "_Videogames_" (2nd ed) - Routledge;
+* Blake J. Harris "_Console Wars_" - multiplayer.it edizioni;
+* Marco Accordi Rickards "_Storia del videogioco_" - Carocci editore;
 * [Micheal Chion](http://michelchion.com/biography) "[L' audiovisione. Suono e immagine nel cinema](http://www.lindau.it/Libri/L-audiovisione.-Suono-e-immagine-nel-cinema)" - Lindau;
 * [R. Murray Schafer](https://en.wikipedia.org/wiki/R._Murray_Schafer) "[Il paesaggio sonoro](https://www.amazon.it/paesaggio-sonoro-storia-musica-ecologia/dp/8875920001?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-ffab-it-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=8875920001) - Ricordi, Lim;
 * Steven W. Smith' [The Scientist and Engineer's Guide to Digital Signal Processing](http://www.dspguide.com/) - free downloadable from the website as .pdf;
@@ -200,6 +231,9 @@ Other books of interest:
 * [Interview with David Thall, Mads Lykke and Andy Farnell](http://designingsound.org/2010/09/audio-implementation-greats-8-procedural-audio-now/)
 * Playstation [VR worlds](http://designingsound.org/2016/12/the-sound-music-of-playstation-vr-worlds/)
 * [Audio Developer Conference](https://juce.com/adc-2017) (ADC);
+* Peter McConnell [GDC 2015 talk](https://www.youtube.com/watch?v=IFFy2iI8fX8) about music in videogames;
+* Game Audio Programming [talk](https://www.youtube.com/watch?v=Vjm--AqG04Y);
+* Signal Processing for Sound Design [talk](https://www.youtube.com/watch?v=jVac5IFXpFo);
 * [Game Music Festival](http://gmfest.com/);
 
 ---
@@ -207,8 +241,9 @@ Other books of interest:
 * [The Sounding Object project](http://soundobject.org/)
 * The [Association of Sound Designers](http://www.associationofsounddesigners.com/)
 * [AES Lecturers](http://www.aes-uk.org/meetings/) - [YouTube channel](https://www.youtube.com/user/aesuksection)
-* project [Bar-B-Q](https://www.projectbarbq.com/)
-* [IAsig](https://www.iasig.org/)
+* project [Bar-B-Q](https://www.projectbarbq.com/);
+* [IAsig](https://www.iasig.org/);
+* [G.A.N.G.](http://www.audiogang.org/): a network of game audio and music workers!
 * [Sound Design Tutorials](http://designingsound.org/2016/07/sound-design-tutorial-list/)
 
 ---
@@ -220,6 +255,7 @@ Other books of interest:
 * [Gaf](http://cedric.cnam.fr/PUBLIS/RC1568.pdf), [IEZA](https://users-cs.au.dk/dsound/DigitalAudio.dir/Unity/IEZA.pdf) and [this](http://captivatingsound.com/ieza-framework-for-game-audio/). [GAL](https://www.researchgate.net/publication/238660174_GAME_AUDIO_LAB_-_AN_ARCHITECTURAL_FRAMEWORK_FOR_NONLINEAR_AUDIO_IN_GAMES) and [this](http://www.aes.org/e-lib/browse.cfm?elib=15169);
 * Artificial intelligence for speach synthesis: [WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), [NPSS](http://www.dtic.upf.edu/~mblaauw/NPSS/) which is a neural parametric singing sinthesizer,an artificial intelligence application ([paper](https://arxiv.org/pdf/1609.03499.pdf)), see [Gene Kogan website](http://genekogan.com/) and other project.
 * Artificial intelligence in music: [Magenta](https://magenta.tensorflow.org/) is an OpenSource project by [Google Brain team](https://research.google.com/teams/brain/) that uses the [tensorFlow](https://www.tensorflow.org/) artificial intelligence library. [Magenta main repo](https://github.com/tensorflow/magenta) and [demo page](https://github.com/tensorflow/magenta-demos/tree/master/);
+* A [Game Audio Blog](https://matarnoldaudio.wordpress.com/) By Mat Arnold. [here](https://matarnoldaudio.wordpress.com/2018/03/21/imuse-and-the-future-of-midi-in-game-audio/) an interesting article about **iMuse**;
 
 ---
 
@@ -261,6 +297,9 @@ Other books of interest:
 * [myNoise](https://mynoise.net/) by Dr. Ir. Stéphane Pigeon;
 * [Sleeping Dragon](https://www.youtube.com/watch?v=0cpqNAQPWVs);
 * [DIN: DIN Is Noise](https://dinisnoise.org/)
+* Impulse responses [openairlib](http://www.openairlib.net/), [room-impulse-response-data-set](http://www.isophonics.net/content/room-impulse-response-data-set);
+* [OAML](https://oamldev.github.io/), **Open Adaptive Music Library** and [OAMLStudio](https://github.com/oamldev/oamlStudio), the companion authoring tool;
+
 
 ### Can I use [tool name] on [OS type] ?
 
@@ -281,7 +320,6 @@ Other books of interest:
 | Wwise | [yes](https://www.audiokinetic.com/library/edge/?source=Unity&id=main.html) | [yes](https://www.audiokinetic.com/library/edge/?source=UE4&id=index.html) |
 | Fmod | [yes](https://github.com/fmod/UnityIntegration) | [yes](https://github.com/fmod/ue4integration) |
 {: class="reference-table"}
-
 
 ---
 
@@ -338,6 +376,5 @@ http://www.gdcvault.com/play/1022315/The-Neuroscience-of-Game
  * approcci compositivi a musica dinamica in VG
  * non-linearità nei VG
  * approcci a variabilità in VG
-
 
 {% endcomment %}

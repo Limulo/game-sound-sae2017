@@ -1,5 +1,5 @@
-#N canvas 48 105 598 382 10;
-#N canvas 1 78 534 525 sound 0;
+#N canvas 46 105 598 382 10;
+#N canvas 1 78 534 525 sound 1;
 #X obj 130 416 dac~;
 #X obj 20 97 osc~;
 #X obj 84 98 osc~;
@@ -38,6 +38,11 @@
 #X obj 418 38 inlet kill;
 #X obj 130 360 hip~ 5;
 #X obj 130 382 clip~ -1 1;
+#X obj 455 141 loadbang;
+#X obj 455 193 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 455 215 \; pd dsp \$1;
+#X msg 455 163 1;
 #X connect 1 0 12 0;
 #X connect 2 0 12 0;
 #X connect 3 0 2 0;
@@ -75,6 +80,9 @@
 #X connect 34 0 35 0;
 #X connect 35 0 0 0;
 #X connect 35 0 0 1;
+#X connect 36 0 39 0;
+#X connect 37 0 38 0;
+#X connect 39 0 37 0;
 #X restore 514 351 pd sound;
 #X obj 567 324 tgl 15 0 empty empty kill 0 -6 0 8 -262144 -1 -1 0 1
 ;
